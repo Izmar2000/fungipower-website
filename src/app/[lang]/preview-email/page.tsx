@@ -211,8 +211,12 @@ export default function PreviewEmailPage() {
                 </div>
 
                 <div style={{ background: '#000', padding: '40px 40px', textAlign: 'center', borderTop: '1px solid rgba(255,255,255,0.05)' }}>
-                    <div style={{ color: 'rgba(255,255,255,0.2)', fontSize: '9px', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '3px' }}>
+                    <div style={{ color: 'rgba(255,255,255,0.2)', fontSize: '9px', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '3px', marginBottom: '20px' }}>
                         Venlo, Nederland  |  PLANTIPOWER.COM
+                    </div>
+                    <div style={{ color: 'rgba(255,255,255,0.3)', fontSize: '11px', lineHeight: '1.6' }}>
+                        Liever geen updates van ons ontvangen?<br />
+                        <a href="#" style={{ color: '#84cc16', textDecoration: 'underline' }}>Klik hier om je af te melden.</a>
                     </div>
                 </div>
             </div>

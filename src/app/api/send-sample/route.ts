@@ -180,7 +180,11 @@ export async function POST(request: Request) {
               </div>
 
               <div style="background: #000; padding: 40px; text-align: center; border-top: 1px solid rgba(255,255,255,0.05);">
-                <div style="color: rgba(255,255,255,0.2); font-size: 9px; font-weight: 800; text-transform: uppercase;">Venlo, Nederland  |  PLANTIPOWER.COM</div>
+                <div style="color: rgba(255,255,255,0.2); font-size: 9px; font-weight: 800; text-transform: uppercase; margin-bottom: 20px;">Venlo, Nederland  |  PLANTIPOWER.COM</div>
+                <div style="color: rgba(255,255,255,0.3); font-size: 11px; line-height: 1.6;">
+                  Liever geen updates van ons ontvangen?<br />
+                  <a href="{{unsubscribe_url}}" style="color: #84cc16; text-decoration: underline;">Klik hier om je af te melden.</a>
+                </div>
               </div>
 
             </div>

@@ -33,7 +33,7 @@ export function getLocalizedPath(path: string, targetLocale: Locale): string {
         rest = segments.join('/');
     }
 
-    if (!rest) return targetLocale === 'en' ? '/' : `/${targetLocale}`;
+    if (!rest) return `/${targetLocale}`;
 
     // Find the internal key for the current path
     const internalKey = Object.keys(slugMap[currentLocale]).find(
@@ -44,10 +44,6 @@ export function getLocalizedPath(path: string, targetLocale: Locale): string {
         ? slugMap[targetLocale][internalKey]
         : rest;
 
-    if (targetLocale === 'en') {
-        return `/${targetSlug}`;
-    }
-
     return `/${targetLocale}/${targetSlug}`;
 }
 
@@ -55,8 +51,8 @@ export function getPath(key: string, locale: string): string {
     const segments = key.split('/').filter(Boolean).join('/');
     const slug = (slugMap[locale] && slugMap[locale][segments]) || segments;
 
-    if (locale === 'en') {
-        return slug === '/' ? '/' : `/${slug}`;
+    if (!slug || slug === '/') {
+        return `/${locale}`;
     }
 
     return `/${locale}/${slug}`;

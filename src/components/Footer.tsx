@@ -48,12 +48,13 @@ const Footer: React.FC<FooterProps> = ({ dict, lang }) => {
                 {[
                   { name: t.links.home, key: "/" },
                   { name: t.links.about, key: "about" },
-                  { name: t.links.products, key: "products/all12" },
+                  { name: dict.Header.all12, key: "products/all12" },
+                  { name: dict.Header.shield, key: "products/shield" },
                   { name: t.links.faq, key: "faq" },
                   { name: t.links.contact, key: "contact" }
                 ].map((item) => (
-                  <li key={item.name}>
-                    <Link href={item.key === '/' ? `/${lang}` : getPath(item.key, lang)} className="text-emerald-50 hover:text-lime-400 transition-colors flex items-center gap-2 group">
+                  <li key={item.key}>
+                    <Link href={getPath(item.key, lang)} className="text-emerald-50 hover:text-lime-400 transition-colors flex items-center gap-2 group">
                       <span className="w-1.5 h-1.5 rounded-full bg-lime-500 shadow-[0_0_8px_rgba(132,204,22,0.6)]"></span>
                       {item.name}
                     </Link>
