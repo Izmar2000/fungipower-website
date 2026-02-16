@@ -73,7 +73,7 @@ export async function POST(request: Request) {
                   <table width="100%" cellpadding="0" cellspacing="0">
                     <tr>
                       <td>
-                        <div style="color:#84cc16; font-size:10px; font-weight:900; margin-bottom:4px; text-transform:uppercase;">PlantiPower</div>
+                        <div style="color:#ffffff; font-size:10px; font-weight:900; margin-bottom:4px; text-transform:uppercase;">PlantiPower</div>
                         <div style="font-size:26px; font-weight:900; margin-bottom:4px; color: #84cc16;">ALL12</div>
                         <div style="color:rgba(255,255,255,0.5); font-size:13px; line-height:1.4;">
                             Optimaliseert de nutriëntenstroom en verbetert de opnamecapaciteit van het gewas voor maximale groei.
@@ -91,7 +91,7 @@ export async function POST(request: Request) {
                   <table width="100%" cellpadding="0" cellspacing="0">
                     <tr>
                       <td>
-                        <div style="color:#38bdf8; font-size:10px; font-weight:900; margin-bottom:4px; text-transform:uppercase;">PlantiPower</div>
+                        <div style="color:#ffffff; font-size:10px; font-weight:900; margin-bottom:4px; text-transform:uppercase;">PlantiPower</div>
                         <div style="font-size:26px; font-weight:900; margin-bottom:4px; color: #38bdf8;">SHIELD</div>
                         <div style="color:rgba(255,255,255,0.5); font-size:13px; line-height:1.4;">
                             Versterkt de natuurlijke weerbaarheid van de plant tegen abiotische stressfactoren en optimaliseert de celstructuur.
@@ -139,19 +139,19 @@ export async function POST(request: Request) {
                       </td>
                       <td align="center">
                         <div style="width: 28px; height: 28px; border-radius: 14px; background-color: #011d17; display: inline-block; border: 1px solid rgba(255,255,255,0.1);">
-                           <div style="width: 4px; height: 4px; border-radius: 2px; backgroundColor: rgba(255,255,255,0.1); display: inline-block; margin-top: 12px;"></div>
+                           <div style="width: 4px; height: 4px; border-radius: 2px; background-color: rgba(255,255,255,0.1); display: inline-block; margin-top: 12px;"></div>
                         </div>
                         <div style="font-size: 8px; font-weight: 900; text-transform: uppercase; color: rgba(255,255,255,0.2); margin-top: 10px; letter-spacing: 0.5px;">Ingepakt</div>
                       </td>
                       <td align="center">
                         <div style="width: 28px; height: 28px; border-radius: 14px; background-color: #011d17; display: inline-block; border: 1px solid rgba(255,255,255,0.1);">
-                           <div style="width: 4px; height: 4px; border-radius: 2px; backgroundColor: rgba(255,255,255,0.1); display: inline-block; margin-top: 12px;"></div>
+                           <div style="width: 4px; height: 4px; border-radius: 2px; background-color: rgba(255,255,255,0.1); display: inline-block; margin-top: 12px;"></div>
                         </div>
                         <div style="font-size: 8px; font-weight: 900; text-transform: uppercase; color: rgba(255,255,255,0.2); margin-top: 10px; letter-spacing: 0.5px;">Vervoeren</div>
                       </td>
                       <td align="center">
                         <div style="width: 28px; height: 28px; border-radius: 14px; background-color: #011d17; display: inline-block; border: 1px solid rgba(255,255,255,0.1);">
-                           <div style="width: 4px; height: 4px; border-radius: 2px; backgroundColor: rgba(255,255,255,0.1); display: inline-block; margin-top: 12px;"></div>
+                           <div style="width: 4px; height: 4px; border-radius: 2px; background-color: rgba(255,255,255,0.1); display: inline-block; margin-top: 12px;"></div>
                         </div>
                         <div style="font-size: 8px; font-weight: 900; text-transform: uppercase; color: rgba(255,255,255,0.2); margin-top: 10px; letter-spacing: 0.5px;">Afleveren</div>
                       </td>
