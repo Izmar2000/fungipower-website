@@ -12,11 +12,13 @@ export function middleware(request: NextRequest) {
 
     if (pathnameHasLocale) return
 
-    // Redirect to the correct locale based on country
-    // NL -> nl
-    // Rest of the world -> en
+    // Redirect based on country
+    // NL & BE -> nl
+    // Rest of world -> en
     const country = (request.geo?.country || request.headers.get('x-vercel-ip-country'))?.toLowerCase()
-    const locale = country === 'nl' ? 'nl' : 'en'
+
+    // Redirect Dutch and Belgian visitors to the Dutch version
+    const locale = (country === 'nl' || country === 'be') ? 'nl' : 'en'
 
     // Redirect to the new URL
     request.nextUrl.pathname = `/${locale}${pathname}`
