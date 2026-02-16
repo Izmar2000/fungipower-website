@@ -20,7 +20,32 @@ const emailStyles = {
 
 export async function POST(request: Request) {
   try {
-    const { email } = await request.json();
+    const data = await request.json();
+    const { email, website_url, captchaToken } = data;
+
+    // 0. Bot checks
+    if (website_url) {
+      return NextResponse.json({ error: 'Bot detected' }, { status: 400 });
+    }
+
+    if (!captchaToken) {
+      return NextResponse.json({ error: 'Captcha missing' }, { status: 400 });
+    }
+
+    // Verify Turnstile
+    const turnstileResult = await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        secret: process.env.TURNSTILE_SECRET_KEY,
+        response: captchaToken,
+      }),
+    });
+
+    const turnstileData = await turnstileResult.json();
+    if (!turnstileData.success && process.env.NODE_ENV === 'production') {
+      return NextResponse.json({ error: 'Captcha verification failed' }, { status: 400 });
+    }
     const headerImage = 'https://plantipower-new.vercel.app/images/email/header.jpg';
 
     const apiKey = process.env.RESEND_API_KEY;

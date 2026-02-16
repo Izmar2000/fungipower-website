@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { X, Check, ChevronDown } from 'lucide-react';
 import { usePathname } from 'next/navigation';
+import Turnstile from 'react-turnstile';
 
 interface SampleModalProps {
   isOpen: boolean;
@@ -25,8 +26,10 @@ const SampleModal: React.FC<SampleModalProps> = ({ isOpen, onClose }) => {
     crop: '',
     otherCrop: '',
     comments: '',
-    guidance: false
+    guidance: false,
+    website_url: '' // Honeypot
   });
+  const [captchaToken, setCaptchaToken] = useState<string | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
 
@@ -121,13 +124,15 @@ const SampleModal: React.FC<SampleModalProps> = ({ isOpen, onClose }) => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (!captchaToken) return;
+
     setIsSubmitting(true);
 
     try {
       const response = await fetch('/api/send-sample', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({ ...formData, captchaToken }),
       });
 
       if (response.ok) {
@@ -146,8 +151,10 @@ const SampleModal: React.FC<SampleModalProps> = ({ isOpen, onClose }) => {
             cropCategory: '',
             crop: '',
             otherCrop: '',
-            comments: ''
+            comments: '',
+            website_url: ''
           });
+          setCaptchaToken(null);
         }, 3000);
       } else {
         const errorData = await response.json();
@@ -312,8 +319,32 @@ const SampleModal: React.FC<SampleModalProps> = ({ isOpen, onClose }) => {
                 <textarea className="w-full bg-[#0d2b24] border border-white/5 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-lime-500/50 transition-all h-24 resize-none font-medium" placeholder={content.placeholderComments} value={formData.comments} onChange={(e) => setFormData({ ...formData, comments: e.target.value })} />
               </div>
 
+              {/* Honeypot field - Invisible to humans */}
+              <div style={{ display: 'none' }} aria-hidden="true">
+                <input
+                  type="text"
+                  name="website_url"
+                  tabIndex={-1}
+                  autoComplete="off"
+                  onChange={(e) => setFormData({ ...formData, website_url: e.target.value } as any)}
+                />
+              </div>
+
+              {/* Turnstile Captcha - Subtle */}
+              <div className="flex justify-center py-2">
+                <Turnstile
+                  sitekey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY || '1x00000000000000000000AA'}
+                  onVerify={(token) => setCaptchaToken(token)}
+                  theme="dark"
+                />
+              </div>
+
               <div className="pt-4">
-                <button type="submit" disabled={isSubmitting} className="w-full bg-lime-500 hover:bg-lime-400 text-emerald-950 font-black py-4 rounded-xl uppercase tracking-widest text-sm transition-all shadow-lg shadow-lime-500/20 active:scale-[0.98]">
+                <button
+                  type="submit"
+                  disabled={isSubmitting || !captchaToken}
+                  className="w-full bg-lime-500 hover:bg-lime-400 text-emerald-950 font-black py-4 rounded-xl uppercase tracking-widest text-sm transition-all shadow-lg shadow-lime-500/20 active:scale-[0.98] disabled:opacity-50 disabled:grayscale"
+                >
                   {isSubmitting ? "..." : content.btnSubmit}
                 </button>
                 <p className="text-center mt-4 text-[10px] text-emerald-100/30 uppercase tracking-widest font-bold">{content.footerNote}</p>

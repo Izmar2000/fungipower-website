@@ -14,7 +14,32 @@ const emailStyles = {
 
 export async function POST(request: Request) {
   try {
-    const { name, company, email, message } = await request.json();
+    const { name, company, email, message, website_url, captchaToken } = await request.json();
+
+    // 0. Bot checks
+    if (website_url) {
+      // Honeypot triggered
+      return NextResponse.json({ error: 'Bot detected' }, { status: 400 });
+    }
+
+    if (!captchaToken) {
+      return NextResponse.json({ error: 'Captcha missing' }, { status: 400 });
+    }
+
+    // Verify Turnstile
+    const turnstileResult = await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        secret: process.env.TURNSTILE_SECRET_KEY,
+        response: captchaToken,
+      }),
+    });
+
+    const turnstileData = await turnstileResult.json();
+    if (!turnstileData.success && process.env.NODE_ENV === 'production') {
+      return NextResponse.json({ error: 'Captcha verification failed' }, { status: 400 });
+    }
 
     const apiKey = process.env.RESEND_API_KEY;
 
