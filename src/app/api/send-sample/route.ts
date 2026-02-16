@@ -24,7 +24,8 @@ const emailStyles = {
 export async function POST(request: Request) {
   try {
     const { name, company, email, phone, address, city, crop, comments } = await request.json();
-    const headerImage = 'https://images.unsplash.com/photo-1604977042946-1eecc30f269e?auto=format&fit=crop&q=80&w=1200';
+    // Foto van komkommer aan de plant (zoals gevraagd)
+    const headerImage = 'https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&q=80&w=1200';
 
     const apiKey = process.env.RESEND_API_KEY;
     if (!apiKey) return NextResponse.json({ error: 'API_KEY missing' }, { status: 500 });
@@ -96,22 +97,24 @@ export async function POST(request: Request) {
 
                 <span style="${emailStyles.sectionTitle}">Je proefpakket <span style="color:#84cc16;">bestaat uit:</span></span>
 
-                <div style="${emailStyles.productCard}">
+                <!-- ALL12 - GREEN -->
+                <div style="${emailStyles.productCard}; border: 1px solid rgba(132, 204, 22, 0.2);">
                   <div style="display: flex; align-items: center; padding: 20px;">
                     <div style="flex: 1.5;">
-                      <div style="color:#84cc16; font-size:9px; font-weight:900; margin-bottom:4px; text-transform:uppercase;">Kern Systeem</div>
-                      <div style="font-size:22px; font-weight:900; margin-bottom:4px;">ALL12</div>
+                      <div style="color:#84cc16; font-size:10px; font-weight:900; margin-bottom:4px; text-transform:uppercase;">PlantiPower</div>
+                      <div style="font-size:26px; font-weight:900; margin-bottom:4px; color: #84cc16;">ALL12</div>
                       <div style="color:rgba(255,255,255,0.5); font-size:13px; line-height:1.4;">Optimaliseert transport naar de wortel.</div>
                     </div>
                     <img src="https://plantipower.com/images/products/plantipower-all12-transparant.png" style="width: 60px; height: auto;" />
                   </div>
                 </div>
 
-                <div style="${emailStyles.productCard}">
+                <!-- SHIELD - BLUE -->
+                <div style="${emailStyles.productCard}; border: 1px solid rgba(56, 189, 248, 0.2);">
                   <div style="display: flex; align-items: center; padding: 20px;">
                     <div style="flex: 1.5;">
-                      <div style="color:#38bdf8; font-size:9px; font-weight:900; margin-bottom:4px; text-transform:uppercase;">Weerbaarheid</div>
-                      <div style="font-size:22px; font-weight:900; margin-bottom:4px;">SHIELD</div>
+                      <div style="color:#38bdf8; font-size:10px; font-weight:900; margin-bottom:4px; text-transform:uppercase;">PlantiPower</div>
+                      <div style="font-size:26px; font-weight:900; margin-bottom:4px; color: #38bdf8;">SHIELD</div>
                       <div style="color:rgba(255,255,255,0.5); font-size:13px; line-height:1.4;">Versterkt natuurlijke weerstand.</div>
                     </div>
                     <img src="https://plantipower.com/images/products/plantipower-shield-transparant.png" style="width: 60px; height: auto;" />

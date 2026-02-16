@@ -1,8 +1,8 @@
 import React from 'react';
 
 export default function PreviewEmailPage() {
-    // Stabiele link naar prachtige komkommer-teelt foto
-    const headerImage = 'https://images.unsplash.com/photo-1604977042946-1eecc30f269e?auto=format&fit=crop&q=80&w=1200';
+    // Foto van komkommer aan de plant met gele bloem (overeenkomstig met jouw voorbeeld)
+    const headerImage = 'https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&q=80&w=1200';
 
     return (
         <div style={{ backgroundColor: '#000', minHeight: '100vh', padding: '0px' }}>
@@ -19,9 +19,9 @@ export default function PreviewEmailPage() {
                 boxShadow: '0 60px 120px rgba(0,0,0,0.9)'
             }}>
 
-                {/* Hero Section */}
+                {/* Hero Section - MET JOUW FOTO */}
                 <div style={{ position: 'relative', width: '100%', height: '480px', backgroundColor: '#011410' }}>
-                    <img src={headerImage} alt="Cucumber Greenhouse" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                    <img src={headerImage} alt="Cucumber on Vine" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                     <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(1,20,16,0) 0%, rgba(1,20,16,1) 95%)', zIndex: 1 }}></div>
 
                     {/* Logo */}
@@ -45,7 +45,7 @@ export default function PreviewEmailPage() {
                     </div>
                 </div>
 
-                {/* Main Message - FULL & CLEANED UP */}
+                {/* Main Message */}
                 <div style={{ padding: '40px 40px 40px 40px' }}>
                     <div style={{ color: 'rgba(255,255,255,0.7)', fontSize: '16px', lineHeight: '1.8', marginBottom: '10px', fontWeight: 300 }}>Beste teler,</div>
                     <div style={{ color: 'rgba(255,255,255,0.7)', fontSize: '16px', lineHeight: '1.8', marginBottom: '20px', fontWeight: 300 }}>
@@ -62,7 +62,7 @@ export default function PreviewEmailPage() {
                     </div>
                 </div>
 
-                {/* Product Section - Compact */}
+                {/* Product Section - UPDATED LABELS & COLORS */}
                 <div style={{ backgroundColor: '#011d17', padding: '40px 40px' }}>
                     <div style={{ marginBottom: '25px' }}>
                         <h2 style={{ fontSize: '20px', fontWeight: 900, textTransform: 'uppercase', color: '#ffffff', letterSpacing: '-0.5px' }}>
@@ -70,26 +70,28 @@ export default function PreviewEmailPage() {
                         </h2>
                     </div>
 
-                    <div style={{ background: 'rgba(255,255,255,0.02)', borderRadius: '20px', border: '1px solid rgba(255,255,255,0.05)', marginBottom: '12px', padding: '20px', display: 'flex', alignItems: 'center', gap: '20px' }}>
+                    {/* ALL12 - GREEN */}
+                    <div style={{ background: 'rgba(255,255,255,0.02)', borderRadius: '20px', border: '1px solid rgba(132, 204, 22, 0.2)', marginBottom: '12px', padding: '20px', display: 'flex', alignItems: 'center', gap: '20px' }}>
                         <div style={{ flex: 1 }}>
-                            <div style={{ color: '#84cc16', fontSize: '9px', fontWeight: 900, textTransform: 'uppercase', marginBottom: '4px' }}>Kern Systeem</div>
-                            <div style={{ fontSize: '22px', fontWeight: 900, marginBottom: '4px' }}>ALL12</div>
-                            <div style={{ color: 'rgba(255,255,255,0.5)', fontSize: '13px', lineHeight: '1.4' }}>Optimaliseert transport van alle 12 nutriënten naar de wortel voor maximale groei.</div>
+                            <div style={{ color: '#84cc16', fontSize: '10px', fontWeight: 900, textTransform: 'uppercase', marginBottom: '4px', letterSpacing: '1px' }}>PlantiPower</div>
+                            <div style={{ fontSize: '26px', fontWeight: 900, marginBottom: '4px', color: '#84cc16' }}>ALL12</div>
+                            <div style={{ color: 'rgba(255,255,255,0.5)', fontSize: '13px', lineHeight: '1.4' }}>Optimaliseert transport van alle 12 nutriënten naar de wortel.</div>
                         </div>
                         <img src="https://plantipower.com/images/products/plantipower-all12-transparant.png" alt="ALL12" style={{ width: '60px', height: 'auto' }} />
                     </div>
 
-                    <div style={{ background: 'rgba(255,255,255,0.02)', borderRadius: '20px', border: '1px solid rgba(255,255,255,0.05)', padding: '20px', display: 'flex', alignItems: 'center', gap: '20px' }}>
+                    {/* SHIELD - BLUE */}
+                    <div style={{ background: 'rgba(255,255,255,0.02)', borderRadius: '20px', border: '1px solid rgba(56, 189, 248, 0.2)', padding: '20px', display: 'flex', alignItems: 'center', gap: '20px' }}>
                         <div style={{ flex: 1 }}>
-                            <div style={{ color: '#38bdf8', fontSize: '9px', fontWeight: 900, textTransform: 'uppercase', marginBottom: '4px' }}>Weerbaarheid</div>
-                            <div style={{ fontSize: '22px', fontWeight: 900, marginBottom: '4px' }}>SHIELD</div>
-                            <div style={{ color: 'rgba(255,255,255,0.5)', fontSize: '13px', lineHeight: '1.4' }}>Versterkt de natuurlijke weerbaarheid van het gewas tegen stress en invloeden.</div>
+                            <div style={{ color: '#38bdf8', fontSize: '10px', fontWeight: 900, textTransform: 'uppercase', marginBottom: '4px', letterSpacing: '1px' }}>PlantiPower</div>
+                            <div style={{ fontSize: '26px', fontWeight: 900, marginBottom: '4px', color: '#38bdf8' }}>SHIELD</div>
+                            <div style={{ color: 'rgba(255,255,255,0.5)', fontSize: '13px', lineHeight: '1.4' }}>Versterkt de natuurlijke weerbaarheid van het gewas.</div>
                         </div>
                         <img src="https://plantipower.com/images/products/plantipower-shield-transparant.png" alt="SHIELD" style={{ width: '60px', height: 'auto' }} />
                     </div>
                 </div>
 
-                {/* Testimonials - COMPACT & MATCHED TITLE SIZE */}
+                {/* Testimonials - MATCHED TITLE SIZE */}
                 <div style={{ padding: '40px 40px', backgroundColor: '#011410' }}>
                     <div style={{ marginBottom: '25px' }}>
                         <h2 style={{ fontSize: '20px', fontWeight: 900, textTransform: 'uppercase', color: '#ffffff', letterSpacing: '-0.5px' }}>
