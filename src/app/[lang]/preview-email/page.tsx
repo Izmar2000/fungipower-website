@@ -1,8 +1,8 @@
 import React from 'react';
 
 export default function PreviewEmailPage() {
-    // De specifieke verse komkommer-teelt foto die je stuurde
-    const headerImage = 'https://images.unsplash.com/photo-1596560548464-f010549b84d7?auto=format&fit=crop&q=80&w=1200';
+    // Jouw eigen foto uit de project-map (geen Unsplash meer!)
+    const headerImage = '/images/email/header.jpg';
 
     return (
         <div style={{ backgroundColor: '#000', minHeight: '100vh', padding: '0px' }}>
@@ -19,12 +19,11 @@ export default function PreviewEmailPage() {
                 boxShadow: '0 60px 120px rgba(0,0,0,0.9)'
             }}>
 
-                {/* Hero Section - FRESH CUCUMBER VINE */}
+                {/* Hero Section - JOUW FOTO */}
                 <div style={{ position: 'relative', width: '100%', height: '480px', backgroundColor: '#011410' }}>
-                    <img src={headerImage} alt="Fresh Cucumbers on Vine" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                    <img src={headerImage} alt="PlantiPower Greenhouse" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                     <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(1,20,16,0) 0%, rgba(1,20,16,1) 95%)', zIndex: 1 }}></div>
 
-                    {/* Logo */}
                     <div style={{ position: 'absolute', top: '0', left: '40px', backgroundColor: '#012b24', padding: '15px 15px 25px 15px', width: '80px', zIndex: 10, borderRadius: '0 0 12px 12px' }}>
                         <img src="https://irp.cdn-website.com/480e14da/dms3rep/multi/Planti-Power-Logo-.png" alt="PlantiPower" style={{ width: '100%' }} />
                     </div>
@@ -91,7 +90,7 @@ export default function PreviewEmailPage() {
                     </div>
                 </div>
 
-                {/* Testimonials - MATCHED TITLE SIZE */}
+                {/* Testimonials */}
                 <div style={{ padding: '40px 40px', backgroundColor: '#011410' }}>
                     <div style={{ marginBottom: '25px' }}>
                         <h2 style={{ fontSize: '20px', fontWeight: 900, textTransform: 'uppercase', color: '#ffffff', letterSpacing: '-0.5px' }}>
@@ -110,13 +109,8 @@ export default function PreviewEmailPage() {
                     </div>
                 </div>
 
-                {/* Package Status & NEXT UPDATE */}
+                {/* NEXT UPDATE */}
                 <div style={{ padding: '0 40px 40px 40px', backgroundColor: '#011410' }}>
-                    <div style={{ background: '#84cc16', padding: '25px', borderRadius: '24px', textAlign: 'center', marginBottom: '30px' }}>
-                        <div style={{ color: '#011410', fontWeight: 900, textTransform: 'uppercase', fontSize: '12px' }}>In voorbereiding</div>
-                        <div style={{ color: '#011410', fontSize: '15px', fontWeight: 800, marginTop: '4px' }}>Levering binnen 1-2 werkdagen.</div>
-                    </div>
-
                     <div style={{ padding: '25px', border: '1px dashed rgba(255,255,255,0.1)', borderRadius: '24px', textAlign: 'center' }}>
                         <div style={{ color: 'rgba(255,255,255,0.5)', fontSize: '14px', lineHeight: '1.6' }}>
                             In de volgende update van ons vertellen we meer over ons bedrijf en wie de kweker was die ons inspireerde.

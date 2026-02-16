@@ -24,8 +24,8 @@ const emailStyles = {
 export async function POST(request: Request) {
   try {
     const { name, company, email, phone, address, city, crop, comments } = await request.json();
-    // De specifieke verse komkommer-teelt foto (hangend aan de plant)
-    const headerImage = 'https://images.unsplash.com/photo-1596560548464-f010549b84d7?auto=format&fit=crop&q=80&w=1200';
+    // Jouw eigen foto die we zojuist hebben klaargezet in het project
+    const headerImage = 'https://plantipower-new.vercel.app/images/email/header.jpg';
 
     const apiKey = process.env.RESEND_API_KEY;
     if (!apiKey) return NextResponse.json({ error: 'API_KEY missing' }, { status: 500 });
@@ -129,12 +129,7 @@ export async function POST(request: Request) {
                     <div style="color: rgba(255,255,255,0.6); font-size: 13px; font-style: italic;">"Absoluut minder gewasstress."</div>
                 </div>
 
-                <div style="background:#84cc16; padding:25px; border-radius:24px; text-align:center; margin-top: 40px; margin-bottom: 30px;">
-                  <div style="color:#011410; font-weight:900; text-transform:uppercase; font-size:12px;">In voorbereiding</div>
-                  <div style="color:#011410; font-size:15px; font-weight:800; margin-top:4px;">Levering binnen 1-2 werkdagen.</div>
-                </div>
-
-                <div style="padding: 25px; border: 1px dashed rgba(255,255,255,0.1); border-radius: 24px; text-align: center;">
+                <div style="padding: 25px; border: 1px dashed rgba(255,255,255,0.1); border-radius: 24px; text-align: center; margin-top: 40px;">
                   <div style="color: rgba(255,255,255,0.5); font-size: 14px; line-height: 1.6;">
                     In de volgende update van ons vertellen we meer over ons bedrijf en wie de kweker was die ons inspireerde.
                   </div>
