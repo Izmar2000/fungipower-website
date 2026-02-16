@@ -97,40 +97,40 @@ export default function PreviewEmailPage() {
                     </div>
                 </div>
 
-                {/* Product Section */}
-                <div style={{ backgroundColor: '#011d17', padding: '80px 40px' }}>
-                    <div style={{ textAlign: 'center', marginBottom: '60px' }}>
-                        <div style={{ width: '40px', height: '4px', backgroundColor: '#84cc16', margin: '0 auto 20px' }}></div>
-                        <h2 style={{ fontSize: '38px', fontWeight: 900, textTransform: 'uppercase', color: '#ffffff', lineHeight: 1.1, marginBottom: '20px', letterSpacing: '-1px' }}>
-                            Je proefpakket<br /><span style={{ color: '#84cc16' }}>bestaat uit:</span>
+                {/* Product Section - COMPACTER DESIGN */}
+                <div style={{ backgroundColor: '#011d17', padding: '50px 40px' }}>
+                    <div style={{ textAlign: 'left', marginBottom: '35px' }}>
+                        <div style={{ width: '30px', height: '3px', backgroundColor: '#84cc16', marginBottom: '15px' }}></div>
+                        <h2 style={{ fontSize: '24px', fontWeight: 900, textTransform: 'uppercase', color: '#ffffff', lineHeight: 1.1, letterSpacing: '-0.5px' }}>
+                            Je proefpakket <span style={{ color: '#84cc16' }}>bestaat uit:</span>
                         </h2>
                     </div>
 
-                    {/* ALL12 Card */}
-                    <div style={{ background: 'rgba(255,255,255,0.02)', borderRadius: '40px', border: '1px solid rgba(255,255,255,0.05)', marginBottom: '40px', overflow: 'hidden', display: 'flex', alignItems: 'center' }}>
-                        <div style={{ padding: '50px 40px', flex: 1.2 }}>
-                            <div style={{ display: 'inline-block', backgroundColor: '#84cc16', color: '#011410', fontSize: '10px', fontWeight: 900, padding: '5px 14px', borderRadius: '4px', textTransform: 'uppercase', marginBottom: '25px', letterSpacing: '1.5px' }}>
+                    {/* ALL12 Card - Compact */}
+                    <div style={{ background: 'rgba(255,255,255,0.02)', borderRadius: '24px', border: '1px solid rgba(255,255,255,0.05)', marginBottom: '16px', overflow: 'hidden', display: 'flex', alignItems: 'center' }}>
+                        <div style={{ padding: '30px 30px', flex: 1.5 }}>
+                            <div style={{ display: 'inline-block', color: '#84cc16', fontSize: '10px', fontWeight: 900, textTransform: 'uppercase', marginBottom: '10px', letterSpacing: '1px' }}>
                                 Kern Systeem
                             </div>
-                            <div style={{ fontSize: '44px', fontWeight: 900, marginBottom: '15px', textTransform: 'uppercase', letterSpacing: '-1px' }}>ALL12</div>
-                            <div style={{ color: 'rgba(255,255,255,0.6)', fontSize: '16px', lineHeight: '1.7', marginBottom: '30px' }}>De ultieme biostimulant die het transport van alle 12 essentiële nutriënten naar de wortel optimaliseert voor maximale groei.</div>
+                            <div style={{ fontSize: '28px', fontWeight: 900, marginBottom: '8px', textTransform: 'uppercase' }}>ALL12</div>
+                            <div style={{ color: 'rgba(255,255,255,0.5)', fontSize: '14px', lineHeight: '1.5' }}>Optimaliseert het transport van alle 12 essentiële nutriënten naar de wortel voor maximale groei.</div>
                         </div>
-                        <div style={{ flex: 1, position: 'relative', display: 'flex', alignItems: 'center', justifyContent: 'center', paddingRight: '40px' }}>
-                            <img src="https://plantipower.com/images/products/plantipower-all12-transparant.png" alt="ALL12" style={{ width: '100%', height: 'auto', objectFit: 'contain', filter: 'drop-shadow(0 20px 40px rgba(0,0,0,0.5))' }} />
+                        <div style={{ flex: 1, paddingRight: '20px', display: 'flex', justifyContent: 'center' }}>
+                            <img src="https://plantipower.com/images/products/plantipower-all12-transparant.png" alt="ALL12" style={{ width: '100px', height: 'auto', filter: 'drop-shadow(0 10px 20px rgba(0,0,0,0.4))' }} />
                         </div>
                     </div>
 
-                    {/* SHIELD Card */}
-                    <div style={{ background: 'rgba(255,255,255,0.02)', borderRadius: '40px', border: '1px solid rgba(255,255,255,0.05)', marginBottom: '40px', overflow: 'hidden', display: 'flex', alignItems: 'center' }}>
-                        <div style={{ padding: '50px 40px', flex: 1.2 }}>
-                            <div style={{ display: 'inline-block', backgroundColor: '#38bdf8', color: '#011410', fontSize: '10px', fontWeight: 900, padding: '5px 14px', borderRadius: '4px', textTransform: 'uppercase', marginBottom: '25px', letterSpacing: '1.5px' }}>
+                    {/* SHIELD Card - Compact */}
+                    <div style={{ background: 'rgba(255,255,255,0.02)', borderRadius: '24px', border: '1px solid rgba(255,255,255,0.05)', marginBottom: '16px', overflow: 'hidden', display: 'flex', alignItems: 'center' }}>
+                        <div style={{ padding: '30px 30px', flex: 1.5 }}>
+                            <div style={{ display: 'inline-block', color: '#38bdf8', fontSize: '10px', fontWeight: 900, textTransform: 'uppercase', marginBottom: '10px', letterSpacing: '1px' }}>
                                 Weerbaarheid
                             </div>
-                            <div style={{ fontSize: '44px', fontWeight: 900, marginBottom: '15px', textTransform: 'uppercase', letterSpacing: '-1px' }}>SHIELD</div>
-                            <div style={{ color: 'rgba(255,255,255,0.6)', fontSize: '16px', lineHeight: '1.7', marginBottom: '30px' }}>Hoogwaardige bladvoeding die de natuurlijke weerbaarheid van het gewas versterkt tegen stress en invloeden van buitenaf.</div>
+                            <div style={{ fontSize: '28px', fontWeight: 900, marginBottom: '8px', textTransform: 'uppercase' }}>SHIELD</div>
+                            <div style={{ color: 'rgba(255,255,255,0.5)', fontSize: '14px', lineHeight: '1.5' }}>Versterkt de natuurlijke weerbaarheid van het gewas tegen stress en invloeden van buitenaf.</div>
                         </div>
-                        <div style={{ flex: 1, position: 'relative', display: 'flex', alignItems: 'center', justifyContent: 'center', paddingRight: '40px' }}>
-                            <img src="https://plantipower.com/images/products/plantipower-shield-transparant.png" alt="SHIELD" style={{ width: '100%', height: 'auto', objectFit: 'contain', filter: 'drop-shadow(0 20px 40px rgba(0,0,0,0.5))' }} />
+                        <div style={{ flex: 1, paddingRight: '20px', display: 'flex', justifyContent: 'center' }}>
+                            <img src="https://plantipower.com/images/products/plantipower-shield-transparant.png" alt="SHIELD" style={{ width: '100px', height: 'auto', filter: 'drop-shadow(0 10px 20px rgba(0,0,0,0.4))' }} />
                         </div>
                     </div>
                 </div>
