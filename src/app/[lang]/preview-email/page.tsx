@@ -43,7 +43,7 @@ export default function PreviewEmailPage() {
                     </div>
                 </div>
 
-                {/* Main Message - FULL VERSION */}
+                {/* Main Message */}
                 <div style={{ padding: '40px 40px 10px 40px' }}>
                     <div style={{ color: 'rgba(255,255,255,0.7)', fontSize: '16px', lineHeight: '1.8', marginBottom: '10px', fontWeight: 300 }}>Beste teler,</div>
                     <div style={{ color: 'rgba(255,255,255,0.7)', fontSize: '16px', lineHeight: '1.8', marginBottom: '20px', fontWeight: 300 }}>
@@ -59,34 +59,60 @@ export default function PreviewEmailPage() {
                     </div>
                 </div>
 
-                {/* Product Section - FULL DESCRIPTIONS */}
+                {/* Product Section - SIDE-BY-SIDE GRID */}
                 <div style={{ backgroundColor: '#011410', padding: '40px 40px' }}>
-                    <div style={{ marginBottom: '25px' }}>
+                    <div style={{ marginBottom: '30px' }}>
                         <h2 style={{ fontSize: '20px', fontWeight: 900, textTransform: 'uppercase', color: '#ffffff', letterSpacing: '-0.5px' }}>
                             Je proefpakket <span style={{ color: '#84cc16' }}>bestaat uit:</span>
                         </h2>
                     </div>
 
-                    <div style={{ background: 'rgba(255,255,255,0.02)', borderRadius: '24px', border: '1px solid rgba(132, 204, 22, 0.2)', marginBottom: '15px', padding: '25px', display: 'flex', alignItems: 'center', gap: '30px' }}>
-                        <div style={{ flex: 1 }}>
+                    <div style={{
+                        display: 'grid',
+                        gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))',
+                        gap: '20px'
+                    }}>
+                        {/* ALL12 CARD */}
+                        <div style={{
+                            background: 'linear-gradient(135deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.01) 100%)',
+                            borderRadius: '32px',
+                            border: '1px solid rgba(132, 204, 22, 0.2)',
+                            padding: '30px',
+                            textAlign: 'center',
+                            display: 'flex',
+                            flexDirection: 'column',
+                            alignItems: 'center'
+                        }}>
                             <div style={{ color: '#ffffff', fontSize: '10px', fontWeight: 900, textTransform: 'uppercase', marginBottom: '0px', letterSpacing: '1px', lineHeight: '1' }}>PlantiPower</div>
-                            <div style={{ fontSize: '30px', fontWeight: 900, marginBottom: '6px', color: '#84cc16', letterSpacing: '-1.5px', lineHeight: '1' }}>ALL12</div>
-                            <div style={{ color: 'rgba(255,255,255,0.5)', fontSize: '14px', lineHeight: '1.5', marginTop: '10px' }}>
-                                Optimaliseert de nutriëntenstroom en verbetert de opnamecapaciteit van het gewas voor maximale groei.
-                            </div>
-                        </div>
-                        <img src="https://plantipower.com/images/products/plantipower-all12-transparant.png" alt="ALL12" style={{ width: '70px', height: 'auto' }} />
-                    </div>
+                            <div style={{ fontSize: '32px', fontWeight: 900, marginBottom: '20px', color: '#84cc16', letterSpacing: '-1.5px', lineHeight: '1' }}>ALL12</div>
 
-                    <div style={{ background: 'rgba(255,255,255,0.02)', borderRadius: '24px', border: '1px solid rgba(56, 189, 248, 0.2)', padding: '25px', display: 'flex', alignItems: 'center', gap: '30px' }}>
-                        <div style={{ flex: 1 }}>
-                            <div style={{ color: '#ffffff', fontSize: '10px', fontWeight: 900, textTransform: 'uppercase', marginBottom: '0px', letterSpacing: '1px', lineHeight: '1' }}>PlantiPower</div>
-                            <div style={{ fontSize: '30px', fontWeight: 900, marginBottom: '6px', color: '#38bdf8', letterSpacing: '-1.5px', lineHeight: '1' }}>SHIELD</div>
-                            <div style={{ color: 'rgba(255,255,255,0.5)', fontSize: '14px', lineHeight: '1.5', marginTop: '10px' }}>
-                                Versterkt de natuurlijke weerbaarheid van de plant tegen abiotische stressfactoren en optimaliseert de celstructuur.
+                            <img src="https://plantipower.com/images/products/plantipower-all12-transparant.png" alt="ALL12" style={{ width: '100px', height: 'auto', margin: '10px 0 25px 0' }} />
+
+                            <div style={{ color: 'rgba(255,255,255,0.5)', fontSize: '13px', lineHeight: '1.6', fontWeight: 400 }}>
+                                Optimaliseert nutriëntenstroom en verbetert opnamecapaciteit voor maximale groei.
                             </div>
                         </div>
-                        <img src="https://plantipower.com/images/products/plantipower-shield-transparant.png" alt="SHIELD" style={{ width: '70px', height: 'auto' }} />
+
+                        {/* SHIELD CARD */}
+                        <div style={{
+                            background: 'linear-gradient(135deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.01) 100%)',
+                            borderRadius: '32px',
+                            border: '1px solid rgba(56, 189, 248, 0.2)',
+                            padding: '30px',
+                            textAlign: 'center',
+                            display: 'flex',
+                            flexDirection: 'column',
+                            alignItems: 'center'
+                        }}>
+                            <div style={{ color: '#ffffff', fontSize: '10px', fontWeight: 900, textTransform: 'uppercase', marginBottom: '0px', letterSpacing: '1px', lineHeight: '1' }}>PlantiPower</div>
+                            <div style={{ fontSize: '32px', fontWeight: 900, marginBottom: '20px', color: '#38bdf8', letterSpacing: '-1.5px', lineHeight: '1' }}>SHIELD</div>
+
+                            <img src="https://plantipower.com/images/products/plantipower-shield-transparant.png" alt="SHIELD" style={{ width: '100px', height: 'auto', margin: '10px 0 25px 0' }} />
+
+                            <div style={{ color: 'rgba(255,255,255,0.5)', fontSize: '13px', lineHeight: '1.6', fontWeight: 400 }}>
+                                Versterkt natuurlijke weerbaarheid en optimaliseert de celstructuur van de plant.
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -109,7 +135,7 @@ export default function PreviewEmailPage() {
                     </div>
                 </div>
 
-                {/* PERFECT CONTINUOUS TRACKER */}
+                {/* TRACKER */}
                 <div style={{ backgroundColor: '#011d17', padding: '60px 40px', borderTop: '1px solid rgba(255,255,255,0.05)' }}>
                     <div style={{ textAlign: 'center', marginBottom: '45px' }}>
                         <h3 style={{ fontSize: '11px', fontWeight: 900, textTransform: 'uppercase', letterSpacing: '3px', color: '#84cc16', marginBottom: '10px' }}>PACKAGE JOURNEY</h3>
@@ -117,42 +143,34 @@ export default function PreviewEmailPage() {
                     </div>
 
                     <div style={{ position: 'relative', height: '80px', margin: '0 40px' }}>
-                        {/* Static Line: Perfectly centered and continuous */}
                         <div style={{ position: 'absolute', top: '16px', left: '0', right: '0', height: '2px', backgroundColor: 'rgba(255,255,255,0.08)', zIndex: 1 }}></div>
-
-                        {/* Progress Line: Flows to step 2 (25% of total width) */}
                         <div style={{ position: 'absolute', top: '16px', left: '0', width: '25%', height: '2px', backgroundColor: '#84cc16', zIndex: 2 }}></div>
 
                         <div style={{ display: 'flex', justifyContent: 'space-between', position: 'relative', zIndex: 10 }}>
-                            {/* Step 1 */}
                             <div style={{ textAlign: 'center', width: '32px', marginLeft: '-16px' }}>
                                 <div style={{ width: '32px', height: '32px', borderRadius: '16px', backgroundColor: '#84cc16', display: 'flex', alignItems: 'center', justifyContent: 'center', border: '5px solid #011d17' }}>
                                     <svg viewBox="0 0 24 24" width="14" height="14" stroke="#011410" strokeWidth="4" fill="none"><polyline points="20 6 9 17 4 12"></polyline></svg>
                                 </div>
                                 <div style={{ fontSize: '8px', fontWeight: 900, textTransform: 'uppercase', color: '#84cc16', marginTop: '12px' }}>Ontvangen</div>
                             </div>
-                            {/* Step 2 */}
                             <div style={{ textAlign: 'center', width: '32px' }}>
                                 <div style={{ width: '32px', height: '32px', borderRadius: '16px', backgroundColor: '#84cc16', display: 'flex', alignItems: 'center', justifyContent: 'center', border: '5px solid #011d17', boxShadow: '0 0 20px rgba(132, 204, 22, 0.4)' }}>
                                     <div style={{ width: '8px', height: '8px', borderRadius: '4px', backgroundColor: '#011410' }}></div>
                                 </div>
                                 <div style={{ fontSize: '8px', fontWeight: 900, textTransform: 'uppercase', color: '#ffffff', marginTop: '12px' }}>Klaarmaken</div>
                             </div>
-                            {/* Step 3 */}
                             <div style={{ textAlign: 'center', width: '32px' }}>
                                 <div style={{ width: '32px', height: '32px', borderRadius: '16px', backgroundColor: '#011d17', display: 'flex', alignItems: 'center', justifyContent: 'center', border: '1px solid rgba(255,255,255,0.1)' }}>
                                     <div style={{ width: '4px', height: '4px', borderRadius: '2px', backgroundColor: 'rgba(255,255,255,0.2)' }}></div>
                                 </div>
                                 <div style={{ fontSize: '8px', fontWeight: 900, textTransform: 'uppercase', color: 'rgba(255,255,255,0.2)', marginTop: '12px' }}>Ingepakt</div>
                             </div>
-                            {/* Step 4 */}
                             <div style={{ textAlign: 'center', width: '32px' }}>
                                 <div style={{ width: '32px', height: '32px', borderRadius: '16px', backgroundColor: '#011d17', display: 'flex', alignItems: 'center', justifyContent: 'center', border: '1px solid rgba(255,255,255,0.1)' }}>
                                     <div style={{ width: '4px', height: '4px', borderRadius: '2px', backgroundColor: 'rgba(255,255,255,0.2)' }}></div>
                                 </div>
                                 <div style={{ fontSize: '8px', fontWeight: 900, textTransform: 'uppercase', color: 'rgba(255,255,255,0.2)', marginTop: '12px' }}>Onderweg</div>
                             </div>
-                            {/* Step 5 */}
                             <div style={{ textAlign: 'center', width: '32px', marginRight: '-16px' }}>
                                 <div style={{ width: '32px', height: '32px', borderRadius: '16px', backgroundColor: '#011d17', display: 'flex', alignItems: 'center', justifyContent: 'center', border: '1px solid rgba(255,255,255,0.1)' }}>
                                     <div style={{ width: '4px', height: '4px', borderRadius: '2px', backgroundColor: 'rgba(255,255,255,0.2)' }}></div>
