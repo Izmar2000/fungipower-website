@@ -69,9 +69,9 @@ export default function PreviewEmailPage() {
 
                     <div style={{ background: 'rgba(255,255,255,0.02)', borderRadius: '24px', border: '1px solid rgba(132, 204, 22, 0.2)', marginBottom: '15px', padding: '25px', display: 'flex', alignItems: 'center', gap: '30px' }}>
                         <div style={{ flex: 1 }}>
-                            <div style={{ color: '#ffffff', fontSize: '10px', fontWeight: 900, textTransform: 'uppercase', marginBottom: '6px', letterSpacing: '1px' }}>PlantiPower</div>
-                            <div style={{ fontSize: '30px', fontWeight: 900, marginBottom: '6px', color: '#84cc16', letterSpacing: '-1px' }}>ALL12</div>
-                            <div style={{ color: 'rgba(255,255,255,0.5)', fontSize: '14px', lineHeight: '1.5' }}>
+                            <div style={{ color: '#ffffff', fontSize: '10px', fontWeight: 900, textTransform: 'uppercase', marginBottom: '0px', letterSpacing: '1px', lineHeight: '1' }}>PlantiPower</div>
+                            <div style={{ fontSize: '30px', fontWeight: 900, marginBottom: '6px', color: '#84cc16', letterSpacing: '-1.5px', lineHeight: '1' }}>ALL12</div>
+                            <div style={{ color: 'rgba(255,255,255,0.5)', fontSize: '14px', lineHeight: '1.5', marginTop: '10px' }}>
                                 Optimaliseert de nutriëntenstroom en verbetert de opnamecapaciteit van het gewas voor maximale groei.
                             </div>
                         </div>
@@ -80,9 +80,9 @@ export default function PreviewEmailPage() {
 
                     <div style={{ background: 'rgba(255,255,255,0.02)', borderRadius: '24px', border: '1px solid rgba(56, 189, 248, 0.2)', padding: '25px', display: 'flex', alignItems: 'center', gap: '30px' }}>
                         <div style={{ flex: 1 }}>
-                            <div style={{ color: '#ffffff', fontSize: '10px', fontWeight: 900, textTransform: 'uppercase', marginBottom: '6px', letterSpacing: '1px' }}>PlantiPower</div>
-                            <div style={{ fontSize: '30px', fontWeight: 900, marginBottom: '6px', color: '#38bdf8', letterSpacing: '-1px' }}>SHIELD</div>
-                            <div style={{ color: 'rgba(255,255,255,0.5)', fontSize: '14px', lineHeight: '1.5' }}>
+                            <div style={{ color: '#ffffff', fontSize: '10px', fontWeight: 900, textTransform: 'uppercase', marginBottom: '0px', letterSpacing: '1px', lineHeight: '1' }}>PlantiPower</div>
+                            <div style={{ fontSize: '30px', fontWeight: 900, marginBottom: '6px', color: '#38bdf8', letterSpacing: '-1.5px', lineHeight: '1' }}>SHIELD</div>
+                            <div style={{ color: 'rgba(255,255,255,0.5)', fontSize: '14px', lineHeight: '1.5', marginTop: '10px' }}>
                                 Versterkt de natuurlijke weerbaarheid van de plant tegen abiotische stressfactoren en optimaliseert de celstructuur.
                             </div>
                         </div>
@@ -126,14 +126,14 @@ export default function PreviewEmailPage() {
                         <div style={{ display: 'flex', justifyContent: 'space-between', position: 'relative', zIndex: 10 }}>
                             {/* Step 1 */}
                             <div style={{ textAlign: 'center', width: '32px', marginLeft: '-16px' }}>
-                                <div style={{ width: '32px', height: '32px', borderRadius: '16px', backgroundColor: '#84cc16', display: 'flex', alignItems: 'center', justifyContent: 'center', border: '4px solid #011d17' }}>
+                                <div style={{ width: '32px', height: '32px', borderRadius: '16px', backgroundColor: '#84cc16', display: 'flex', alignItems: 'center', justifyContent: 'center', border: '5px solid #011d17' }}>
                                     <svg viewBox="0 0 24 24" width="14" height="14" stroke="#011410" strokeWidth="4" fill="none"><polyline points="20 6 9 17 4 12"></polyline></svg>
                                 </div>
                                 <div style={{ fontSize: '8px', fontWeight: 900, textTransform: 'uppercase', color: '#84cc16', marginTop: '12px' }}>Ontvangen</div>
                             </div>
                             {/* Step 2 */}
                             <div style={{ textAlign: 'center', width: '32px' }}>
-                                <div style={{ width: '32px', height: '32px', borderRadius: '16px', backgroundColor: '#84cc16', display: 'flex', alignItems: 'center', justifyContent: 'center', border: '4px solid #011d17', boxShadow: '0 0 20px rgba(132, 204, 22, 0.4)' }}>
+                                <div style={{ width: '32px', height: '32px', borderRadius: '16px', backgroundColor: '#84cc16', display: 'flex', alignItems: 'center', justifyContent: 'center', border: '5px solid #011d17', boxShadow: '0 0 20px rgba(132, 204, 22, 0.4)' }}>
                                     <div style={{ width: '8px', height: '8px', borderRadius: '4px', backgroundColor: '#011410' }}></div>
                                 </div>
                                 <div style={{ fontSize: '8px', fontWeight: 900, textTransform: 'uppercase', color: '#ffffff', marginTop: '12px' }}>Klaarmaken</div>

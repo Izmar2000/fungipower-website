@@ -55,7 +55,7 @@ export async function POST(request: Request) {
                 <div style="${emailStyles.greeting}">Beste teler,</div>
                 <div style="${emailStyles.bodyText}">
                   Goed dat je ervoor kiest om PlantiPower zelf te ervaren.<br /><br />
-                  Wij vinden dat een samenwerking begint bij resultaat. Eerst zien wat het doet in jouw teelt. Geen verkooppraat, maar meetbaar verschil in wortelontwikkeling, opname en gewasreactie.<br /><br />
+                  Wij vinden dat een samenwerking begint bij resultaat. Eert zien wat het doet in jouw teelt. Geen verkooppraat, maar meetbaar verschil in wortelontwikkeling, opname en gewasreactie.<br /><br />
                   We zijn benieuwd naar de resultaten in jouw gewas.
                 </div>
                 
@@ -73,13 +73,13 @@ export async function POST(request: Request) {
                   <table width="100%" cellpadding="0" cellspacing="0">
                     <tr>
                       <td>
-                        <div style="color:#ffffff; font-size:10px; font-weight:900; margin-bottom:4px; text-transform:uppercase;">PlantiPower</div>
-                        <div style="font-size:26px; font-weight:900; margin-bottom:4px; color: #84cc16;">ALL12</div>
-                        <div style="color:rgba(255,255,255,0.5); font-size:13px; line-height:1.4;">
+                        <div style="color:#ffffff; font-size:10px; font-weight:900; margin-bottom:0px; text-transform:uppercase; line-height: 1;">PlantiPower</div>
+                        <div style="font-size:26px; font-weight:900; margin-bottom:4px; color: #84cc16; line-height: 1;">ALL12</div>
+                        <div style="color:rgba(255,255,255,0.5); font-size:13px; line-height:1.4; margin-top: 8px;">
                             Optimaliseert de nutriëntenstroom en verbetert de opnamecapaciteit van het gewas voor maximale groei.
                         </div>
                       </td>
-                      <td width="70" align="right">
+                      <td width="70" align="right" valign="top">
                         <img src="https://plantipower.com/images/products/plantipower-all12-transparant.png" style="width: 60px; height: auto;" />
                       </td>
                     </tr>
@@ -91,13 +91,13 @@ export async function POST(request: Request) {
                   <table width="100%" cellpadding="0" cellspacing="0">
                     <tr>
                       <td>
-                        <div style="color:#ffffff; font-size:10px; font-weight:900; margin-bottom:4px; text-transform:uppercase;">PlantiPower</div>
-                        <div style="font-size:26px; font-weight:900; margin-bottom:4px; color: #38bdf8;">SHIELD</div>
-                        <div style="color:rgba(255,255,255,0.5); font-size:13px; line-height:1.4;">
+                        <div style="color:#ffffff; font-size:10px; font-weight:900; margin-bottom:0px; text-transform:uppercase; line-height: 1;">PlantiPower</div>
+                        <div style="font-size:26px; font-weight:900; margin-bottom:4px; color: #38bdf8; line-height: 1;">SHIELD</div>
+                        <div style="color:rgba(255,255,255,0.5); font-size:13px; line-height:1.4; margin-top: 8px;">
                             Versterkt de natuurlijke weerbaarheid van de plant tegen abiotische stressfactoren en optimaliseert de celstructuur.
                         </div>
                       </td>
-                      <td width="70" align="right">
+                      <td width="70" align="right" valign="top">
                         <img src="https://plantipower.com/images/products/plantipower-shield-transparant.png" style="width: 60px; height: auto;" />
                       </td>
                     </tr>
