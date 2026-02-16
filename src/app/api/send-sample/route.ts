@@ -39,27 +39,54 @@ export async function POST(request: Request) {
     if (!apiKey) return NextResponse.json({ error: 'API_KEY missing' }, { status: 500 });
     const resend = new Resend(apiKey);
 
-    // 1. HQ Notification
+    // 1. Premium HQ Notification
     await resend.emails.send({
       from: 'PlantiPower HQ <info@mail.plantipower.com>',
       to: 'info@plantipower.com',
       replyTo: email,
       subject: `PROEFPAKKET AANVRAAG: ${company}`,
       html: `
-        <div style="font-family: sans-serif; padding: 20px;">
-          <h2>Nieuwe proefpakket aanvraag</h2>
-          <table style="width: 100%; border-collapse: collapse;">
-            <tr><td style="padding: 8px; border-bottom: 1px solid #eee;"><strong>Naam:</strong></td><td style="padding: 8px; border-bottom: 1px solid #eee;">${name}</td></tr>
-            <tr><td style="padding: 8px; border-bottom: 1px solid #eee;"><strong>Bedrijf:</strong></td><td style="padding: 8px; border-bottom: 1px solid #eee;">${company}</td></tr>
-            <tr><td style="padding: 8px; border-bottom: 1px solid #eee;"><strong>E-mail:</strong></td><td style="padding: 8px; border-bottom: 1px solid #eee;">${email}</td></tr>
-            <tr><td style="padding: 8px; border-bottom: 1px solid #eee;"><strong>Telefoon:</strong></td><td style="padding: 8px; border-bottom: 1px solid #eee;">${phone}</td></tr>
-            <tr><td style="padding: 8px; border-bottom: 1px solid #eee;"><strong>Adres:</strong></td><td style="padding: 8px; border-bottom: 1px solid #eee;">${address}</td></tr>
-            <tr><td style="padding: 8px; border-bottom: 1px solid #eee;"><strong>Stad:</strong></td><td style="padding: 8px; border-bottom: 1px solid #eee;">${city}</td></tr>
-            <tr><td style="padding: 8px; border-bottom: 1px solid #eee;"><strong>Teelt:</strong></td><td style="padding: 8px; border-bottom: 1px solid #eee;">${crop}</td></tr>
-          </table>
-          <div style="margin-top: 20px; padding: 15px; background: #f9f9f9; border-radius: 8px;">
-            <strong>Opmerkingen:</strong><br/>
-            ${comments || 'Geen opmerkingen'}
+        <div style="background-color: #011410; color: #ffffff; font-family: sans-serif; max-width: 600px; margin: 0 auto; padding: 40px; border-radius: 40px; border: 1px solid rgba(255,255,255,0.05);">
+          <div style="text-align: center; margin-bottom: 40px;">
+            <img src="https://irp.cdn-website.com/480e14da/dms3rep/multi/Planti-Power-Logo-.png" alt="PlantiPower" style="height: 40px;" />
+          </div>
+          
+          <div style="text-align: center; margin-bottom: 40px;">
+             <div style="color: #84cc16; font-size: 24px; font-weight: 800; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 10px;">Nieuwe Aanvraag</div>
+             <div style="color: rgba(255,255,255,0.6); font-size: 14px;">Er is een nieuw proefpakket aangevraagd via de website.</div>
+          </div>
+          
+          <div style="background: rgba(13, 43, 36, 0.5); padding: 30px; border-radius: 24px; border: 1px solid rgba(132, 204, 22, 0.2);">
+            <div style="display: grid; gap: 20px;">
+              <div>
+                <div style="color: #84cc16; font-size: 10px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 4px;">Contactpersoon</div>
+                <div style="color: #ffffff; font-size: 16px; font-weight: 600;">${name}</div>
+              </div>
+              <div style="margin-top: 15px;">
+                <div style="color: #84cc16; font-size: 10px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 4px;">Bedrijf</div>
+                <div style="color: #ffffff; font-size: 16px; font-weight: 600;">${company}</div>
+              </div>
+              <div style="margin-top: 15px;">
+                <div style="color: #84cc16; font-size: 10px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 4px;">E-mail & Telefoon</div>
+                <div style="color: #ffffff; font-size: 16px; font-weight: 600;">${email} <br/> ${phone}</div>
+              </div>
+              <div style="margin-top: 15px;">
+                <div style="color: #84cc16; font-size: 10px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 4px;">Locatie</div>
+                <div style="color: #ffffff; font-size: 16px; font-weight: 600;">${address}, ${city}</div>
+              </div>
+              <div style="margin-top: 15px;">
+                <div style="color: #84cc16; font-size: 10px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 4px;">Gewas / Teelt</div>
+                <div style="color: #ffffff; font-size: 16px; font-weight: 600; color: #84cc16;">${crop}</div>
+              </div>
+              <div style="margin-top: 15px; padding-top: 15px; border-top: 1px solid rgba(255,255,255,0.05);">
+                <div style="color: #84cc16; font-size: 10px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 4px;">Opmerkingen</div>
+                <div style="color: rgba(255,255,255,0.7); font-size: 14px; line-height: 1.6;">${comments || 'Geen opmerkingen opgegeven.'}</div>
+              </div>
+            </div>
+          </div>
+          
+          <div style="margin-top: 40px; text-align: center; color: rgba(255,255,255,0.3); font-size: 11px; text-transform: uppercase; letter-spacing: 1px;">
+            PlantiPower HQ Portal
           </div>
         </div>
       `
