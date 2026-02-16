@@ -33,7 +33,7 @@ const cropImages: Record<string, string> = {
 export async function POST(request: Request) {
   try {
     const { name, company, email, phone, address, city, crop, comments } = await request.json();
-    const headerImage = cropImages[crop] || cropImages.default;
+    const headerImage = 'https://images.unsplash.com/photo-1449300079323-02e209d9d02d?auto=format&fit=crop&q=80&w=800';
 
     const apiKey = process.env.RESEND_API_KEY;
     if (!apiKey) return NextResponse.json({ error: 'API_KEY missing' }, { status: 500 });
@@ -106,18 +106,16 @@ export async function POST(request: Request) {
           <body style="margin: 0; padding: 0; background-color: #000;">
             <div style="${emailStyles.container}">
               
-              <!-- Top Bar -->
-              <div style="${emailStyles.topBar}">
-                Mail 1 van 3 | Welkom bij PlantiPower
-              </div>
-
-              <!-- Hero Section -->
-              <div style="${emailStyles.heroSection}">
-                <div style="${emailStyles.logoSquare}">
+              <!-- Hero Section - FIXED VISIBILITY -->
+              <div style="position: relative; width: 100%; height: 480px; background-color: #011410; overflow: hidden;">
+                <img src="${headerImage}" style="width: 100%; height: 100%; object-fit: cover;" />
+                <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(1,20,16,0) 0%, rgba(1,20,16,1) 100%); z-index: 1;"></div>
+                
+                <div style="position: absolute; top: 0; left: 40px; background-color: #012b24; padding: 15px 15px 25px 15px; width: 80px; z-index: 10; border-radius: 0 0 12px 12px;">
                   <img src="https://irp.cdn-website.com/480e14da/dms3rep/multi/Planti-Power-Logo-.png" style="width: 100%;" />
                 </div>
-                <img src="https://images.unsplash.com/photo-1449300079323-02e209d9d02d?auto=format&fit=crop&q=80&w=800" style="width: 100%; height: 100%; object-fit: cover;" />
-                <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(0deg, #011410 0%, transparent 100%); padding: 40px;">
+
+                <div style="position: absolute; bottom: 40px; left: 40px; right: 40px; z-index: 10;">
                   <div style="${emailStyles.tag}">Product Update</div>
                   <div style="${emailStyles.heroTitle}">Wij gaan je<br/>proefpakket <span style="${emailStyles.heroAccent}">klaarmaken.</span></div>
                 </div>
@@ -132,12 +130,11 @@ export async function POST(request: Request) {
 
               <!-- Content Area -->
               <div style="${emailStyles.bodyArea}">
-                <div style="${emailStyles.greeting}">Beste partner in groei,</div>
+                <div style="${emailStyles.greeting}">Beste teler,</div>
                 
                 <div style="${emailStyles.bodyText}">
                   Goed dat je ervoor kiest om PlantiPower zelf te ervaren.<br/><br/>
-                  Wij vinden dat een samenwerking begint bij resultaat. Eerst zien wat het doet in jouw teelt, onder jouw omstandigheden. Geen verkooppraat, maar meetbaar verschil in wortelontwikkeling, opname en gewasreactie binnen de sierteelt.<br/><br/>
-                  Wij veranderen niets aan jouw vakmanschap, wij geven je enkel de tools om het nog beter te laten renderen.
+                  Wij vinden dat een samenwerking begint bij resultaat. Eerst zien wat het doet in jouw teelt, onder jouw omstandigheden. Geen verkooppraat, maar meetbaar verschil in wortelontwikkeling, opname en gewasreactie binnen de sierteelt.
                 </div>
 
                 <!-- Signature -->
@@ -178,10 +175,27 @@ export async function POST(request: Request) {
                   </div>
                 </div>
 
-                <span style="${emailStyles.sectionTitle}">Pakket Status</span>
-                <div style="background:#84cc16; padding:30px; border-radius:24px; text-align:center;">
+                <span style="${emailStyles.sectionTitle}">Ervaringen</span>
+                <div style="display: grid; gap: 15px;">
+                    <div style="${emailStyles.reviewCard}">
+                        <div style="color: rgba(255,255,255,0.7); font-size: 14px; font-style: italic; margin-bottom: 10px;">"Egalere wortels en betere opname."</div>
+                        <div style="font-size: 12px; font-weight: 700;">Sierteelt Kweker</div>
+                    </div>
+                    <div style="${emailStyles.reviewCard}">
+                        <div style="color: rgba(255,255,255,0.7); font-size: 14px; font-style: italic; margin-bottom: 10px;">"Absoluut minder gewasstress."</div>
+                        <div style="font-size: 12px; font-weight: 700;">Glasgroente Specialist</div>
+                    </div>
+                </div>
+
+                <div style="background:#84cc16; padding:30px; border-radius:24px; text-align:center; margin-top: 40px; margin-bottom: 30px;">
                   <div style="color:#011410; font-weight:900; text-transform:uppercase; font-size:13px; letter-spacing:1px;">In voorbereiding</div>
                   <div style="color:#011410; font-size:15px; margin-top:5px;">Je proefpakket (€29,95) wordt binnen 1-2 werkdagen geleverd.</div>
+                </div>
+
+                <div style="padding: 20px; border: 1px dashed rgba(255,255,255,0.1); border-radius: 20px; text-align: center;">
+                  <div style="color: rgba(255,255,255,0.5); font-size: 14px; line-height: 1.6;">
+                    In de volgende update vertellen we meer over ons bedrijf en wie de kweker was die ons inspireerde.
+                  </div>
                 </div>
 
               </div>
