@@ -28,7 +28,7 @@ export default function PreviewEmailPage() {
                         <img src="https://irp.cdn-website.com/480e14da/dms3rep/multi/Planti-Power-Logo-.png" alt="PlantiPower" style={{ width: '100%' }} />
                     </div>
 
-                    {/* New Status Badge - TOP RIGHT */}
+                    {/* Status Badge */}
                     <div style={{ position: 'absolute', top: '30px', right: '40px', zIndex: 10, textAlign: 'right' }}>
                         <div style={{ fontSize: '10px', fontWeight: 900, color: '#84cc16', textTransform: 'uppercase', letterSpacing: '2px', opacity: 0.8 }}>Phase 01</div>
                         <div style={{ fontSize: '13px', fontWeight: 300, color: '#ffffff', opacity: 0.5 }}>Mail 1 van 3</div>
@@ -42,12 +42,31 @@ export default function PreviewEmailPage() {
                     </div>
                 </div>
 
-                {/* Quote Section */}
-                <div style={{ padding: '30px 40px', display: 'flex', alignItems: 'center', gap: '20px', backgroundColor: '#011410' }}>
-                    <img src="https://plantipower.com/images/email/John.jpeg" alt="John Geenen" style={{ width: '56px', height: '56px', borderRadius: '28px', objectFit: 'cover', border: '1.5px solid #84cc16' }} />
-                    <div style={{ fontSize: '16px', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '-0.3px', lineHeight: 1.2, color: '#ffffff' }}>
-                        "De perfecte oogst begint bij een gezonde bodem."
-                    </div>
+                {/* NEW PREMIUM QUOTE SECTION */}
+                <div style={{ padding: '60px 40px', backgroundColor: '#011410', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>
+                    <table width="100%" cellPadding="0" cellSpacing="0">
+                        <tr>
+                            <td width="120" style={{ verticalAlign: 'top' }}>
+                                <div style={{ position: 'relative', width: '100px', height: '120px' }}>
+                                    <img src="https://plantipower.com/images/email/John.jpeg" alt="John Geenen" style={{ width: '100%', height: '100%', borderRadius: '16px', objectFit: 'cover' }} />
+                                    {/* Subtle decorative dot */}
+                                    <div style={{ position: 'absolute', bottom: '-8px', right: '-8px', width: '20px', height: '20px', backgroundColor: '#84cc16', borderRadius: '10px', border: '4px solid #011410' }}></div>
+                                </div>
+                            </td>
+                            <td style={{ verticalAlign: 'middle', paddingLeft: '30px' }}>
+                                <div style={{ position: 'relative' }}>
+                                    <div style={{ position: 'absolute', top: '-25px', left: '-10px', fontSize: '60px', color: '#84cc16', opacity: 0.15, fontFamily: 'Outfit, serif', fontWeight: 900 }}>"</div>
+                                    <div style={{ fontSize: '18px', fontWeight: 800, textTransform: 'uppercase', lineHeight: '1.3', color: '#ffffff', marginBottom: '12px', letterSpacing: '-0.2px' }}>
+                                        De perfecte oogst begint bij een gezonde bodem.
+                                    </div>
+                                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                                        <div style={{ width: '20px', height: '1px', backgroundColor: '#84cc16' }}></div>
+                                        <div style={{ fontSize: '10px', fontWeight: 900, textTransform: 'uppercase', letterSpacing: '2px', color: '#84cc16' }}>John Geenen — Founder</div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
 
                 {/* Main Message */}
@@ -67,8 +86,8 @@ export default function PreviewEmailPage() {
                 </div>
 
                 {/* Product Section - DUO GRID */}
-                <div style={{ backgroundColor: '#011410', padding: '40px 40px' }}>
-                    <div style={{ marginBottom: '30px' }}>
+                <div style={{ backgroundColor: '#011d17', padding: '60px 40px' }}>
+                    <div style={{ marginBottom: '40px', textAlign: 'center' }}>
                         <h2 style={{ fontSize: '20px', fontWeight: 900, textTransform: 'uppercase', color: '#ffffff', letterSpacing: '-0.5px' }}>
                             Je proefpakket <span style={{ color: '#84cc16' }}>bestaat uit:</span>
                         </h2>
@@ -120,20 +139,20 @@ export default function PreviewEmailPage() {
                 </div>
 
                 {/* Testimonials */}
-                <div style={{ padding: '20px 40px 40px 40px', backgroundColor: '#011410' }}>
-                    <div style={{ marginBottom: '25px' }}>
+                <div style={{ padding: '60px 40px', backgroundColor: '#011410' }}>
+                    <div style={{ marginBottom: '35px', textAlign: 'center' }}>
                         <h2 style={{ fontSize: '20px', fontWeight: 900, textTransform: 'uppercase', color: '#ffffff', letterSpacing: '-0.5px' }}>
                             Ervaring van <span style={{ color: '#84cc16' }}>kwekers:</span>
                         </h2>
                     </div>
-                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '15px' }}>
-                        <div style={{ borderLeft: '2px solid #84cc16', paddingLeft: '15px' }}>
-                            <div style={{ color: 'rgba(255,255,255,0.6)', fontSize: '13px', fontStyle: 'italic', lineHeight: '1.5' }}>"Egalere wortels en betere opname."</div>
-                            <div style={{ fontSize: '11px', fontWeight: 700, marginTop: '5px' }}>Sierteelt Kweker</div>
+                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '30px' }}>
+                        <div style={{ borderLeft: '1px solid rgba(132, 204, 22, 0.3)', paddingLeft: '20px' }}>
+                            <div style={{ color: 'rgba(255,255,255,0.6)', fontSize: '14px', fontStyle: 'italic', lineHeight: '1.6' }}>"Egalere wortels en betere opname."</div>
+                            <div style={{ fontSize: '11px', fontWeight: 900, marginTop: '10px', color: '#84cc16', textTransform: 'uppercase', letterSpacing: '1px' }}>Sierteelt Kweker</div>
                         </div>
-                        <div style={{ borderLeft: '2px solid #38bdf8', paddingLeft: '15px' }}>
-                            <div style={{ color: 'rgba(255,255,255,0.6)', fontSize: '13px', fontStyle: 'italic', lineHeight: '1.5' }}>"Absoluut minder gewasstress."</div>
-                            <div style={{ fontSize: '11px', fontWeight: 700, marginTop: '5px' }}>Glasgroente Specialist</div>
+                        <div style={{ borderLeft: '1px solid rgba(56, 189, 248, 0.3)', paddingLeft: '20px' }}>
+                            <div style={{ color: 'rgba(255,255,255,0.6)', fontSize: '14px', fontStyle: 'italic', lineHeight: '1.6' }}>"Absoluut minder gewasstress."</div>
+                            <div style={{ fontSize: '11px', fontWeight: 900, marginTop: '10px', color: '#38bdf8', textTransform: 'uppercase', letterSpacing: '1px' }}>Glasgroente Specialist</div>
                         </div>
                     </div>
                 </div>
@@ -156,7 +175,6 @@ export default function PreviewEmailPage() {
                                 </div>
                                 <div style={{ fontSize: '8px', fontWeight: 900, textTransform: 'uppercase', color: '#84cc16', marginTop: '12px' }}>Ontvangen</div>
                             </div>
-                            {/* ... rest of tracker steps ... */}
                             <div style={{ textAlign: 'center', width: '32px' }}>
                                 <div style={{ width: '32px', height: '32px', borderRadius: '16px', backgroundColor: '#84cc16', display: 'flex', alignItems: 'center', justifyContent: 'center', border: '5px solid #011d17', boxShadow: '0 0 20px rgba(132, 204, 22, 0.4)' }}>
                                     <div style={{ width: '8px', height: '8px', borderRadius: '4px', backgroundColor: '#011410' }}></div>
@@ -181,6 +199,15 @@ export default function PreviewEmailPage() {
                                 </div>
                                 <div style={{ fontSize: '8px', fontWeight: 900, textTransform: 'uppercase', color: 'rgba(255,255,255,0.2)', marginTop: '12px' }}>Afgeleverd</div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Footer Section */}
+                <div style={{ padding: '0 40px 40px 40px', backgroundColor: '#011410' }}>
+                    <div style={{ padding: '25px', border: '1px dashed rgba(255,255,255,0.1)', borderRadius: '24px', textAlign: 'center' }}>
+                        <div style={{ color: 'rgba(255,255,255,0.5)', fontSize: '14px', lineHeight: '1.6' }}>
+                            In de volgende update van ons vertellen we meer over ons bedrijf en wie de kweker was die ons inspireerde.
                         </div>
                     </div>
                 </div>

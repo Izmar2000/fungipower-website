@@ -6,10 +6,10 @@ const emailStyles = {
   tag: 'display: inline-block; background-color: #84cc16; color: #011410; font-size: 10px; font-weight: 900; padding: 5px 12px; border-radius: 4px; text-transform: uppercase; margin-bottom: 15px; letter-spacing: 2px;',
   heroTitle: 'font-size: 42px; font-weight: 900; line-height: 0.95; margin-bottom: 0; text-transform: uppercase; letter-spacing: -2px;',
   heroAccent: 'color: #84cc16;',
-  profileSection: 'padding: 30px 40px; display: flex; align-items: center; gap: 20px; background-color: #011410;',
-  profilePic: 'width: 56px; height: 56px; border-radius: 28px; object-fit: cover; border: 1.5px solid #84cc16;',
-  quoteBar: 'width: 2px; height: 30px; background-color: #84cc16; opacity: 0.5;',
-  quoteText: 'font-size: 16px; font-weight: 800; text-transform: uppercase; letter-spacing: -0.3px; lineHeight: 1.2; color: #ffffff; flex: 1;',
+  profileSection: 'padding: 60px 40px; background-color: #011410; border-bottom: 1px solid rgba(255,255,255,0.05);',
+  profilePic: 'width: 100px; height: 120px; border-radius: 16px; object-fit: cover;',
+  quoteText: 'font-size: 18px; font-weight: 800; text-transform: uppercase; letter-spacing: -0.2px; line-height: 1.3; color: #ffffff; margin-bottom: 12px;',
+  founderLabel: 'font-size: 10px; font-weight: 900; text-transform: uppercase; letter-spacing: 2px; color: #84cc16;',
   bodyArea: 'padding: 40px 40px; background-color: #011410;',
   greeting: 'font-size: 16px; font-weight: 400; line-height: 1.8; margin-bottom: 10px; color: rgba(255,255,255,0.7);',
   bodyText: 'color: rgba(255,255,255,0.7); font-size: 16px; line-height: 1.8; margin-bottom: 20px;',
@@ -40,7 +40,6 @@ export async function POST(request: Request) {
               <div style="position: relative; width: 100%; height: 480px; background-color: #011410; overflow: hidden;">
                 <img src="${headerImage}" style="width: 100%; height: 100%; object-fit: cover;" />
                 
-                <!-- Status Badge -->
                 <div style="position: absolute; top: 30px; right: 40px; text-align: right;">
                     <div style="font-size: 10px; font-weight: 900; color: #84cc16; text-transform: uppercase; letter-spacing: 2px;">Phase 01</div>
                     <div style="font-size: 13px; font-weight: 300; color: #ffffff; opacity: 0.5;">Mail 1 van 3</div>
@@ -52,10 +51,30 @@ export async function POST(request: Request) {
                 </div>
               </div>
 
+              <!-- PREMIUM FOUNDER SECTION -->
               <div style="${emailStyles.profileSection}">
-                <img src="https://plantipower.com/images/email/John.jpeg" style="${emailStyles.profilePic}" />
-                <div style="${emailStyles.quoteBar}"></div>
-                <div style="${emailStyles.quoteText}">"De perfecte oogst begint bij een gezonde bodem."</div>
+                <table width="100%" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td width="120" valign="top">
+                            <div style="position: relative; width: 100px;">
+                                <img src="https://plantipower.com/images/email/John.jpeg" style="${emailStyles.profilePic}" />
+                                <div style="position: absolute; bottom: -8px; right: -8px; width: 16px; height: 16px; background-color: #84cc16; border-radius: 8px; border: 4px solid #011410;"></div>
+                            </div>
+                        </td>
+                        <td valign="middle" style="padding-left: 30px;">
+                            <div style="font-size: 40px; color: #84cc16; opacity: 0.1; line-height: 1; margin-bottom: -15px; font-family: Georgia, serif;">"</div>
+                            <div style="${emailStyles.quoteText}">De perfecte oogst begint bij een gezonde bodem.</div>
+                            <table cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td width="20" style="border-bottom: 2px solid #84cc16;">&nbsp;</td>
+                                    <td style="padding-left: 10px;">
+                                        <div style="${emailStyles.founderLabel}">John Geenen — Founder</div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
               </div>
 
               <div style="${emailStyles.bodyArea}; padding-bottom: 0;">
