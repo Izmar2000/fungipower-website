@@ -1,8 +1,8 @@
 import React from 'react';
 
 export default function PreviewEmailPage() {
-    // Foto van komkommer aan de plant met gele bloem (overeenkomstig met jouw voorbeeld)
-    const headerImage = 'https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&q=80&w=1200';
+    // De specifieke verse komkommer-teelt foto die je stuurde
+    const headerImage = 'https://images.unsplash.com/photo-1596560548464-f010549b84d7?auto=format&fit=crop&q=80&w=1200';
 
     return (
         <div style={{ backgroundColor: '#000', minHeight: '100vh', padding: '0px' }}>
@@ -19,9 +19,9 @@ export default function PreviewEmailPage() {
                 boxShadow: '0 60px 120px rgba(0,0,0,0.9)'
             }}>
 
-                {/* Hero Section - MET JOUW FOTO */}
+                {/* Hero Section - FRESH CUCUMBER VINE */}
                 <div style={{ position: 'relative', width: '100%', height: '480px', backgroundColor: '#011410' }}>
-                    <img src={headerImage} alt="Cucumber on Vine" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                    <img src={headerImage} alt="Fresh Cucumbers on Vine" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                     <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(1,20,16,0) 0%, rgba(1,20,16,1) 95%)', zIndex: 1 }}></div>
 
                     {/* Logo */}
@@ -62,7 +62,7 @@ export default function PreviewEmailPage() {
                     </div>
                 </div>
 
-                {/* Product Section - UPDATED LABELS & COLORS */}
+                {/* Product Section */}
                 <div style={{ backgroundColor: '#011d17', padding: '40px 40px' }}>
                     <div style={{ marginBottom: '25px' }}>
                         <h2 style={{ fontSize: '20px', fontWeight: 900, textTransform: 'uppercase', color: '#ffffff', letterSpacing: '-0.5px' }}>

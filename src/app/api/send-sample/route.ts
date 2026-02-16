@@ -24,8 +24,8 @@ const emailStyles = {
 export async function POST(request: Request) {
   try {
     const { name, company, email, phone, address, city, crop, comments } = await request.json();
-    // Foto van komkommer aan de plant (zoals gevraagd)
-    const headerImage = 'https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&q=80&w=1200';
+    // De specifieke verse komkommer-teelt foto (hangend aan de plant)
+    const headerImage = 'https://images.unsplash.com/photo-1596560548464-f010549b84d7?auto=format&fit=crop&q=80&w=1200';
 
     const apiKey = process.env.RESEND_API_KEY;
     if (!apiKey) return NextResponse.json({ error: 'API_KEY missing' }, { status: 500 });
