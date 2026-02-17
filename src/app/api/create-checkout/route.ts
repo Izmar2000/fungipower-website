@@ -1,19 +1,48 @@
 import { NextResponse } from 'next/server';
 import Stripe from 'stripe';
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
-    apiVersion: '2025-01-27' as any,
-});
-
 export async function POST(request: Request) {
     try {
         const data = await request.json();
         const {
             email, name, company, phone, address, city,
-            cropCategory, crop, otherCrop, comments, locale
+            cropCategory, crop, otherCrop, comments, locale, captchaToken
         } = data;
 
-        const origin = request.headers.get('origin');
+        // 1. Verify Turnstile Captcha
+        if (!captchaToken && process.env.NODE_ENV === 'production') {
+            return NextResponse.json({ error: 'Captcha missing' }, { status: 400 });
+        }
+
+        if (captchaToken && captchaToken !== 'skip_verification') {
+            const turnstileResult = await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    secret: process.env.TURNSTILE_SECRET_KEY,
+                    response: captchaToken,
+                }),
+            });
+
+            const turnstileData = await turnstileResult.json();
+            if (!turnstileData.success && process.env.NODE_ENV === 'production') {
+                return NextResponse.json({ error: 'Captcha verification failed' }, { status: 400 });
+            }
+        }
+
+        const stripeSecret = process.env.STRIPE_SECRET_KEY;
+        if (!stripeSecret) {
+            console.error('STRIPE_SECRET_KEY is missing from environment variables');
+            return NextResponse.json({ error: 'Stripe configuration missing' }, { status: 500 });
+        }
+
+        const stripe = new Stripe(stripeSecret, {
+            apiVersion: '2025-01-27' as any,
+        });
+
+        const origin = request.headers.get('origin') || 'https://www.plantipower.com';
+
+        console.log('Creating Stripe session for:', email);
 
         const session = await stripe.checkout.sessions.create({
             payment_method_types: ['card', 'ideal'],
@@ -53,7 +82,7 @@ export async function POST(request: Request) {
 
         return NextResponse.json({ url: session.url });
     } catch (err: any) {
-        console.error('Stripe error:', err);
+        console.error('Stripe route error:', err);
         return NextResponse.json({ error: err.message }, { status: 500 });
     }
 }

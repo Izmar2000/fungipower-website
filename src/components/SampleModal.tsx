@@ -136,15 +136,16 @@ const SampleModal: React.FC<SampleModalProps> = ({ isOpen, onClose }) => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!captchaToken) return;
+    console.log('Form submission started');
+    if (!captchaToken) {
+      console.log('Captcha token missing');
+      return;
+    }
 
     setIsSubmitting(true);
 
     try {
-      // 1. First we still do the turnstile check if needed, 
-      // but we'll bundle it into the checkout session creation or do it here.
-      // Current send-sample did it in the route. We'll do the same in create-checkout if we want.
-
+      console.log('Calling /api/create-checkout...');
       const response = await fetch('/api/create-checkout', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -152,16 +153,18 @@ const SampleModal: React.FC<SampleModalProps> = ({ isOpen, onClose }) => {
       });
 
       const data = await response.json();
+      console.log('Response received:', data);
 
       if (response.ok && data.url) {
-        // Redirect to Stripe Checkout
+        console.log('Redirecting to Stripe:', data.url);
         window.location.href = data.url;
       } else {
-        alert(isNL ? `Er is iets misgegaan: ${data.error}` : `Something went wrong: ${data.error}`);
+        console.error('Checkout error:', data);
+        alert(isNL ? `Er is iets misgegaan: ${data.error || 'Er is geen URL ontvangen'}` : `Something went wrong: ${data.error || 'No URL received'}`);
       }
-    } catch (error) {
+    } catch (error: any) {
       console.error('Submission error:', error);
-      alert(isNL ? 'Er is een fout opgetreden bij het starten van de betaling.' : 'An error occurred while starting the payment.');
+      alert(isNL ? `Er is een fout opgetreden: ${error.message}` : `An error occurred: ${error.message}`);
     } finally {
       setIsSubmitting(false);
     }
