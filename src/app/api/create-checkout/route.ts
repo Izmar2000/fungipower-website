@@ -17,9 +17,7 @@ export async function POST(request: Request) {
             return NextResponse.json({ error: 'Stripe configuration missing' }, { status: 500 });
         }
 
-        const stripe = new Stripe(stripeSecret, {
-            apiVersion: '2025-01-27' as any,
-        });
+        const stripe = new Stripe(stripeSecret);
 
         const origin = request.headers.get('origin') || 'https://www.plantipower.com';
 

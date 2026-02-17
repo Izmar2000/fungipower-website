@@ -8,9 +8,7 @@ export const dynamic = 'force-dynamic';
 export async function POST(request: Request) {
     // Initialize inside handler to avoid build-time errors
     const stripeSecret = process.env.STRIPE_SECRET_KEY;
-    const stripe = new Stripe(stripeSecret || '', {
-        apiVersion: '2025-01-27' as any,
-    });
+    const stripe = new Stripe(stripeSecret || '');
 
     const apiKey = process.env.RESEND_API_KEY;
     const resend = apiKey ? new Resend(apiKey) : null;
