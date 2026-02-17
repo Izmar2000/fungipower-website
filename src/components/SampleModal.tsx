@@ -127,7 +127,7 @@ const SampleModal: React.FC<SampleModalProps> = ({ isOpen, onClose }) => {
     placeholderComments: isNL ? "Heb je specifieke uitdagingen?" : "Do you have specific challenges?",
 
     btnSubmit: isNL ? "Bestellen & Betalen" : "Order & Pay",
-    footerNote: isNL ? "Veilige betaling via Stripe. Levertijd 1-2 werkdagen." : "Secure payment via Stripe. Delivery 1-2 working days.",
+    footerNote: isNL ? "Veilige betaling via Stripe." : "Secure payment via Stripe.",
     thankYou: isNL ? "Bedankt!" : "Thank You!",
     successMsg: isNL ? "Je aanvraag is succesvol verzonden." : "Your request has been successfully sent."
   };
