@@ -62,6 +62,8 @@ export async function POST(request: Request) {
                 },
             ],
             mode: 'payment',
+            automatic_tax: { enabled: true },
+            customer_update: { address: 'auto' },
             success_url: `${origin}/${locale}/?success=true`,
             cancel_url: `${origin}/${locale}/?canceled=true`,
             customer_email: email,

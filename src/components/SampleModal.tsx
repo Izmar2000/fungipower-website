@@ -87,8 +87,8 @@ const SampleModal: React.FC<SampleModalProps> = ({ isOpen, onClose }) => {
   const content = {
     title: isNL ? "BESTEL HIER JE PROEFPAKKET" : "ORDER YOUR SAMPLE PACK HERE",
     subtitle: isNL
-      ? "Je ontvangt 1x 1 liter PlantiPower All12 en 1x 60ml PlantiPower Shield voor €29,95 inclusief verzendkosten."
-      : "You receive 1x 1 liter PlantiPower All12 and 1x 60ml PlantiPower Shield for €29.95 including shipping.",
+      ? "Je ontvangt 1x 1 liter PlantiPower All12 en 1x 60ml PlantiPower Shield voor €29,95 (excl. BTW) inclusief verzendkosten."
+      : "You receive 1x 1 liter PlantiPower All12 and 1x 60ml PlantiPower Shield for €29.95 (excl. VAT) including shipping.",
     product1: {
       name: "PlantiPower All12 (1L)",
       sub: isNL ? "VOEDING TRANSPORTEREN" : "TRANSPORT NUTRIENTS",
