@@ -33,10 +33,17 @@ export async function POST(request: Request) {
     if (event.type === 'checkout.session.completed') {
         const session = event.data.object as Stripe.Checkout.Session;
         const metadata = session.metadata;
+        const customerDetails = session.customer_details;
 
         if (metadata) {
             try {
-                const { email, name, crop, otherCrop, cropCategory } = metadata;
+                const { email, name, crop, otherCrop, cropCategory, company, phone, comments, locale } = metadata;
+
+                // Get address from Stripe if available
+                const addr = customerDetails?.address;
+                const stripeAddress = addr
+                    ? `${addr.line1}${addr.line2 ? `, ${addr.line2}` : ''}, ${addr.postal_code} ${addr.city}, ${addr.country}`
+                    : 'Niet beschikbaar';
 
                 const emailHtml = generateEmailHtml({
                     name,
@@ -61,21 +68,34 @@ export async function POST(request: Request) {
                         from: 'PlantiPower Orders <info@mail.plantipower.com>',
                         to: 'info@plantipower.com',
                         replyTo: email,
-                        subject: `🎉 Nieuwe Proefpakket Bestelling: ${metadata.company || metadata.name}`,
+                        subject: `🎉 Nieuwe Proefpakket Bestelling: ${company || name}`,
                         html: `
-                            <h2>Nieuwe bestelling ontvangen!</h2>
-                            <p><strong>Naam:</strong> ${metadata.name}</p>
-                            <p><strong>Bedrijf:</strong> ${metadata.company || 'N/A'}</p>
-                            <p><strong>Email:</strong> ${metadata.email}</p>
-                            <p><strong>Telefoon:</strong> ${metadata.phone}</p>
-                            <p><strong>Adres:</strong> ${metadata.address}, ${metadata.city}</p>
-                            <hr />
-                            <p><strong>Categorie:</strong> ${metadata.cropCategory}</p>
-                            <p><strong>Gewas:</strong> ${metadata.crop} ${metadata.otherCrop ? `(${metadata.otherCrop})` : ''}</p>
-                            <p><strong>Opmerkingen:</strong> ${metadata.comments || 'Geen'}</p>
-                            <p><strong>Taal:</strong> ${metadata.locale}</p>
-                            <hr />
-                            <p>Deze bestelling is succesvol betaald via Stripe.</p>
+                            <div style="font-family: sans-serif; padding: 20px; color: #333;">
+                                <h2 style="color: #10b981;">Nieuwe bestelling ontvangen!</h2>
+                                <p>Er is zojuist een succesvolle betaling gedaan voor een proefpakket.</p>
+                                
+                                <h3 style="border-bottom: 2px solid #eee; padding-bottom: 5px;">Klantgegevens</h3>
+                                <p><strong>Naam:</strong> ${name}</p>
+                                <p><strong>Bedrijf:</strong> ${company || 'N/A'}</p>
+                                <p><strong>Email:</strong> ${email}</p>
+                                <p><strong>Telefoon:</strong> ${phone || 'N/A'}</p>
+                                
+                                <h3 style="border-bottom: 2px solid #eee; padding-bottom: 5px;">Leveradres (via Stripe)</h3>
+                                <p>${stripeAddress}</p>
+                                
+                                <h3 style="border-bottom: 2px solid #eee; padding-bottom: 5px;">Product & Teelt</h3>
+                                <p><strong>Order:</strong> PlantiPower Proefpakket (€29,95)</p>
+                                <p><strong>Categorie:</strong> ${cropCategory}</p>
+                                <p><strong>Specifiek Gewas:</strong> ${crop} ${otherCrop ? `(${otherCrop})` : ''}</p>
+                                <p><strong>Opmerkingen:</strong> ${comments || 'Geen'}</p>
+                                
+                                <h3 style="border-bottom: 2px solid #eee; padding-bottom: 5px;">Systeem Details</h3>
+                                <p><strong>Taal:</strong> ${locale}</p>
+                                <p><strong>Stripe Session ID:</strong> ${session.id}</p>
+                                
+                                <hr style="border: none; border-top: 1px solid #eee; margin-top: 20px;" />
+                                <p style="font-size: 12px; color: #999;">Gezonden via PlantiPower Automation</p>
+                            </div>
                         `
                     });
                     console.log(`Notification sent successfully to info@plantipower.com`);
