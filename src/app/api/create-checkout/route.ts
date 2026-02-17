@@ -8,29 +8,8 @@ export async function POST(request: Request) {
         const data = await request.json();
         const {
             email, name, company, phone, address, city,
-            cropCategory, crop, otherCrop, comments, locale, captchaToken
+            cropCategory, crop, otherCrop, comments, locale
         } = data;
-
-        // 1. Verify Turnstile Captcha
-        if (!captchaToken && process.env.NODE_ENV === 'production') {
-            return NextResponse.json({ error: 'Captcha missing' }, { status: 400 });
-        }
-
-        if (captchaToken && captchaToken !== 'skip_verification') {
-            const turnstileResult = await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({
-                    secret: process.env.TURNSTILE_SECRET_KEY,
-                    response: captchaToken,
-                }),
-            });
-
-            const turnstileData = await turnstileResult.json();
-            if (!turnstileData.success && process.env.NODE_ENV === 'production') {
-                return NextResponse.json({ error: 'Captcha verification failed' }, { status: 400 });
-            }
-        }
 
         const stripeSecret = process.env.STRIPE_SECRET_KEY;
         if (!stripeSecret) {

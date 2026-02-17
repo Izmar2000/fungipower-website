@@ -3,7 +3,6 @@
 import React, { useState } from 'react';
 import { X, Check, ChevronDown } from 'lucide-react';
 import { usePathname } from 'next/navigation';
-import Turnstile from 'react-turnstile';
 
 interface SampleModalProps {
   isOpen: boolean;
@@ -29,7 +28,6 @@ const SampleModal: React.FC<SampleModalProps> = ({ isOpen, onClose }) => {
     guidance: false,
     website_url: '' // Honeypot
   });
-  const [captchaToken, setCaptchaToken] = useState<string | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
 
@@ -137,11 +135,6 @@ const SampleModal: React.FC<SampleModalProps> = ({ isOpen, onClose }) => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     console.log('Form submission started');
-    if (!captchaToken) {
-      console.log('Captcha token missing');
-      return;
-    }
-
     setIsSubmitting(true);
 
     try {
@@ -149,7 +142,7 @@ const SampleModal: React.FC<SampleModalProps> = ({ isOpen, onClose }) => {
       const response = await fetch('/api/create-checkout', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ ...formData, captchaToken, locale: isNL ? 'nl' : 'en' }),
+        body: JSON.stringify({ ...formData, locale: isNL ? 'nl' : 'en' }),
       });
 
       const data = await response.json();
@@ -332,19 +325,11 @@ const SampleModal: React.FC<SampleModalProps> = ({ isOpen, onClose }) => {
                 />
               </div>
 
-              {/* Turnstile Captcha - Subtle */}
-              <div className="flex justify-center py-2">
-                <Turnstile
-                  sitekey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY || '1x00000000000000000000AA'}
-                  onVerify={(token) => setCaptchaToken(token)}
-                  theme="dark"
-                />
-              </div>
 
               <div className="pt-4">
                 <button
                   type="submit"
-                  disabled={isSubmitting || !captchaToken}
+                  disabled={isSubmitting}
                   className="w-full bg-lime-500 hover:bg-lime-400 text-emerald-950 font-black py-4 rounded-xl uppercase tracking-widest text-sm transition-all shadow-lg shadow-lime-500/20 active:scale-[0.98] disabled:opacity-50 disabled:grayscale"
                 >
                   {isSubmitting ? "..." : content.btnSubmit}
