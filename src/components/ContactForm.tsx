@@ -2,7 +2,6 @@
 
 import React, { useState } from 'react';
 import { CheckCircle2 } from 'lucide-react';
-import Turnstile from 'react-turnstile';
 
 interface ContactFormProps {
   dict: any;
@@ -21,14 +20,12 @@ const ContactForm: React.FC<ContactFormProps> = ({ dict, lang }) => {
     message: '',
     website_url: '' // Honeypot
   });
-  const [captchaToken, setCaptchaToken] = useState<string | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!captchaToken) return;
 
     setIsSubmitting(true);
     setErrorMessage(null);
@@ -37,7 +34,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ dict, lang }) => {
       const response = await fetch("/api/send-contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...formData, captchaToken }),
+        body: JSON.stringify({ ...formData }),
       });
 
       const result = await response.json();
@@ -45,7 +42,6 @@ const ContactForm: React.FC<ContactFormProps> = ({ dict, lang }) => {
       if (response.ok) {
         setIsSuccess(true);
         setFormData({ name: '', company: '', email: '', message: '', website_url: '' });
-        setCaptchaToken(null);
       } else {
         setErrorMessage(result.error || "Er is iets misgegaan bij het verzenden.");
       }
@@ -164,14 +160,6 @@ const ContactForm: React.FC<ContactFormProps> = ({ dict, lang }) => {
                     />
                   </div>
 
-                  {/* Turnstile Captcha - Subtle */}
-                  <div className="flex justify-center py-2">
-                    <Turnstile
-                      sitekey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY || '1x00000000000000000000AA'}
-                      onVerify={(token) => setCaptchaToken(token)}
-                      theme="dark"
-                    />
-                  </div>
 
                   {errorMessage && (
                     <div className="bg-red-500/20 border border-red-500/50 text-red-200 p-4 rounded-2xl text-sm font-bold text-center">
@@ -179,7 +167,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ dict, lang }) => {
                     </div>
                   )}
                   <button
-                    disabled={isSubmitting || !captchaToken}
+                    disabled={isSubmitting}
                     className="w-full bg-lime-500 hover:bg-white text-emerald-950 font-black py-5 rounded-2xl transition-all shadow-2xl shadow-lime-500/20 transform active:scale-[0.98] uppercase tracking-widest text-sm disabled:opacity-50 disabled:grayscale"
                   >
                     {isSubmitting ? t.sending : t.btnSend}
