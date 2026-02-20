@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "@/index.css";
 import { Providers } from "@/components/Providers";
+import { PasswordProtection } from "@/components/PasswordProtection";
 
 export const metadata: Metadata = {
     title: "FungiPower | Industriële Paddenstoelen Kweek Verbetering",
@@ -30,7 +31,11 @@ export default function RootLayout({
                 />
             </head>
             <body>
-                <Providers>{children}</Providers>
+                <Providers>
+                    <PasswordProtection>
+                        {children}
+                    </PasswordProtection>
+                </Providers>
             </body>
         </html>
     );
