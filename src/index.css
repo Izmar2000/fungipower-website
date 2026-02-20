@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* FungiPower Design System */
+
+html {
+  font-size: 90%;
+}
+
+@layer base {
+  :root {
+    /* FungiPower Brand Colors */
+    --fungipower-orange: 24 95% 53%;
+    --fungipower-orange-light: 20 100% 58%;
+    --fungipower-orange-dark: 24 90% 45%;
+    
+    /* Core Design Tokens - Light Mode (Earthy/Beige) */
+    --background: 35 25% 96%; /* Warm light beige */
+    --foreground: 30 10% 20%; /* Deep grey-brown */
+
+    --card: 0 0% 100%; /* White */
+    --card-foreground: 30 10% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 30 10% 20%;
+
+    --primary: 24 95% 53%; /* Orange accent */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 15% 16%; /* Anthracite for headers/contrast */
+    --secondary-foreground: 35 25% 96%;
+
+    --muted: 35 15% 90%;
+    --muted-foreground: 30 5% 45%;
+
+    --accent: 20 100% 58%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 35 15% 85%;
+    --input: 35 15% 85%;
+    --ring: 24 95% 53%;
+
+    --radius: 0.5rem;
+
+    /* Footer - Always Dark */
+    --footer-bg: 210 15% 10%;
+    --footer-foreground: 35 10% 80%;
+  }
+
+  /* Performance View (Dark Mode) - Anthracite Dominant */
+  .dark {
+    --background: 210 15% 10%; /* Deep Anthracite */
+    --foreground: 35 15% 90%; /* Off-white */
+
+    --card: 210 15% 13%; /* Slightly lighter anthracite */
+    --card-foreground: 35 15% 90%;
+
+    --popover: 210 15% 13%;
+    --popover-foreground: 35 15% 90%;
+
+    --primary: 24 95% 53%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 35 15% 90%; /* Off-white for contrast elements in dark mode */
+    --secondary-foreground: 210 15% 10%;
+
+    --muted: 210 15% 16%;
+    --muted-foreground: 210 10% 60%;
+
+    --accent: 20 100% 58%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 210 15% 20%;
+    --input: 210 15% 20%;
+    --ring: 24 95% 53%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+
+  /* Typography Hierarchy */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-black tracking-tight text-secondary;
+  }
+  
+  .dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
+    @apply text-foreground;
+  }
+}
+
+@layer utilities {
+  .text-gradient-white {
+    background: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(0 0% 85%) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
