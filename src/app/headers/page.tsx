@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Menu, X, ArrowRight, Lock, CheckCircle2 } from "lucide-react";
+import { Menu, X, Star, ArrowRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const navLinks = [
@@ -11,108 +11,120 @@ const navLinks = [
     { label: "CONTACT", href: "#" },
 ];
 
-// Simplified Data Panel for preview
-const MockDataPanel = () => (
-    <div className="bg-black/95 backdrop-blur-xl border border-white/10 p-8 rounded-3xl shadow-2xl w-full max-w-md">
-        <div className="grid grid-cols-3 gap-4 mb-8">
+const HeaderMock = () => (
+    <header className="w-full">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between py-6">
+            <div className="flex items-center">
+                <img
+                    src="/Logo%20trans/FungiPower%20Logo.svg"
+                    alt="FungiPower"
+                    className="h-24 md:h-[120px] w-auto object-contain transition-all invert brightness-200"
+                />
+            </div>
+            <nav className="hidden lg:flex items-center gap-10">
+                {navLinks.map((l) => (
+                    <button key={l.label} className="text-white text-xs font-black tracking-[0.15em] uppercase hover:opacity-70 transition-colors">{l.label}</button>
+                ))}
+                <button className="bg-black text-white px-8 py-3 text-xs font-black tracking-[0.15em] uppercase hover:bg-black/80 transition-all shadow-xl">
+                    PROEF AANVRAGEN
+                </button>
+            </nav>
+        </div>
+    </header>
+);
+
+const HeroContentMock = () => (
+    <div className="flex flex-col justify-center max-w-2xl py-8">
+        <div className="mb-4">
+            <span className="text-white/60 text-[11px] font-bold tracking-[0.2em] uppercase">— BIOLOGISCHE SYSTEEMVERSTERKING</span>
+        </div>
+        <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-white leading-[0.9] mb-6 tracking-tight">
+            MAXIMAAL<br />RENDEMENT<br />UIT JE <span className="text-black underline decoration-black/30 decoration-8 underline-offset-[12px]">2e EN<br />3e VLUCHT.</span>
+        </h1>
+        <p className="text-white/80 text-lg md:text-xl font-medium mb-6 leading-relaxed max-w-xl">
+            FungiPower verhoogt structureel de opbrengst van champignons door de vitaliteit van het substraat te verlengen en opname-efficiëntie te optimaliseren.
+            <br /><span className="mt-2 block text-sm opacity-60">Ontwikkeld voor commerciële kwekers die sturen op rendement per cel.</span>
+        </p>
+        <ul className="space-y-3 mb-6">
             {[
-                { label: "VOCHTIGHEID (%)", val: "88.2" },
-                { label: "CO2 (PPM)", val: "948" },
-                { label: "TEMP (C)", val: "24.1" },
-            ].map((s) => (
-                <div key={s.label}>
-                    <p className="text-[8px] font-black text-white/30 tracking-widest">{s.label}</p>
-                    <p className="text-xl font-black text-white">{s.val}</p>
-                </div>
+                "Verhoogde opbrengst per vlucht",
+                "Verlengde productieve levensduur van het substraat",
+                "Data-onderbouwde werking in praktijktesten"
+            ].map((item, index) => (
+                <li key={index} className="flex items-center gap-3 text-white font-semibold">
+                    <div className="w-1.5 h-1.5 bg-black rounded-none" />
+                    {item}
+                </li>
             ))}
+        </ul>
+        <div className="bg-black/10 backdrop-blur-sm p-5 border-l-4 border-black shadow-sm mb-8 max-w-md">
+            <div className="flex items-baseline gap-2 mb-1">
+                <span className="text-3xl font-black text-white">+11,3%</span>
+                <span className="text-white font-bold uppercase text-sm">GEMIDDELDE OPBRENGSTVERHOGING</span>
+            </div>
+            <p className="text-xs text-white/50">Gemiddelde uit praktijkproeven (p=0,028)</p>
         </div>
-        <div className="mb-6">
-            <p className="text-[10px] font-black text-primary tracking-widest mb-1 italic">PRAKTIJKVOORBEELD: CHAMPIGNONKWEKER GRUBBENVORST</p>
-            <p className="text-5xl font-black text-white tracking-tighter indent-[-2px]">+73% <span className="text-[10px] text-white/40 tracking-widest uppercase">2e vlucht</span></p>
-        </div>
-        <div className="bg-white/5 p-4 rounded-xl border border-white/10">
-            <p className="text-white/60 text-[11px] leading-relaxed italic italic">"De opbrengst van de tweede vlucht ging naar 243g/blok. Alleen al deze resultaten rechtvaardigden de investering."</p>
-            <p className="text-white/30 text-[9px] font-bold mt-2 tracking-widest uppercase">Karel v.d. Meer, Pan NL</p>
+        <div className="flex flex-col sm:flex-row gap-4">
+            <button className="bg-black text-white px-8 py-4 text-xs font-black tracking-[0.15em] uppercase hover:bg-black/80 transition-all shadow-lg flex items-center gap-2 group">
+                PLAN EEN PROEF OP LOCATIE
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            </button>
         </div>
     </div>
 );
 
-// CONCEPT 1: ORANGE HERITAGE
-const OrangeConcept = () => (
-    <div className="w-full bg-[#FFA500] min-h-[90vh] relative overflow-hidden font-inter text-black selection:bg-black selection:text-[#FFA500]">
-        {/* Header */}
-        <header className="relative z-20 w-full px-6 py-6 border-b border-black/10">
-            <div className="max-w-7xl mx-auto flex items-center justify-between">
-                <img src="/Logo%20trans/FungiPower%20Logo.svg" alt="FungiPower" className="h-20 w-auto brightness-0" />
-                <nav className="hidden lg:flex items-center gap-10">
-                    {navLinks.map((l) => (
-                        <button key={l.label} className="text-black text-xs font-black tracking-widest uppercase hover:opacity-60 transition-all">{l.label}</button>
-                    ))}
-                    <button className="bg-black text-[#FFA500] px-8 py-3 text-xs font-black tracking-widest uppercase hover:bg-black/80 transition-all shadow-xl">PROEF AANVRAGEN</button>
-                </nav>
-            </div>
-        </header>
-
-        {/* Content */}
-        <div className="max-w-7xl mx-auto px-6 py-12 lg:py-20 grid lg:grid-cols-2 gap-12 items-center">
-            <div className="max-w-xl">
-                <span className="text-black/60 text-[11px] font-bold tracking-[0.2em] uppercase mb-4 block">— BIOLOGISCHE SYSTEEMVERSTERKING</span>
-                <h1 className="text-6xl md:text-7xl font-black leading-[0.9] mb-8 tracking-tighter italic">
-                    MAXIMAAL<br />RENDEMENT<br />UIT JE <span className="text-white underline decoration-black decoration-8 underline-offset-8">2e EN 3e</span><br />VLUCHT.
-                </h1>
-                <p className="text-lg font-bold leading-snug mb-8 opacity-80">
-                    FungiPower verhoogt structureel de opbrengst van champignons door de vitaliteit van het substraat te verlengen.
-                </p>
-                <div className="flex flex-col gap-4 mb-10">
-                    {["Verhoogde opbrengst per vlucht", "Verlengde levensduur substraat"].map(item => (
-                        <div key={item} className="flex items-center gap-3 font-black text-sm uppercase italic tracking-tight">
-                            <div className="w-2 h-2 bg-black" /> {item}
-                        </div>
-                    ))}
+const GlassmorphismPanelMock = () => (
+    <div className="w-full max-w-md lg:max-w-lg relative z-10 transform transition-transform duration-500 hover:scale-[1.01]">
+        <div className="bg-[#0a0a0a] rounded-2xl border border-white/5 p-8 shadow-2xl relative overflow-hidden">
+            <div className="flex justify-between mb-8 border-b border-white/10 pb-6">
+                <div className="text-center">
+                    <span className="block text-[10px] uppercase font-bold text-white/40 tracking-widest mb-2">Vochtigheid (%)</span>
+                    <span className="text-2xl font-black text-white tracking-tight">88.2</span>
                 </div>
-                <button className="bg-black text-[#FFA500] px-10 py-5 text-sm font-black tracking-[0.2em] uppercase hover:bg-black/90 transition-all shadow-2xl flex items-center gap-3">
-                    PLAN EEN PROEF <ArrowRight className="w-5 h-5" />
-                </button>
+                <div className="text-center border-l border-white/10 pl-8">
+                    <span className="block text-[10px] uppercase font-bold text-white/40 tracking-widest mb-2">CO2 (ppm)</span>
+                    <span className="text-2xl font-black text-white tracking-tight">948</span>
+                </div>
+                <div className="text-center border-l border-white/10 pl-8">
+                    <span className="block text-[10px] uppercase font-bold text-white/40 tracking-widest mb-2">Temp (C)</span>
+                    <span className="text-2xl font-black text-white tracking-tight">24.1</span>
+                </div>
             </div>
-            <div className="flex justify-center lg:justify-end translate-x-2">
-                <MockDataPanel />
+            <div className="mb-8">
+                <span className="block text-[10px] md:text-[11px] uppercase font-black text-[#FFA500] tracking-[0.15em] mb-4">PRAKTIJKVOORBEELD: CHAMPIGNONKWEKER GRUBBENVORST</span>
+                <div className="flex items-end gap-4">
+                    <h2 className="text-7xl font-black text-white tracking-tighter leading-none">+73%</h2>
+                    <div className="flex flex-col mb-1">
+                        <span className="text-sm font-bold text-white/90 uppercase leading-none mb-1">2e</span>
+                        <span className="text-sm font-bold text-white/50 uppercase leading-none">Vlucht</span>
+                    </div>
+                    <svg className="h-12 w-32 ml-auto stroke-white/20" viewBox="0 0 100 40" fill="none">
+                        <path d="M0 35 L 20 32 L 40 25 L 60 28 L 80 15 L 100 5" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                        <path d="M0 35 L 20 32 L 40 25 L 60 28 L 80 15 L 100 5 V 40 H 0 Z" fill="url(#gradient)" className="opacity-10" />
+                        <defs>
+                            <linearGradient id="gradient" x1="0" y1="0" x2="0" y2="1">
+                                <stop offset="0%" stopColor="white" />
+                                <stop offset="100%" stopColor="transparent" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
             </div>
-        </div>
-    </div>
-);
-
-// CONCEPT 2: PREMIUM DARK Green/Anthracite
-const DarkConcept = () => (
-    <div className="w-full bg-[#0A0F0A] min-h-[90vh] relative overflow-hidden font-inter text-white">
-        {/* Header */}
-        <header className="relative z-20 w-full px-6 py-6 border-b border-white/5">
-            <div className="max-w-7xl mx-auto flex items-center justify-between">
-                <img src="/Logo%20trans/FungiPower%20Logo.svg" alt="FungiPower" className="h-20 w-auto brightness-200 grayscale" />
-                <nav className="hidden lg:flex items-center gap-10">
-                    {navLinks.map((l) => (
-                        <button key={l.label} className="text-white/60 text-xs font-black tracking-widest uppercase hover:text-primary transition-all">{l.label}</button>
-                    ))}
-                    <button className="bg-primary text-white px-8 py-3 text-xs font-black tracking-widest uppercase hover:bg-primary/80 transition-all shadow-xl">PROEF AANVRAGEN</button>
-                </nav>
+            <div className="grid grid-cols-4 gap-3 mb-8 h-20">
+                {[1, 2, 3, 4].map(i => <div key={i} className="bg-white/5 rounded-lg border border-white/5 bg-zinc-800"></div>)}
             </div>
-        </header>
-
-        {/* Content */}
-        <div className="max-w-7xl mx-auto px-6 py-12 lg:py-20 grid lg:grid-cols-2 gap-12 items-center">
-            <div className="max-w-xl">
-                <span className="text-primary text-[11px] font-bold tracking-[0.2em] uppercase mb-4 block">— BIOLOGISCHE SYSTEEMVERSTERKING</span>
-                <h1 className="text-6xl md:text-7xl font-black leading-[0.9] mb-8 tracking-tighter uppercase italic">
-                    MAXIMAAL<br />RENDEMENT<br />UIT JE <span className="text-primary">2e EN 3e</span><br />VLUCHT.
-                </h1>
-                <p className="text-lg text-white/50 font-medium leading-relaxed mb-8">
-                    FungiPower verhoogt structureel de opbrengst van champignons door de vitaliteit van het substraat te verlengen.
-                </p>
-                <button className="bg-primary text-white px-10 py-5 text-sm font-black tracking-[0.2em] uppercase hover:bg-primary/90 transition-all shadow-2xl flex items-center gap-3">
-                    PLAN EEN PROEF <ArrowRight className="w-5 h-5" />
-                </button>
-            </div>
-            <div className="flex justify-center lg:justify-end">
-                <MockDataPanel />
+            <div className="bg-[#151515] rounded-xl p-6 border-t border-white/5 text-left">
+                <div className="flex items-center gap-3 mb-4">
+                    <div className="w-5 h-5 bg-white rounded-full flex items-center justify-center shrink-0" />
+                    <span className="text-[10px] font-bold uppercase text-white/40 tracking-wider">Geverifieerde Google Review</span>
+                    <div className="flex gap-0.5 ml-auto">
+                        {[1, 2, 3, 4, 5].map(i => <Star key={i} className="w-3 h-3 text-[#F59E0B] fill-[#F59E0B]" />)}
+                    </div>
+                </div>
+                <p className="text-sm text-white/70 italic leading-relaxed mb-4 font-medium">"De opbrengst van de tweede vlucht ging naar 243g/blok."</p>
+                <div className="flex flex-col gap-0.5">
+                    <span className="text-xs font-bold text-white uppercase tracking-wider">Karel v.d. Meer</span>
+                </div>
             </div>
         </div>
     </div>
@@ -120,36 +132,37 @@ const DarkConcept = () => (
 
 export default function HeadersPage() {
     return (
-        <div className="min-h-screen bg-[#111] py-12">
-            <div className="max-w-7xl mx-auto px-6 mb-20 text-center">
-                <h1 className="text-2xl font-black text-white tracking-widest uppercase border-b border-white/10 pb-4 inline-block">Design Varianten</h1>
-            </div>
+        <div className="min-h-screen font-inter">
+            {/* CONCEPT: DEEP BURNT ORANGE GRADIENT */}
+            <section className="relative min-h-screen bg-gradient-to-br from-[#4D1A00] via-[#802B00] to-[#CC4400] overflow-hidden flex flex-col">
+                <HeaderMock />
 
-            <div className="flex flex-col gap-40">
-                <section className="px-6">
-                    <div className="mb-6 flex items-baseline gap-4">
-                        <span className="text-white text-xs font-black px-4 py-1 bg-primary rounded-full uppercase tracking-widest">VARIANT A</span>
-                        <h2 className="text-white/40 text-[10px] font-bold tracking-[0.3em] uppercase">ORANGE HERITAGE (FULL IMPACT)</h2>
+                <div className="flex-grow flex items-center">
+                    <div className="max-w-7xl mx-auto px-6 md:px-12 py-12 lg:py-24 grid lg:grid-cols-2 gap-12 items-center w-full">
+                        <HeroContentMock />
+                        <div className="flex justify-center lg:justify-end">
+                            <GlassmorphismPanelMock />
+                        </div>
                     </div>
-                    <div className="rounded-[40px] overflow-hidden shadow-2xl border border-white/5">
-                        <OrangeConcept />
-                    </div>
-                </section>
+                </div>
 
-                <section className="px-6">
-                    <div className="mb-6 flex items-baseline gap-4">
-                        <span className="text-white text-xs font-black px-4 py-1 bg-zinc-800 rounded-full uppercase tracking-widest">VARIANT B</span>
-                        <h2 className="text-white/40 text-[10px] font-bold tracking-[0.3em] uppercase">AGRITECH DARK (STEALTH MODE)</h2>
-                    </div>
-                    <div className="rounded-[40px] overflow-hidden shadow-2xl border border-white/5">
-                        <DarkConcept />
-                    </div>
-                </section>
-            </div>
+                {/* Texture Overlay (Same as original) */}
+                <div
+                    className="absolute inset-0 opacity-[0.05] pointer-events-none"
+                    style={{
+                        backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")`,
+                        backgroundSize: '150px 150px'
+                    }}
+                />
+            </section>
 
-            <div className="mt-40 text-center pb-20">
-                <button onClick={() => window.location.href = "/"} className="text-white/20 hover:text-white transition-all text-xs font-black tracking-widest uppercase underline underline-offset-8 decoration-primary/30">
-                    TERUG NAAR DE LIVE SITE
+            {/* Selector / Back Button */}
+            <div className="fixed bottom-8 left-1/2 -translate-x-1/2 z-50">
+                <button
+                    onClick={() => window.location.href = "/"}
+                    className="bg-black/80 backdrop-blur-md text-white px-8 py-3 rounded-full text-[10px] font-black tracking-widest border border-white/10"
+                >
+                    TERUG NAAR DE WITTE LIVE SITE
                 </button>
             </div>
         </div>
