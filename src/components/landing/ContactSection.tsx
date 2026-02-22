@@ -51,17 +51,10 @@ export const ContactSection = () => {
                 </div>
               </div>
               <div className="flex items-start gap-4">
-                <Phone className="w-6 h-6 text-primary mt-1" />
-                <div>
-                  <p className="font-bold text-foreground">Telefoon</p>
-                  <p className="text-muted-foreground">+31 20 123 4567</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-4">
                 <Mail className="w-6 h-6 text-primary mt-1" />
                 <div>
                   <p className="font-bold text-foreground">E-mail</p>
-                  <p className="text-muted-foreground">info@fungipower.com</p>
+                  <p className="text-muted-foreground">info@fungipower.bio</p>
                 </div>
               </div>
             </div>

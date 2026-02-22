@@ -6,9 +6,12 @@ import { PasswordProtection } from "@/components/PasswordProtection";
 export const metadata: Metadata = {
     title: "FungiPower | Industriële Paddenstoelen Kweek Verbetering",
     description:
-        "Maximaliseer uw 2e en 3e vlucht opbrengst met de biologische versterker van FungiPower. Bewezen resultaten voor commerciële paddenstoelenkwekers. +212% gemiddelde opbrengststijging.",
+        "Maximaliseer uw rendement uit elke vlucht met de biologische versterker van FungiPower. Bewezen resultaten voor commerciële paddenstoelenkwekers. +11,3% gemiddelde opbrengstverhoging.",
     keywords:
         "paddenstoelenkweek, fungi, opbrengstverbetering, commerciële teelt, biologische versterker",
+    icons: {
+        icon: "/Logo%20trans/FungiPower%20Logo.svg",
+    },
 };
 
 export default function RootLayout({

@@ -6,27 +6,10 @@ import { useEffect, useState } from "react";
 
 const footerLinks = {
   product: [
-    { label: "Wetenschap", href: "#science" },
-    { label: "Resultaten", href: "#results" },
-    { label: "Schaalbaarheid", href: "#scalability" },
-    { label: "Prijzen", href: "#scalability" },
-  ],
-  company: [
-    { label: "Over Ons", href: "#" },
-    { label: "Carrières", href: "#" },
-    { label: "Pers", href: "#" },
-    { label: "Contact", href: "#contact" },
-  ],
-  resources: [
-    { label: "Documentatie", href: "#" },
-    { label: "Sectoren", href: "#results" },
-    { label: "Blog", href: "#" },
-    { label: "Support", href: "#" },
-  ],
-  legal: [
-    { label: "Privacybeleid", href: "#" },
-    { label: "Algemene Voorwaarden", href: "#" },
-    { label: "Cookiebeleid", href: "#" },
+    { label: "Wetenschap", href: "/#science" },
+    { label: "Resultaten", href: "/#results" },
+    { label: "Over Ons", href: "/over-ons" },
+    { label: "Contact", href: "/#contact" },
   ],
 };
 
@@ -67,80 +50,37 @@ export const Footer = () => {
             <img
               src="/logo.png"
               alt="FungiPower"
-              className="h-12 w-auto object-contain mb-4 invert mix-blend-screen opacity-80"
+              className="h-12 w-auto object-contain mb-4 brightness-0 invert"
             />
             <p className="text-sm leading-relaxed opacity-70">
               Maximaliseren van paddenstoelenopbrengsten door wetenschappelijk onderbouwde biologische verbetering.
             </p>
           </div>
 
-          {/* Product */}
           <div>
-            <h4 className="text-foreground font-bold text-sm uppercase tracking-wider mb-4">Product</h4>
+            <h4 className="text-foreground font-bold text-sm uppercase tracking-wider mb-4">Navigatie</h4>
             <ul className="space-y-2">
               {footerLinks.product.map((link) => (
                 <li key={link.label}>
-                  <button
-                    onClick={() => scrollToSection(link.href)}
+                  <a
+                    href={link.href}
                     className="text-sm opacity-70 hover:opacity-100 hover:text-primary transition-all"
                   >
                     {link.label}
-                  </button>
+                  </a>
                 </li>
               ))}
+              <li>
+                <button
+                  onClick={() => scrollToSection("#contact")}
+                  className="text-sm opacity-70 hover:opacity-100 hover:text-primary transition-all text-left"
+                >
+                  Proef Aanvragen
+                </button>
+              </li>
             </ul>
           </div>
-
-          {/* Company */}
-          <div>
-            <h4 className="text-foreground font-bold text-sm uppercase tracking-wider mb-4">Bedrijf</h4>
-            <ul className="space-y-2">
-              {footerLinks.company.map((link) => (
-                <li key={link.label}>
-                  <button
-                    onClick={() => scrollToSection(link.href)}
-                    className="text-sm opacity-70 hover:opacity-100 hover:text-primary transition-all"
-                  >
-                    {link.label}
-                  </button>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Resources */}
-          <div>
-            <h4 className="text-foreground font-bold text-sm uppercase tracking-wider mb-4">Bronnen</h4>
-            <ul className="space-y-2">
-              {footerLinks.resources.map((link) => (
-                <li key={link.label}>
-                  <button
-                    onClick={() => scrollToSection(link.href)}
-                    className="text-sm opacity-70 hover:opacity-100 hover:text-primary transition-all"
-                  >
-                    {link.label}
-                  </button>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Legal */}
-          <div>
-            <h4 className="text-foreground font-bold text-sm uppercase tracking-wider mb-4">Juridisch</h4>
-            <ul className="space-y-2">
-              {footerLinks.legal.map((link) => (
-                <li key={link.label}>
-                  <button
-                    onClick={() => scrollToSection(link.href)}
-                    className="text-sm opacity-70 hover:opacity-100 hover:text-primary transition-all"
-                  >
-                    {link.label}
-                  </button>
-                </li>
-              ))}
-            </ul>
-          </div>
+          <div className="col-span-2"></div>
         </div>
 
         {/* Divider */}
@@ -165,13 +105,9 @@ export const Footer = () => {
               ))}
             </div>
 
-            {/* Certifications & Theme Toggle */}
+            {/* Right section info & Theme Toggle */}
             <div className="flex items-center gap-4 text-xs opacity-60">
-              <span>ISO 9001</span>
-              <span>•</span>
-              <span>EU Biologisch Gecertificeerd</span>
-              <span>•</span>
-              <span>SKAL</span>
+              <span>FungiPower B.V. • Venlo, Nederland</span>
               {mounted && (
                 <button
                   onClick={toggleTheme}

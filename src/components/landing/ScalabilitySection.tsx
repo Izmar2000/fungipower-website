@@ -43,7 +43,7 @@ export const ScalabilitySection = () => {
             <div className="space-y-4 border-t border-border pt-6">
               <div className="flex items-center gap-3">
                 <FlaskConical className="w-5 h-5 text-muted-foreground" />
-                <span className="text-sm font-medium text-foreground">Dosering: <span className="font-bold">5–80 ml/L</span></span>
+                <span className="text-sm font-medium text-foreground">Dosering: <span className="font-bold text-primary">Op maat, afgestemd op uw teeltsituatie</span></span>
               </div>
               <div className="flex items-center gap-3">
                 <Droplets className="w-5 h-5 text-muted-foreground" />
@@ -73,13 +73,13 @@ export const ScalabilitySection = () => {
             <h4 className="text-lg font-bold text-foreground mb-4">Verleng de productieve levensduur.</h4>
 
             <p className="text-muted-foreground mb-8 flex-grow leading-relaxed">
-              FungiPower Boost wordt toegepast na elke vlucht. Uit praktijktesten blijkt dat toepassing na vlucht 1 het grootste effect geeft, met tot <span className="text-foreground font-bold">+27,7%</span> opbrengstverbetering.
+              FungiPower Boost wordt toegepast na elke vlucht. Uit praktijktesten blijkt dat toepassing na vlucht 1 het grootste effect geeft, met tot <span className="text-foreground font-bold">+27,7%*</span> opbrengstverbetering.
             </p>
 
             <div className="space-y-4 border-t border-border pt-6">
               <div className="flex items-center gap-3">
                 <FlaskConical className="w-5 h-5 text-muted-foreground" />
-                <span className="text-sm font-medium text-foreground">Dosering: <span className="font-bold">2–10 ml/L</span></span>
+                <span className="text-sm font-medium text-foreground">Dosering: <span className="font-bold text-primary">Op maat, afgestemd op uw teeltsituatie</span></span>
               </div>
               <div className="flex items-center gap-3">
                 <Droplets className="w-5 h-5 text-muted-foreground" />
@@ -94,7 +94,10 @@ export const ScalabilitySection = () => {
         </div>
 
         {/* Section CTA */}
-        <div className="mt-16 flex justify-center">
+        <div className="mt-16 flex flex-col items-center gap-6">
+          <p className="text-xs text-muted-foreground italic">
+            *Beste resultaat bij toepassing na vlucht 1, op basis van praktijkproeven met beperkte dataset.
+          </p>
           <a href="#contact" className="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-widest border-b-2 border-primary pb-1 hover:text-primary transition-colors">
             Vraag technische documentatie aan
             <ArrowRight className="w-4 h-4" />

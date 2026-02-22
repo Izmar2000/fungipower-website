@@ -17,7 +17,7 @@ export const ResultsSection = () => {
             </h2>
             <div className="space-y-6 text-lg text-white/80 leading-relaxed max-w-xl">
               <p>
-                Onze claims zijn gebaseerd op uitgebreide praktijkproeven uitgevoerd bij toonaangevende kwekerijen zoals <span className="text-white font-bold">Van Asseldonk Champignons</span> en <span className="text-white font-bold">Pilzland</span>.
+                Onze claims zijn gebaseerd op uitgebreide praktijkproeven uitgevoerd bij praktijktelers in Nederland.
               </p>
               <p>
                 We hanteren een strikt <span className="text-white font-bold">split-plot design</span> met interne controle per cel, waarbij de resultaten worden geanalyseerd via een paired t-test (p &lt; 0,05).
@@ -35,7 +35,7 @@ export const ResultsSection = () => {
           {/* Right Content - Data Viz */}
           <div className="flex-1 w-full">
             <div className="bg-card/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 md:p-10">
-              <h3 className="text-xl font-bold text-white mb-8 border-b border-white/10 pb-4">Kernbevindingen</h3>
+              <h3 className="text-xl font-bold text-white mb-8 border-b border-white/10 pb-4">Kernbevindingen FungiPower Boost</h3>
 
               <div className="grid gap-8">
                 {/* Stat 1 */}
