@@ -58,7 +58,7 @@ export const Header = () => {
           {/* Request Pilot Button */}
           <button
             onClick={() => scrollToSection("#contact")}
-            className="bg-black text-white px-8 py-3 text-xs font-black tracking-[0.15em] uppercase hover:bg-black/80 transition-all shadow-xl"
+            className="bg-white text-black px-8 py-3 text-xs font-black tracking-[0.15em] uppercase hover:bg-white/90 transition-all shadow-xl"
           >
             PROEF AANVRAGEN
           </button>
