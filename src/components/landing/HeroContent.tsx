@@ -14,7 +14,7 @@ export const HeroContent = () => {
       <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-white leading-[0.9] mb-6 tracking-tight">
         MAXIMAAL<br />
         RENDEMENT<br />
-        UIT JE <span className="text-black underline decoration-black/30 underline-offset-[12px]">2e EN<br />3e VLUCHT.</span>
+        UIT JE <span className="underline decoration-white/30 underline-offset-[12px]">2e EN<br />3e VLUCHT.</span>
       </h1>
 
       {/* Intro Block */}
