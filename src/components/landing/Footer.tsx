@@ -80,7 +80,20 @@ export const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="col-span-2"></div>
+          <div>
+            <h4 className="text-foreground font-bold text-sm uppercase tracking-wider mb-4">Contact</h4>
+            <ul className="space-y-2 opacity-70 text-sm">
+              <li>info@fungipower.bio</li>
+              <li>Venlo, Nederland</li>
+            </ul>
+          </div>
+          <div>
+            <h4 className="text-foreground font-bold text-sm uppercase tracking-wider mb-4">Support</h4>
+            <ul className="space-y-2 opacity-70 text-sm">
+              <li>Product Support</li>
+              <li>Pilot Aanvragen</li>
+            </ul>
+          </div>
         </div>
 
         {/* Divider */}

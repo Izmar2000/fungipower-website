@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     keywords:
         "paddenstoelenkweek, fungi, opbrengstverbetering, commerciële teelt, biologische versterker",
     icons: {
-        icon: "/Logo%20trans/FungiPower%20Logo.svg",
+        icon: "/favicon.ico",
     },
 };
 

@@ -43,7 +43,7 @@ export const ScalabilitySection = () => {
             <div className="space-y-4 border-t border-border pt-6">
               <div className="flex items-center gap-3">
                 <FlaskConical className="w-5 h-5 text-muted-foreground" />
-                <span className="text-sm font-medium text-foreground">Dosering: <span className="font-bold text-primary">Op maat, afgestemd op uw teeltsituatie</span></span>
+                <span className="text-sm font-medium text-foreground">Dosering: <span className="font-bold text-primary">In overleg (op maat)</span></span>
               </div>
               <div className="flex items-center gap-3">
                 <Droplets className="w-5 h-5 text-muted-foreground" />
@@ -79,7 +79,7 @@ export const ScalabilitySection = () => {
             <div className="space-y-4 border-t border-border pt-6">
               <div className="flex items-center gap-3">
                 <FlaskConical className="w-5 h-5 text-muted-foreground" />
-                <span className="text-sm font-medium text-foreground">Dosering: <span className="font-bold text-primary">Op maat, afgestemd op uw teeltsituatie</span></span>
+                <span className="text-sm font-medium text-foreground">Dosering: <span className="font-bold text-primary">In overleg (op maat)</span></span>
               </div>
               <div className="flex items-center gap-3">
                 <Droplets className="w-5 h-5 text-muted-foreground" />
