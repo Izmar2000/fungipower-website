@@ -8,7 +8,7 @@ export const HeroSection = () => {
       id="home"
       className="relative w-full min-h-screen overflow-hidden flex flex-col"
       style={{
-        background: `linear-gradient(135deg, #FF5C35 0%, #E04E2A 100%)`
+        background: `linear-gradient(135deg, #F58220 0%, #D71920 100%)`
       }}
     >
       {/* Golden Vitality Layer - Organic Mycelium Pattern */}
