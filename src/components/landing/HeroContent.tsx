@@ -3,9 +3,9 @@ import { ArrowRight, Zap, Target } from "lucide-react";
 
 export const HeroContent = () => {
   return (
-    <div className="flex flex-col justify-center max-w-2xl py-8 relative">
+    <div className="flex flex-col justify-center max-w-2xl py-4 relative">
       {/* Label / Subline with premium touch */}
-      <div className="mb-6 flex items-center gap-3 animate-fade-in">
+      <div className="mb-4 flex items-center gap-3 animate-fade-in">
         <div className="h-px w-8 bg-white/40" />
         <span className="text-white/70 text-[10px] font-black tracking-[0.4em] uppercase">
           BIOLOGISCHE SYSTEEMVERSTERKING
@@ -13,7 +13,7 @@ export const HeroContent = () => {
       </div>
 
       {/* Main Headline - Premium Typography */}
-      <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-white leading-[0.9] mb-8 tracking-tighter animate-fade-in-up">
+      <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-white leading-[0.9] mb-4 tracking-tighter animate-fade-in-up">
         <span className="block opacity-90 drop-shadow-2xl">MEER OPBRENGST.</span>
         <span className="block text-gradient-white">ELKE VLUCHT.</span>
         <span className="block text-white/60 drop-shadow-lg">ELKE CEL.</span>

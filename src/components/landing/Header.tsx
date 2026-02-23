@@ -32,14 +32,14 @@ export const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 w-full transition-all duration-300 bg-white/5 backdrop-blur-md border-b border-white/10">
-      <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between py-4">
+    <header className="relative z-50 w-full bg-transparent">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between py-2">
         {/* Logo */}
         <div className="flex items-center">
           <img
             src="/Logo%20trans/FungiPower%20Logo.svg"
             alt="FungiPower"
-            className="h-16 md:h-20 w-auto object-contain transition-all brightness-0 invert"
+            className="h-12 md:h-14 w-auto object-contain transition-all brightness-0 invert"
           />
         </div>
 

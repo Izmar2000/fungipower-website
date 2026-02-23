@@ -6,12 +6,12 @@ export const GlassmorphismPanel = () => {
       {/* Decorative Glow behind the panel */}
       <div className="absolute -inset-4 bg-fungipower-orange/20 blur-3xl opacity-30 -z-10 animate-pulse"></div>
 
-      <div className="bg-white/10 backdrop-blur-2xl border border-white/20 p-8 shadow-[0_32px_64px_-16px_rgba(0,0,0,0.3)] relative overflow-hidden rounded-2xl">
+      <div className="bg-white/10 backdrop-blur-2xl border border-white/20 p-6 shadow-[0_32px_64px_-16px_rgba(0,0,0,0.3)] relative overflow-hidden rounded-2xl">
         {/* Subtle Texture Overlay inside the panel - Simplified to avoid lint issues */}
         <div className="absolute inset-0 opacity-[0.02] pointer-events-none mix-blend-overlay bg-white saturate-[0]" />
 
         {/* Top Metrics Row */}
-        <div className="flex justify-between mb-8 border-b border-white/10 pb-6 relative z-10">
+        <div className="flex justify-between mb-4 border-b border-white/10 pb-4 relative z-10">
           <div className="text-center">
             <span className="block text-[10px] uppercase font-bold text-white/40 tracking-[0.2em] mb-2">Vochtigheid (%)</span>
             <span className="text-2xl font-black text-white tracking-tight">88.2</span>
@@ -27,7 +27,7 @@ export const GlassmorphismPanel = () => {
         </div>
 
         {/* Main Case Study */}
-        <div className="mb-8 relative z-10">
+        <div className="mb-4 relative z-10">
           <div className="flex items-center gap-2 mb-4">
             <span className="block text-[10px] md:text-[11px] uppercase font-black text-white/60 tracking-[0.2em]">PRAKTIJKVOORBEELD: GRUBBENVORST</span>
             <div className="flex items-center gap-1.5 px-2 py-0.5 bg-white/10 rounded-full border border-white/10">
@@ -65,7 +65,7 @@ export const GlassmorphismPanel = () => {
         </div>
 
         {/* Image Grid Placeholder Row - Now more integrated */}
-        <div className="grid grid-cols-4 gap-3 mb-8 h-20 relative z-10">
+        <div className="grid grid-cols-4 gap-3 mb-4 h-20 relative z-10">
           <div className="bg-white/5 rounded-xl border border-white/10 bg-[url('/images/panel-1.jpg')] bg-cover bg-center transition-all hover:bg-white/10 hover:scale-105 cursor-pointer"></div>
           <div className="bg-white/5 rounded-xl border border-white/10 bg-[url('/images/panel-2.jpg')] bg-cover bg-center transition-all hover:bg-white/10 hover:scale-105 cursor-pointer"></div>
           <div className="bg-white/5 rounded-xl border border-white/10 bg-[url('/images/panel-2.jpg')] bg-cover bg-center transition-all hover:bg-white/10 hover:scale-105 cursor-pointer"></div>

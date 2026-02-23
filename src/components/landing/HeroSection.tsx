@@ -27,7 +27,7 @@ export const HeroSection = () => {
       <Header />
 
       {/* Main Content */}
-      <main className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 flex-1 flex items-center py-20">
+      <main className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 flex-1 flex items-center py-12">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-24 w-full">
           <HeroContent />
           <GlassmorphismPanel />
