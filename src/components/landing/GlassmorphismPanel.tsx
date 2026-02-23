@@ -1,68 +1,58 @@
-import { Star, Activity } from "lucide-react";
+import { Activity } from "lucide-react";
 
 export const GlassmorphismPanel = () => {
   return (
     <div className="w-full max-w-md lg:max-w-lg relative z-10 transform transition-transform duration-500 hover:scale-[1.01]">
-      {/* Connecting Lines - Vitality Links */}
-      <svg className="absolute -left-20 top-1/2 -translate-y-1/2 w-20 h-40 pointer-events-none opacity-20 hidden lg:block">
-        <path d="M0,0 Q40,20 80,40 M0,160 Q40,140 80,120 M0,80 L80,80" stroke="#FF7E06" strokeWidth="1" fill="none" />
-      </svg>
+      {/* Decorative Glow behind the panel */}
+      <div className="absolute -inset-4 bg-white/5 blur-3xl opacity-20 -z-10 animate-pulse"></div>
 
-      {/* Decorative Glow behind the panel - more vibrant to avoid 'burnt' look */}
-      <div className="absolute -inset-10 bg-[#FFD700]/10 blur-[80px] opacity-40 -z-10 animate-pulse"></div>
-      <div className="absolute -inset-4 bg-[#FF7E06]/20 blur-3xl opacity-40 -z-10"></div>
-
-      <div className="bg-white/[0.07] backdrop-blur-2xl border border-white/20 p-6 shadow-[0_32px_80px_-16px_rgba(0,0,0,0.6)] relative overflow-hidden rounded-2xl">
-        {/* Subtle Glow Overlay inside the panel */}
-        <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/[0.02] to-white/[0.05] pointer-events-none" />
-        <div className="absolute inset-0 opacity-[0.03] pointer-events-none mix-blend-overlay bg-white saturate-[0]" />
-
+      <div className="bg-white/[0.03] backdrop-blur-3xl border border-white/10 p-8 shadow-[0_32px_64px_-16px_rgba(0,0,0,0.5)] relative overflow-hidden rounded-3xl">
         {/* Top Metrics Row */}
-        <div className="flex justify-between mb-4 border-b border-white/10 pb-4 relative z-10">
+        <div className="grid grid-cols-3 gap-4 mb-8 relative z-10">
           <div className="text-center">
-            <span className="block text-[10px] uppercase font-bold text-white/40 tracking-[0.2em] mb-2">Vochtigheid (%)</span>
-            <span className="text-2xl font-black text-white tracking-tight">88.2</span>
+            <span className="block text-[10px] uppercase font-black text-white/60 tracking-[0.2em] mb-3">HUMIDITY</span>
+            <span className="text-3xl font-black text-white tracking-tight">88.2%</span>
           </div>
-          <div className="text-center border-l border-white/10 pl-8">
-            <span className="block text-[10px] uppercase font-bold text-white/40 tracking-[0.2em] mb-2">CO2 (ppm)</span>
-            <span className="text-2xl font-black text-white tracking-tight">948</span>
+          <div className="text-center border-l border-white/10 px-4">
+            <span className="block text-[10px] uppercase font-black text-white/60 tracking-[0.2em] mb-3">CO2</span>
+            <span className="text-3xl font-black text-white tracking-tight">948</span>
           </div>
-          <div className="text-center border-l border-white/10 pl-8">
-            <span className="block text-[10px] uppercase font-bold text-white/40 tracking-[0.2em] mb-2">Temp (C)</span>
-            <span className="text-2xl font-black text-white tracking-tight">24.1</span>
+          <div className="text-center border-l border-white/10 pl-4">
+            <span className="block text-[10px] uppercase font-black text-white/60 tracking-[0.2em] mb-3">TEMP</span>
+            <span className="text-3xl font-black text-white tracking-tight">24.1°C</span>
           </div>
         </div>
 
-        {/* Main Case Study */}
-        <div className="mb-4 relative z-10">
-          <div className="flex items-center gap-2 mb-4">
-            <span className="block text-[10px] md:text-[11px] uppercase font-black text-white/60 tracking-[0.2em]">PRAKTIJKVOORBEELD: GRUBBENVORST</span>
-            <div className="flex items-center gap-1.5 px-2 py-0.5 bg-white/10 rounded-full border border-white/10">
-              <div className="w-1.5 h-1.5 bg-green-400 rounded-full animate-pulse shadow-[0_0_8px_rgba(74,222,128,0.5)]" />
-              <span className="text-[8px] font-bold text-white/80 uppercase tracking-tighter">Live Resultaat</span>
+        <div className="h-px w-full bg-white/10 mb-8" />
+
+        {/* Main Section */}
+        <div className="mb-8 relative z-10">
+          <div className="flex justify-between items-start mb-4">
+            <div className="flex flex-col gap-1">
+              <span className="text-[11px] font-black text-white uppercase tracking-[0.2em]">REAL-TIME ANALYSIS</span>
+              <h2 className="text-8xl font-black text-white tracking-tighter leading-none">+73%</h2>
+              <span className="text-[11px] font-black text-white uppercase tracking-[0.2em]">YIELD INCREASE</span>
+            </div>
+
+            <div className="flex items-center gap-2 px-3 py-1.5 bg-white/5 rounded-full border border-white/10 mt-1">
+              <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse shadow-[0_0_12px_rgba(74,222,128,0.8)]" />
+              <span className="text-[10px] font-black text-white uppercase tracking-wider">LIVE MONITOR</span>
             </div>
           </div>
 
-          <div className="flex items-end gap-4">
-            <h2 className="text-7xl font-black text-white tracking-tighter leading-none">+73%</h2>
-            <div className="flex flex-col mb-1">
-              <span className="text-sm font-bold text-white uppercase leading-none mb-1">Elke</span>
-              <span className="text-sm font-bold text-white/50 uppercase leading-none">Vlucht</span>
-            </div>
-
-            {/* SVG Graph Line - More premium version */}
-            <svg className="h-12 w-32 ml-auto" viewBox="0 0 100 40" fill="none">
+          {/* SVG Graph Line */}
+          <div className="absolute right-0 bottom-4 w-1/2">
+            <svg className="w-full h-20" viewBox="0 0 100 40" fill="none">
               <path
-                d="M0 35 L 20 32 L 40 25 L 60 28 L 80 15 L 100 5"
+                d="M0 35 C 20 35, 30 30, 40 32 C 50 34, 60 25, 80 20 L 100 10"
                 stroke="white"
-                strokeWidth="2.5"
+                strokeWidth="4"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="opacity-40"
               />
-              <path d="M0 35 L 20 32 L 40 25 L 60 28 L 80 15 L 100 5 V 40 H 0 Z" fill="url(#gradient-glass)" className="opacity-10" />
+              <path d="M0 35 C 20 35, 30 30, 40 32 C 50 34, 60 25, 80 20 L 100 10 V 40 H 0 Z" fill="url(#grad)" className="opacity-20" />
               <defs>
-                <linearGradient id="gradient-glass" x1="0" y1="0" x2="0" y2="1">
+                <linearGradient id="grad" x1="0" y1="0" x2="0" y2="1">
                   <stop offset="0%" stopColor="white" />
                   <stop offset="100%" stopColor="transparent" />
                 </linearGradient>
@@ -71,38 +61,31 @@ export const GlassmorphismPanel = () => {
           </div>
         </div>
 
-        {/* Image Grid Placeholder Row - Now more integrated */}
-        <div className="grid grid-cols-4 gap-3 mb-4 h-20 relative z-10">
-          <div className="bg-white/5 rounded-xl border border-white/10 bg-[url('/images/panel-1.jpg')] bg-cover bg-center transition-all hover:bg-white/10 hover:scale-105 cursor-pointer"></div>
-          <div className="bg-white/5 rounded-xl border border-white/10 bg-[url('/images/panel-2.jpg')] bg-cover bg-center transition-all hover:bg-white/10 hover:scale-105 cursor-pointer"></div>
-          <div className="bg-white/5 rounded-xl border border-white/10 bg-[url('/images/panel-2.jpg')] bg-cover bg-center transition-all hover:bg-white/10 hover:scale-105 cursor-pointer"></div>
-          <div className="bg-white/5 rounded-xl border border-white/10 bg-[url('/images/panel-1.jpg')] bg-cover bg-center transition-all hover:bg-white/10 hover:scale-105 cursor-pointer"></div>
+        {/* 4 Empty Grid Boxes */}
+        <div className="grid grid-cols-4 gap-4 mb-8 h-24 relative z-10">
+          {[1, 2, 3, 4].map((i) => (
+            <div key={i} className="border border-white/10 rounded-lg bg-white/[0.02]" />
+          ))}
         </div>
 
-        {/* Testimonial Section - Restored and compliant */}
-        <div className="bg-white/5 rounded-2xl p-6 border border-white/10 text-left relative z-10 transition-all hover:bg-white/10">
-          <div className="flex items-center gap-3 mb-4">
-            <div className="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center shrink-0 border border-white/10">
-              <Star className="w-4 h-4 text-white" />
+        {/* Bottom Verification Section */}
+        <div className="bg-white/5 rounded-2xl p-6 border border-white/10 text-left relative z-10">
+          <div className="flex items-center gap-4 mb-3">
+            <div className="w-12 h-12 bg-white/5 rounded-lg flex items-center justify-center border border-white/10">
+              <Activity className="w-6 h-6 text-white opacity-80" />
             </div>
             <div>
-              <span className="block text-[10px] font-black uppercase text-white/40 tracking-wider leading-none mb-1">Gebruikerservaring</span>
-              <div className="flex gap-0.5">
+              <span className="block text-[11px] font-black uppercase text-white/50 tracking-widest mb-1">VERIFICATION STATUS</span>
+              <div className="flex gap-1">
                 {[1, 2, 3, 4, 5].map((i) => (
-                  <Star key={i} className="w-3 h-3 text-white fill-white shadow-sm" />
+                  <div key={i} className="w-2 h-2 rounded-full bg-white/80" />
                 ))}
               </div>
             </div>
           </div>
-          <p className="text-sm text-white/80 italic leading-relaxed mb-4 font-medium">
-            "Testimonial volgt na afronding praktijkproeven."
+          <p className="text-sm text-white/90 font-medium leading-relaxed italic">
+            "Structurele optimalisatie van mycelium vitaliteit resulteert in maximale opbrengst."
           </p>
-          <div className="flex items-center justify-between">
-            <div className="flex flex-col gap-0.5">
-              <span className="text-xs font-black text-white uppercase tracking-wider">Praktijkteler</span>
-              <span className="text-[9px] text-white/40 font-bold uppercase tracking-widest">Aansluiting, Nederland</span>
-            </div>
-          </div>
         </div>
       </div>
     </div>
