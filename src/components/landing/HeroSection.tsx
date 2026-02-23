@@ -8,14 +8,21 @@ export const HeroSection = () => {
       id="home"
       className="relative w-full min-h-screen overflow-hidden flex flex-col pt-2"
       style={{
-        background: `linear-gradient(135deg, #D84315 0%, #7A2100 100%)`
+        background: `linear-gradient(135deg, #FF6F00 0%, #1A0F0E 100%)`
       }}
     >
+      {/* Dynamic Glow Layer - Scientific Energy */}
+      <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-orange-500/10 blur-[150px] rounded-full -translate-y-1/2 translate-x-1/4 pointer-events-none" />
+      <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-orange-600/5 blur-[120px] rounded-full translate-y-1/3 -translate-x-1/4 pointer-events-none" />
       {/* Golden Vitality Layer - Organic Mycelium Pattern */}
-      <div className="absolute inset-0 z-0 opacity-20 pointer-events-none">
+      <div className="absolute inset-0 z-0 opacity-15 pointer-events-none">
         <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" className="absolute inset-0">
+          <pattern id="scientific-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" strokeWidth="0.5" strokeOpacity="0.03" />
+          </pattern>
+          <rect width="100%" height="100%" fill="url(#scientific-grid)" />
           <filter id="glow">
-            <feGaussianBlur stdDeviation="3" result="coloredBlur" />
+            <feGaussianBlur stdDeviation="2" result="coloredBlur" />
             <feMerge>
               <feMergeNode in="coloredBlur" />
               <feMergeNode in="SourceGraphic" />
