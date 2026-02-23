@@ -6,7 +6,7 @@ export const HeroSection = () => {
   return (
     <section
       id="home"
-      className="relative w-full min-h-screen overflow-hidden flex flex-col"
+      className="relative w-full min-h-[600px] md:min-h-[800px] overflow-hidden flex flex-col"
       style={{
         background: `linear-gradient(135deg, #F58220 0%, #D71920 100%)`
       }}
@@ -36,8 +36,8 @@ export const HeroSection = () => {
 
       <Header />
 
-      {/* Main Content - Increased padding for PlantiPower height feel */}
-      <main className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 flex-1 flex items-center py-20 md:py-32">
+      {/* Main Content - Reduced padding for a more compact look */}
+      <main className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 flex-1 flex items-center py-8 md:py-12">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-24 w-full">
           <HeroContent />
           <GlassmorphismPanel />

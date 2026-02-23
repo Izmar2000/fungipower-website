@@ -47,7 +47,7 @@ export const Header = () => {
       {/* Scientific Corner Accents - More subtle for white theme */}
       <div className="absolute top-0 right-0 w-32 h-32 opacity-5 pointer-events-none border-t border-r border-black m-2" />
 
-      <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between py-4 relative">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between py-2 relative">
         {/* Logo - Cropped to remove the two long mushrooms on the right */}
         <div className="flex items-center overflow-hidden w-[180px] md:w-[220px]">
           <img
