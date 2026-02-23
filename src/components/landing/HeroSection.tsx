@@ -8,7 +8,7 @@ export const HeroSection = () => {
       id="home"
       className="relative w-full min-h-screen overflow-hidden flex flex-col"
       style={{
-        background: `radial-gradient(circle at 50% -20%, #CC4400 0%, #802B00 50%, #4D1A00 100%)`
+        background: `linear-gradient(90deg, #FF7E06 0%, #E62B1E 100%)`
       }}
     >
       {/* Cinematic Lighting Refinement */}

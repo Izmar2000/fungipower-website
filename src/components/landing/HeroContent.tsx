@@ -13,7 +13,7 @@ export const HeroContent = () => {
       </div>
 
       {/* Main Headline - Premium Typography */}
-      <h1 className="text-5xl md:text-7xl lg:text-[95px] font-black text-white leading-[0.8] mb-12 tracking-tighter animate-fade-in-up">
+      <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-white leading-[0.9] mb-8 tracking-tighter animate-fade-in-up">
         <span className="block opacity-90 drop-shadow-2xl">MEER OPBRENGST.</span>
         <span className="block text-gradient-white">ELKE VLUCHT.</span>
         <span className="block text-white/60 drop-shadow-lg">ELKE CEL.</span>
