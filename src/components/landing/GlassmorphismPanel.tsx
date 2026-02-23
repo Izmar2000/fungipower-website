@@ -44,7 +44,7 @@ export const GlassmorphismPanel = () => {
           </div>
 
           <div className="flex items-end gap-4">
-            <h2 className="text-7xl font-black text-white tracking-tighter leading-none">+73%</h2>
+            <h2 className="text-7xl font-black text-white tracking-tighter leading-none">14%</h2>
             <div className="flex flex-col mb-1">
               <span className="text-sm font-bold text-white uppercase leading-none mb-1">Elke</span>
               <span className="text-sm font-bold text-white/50 uppercase leading-none">Vlucht</span>
