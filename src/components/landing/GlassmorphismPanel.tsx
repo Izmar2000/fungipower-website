@@ -3,10 +3,15 @@ import { Star, Activity } from "lucide-react";
 export const GlassmorphismPanel = () => {
   return (
     <div className="w-full max-w-md lg:max-w-lg relative z-10 transform transition-transform duration-500 hover:scale-[1.01]">
-      {/* Decorative Glow behind the panel */}
-      <div className="absolute -inset-4 bg-fungipower-orange/20 blur-3xl opacity-30 -z-10 animate-pulse"></div>
+      {/* Connecting Lines - Vitality Links */}
+      <svg className="absolute -left-20 top-1/2 -translate-y-1/2 w-20 h-40 pointer-events-none opacity-20 hidden lg:block">
+        <path d="M0,0 Q40,20 80,40 M0,160 Q40,140 80,120 M0,80 L80,80" stroke="#FF7E06" strokeWidth="1" fill="none" />
+      </svg>
 
-      <div className="bg-white/10 backdrop-blur-2xl border border-white/20 p-6 shadow-[0_32px_64px_-16px_rgba(0,0,0,0.3)] relative overflow-hidden rounded-2xl">
+      {/* Decorative Glow behind the panel */}
+      <div className="absolute -inset-4 bg-[#FF7E06]/10 blur-3xl opacity-30 -z-10 animate-pulse"></div>
+
+      <div className="bg-white/[0.03] backdrop-blur-3xl border border-white/10 p-6 shadow-[0_32px_64px_-16px_rgba(0,0,0,0.5)] relative overflow-hidden rounded-2xl">
         {/* Subtle Texture Overlay inside the panel - Simplified to avoid lint issues */}
         <div className="absolute inset-0 opacity-[0.02] pointer-events-none mix-blend-overlay bg-white saturate-[0]" />
 

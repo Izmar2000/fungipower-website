@@ -15,14 +15,14 @@ export const HeroContent = () => {
       {/* Main Headline - Premium Typography */}
       <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-white leading-[0.9] mb-4 tracking-tighter animate-fade-in-up">
         <span className="block opacity-90 drop-shadow-2xl">MEER OPBRENGST.</span>
-        <span className="block text-gradient-white">ELKE VLUCHT.</span>
-        <span className="block text-white/60 drop-shadow-lg">ELKE CEL.</span>
+        <span className="block bg-gradient-to-r from-[#FFD700] via-[#FF7E06] to-[#FFD700] bg-clip-text text-transparent">ELKE VLUCHT.</span>
+        <span className="block text-white/40 drop-shadow-lg">ELKE CEL.</span>
       </h1>
 
       {/* Intro Block - Refined weight */}
-      <p className="text-white/80 text-lg md:text-xl font-medium mb-10 leading-relaxed max-w-xl border-l-2 border-white/20 pl-8 animate-fade-in" style={{ animationDelay: '0.2s' }}>
+      <p className="text-white/80 text-lg md:text-xl font-medium mb-8 leading-relaxed max-w-xl border-l-2 border-[#FF7E06]/40 pl-8 animate-fade-in" style={{ animationDelay: '0.2s' }}>
         FungiPower verhoogt structureel de opbrengst van champignons door de vitaliteit van het substraat te verlengen en opname-efficiëntie te optimaliseren.
-        <br /><span className="mt-4 block text-[10px] font-black text-white/40 uppercase tracking-[0.2em]">Scientific Grade Innovation</span>
+        <br /><span className="mt-4 block text-[10px] font-black text-[#FF7E06]/60 uppercase tracking-[0.2em]">Scientific Grade Innovation</span>
       </p>
 
       {/* 3 Kernpunten - Modern list */}
