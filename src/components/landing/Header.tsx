@@ -69,12 +69,17 @@ export const Header = () => {
             </button>
           ))}
 
-          {/* Request Pilot Button - Clean white on transparent */}
+          {/* Request Pilot Button - Integrated Lab-Tech Style */}
           <button
             onClick={() => scrollToSection("#contact")}
-            className="bg-white text-black px-8 py-3 text-xs font-black tracking-[0.15em] uppercase hover:bg-white/90 transition-all shadow-xl"
+            className="group relative backdrop-blur-md bg-white/5 border border-white/20 text-white px-8 py-3 text-[10px] font-black tracking-[0.25em] uppercase hover:bg-white/10 transition-all overflow-hidden"
           >
-            PROEF AANVRAGEN
+            <div className="flex items-center gap-3">
+              <span className="relative z-10">PROEF AANVRAGEN</span>
+              <div className="w-1 h-1 rounded-full bg-white opacity-40 group-hover:opacity-100 transition-opacity" />
+            </div>
+            {/* Subtle scientific accent line */}
+            <div className="absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-white/20 to-transparent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500" />
           </button>
         </nav>
 
@@ -89,20 +94,20 @@ export const Header = () => {
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="lg:hidden absolute top-full left-0 right-0 bg-background/95 backdrop-blur-md border-t border-border animate-fade-in shadow-lg">
+        <div className="lg:hidden absolute top-full left-0 right-0 bg-black/95 backdrop-blur-md border-t border-white/10 animate-fade-in shadow-lg">
           <nav className="flex flex-col p-6 gap-4">
             {navLinks.map((link) => (
               <button
                 key={link.label}
                 onClick={() => scrollToSection(link.href)}
-                className="text-foreground text-sm font-bold tracking-widest uppercase py-3 hover:text-primary transition-colors text-left"
+                className="text-white/70 text-sm font-bold tracking-widest uppercase py-3 hover:text-white transition-colors text-left"
               >
                 {link.label}
               </button>
             ))}
             <button
               onClick={() => scrollToSection("#contact")}
-              className="bg-primary text-white px-6 py-3 text-xs font-black tracking-[0.15em] uppercase mt-4"
+              className="bg-white/10 border border-white/20 text-white px-6 py-4 text-[10px] font-black tracking-[0.2em] uppercase mt-4 text-center"
             >
               PROEF AANVRAGEN
             </button>
