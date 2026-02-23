@@ -32,14 +32,30 @@ export const Header = () => {
   };
 
   return (
-    <header className="relative z-50 w-full bg-transparent">
-      <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between py-2">
+    <header className="relative z-50 w-full bg-transparent overflow-hidden">
+      {/* Background Scientific Patterns */}
+      <div className="absolute inset-0 z-[-1] opacity-[0.05] pointer-events-none">
+        <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+          <pattern id="header-mycelium" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+            <path d="M10,20 Q30,10 50,40 T90,20 M20,80 Q40,60 60,90 T100,70" stroke="white" strokeWidth="0.5" fill="none" />
+            <circle cx="50" cy="40" r="1" fill="white" />
+            <circle cx="90" cy="20" r="0.5" fill="white" />
+          </pattern>
+          <rect width="100%" height="100%" fill="url(#header-mycelium)" />
+        </svg>
+      </div>
+
+      {/* Scientific Corner Accents */}
+      <div className="absolute top-0 right-0 w-32 h-32 opacity-10 pointer-events-none border-t border-r border-white/50 m-2" />
+      <div className="absolute bottom-0 left-0 w-8 h-8 opacity-5 pointer-events-none border-b border-l border-white/30 m-2" />
+
+      <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between py-2 relative">
         {/* Logo - Cropped to remove the two long mushrooms on the right */}
-        <div className="flex items-center overflow-hidden w-[140px] md:w-[170px]">
+        <div className="flex items-center overflow-hidden w-[180px] md:w-[220px]">
           <img
             src="/Logo%20trans/FungiPower%20logo%20transparant.png"
             alt="FungiPower"
-            className="h-10 md:h-12 w-auto object-left object-contain transition-all brightness-0 invert max-w-none"
+            className="h-14 md:h-16 w-auto object-left object-contain transition-all brightness-0 invert max-w-none"
           />
         </div>
 

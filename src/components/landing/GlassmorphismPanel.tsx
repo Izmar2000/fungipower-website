@@ -8,12 +8,14 @@ export const GlassmorphismPanel = () => {
         <path d="M0,0 Q40,20 80,40 M0,160 Q40,140 80,120 M0,80 L80,80" stroke="#FF7E06" strokeWidth="1" fill="none" />
       </svg>
 
-      {/* Decorative Glow behind the panel */}
-      <div className="absolute -inset-4 bg-[#FF7E06]/10 blur-3xl opacity-30 -z-10 animate-pulse"></div>
+      {/* Decorative Glow behind the panel - more vibrant to avoid 'burnt' look */}
+      <div className="absolute -inset-10 bg-[#FFD700]/10 blur-[100px] opacity-30 -z-10 animate-pulse"></div>
+      <div className="absolute -inset-4 bg-[#FF7E06]/15 blur-3xl opacity-30 -z-10"></div>
 
-      <div className="bg-white/[0.03] backdrop-blur-3xl border border-white/10 p-6 shadow-[0_32px_64px_-16px_rgba(0,0,0,0.5)] relative overflow-hidden rounded-2xl">
-        {/* Subtle Texture Overlay inside the panel - Simplified to avoid lint issues */}
-        <div className="absolute inset-0 opacity-[0.02] pointer-events-none mix-blend-overlay bg-white saturate-[0]" />
+      <div className="bg-white/10 backdrop-blur-2xl border border-white/20 p-6 shadow-[0_32px_80px_-16px_rgba(0,0,0,0.4)] relative overflow-hidden rounded-2xl">
+        {/* Subtle Glow Overlay inside the panel */}
+        <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/5 to-white/10 pointer-events-none" />
+        <div className="absolute inset-0 opacity-[0.05] pointer-events-none mix-blend-overlay bg-white saturate-[0]" />
 
         {/* Top Metrics Row */}
         <div className="flex justify-between mb-4 border-b border-white/10 pb-4 relative z-10">
