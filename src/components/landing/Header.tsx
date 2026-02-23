@@ -32,28 +32,28 @@ export const Header = () => {
   };
 
   return (
-    <header className="relative z-50 w-full bg-white border-b border-gray-100 overflow-hidden">
+    <header className="relative z-50 w-full bg-transparent overflow-hidden">
       {/* Background Scientific Patterns */}
-      <div className="absolute inset-0 z-[-1] opacity-[0.03] pointer-events-none">
+      <div className="absolute inset-0 z-[-1] opacity-[0.05] pointer-events-none">
         <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
           <pattern id="header-mycelium" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
-            <path d="M10,20 Q30,10 50,40 T90,20 M20,80 Q40,60 60,90 T100,70" stroke="black" strokeWidth="0.5" fill="none" />
-            <circle cx="50" cy="40" r="1" fill="black" />
+            <path d="M10,20 Q30,10 50,40 T90,20 M20,80 Q40,60 60,90 T100,70" stroke="white" strokeWidth="0.5" fill="none" />
+            <circle cx="50" cy="40" r="1" fill="white" />
           </pattern>
           <rect width="100%" height="100%" fill="url(#header-mycelium)" />
         </svg>
       </div>
 
-      {/* Scientific Corner Accents - More subtle for white theme */}
-      <div className="absolute top-0 right-0 w-32 h-32 opacity-5 pointer-events-none border-t border-r border-black m-2" />
+      {/* Scientific Corner Accents */}
+      <div className="absolute top-0 right-0 w-32 h-32 opacity-10 pointer-events-none border-t border-r border-white/50 m-2" />
 
-      <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between py-2 relative">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between py-4 relative">
         {/* Logo - Cropped to remove the two long mushrooms on the right */}
         <div className="flex items-center overflow-hidden w-[180px] md:w-[220px]">
           <img
             src="/Logo%20trans/FungiPower%20logo%20transparant.png"
             alt="FungiPower"
-            className="h-14 md:h-16 w-auto object-left object-contain transition-all transition-all duration-300 hover:scale-105 max-w-none"
+            className="h-14 md:h-16 w-auto object-left object-contain transition-all brightness-0 invert transition-all duration-300 hover:scale-105 max-w-none"
           />
         </div>
 
@@ -63,16 +63,16 @@ export const Header = () => {
             <button
               key={link.label}
               onClick={() => scrollToSection(link.href)}
-              className="text-black/70 text-xs font-black tracking-[0.15em] uppercase hover:text-black transition-colors"
+              className="text-white/80 text-xs font-black tracking-[0.15em] uppercase hover:text-white transition-colors"
             >
               {link.label}
             </button>
           ))}
 
-          {/* Request Pilot Button - HubSpot style */}
+          {/* Request Pilot Button - Clean white on transparent */}
           <button
             onClick={() => scrollToSection("#contact")}
-            className="bg-[#FF5C35] text-white px-8 py-3 text-xs font-black tracking-[0.15em] uppercase hover:bg-[#e04e2a] transition-all shadow-xl"
+            className="bg-white text-black px-8 py-3 text-xs font-black tracking-[0.15em] uppercase hover:bg-white/90 transition-all shadow-xl"
           >
             PROEF AANVRAGEN
           </button>
