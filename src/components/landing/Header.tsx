@@ -48,10 +48,10 @@ export const Header = () => {
       <div className="absolute top-0 right-0 w-32 h-32 opacity-10 pointer-events-none border-t border-r border-white/50 m-2" />
 
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between py-4 relative">
-        {/* Logo - Cropped to remove the two long mushrooms on the right */}
-        <div className="flex items-center overflow-hidden w-[180px] md:w-[220px]">
+        {/* Logo - Updated to new official version */}
+        <div className="flex items-center overflow-hidden w-[200px] md:w-[250px]">
           <img
-            src="/Logo%20trans/FungiPower%20logo%20transparant.png"
+            src="/images/FungiPower Logo.png"
             alt="FungiPower"
             className="h-14 md:h-16 w-auto object-left object-contain transition-all brightness-0 invert transition-all duration-300 hover:scale-105 max-w-none"
           />
