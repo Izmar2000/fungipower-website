@@ -34,12 +34,12 @@ export const Header = () => {
   return (
     <header className="relative z-50 w-full bg-transparent">
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between py-2">
-        {/* Logo */}
-        <div className="flex items-center">
+        {/* Logo - Cropped to remove the two long mushrooms on the right */}
+        <div className="flex items-center overflow-hidden w-[140px] md:w-[170px]">
           <img
-            src="/Logo%20trans/FungiPower%20Logo.svg"
+            src="/Logo%20trans/FungiPower%20logo%20transparant.png"
             alt="FungiPower"
-            className="h-12 md:h-14 w-auto object-contain transition-all brightness-0 invert"
+            className="h-10 md:h-12 w-auto object-left object-contain transition-all brightness-0 invert max-w-none"
           />
         </div>
 
