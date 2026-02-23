@@ -48,12 +48,12 @@ export const Header = () => {
       <div className="absolute top-0 right-0 w-32 h-32 opacity-10 pointer-events-none border-t border-r border-white/50 m-2" />
 
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between py-4 relative">
-        {/* Logo - Updated to new official version - INCREASED SIZE */}
-        <div className="flex items-center w-[240px] md:w-[320px]">
+        {/* Logo - Updated to new official version 3 - SIGNIFICANTLY INCREASED SIZE */}
+        <div className="flex items-center w-[300px] md:w-[400px]">
           <img
-            src="/images/fungipower-logo.png"
+            src="/images/fungipower-logo-3.png"
             alt="FungiPower"
-            className="h-16 md:h-20 w-auto object-left object-contain transition-all brightness-0 invert transition-all duration-300 hover:scale-105 max-w-none"
+            className="h-20 md:h-28 w-auto object-left object-contain transition-all brightness-0 invert transition-all duration-300 hover:scale-105 max-w-none"
           />
         </div>
 
