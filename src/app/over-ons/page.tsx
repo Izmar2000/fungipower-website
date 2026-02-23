@@ -32,7 +32,7 @@ export default function OverOns() {
                         <div className="relative">
                             <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl border border-border">
                                 <img
-                                    src="/images/jan-klerken.png"
+                                    src="/images/jan-klerken.jpg"
                                     alt="Jan Klerken"
                                     className="w-full h-full object-cover"
                                 />
