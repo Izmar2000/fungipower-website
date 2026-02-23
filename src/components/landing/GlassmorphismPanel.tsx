@@ -65,11 +65,37 @@ export const GlassmorphismPanel = () => {
         </div>
 
         {/* Image Grid Placeholder Row - Now more integrated */}
-        <div className="grid grid-cols-4 gap-3 h-20 relative z-10">
+        <div className="grid grid-cols-4 gap-3 mb-8 h-20 relative z-10">
           <div className="bg-white/5 rounded-xl border border-white/10 bg-[url('/images/panel-1.jpg')] bg-cover bg-center transition-all hover:bg-white/10 hover:scale-105 cursor-pointer"></div>
           <div className="bg-white/5 rounded-xl border border-white/10 bg-[url('/images/panel-2.jpg')] bg-cover bg-center transition-all hover:bg-white/10 hover:scale-105 cursor-pointer"></div>
           <div className="bg-white/5 rounded-xl border border-white/10 bg-[url('/images/panel-2.jpg')] bg-cover bg-center transition-all hover:bg-white/10 hover:scale-105 cursor-pointer"></div>
           <div className="bg-white/5 rounded-xl border border-white/10 bg-[url('/images/panel-1.jpg')] bg-cover bg-center transition-all hover:bg-white/10 hover:scale-105 cursor-pointer"></div>
+        </div>
+
+        {/* Testimonial Section - Restored and compliant */}
+        <div className="bg-white/5 rounded-2xl p-6 border border-white/10 text-left relative z-10 transition-all hover:bg-white/10">
+          <div className="flex items-center gap-3 mb-4">
+            <div className="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center shrink-0 border border-white/10">
+              <Star className="w-4 h-4 text-white" />
+            </div>
+            <div>
+              <span className="block text-[10px] font-black uppercase text-white/40 tracking-wider leading-none mb-1">Gebruikerservaring</span>
+              <div className="flex gap-0.5">
+                {[1, 2, 3, 4, 5].map((i) => (
+                  <Star key={i} className="w-3 h-3 text-white fill-white shadow-sm" />
+                ))}
+              </div>
+            </div>
+          </div>
+          <p className="text-sm text-white/80 italic leading-relaxed mb-4 font-medium">
+            "Testimonial volgt na afronding praktijkproeven."
+          </p>
+          <div className="flex items-center justify-between">
+            <div className="flex flex-col gap-0.5">
+              <span className="text-xs font-black text-white uppercase tracking-wider">Praktijkteler</span>
+              <span className="text-[9px] text-white/40 font-bold uppercase tracking-widest">Aansluiting, Nederland</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
