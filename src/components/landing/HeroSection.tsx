@@ -6,13 +6,13 @@ export const HeroSection = () => {
   return (
     <section
       id="home"
-      className="relative w-full min-h-screen overflow-hidden flex flex-col pt-2"
+      className="relative w-full min-h-screen overflow-hidden flex flex-col"
       style={{
-        background: `linear-gradient(135deg, #CC4400 0%, #802B00 100%)`
+        background: `linear-gradient(135deg, #FF5C35 0%, #E04E2A 100%)`
       }}
     >
       {/* Golden Vitality Layer - Organic Mycelium Pattern */}
-      <div className="absolute inset-0 z-0 opacity-20 pointer-events-none">
+      <div className="absolute inset-0 z-0 opacity-10 pointer-events-none">
         <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" className="absolute inset-0">
           <filter id="glow">
             <feGaussianBlur stdDeviation="3" result="coloredBlur" />
@@ -23,7 +23,7 @@ export const HeroSection = () => {
           </filter>
           <path
             d="M-50,200 Q150,150 300,300 T600,200 T900,400 T1200,250 M400,0 Q500,200 350,400 T600,600 M1000,0 Q800,300 1100,600"
-            stroke="#FFD700"
+            stroke="#FFFFFF"
             strokeWidth="0.8"
             fill="none"
             opacity="0.2"
@@ -31,26 +31,13 @@ export const HeroSection = () => {
             className="animate-pulse"
             style={{ animationDuration: '6s' }}
           />
-          <path
-            d="M200,800 Q400,600 600,750 T1000,650 M0,500 Q200,450 400,550 T800,450"
-            stroke="#FFFFFF"
-            strokeWidth="0.4"
-            fill="none"
-            opacity="0.1"
-            filter="url(#glow)"
-            className="animate-pulse"
-            style={{ animationDuration: '10s' }}
-          />
         </svg>
       </div>
 
-      {/* Atmospheric Pulses */}
-      <div className="absolute inset-0 z-0 bg-[radial-gradient(circle_at_50%_50%,rgba(255,126,6,0.05)_0%,transparent_70%)] animate-pulse" style={{ animationDuration: '8s' }} />
-
       <Header />
 
-      {/* Main Content */}
-      <main className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 flex-1 flex items-center py-6">
+      {/* Main Content - Increased padding for PlantiPower height feel */}
+      <main className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 flex-1 flex items-center py-20 md:py-32">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-24 w-full">
           <HeroContent />
           <GlassmorphismPanel />
@@ -58,7 +45,7 @@ export const HeroSection = () => {
       </main>
 
       {/* Bottom decorative bar */}
-      <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-black/20 to-transparent pointer-events-none" />
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-black/10 to-transparent pointer-events-none" />
     </section>
   );
 };
