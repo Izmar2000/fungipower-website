@@ -19,31 +19,33 @@ export const HeroContent = () => {
         <span className="block opacity-70 drop-shadow-lg">MEER OPBRENGST</span>
       </h1>
 
-      {/* Intro Block - Refined weight */}
-      <p className="text-white/80 text-lg md:text-xl font-medium mb-8 leading-relaxed max-w-xl border-l-2 border-white/60 pl-8 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-        FungiPower verhoogt structureel de opbrengst van champignons door de vitaliteit van het substraat te verlengen en opname-efficiëntie te optimaliseren.
-        <br /><span className="mt-4 block text-[10px] font-black text-white/70 uppercase tracking-[0.2em]">Scientific Grade Innovation</span>
-      </p>
+      {/* Intro Block - Cleaned up and aligned */}
+      <div className="mb-12 animate-fade-in" style={{ animationDelay: '0.2s' }}>
+        <p className="text-white text-lg md:text-xl font-medium leading-relaxed max-w-xl">
+          FungiPower verhoogt structureel de opbrengst van champignons door de vitaliteit van het substraat te verlengen en opname-efficiëntie te optimaliseren.
+        </p>
+        <span className="mt-4 block text-[10px] font-black text-white/40 uppercase tracking-[0.3em]">Scientific Grade Innovation</span>
+      </div>
 
-      {/* 3 Kernpunten - Modern list */}
-      <div className="grid sm:grid-cols-1 gap-5 mb-12 animate-fade-in" style={{ animationDelay: '0.4s' }}>
+      {/* 3 Kernpunten - Minimalist list */}
+      <div className="flex flex-col gap-5 mb-12 animate-fade-in" style={{ animationDelay: '0.4s' }}>
         {[
-          { text: "Optimale nutriënten-absorptie", icon: Zap },
-          { text: "Verlengde levensduur van substraat", icon: Target },
-          { text: "Data-driven resultaten in elke vlucht", icon: ArrowRight }
-        ].map((item, index) => (
-          <div key={index} className="flex items-center gap-5 group cursor-default">
-            <div className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-white/10 group-hover:border-white/20 transition-all duration-300">
-              <item.icon className="w-5 h-5 text-white/50 group-hover:text-white transition-colors" />
-            </div>
-            <span className="text-white font-bold tracking-tight text-xl group-hover:translate-x-1 transition-transform duration-300">{item.text}</span>
+          "Optimale nutriënten-absorptie",
+          "Verlengde levensduur van substraat",
+          "Data-driven resultaten in elke vlucht"
+        ].map((text, index) => (
+          <div key={index} className="flex items-center gap-4 group cursor-default">
+            <div className="w-1.5 h-1.5 rounded-full bg-white opacity-20 group-hover:opacity-100 transition-opacity" />
+            <span className="text-white/70 font-bold tracking-tight text-lg group-hover:translate-x-1 group-hover:text-white transition-all duration-300">
+              {text}
+            </span>
           </div>
         ))}
       </div>
 
       {/* CTA Buttons - Premium Button */}
-      <div className="flex flex-col sm:flex-row gap-8 animate-fade-in" style={{ animationDelay: '0.6s' }}>
-        <button className="bg-white text-black px-8 py-3.5 text-[11px] font-black tracking-[0.25em] uppercase hover:bg-white/90 transition-all shadow-[0_20px_50px_rgba(255,255,255,0.1)] flex items-center gap-4 group">
+      <div className="flex animate-fade-in" style={{ animationDelay: '0.6s' }}>
+        <button className="bg-white text-black px-8 py-3.5 text-[11px] font-black tracking-[0.25em] uppercase hover:bg-white/90 transition-all shadow-2xl flex items-center gap-4 group">
           START EEN PILOT PROJECT
           <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
         </button>

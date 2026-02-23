@@ -49,9 +49,9 @@ export const Header = () => {
 
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between py-4 relative">
         {/* Logo - Updated to new official version */}
-        <div className="flex items-center overflow-hidden w-[200px] md:w-[250px]">
+        <div className="flex items-center w-[200px] md:w-[250px]">
           <img
-            src="/images/FungiPower Logo.png"
+            src="/images/fungipower-logo.png"
             alt="FungiPower"
             className="h-14 md:h-16 w-auto object-left object-contain transition-all brightness-0 invert transition-all duration-300 hover:scale-105 max-w-none"
           />
