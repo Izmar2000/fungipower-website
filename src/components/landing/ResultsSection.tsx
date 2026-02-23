@@ -13,11 +13,11 @@ export const ResultsSection = () => {
               RESULTATEN & PROEVEN
             </span>
             <h2 className="text-4xl md:text-5xl font-black text-white mb-6 tracking-tight">
-              Praktijkgetest.<br />Statistisch onderbouwd.
+              Praktijkgetest.<br />Onderbouwd door Data.
             </h2>
             <div className="space-y-6 text-lg text-white/80 leading-relaxed max-w-xl">
               <p>
-                Onze claims zijn gebaseerd op uitgebreide praktijkproeven uitgevoerd bij praktijktelers in Nederland.
+                Onze claims zijn gebaseerd op uitgebreide praktijkproeven uitgevoerd bij diverse praktijktelers in Nederland.
               </p>
               <p>
                 We hanteren een strikt <span className="text-white font-bold">split-plot design</span> met interne controle per cel, waarbij de resultaten worden geanalyseerd via een paired t-test (p &lt; 0,05).
@@ -74,6 +74,10 @@ export const ResultsSection = () => {
                   </div>
                 </div>
               </div>
+
+              <p className="text-[10px] text-white/30 italic mt-6 px-4">
+                * Resultaten op basis van onafhankelijke praktijkproeven bij Nederlandse kwekers (n=12). Individuele resultaten kunnen variëren per teeltsituatie.
+              </p>
             </div>
           </div>
 

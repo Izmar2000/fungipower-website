@@ -68,7 +68,7 @@ export const ScalabilitySection = () => {
             </div>
 
             <h3 className="text-2xl font-black text-secondary mb-2">FungiPower Boost</h3>
-            <p className="text-sm font-bold text-primary uppercase tracking-wider mb-6">Maximaliseer je 2e en 3e vlucht</p>
+            <p className="text-sm font-bold text-primary uppercase tracking-wider mb-6">Maximaliseer elke vlucht</p>
 
             <h4 className="text-lg font-bold text-foreground mb-4">Verleng de productieve levensduur.</h4>
 
