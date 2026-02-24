@@ -3,7 +3,7 @@ import { ArrowRight, Zap, Target } from "lucide-react";
 
 export const HeroContent = () => {
   return (
-    <div className="flex flex-col items-start text-left max-w-2xl py-2 relative">
+    <div className="flex flex-col items-start text-left max-w-4xl py-2 relative">
       {/* Label / Subline - Stronger white */}
       <div className="mb-4 flex items-center gap-3 animate-fade-in">
         <div className="h-px w-8 bg-white" />
@@ -12,8 +12,8 @@ export const HeroContent = () => {
         </span>
       </div>
 
-      {/* Main Headline - Compact, High Impact */}
-      <h1 className="text-4xl md:text-5xl lg:text-[72px] font-black text-white leading-[0.85] mb-6 tracking-[-0.03em] animate-fade-in-up uppercase">
+      {/* Main Headline - Compact, Single Line per Statement */}
+      <h1 className="text-4xl md:text-6xl lg:text-[80px] font-black text-white leading-[0.82] mb-6 tracking-[-0.04em] animate-fade-in-up uppercase whitespace-nowrap">
         <span className="block">ELKE CEL</span>
         <span className="block text-black">ELKE VLUCHT</span>
         <span className="block">MEER OPBRENGST</span>

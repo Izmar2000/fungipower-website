@@ -33,7 +33,7 @@ export const Header = () => {
 
   return (
     <header className="fixed top-0 left-0 z-[110] w-full pointer-events-none">
-      <div className="max-w-7xl mx-auto px-6 md:px-12 relative flex justify-center pt-6">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 relative flex justify-end pt-6">
 
         {/* LOGO PENDANT - The Hanging Flag (Desktop & Mobile) */}
         <div className="absolute top-0 left-6 md:left-12 pointer-events-auto z-50">
