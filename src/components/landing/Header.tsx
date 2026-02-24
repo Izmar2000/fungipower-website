@@ -75,17 +75,20 @@ export const Header = () => {
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between relative">
         {/* Logo - Premium Pendant / Flag Design */}
         <div className="relative z-50">
-          <div className="bg-white px-6 pb-8 pt-4 shadow-[0_10px_30px_rgba(0,0,0,0.2)] rounded-b-[2rem] w-[200px] md:w-[260px] flex flex-col items-center transform transition-all duration-500 hover:pb-12 group/logo">
+          <div className="bg-white px-6 pb-10 pt-4 shadow-[0_20px_40px_rgba(0,0,0,0.3)] rounded-b-xl w-[180px] md:w-[220px] flex flex-col items-center transform transition-all duration-500 hover:pb-14 group/logo border-t-0">
             <img
               src="/images/fungipower-logo-3.png"
               alt="FungiPower"
-              className="w-full h-auto object-contain transition-all duration-500 group-hover/logo:scale-105"
+              className="w-full h-auto object-contain transition-all duration-500 group-hover/logo:scale-105 brightness-0"
             />
             {/* Subtle industrial anchor element */}
-            <div className="mt-4 w-8 h-1 bg-gray-100 rounded-full group-hover:w-12 transition-all" />
+            <div className="mt-6 flex flex-col items-center gap-2">
+              <div className="h-[1px] w-12 bg-black/10" />
+              <span className="text-[8px] font-black tracking-[0.3em] text-black/40 uppercase">Industrial Grade</span>
+            </div>
           </div>
           {/* Scientific connection 'wire' from top */}
-          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-px h-4 bg-white/20" />
+          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[2px] h-full bg-white/10 -z-10" />
         </div>
 
         {/* Desktop Navigation */}
