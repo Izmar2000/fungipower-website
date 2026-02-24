@@ -32,7 +32,7 @@ export const Header = () => {
   };
 
   return (
-    <header className="fixed top-6 left-1/2 -translate-x-1/2 z-[100] w-[92%] max-w-7xl bg-black/40 backdrop-blur-2xl rounded-2xl border border-white/10 transition-all duration-500 shadow-[0_25px_50px_-12px_rgba(0,0,0,0.5)] overflow-hidden">
+    <header className="fixed top-6 left-1/2 -translate-x-1/2 z-[100] w-[92%] max-w-7xl bg-black/40 backdrop-blur-2xl rounded-2xl border border-white/10 transition-all duration-500 overflow-hidden">
       {/* Subtle Internal Glow */}
       <div className="absolute inset-0 bg-gradient-to-b from-white/5 to-transparent pointer-events-none" />
 
