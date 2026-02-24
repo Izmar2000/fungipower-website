@@ -47,7 +47,7 @@ export const ScalabilitySection = () => {
               </div>
               <div className="flex items-center gap-3">
                 <Droplets className="w-5 h-5 text-muted-foreground" />
-                <span className="text-sm font-medium text-foreground">Toepassing: <span className="font-bold">Bij vullen (1L/m²)</span></span>
+                <span className="text-sm font-medium text-foreground">Toepassing: <span className="font-bold">Bij vullen</span></span>
               </div>
               <div className="flex items-center gap-3">
                 <LineChart className="w-5 h-5 text-primary" />
@@ -87,7 +87,7 @@ export const ScalabilitySection = () => {
               </div>
               <div className="flex items-center gap-3">
                 <LineChart className="w-5 h-5 text-primary" />
-                <span className="text-sm font-bold text-foreground">Resultaat: <span className="text-primary">Sterk effect op 3e vlucht</span></span>
+                <span className="text-sm font-bold text-foreground">Resultaat: <span className="text-primary">Sterk effect na 1e vlucht</span></span>
               </div>
             </div>
           </div>

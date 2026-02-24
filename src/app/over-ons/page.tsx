@@ -39,7 +39,7 @@ export default function OverOns() {
                             </div>
                             <div className="absolute -bottom-6 -right-6 bg-primary text-white p-8 rounded-xl shadow-xl hidden md:block">
                                 <span className="block text-3xl font-black italic leading-none">"Kennis delen is vermenigvuldigen."</span>
-                                <span className="block text-xs font-bold uppercase tracking-widest mt-4 opacity-80">— Jan Klerken</span>
+                                <span className="block text-xs font-bold uppercase tracking-widest mt-4 opacity-80">Jan Klerken</span>
                             </div>
                         </div>
                         <div>
@@ -51,10 +51,10 @@ export default function OverOns() {
                             </h2>
                             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
                                 <p>
-                                    Met een rijke achtergrond bij <span className="text-foreground font-bold">Scelta Mushrooms</span> — een van de grootste en meest innovatieve champignonbedrijven van Europa — brengt Jan Klerken een ongeëvenaard netwerk en diepgaande kennis naar FungiPower.
+                                    Jan Klerken heeft jarenlange ervaring in de champignonsector. Als voormalig directeur bij <span className="text-foreground font-bold">Scelta Mushrooms</span>, een van de grootste en meest innovatieve champignonbedrijven van Europa, brengt hij een ongeëvenaard netwerk en diepgaande kennis naar FungiPower.
                                 </p>
                                 <p>
-                                    Jan staat bekend als de brug tussen wetenschappelijke innovatie en de dagelijkse praktijk op de werkvloer van de kweker. Zijn visie drijft FungiPower om de grenzen van wat mogelijk is in champignonteelt te verleggen.
+                                    Jan staat bekend als de brug tussen wetenschappelijke innovatie en de dagelijkse praktijk op de werkvloer van de kweker. Zijn visie drijft FungiPower om de grenzen van de champignonteelt voortdurend te verleggen.
                                 </p>
                             </div>
                         </div>

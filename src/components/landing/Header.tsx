@@ -32,9 +32,9 @@ export const Header = () => {
   };
 
   return (
-    <header className="relative z-50 w-full bg-transparent overflow-hidden border-b border-white/5">
+    <header className="fixed top-0 left-0 z-[100] w-full bg-black/80 backdrop-blur-md overflow-hidden border-b border-white/5 transition-all duration-300">
       {/* Top Metadata Bar - Scientific Grade Touch */}
-      <div className="w-full bg-black/20 backdrop-blur-sm border-b border-white/5 py-1 px-6 md:px-12 flex justify-between items-center relative z-20">
+      <div className="w-full bg-black/40 backdrop-blur-sm border-b border-white/5 py-1 px-6 md:px-12 flex justify-between items-center relative z-20">
         <div className="flex items-center gap-4">
           <div className="flex items-center gap-2">
             <div className="w-1 h-1 rounded-full bg-green-500 animate-pulse" />
@@ -69,24 +69,24 @@ export const Header = () => {
       {/* Architectural Logo Pendant */}
       <div className="absolute top-0 left-[6%] md:left-[8%] w-[1px] h-32 bg-gradient-to-b from-white to-transparent opacity-20 z-10" />
 
-      <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between py-6 md:py-8 relative">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between py-4 md:py-6 relative">
         {/* Logo - Premium Placement with Pendant Effect */}
-        <div className="flex items-center relative group">
+        <a href="/" className="flex items-center relative group">
           {/* Scientific Frame around logo on hover */}
           <div className="absolute -inset-4 border border-white/0 group-hover:border-white/10 transition-all duration-700 pointer-events-none" />
           <img
             src="/images/fungipower-logo-3.png"
             alt="FungiPower"
-            className="h-20 md:h-24 lg:h-28 w-auto object-left object-contain transition-all brightness-0 invert duration-500 group-hover:scale-[1.02] max-w-none"
+            className="h-14 md:h-18 lg:h-20 w-auto object-left object-contain transition-all brightness-0 invert duration-500 group-hover:scale-[1.02] max-w-none"
           />
-        </div>
+        </a>
 
         {/* Desktop Navigation */}
         <nav className="hidden lg:flex items-center gap-12">
           {navLinks.map((link) => (
             <button
               key={link.label}
-              onClick={() => scrollToSection(link.href)}
+              onClick={() => scrollToSection(link.label === "HOME" ? "/#home" : link.href)}
               className="relative text-white/90 text-[10px] font-black tracking-[0.25em] uppercase hover:text-white transition-all group py-2"
             >
               {link.label}
@@ -119,12 +119,12 @@ export const Header = () => {
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="lg:hidden absolute top-full left-0 right-0 bg-black/98 backdrop-blur-2xl border-t border-white/10 animate-fade-in shadow-2xl h-screen">
+        <div className="lg:hidden fixed inset-0 top-[calc(100%)] bg-black/98 backdrop-blur-2xl border-t border-white/10 animate-fade-in shadow-2xl h-screen">
           <nav className="flex flex-col p-8 gap-8">
             {navLinks.map((link) => (
               <button
                 key={link.label}
-                onClick={() => scrollToSection(link.href)}
+                onClick={() => scrollToSection(link.label === "HOME" ? "/" : link.href)}
                 className="text-white text-lg font-black tracking-[0.3em] uppercase py-2 border-l-2 border-transparent hover:border-white pl-4 transition-all text-left"
               >
                 {link.label}

@@ -42,8 +42,18 @@ export const Footer = () => {
   };
 
   return (
-    <footer className="bg-footer text-footer-foreground py-16 transition-colors duration-300">
-      <div className="max-w-7xl mx-auto px-6 md:px-12">
+    <footer className="bg-[#F58220] text-white py-16 relative overflow-hidden">
+      {/* Decorative Brand Accent - Subtle mycelium in footer */}
+      <div className="absolute inset-0 opacity-10 pointer-events-none">
+        <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+          <pattern id="footer-pattern" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+            <path d="M10,20 Q30,10 50,40 T90,20" stroke="white" strokeWidth="0.5" fill="none" />
+          </pattern>
+          <rect width="100%" height="100%" fill="url(#footer-pattern)" />
+        </svg>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mb-12">
           {/* Logo & Description */}
           <div className="col-span-2 md:col-span-1">
@@ -52,19 +62,19 @@ export const Footer = () => {
               alt="FungiPower"
               className="h-12 w-auto object-contain mb-4 brightness-0 invert"
             />
-            <p className="text-sm leading-relaxed opacity-70">
+            <p className="text-sm font-medium leading-relaxed text-white/90">
               Maximaliseren van paddenstoelenopbrengsten door wetenschappelijk onderbouwde biologische verbetering.
             </p>
           </div>
 
           <div>
-            <h4 className="text-foreground font-bold text-sm uppercase tracking-wider mb-4">Navigatie</h4>
-            <ul className="space-y-2">
+            <h4 className="text-white font-black text-xs uppercase tracking-[0.2em] mb-6">Navigatie</h4>
+            <ul className="space-y-3">
               {footerLinks.product.map((link) => (
                 <li key={link.label}>
                   <a
                     href={link.href}
-                    className="text-sm opacity-70 hover:opacity-100 hover:text-primary transition-all"
+                    className="text-sm font-bold text-white/80 hover:text-white hover:translate-x-1 inline-block transition-all"
                   >
                     {link.label}
                   </a>
@@ -73,23 +83,25 @@ export const Footer = () => {
               <li>
                 <button
                   onClick={() => scrollToSection("#contact")}
-                  className="text-sm opacity-70 hover:opacity-100 hover:text-primary transition-all text-left"
+                  className="text-sm font-bold text-white/80 hover:text-white hover:translate-x-1 inline-block transition-all text-left"
                 >
                   Proef Aanvragen
                 </button>
               </li>
             </ul>
           </div>
+
           <div>
-            <h4 className="text-foreground font-bold text-sm uppercase tracking-wider mb-4">Contact</h4>
-            <ul className="space-y-2 opacity-70 text-sm">
+            <h4 className="text-white font-black text-xs uppercase tracking-[0.2em] mb-6">Contact</h4>
+            <ul className="space-y-3 font-bold text-sm text-white/80">
               <li>info@fungipower.bio</li>
               <li>Venlo, Nederland</li>
             </ul>
           </div>
+
           <div>
-            <h4 className="text-foreground font-bold text-sm uppercase tracking-wider mb-4">Support</h4>
-            <ul className="space-y-2 opacity-70 text-sm">
+            <h4 className="text-white font-black text-xs uppercase tracking-[0.2em] mb-6">Support</h4>
+            <ul className="space-y-3 font-bold text-sm text-white/80">
               <li>Product Support</li>
               <li>Pilot Aanvragen</li>
             </ul>
@@ -97,10 +109,10 @@ export const Footer = () => {
         </div>
 
         {/* Divider */}
-        <div className="border-t border-white/10 pt-8">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="border-t border-white/20 pt-8">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             {/* Copyright */}
-            <p className="text-sm opacity-60">
+            <p className="text-xs font-bold text-white/70">
               © {new Date().getFullYear()} FungiPower B.V. Alle rechten voorbehouden.
             </p>
 
@@ -111,22 +123,22 @@ export const Footer = () => {
                   key={social.label}
                   href={social.href}
                   aria-label={social.label}
-                  className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-colors"
+                  className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white hover:text-[#F58220] transition-all"
                 >
-                  <social.icon className="w-4 h-4" />
+                  <social.icon className="w-5 h-5" />
                 </a>
               ))}
             </div>
 
             {/* Right section info & Theme Toggle */}
-            <div className="flex items-center gap-4 text-xs opacity-60">
-              <span>FungiPower B.V. • Venlo, Nederland</span>
+            <div className="flex items-center gap-6 text-[10px] font-black uppercase tracking-widest text-white/70">
+              <span>FungiPower B.V. • Venlo</span>
               {mounted && (
                 <button
                   onClick={toggleTheme}
-                  className="flex items-center gap-1 hover:text-primary transition-colors uppercase font-bold tracking-wider"
+                  className="flex items-center gap-2 hover:text-white transition-colors"
                 >
-                  {theme === "dark" ? <Monitor className="w-3 h-3" /> : <Zap className="w-3 h-3" />}
+                  {theme === "dark" ? <Monitor className="w-4 h-4" /> : <Zap className="w-4 h-4" />}
                   {theme === "dark" ? "Light View" : "Performance View"}
                 </button>
               )}
