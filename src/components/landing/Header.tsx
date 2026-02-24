@@ -46,13 +46,13 @@ export const Header = () => {
         </svg>
       </div>
 
-      <div className="px-6 md:px-10 flex items-center justify-between py-3 relative">
-        {/* Logo - Compact & Integrated */}
+      <div className="px-6 md:px-10 flex items-center justify-between py-4 relative">
+        {/* Logo - Prominent & Authoritative */}
         <a href="/" className="flex items-center relative group">
           <img
             src="/images/fungipower-logo-3.png"
             alt="FungiPower"
-            className="h-8 md:h-10 w-auto object-left object-contain transition-all brightness-0 invert duration-500 group-hover:scale-[1.05] max-w-none"
+            className="h-12 md:h-16 lg:h-18 w-auto object-left object-contain transition-all brightness-0 invert duration-500 group-hover:scale-[1.05] max-w-none"
           />
         </a>
 
