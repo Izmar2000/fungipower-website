@@ -32,78 +32,88 @@ export const Header = () => {
   };
 
   return (
-    <header className="fixed top-6 left-1/2 -translate-x-1/2 z-[100] w-[92%] max-w-7xl bg-black/40 backdrop-blur-2xl rounded-2xl border border-white/10 transition-all duration-500 overflow-hidden">
-      {/* Subtle Internal Glow */}
-      <div className="absolute inset-0 bg-gradient-to-b from-white/5 to-transparent pointer-events-none" />
+    <header className="fixed top-0 left-0 z-[110] w-full pointer-events-none">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 relative flex justify-center pt-6">
 
-      {/* Refined Background Pattern - Very Subtle */}
-      <div className="absolute inset-0 z-[-1] opacity-[0.03] pointer-events-none">
-        <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-          <pattern id="capsule-grid" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
-            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" strokeWidth="0.5" />
-          </pattern>
-          <rect width="100%" height="100%" fill="url(#capsule-grid)" />
-        </svg>
-      </div>
+        {/* LOGO PENDANT - The Hanging Flag (Desktop & Mobile) */}
+        <div className="absolute top-0 left-6 md:left-12 pointer-events-auto z-50">
+          <a href="/" className="relative flex flex-col items-center group">
+            {/* The Flag Body */}
+            <div className="w-20 md:w-28 lg:w-36 bg-black border-x border-b border-white/10 pt-12 pb-10 shadow-[0_30px_60px_rgba(0,0,0,0.6)] relative transition-all duration-500 group-hover:pb-14">
+              {/* Internal Texture */}
+              <div className="absolute inset-0 bg-gradient-to-b from-white/5 via-transparent to-black/20 pointer-events-none" />
 
-      <div className="px-6 md:px-10 flex items-center justify-between py-4 relative">
-        {/* Logo - Prominent & Authoritative */}
-        <a href="/" className="flex items-center relative group">
-          <img
-            src="/images/fungipower-logo-3.png"
-            alt="FungiPower"
-            className="h-12 md:h-16 lg:h-18 w-auto object-left object-contain transition-all brightness-0 invert duration-500 group-hover:scale-[1.05] max-w-none"
-          />
-        </a>
+              {/* The Logo */}
+              <div className="px-4 md:px-6 relative z-10 transition-transform duration-500 group-hover:scale-105">
+                <img
+                  src="/images/fungipower-logo-3.png"
+                  alt="FungiPower"
+                  className="w-full h-auto object-contain brightness-0 invert"
+                />
+              </div>
 
-        {/* Desktop Navigation - Tight & Elegant */}
-        <nav className="hidden lg:flex items-center gap-6 xl:gap-8">
-          {navLinks.map((link) => (
+              {/* Lab-Tech Detail Line */}
+              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-px h-4 bg-gradient-to-b from-white/40 to-transparent" />
+            </div>
+
+            {/* Hanging Wires */}
+            <div className="absolute top-0 left-3 w-px h-12 bg-white/10" />
+            <div className="absolute top-0 right-3 w-px h-12 bg-white/10" />
+          </a>
+        </div>
+
+        {/* Floating Capsule - Navigation Only */}
+        <div className="pointer-events-auto bg-black/40 backdrop-blur-3xl rounded-2xl border border-white/10 transition-all duration-500 flex items-center px-4 md:px-10 py-3 ml-20 md:ml-32 lg:ml-0 overflow-hidden">
+          <nav className="hidden lg:flex items-center gap-6 xl:gap-10">
+            {navLinks.map((link) => (
+              <button
+                key={link.label}
+                onClick={() => scrollToSection(link.label === "HOME" ? "/#home" : link.href)}
+                className="relative text-white/80 text-[10px] font-black tracking-[0.2em] uppercase hover:text-white transition-all group py-2 whitespace-nowrap"
+              >
+                {link.label}
+                <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#F58220] transition-all duration-300 group-hover:w-full" />
+              </button>
+            ))}
+
             <button
-              key={link.label}
-              onClick={() => scrollToSection(link.label === "HOME" ? "/#home" : link.href)}
-              className="relative text-white/80 text-[9px] font-black tracking-[0.2em] uppercase hover:text-white transition-all group py-2 whitespace-nowrap"
+              onClick={() => scrollToSection("#contact")}
+              className="group relative bg-[#F58220] text-white px-8 py-2.5 rounded-lg text-[10px] font-black tracking-[0.2em] uppercase hover:bg-white hover:text-black transition-all shadow-lg flex items-center gap-3 ml-4"
             >
-              {link.label}
-              <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#F58220] transition-all duration-300 group-hover:w-full" />
+              <span className="relative z-10">PROEF AANVRAGEN</span>
+              <ArrowRight className="w-4 h-4 relative z-10 transition-transform group-hover:translate-x-1" />
             </button>
-          ))}
+          </nav>
 
-          {/* Request Pilot Button - Integrated Capsule Style */}
+          {/* Mobile Menu Button */}
           <button
-            onClick={() => scrollToSection("#contact")}
-            className="group relative bg-[#F58220] text-white px-6 py-2.5 rounded-lg text-[9px] font-black tracking-[0.2em] uppercase hover:bg-white hover:text-black transition-all shadow-lg flex items-center gap-3 ml-4"
+            className="lg:hidden p-2 text-white/80 hover:text-white"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
-            <span className="relative z-10">PROEF AANVRAGEN</span>
-            <ArrowRight className="w-3.5 h-3.5 relative z-10 transition-transform group-hover:translate-x-1" />
+            {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
-        </nav>
-
-        {/* Mobile Menu Button - Minimalist */}
-        <button
-          className="lg:hidden p-2 text-white/80 hover:text-white transition-colors"
-          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-        >
-          {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
-        </button>
+        </div>
       </div>
 
-      {/* Mobile Menu - Integrated into Capsule */}
+      {/* Mobile Menu Overlay */}
       {mobileMenuOpen && (
-        <div className="lg:hidden bg-black/90 backdrop-blur-2xl border-t border-white/10 animate-fade-in">
-          <nav className="flex flex-col p-6 gap-6">
+        <div className="lg:hidden fixed inset-0 z-[120] bg-black/95 backdrop-blur-3xl animate-fade-in flex flex-col justify-center items-center pointer-events-auto">
+          <button onClick={() => setMobileMenuOpen(false)} className="absolute top-10 right-10 text-white p-4">
+            <X className="w-8 h-8" />
+          </button>
+          <nav className="flex flex-col gap-8 text-center">
             {navLinks.map((link) => (
               <button
                 key={link.label}
                 onClick={() => scrollToSection(link.label === "HOME" ? "/" : link.href)}
-                className="text-white/80 text-sm font-black tracking-[0.2em] uppercase transition-all text-left hover:text-white hover:pl-2"
+                className="text-white text-2xl font-black tracking-widest uppercase hover:text-[#F58220] transition-colors"
               >
                 {link.label}
               </button>
             ))}
             <button
               onClick={() => scrollToSection("#contact")}
-              className="bg-[#F58220] text-white px-6 py-4 rounded-xl text-[10px] font-black tracking-[0.3em] uppercase text-center shadow-lg"
+              className="bg-[#F58220] text-white px-10 py-5 rounded-xl text-[12px] font-black tracking-[0.3em] uppercase shadow-2xl mt-4"
             >
               PROEF AANVRAGEN
             </button>
