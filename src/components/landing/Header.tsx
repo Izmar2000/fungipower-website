@@ -32,7 +32,7 @@ export const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 z-[100] w-full bg-black/40 backdrop-blur-xl border-b border-white/10 transition-all duration-300">
+    <header className="fixed top-0 left-0 z-[100] w-full bg-black/95 backdrop-blur-3xl border-b border-white/5 transition-all duration-300 shadow-[0_10px_50px_rgba(0,0,0,0.8)]">
       {/* Background Scientific Patterns - Elevated and Dynamic */}
       <div className="absolute inset-0 z-[-1] opacity-[0.08] pointer-events-none">
         <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" className="animate-pulse" style={{ animationDuration: '8s' }}>
