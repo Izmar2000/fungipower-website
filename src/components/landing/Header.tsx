@@ -32,85 +32,78 @@ export const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 z-[100] w-full bg-black/95 backdrop-blur-3xl border-b border-white/5 transition-all duration-300 shadow-[0_10px_50px_rgba(0,0,0,0.8)]">
-      {/* Background Scientific Patterns - Elevated and Dynamic */}
-      <div className="absolute inset-0 z-[-1] opacity-[0.08] pointer-events-none">
-        <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" className="animate-pulse" style={{ animationDuration: '8s' }}>
-          <pattern id="header-mycelium-lux" x="0" y="0" width="120" height="120" patternUnits="userSpaceOnUse">
-            <path
-              d="M10,20 Q40,10 60,50 T110,30 M30,100 Q60,80 80,110 T140,90"
-              stroke="white"
-              strokeWidth="0.5"
-              fill="none"
-              className="animate-mycelium-slow"
-            />
-            <circle cx="60" cy="50" r="1.5" fill="white" className="opacity-50" />
-            <circle cx="110" cy="30" r="1" fill="white" className="opacity-30" />
+    <header className="fixed top-6 left-1/2 -translate-x-1/2 z-[100] w-[92%] max-w-7xl bg-black/40 backdrop-blur-2xl rounded-2xl border border-white/10 transition-all duration-500 shadow-[0_25px_50px_-12px_rgba(0,0,0,0.5)] overflow-hidden">
+      {/* Subtle Internal Glow */}
+      <div className="absolute inset-0 bg-gradient-to-b from-white/5 to-transparent pointer-events-none" />
+
+      {/* Refined Background Pattern - Very Subtle */}
+      <div className="absolute inset-0 z-[-1] opacity-[0.03] pointer-events-none">
+        <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+          <pattern id="capsule-grid" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" strokeWidth="0.5" />
           </pattern>
-          <rect width="100%" height="100%" fill="url(#header-mycelium-lux)" />
+          <rect width="100%" height="100%" fill="url(#capsule-grid)" />
         </svg>
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between py-4 relative">
-        {/* Logo - Premium Placement */}
+      <div className="px-6 md:px-10 flex items-center justify-between py-3 relative">
+        {/* Logo - Compact & Integrated */}
         <a href="/" className="flex items-center relative group">
           <img
             src="/images/fungipower-logo-3.png"
             alt="FungiPower"
-            className="h-10 md:h-12 lg:h-14 w-auto object-left object-contain transition-all brightness-0 invert duration-500 group-hover:scale-[1.05] max-w-none"
+            className="h-8 md:h-10 w-auto object-left object-contain transition-all brightness-0 invert duration-500 group-hover:scale-[1.05] max-w-none"
           />
         </a>
 
-        {/* Desktop Navigation */}
-        <nav className="hidden lg:flex items-center gap-10">
+        {/* Desktop Navigation - Tight & Elegant */}
+        <nav className="hidden lg:flex items-center gap-6 xl:gap-8">
           {navLinks.map((link) => (
             <button
               key={link.label}
               onClick={() => scrollToSection(link.label === "HOME" ? "/#home" : link.href)}
-              className="relative text-white/90 text-[10px] font-black tracking-[0.25em] uppercase hover:text-white transition-all group py-2"
+              className="relative text-white/80 text-[9px] font-black tracking-[0.2em] uppercase hover:text-white transition-all group py-2 whitespace-nowrap"
             >
               {link.label}
-              <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full opacity-50" />
+              <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#F58220] transition-all duration-300 group-hover:w-full" />
             </button>
           ))}
 
-          {/* Request Pilot Button - Ultra Premium Lab-Tech */}
+          {/* Request Pilot Button - Integrated Capsule Style */}
           <button
             onClick={() => scrollToSection("#contact")}
-            className="group relative bg-[#F58220] text-white px-8 py-3 text-[10px] font-black tracking-[0.3em] uppercase hover:bg-white hover:text-[#F58220] transition-all overflow-hidden border border-[#F58220]"
+            className="group relative bg-[#F58220] text-white px-6 py-2.5 rounded-lg text-[9px] font-black tracking-[0.2em] uppercase hover:bg-white hover:text-black transition-all shadow-lg flex items-center gap-3 ml-4"
           >
-            <div className="flex items-center gap-3">
-              <span className="relative z-10">PROEF AANVRAGEN</span>
-              <ArrowRight className="w-4 h-4 relative z-10 transition-transform group-hover:translate-x-1" />
-            </div>
+            <span className="relative z-10">PROEF AANVRAGEN</span>
+            <ArrowRight className="w-3.5 h-3.5 relative z-10 transition-transform group-hover:translate-x-1" />
           </button>
         </nav>
 
-        {/* Mobile Menu Button */}
+        {/* Mobile Menu Button - Minimalist */}
         <button
-          className="lg:hidden p-3 text-white border border-white/10 backdrop-blur-md"
+          className="lg:hidden p-2 text-white/80 hover:text-white transition-colors"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
-          {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
         </button>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile Menu - Integrated into Capsule */}
       {mobileMenuOpen && (
-        <div className="lg:hidden fixed inset-0 top-[calc(100%)] bg-black/98 backdrop-blur-2xl border-t border-white/10 animate-fade-in shadow-2xl h-screen">
-          <nav className="flex flex-col p-8 gap-8">
+        <div className="lg:hidden bg-black/90 backdrop-blur-2xl border-t border-white/10 animate-fade-in">
+          <nav className="flex flex-col p-6 gap-6">
             {navLinks.map((link) => (
               <button
                 key={link.label}
                 onClick={() => scrollToSection(link.label === "HOME" ? "/" : link.href)}
-                className="text-white text-lg font-black tracking-[0.3em] uppercase py-2 border-l-2 border-transparent hover:border-white pl-4 transition-all text-left"
+                className="text-white/80 text-sm font-black tracking-[0.2em] uppercase transition-all text-left hover:text-white hover:pl-2"
               >
                 {link.label}
               </button>
             ))}
             <button
               onClick={() => scrollToSection("#contact")}
-              className="bg-white text-black px-8 py-6 text-[12px] font-black tracking-[0.4em] uppercase mt-12 text-center"
+              className="bg-[#F58220] text-white px-6 py-4 rounded-xl text-[10px] font-black tracking-[0.3em] uppercase text-center shadow-lg"
             >
               PROEF AANVRAGEN
             </button>

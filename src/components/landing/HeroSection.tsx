@@ -37,10 +37,10 @@ export const HeroSection = () => {
       <Header />
 
       {/* Spacer to push content down below fixed header */}
-      <div className="h-28 md:h-36 lg:h-44" />
+      <div className="h-20 md:h-24 lg:h-28" />
 
       {/* Main Content - Elevated padding for fixed header clearance */}
-      <main className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 flex-1 flex items-center py-12 md:py-20">
+      <main className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 flex-1 flex items-center py-8 md:py-12">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-24 w-full">
           <HeroContent />
           <GlassmorphismPanel />
