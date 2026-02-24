@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Menu, X, ChevronRight } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 const navLinks = [
   { label: "HOME", href: "/#home" },
@@ -32,72 +32,38 @@ export const Header = () => {
   };
 
   return (
-    <header className="relative z-50 w-full group">
-      {/* Premium Glassmorphism & Mycelium Background Layer */}
-      <div className="absolute inset-x-0 top-0 h-full backdrop-blur-xl bg-black/10 border-b border-white/5 transition-all duration-700 group-hover:bg-black/20">
-        <svg className="absolute inset-0 w-full h-full opacity-[0.08]" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <filter id="glow-header">
-              <feGaussianBlur stdDeviation="1.5" result="blur" />
-              <feComposite in="SourceGraphic" in2="blur" operator="over" />
-            </filter>
-            <pattern id="mycelium-grid" x="0" y="0" width="120" height="120" patternUnits="userSpaceOnUse">
-              <path
-                d="M10,10 Q30,40 50,20 T90,50 M110,80 Q80,110 50,90 T10,110"
-                stroke="white"
-                strokeWidth="0.75"
-                fill="none"
-                className="animate-pulse"
-                style={{ animationDuration: '4s' }}
-              />
-              <circle cx="50" cy="20" r="1.5" fill="white" filter="url(#glow-header)" />
-              <circle cx="90" cy="50" r="1" fill="white" />
-              <circle cx="10" cy="110" r="1" fill="white" />
-            </pattern>
-          </defs>
-          <rect width="100%" height="100%" fill="url(#mycelium-grid)" />
-
-          {/* Large decorative organic curves */}
-          <path
-            d="M-10,40 Q150,10 300,50 T600,30 T900,60"
-            stroke="white"
-            strokeWidth="0.5"
-            fill="none"
-            className="opacity-20 animate-pulse"
-            style={{ animationDuration: '8s' }}
-          />
+    <header className="relative z-50 w-full bg-transparent overflow-hidden">
+      {/* Background Scientific Patterns */}
+      <div className="absolute inset-0 z-[-1] opacity-[0.05] pointer-events-none">
+        <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+          <pattern id="header-mycelium" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+            <path d="M10,20 Q30,10 50,40 T90,20 M20,80 Q40,60 60,90 T100,70" stroke="white" strokeWidth="0.5" fill="none" />
+            <circle cx="50" cy="40" r="1" fill="white" />
+          </pattern>
+          <rect width="100%" height="100%" fill="url(#header-mycelium)" />
         </svg>
       </div>
 
-      {/* Top Scanline effect - Very subtle */}
-      <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-white/20 to-transparent" />
+      {/* Scientific Corner Accents */}
+      <div className="absolute top-0 right-0 w-32 h-32 opacity-10 pointer-events-none border-t border-r border-white/50 m-2" />
 
-      <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between relative">
-        {/* Logo - Premium Pendant / Flag Design */}
-        <div className="relative z-50">
-          <div className="bg-white px-6 pb-10 pt-4 shadow-[0_20px_40px_rgba(0,0,0,0.3)] rounded-b-xl w-[180px] md:w-[220px] flex flex-col items-center transform transition-all duration-500 hover:pb-14 group/logo border-t-0">
-            <img
-              src="/images/fungipower-logo-3.png"
-              alt="FungiPower"
-              className="w-full h-auto object-contain transition-all duration-500 group-hover/logo:scale-105 brightness-0"
-            />
-            {/* Subtle industrial anchor element */}
-            <div className="mt-6 flex flex-col items-center gap-2">
-              <div className="h-[1px] w-12 bg-black/10" />
-              <span className="text-[8px] font-black tracking-[0.3em] text-black/40 uppercase">Industrial Grade</span>
-            </div>
-          </div>
-          {/* Scientific connection 'wire' from top */}
-          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[2px] h-full bg-white/10 -z-10" />
+      <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between py-4 relative">
+        {/* Logo - Updated to new official version */}
+        <div className="flex items-center overflow-hidden w-[200px] md:w-[250px]">
+          <img
+            src="/images/FungiPower Logo.png"
+            alt="FungiPower"
+            className="h-14 md:h-16 w-auto object-left object-contain transition-all brightness-0 invert transition-all duration-300 hover:scale-105 max-w-none"
+          />
         </div>
 
         {/* Desktop Navigation */}
-        <nav className="hidden lg:flex items-center gap-6 xl:gap-10 py-6">
+        <nav className="hidden lg:flex items-center gap-10">
           {navLinks.map((link) => (
             <button
               key={link.label}
               onClick={() => scrollToSection(link.href)}
-              className="text-white/80 text-xs font-black tracking-[0.15em] uppercase hover:text-white transition-colors whitespace-nowrap"
+              className="text-white/80 text-xs font-black tracking-[0.15em] uppercase hover:text-white transition-colors"
             >
               {link.label}
             </button>
@@ -106,7 +72,7 @@ export const Header = () => {
           {/* Request Pilot Button - Integrated Lab-Tech Style */}
           <button
             onClick={() => scrollToSection("#contact")}
-            className="group relative backdrop-blur-md bg-white/5 border border-white/20 text-white px-8 py-3 text-[10px] font-black tracking-[0.25em] uppercase hover:bg-white/10 transition-all overflow-hidden whitespace-nowrap"
+            className="group relative backdrop-blur-md bg-white/5 border border-white/20 text-white px-8 py-3 text-[10px] font-black tracking-[0.25em] uppercase hover:bg-white/10 transition-all overflow-hidden"
           >
             <div className="flex items-center gap-3">
               <span className="relative z-10">PROEF AANVRAGEN</span>
@@ -134,14 +100,14 @@ export const Header = () => {
               <button
                 key={link.label}
                 onClick={() => scrollToSection(link.href)}
-                className="text-white/70 text-sm font-bold tracking-widest uppercase py-3 hover:text-white transition-colors text-left whitespace-nowrap"
+                className="text-white/70 text-sm font-bold tracking-widest uppercase py-3 hover:text-white transition-colors text-left"
               >
                 {link.label}
               </button>
             ))}
             <button
               onClick={() => scrollToSection("#contact")}
-              className="bg-white/10 border border-white/20 text-white px-6 py-4 text-[10px] font-black tracking-[0.2em] uppercase mt-4 text-center whitespace-nowrap"
+              className="bg-white/10 border border-white/20 text-white px-6 py-4 text-[10px] font-black tracking-[0.2em] uppercase mt-4 text-center"
             >
               PROEF AANVRAGEN
             </button>

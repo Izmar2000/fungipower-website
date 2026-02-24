@@ -36,13 +36,11 @@ export const HeroSection = () => {
 
       <Header />
 
-      {/* Main Content - Restructured to Vertical Stack for better spacing with large text */}
-      <main className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 flex-1 flex flex-col items-center py-12 md:py-20 lg:py-24">
-        <div className="flex flex-col items-center w-full gap-20 lg:gap-32">
+      {/* Main Content - Reduced padding for a more compact look */}
+      <main className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 flex-1 flex items-center py-8 md:py-12">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-24 w-full">
           <HeroContent />
-          <div className="w-full flex justify-center animate-fade-in" style={{ animationDelay: '0.8s' }}>
-            <GlassmorphismPanel />
-          </div>
+          <GlassmorphismPanel />
         </div>
       </main>
 
