@@ -32,8 +32,25 @@ export const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 z-[110] w-full bg-black/90 backdrop-blur-md border-b border-white/5 transition-all duration-300 shadow-xl">
-      <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between py-4">
+    <header className="fixed top-0 left-0 z-[110] w-full bg-black/85 backdrop-blur-xl border-b border-white/5 transition-all duration-300 shadow-2xl overflow-hidden">
+      {/* Mycelium Network Pattern Overlay */}
+      <div className="absolute inset-0 z-[-1] opacity-[0.07] pointer-events-none">
+        <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+          <pattern id="mycelium-network" x="0" y="0" width="200" height="200" patternUnits="userSpaceOnUse">
+            <path d="M20 20 Q50 5 80 40 T140 20 T180 80" fill="none" stroke="#F58220" strokeWidth="0.5" />
+            <path d="M10 100 Q40 80 70 120 T130 90 T190 150" fill="none" stroke="#F58220" strokeWidth="0.5" />
+            <path d="M150 10 Q120 40 160 70 T100 130 T40 180" fill="none" stroke="#F58220" strokeWidth="0.5" />
+            <circle cx="80" cy="40" r="1.5" fill="#F58220" />
+            <circle cx="140" cy="20" r="1" fill="#F58220" />
+            <circle cx="70" cy="120" r="1.5" fill="#F58220" />
+            <circle cx="130" cy="90" r="1" fill="#F58220" />
+            <circle cx="160" cy="70" r="1.5" fill="#F58220" />
+            <circle cx="100" cy="130" r="1" fill="#F58220" />
+          </pattern>
+          <rect width="100%" height="100%" fill="url(#mycelium-network)" />
+        </svg>
+      </div>
+      <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between py-4 relative">
 
         {/* Logo - Normal & Clean */}
         <a href="/" className="flex items-center relative group">

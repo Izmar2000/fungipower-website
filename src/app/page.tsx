@@ -4,7 +4,7 @@ import { HeroSection } from "@/components/landing/HeroSection";
 import { ScienceSection } from "@/components/landing/ScienceSection";
 import { ResultsSection } from "@/components/landing/ResultsSection";
 import { ScalabilitySection } from "@/components/landing/ScalabilitySection";
-import { ContactSection } from "@/components/landing/ContactSection";
+import { PilotForm } from "@/components/landing/PilotForm";
 import { Footer } from "@/components/landing/Footer";
 
 const Page = () => {
@@ -14,7 +14,7 @@ const Page = () => {
             <ScalabilitySection />
             <ResultsSection />
             <ScienceSection />
-            <ContactSection />
+            <PilotForm />
             <Footer />
         </div>
     );

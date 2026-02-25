@@ -12,24 +12,41 @@ export const HeroSection = () => {
       }}
     >
       {/* Golden Vitality Layer - Organic Mycelium Pattern */}
-      <div className="absolute inset-0 z-0 opacity-10 pointer-events-none">
+      <div className="absolute inset-0 z-0 opacity-[0.15] pointer-events-none">
         <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" className="absolute inset-0">
           <filter id="glow">
-            <feGaussianBlur stdDeviation="3" result="coloredBlur" />
+            <feGaussianBlur stdDeviation="2" result="coloredBlur" />
             <feMerge>
               <feMergeNode in="coloredBlur" />
               <feMergeNode in="SourceGraphic" />
             </feMerge>
           </filter>
+
+          {/* Dense Mycelium Web */}
           <path
-            d="M-50,200 Q150,150 300,300 T600,200 T900,400 T1200,250 M400,0 Q500,200 350,400 T600,600 M1000,0 Q800,300 1100,600"
-            stroke="#FFFFFF"
-            strokeWidth="0.8"
+            d="M50 50 L150 120 L300 80 L450 200 L600 150 L800 300 L1100 200 M150 120 L100 250 L300 350 L500 280 L700 450 M450 200 L400 50 L700 100 L950 50 M800 300 L750 600 L1100 500 M1100 200 L1300 400 L1500 250"
+            stroke="white"
+            strokeWidth="0.5"
             fill="none"
-            opacity="0.2"
             filter="url(#glow)"
             className="animate-pulse"
-            style={{ animationDuration: '6s' }}
+          />
+
+          {/* Connection Nodes */}
+          {[
+            [150, 120], [300, 80], [450, 200], [600, 150], [800, 300], [1100, 200],
+            [100, 250], [300, 350], [500, 280], [700, 450], [400, 50], [1300, 400]
+          ].map(([x, y], i) => (
+            <circle key={i} cx={x} cy={y} r="2" fill="white" filter="url(#glow)" className="animate-pulse" style={{ animationDelay: `${i * 0.2}s` }} />
+          ))}
+
+          {/* Tertiary Faint Connections */}
+          <path
+            d="M50 50 Q200 150 400 50 T800 150 T1200 50"
+            stroke="white"
+            strokeWidth="0.2"
+            fill="none"
+            opacity="0.5"
           />
         </svg>
       </div>
