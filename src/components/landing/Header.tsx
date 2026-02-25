@@ -32,43 +32,46 @@ export const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 z-[110] w-full transition-all duration-300 overflow-hidden group">
-      {/* Precision UI Background - Scientific Interface */}
-      <div className="absolute inset-0 bg-black/40 backdrop-blur-2xl border-b border-white/10" />
+    <header className="fixed top-0 left-0 z-[110] w-full transition-all duration-300 overflow-hidden group border-b border-white/10">
+      {/* Scientific Glass Background */}
+      <div className="absolute inset-0 bg-black/60 backdrop-blur-3xl z-0" />
 
       {/* Top Protocol Line */}
-      <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-primary/50 to-transparent opacity-50" />
+      <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-primary to-transparent opacity-80 z-20" />
 
-      {/* Mycelium Network & Interface Grid */}
-      <div className="absolute inset-0 z-[-1] opacity-30 pointer-events-none">
-        <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-          {/* Organic Mycelium Paths - Inspired by the provided images */}
-          <g stroke="#F58220" strokeWidth="0.4" fill="none" opacity="0.4">
-            <path d="M-20 30 Q50 10 120 40 T280 20 T440 50 T600 10 T800 40 T1000 20" />
-            <path d="M100 60 Q200 80 350 40 T550 70 T750 30 T950 60" />
-            <path d="M300 -10 Q400 30 250 80" />
-            <path d="M700 -10 Q600 40 750 80" />
+      {/* High-Visibility Mycelium Network Overlay */}
+      <div className="absolute inset-0 z-10 pointer-events-none opacity-40">
+        <svg width="100%" height="80" viewBox="0 0 1200 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <filter id="node-glow">
+            <feGaussianBlur stdDeviation="1.5" result="coloredBlur" />
+            <feMerge>
+              <feMergeNode in="coloredBlur" />
+              <feMergeNode in="SourceGraphic" />
+            </feMerge>
+          </filter>
+
+          <g stroke="#F58220" strokeWidth="1" fill="none">
+            {/* Main Primary Connections */}
+            <path d="M-50 40 Q150 10 300 45 T600 20 T900 55 T1250 30" />
+            <path d="M100 80 Q250 100 400 40 T700 85 T1100 25" />
+            <path d="M400 -10 Q500 40 450 90" strokeWidth="0.5" />
+            <path d="M850 90 Q800 30 950 -10" strokeWidth="0.5" />
           </g>
 
-          {/* Bioluminescent Nodes */}
-          <g fill="#F58220">
-            <circle cx="120" cy="40" r="1.2" className="animate-pulse" />
-            <circle cx="280" cy="20" r="1" />
-            <circle cx="440" cy="50" r="1.2" />
-            <circle cx="600" cy="10" r="1" />
-            <circle cx="350" cy="40" r="1.5" className="animate-pulse" />
-            <circle cx="550" cy="70" r="1" />
-            <circle cx="750" cy="30" r="1.2" />
+          {/* Active Genetic Nodes */}
+          <g fill="#F58220" filter="url(#node-glow)">
+            <circle cx="300" cy="45" r="2.5" className="animate-pulse" />
+            <circle cx="600" cy="20" r="2" />
+            <circle cx="900" cy="55" r="3" className="animate-pulse" style={{ animationDuration: '3s' }} />
+            <circle cx="150" cy="10" r="1.5" />
+            <circle cx="400" cy="40" r="2" />
+            <circle cx="700" cy="85" r="2.5" />
+            <circle cx="1100" cy="25" r="1.5" />
           </g>
-
-          {/* Technical HUD Grid */}
-          <pattern id="header-grid" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
-            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" strokeWidth="0.2" opacity="0.1" />
-          </pattern>
-          <rect width="100%" height="100%" fill="url(#header-grid)" />
         </svg>
       </div>
-      <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between py-4 relative">
+
+      <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between py-4 relative z-30">
 
         {/* Logo - Normal & Clean */}
         <a href="/" className="flex items-center relative group">
