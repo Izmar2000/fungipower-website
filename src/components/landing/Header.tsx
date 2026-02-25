@@ -32,46 +32,13 @@ export const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 z-[110] w-full transition-all duration-300 overflow-hidden group border-b border-white/10">
-      {/* Scientific Glass Background */}
-      <div className="absolute inset-0 bg-black/60 backdrop-blur-3xl z-0" />
-
-      {/* Top Protocol Line */}
-      <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-primary to-transparent opacity-80 z-20" />
-
-      {/* High-Visibility Mycelium Network Overlay */}
-      <div className="absolute inset-0 z-10 pointer-events-none opacity-40">
-        <svg width="100%" height="80" viewBox="0 0 1200 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-          <filter id="node-glow">
-            <feGaussianBlur stdDeviation="1.5" result="coloredBlur" />
-            <feMerge>
-              <feMergeNode in="coloredBlur" />
-              <feMergeNode in="SourceGraphic" />
-            </feMerge>
-          </filter>
-
-          <g stroke="#F58220" strokeWidth="1" fill="none">
-            {/* Main Primary Connections */}
-            <path d="M-50 40 Q150 10 300 45 T600 20 T900 55 T1250 30" />
-            <path d="M100 80 Q250 100 400 40 T700 85 T1100 25" />
-            <path d="M400 -10 Q500 40 450 90" strokeWidth="0.5" />
-            <path d="M850 90 Q800 30 950 -10" strokeWidth="0.5" />
-          </g>
-
-          {/* Active Genetic Nodes */}
-          <g fill="#F58220" filter="url(#node-glow)">
-            <circle cx="300" cy="45" r="2.5" className="animate-pulse" />
-            <circle cx="600" cy="20" r="2" />
-            <circle cx="900" cy="55" r="3" className="animate-pulse" style={{ animationDuration: '3s' }} />
-            <circle cx="150" cy="10" r="1.5" />
-            <circle cx="400" cy="40" r="2" />
-            <circle cx="700" cy="85" r="2.5" />
-            <circle cx="1100" cy="25" r="1.5" />
-          </g>
-        </svg>
-      </div>
-
-      <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between py-4 relative z-30">
+    <header
+      className="fixed top-0 left-0 z-[110] w-full transition-all duration-300 shadow-xl"
+      style={{
+        background: `linear-gradient(90deg, #F58220 0%, #D71920 100%)`
+      }}
+    >
+      <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between py-5 relative z-30">
 
         {/* Logo - Normal & Clean */}
         <a href="/" className="flex items-center relative group">
