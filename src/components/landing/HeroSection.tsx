@@ -36,9 +36,8 @@ export const HeroSection = () => {
         </svg>
       </div>
 
-      {/* Readability Overlay - Contrast Boost for White Text */}
-      <div className="absolute inset-0 z-[1] bg-black/15 pointer-events-none" />
-      <div className="absolute inset-0 z-[1] bg-gradient-to-r from-black/50 via-transparent to-transparent pointer-events-none" />
+      {/* Readability Overlay - Restored Vibrancy */}
+      <div className="absolute inset-0 z-[1] bg-gradient-to-r from-black/30 via-transparent to-transparent pointer-events-none" />
 
       <Header />
 
