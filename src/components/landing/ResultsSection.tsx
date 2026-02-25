@@ -25,10 +25,10 @@ export const ResultsSection = () => {
             </div>
 
             <div className="mt-10 flex flex-col gap-4">
-              <button className="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg font-bold uppercase tracking-wider hover:bg-primary/90 transition-colors w-fit">
+              <a href="#contact" className="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg font-bold uppercase tracking-wider hover:bg-primary/90 transition-colors w-fit">
                 <FileText className="w-4 h-4" />
                 Ontvang het volledige proefrapport
-              </button>
+              </a>
             </div>
           </div>
 

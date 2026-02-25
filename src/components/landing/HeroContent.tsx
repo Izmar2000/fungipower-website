@@ -46,10 +46,10 @@ export const HeroContent = () => {
 
       {/* CTA Buttons - Solid Black on White */}
       <div className="flex animate-fade-in" style={{ animationDelay: '0.6s' }}>
-        <button className="bg-white text-black px-10 py-4 text-[11px] font-black tracking-[0.3em] uppercase hover:bg-black hover:text-white transition-all shadow-xl flex items-center gap-6 group">
+        <a href="#contact" className="bg-white text-black px-10 py-4 text-[11px] font-black tracking-[0.3em] uppercase hover:bg-black hover:text-white transition-all shadow-xl flex items-center gap-6 group">
           START PILOT PROJECT
           <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform" />
-        </button>
+        </a>
       </div>
     </div>
   );

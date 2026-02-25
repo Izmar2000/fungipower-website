@@ -14,10 +14,10 @@ const footerLinks = {
 };
 
 const socialLinks = [
-  { icon: Linkedin, href: "#", label: "LinkedIn" },
-  { icon: Twitter, href: "#", label: "Twitter" },
-  { icon: Youtube, href: "#", label: "YouTube" },
-  { icon: Instagram, href: "#", label: "Instagram" },
+  { icon: Linkedin, href: "https://nl.linkedin.com/", label: "LinkedIn" },
+  { icon: Twitter, href: "https://twitter.com/", label: "Twitter" },
+  { icon: Youtube, href: "https://youtube.com/", label: "YouTube" },
+  { icon: Instagram, href: "https://instagram.com/", label: "Instagram" },
 ];
 
 export const Footer = () => {
@@ -94,16 +94,24 @@ export const Footer = () => {
           <div>
             <h4 className="text-white font-black text-xs uppercase tracking-[0.2em] mb-6">Contact</h4>
             <ul className="space-y-3 font-bold text-sm text-white">
-              <li className="hover:text-[#FFD166] transition-colors cursor-default">info@fungipower.bio</li>
-              <li className="hover:text-[#FFD166] transition-colors cursor-default">Venlo, Nederland</li>
+              <li>
+                <a href="mailto:info@fungipower.bio" className="hover:text-[#FFD166] transition-colors">info@fungipower.bio</a>
+              </li>
+              <li>
+                <a href="https://maps.google.com/?q=Venlo,Nederland" target="_blank" rel="noopener noreferrer" className="hover:text-[#FFD166] transition-colors">Venlo, Nederland</a>
+              </li>
             </ul>
           </div>
 
           <div>
             <h4 className="text-white font-black text-xs uppercase tracking-[0.2em] mb-6">Support</h4>
             <ul className="space-y-3 font-bold text-sm text-white">
-              <li className="hover:text-[#FFD166] transition-colors cursor-default">Product Support</li>
-              <li className="hover:text-[#FFD166] transition-colors cursor-default">Pilot Aanvragen</li>
+              <li>
+                <button onClick={() => scrollToSection("#contact")} className="hover:text-[#FFD166] transition-colors text-left">Product Support</button>
+              </li>
+              <li>
+                <button onClick={() => scrollToSection("#contact")} className="hover:text-[#FFD166] transition-colors text-left">Pilot Aanvragen</button>
+              </li>
             </ul>
           </div>
         </div>
