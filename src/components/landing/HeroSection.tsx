@@ -14,43 +14,36 @@ export const HeroSection = () => {
       {/* Golden Vitality Layer - Organic Mycelium Pattern */}
       <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
         <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" className="absolute inset-0">
-          <filter id="hero-node-glow">
-            <feGaussianBlur stdDeviation="3" result="coloredBlur" />
+          <filter id="hero-node-glow-v2">
+            <feGaussianBlur stdDeviation="4" result="coloredBlur" />
             <feMerge>
               <feMergeNode in="coloredBlur" />
               <feMergeNode in="SourceGraphic" />
             </feMerge>
           </filter>
 
-          {/* Large Scale Mycelium Base - Higher Visibility */}
-          <g stroke="white" strokeWidth="1.5" fill="none" opacity="0.15">
-            <path d="M-100 400 Q200 300 500 600 T1100 400 T1500 700" />
-            <path d="M400 -100 Q600 200 300 500 T800 800" />
-            <path d="M1200 -50 Q900 300 1100 600" />
+          {/* Master Structural Network - High Visibility */}
+          <g stroke="white" strokeWidth="2" fill="none" opacity="0.35">
+            <path d="M-100 400 L200 300 L500 600 L1100 400 L1500 700" strokeDasharray="10,10" />
+            <path d="M400 -100 L600 200 L300 500 L800 800" strokeDasharray="5,15" />
+            <path d="M1200 -50 L900 300 L1100 600" />
           </g>
 
-          {/* Intricate Secondary Network */}
-          <g stroke="white" strokeWidth="0.5" fill="none" opacity="0.1">
-            <path d="M100 100 L300 250 L500 150 L700 350 L900 200 L1100 450" />
-            <path d="M-50 600 L250 450 L450 700 L750 550 L1050 750" />
+          {/* Secondary Organic Threads */}
+          <g stroke="white" strokeWidth="1" fill="none" opacity="0.25">
+            <path d="M50 50 Q150 150 300 100 T600 200 T900 100 T1200 300" />
+            <path d="M-100 700 Q100 600 400 750 T800 650 T1300 850" />
           </g>
 
-          {/* Glowing Bioluminescent Nodes */}
-          <g fill="white" filter="url(#hero-node-glow)">
-            <circle cx="200" cy="300" r="4" className="animate-pulse" style={{ animationDuration: '4s' }} />
-            <circle cx="500" cy="600" r="3" />
-            <circle cx="1100" cy="400" r="5" className="animate-pulse" style={{ animationDuration: '5s' }} />
-            <circle cx="600" cy="200" r="2.5" />
-            <circle cx="300" cy="500" r="4" className="animate-pulse" style={{ animationDuration: '6s' }} />
-            <circle cx="800" cy="800" r="3.5" />
-            <circle cx="900" cy="300" r="2" />
+          {/* Strong Bioluminescent Nodes */}
+          <g fill="white" filter="url(#hero-node-glow-v2)">
+            <circle cx="200" cy="300" r="6" className="animate-pulse" />
+            <circle cx="500" cy="600" r="4.5" />
+            <circle cx="1100" cy="400" r="8" className="animate-pulse" style={{ animationDuration: '3s' }} />
+            <circle cx="600" cy="200" r="4" />
+            <circle cx="300" cy="500" r="6" className="animate-pulse" style={{ animationDuration: '4.5s' }} />
+            <circle cx="800" cy="800" r="5" />
           </g>
-
-          {/* Technical Grid Overlay - Very Subtle */}
-          <pattern id="hero-grid" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
-            <circle cx="0" cy="0" r="1.5" fill="white" opacity="0.2" />
-          </pattern>
-          <rect width="100%" height="100%" fill="url(#hero-grid)" />
         </svg>
       </div>
 
