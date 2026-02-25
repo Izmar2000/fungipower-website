@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Menu, X, ArrowRight } from "lucide-react";
 
 const navLinks = [
@@ -13,6 +13,15 @@ const navLinks = [
 
 export const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 20);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const scrollToSection = (href: string) => {
     if (href.startsWith("/#")) {
@@ -33,9 +42,10 @@ export const Header = () => {
 
   return (
     <header
-      className="fixed top-0 left-0 z-[110] w-full transition-all duration-300 shadow-xl"
+      className={`fixed top-0 left-0 z-[110] w-full transition-all duration-500 ease-in-out ${scrolled ? "shadow-2xl" : ""
+        }`}
       style={{
-        background: `linear-gradient(90deg, #F58220 0%, #D71920 100%)`
+        background: scrolled ? `linear-gradient(90deg, #F58220 0%, #D71920 100%)` : `none`,
       }}
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between py-5 relative z-30">
@@ -45,7 +55,8 @@ export const Header = () => {
           <img
             src="/images/fungipower-logo-3.png"
             alt="FungiPower"
-            className="h-10 md:h-14 lg:h-16 w-auto object-left object-contain transition-all brightness-0 invert duration-500 group-hover:scale-[1.05]"
+            className={`w-auto object-left object-contain transition-all brightness-0 invert duration-500 group-hover:scale-[1.05] ${scrolled ? "h-10 md:h-14 lg:h-16" : "h-16 md:h-20 lg:h-24"
+              }`}
           />
         </a>
 
