@@ -62,7 +62,7 @@ export const PilotForm = () => {
             </div>
 
             <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
-                <div className="grid lg:grid-cols-2 gap-20 items-start">
+                <div className="grid lg:grid-cols-2 gap-20 items-stretch">
 
                     {/* Scientific & Research Context */}
                     <div className="pt-8">
@@ -73,7 +73,7 @@ export const PilotForm = () => {
                             </span>
                         </div>
 
-                        <h2 className="text-4xl md:text-5xl lg:text-7xl font-black mb-12 leading-[0.9] tracking-tighter uppercase">
+                        <h2 className="text-4xl md:text-5xl lg:text-7xl font-black mb-12 leading-[0.9] tracking-tighter uppercase text-white">
                             STABILITEIT DOOR<br />
                             <span className="text-[#888]">RESEARCH & DATA.</span>
                         </h2>
@@ -96,7 +96,7 @@ export const PilotForm = () => {
                                         <item.icon className="w-6 h-6 text-primary" />
                                     </div>
                                     <div>
-                                        <h4 className="font-black text-xs uppercase tracking-[0.2em] mb-2">{item.title}</h4>
+                                        <h4 className="font-black text-xs uppercase tracking-[0.2em] mb-2 text-white">{item.title}</h4>
                                         <p className="text-white/40 text-sm leading-relaxed max-w-sm">{item.desc}</p>
                                     </div>
                                 </div>
@@ -115,10 +115,10 @@ export const PilotForm = () => {
                     </div>
 
                     {/* Dedicated Form - Stable & High Tech */}
-                    <div className="relative pt-4">
-                        <div className="relative bg-[#111] border border-white/10 p-10 rounded-xl shadow-2xl">
+                    <div className="relative h-full flex flex-col pt-4">
+                        <div className="relative flex-1 bg-[#111] border border-white/10 p-10 rounded-xl shadow-2xl flex flex-col justify-between">
                             <div className="flex items-center justify-between mb-8 border-b border-white/5 pb-6">
-                                <h3 className="text-2xl font-black uppercase tracking-tight">Pilot Aanvraag</h3>
+                                <h3 className="text-2xl font-black uppercase tracking-tight text-white">Pilot Aanvraag</h3>
                                 <div className="text-[8px] font-black text-primary px-3 py-1 border border-primary/20 rounded-full tracking-[0.2em]">VERSIE 2.4</div>
                             </div>
 
