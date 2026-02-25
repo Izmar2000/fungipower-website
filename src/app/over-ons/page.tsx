@@ -1,4 +1,4 @@
-import { Header } from "@/components/landing/Header";
+
 import { Footer } from "@/components/landing/Footer";
 import { ArrowRight, Microscope, Target, Users, Zap } from "lucide-react";
 
@@ -14,7 +14,7 @@ export default function OverOns() {
                         backgroundSize: '150px 150px'
                     }}
                 />
-                <Header />
+
                 <div className="max-w-7xl mx-auto px-6 md:px-12 py-24 relative z-10">
                     <h1 className="text-5xl md:text-7xl font-black text-white leading-none tracking-tighter">
                         HET GEZICHT VAN<br />INNOVATIE.

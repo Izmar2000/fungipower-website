@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Menu, X, ArrowRight } from "lucide-react";
 
 const navLinks = [
-  { label: "HOME", href: "/#home" },
+  { label: "HOME", href: "/" },
   { label: "WETENSCHAP", href: "/#science" },
   { label: "RESULTATEN", href: "/#results" },
   { label: "OVER ONS", href: "/over-ons" },
@@ -41,7 +41,7 @@ export const Header = () => {
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between py-5 relative z-30">
 
         {/* Logo - Normal & Clean */}
-        <a href="/" className="flex items-center relative group">
+        <a href="/" className="flex items-center relative group z-50">
           <img
             src="/images/fungipower-logo-3.png"
             alt="FungiPower"
@@ -54,7 +54,7 @@ export const Header = () => {
           {navLinks.map((link) => (
             <button
               key={link.label}
-              onClick={() => scrollToSection(link.label === "HOME" ? "/#home" : link.href)}
+              onClick={() => scrollToSection(link.href)}
               className="relative text-white/80 text-[10px] font-black tracking-[0.2em] uppercase hover:text-white transition-all group py-2"
             >
               {link.label}
@@ -90,7 +90,7 @@ export const Header = () => {
             {navLinks.map((link) => (
               <button
                 key={link.label}
-                onClick={() => scrollToSection(link.label === "HOME" ? "/" : link.href)}
+                onClick={() => scrollToSection(link.href)}
                 className="text-white text-2xl font-black tracking-widest uppercase hover:text-[#F58220] transition-colors"
               >
                 {link.label}

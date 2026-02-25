@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Send, CheckCircle2, FlaskConical, ClipboardCheck, ArrowRight } from "lucide-react";
+import { CheckCircle2, ArrowRight } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 export const PilotForm = () => {
@@ -50,160 +50,120 @@ export const PilotForm = () => {
     }
 
     return (
-        <section id="contact" className="py-24 bg-black text-white relative overflow-hidden">
-            {/* Scientific structural grid background */}
-            <div className="absolute inset-0 opacity-[0.05] pointer-events-none">
-                <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-                    <pattern id="scientific-grid" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
-                        <path d="M 100 0 L 0 0 0 100" fill="none" stroke="white" strokeWidth="0.5" />
-                    </pattern>
-                    <rect width="100%" height="100%" fill="url(#scientific-grid)" />
-                </svg>
-            </div>
-
+        <section id="contact" className="py-24 bg-secondary text-secondary-foreground relative">
             <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
-                <div className="grid lg:grid-cols-2 gap-20 items-stretch">
+                <div className="flex flex-col lg:flex-row gap-16 items-start">
 
-                    {/* Scientific & Research Context */}
-                    <div className="pt-8">
-                        <div className="flex items-center gap-3 mb-10">
-                            <div className="h-px w-10 bg-primary" />
-                            <span className="text-white text-[10px] font-black tracking-[0.5em] uppercase">
-                                PRECISION GROWTH PROTOCOL
-                            </span>
-                        </div>
+                    {/* Left Content */}
+                    <div className="flex-1">
+                        <span className="inline-block text-primary text-xs font-black tracking-[0.2em] uppercase mb-4">
+                            PRECISION GROWTH PROTOCOL
+                        </span>
 
-                        <h2 className="text-4xl md:text-5xl lg:text-7xl font-black mb-12 leading-[0.9] tracking-tighter uppercase text-white">
-                            STABILITEIT DOOR<br />
-                            <span className="text-[#888]">RESEARCH & DATA.</span>
+                        <h2 className="text-4xl md:text-5xl font-black text-white mb-6 tracking-tight">
+                            Stabiliteit door<br />Research & Data.
                         </h2>
 
-                        <div className="grid gap-10 mb-16">
-                            {[
-                                {
-                                    title: "VALIDATIE OP LOCATIE",
-                                    desc: "Onze methodiek is gebaseerd op meetbare stabiliteit in elke teeltcyclus.",
-                                    icon: FlaskConical
-                                },
-                                {
-                                    title: "OPBRENGST OPTIMALISATIE",
-                                    desc: "Directe resultaten voor telers door wetenschappelijk onderbouwde methodiek.",
-                                    icon: ClipboardCheck
-                                }
-                            ].map((item, i) => (
-                                <div key={i} className="flex items-start gap-6">
-                                    <div className="bg-white/5 border border-white/10 p-4 rounded-lg">
-                                        <item.icon className="w-6 h-6 text-primary" />
-                                    </div>
-                                    <div>
-                                        <h4 className="font-black text-xs uppercase tracking-[0.2em] mb-2 text-white">{item.title}</h4>
-                                        <p className="text-white/40 text-sm leading-relaxed max-w-sm">{item.desc}</p>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-
-                        {/* Stability Statement */}
-                        <div className="p-8 border-l-2 border-primary bg-white/[0.02] backdrop-blur-3xl">
-                            <p className="text-white/90 font-bold text-lg leading-relaxed max-w-md">
-                                "Het fundament van FungiPower is de stabiliteit van de biologische processen. Wij bieden zekerheid aan de teler door onderzoek."
+                        <div className="space-y-6 text-lg text-white/80 leading-relaxed max-w-xl">
+                            <p>
+                                Het fundament van FungiPower is de stabiliteit van de biologische processen. Wij bieden zekerheid aan de teler door uitgebreid onderzoek.
                             </p>
-                            <div className="mt-6">
-                                <span className="text-[10px] font-black text-primary uppercase tracking-[0.3em]">Onderzoeksafdeling FungiPower</span>
-                            </div>
+                            <p>
+                                Onze methodiek is gebaseerd op meetbare stabiliteit in elke teeltcyclus met <span className="text-white font-bold">directe resultaten</span> voor telers door een wetenschappelijk onderbouwde methodiek.
+                            </p>
                         </div>
                     </div>
 
-                    {/* Dedicated Form - Stable & High Tech */}
-                    <div className="relative h-full flex flex-col pt-4">
-                        <div className="relative flex-1 bg-[#111] border border-white/10 p-10 rounded-xl shadow-2xl flex flex-col justify-between">
-                            <div className="flex items-center justify-between mb-8 border-b border-white/5 pb-6">
-                                <h3 className="text-2xl font-black uppercase tracking-tight text-white">Pilot Aanvraag</h3>
-                                <div className="text-[8px] font-black text-primary px-3 py-1 border border-primary/20 rounded-full tracking-[0.2em]">VERSIE 2.4</div>
-                            </div>
+                    {/* Right Content - Form */}
+                    <div className="flex-1 w-full">
+                        <div className="bg-card/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 md:p-10">
+                            <h3 className="text-xl font-bold text-white mb-8 border-b border-white/10 pb-4">
+                                Pilot Aanvraag
+                            </h3>
 
                             <form onSubmit={handleSubmit} className="space-y-6">
                                 <div className="grid md:grid-cols-2 gap-6">
                                     <div className="space-y-2">
-                                        <label className="text-[9px] font-black text-white/40 uppercase tracking-widest ml-1">Naam</label>
+                                        <label className="text-sm font-bold text-white/70 uppercase">Naam</label>
                                         <input
                                             type="text"
                                             name="name"
                                             value={formData.name}
                                             onChange={handleChange}
                                             required
-                                            className="w-full bg-white/5 border border-white/10 rounded-md px-4 py-3.5 text-white focus:outline-none focus:border-primary transition-all text-sm font-medium"
+                                            className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary transition-all"
                                         />
                                     </div>
                                     <div className="space-y-2">
-                                        <label className="text-[9px] font-black text-white/40 uppercase tracking-widest ml-1">Bedrijfsnaam</label>
+                                        <label className="text-sm font-bold text-white/70 uppercase">Bedrijfsnaam</label>
                                         <input
                                             type="text"
                                             name="company"
                                             value={formData.company}
                                             onChange={handleChange}
                                             required
-                                            className="w-full bg-white/5 border border-white/10 rounded-md px-4 py-3.5 text-white focus:outline-none focus:border-primary transition-all text-sm font-medium"
+                                            className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary transition-all"
                                         />
                                     </div>
                                 </div>
 
                                 <div className="space-y-2">
-                                    <label className="text-[9px] font-black text-white/40 uppercase tracking-widest ml-1">Zakelijk E-mailadres</label>
+                                    <label className="text-sm font-bold text-white/70 uppercase">Zakelijk E-mailadres</label>
                                     <input
                                         type="email"
                                         name="email"
                                         value={formData.email}
                                         onChange={handleChange}
                                         required
-                                        className="w-full bg-white/5 border border-white/10 rounded-md px-4 py-3.5 text-white focus:outline-none focus:border-primary transition-all text-sm font-medium"
+                                        className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary transition-all"
                                     />
                                 </div>
 
                                 <div className="grid md:grid-cols-2 gap-6">
                                     <div className="space-y-2">
-                                        <label className="text-[9px] font-black text-white/40 uppercase tracking-widest ml-1">Teeltlocatie</label>
+                                        <label className="text-sm font-bold text-white/70 uppercase">Teeltlocatie</label>
                                         <input
                                             type="text"
                                             name="location"
                                             value={formData.location}
                                             onChange={handleChange}
-                                            className="w-full bg-white/5 border border-white/10 rounded-md px-4 py-3.5 text-white focus:outline-none focus:border-primary transition-all text-sm font-medium"
+                                            className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary transition-all"
                                         />
                                     </div>
                                     <div className="space-y-2">
-                                        <label className="text-[9px] font-black text-white/40 uppercase tracking-widest ml-1">Weekcapaciteit (T)</label>
+                                        <label className="text-sm font-bold text-white/70 uppercase">Weekcapaciteit (T)</label>
                                         <input
                                             type="text"
                                             name="capacity"
                                             value={formData.capacity}
                                             onChange={handleChange}
-                                            className="w-full bg-white/5 border border-white/10 rounded-md px-4 py-3.5 text-white focus:outline-none focus:border-primary transition-all text-sm font-medium"
+                                            className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary transition-all"
                                         />
                                     </div>
                                 </div>
 
                                 <div className="space-y-2">
-                                    <label className="text-[9px] font-black text-white/40 uppercase tracking-widest ml-1">Specificaties & Vragen</label>
+                                    <label className="text-sm font-bold text-white/70 uppercase">Specificaties & Vragen</label>
                                     <textarea
                                         name="message"
                                         value={formData.message}
                                         onChange={handleChange}
                                         rows={3}
-                                        className="w-full bg-white/5 border border-white/10 rounded-md px-4 py-3.5 text-white focus:outline-none focus:border-primary transition-all text-sm font-medium resize-none"
+                                        className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary transition-all resize-none"
                                     />
                                 </div>
 
                                 <button
                                     type="submit"
-                                    className="w-full bg-white text-black py-5 rounded-md font-black text-xs uppercase tracking-[0.4em] hover:bg-primary hover:text-white transition-all flex items-center justify-center gap-4 mt-4 shadow-xl shadow-black/50"
+                                    className="w-full inline-flex justify-center items-center gap-2 bg-primary text-white py-3 rounded-lg font-bold uppercase tracking-wider hover:bg-primary/90 transition-colors mt-2"
                                 >
+                                    <ArrowRight className="w-5 h-5 absolute left-6 opacity-0" />
                                     VERSTUUR PROTOCOL AANVRAAG
-                                    <ArrowRight className="w-5 h-5" />
+                                    <ArrowRight className="w-4 h-4" />
                                 </button>
 
-                                <p className="text-[9px] text-center text-white/20 font-black uppercase tracking-[0.2em]">
-                                    Data vertrouwelijkheid gegarandeerd volgens industrie-standaarden
+                                <p className="text-[10px] text-center text-white/30 italic mt-6 px-4">
+                                    * Data vertrouwelijkheid gegarandeerd volgens industrie-standaarden.
                                 </p>
                             </form>
                         </div>

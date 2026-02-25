@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "@/index.css";
 import { Providers } from "@/components/Providers";
 import { PasswordProtection } from "@/components/PasswordProtection";
+import { Header } from "@/components/landing/Header";
 
 export const metadata: Metadata = {
     title: "FungiPower | Industriële Paddenstoelen Kweek Verbetering",
@@ -10,7 +11,11 @@ export const metadata: Metadata = {
     keywords:
         "paddenstoelenkweek, fungi, opbrengstverbetering, commerciële teelt, biologische versterker",
     icons: {
-        icon: "/images/fungipower-logo-3.png",
+        icon: [
+            { url: "/favicon.ico" },
+            { url: "/images/fungipower-logo-3.png", type: "image/png" }
+        ],
+        apple: "/images/fungipower-logo-3.png",
     },
 };
 
@@ -32,10 +37,14 @@ export default function RootLayout({
                     href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
                     rel="stylesheet"
                 />
+                <link rel="icon" href="/favicon.ico" sizes="any" />
+                <link rel="icon" type="image/png" sizes="32x32" href="/images/fungipower-logo-3.png" />
+                <link rel="apple-touch-icon" href="/images/fungipower-logo-3.png" />
             </head>
             <body>
                 <Providers>
                     <PasswordProtection>
+                        <Header />
                         {children}
                     </PasswordProtection>
                 </Providers>

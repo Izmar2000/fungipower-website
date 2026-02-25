@@ -42,7 +42,7 @@ export const Footer = () => {
   };
 
   return (
-    <footer className="bg-[#F58220] text-white py-16 relative overflow-hidden">
+    <footer className="bg-gradient-to-br from-[#F58220] via-[#D71920] to-[#8B2212] text-white py-16 relative overflow-hidden">
       {/* Decorative Brand Accent - Subtle mycelium in footer */}
       <div className="absolute inset-0 opacity-10 pointer-events-none">
         <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
@@ -74,7 +74,7 @@ export const Footer = () => {
                 <li key={link.label}>
                   <a
                     href={link.href}
-                    className="text-sm font-bold text-white/80 hover:text-white hover:translate-x-1 inline-block transition-all"
+                    className="text-sm font-bold text-white hover:text-[#FFD166] hover:translate-x-1 inline-block transition-all"
                   >
                     {link.label}
                   </a>
@@ -83,7 +83,7 @@ export const Footer = () => {
               <li>
                 <button
                   onClick={() => scrollToSection("#contact")}
-                  className="text-sm font-bold text-white/80 hover:text-white hover:translate-x-1 inline-block transition-all text-left"
+                  className="text-sm font-bold text-white hover:text-[#FFD166] hover:translate-x-1 inline-block transition-all text-left"
                 >
                   Proef Aanvragen
                 </button>
@@ -93,17 +93,17 @@ export const Footer = () => {
 
           <div>
             <h4 className="text-white font-black text-xs uppercase tracking-[0.2em] mb-6">Contact</h4>
-            <ul className="space-y-3 font-bold text-sm text-white/80">
-              <li>info@fungipower.bio</li>
-              <li>Venlo, Nederland</li>
+            <ul className="space-y-3 font-bold text-sm text-white">
+              <li className="hover:text-[#FFD166] transition-colors cursor-default">info@fungipower.bio</li>
+              <li className="hover:text-[#FFD166] transition-colors cursor-default">Venlo, Nederland</li>
             </ul>
           </div>
 
           <div>
             <h4 className="text-white font-black text-xs uppercase tracking-[0.2em] mb-6">Support</h4>
-            <ul className="space-y-3 font-bold text-sm text-white/80">
-              <li>Product Support</li>
-              <li>Pilot Aanvragen</li>
+            <ul className="space-y-3 font-bold text-sm text-white">
+              <li className="hover:text-[#FFD166] transition-colors cursor-default">Product Support</li>
+              <li className="hover:text-[#FFD166] transition-colors cursor-default">Pilot Aanvragen</li>
             </ul>
           </div>
         </div>
