@@ -48,7 +48,7 @@ export const Header = () => {
         background: scrolled ? `linear-gradient(90deg, #F58220 0%, #D71920 100%)` : `none`,
       }}
     >
-      <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between py-5 relative z-30">
+      <div className={`max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between relative z-30 transition-all duration-500 ease-in-out ${scrolled ? "py-4" : "py-8"}`}>
 
         {/* Logo - Normal & Clean */}
         <a href="/" className="flex items-center relative group z-50">
