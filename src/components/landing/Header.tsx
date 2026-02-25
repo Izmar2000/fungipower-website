@@ -32,31 +32,17 @@ export const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 z-[110] w-full transition-all duration-300 overflow-hidden group">
-      {/* High-Tech Technical Interface Layer */}
-      <div className="absolute inset-0 bg-black/10 backdrop-blur-3xl z-0" />
+    <header className="fixed top-0 left-0 z-[110] w-full transition-all duration-300 overflow-hidden group border-b border-white/10">
+      {/* Scientific Glass Background */}
+      <div className="absolute inset-0 bg-black/60 backdrop-blur-3xl z-0" />
 
-      {/* Bottom Interface Edge */}
-      <div className="absolute bottom-0 left-0 right-0 h-px bg-white/10 z-20" />
+      {/* Top Protocol Line */}
+      <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-primary to-transparent opacity-80 z-20" />
 
-      {/* Precision UI Markers */}
-      <div className="absolute top-4 left-4 z-20 hidden xl:block">
-        <div className="flex items-center gap-2">
-          <div className="w-1 h-1 bg-primary rounded-full animate-pulse" />
-          <span className="text-[6px] font-black tracking-[0.3em] text-white/40 uppercase">System: Operational</span>
-        </div>
-      </div>
-      <div className="absolute top-4 right-4 z-20 hidden xl:block">
-        <span className="text-[6px] font-black tracking-[0.3em] text-white/40 uppercase">FP-Protocol: v4.2.0</span>
-      </div>
-
-      {/* Top Precision Scan Line */}
-      <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-primary to-transparent opacity-100 z-30" />
-
-      {/* High-Visibility Mycelium Network Interface */}
-      <div className="absolute inset-0 z-10 pointer-events-none opacity-50">
+      {/* High-Visibility Mycelium Network Overlay */}
+      <div className="absolute inset-0 z-10 pointer-events-none opacity-40">
         <svg width="100%" height="80" viewBox="0 0 1200 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-          <filter id="header-glow">
+          <filter id="node-glow">
             <feGaussianBlur stdDeviation="1.5" result="coloredBlur" />
             <feMerge>
               <feMergeNode in="coloredBlur" />
@@ -64,61 +50,55 @@ export const Header = () => {
             </feMerge>
           </filter>
 
-          <g stroke="#F58220" strokeWidth="1.5" fill="none" filter="url(#header-glow)">
-            <path d="M-50 20 Q150 -10 300 30 T600 10 T900 40 T1250 15" />
-            <path d="M100 60 Q250 80 400 20 T700 65 T1100 10" strokeWidth="0.8" opacity="0.6" />
+          <g stroke="#F58220" strokeWidth="1" fill="none">
+            {/* Main Primary Connections */}
+            <path d="M-50 40 Q150 10 300 45 T600 20 T900 55 T1250 30" />
+            <path d="M100 80 Q250 100 400 40 T700 85 T1100 25" />
+            <path d="M400 -10 Q500 40 450 90" strokeWidth="0.5" />
+            <path d="M850 90 Q800 30 950 -10" strokeWidth="0.5" />
           </g>
 
-          {/* Active Genetic Markers */}
-          <g fill="#F58220">
-            <circle cx="300" cy="30" r="2" />
-            <circle cx="600" cy="10" r="1.5" />
-            <circle cx="900" cy="40" r="2.5" className="animate-pulse" />
+          {/* Active Genetic Nodes */}
+          <g fill="#F58220" filter="url(#node-glow)">
+            <circle cx="300" cy="45" r="2.5" className="animate-pulse" />
+            <circle cx="600" cy="20" r="2" />
+            <circle cx="900" cy="55" r="3" className="animate-pulse" style={{ animationDuration: '3s' }} />
+            <circle cx="150" cy="10" r="1.5" />
+            <circle cx="400" cy="40" r="2" />
+            <circle cx="700" cy="85" r="2.5" />
+            <circle cx="1100" cy="25" r="1.5" />
           </g>
         </svg>
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between py-5 relative z-30">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between py-4 relative z-30">
 
-        {/* HUD Corner Brackets */}
-        <div className="absolute top-0 left-6 w-4 h-4 border-l border-t border-white/20 hidden md:block" />
-        <div className="absolute top-0 right-6 w-4 h-4 border-r border-t border-white/20 hidden md:block" />
-        <div className="absolute bottom-0 left-6 w-4 h-4 border-l border-b border-white/20 hidden md:block" />
-        <div className="absolute bottom-0 right-6 w-4 h-4 border-r border-b border-white/20 hidden md:block" />
-
-        {/* Logo Section */}
+        {/* Logo - Normal & Clean */}
         <a href="/" className="flex items-center relative group">
           <img
             src="/images/fungipower-logo-3.png"
             alt="FungiPower"
-            className="h-10 md:h-12 lg:h-14 w-auto object-left object-contain transition-all brightness-0 invert duration-500 group-hover:scale-[1.02]"
+            className="h-10 md:h-14 lg:h-16 w-auto object-left object-contain transition-all brightness-0 invert duration-500 group-hover:scale-[1.05]"
           />
         </a>
 
-        {/* Technical Navigation */}
-        <nav className="hidden lg:flex items-center gap-10">
+        {/* Navigation */}
+        <nav className="hidden lg:flex items-center gap-8 xl:gap-12">
           {navLinks.map((link) => (
             <button
               key={link.label}
               onClick={() => scrollToSection(link.label === "HOME" ? "/#home" : link.href)}
-              className="relative text-white/60 text-[9px] font-black tracking-[0.3em] uppercase hover:text-white transition-all group py-2"
+              className="relative text-white/80 text-[10px] font-black tracking-[0.2em] uppercase hover:text-white transition-all group py-2"
             >
-              <span className="flex items-center gap-2">
-                <span className="w-1 h-px bg-primary/40 group-hover:w-3 transition-all" />
-                {link.label}
-              </span>
-              <span className="absolute bottom-0 left-0 w-0 h-px bg-primary transition-all duration-300 group-hover:w-full" />
+              {link.label}
+              <span className="absolute bottom-0 left-0 w-0 h-[1.5px] bg-[#F58220] transition-all duration-300 group-hover:w-full" />
             </button>
           ))}
 
           <button
             onClick={() => scrollToSection("#contact")}
-            className="group relative h-12 px-8 bg-primary text-white text-[9px] font-black tracking-[0.3em] uppercase transition-all overflow-hidden flex items-center gap-3"
+            className="group relative bg-[#F58220] text-white px-8 py-3 rounded-md text-[10px] font-black tracking-[0.25em] uppercase hover:bg-white hover:text-black transition-all shadow-xl flex items-center gap-3"
           >
-            {/* Visual Button Detail */}
-            <div className="absolute top-0 left-0 w-2 h-2 border-l border-t border-white/40" />
-            <div className="absolute bottom-0 right-0 w-2 h-2 border-r border-b border-white/40" />
-
             <span className="relative z-10">PROEF AANVRAGEN</span>
             <ArrowRight className="w-4 h-4 relative z-10 transition-transform group-hover:translate-x-1" />
           </button>
