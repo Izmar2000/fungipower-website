@@ -12,41 +12,23 @@ export const HeroSection = () => {
       }}
     >
       {/* Golden Vitality Layer - Organic Mycelium Pattern */}
-      <div className="absolute inset-0 z-0 opacity-[0.15] pointer-events-none">
+      <div className="absolute inset-0 z-0 opacity-[0.12] pointer-events-none">
         <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" className="absolute inset-0">
-          <filter id="glow">
-            <feGaussianBlur stdDeviation="2" result="coloredBlur" />
-            <feMerge>
-              <feMergeNode in="coloredBlur" />
-              <feMergeNode in="SourceGraphic" />
-            </feMerge>
-          </filter>
+          <pattern id="scientific-data-map" x="0" y="0" width="120" height="120" patternUnits="userSpaceOnUse">
+            <path d="M 120 0 L 0 0 0 120" fill="none" stroke="white" strokeWidth="0.5" opacity="0.3" />
+            <circle cx="0" cy="0" r="1.5" fill="white" />
+            <circle cx="60" cy="60" r="1" fill="white" opacity="0.5" />
+          </pattern>
+          <rect width="100%" height="100%" fill="url(#scientific-data-map)" />
 
-          {/* Dense Mycelium Web */}
+          {/* Precise Technical Lines */}
           <path
-            d="M50 50 L150 120 L300 80 L450 200 L600 150 L800 300 L1100 200 M150 120 L100 250 L300 350 L500 280 L700 450 M450 200 L400 50 L700 100 L950 50 M800 300 L750 600 L1100 500 M1100 200 L1300 400 L1500 250"
+            d="M 100 100 L 400 300 L 700 200 L 1100 400 M 300 100 L 300 500 M 600 0 L 600 800"
             stroke="white"
             strokeWidth="0.5"
+            strokeDasharray="4,4"
             fill="none"
-            filter="url(#glow)"
-            className="animate-pulse"
-          />
-
-          {/* Connection Nodes */}
-          {[
-            [150, 120], [300, 80], [450, 200], [600, 150], [800, 300], [1100, 200],
-            [100, 250], [300, 350], [500, 280], [700, 450], [400, 50], [1300, 400]
-          ].map(([x, y], i) => (
-            <circle key={i} cx={x} cy={y} r="2" fill="white" filter="url(#glow)" className="animate-pulse" style={{ animationDelay: `${i * 0.2}s` }} />
-          ))}
-
-          {/* Tertiary Faint Connections */}
-          <path
-            d="M50 50 Q200 150 400 50 T800 150 T1200 50"
-            stroke="white"
-            strokeWidth="0.2"
-            fill="none"
-            opacity="0.5"
+            opacity="0.2"
           />
         </svg>
       </div>
