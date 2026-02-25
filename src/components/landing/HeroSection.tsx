@@ -12,37 +12,30 @@ export const HeroSection = () => {
       }}
     >
       {/* Golden Vitality Layer - Organic Mycelium Pattern */}
-      <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
+      <div className="absolute inset-0 z-10 pointer-events-none overflow-hidden">
         <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" className="absolute inset-0">
-          <filter id="hero-node-glow-v2">
-            <feGaussianBlur stdDeviation="4" result="coloredBlur" />
+          <filter id="extra-glow">
+            <feGaussianBlur stdDeviation="5" result="coloredBlur" />
             <feMerge>
               <feMergeNode in="coloredBlur" />
               <feMergeNode in="SourceGraphic" />
             </feMerge>
           </filter>
 
-          {/* Master Structural Network - High Visibility */}
-          <g stroke="white" strokeWidth="2" fill="none" opacity="0.35">
-            <path d="M-100 400 L200 300 L500 600 L1100 400 L1500 700" strokeDasharray="10,10" />
-            <path d="M400 -100 L600 200 L300 500 L800 800" strokeDasharray="5,15" />
-            <path d="M1200 -50 L900 300 L1100 600" />
+          {/* Bold Mycelium Network - High Visibility */}
+          <g stroke="white" strokeWidth="2.5" fill="none" opacity="0.6">
+            <path d="M-100 200 L300 100 L600 400 L900 100 L1300 300" />
+            <path d="M-50 600 L400 350 L800 600 L1100 300" />
+            <path d="M500 -100 L600 200 L300 600 L700 900" />
           </g>
 
-          {/* Secondary Organic Threads */}
-          <g stroke="white" strokeWidth="1" fill="none" opacity="0.25">
-            <path d="M50 50 Q150 150 300 100 T600 200 T900 100 T1200 300" />
-            <path d="M-100 700 Q100 600 400 750 T800 650 T1300 850" />
-          </g>
-
-          {/* Strong Bioluminescent Nodes */}
-          <g fill="white" filter="url(#hero-node-glow-v2)">
-            <circle cx="200" cy="300" r="6" className="animate-pulse" />
-            <circle cx="500" cy="600" r="4.5" />
-            <circle cx="1100" cy="400" r="8" className="animate-pulse" style={{ animationDuration: '3s' }} />
-            <circle cx="600" cy="200" r="4" />
-            <circle cx="300" cy="500" r="6" className="animate-pulse" style={{ animationDuration: '4.5s' }} />
-            <circle cx="800" cy="800" r="5" />
+          {/* Vibrant Nodes */}
+          <g fill="white" filter="url(#extra-glow)">
+            <circle cx="300" cy="100" r="8" className="animate-pulse" />
+            <circle cx="600" cy="400" r="6" />
+            <circle cx="900" cy="100" r="10" className="animate-pulse" style={{ animationDuration: '3s' }} />
+            <circle cx="400" cy="350" r="7" className="animate-pulse" style={{ animationDuration: '4s' }} />
+            <circle cx="800" cy="600" r="5" />
           </g>
         </svg>
       </div>
