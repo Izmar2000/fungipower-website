@@ -12,24 +12,45 @@ export const HeroSection = () => {
       }}
     >
       {/* Golden Vitality Layer - Organic Mycelium Pattern */}
-      <div className="absolute inset-0 z-0 opacity-[0.12] pointer-events-none">
+      <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
         <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" className="absolute inset-0">
-          <pattern id="scientific-data-map" x="0" y="0" width="120" height="120" patternUnits="userSpaceOnUse">
-            <path d="M 120 0 L 0 0 0 120" fill="none" stroke="white" strokeWidth="0.5" opacity="0.3" />
-            <circle cx="0" cy="0" r="1.5" fill="white" />
-            <circle cx="60" cy="60" r="1" fill="white" opacity="0.5" />
-          </pattern>
-          <rect width="100%" height="100%" fill="url(#scientific-data-map)" />
+          <filter id="hero-node-glow">
+            <feGaussianBlur stdDeviation="3" result="coloredBlur" />
+            <feMerge>
+              <feMergeNode in="coloredBlur" />
+              <feMergeNode in="SourceGraphic" />
+            </feMerge>
+          </filter>
 
-          {/* Precise Technical Lines */}
-          <path
-            d="M 100 100 L 400 300 L 700 200 L 1100 400 M 300 100 L 300 500 M 600 0 L 600 800"
-            stroke="white"
-            strokeWidth="0.5"
-            strokeDasharray="4,4"
-            fill="none"
-            opacity="0.2"
-          />
+          {/* Large Scale Mycelium Base - Higher Visibility */}
+          <g stroke="white" strokeWidth="1.5" fill="none" opacity="0.15">
+            <path d="M-100 400 Q200 300 500 600 T1100 400 T1500 700" />
+            <path d="M400 -100 Q600 200 300 500 T800 800" />
+            <path d="M1200 -50 Q900 300 1100 600" />
+          </g>
+
+          {/* Intricate Secondary Network */}
+          <g stroke="white" strokeWidth="0.5" fill="none" opacity="0.1">
+            <path d="M100 100 L300 250 L500 150 L700 350 L900 200 L1100 450" />
+            <path d="M-50 600 L250 450 L450 700 L750 550 L1050 750" />
+          </g>
+
+          {/* Glowing Bioluminescent Nodes */}
+          <g fill="white" filter="url(#hero-node-glow)">
+            <circle cx="200" cy="300" r="4" className="animate-pulse" style={{ animationDuration: '4s' }} />
+            <circle cx="500" cy="600" r="3" />
+            <circle cx="1100" cy="400" r="5" className="animate-pulse" style={{ animationDuration: '5s' }} />
+            <circle cx="600" cy="200" r="2.5" />
+            <circle cx="300" cy="500" r="4" className="animate-pulse" style={{ animationDuration: '6s' }} />
+            <circle cx="800" cy="800" r="3.5" />
+            <circle cx="900" cy="300" r="2" />
+          </g>
+
+          {/* Technical Grid Overlay - Very Subtle */}
+          <pattern id="hero-grid" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+            <circle cx="0" cy="0" r="1.5" fill="white" opacity="0.2" />
+          </pattern>
+          <rect width="100%" height="100%" fill="url(#hero-grid)" />
         </svg>
       </div>
 
