@@ -11,6 +11,15 @@ export const HeroSection = () => {
         background: `linear-gradient(135deg, #F58220 0%, #D71920 100%)`
       }}
     >
+      {/* Technical Nursery Sketch Overlay - Right Side */}
+      <div className="absolute right-[-10%] top-[40%] md:top-[20%] w-[120%] md:w-[60%] opacity-[0.08] pointer-events-none z-0 select-none mix-blend-screen">
+        <img
+          src="/images/nursery-diagram.png"
+          alt="Technical Nursery Diagram"
+          className="w-full h-auto grayscale transition-opacity duration-1000"
+        />
+      </div>
+
       <Header />
 
       {/* Spacer to push content down below fixed header */}
