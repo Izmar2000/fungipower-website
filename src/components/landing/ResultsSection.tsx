@@ -34,48 +34,48 @@ export const ResultsSection = () => {
 
           {/* Right Content - Data Viz */}
           <div className="flex-1 w-full">
-            <div className="bg-card/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 md:p-10">
-              <h3 className="text-xl font-bold text-white mb-8 border-b border-white/10 pb-4">Kernbevindingen FungiPower Boost</h3>
+            <div className="bg-white/80 backdrop-blur-xl border border-white/50 shadow-2xl shadow-black/10 rounded-2xl p-8 md:p-10">
+              <h3 className="text-xl font-bold text-slate-900 mb-8 border-b border-black/10 pb-4">Kernbevindingen FungiPower Boost</h3>
 
               <div className="grid gap-8">
                 {/* Stat 1 */}
                 <div className="relative">
                   <div className="flex justify-between items-end mb-2">
-                    <span className="text-sm font-bold text-white/70 uppercase">Gemiddelde Opbrengstverhoging</span>
+                    <span className="text-sm font-bold text-slate-500 uppercase">Gemiddelde Opbrengstverhoging</span>
                     <span className="text-3xl font-black text-primary">+11,3%</span>
                   </div>
-                  <div className="h-4 bg-white/10 rounded-full overflow-hidden">
+                  <div className="h-4 bg-black/5 rounded-full overflow-hidden shadow-inner">
                     <div className="h-full bg-primary w-[85%] rounded-full relative">
-                      <div className="absolute right-0 top-0 bottom-0 w-1 bg-white/20 animate-pulse"></div>
+                      <div className="absolute right-0 top-0 bottom-0 w-1 bg-white/30 animate-pulse"></div>
                     </div>
                   </div>
-                  <p className="text-xs text-white/50 mt-2">Significant bewezen in praktijktesten (p=0,028)</p>
+                  <p className="text-xs text-slate-500 mt-2">Significant bewezen in praktijktesten (p=0,028)</p>
                 </div>
 
                 {/* Stat 2 */}
-                <div className="flex items-start gap-4 p-4 bg-white/5 rounded-lg border border-white/5">
+                <div className="flex items-start gap-4 p-4 bg-white/60 rounded-lg border border-white/40 shadow-sm">
                   <TrendingUp className="w-8 h-8 text-primary flex-shrink-0" />
                   <div>
-                    <h4 className="text-white font-bold text-lg">Impact op 3e Vlucht</h4>
-                    <p className="text-white/70 text-sm mt-1">
+                    <h4 className="text-slate-900 font-bold text-lg">Impact op 3e Vlucht</h4>
+                    <p className="text-slate-700 text-sm mt-1">
                       De grootste procentuele winst wordt gerealiseerd in de derde vlucht, door verlenging van de productieve levensduur.
                     </p>
                   </div>
                 </div>
 
                 {/* Stat 3 */}
-                <div className="flex items-start gap-4 p-4 bg-white/5 rounded-lg border border-white/5">
+                <div className="flex items-start gap-4 p-4 bg-white/60 rounded-lg border border-white/40 shadow-sm">
                   <Clock className="w-8 h-8 text-primary flex-shrink-0" />
                   <div>
-                    <h4 className="text-white font-bold text-lg">Timing is Cruciaal</h4>
-                    <p className="text-white/70 text-sm mt-1">
+                    <h4 className="text-slate-900 font-bold text-lg">Timing is Cruciaal</h4>
+                    <p className="text-slate-700 text-sm mt-1">
                       Toepassing direct na de eerste vlucht geeft het maximale effect op de totale cyclus.
                     </p>
                   </div>
                 </div>
               </div>
 
-              <p className="text-[10px] text-white/30 italic mt-6 px-4">
+              <p className="text-[10px] text-slate-500 italic mt-6 px-4">
                 * Resultaten op basis van onafhankelijke praktijkproeven bij Nederlandse kwekers (n=12). Individuele resultaten kunnen variëren per teeltsituatie.
               </p>
             </div>

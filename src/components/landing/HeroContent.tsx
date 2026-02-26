@@ -15,7 +15,7 @@ export const HeroContent = () => {
       {/* Main Headline - Solid, Stable, Scientific */}
       <h1 className="text-4xl md:text-6xl lg:text-[80px] font-black text-white leading-[0.82] mb-6 tracking-[-0.04em] animate-fade-in-up uppercase whitespace-nowrap">
         <span className="block">ELKE CEL</span>
-        <span className="block text-black">ELKE VLUCHT</span>
+        <span className="block text-white/70">ELKE VLUCHT</span>
         <span className="block">MEER OPBRENGST</span>
       </h1>
 
