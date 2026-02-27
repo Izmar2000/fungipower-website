@@ -51,7 +51,7 @@ export default function OverOns() {
                             </h2>
                             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
                                 <p>
-                                    Jan Klerken heeft jarenlange ervaring in de champignonsector. Als voormalig directeur bij <span className="text-foreground font-bold">Scelta Mushrooms</span>, een van de grootste en meest innovatieve champignonbedrijven van Europa, brengt hij een ongeëvenaard netwerk en diepgaande kennis naar FungiPower.
+                                    Jan Klerken heeft jarenlange ervaring in de champignonsector. Als oprichter bij <span className="text-foreground font-bold">Scelta Mushrooms</span>, een van de grootste en meest innovatieve champignonbedrijven van Europa, brengt hij een ongeëvenaard netwerk en diepgaande kennis naar FungiPower.
                                 </p>
                                 <p>
                                     Jan staat bekend als de brug tussen wetenschappelijke innovatie en de dagelijkse praktijk op de werkvloer van de kweker. Zijn visie drijft FungiPower om de grenzen van de champignonteelt voortdurend te verleggen.

@@ -13,10 +13,9 @@ export const HeroContent = () => {
       </div>
 
       {/* Main Headline - Solid, Stable, Scientific */}
-      <h1 className="text-4xl md:text-6xl lg:text-[80px] font-black text-white leading-[0.82] mb-6 tracking-[-0.04em] animate-fade-in-up uppercase whitespace-nowrap">
-        <span className="block">ELKE CEL</span>
-        <span className="block text-white/70">ELKE VLUCHT</span>
-        <span className="block">MEER OPBRENGST</span>
+      <h1 className="text-4xl md:text-5xl lg:text-[60px] font-black text-white leading-[0.95] mb-6 tracking-[-0.02em] animate-fade-in-up uppercase whitespace-nowrap">
+        <span className="block">Optimale opname</span>
+        <span className="block text-white/70">Sterkere groei</span>
       </h1>
 
       {/* Intro Block - Tight */}
@@ -46,8 +45,8 @@ export const HeroContent = () => {
 
       {/* CTA Buttons - Solid Black on White */}
       <div className="flex animate-fade-in" style={{ animationDelay: '0.6s' }}>
-        <a href="#contact" className="bg-white text-black px-10 py-4 text-[11px] font-black tracking-[0.3em] uppercase hover:bg-black hover:text-white transition-all shadow-xl flex items-center gap-6 group">
-          START PILOT PROJECT
+        <a href="#results" className="bg-white text-black px-10 py-4 text-[11px] font-black tracking-[0.3em] uppercase hover:bg-black hover:text-white transition-all shadow-xl flex items-center gap-6 group">
+          MEER PRAKTIJKVOORBEELDEN
           <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform" />
         </a>
       </div>
