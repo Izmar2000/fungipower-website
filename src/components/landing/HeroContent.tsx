@@ -13,15 +13,15 @@ export const HeroContent = () => {
       </div>
 
       {/* Main Headline - Solid, Stable, Scientific */}
-      <h1 className="text-4xl md:text-5xl lg:text-[60px] font-black text-white leading-[0.95] mb-6 tracking-[-0.02em] animate-fade-in-up uppercase whitespace-nowrap">
-        <span className="block">Optimale opname</span>
-        <span className="block text-white/70">Sterkere groei</span>
+      <h1 className="font-black text-white leading-tight mb-6 tracking-[-0.02em] animate-fade-in-up uppercase whitespace-nowrap flex flex-col items-start">
+        <span className="text-3xl md:text-4xl lg:text-[45px] leading-[1]">Optimale opname</span>
+        <span className="text-5xl md:text-6xl lg:text-[75px] text-white/70 leading-[0.9]">Sterkere groei</span>
       </h1>
 
       {/* Intro Block - Tight */}
       <div className="mb-6 animate-fade-in" style={{ animationDelay: '0.2s' }}>
         <p className="text-white text-lg md:text-xl font-bold leading-[1.2] max-w-lg">
-          FungiPower verhoogt structureel de opbrengst van champignons door de vitaliteit van het substraat te verlengen.
+          FungiPower stimuleert de biomassa en ondersteunt een constantere cyclus door de stabiliteit van het substraat te verlengen.
         </p>
         <div className="mt-4 flex items-center gap-2">
           <span className="text-[10px] font-black text-white/60 uppercase tracking-[0.3em]">Scientific Grade Innovation</span>
