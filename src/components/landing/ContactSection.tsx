@@ -141,6 +141,59 @@ export const ContactSection = () => {
             </form>
           </div>
         </div>
+
+        {/* Daily Branch Update Signup Banner */}
+        <div className="mt-20 bg-gradient-to-br from-slate-900 to-black rounded-2xl p-8 md:p-12 relative overflow-hidden border border-white/10 shadow-2xl">
+          <div className="absolute top-0 right-0 w-64 h-64 bg-[#F58220] opacity-10 rounded-full blur-[80px]" />
+          <div className="absolute bottom-0 left-0 w-64 h-64 bg-[#D71920] opacity-10 rounded-full blur-[80px]" />
+
+          <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-10">
+            <div className="max-w-xl">
+              <span className="inline-block text-[#F58220] text-xs font-black tracking-[0.2em] uppercase mb-4">
+                SECTOR INZICHTEN
+              </span>
+              <h3 className="text-3xl md:text-4xl font-black text-white mb-4 tracking-tight leading-tight">
+                Elke ochtend de actuele beurs- en branche-updates in je inbox.
+              </h3>
+              <p className="text-white/70 text-lg">
+                Meld je kosteloos aan voor onze dagelijkse briefing (ma-vrij). Ontvang direct de nieuwste compostprijzen, internationale champignontarieven en relevante marktontwikkelingen, verpakt in één korte e-mail.
+              </p>
+            </div>
+
+            <div className="w-full md:w-auto flex-1 max-w-sm">
+              <form
+                onSubmit={(e) => {
+                  e.preventDefault();
+                  toast({
+                    title: "Aanmelding gelukt!",
+                    description: "Je ontvangt vanaf morgenochtend de dagelijkse branche-update.",
+                  });
+                }}
+                className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10 flex flex-col gap-4"
+              >
+                <div>
+                  <label className="block text-xs font-bold text-white/50 uppercase mb-2">Jouw e-mailadres</label>
+                  <input
+                    type="email"
+                    required
+                    placeholder="kweker@bedrijf.nl"
+                    className="w-full bg-black/50 border border-white/20 rounded-lg px-4 py-3 text-white placeholder:text-white/30 focus:outline-none focus:border-[#F58220] focus:ring-1 focus:ring-[#F58220] transition-all"
+                  />
+                </div>
+                <button
+                  type="submit"
+                  className="w-full bg-[#F58220] text-white py-3.5 rounded-lg font-black text-[11px] uppercase tracking-[0.2em] hover:bg-white hover:text-black transition-all shadow-lg flex items-center justify-center gap-2"
+                >
+                  <Mail className="w-4 h-4" />
+                  Meld mij aan
+                </button>
+                <span className="text-center text-[10px] text-white/40 italic">
+                  Uitschrijven kan op elk moment. Wij delen je data nooit.
+                </span>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
