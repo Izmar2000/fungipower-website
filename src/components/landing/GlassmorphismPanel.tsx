@@ -1,56 +1,41 @@
-import { Star } from "lucide-react";
+import { TrendingUp, Thermometer, Droplets } from "lucide-react";
 
 export const GlassmorphismPanel = () => {
   return (
     <div className="w-full max-w-md lg:max-w-xl relative z-10 transform transition-transform duration-500 hover:scale-[1.01]">
-      <div className="bg-white/40 backdrop-blur-xl p-8 shadow-[0_30px_60px_rgba(0,0,0,0.15)] relative overflow-hidden rounded-[2.5rem] border border-white/60">
-        {/* Top Metrics Row */}
-        <div className="grid grid-cols-3 mb-10">
-          <div className="text-center px-4">
-            <span className="block text-[10px] uppercase font-bold text-black/40 tracking-wider mb-2">Vochtigheid (%)</span>
-            <span className="text-3xl font-bold text-black/80 tracking-tight">88.2</span>
-          </div>
-          <div className="text-center px-4 border-l border-black/5">
-            <span className="block text-[10px] uppercase font-bold text-black/40 tracking-wider mb-2">CO2 (PPM)</span>
-            <span className="text-3xl font-bold text-black/80 tracking-tight">948</span>
-          </div>
-          <div className="text-center px-4 border-l border-black/5">
-            <span className="block text-[10px] uppercase font-bold text-black/40 tracking-wider mb-2">Temp (C)</span>
-            <span className="text-3xl font-bold text-black/80 tracking-tight">24.1</span>
-          </div>
-        </div>
+      {/* Light gray solid background matching the requested image */}
+      <div className="bg-[#E5E7EB] p-8 md:p-10 shadow-2xl relative overflow-hidden rounded-[20px] border border-white/50">
 
         {/* Case Study Heading */}
-        <div className="mb-0">
-          <span className="block text-xs uppercase font-extrabold text-[#F58220] tracking-wider mb-2">
-            PRAKTIJKVOORBEELD: CHAMPIGNONKWEKER GRUBBENVORST
-          </span>
-        </div>
+        <h3 className="text-xl md:text-[22px] font-bold text-slate-900 mb-8 border-b border-black/10 pb-4">
+          Praktijkvoorbeeld Grubbenvorst
+        </h3>
 
         {/* Main Stat and Graph Row */}
-        <div className="flex items-center gap-8 mb-8">
-          <div className="flex items-center gap-4">
-            <h2 className="text-[5.5rem] font-bold text-black/90 leading-none tracking-tighter">14%</h2>
-            <div className="flex flex-col justify-center">
-              <span className="text-xs font-bold text-black/50 uppercase leading-tight">2E</span>
-              <span className="text-xs font-bold text-black/50 uppercase leading-tight">VLUCHT</span>
-            </div>
+        <div className="mb-8 relative">
+          <div className="flex justify-between items-end mb-2">
+            <span className="text-xs md:text-sm font-bold text-slate-500 uppercase tracking-wide">
+              Resultaat 2e Vlucht
+            </span>
+            <span className="text-5xl font-black text-[#F58220] leading-none">
+              +14%
+            </span>
           </div>
 
-          {/* SVG Graph Line - Grey version from image */}
-          <div className="flex-1 h-12 relative pt-4">
+          {/* Graph directly over gray background, vibrant orange */}
+          <div className="h-16 relative">
             <svg className="h-full w-full" viewBox="0 0 100 40" preserveAspectRatio="none">
               <defs>
                 <linearGradient id="graphGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-                  <stop offset="0%" stopColor="#4B5563" stopOpacity="0.3" />
-                  <stop offset="100%" stopColor="#4B5563" stopOpacity="0" />
+                  <stop offset="0%" stopColor="#F58220" stopOpacity="0.4" />
+                  <stop offset="100%" stopColor="#F58220" stopOpacity="0" />
                 </linearGradient>
               </defs>
               <path
                 d="M0 35 L 20 32 L 40 33 L 60 25 L 80 20 L 100 8"
                 fill="none"
-                stroke="#6B7280"
-                strokeWidth="2.5"
+                stroke="#F58220"
+                strokeWidth="3"
                 strokeLinecap="round"
                 strokeLinejoin="round"
               />
@@ -60,19 +45,45 @@ export const GlassmorphismPanel = () => {
               />
             </svg>
           </div>
+          <p className="text-[11px] text-slate-500 mt-2">
+            Constante groei en verhoogde knopvorming geobserveerd in praktijk.
+          </p>
         </div>
 
-        {/* Image Grid Row - 4 images */}
-        <div className="grid grid-cols-4 gap-3 mb-8 h-20">
+        {/* New White Cards Section exactly like the 'Impact/Timing' cards */}
+        <div className="grid gap-4 mb-8">
+          <div className="flex items-start gap-4 p-5 bg-white rounded-lg border border-white/60 shadow-sm">
+            <Droplets className="w-8 h-8 text-[#F58220] flex-shrink-0" />
+            <div>
+              <h4 className="text-slate-900 font-bold text-lg leading-tight">Vochtigheid & CO2</h4>
+              <p className="text-slate-600 text-sm mt-1">
+                Optimale klimaatcondities behouden: <strong>88.2%</strong> vocht en <strong>948 PPM</strong> CO2.
+              </p>
+            </div>
+          </div>
+
+          <div className="flex items-start gap-4 p-5 bg-white rounded-lg border border-white/60 shadow-sm">
+            <Thermometer className="w-8 h-8 text-[#F58220] flex-shrink-0" />
+            <div>
+              <h4 className="text-slate-900 font-bold text-lg leading-tight">Temperatuur stabiliteit</h4>
+              <p className="text-slate-600 text-sm mt-1">
+                Constante teelttemperatuur van stabiel <strong>24.1 °C</strong> zonder grote schommelingen.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Colorful Images Row inside a White Wrapper */}
+        <div className="bg-white p-3 rounded-lg shadow-sm border border-white/60 grid grid-cols-4 gap-2">
           {[1, 2, 3, 4].map((i) => (
             <div
               key={i}
-              className="rounded-md overflow-hidden bg-white/20 border border-white/30 backdrop-blur-sm"
+              className="rounded overflow-hidden relative pt-[100%]"
             >
               <img
                 src={`/images/panel-${i === 1 || i === 4 ? 1 : 2}.jpg`}
                 alt="Growth process"
-                className="w-full h-full object-cover grayscale-[0.1]"
+                className="absolute inset-0 w-full h-full object-cover transition-transform hover:scale-110"
                 onError={(e) => {
                   (e.target as HTMLImageElement).src = `https://images.unsplash.com/photo-1591261730799-ee4e6c2d16d7?q=80&auto=format&fit=crop`;
                 }}
@@ -80,7 +91,6 @@ export const GlassmorphismPanel = () => {
             </div>
           ))}
         </div>
-
 
       </div>
     </div>
