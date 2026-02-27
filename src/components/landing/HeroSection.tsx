@@ -23,43 +23,38 @@ export const HeroSection = () => {
           </filter>
 
           <g stroke="white" strokeWidth="1.5" fill="none" filter="url(#hero-glow)" className="animate-pulse">
-            {/* Hoofdstrengen */}
-            <path d="M-100,200 Q50,220 150,150 T400,200 T700,100 T1000,250 T1300,150" opacity="0.6" />
-            <path d="M-50,500 Q200,450 300,600 T650,500 T950,700 T1350,550" opacity="0.6" />
-            <path d="M100,800 Q250,700 450,850 T800,750 T1150,900" opacity="0.6" />
+            {/* Hoofdnetwerk - Hoekig en onregelmatig (rechte lijnen) */}
+            <path d="M-100,250 L50,220 L150,150 L280,240 L400,200 L550,120 L700,100 L850,190 L1000,250 L1150,180 L1350,220" opacity="0.6" />
+            <path d="M-50,450 L120,480 L250,380 L350,550 L500,420 L650,500 L800,400 L950,550 L1100,480 L1250,580 L1400,520" opacity="0.6" />
+            <path d="M50,750 L200,680 L350,800 L550,650 L750,820 L950,680 L1150,850 L1300,720" opacity="0.6" />
 
-            {/* Vertakkingen (Mycelium) */}
-            <path d="M150,150 Q200,300 300,600" opacity="0.5" />
-            <path d="M400,200 Q500,350 650,500" opacity="0.5" />
-            <path d="M700,100 Q800,250 950,700" opacity="0.4" />
-            <path d="M1000,250 Q1050,450 1150,900" opacity="0.4" />
-            <path d="M300,600 Q350,750 450,850" opacity="0.5" />
-            <path d="M650,500 Q750,650 800,750" opacity="0.4" />
+            {/* Kruisende en vertakkende rechte verbindingen */}
+            <path d="M150,150 L250,380 L200,680" opacity="0.5" />
+            <path d="M280,240 L350,550 L550,650" opacity="0.5" />
+            <path d="M400,200 L500,420 L350,800" opacity="0.5" />
+            <path d="M550,120 L650,500 L750,820" opacity="0.5" />
+            <path d="M700,100 L800,400 L950,680" opacity="0.4" />
+            <path d="M850,190 L950,550 L1150,850" opacity="0.4" />
+            <path d="M1000,250 L1100,480 L1300,720" opacity="0.4" />
 
-            {/* Fijnere haarvaten */}
-            <path d="M225,225 Q280,150 350,180" opacity="0.3" strokeWidth="1" />
-            <path d="M525,350 Q600,280 650,300" opacity="0.3" strokeWidth="1" />
-            <path d="M825,175 Q900,100 950,150" opacity="0.3" strokeWidth="1" />
-            <path d="M250,525 Q150,580 180,650" opacity="0.3" strokeWidth="1" />
-            <path d="M525,550 Q450,680 500,700" opacity="0.3" strokeWidth="1" />
-            <path d="M800,475 Q850,380 900,420" opacity="0.3" strokeWidth="1" />
-            <path d="M1025,350 Q1100,380 1150,300" opacity="0.3" strokeWidth="1" />
-            <path d="M1050,650 Q980,750 1020,800" opacity="0.3" strokeWidth="1" />
+            {/* Secundaire strakke aftakkingen */}
+            <path d="M50,220 L120,300 L250,380" opacity="0.3" strokeWidth="1" />
+            <path d="M280,240 L200,300 L120,480" opacity="0.3" strokeWidth="1" />
+            <path d="M500,420 L580,320 L700,100" opacity="0.3" strokeWidth="1" />
+            <path d="M650,500 L550,600 L550,650" opacity="0.3" strokeWidth="1" />
+            <path d="M800,400 L880,300 L1000,250" opacity="0.3" strokeWidth="1" />
+            <path d="M950,550 L880,680 L950,680" opacity="0.3" strokeWidth="1" />
+            <path d="M1100,480 L1200,350 L1150,180" opacity="0.3" strokeWidth="1" />
           </g>
 
           {[
-            // Knooppunten hoofdstrengen
-            [150, 150], [400, 200], [700, 100], [1000, 250],
-            [300, 600], [650, 500], [950, 700],
-            [450, 850], [800, 750], [1150, 900],
-            // Vertakkingsknopen
-            [225, 225], [525, 350], [825, 175], [1025, 350],
-            [250, 525], [525, 550], [800, 475], [1050, 650],
-            // Eindpunten haarvaten
-            [350, 180], [650, 300], [950, 150], [180, 650],
-            [500, 700], [900, 420], [1150, 300], [1020, 800]
+            // Knooppunten (hoeken)
+            [150, 150], [280, 240], [400, 200], [550, 120], [700, 100], [850, 190], [1000, 250],
+            [120, 480], [250, 380], [350, 550], [500, 420], [650, 500], [800, 400], [950, 550], [1100, 480],
+            [200, 680], [350, 800], [550, 650], [750, 820], [950, 680], [1150, 850],
+            [120, 300], [200, 300], [580, 320], [550, 600], [880, 300], [880, 680], [1200, 350]
           ].map(([x, y], i) => (
-            <circle key={i} cx={x} cy={y} r={i < 10 ? "3" : i < 18 ? "2" : "1.5"} fill="white" filter="url(#hero-glow)" className="animate-pulse" style={{ animationDelay: `${i * 0.15}s` }} />
+            <circle key={i} cx={x} cy={y} r={i < 10 ? "2.5" : i < 21 ? "1.5" : "1"} fill="white" filter="url(#hero-glow)" className="animate-pulse" style={{ animationDelay: `${i * 0.12}s` }} />
           ))}
         </svg>
       </div>
