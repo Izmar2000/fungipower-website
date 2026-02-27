@@ -13,9 +13,9 @@ export const HeroContent = () => {
       </div>
 
       {/* Main Headline - Solid, Stable, Scientific */}
-      <h1 className="font-black text-white leading-tight mb-6 tracking-[-0.02em] animate-fade-in-up uppercase whitespace-nowrap flex flex-col items-start">
-        <span className="text-3xl md:text-4xl lg:text-[45px] leading-[1]">Minder verlies</span>
-        <span className="text-5xl md:text-6xl lg:text-[75px] text-white/70 leading-[0.9]">Meer rendement</span>
+      <h1 className="text-4xl md:text-5xl lg:text-[60px] font-black text-white leading-[1.0] mb-6 tracking-[-0.02em] animate-fade-in-up uppercase whitespace-nowrap flex flex-col items-start">
+        <span className="block">Minder verlies</span>
+        <span className="block text-white/70">Meer rendement</span>
       </h1>
 
       {/* Intro Block - Tight */}
