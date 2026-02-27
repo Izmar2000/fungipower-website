@@ -2,7 +2,7 @@ import { TrendingUp, Thermometer, Droplets } from "lucide-react";
 
 export const GlassmorphismPanel = () => {
   return (
-    <div className="w-full max-w-md lg:max-w-xl relative z-10 transform transition-transform duration-500 hover:scale-[1.01]">
+    <div className="w-full flex-1 max-w-3xl relative z-10 transform transition-transform duration-500 hover:scale-[1.01]">
       {/* Light gray solid background matching the requested image */}
       <div className="bg-[#E5E7EB] p-8 md:p-10 shadow-2xl relative overflow-hidden rounded-[20px] border border-white/50">
 
