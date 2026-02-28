@@ -60,7 +60,7 @@ export const Footer = () => {
             <img
               src="/images/fungipower-logo-final.png"
               alt="FungiPower"
-              className="h-24 md:h-28 lg:h-32 w-auto object-left object-contain mb-6 brightness-0 invert"
+              className="h-16 md:h-20 lg:h-24 w-auto object-left object-contain mb-6 brightness-0 invert"
             />
             <p className="text-sm font-medium leading-relaxed text-white/90">
               Maximaliseren van paddenstoelenopbrengsten door wetenschappelijk onderbouwde biologische verbetering.

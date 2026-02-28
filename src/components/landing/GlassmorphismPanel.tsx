@@ -62,7 +62,7 @@ export const GlassmorphismPanel = () => {
             <div className="relative inline-block">
               {/* Soft glow behind the massive text */}
               <div className="absolute inset-0 bg-[#F58220] blur-[40px] opacity-20" />
-              <span className="relative text-[90px] md:text-[110px] font-black leading-none text-slate-900 tracking-tighter drop-shadow-sm">
+              <span className="relative text-6xl md:text-[80px] font-black leading-none text-slate-900 tracking-tighter drop-shadow-sm">
                 +14%
               </span>
             </div>
