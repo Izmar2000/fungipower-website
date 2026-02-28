@@ -66,7 +66,7 @@ export const GlassmorphismPanel = () => {
                 +14%
               </span>
             </div>
-            <p className="text-xs text-slate-500 mt-8 font-medium">
+            <p className="text-xs text-slate-500 mt-12 font-medium">
               Constante groei en verhoogde knopvorming geobserveerd in praktijk.
             </p>
           </div>
