@@ -22,11 +22,11 @@ export const HeroSection = () => {
         }}
       />
 
-      {/* Spacer to push content down below fixed header (reduced to move content up) */}
-      <div className="h-24 md:h-32 lg:h-40 xl:h-48" />
+      {/* Spacer to push content down below fixed header */}
+      <div className="h-32 md:h-40 lg:h-48 xl:h-56" />
 
       {/* Main Content - No Overlays, Just Pure Color */}
-      <main className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 flex-1 flex items-center pt-8 pb-32 md:pt-12 md:pb-48">
+      <main className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 flex-1 flex items-center py-8 md:py-12">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-16 w-full">
           <div className="w-full lg:w-1/2 flex justify-start">
             <HeroContent />
