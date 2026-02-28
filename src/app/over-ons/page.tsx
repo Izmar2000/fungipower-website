@@ -17,17 +17,17 @@ export default function OverOns() {
 
             <main className="flex-1 relative z-10">
                 {/* Clean, editorial hero section */}
-                <section className="pt-56 pb-16 md:pt-72 lg:pt-80 md:pb-24 px-6 md:px-12 max-w-7xl mx-auto">
+                <section className="pt-56 pb-8 md:pt-72 lg:pt-80 px-6 md:px-12 max-w-7xl mx-auto">
                     <span className="block text-[#F58220] font-bold text-xs tracking-[0.2em] uppercase mb-6">
                         Over Ons
                     </span>
-                    <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold leading-[1.1] tracking-tight text-slate-900 mb-8 max-w-5xl">
+                    <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold leading-[1.1] tracking-tight text-slate-900 mb-0 max-w-5xl">
                         FungiPower is ontstaan <br className="hidden md:block" />vanuit de praktijk.
                     </h1>
                 </section>
 
                 {/* Split Layout Section with Portrait and Text */}
-                <section className="py-24 max-w-7xl mx-auto px-6 md:px-12 relative">
+                <section className="pt-8 pb-24 max-w-7xl mx-auto px-6 md:px-12 relative">
                     {/* Subtle gradient glow behind the text/heading */}
                     <div className="absolute top-1/4 right-0 w-[600px] h-[600px] bg-[#F58220]/5 rounded-full blur-[120px] pointer-events-none" />
 
