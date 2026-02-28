@@ -27,7 +27,7 @@ export const HeroSection = () => {
       <div className="absolute inset-y-0 left-0 w-full md:w-1/2 z-[1] pointer-events-none bg-gradient-to-r from-black/25 via-black/10 to-transparent" />
 
       {/* 2. Historical Black & White Photo blended directly into the Orange background */}
-      {/* Using a multi-step gradient for a smoother, non-linear 'curved' fade effect */}
+      {/* Non-linear masks: Horizontal (left-to-right fade) and Vertical (top-to-bottom fade) to clear the logo area */}
       <div
         className="absolute inset-0 w-full md:w-[85%] h-full z-0 pointer-events-none opacity-[0.40]"
         style={{
@@ -35,8 +35,10 @@ export const HeroSection = () => {
           backgroundSize: 'cover',
           backgroundPosition: 'left center',
           mixBlendMode: 'multiply',
-          WebkitMaskImage: 'linear-gradient(to right, black 0%, black 20%, rgba(0,0,0,0.8) 35%, rgba(0,0,0,0.4) 55%, transparent 85%)',
-          maskImage: 'linear-gradient(to right, black 0%, black 20%, rgba(0,0,0,0.8) 35%, rgba(0,0,0,0.4) 55%, transparent 85%)',
+          WebkitMaskImage: 'linear-gradient(to right, black 0%, black 20%, rgba(0,0,0,0.8) 35%, rgba(0,0,0,0.4) 55%, transparent 85%), linear-gradient(to bottom, transparent 0%, transparent 5%, black 15%, black 100%)',
+          maskImage: 'linear-gradient(to right, black 0%, black 20%, rgba(0,0,0,0.8) 35%, rgba(0,0,0,0.4) 55%, transparent 85%), linear-gradient(to bottom, transparent 0%, transparent 5%, black 15%, black 100%)',
+          WebkitMaskComposite: 'destination-in',
+          maskComposite: 'intersect',
           transform: `translateY(${scrollY * 0.15}px)`,
         }}
       />
