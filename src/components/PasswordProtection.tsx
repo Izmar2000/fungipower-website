@@ -20,7 +20,7 @@ export const PasswordProtection = ({ children }: { children: React.ReactNode }) 
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
-        if (password === "John123") {
+        if (password === "maxom39_84!@") {
             localStorage.setItem("site_auth", "true");
             setIsAuthorized(true);
             setError(false);
