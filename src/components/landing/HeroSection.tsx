@@ -18,49 +18,37 @@ export const HeroSection = () => {
   return (
     <section
       id="home"
-      className="relative w-full min-h-[600px] md:min-h-[800px] overflow-hidden flex flex-col bg-slate-950"
+      className="relative w-full min-h-[600px] md:min-h-[800px] overflow-hidden flex flex-col"
+      style={{
+        background: `linear-gradient(135deg, #F58220 0%, #D71920 100%)`
+      }}
     >
-      {/* 1. Historical Black & White Photo (Left on Desktop, Top on Mobile) */}
+      {/* 1. Historical Black & White Photo blended directly into the Orange background */}
       <div
-        className="absolute inset-0 w-full md:w-[70%] h-full z-0 pointer-events-none opacity-[0.05] [mask-image:linear-gradient(to_bottom,black_10%,transparent_80%)] md:[mask-image:linear-gradient(to_right,black_10%,transparent_80%)] [-webkit-mask-image:linear-gradient(to_bottom,black_10%,transparent_80%)] md:[-webkit-mask-image:linear-gradient(to_right,black_10%,transparent_80%)]"
+        className="absolute inset-0 w-full md:w-[70%] h-full z-0 pointer-events-none opacity-[0.25] [mask-image:linear-gradient(to_bottom,black_40%,transparent_100%)] md:[mask-image:linear-gradient(to_right,black_50%,transparent_100%)] [-webkit-mask-image:linear-gradient(to_bottom,black_40%,transparent_100%)] md:[-webkit-mask-image:linear-gradient(to_right,black_50%,transparent_100%)]"
         style={{
           backgroundImage: 'url("/images/vintage-mushroom.png")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          mixBlendMode: 'lighten', // Helps it blend nicely with the dark background
+          mixBlendMode: 'multiply', // Burns the B&W photo into the orange, making it dark transparent orange
           transform: `translateY(${scrollY * 0.15}px)`, // Subtle parallax
         }}
       />
 
-      {/* 2. Warm Professional Orange Gradient (Right on Desktop, Bottom on Mobile) */}
+      {/* 2. Very subtle mycelium structure overlay (3-5% opacity) */}
       <div
-        className="absolute inset-0 z-0 pointer-events-none hidden md:block"
-        style={{
-          background: 'linear-gradient(to right, transparent 0%, rgba(245, 130, 32, 0.4) 30%, rgba(245, 130, 32, 0.95) 60%, rgba(215, 25, 32, 1) 100%)'
-        }}
-      />
-      {/* Fallback override for mobile: top to bottom gradient */}
-      <div
-        className="absolute inset-0 z-0 pointer-events-none md:hidden"
-        style={{
-          background: 'linear-gradient(to bottom, transparent 0%, rgba(245, 130, 32, 0.4) 30%, rgba(245, 130, 32, 0.95) 60%, rgba(215, 25, 32, 1) 100%)'
-        }}
-      />
-
-      {/* 3. Very subtle mycelium structure overlay (3-5% opacity) */}
-      <div
-        className="absolute inset-0 z-0 pointer-events-none opacity-[0.04] mix-blend-overlay"
+        className="absolute inset-0 z-0 pointer-events-none opacity-[0.05] mix-blend-overlay"
         style={{
           backgroundImage: 'url("https://images.unsplash.com/photo-1587588264560-eb0c968f4e19?q=80&width=2000&auto=format&fit=crop")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          filter: 'grayscale(100%) contrast(200%)',
+          filter: 'grayscale(100%) contrast(150%)',
           transform: `translateY(${scrollY * 0.05}px)`,
         }}
       />
 
-      {/* 4. Subtle unified glow/vignette to bring it all together */}
-      <div className="absolute inset-0 z-0 pointer-events-none bg-gradient-to-t from-slate-950/50 via-transparent to-transparent" />
+      {/* 3. Subtle unified glow/vignette to bring it all together */}
+      <div className="absolute inset-0 z-0 pointer-events-none bg-gradient-to-t from-black/20 via-transparent to-transparent" />
 
       {/* Adjusted Spacer so it clears header but doesn't push down too much */}
       <div className="h-36 md:h-44 lg:h-52 xl:h-56 relative z-10" />
