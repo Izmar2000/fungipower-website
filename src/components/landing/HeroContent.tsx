@@ -22,7 +22,8 @@ export const HeroContent = () => {
       {/* Intro Block - Elegant, structured, non-bold to reduce noise */}
       <div className="mb-12 animate-fade-in" style={{ animationDelay: '0.2s' }}>
         <p className="text-white/95 text-lg md:text-xl font-medium leading-[1.6] max-w-xl border-l-4 border-[#F58220] pl-6 py-1">
-          FungiPower stimuleert de biomassa en ondersteunt een constantere cyclus door de natuurlijke stabiliteit van het substraat structureel te verlengen.
+          FungiPower versterkt de natuurlijke cyclus van het substraat.<br />
+          Voor stabiele productie en minder verlies.
         </p>
       </div>
 
