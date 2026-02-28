@@ -46,9 +46,9 @@ export const PasswordProtection = ({ children }: { children: React.ReactNode }) 
                 {/* Logo or Branding */}
                 <div className="flex justify-center mb-10">
                     <img
-                        src="/Logo%20trans/FungiPower%20Logo.svg"
+                        src="/Logo trans/FungiPower Logo.svg"
                         alt="FungiPower"
-                        className="h-20 w-auto object-contain"
+                        className="h-24 w-auto object-contain brightness-0 invert"
                     />
                 </div>
 
