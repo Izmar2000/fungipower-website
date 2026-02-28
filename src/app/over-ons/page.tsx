@@ -39,9 +39,6 @@ export default function OverOns() {
                                     src="/images/jan-klerken.jpg"
                                     alt="Jan Klerken"
                                     className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-[1.03] filter grayscale-[20%]"
-                                    onError={(e) => {
-                                        (e.target as HTMLImageElement).src = `https://images.unsplash.com/photo-1556761175-5973e0f0bd01?q=80&auto=format&fit=crop`;
-                                    }}
                                 />
                                 <div className="absolute inset-0 border border-black/5 mix-blend-overlay"></div>
                             </div>
