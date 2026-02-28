@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { Menu, X, ArrowRight } from "lucide-react";
+import { usePathname } from "next/navigation";
 
 const navLinks = [
   { label: "HOME", href: "/" },
@@ -14,6 +15,7 @@ const navLinks = [
 export const Header = ({ forceSolid = false }: { forceSolid?: boolean }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -40,7 +42,9 @@ export const Header = ({ forceSolid = false }: { forceSolid?: boolean }) => {
     setMobileMenuOpen(false);
   };
 
+  const isLightPage = pathname === '/over-ons';
   const isSolid = scrolled || forceSolid;
+  const useDarkText = isLightPage && !isSolid;
 
   return (
     <header
@@ -57,8 +61,8 @@ export const Header = ({ forceSolid = false }: { forceSolid?: boolean }) => {
           <img
             src="/images/fungipower-logo-final.png"
             alt="FungiPower"
-            className={`w-auto object-left object-contain transition-all brightness-0 invert duration-500 group-hover:scale-[1.05] ${isSolid ? "h-12 md:h-14 lg:h-16" : "h-20 md:h-24 lg:h-28"
-              }`}
+            className={`w-auto object-left object-contain transition-all duration-500 group-hover:scale-[1.05] ${isSolid ? "h-12 md:h-14 lg:h-16" : "h-20 md:h-24 lg:h-28"
+              } ${useDarkText ? "brightness-0 opacity-90" : "brightness-0 invert"}`}
           />
         </a>
 
@@ -68,7 +72,7 @@ export const Header = ({ forceSolid = false }: { forceSolid?: boolean }) => {
             <button
               key={link.label}
               onClick={() => scrollToSection(link.href)}
-              className="relative text-white/80 text-[10px] font-black tracking-[0.2em] uppercase hover:text-white transition-all group py-2"
+              className={`relative text-[10px] font-black tracking-[0.2em] uppercase transition-all group py-2 ${useDarkText ? "text-slate-900 hover:text-black" : "text-white/80 hover:text-white"}`}
             >
               {link.label}
               <span className="absolute bottom-0 left-0 w-0 h-[1.5px] bg-[#F58220] transition-all duration-300 group-hover:w-full" />
@@ -86,7 +90,7 @@ export const Header = ({ forceSolid = false }: { forceSolid?: boolean }) => {
 
         {/* Mobile Menu Button */}
         <button
-          className="lg:hidden p-2 text-white/80 hover:text-white"
+          className={`lg:hidden p-2 ${useDarkText ? "text-slate-900 hover:text-black" : "text-white/80 hover:text-white"}`}
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
           {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
