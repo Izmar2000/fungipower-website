@@ -13,9 +13,9 @@ export const metadata: Metadata = {
     icons: {
         icon: [
             { url: "/favicon.ico" },
-            { url: "/images/fungipower-logo-3.png", type: "image/png" }
+            { url: "/icon.png", type: "image/png" }
         ],
-        apple: "/images/fungipower-logo-3.png",
+        apple: "/apple-icon.png",
     },
 };
 
@@ -38,8 +38,8 @@ export default function RootLayout({
                     rel="stylesheet"
                 />
                 <link rel="icon" href="/favicon.ico" sizes="any" />
-                <link rel="icon" type="image/png" sizes="32x32" href="/images/fungipower-logo-3.png" />
-                <link rel="apple-touch-icon" href="/images/fungipower-logo-3.png" />
+                <link rel="icon" type="image/png" sizes="32x32" href="/icon.png" />
+                <link rel="apple-touch-icon" href="/apple-icon.png" />
             </head>
             <body>
                 <Providers>
