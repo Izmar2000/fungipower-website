@@ -42,7 +42,7 @@ export const Footer = () => {
   };
 
   return (
-    <footer className="bg-gradient-to-br from-[#F58220] via-[#D71920] to-[#8B2212] text-white py-16 relative overflow-hidden">
+    <footer className="bg-slate-950 text-white py-16 relative overflow-hidden border-t border-slate-800">
       {/* Decorative Brand Accent - Subtle mycelium in footer */}
       <div className="absolute inset-0 opacity-10 pointer-events-none">
         <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
