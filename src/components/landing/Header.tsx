@@ -55,7 +55,7 @@ export const Header = ({ forceSolid = false }: { forceSolid?: boolean }) => {
         {/* Logo - Normal & Clean */}
         <a href="/" className="flex items-center relative group z-50">
           <img
-            src="/images/fungipower-logo-clear.png"
+            src="/images/fungipower-logo-final.png"
             alt="FungiPower"
             className={`w-auto object-left object-contain transition-all brightness-0 invert duration-500 group-hover:scale-[1.05] ${isSolid ? "h-16 md:h-20 lg:h-24" : "h-28 md:h-36 lg:h-48"
               }`}

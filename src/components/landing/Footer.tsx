@@ -58,7 +58,7 @@ export const Footer = () => {
           {/* Logo & Description */}
           <div className="col-span-2 md:col-span-1">
             <img
-              src="/images/fungipower-logo-clear.png"
+              src="/images/fungipower-logo-final.png"
               alt="FungiPower"
               className="h-24 md:h-28 lg:h-32 w-auto object-left object-contain mb-6 brightness-0 invert"
             />
