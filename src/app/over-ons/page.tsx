@@ -131,24 +131,22 @@ export default function OverOns() {
                     </div>
                 </section>
 
-                {/* Doel / Elegante datakaart */}
-                <section className="py-32 max-w-7xl mx-auto px-6 md:px-12 relative">
-                    <div className="w-full max-w-5xl mx-auto bg-slate-950 text-white rounded-[2px] p-12 md:p-24 shadow-2xl relative overflow-hidden">
-                        <div className="absolute inset-0 opacity-10" style={{
-                            backgroundImage: 'url("https://images.unsplash.com/photo-1591261730799-ee4e6c2d16d7?q=80&auto=format&fit=crop")',
-                            backgroundSize: 'cover',
-                            backgroundPosition: 'center',
-                        }}></div>
+                {/* Doel / Verfijnde visie */}
+                <section className="py-24 md:py-32 max-w-5xl mx-auto px-6 md:px-12 relative">
+                    <div className="flex flex-col gap-8 md:gap-10">
+                        <h2 className="text-xs font-bold text-[#F58220] tracking-[0.2em] uppercase">
+                            Ons Doel Is Helder
+                        </h2>
 
-                        <div className="relative z-10">
-                            <h2 className="text-[10px] md:text-xs font-black text-white/50 tracking-[0.3em] uppercase mb-10">
-                                Ons Doel Is Helder
-                            </h2>
-                            <p className="text-4xl md:text-5xl lg:text-[56px] font-black leading-[1.1] tracking-tighter mb-16">
-                                Een vitalere teelt en een stabielere vlucht, met uiteindelijk een <span className="text-[#F58220]">hogere opbrengst per teeltcyclus.</span> Niet door het systeem te veranderen, maar door het beter te laten functioneren.
+                        <h3 className="text-3xl md:text-4xl lg:text-5xl font-black text-slate-900 leading-[1.15] tracking-tight max-w-4xl">
+                            Een vitalere teelt en een stabielere vlucht, met uiteindelijk een <span className="text-[#F58220]">hogere opbrengst per teeltcyclus.</span>
+                        </h3>
+
+                        <div className="space-y-6 text-lg md:text-xl text-slate-600 font-medium leading-relaxed max-w-3xl">
+                            <p>
+                                Niet door het systeem te veranderen, maar door het beter te laten functioneren.
                             </p>
-
-                            <p className="text-lg md:text-xl text-white/70 font-medium leading-relaxed max-w-3xl border-l-[3px] border-[#F58220] pl-8 py-2">
+                            <p className="text-base md:text-lg text-slate-500">
                                 Wij geloven dat vooruitgang logisch moet voelen. Als technologie goed aansluit op het vak, versterkt ze het werk van de teler in plaats van het te vervangen. Dat is waar FungiPower voor staat.
                             </p>
                         </div>
