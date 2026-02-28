@@ -28,17 +28,17 @@ export const HeroSection = () => {
 
       {/* 2. Historical Black & White Photo blended directly into the Orange background */}
       {/* Non-linear masks: Horizontal (left-to-right fade) and Vertical (top-to-bottom fade) to clear the logo area */}
+      {/* 2. Historical Black & White Photo blended directly into the Orange background */}
+      {/* Organic, ultra-soft elliptical mask for an almost invisible transition */}
       <div
-        className="absolute inset-0 w-full md:w-[85%] h-full z-0 pointer-events-none opacity-[0.40]"
+        className="absolute inset-0 w-full h-full z-0 pointer-events-none opacity-[0.22]"
         style={{
           backgroundImage: 'url("/images/vintage-mushroom.png")',
           backgroundSize: 'cover',
           backgroundPosition: 'left center',
           mixBlendMode: 'multiply',
-          WebkitMaskImage: 'linear-gradient(to right, black 0%, black 20%, rgba(0,0,0,0.8) 35%, rgba(0,0,0,0.4) 55%, transparent 85%), linear-gradient(to bottom, transparent 0%, transparent 5%, black 15%, black 100%)',
-          maskImage: 'linear-gradient(to right, black 0%, black 20%, rgba(0,0,0,0.8) 35%, rgba(0,0,0,0.4) 55%, transparent 85%), linear-gradient(to bottom, transparent 0%, transparent 5%, black 15%, black 100%)',
-          WebkitMaskComposite: 'destination-in',
-          maskComposite: 'intersect',
+          WebkitMaskImage: 'radial-gradient(ellipse 100% 150% at -10% center, black 0%, rgba(0,0,0,0.6) 30%, rgba(0,0,0,0.1) 60%, transparent 90%)',
+          maskImage: 'radial-gradient(ellipse 100% 150% at -10% center, black 0%, rgba(0,0,0,0.6) 30%, rgba(0,0,0,0.1) 60%, transparent 90%)',
           transform: `translateY(${scrollY * 0.15}px)`,
         }}
       />
