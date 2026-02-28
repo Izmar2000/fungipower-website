@@ -45,32 +45,35 @@ export default function OverOns() {
                     <div className="absolute top-1/4 right-0 w-[600px] h-[600px] bg-[#F58220]/5 rounded-full blur-[120px] pointer-events-none" />
 
                     <div className="grid lg:grid-cols-12 gap-16 xl:gap-24 items-start">
-                        {/* LEFT: Portrait Column */}
-                        <div className="lg:col-span-5 space-y-8">
-                            <div className="relative group">
-                                <div className="aspect-[3.5/4] rounded-2xl overflow-hidden border border-black/5 bg-slate-100 relative shadow-2xl transition-all duration-700 group-hover:shadow-primary/10">
+                        {/* LEFT: Portrait Column - Unified Editorial Unit */}
+                        <div className="lg:col-span-5">
+                            <div className="relative group shadow-2xl rounded-3xl overflow-hidden">
+                                {/* Photo cropped at navel/waist */}
+                                <div className="aspect-[4/4.5] bg-slate-100 relative overflow-hidden">
                                     <img
                                         src="/images/jan-klerken.jpg"
                                         alt="Jan Klerken"
-                                        className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-[1.05] filter grayscale-[10%]"
+                                        className="w-full h-full object-cover object-top transition-transform duration-1000 group-hover:scale-[1.05] filter grayscale-[10%]"
                                     />
-                                    {/* Subtle overlay for depth */}
-                                    <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-60" />
-
-                                    {/* Name on photo for premium feel */}
-                                    <div className="absolute bottom-8 left-8 text-white">
-                                        <p className="font-black text-2xl tracking-tighter">Jan Klerken</p>
-                                        <p className="text-[10px] font-bold uppercase tracking-[0.3em] text-white/70">Oprichter FungiPower</p>
-                                    </div>
+                                    {/* Subtle gradient vignette at the very top for class */}
+                                    <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-black/20 to-transparent opacity-40" />
                                 </div>
 
-                                {/* 🟠 ORANGE QUOTE BLOCK - REINSTATED & IMPROVED */}
-                                <div className="mt-8 bg-gradient-to-br from-[#F58220] to-[#D71920] p-8 md:p-10 rounded-2xl shadow-xl shadow-primary/20 relative overflow-hidden group/quote">
-                                    {/* Decorative double quote mark */}
-                                    <div className="absolute -top-4 -right-2 text-white/10 text-9xl font-serif select-none pointer-events-none">
+                                {/* 🟠 ORANGE BLOCK - Attached directly below photo */}
+                                <div className="bg-gradient-to-br from-[#F58220] to-[#D71920] p-10 md:p-12 relative overflow-hidden">
+                                    {/* Name & Title Header */}
+                                    <div className="mb-8 border-b border-white/20 pb-8">
+                                        <h4 className="font-black text-3xl md:text-4xl text-white tracking-tighter mb-1">Jan Klerken</h4>
+                                        <p className="text-[10px] font-bold uppercase tracking-[0.4em] text-white/70">Oprichter FungiPower</p>
+                                    </div>
+
+                                    {/* Quote Mark Decoration */}
+                                    <div className="absolute top-1/2 right-4 text-white/10 text-[180px] font-serif select-none pointer-events-none -translate-y-1/2">
                                         &rdquo;
                                     </div>
-                                    <p className="relative z-10 text-white font-bold italic text-lg md:text-xl leading-relaxed">
+
+                                    {/* The Quote */}
+                                    <p className="relative z-10 text-white font-bold italic text-lg md:text-2xl leading-relaxed">
                                         &ldquo;Verbetering draait niet om méér toevoegen, maar om beter benutten wat er al gebeurt binnen het substraat en de teelt.&rdquo;
                                     </p>
                                 </div>
