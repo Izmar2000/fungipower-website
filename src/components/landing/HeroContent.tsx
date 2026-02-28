@@ -29,15 +29,15 @@ export const HeroContent = () => {
       {/* 3 Kernpunten - Structured list with icons, NOT ALL CAPS */}
       <div className="flex flex-col gap-5 mb-12 animate-fade-in" style={{ animationDelay: '0.4s' }}>
         <div className="flex items-center gap-4 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl px-5 py-3 shadow-md max-w-md">
-          <ShieldCheck className="w-6 h-6 text-[#F58220] flex-shrink-0" />
+          <ShieldCheck className="w-6 h-6 text-white flex-shrink-0" />
           <span className="text-white font-semibold text-[15px] tracking-wide">Optimale nutriënten-absorptie</span>
         </div>
         <div className="flex items-center gap-4 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl px-5 py-3 shadow-md max-w-md">
-          <Microscope className="w-6 h-6 text-[#F58220] flex-shrink-0" />
+          <Microscope className="w-6 h-6 text-white flex-shrink-0" />
           <span className="text-white font-semibold text-[15px] tracking-wide">Verlengde levensduur van substraat</span>
         </div>
         <div className="flex items-center gap-4 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl px-5 py-3 shadow-md max-w-md">
-          <LineChart className="w-6 h-6 text-[#F58220] flex-shrink-0" />
+          <LineChart className="w-6 h-6 text-white flex-shrink-0" />
           <span className="text-white font-semibold text-[15px] tracking-wide">Data-driven resultaten per vlucht</span>
         </div>
       </div>
