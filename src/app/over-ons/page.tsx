@@ -81,7 +81,7 @@ export default function OverOns() {
                         <div className="lg:col-span-7 pt-4 space-y-10 text-base md:text-lg text-slate-600 leading-relaxed font-medium">
                             <div className="space-y-6">
                                 <p className="text-xl md:text-2xl font-bold leading-snug text-slate-900 border-l-[4px] border-[#F58220] pl-8 py-2 mb-8 bg-gradient-to-r from-[#F58220]/5 to-transparent rounded-r-lg">
-                                    Niet vanuit een marketingidee, maar vanuit jaren ervaring in de sector en een diep begrip van hoe een teelt zich ontwikkelt binnen het substraat.
+                                    Ontstaan vanuit pure praktijkervaring en een diep, technisch begrip van hoe een teelt zich écht ontwikkelt binnen het substraat.
                                 </p>
 
                                 <div className="space-y-6 animate-fade-in-up">
