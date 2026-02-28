@@ -1,11 +1,9 @@
-import { DraftWarning } from "@/components/DraftWarning";
 import { Header } from "@/components/landing/Header";
 import { Footer } from "@/components/landing/Footer";
 
 export default function SectorInzichten() {
     return (
         <div className="min-h-screen bg-background flex flex-col pt-[72px] md:pt-[88px] lg:pt-[96px]">
-            <DraftWarning />
             <Header forceSolid={true} />
 
             <main className="flex-1 py-20 px-6 max-w-7xl mx-auto w-full">
@@ -26,7 +24,7 @@ export default function SectorInzichten() {
                             <div className="p-6">
                                 <span className="text-[#F58220] font-black tracking-widest uppercase text-[10px] mb-3 block">Markt Update</span>
                                 <h3 className="text-xl font-bold text-slate-900 mb-3 line-clamp-2">
-                                    Concept artikel titel {num}: Effecten van recente compostprijzen op structureel cel-rendement
+                                    Nieuw artikel {num}: Effecten van recente compostprijzen op structureel cel-rendement
                                 </h3>
                                 <p className="text-slate-500 text-sm line-clamp-3">
                                     Wanneer FungiPower de actuele marktdump kan verwerken tot live data, zal hier een kort uittreksel of lead komen te staan met theorie.

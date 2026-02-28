@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { DraftWarning } from "@/components/DraftWarning";
 import { Header } from "@/components/landing/Header";
 import { Footer } from "@/components/landing/Footer";
 import { Calculator, Dna, FlaskConical, Settings2, Target } from "lucide-react";
@@ -18,7 +17,6 @@ export default function Dosering() {
 
     return (
         <div className="min-h-screen bg-background flex flex-col pt-[72px] md:pt-[88px] lg:pt-[96px]">
-            <DraftWarning />
             <Header forceSolid={true} />
 
             <main className="flex-1 py-16 px-6 max-w-7xl mx-auto w-full">

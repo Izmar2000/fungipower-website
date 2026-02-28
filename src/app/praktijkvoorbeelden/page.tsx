@@ -1,11 +1,9 @@
-import { DraftWarning } from "@/components/DraftWarning";
 import { Header } from "@/components/landing/Header";
 import { Footer } from "@/components/landing/Footer";
 
 export default function Praktijkvoorbeelden() {
     return (
         <div className="min-h-screen bg-background flex flex-col pt-[72px] md:pt-[88px] lg:pt-[96px]">
-            <DraftWarning />
             <Header forceSolid={true} />
 
             <main className="flex-1 py-20 px-6 max-w-7xl mx-auto w-full">
@@ -23,7 +21,7 @@ export default function Praktijkvoorbeelden() {
                     <div className="grid md:grid-cols-2 gap-10">
                         <div>
                             <p className="text-slate-600 mb-6">
-                                [Dit is een concept blok]. In dit veld zal de specifieke test-setup en de voorgeschiedenis van het bedrijf worden geschetst. Uitgangspunt: conventionele teelt op de reguliere manier.
+                                In dit overzicht wordt de specifieke test-setup en de voorgeschiedenis van het bedrijf geschetst. Uitgangspunt: conventionele teelt op de reguliere manier.
                             </p>
                             <ul className="space-y-4 font-bold text-slate-800">
                                 <li className="flex gap-4"><span>✓</span> Oppervlakte: 12.000m2</li>
