@@ -72,6 +72,49 @@ export const PilotForm = () => {
                                 Onze methodiek is gebaseerd op meetbare stabiliteit in elke teeltcyclus met <span className="text-white font-bold">directe resultaten</span> voor telers door een wetenschappelijk onderbouwde methodiek.
                             </p>
                         </div>
+
+                        {/* Grafisch Super Dik Element - Lab / Tech Widget */}
+                        <div className="mt-12 md:mt-20 w-fit bg-gradient-to-br from-white/10 to-transparent border border-white/10 p-6 md:p-8 rounded-[24px] backdrop-blur-md relative overflow-hidden shadow-2xl group">
+                            {/* Orange Glow */}
+                            <div className="absolute top-0 right-0 w-40 h-40 bg-[#F58220]/20 rounded-full blur-[50px] -mr-16 -mt-16 pointer-events-none transition-transform duration-1000 group-hover:scale-150" />
+
+                            <div className="flex items-center gap-5 mb-8 relative z-10">
+                                <div className="w-14 h-14 rounded-full border border-white/20 flex items-center justify-center bg-white/5 shadow-inner">
+                                    <div className="w-2 h-2 rounded-full bg-[#F58220] animate-ping absolute" />
+                                    <div className="w-2 h-2 rounded-full bg-[#F58220] shadow-[0_0_10px_#F58220]" />
+                                </div>
+                                <div>
+                                    <div className="text-[10px] font-black tracking-[0.2em] text-[#F58220] uppercase mb-1">
+                                        Live monitoring
+                                    </div>
+                                    <div className="text-white font-bold text-lg">Biometrische Setup</div>
+                                </div>
+                            </div>
+
+                            <div className="space-y-5 relative z-10 w-full min-w-[280px]">
+                                <div>
+                                    <div className="flex items-center justify-between text-xs md:text-sm mb-2">
+                                        <span className="text-white/60 font-medium">Substraat Kwaliteit</span>
+                                        <span className="text-white font-mono font-bold">A+ / 98.4%</span>
+                                    </div>
+                                    <div className="w-full h-1.5 bg-black/40 rounded-full overflow-hidden shadow-inner">
+                                        <div className="h-full bg-[#F58220] w-[98%] rounded-full relative">
+                                            <div className="absolute right-0 top-0 bottom-0 w-2 bg-white/50 blur-[2px] animate-pulse" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div className="flex items-center justify-between text-xs md:text-sm mb-2">
+                                        <span className="text-white/60 font-medium">Residu Detectie</span>
+                                        <span className="text-emerald-400 font-mono font-bold">0.00 PPM</span>
+                                    </div>
+                                    <div className="w-full h-1.5 bg-black/40 rounded-full overflow-hidden shadow-inner">
+                                        <div className="h-full bg-emerald-500 w-full rounded-full" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     {/* Right Content - Form (Lighter style matching the info card) */}
