@@ -4,7 +4,7 @@ import { Footer } from "@/components/landing/Footer";
 
 export default function Praktijkvoorbeelden() {
     return (
-        <div className="min-h-screen bg-background flex flex-col pt-[88px] lg:pt-[112px]">
+        <div className="min-h-screen bg-background flex flex-col pt-[72px] md:pt-[88px] lg:pt-[96px]">
             <DraftWarning />
             <Header forceSolid={true} />
 
