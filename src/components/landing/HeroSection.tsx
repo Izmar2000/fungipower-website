@@ -23,7 +23,7 @@ export const HeroSection = () => {
       />
 
       {/* Adjusted Spacer so it clears header but doesn't push down too much */}
-      <div className="h-28 md:h-36 lg:h-44" />
+      <div className="h-32 md:h-40 lg:h-48 xl:h-52" />
 
       {/* Main Content - Perfectly balanced in the middle */}
       <main className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 flex-1 flex items-center pb-16 md:pb-24 lg:pb-32">
