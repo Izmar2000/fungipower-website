@@ -54,20 +54,18 @@ export const GlassmorphismPanel = () => {
             }
           `}</style>
 
-          {/* Brutal/Dominant +14% Overlapping the graph */}
+          {/* Clean Data Header Overlapping the graph */}
           <div className="relative z-10 pl-2">
-            <span className="block text-xs font-black text-slate-500 uppercase tracking-[0.2em] mb-1">
-              Resultaat 2e Vlucht
-            </span>
-            <div className="relative inline-block">
-              {/* Soft glow behind the massive text */}
-              <div className="absolute inset-0 bg-[#F58220] blur-[40px] opacity-20" />
-              <span className="relative text-6xl md:text-[80px] font-black leading-none text-slate-900 tracking-tighter drop-shadow-sm">
+            <div className="flex justify-between items-end mb-1">
+              <span className="block text-xs font-black text-slate-500 uppercase tracking-[0.2em]">
+                Resultaat 2e Vlucht
+              </span>
+              <span className="text-4xl md:text-5xl font-black text-[#F58220] tracking-tighter">
                 +14%
               </span>
             </div>
-            <p className="text-xs text-slate-500 mt-2 font-medium">
-              Constante groei en verhoogde knopvorming geobserveerd.
+            <p className="text-[11px] text-slate-500 mt-2 font-medium">
+              Constante groei en verhoogde knopvorming geobserveerd in praktijk.
             </p>
           </div>
         </div>
