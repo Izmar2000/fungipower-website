@@ -43,8 +43,8 @@ export const Header = ({ forceSolid = false }: { forceSolid?: boolean }) => {
   };
 
   const isLightPage = pathname === '/over-ons';
-  const isSolid = scrolled || forceSolid;
-  const useDarkText = isLightPage && !isSolid;
+  const isSolid = scrolled || forceSolid || isLightPage;
+  const useDarkText = false; // Always use normal menu styled text since it's now solid orange
 
   return (
     <header

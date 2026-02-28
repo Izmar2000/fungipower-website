@@ -49,8 +49,8 @@ export default function OverOns() {
                         </div>
 
                         {/* Text Content */}
-                        <div className="space-y-10 text-lg md:text-xl text-slate-700 leading-relaxed font-medium">
-                            <p className="text-2xl md:text-3xl font-bold leading-snug text-slate-900 border-l-2 border-[#F58220] pl-6 py-2">
+                        <div className="space-y-6 text-base md:text-lg text-slate-600 leading-relaxed font-medium">
+                            <p className="text-xl md:text-2xl font-bold leading-snug text-slate-900 border-l-[3px] border-[#F58220] pl-6 py-1 mb-4">
                                 Niet vanuit een marketingidee, maar vanuit jaren ervaring in de sector en een diep begrip van hoe een teelt zich ontwikkelt binnen het substraat.
                             </p>
 
@@ -62,8 +62,8 @@ export default function OverOns() {
                                 Er wordt steeds meer van de sector verwacht. Kwaliteit moet constant zijn, productie voorspelbaar en efficiënt omgaan met middelen is vanzelfsprekend geworden. In die ontwikkeling draait verbetering vaak niet om méér toevoegen, maar om beter benutten wat er al gebeurt binnen het substraat en de teelt.
                             </p>
 
-                            <div className="py-8 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-                                <h2 className="text-4xl font-black text-slate-900 tracking-tight">Daar ligt de kern van FungiPower.</h2>
+                            <div className="pt-6 pb-2 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+                                <h2 className="text-2xl font-black text-slate-900 tracking-tight">Daar ligt de kern van FungiPower.</h2>
                             </div>
 
                             <p className="animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
