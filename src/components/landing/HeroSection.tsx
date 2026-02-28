@@ -23,19 +23,25 @@ export const HeroSection = () => {
         background: `linear-gradient(135deg, #F58220 0%, #D71920 100%)`
       }}
     >
-      {/* 1. Historical Black & White Photo blended directly into the Orange background */}
+      {/* 1. Darker Overlay for Text Legibility (Left side focus) */}
+      <div className="absolute inset-y-0 left-0 w-full md:w-1/2 z-[1] pointer-events-none bg-gradient-to-r from-black/25 via-black/10 to-transparent" />
+
+      {/* 2. Historical Black & White Photo blended directly into the Orange background */}
+      {/* Using a multi-step gradient for a smoother, non-linear 'curved' fade effect */}
       <div
-        className="absolute inset-0 w-full md:w-[70%] h-full z-0 pointer-events-none opacity-[0.25] [mask-image:linear-gradient(to_bottom,black_40%,transparent_100%)] md:[mask-image:linear-gradient(to_right,black_50%,transparent_100%)] [-webkit-mask-image:linear-gradient(to_bottom,black_40%,transparent_100%)] md:[-webkit-mask-image:linear-gradient(to_right,black_50%,transparent_100%)]"
+        className="absolute inset-0 w-full md:w-[85%] h-full z-0 pointer-events-none opacity-[0.40]"
         style={{
           backgroundImage: 'url("/images/vintage-mushroom.png")',
           backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          mixBlendMode: 'multiply', // Burns the B&W photo into the orange, making it dark transparent orange
-          transform: `translateY(${scrollY * 0.15}px)`, // Subtle parallax
+          backgroundPosition: 'left center',
+          mixBlendMode: 'multiply',
+          WebkitMaskImage: 'linear-gradient(to right, black 0%, black 20%, rgba(0,0,0,0.8) 35%, rgba(0,0,0,0.4) 55%, transparent 85%)',
+          maskImage: 'linear-gradient(to right, black 0%, black 20%, rgba(0,0,0,0.8) 35%, rgba(0,0,0,0.4) 55%, transparent 85%)',
+          transform: `translateY(${scrollY * 0.15}px)`,
         }}
       />
 
-      {/* 2. Very subtle mycelium structure overlay (3-5% opacity) */}
+      {/* 3. Very subtle mycelium structure overlay (3-5% opacity) */}
       <div
         className="absolute inset-0 z-0 pointer-events-none opacity-[0.05] mix-blend-overlay"
         style={{
@@ -47,7 +53,7 @@ export const HeroSection = () => {
         }}
       />
 
-      {/* 3. Subtle unified glow/vignette to bring it all together */}
+      {/* 4. Subtle unified glow/vignette to bring it all together */}
       <div className="absolute inset-0 z-0 pointer-events-none bg-gradient-to-t from-black/20 via-transparent to-transparent" />
 
       {/* Adjusted Spacer so it clears header but doesn't push down too much */}
