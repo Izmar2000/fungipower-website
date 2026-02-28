@@ -76,13 +76,13 @@ export const PilotForm = () => {
                             </p>
                         </div>
 
-                        {/* Grafisch Super Dik Element - Lab / Tech Widget (Darkened for contrast) */}
-                        <div className="mt-12 md:mt-16 w-full max-w-md bg-slate-900 border border-white/10 p-8 rounded-[32px] relative overflow-hidden shadow-2xl group">
-                            {/* Orange Glow */}
-                            <div className="absolute top-0 right-0 w-40 h-40 bg-[#F58220]/20 rounded-full blur-[50px] -mr-16 -mt-16 pointer-events-none transition-transform duration-1000 group-hover:scale-150" />
+                        {/* Grafisch Verfijnd Element - White Glassmorphism Tech Widget */}
+                        <div className="mt-12 md:mt-16 w-full max-w-md bg-white border border-black/[0.03] p-8 rounded-[32px] relative overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.04)] group transition-all duration-500 hover:shadow-[0_30px_60px_rgba(0,0,0,0.08)]">
+                            {/* Subtle internal orange glow */}
+                            <div className="absolute top-0 right-0 w-32 h-32 bg-[#F58220]/5 rounded-full blur-[40px] -mr-16 -mt-16 pointer-events-none transition-transform duration-1000 group-hover:scale-150" />
 
                             <div className="flex items-center gap-5 mb-8 relative z-10">
-                                <div className="w-14 h-14 rounded-full border border-white/20 flex items-center justify-center bg-white/5 shadow-inner">
+                                <div className="w-14 h-14 rounded-full border border-black/5 flex items-center justify-center bg-slate-50 shadow-inner">
                                     <div className="w-2 h-2 rounded-full bg-[#F58220] animate-ping absolute" />
                                     <div className="w-2 h-2 rounded-full bg-[#F58220] shadow-[0_0_10px_#F58220]" />
                                 </div>
@@ -90,31 +90,41 @@ export const PilotForm = () => {
                                     <div className="text-[10px] font-black tracking-[0.2em] text-[#F58220] uppercase mb-1">
                                         Live monitoring
                                     </div>
-                                    <div className="text-white font-bold text-lg">Biometrische Setup</div>
+                                    <div className="text-slate-900 font-bold text-lg">Biometrische Setup</div>
                                 </div>
                             </div>
 
                             <div className="space-y-6 relative z-10">
                                 <div>
                                     <div className="flex items-center justify-between text-sm mb-2">
-                                        <span className="text-white/60 font-medium">Substraat Kwaliteit</span>
-                                        <span className="text-white font-mono font-bold">A+ / 98.4%</span>
+                                        <span className="text-slate-400 font-medium tracking-tight">Substraat Kwaliteit</span>
+                                        <span className="text-slate-900 font-mono font-bold">A+ / 98.4%</span>
                                     </div>
-                                    <div className="w-full h-2 bg-black/40 rounded-full overflow-hidden shadow-inner">
+                                    <div className="w-full h-2 bg-slate-100 rounded-full overflow-hidden shadow-inner">
                                         <div className="h-full bg-gradient-to-r from-[#F58220] to-[#D71920] w-[98%] rounded-full relative">
-                                            <div className="absolute right-0 top-0 bottom-0 w-2 bg-white/50 blur-[2px] animate-pulse" />
+                                            <div className="absolute right-0 top-0 bottom-0 w-2 bg-white/50 blur-[1px] animate-pulse" />
                                         </div>
                                     </div>
                                 </div>
 
                                 <div>
                                     <div className="flex items-center justify-between text-sm mb-2">
-                                        <span className="text-white/60 font-medium">Residu Detectie</span>
-                                        <span className="text-emerald-400 font-mono font-bold">0.00 PPM</span>
+                                        <span className="text-slate-400 font-medium tracking-tight">Residu Detectie</span>
+                                        <span className="text-emerald-500 font-mono font-bold">0.00 PPM</span>
                                     </div>
-                                    <div className="w-full h-2 bg-black/40 rounded-full overflow-hidden shadow-inner">
+                                    <div className="w-full h-2 bg-slate-100 rounded-full overflow-hidden shadow-inner">
                                         <div className="h-full bg-emerald-500 w-full rounded-full" />
                                     </div>
+                                </div>
+                            </div>
+
+                            {/* Subtle Tech Footer Detail */}
+                            <div className="mt-8 pt-6 border-t border-black/5 flex items-center justify-between opacity-40">
+                                <div className="text-[9px] font-bold uppercase tracking-widest text-slate-500">ID: FP-882-NL</div>
+                                <div className="flex gap-1.5">
+                                    <div className="w-1 h-1 bg-slate-300 rounded-full" />
+                                    <div className="w-1 h-1 bg-slate-100 rounded-full" />
+                                    <div className="w-1 h-1 bg-slate-300 rounded-full" />
                                 </div>
                             </div>
                         </div>
