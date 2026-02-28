@@ -158,7 +158,7 @@ export const PilotForm = () => {
                                     type="submit"
                                     className="w-full inline-flex justify-center items-center gap-2 bg-[#F58220] text-white py-4 rounded-[14px] font-bold text-[13px] uppercase tracking-[0.15em] hover:bg-[#D71920] hover:scale-[1.01] transition-all mt-6 shadow-[0_10px_20px_-10px_rgba(245,130,32,0.5)]"
                                 >
-                                    VERSTUUR PROTOCOL AANVRAAG
+                                    AANVRAGEN
                                     <ArrowRight className="w-4 h-4 ml-1" />
                                 </button>
 
