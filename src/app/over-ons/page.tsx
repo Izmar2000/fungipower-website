@@ -17,11 +17,11 @@ export default function OverOns() {
 
             <main className="flex-1 relative z-10">
                 {/* Clean, editorial hero section */}
-                <section className="pt-48 pb-20 md:pt-60 md:pb-32 px-6 md:px-12 max-w-7xl mx-auto">
-                    <span className="block text-[#F58220] font-bold text-xs tracking-[0.2em] uppercase mb-8">
+                <section className="pt-56 pb-16 md:pt-72 lg:pt-80 md:pb-24 px-6 md:px-12 max-w-7xl mx-auto">
+                    <span className="block text-[#F58220] font-bold text-xs tracking-[0.2em] uppercase mb-6">
                         Over Ons
                     </span>
-                    <h1 className="text-5xl md:text-7xl lg:text-[90px] font-black leading-[0.9] tracking-tighter text-slate-900 mb-12">
+                    <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold leading-[1.1] tracking-tight text-slate-900 mb-8 max-w-5xl">
                         FungiPower is ontstaan <br className="hidden md:block" />vanuit de praktijk.
                     </h1>
                 </section>
@@ -131,24 +131,58 @@ export default function OverOns() {
                     </div>
                 </section>
 
-                {/* Doel / Verfijnde visie */}
-                <section className="py-24 md:py-32 max-w-5xl mx-auto px-6 md:px-12 relative">
-                    <div className="flex flex-col gap-8 md:gap-10">
-                        <h2 className="text-xs font-bold text-[#F58220] tracking-[0.2em] uppercase">
-                            Ons Doel Is Helder
-                        </h2>
+                {/* Doel / Verfijnde visie met Visual */}
+                <section className="py-24 md:py-32 max-w-7xl mx-auto px-6 md:px-12 relative overflow-hidden">
+                    <div className="grid lg:grid-cols-12 gap-16 lg:gap-24 items-center">
+                        <div className="lg:col-span-7 flex flex-col gap-8 md:gap-10">
+                            <h2 className="text-xs font-bold text-[#F58220] tracking-[0.2em] uppercase">
+                                Ons Doel Is Helder
+                            </h2>
 
-                        <h3 className="text-3xl md:text-4xl lg:text-5xl font-black text-slate-900 leading-[1.15] tracking-tight max-w-4xl">
-                            Een vitalere teelt en een stabielere vlucht, met uiteindelijk een <span className="text-[#F58220]">hogere opbrengst per teeltcyclus.</span>
-                        </h3>
+                            <h3 className="text-3xl md:text-4xl lg:text-5xl font-black text-slate-900 leading-[1.15] tracking-tight">
+                                Een vitalere teelt en een stabielere vlucht, met uiteindelijk een <span className="text-[#F58220]">hogere opbrengst per teeltcyclus.</span>
+                            </h3>
 
-                        <div className="space-y-6 text-lg md:text-xl text-slate-600 font-medium leading-relaxed max-w-3xl">
-                            <p>
-                                Niet door het systeem te veranderen, maar door het beter te laten functioneren.
-                            </p>
-                            <p className="text-base md:text-lg text-slate-500">
-                                Wij geloven dat vooruitgang logisch moet voelen. Als technologie goed aansluit op het vak, versterkt ze het werk van de teler in plaats van het te vervangen. Dat is waar FungiPower voor staat.
-                            </p>
+                            <div className="space-y-6 text-lg md:text-xl text-slate-600 font-medium leading-relaxed max-w-2xl">
+                                <p>
+                                    Niet door het systeem te veranderen, maar door het beter te laten functioneren.
+                                </p>
+                                <p className="text-base md:text-lg text-slate-500">
+                                    Wij geloven dat vooruitgang logisch moet voelen. Als technologie goed aansluit op het vak, versterkt ze het werk van de teler in plaats van het te vervangen. Dat is waar FungiPower voor staat.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="lg:col-span-5 relative">
+                            {/* Sketch-like / Technical layout on the right */}
+                            <div className="relative aspect-square w-full sm:w-[80%] mx-auto lg:w-full rounded-[40px] border border-slate-200/80 bg-slate-50/50 flex items-center justify-center p-8 group overflow-hidden">
+
+                                {/* Faint diagram overlay */}
+                                <div
+                                    className="absolute inset-0 opacity-[0.08] mix-blend-multiply transition-transform duration-1000 group-hover:scale-105"
+                                    style={{
+                                        backgroundImage: 'url("/images/mycelium network.jpg")',
+                                        backgroundSize: 'cover',
+                                        backgroundPosition: 'center',
+                                        filter: 'grayscale(100%) contrast(150%)'
+                                    }}
+                                />
+
+                                {/* Abstract Geometry */}
+                                <div className="relative z-10 w-full h-full border-[0.5px] border-black/5 rounded-[20px] flex items-center justify-center overflow-hidden">
+                                    <div className="w-56 h-56 rounded-full border-[0.5px] border-[#F58220]/30 shadow-[0_0_60px_rgba(245,130,32,0.05)] flex items-center justify-center backdrop-blur-sm">
+                                        <div className="w-32 h-32 rounded-full border border-black/5 flex flex-col items-center justify-center gap-4 bg-white/40">
+                                            <Leaf className="w-8 h-8 text-[#F58220]/70" strokeWidth={1.5} />
+                                        </div>
+                                    </div>
+
+                                    {/* Crosshairs & Lines */}
+                                    <div className="absolute top-1/2 left-0 w-full h-[0.5px] bg-[#F58220]/20" />
+                                    <div className="absolute top-0 left-1/2 w-[0.5px] h-full bg-[#F58220]/20" />
+                                    <div className="absolute top-8 left-8 w-2 h-2 rounded-full border border-[#F58220]/50" />
+                                    <div className="absolute bottom-8 right-8 w-1.5 h-1.5 rounded-full bg-slate-300" />
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
