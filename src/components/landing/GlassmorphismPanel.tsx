@@ -73,17 +73,17 @@ export const GlassmorphismPanel = () => {
           </div>
         </div>
 
-        {/* Colorful Images Row inside a White Wrapper */}
-        <div className="bg-white p-3 rounded-lg shadow-sm border border-white/60 grid grid-cols-4 gap-2">
+        {/* Immersive Image Grid - No white wrapper, feels integrated */}
+        <div className="grid grid-cols-4 gap-3">
           {[1, 2, 3, 4].map((i) => (
             <div
               key={i}
-              className="rounded overflow-hidden relative pt-[100%]"
+              className="rounded-xl overflow-hidden relative pt-[100%] shadow-md border border-black/5"
             >
               <img
                 src={`/images/panel-${i === 1 || i === 4 ? 1 : 2}.jpg`}
                 alt="Growth process"
-                className="absolute inset-0 w-full h-full object-cover transition-transform hover:scale-110"
+                className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 hover:scale-110"
                 onError={(e) => {
                   (e.target as HTMLImageElement).src = `https://images.unsplash.com/photo-1591261730799-ee4e6c2d16d7?q=80&auto=format&fit=crop`;
                 }}
