@@ -22,12 +22,12 @@ export const HeroSection = () => {
     >
       {/* 1. Historical Black & White Photo (Left on Desktop, Top on Mobile) */}
       <div
-        className="absolute inset-0 w-full md:w-[85%] h-full z-0 pointer-events-none opacity-[0.35] [mask-image:linear-gradient(to_bottom,black_20%,transparent_100%)] md:[mask-image:linear-gradient(to_right,black_20%,transparent_100%)] [-webkit-mask-image:linear-gradient(to_bottom,black_20%,transparent_100%)] md:[-webkit-mask-image:linear-gradient(to_right,black_20%,transparent_100%)]"
+        className="absolute inset-0 w-full md:w-[70%] h-full z-0 pointer-events-none opacity-40 [mask-image:linear-gradient(to_bottom,black_40%,transparent_100%)] md:[mask-image:linear-gradient(to_right,black_40%,transparent_100%)] [-webkit-mask-image:linear-gradient(to_bottom,black_40%,transparent_100%)] md:[-webkit-mask-image:linear-gradient(to_right,black_40%,transparent_100%)]"
         style={{
-          backgroundImage: 'url("https://images.unsplash.com/photo-1596489399827-0105dc1bfeab?q=80&width=2000&auto=format&fit=crop")',
+          backgroundImage: 'url("/images/vintage-mushroom.png")',
           backgroundSize: 'cover',
-          backgroundPosition: '30% center', // Focus on hands/subject
-          filter: 'grayscale(100%) contrast(110%)',
+          backgroundPosition: 'center',
+          mixBlendMode: 'lighten', // Helps it blend nicely with the dark background
           transform: `translateY(${scrollY * 0.15}px)`, // Subtle parallax
         }}
       />
