@@ -72,7 +72,7 @@ export const Header = ({ forceSolid = false }: { forceSolid?: boolean }) => {
             <button
               key={link.label}
               onClick={() => scrollToSection(link.href)}
-              className={`relative text-[10px] font-black tracking-[0.2em] uppercase transition-all group py-2 ${useDarkText ? "text-slate-900 hover:text-black" : "text-white/80 hover:text-white"}`}
+              className={`relative text-[12px] font-black tracking-[0.2em] uppercase transition-all group py-2 ${useDarkText ? "text-slate-900 hover:text-black" : "text-white/80 hover:text-white"}`}
             >
               {link.label}
               <span className="absolute bottom-0 left-0 w-0 h-[1.5px] bg-[#F58220] transition-all duration-300 group-hover:w-full" />
@@ -81,7 +81,7 @@ export const Header = ({ forceSolid = false }: { forceSolid?: boolean }) => {
 
           <button
             onClick={() => scrollToSection("#contact")}
-            className="group relative bg-[#F58220] text-white px-8 py-3 rounded-md text-[10px] font-black tracking-[0.25em] uppercase hover:bg-white hover:text-black transition-all shadow-xl flex items-center gap-3"
+            className="group relative bg-[#F58220] text-white px-8 py-3 rounded-md text-[12px] font-black tracking-[0.25em] uppercase hover:bg-white hover:text-black transition-all shadow-xl flex items-center gap-3"
           >
             <span className="relative z-10">PROEF AANVRAGEN</span>
             <ArrowRight className="w-4 h-4 relative z-10 transition-transform group-hover:translate-x-1" />
