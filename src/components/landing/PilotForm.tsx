@@ -74,97 +74,95 @@ export const PilotForm = () => {
                         </div>
                     </div>
 
-                    {/* Right Content - Form (Beefed up/Thickened for impact) */}
+                    {/* Right Content - Form (Lighter style matching the info card) */}
                     <div className="flex-1 w-full">
-                        <div className="bg-gradient-to-b from-slate-900 to-[#0A0D14] backdrop-blur-xl border-2 border-white/10 rounded-3xl p-10 md:p-14 shadow-[0_0_80px_rgba(0,0,0,0.8)] relative overflow-hidden group">
-                            {/* Subtle premium accent glow inside form */}
-                            <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#F58220] opacity-5 rounded-full blur-[120px] pointer-events-none group-hover:opacity-10 transition-opacity duration-1000" />
+                        <div className="bg-[#E5E5E5] rounded-3xl p-10 md:p-14 shadow-2xl relative overflow-hidden group">
 
-                            <h3 className="text-3xl font-black text-white mb-10 border-b border-white/10 pb-6 tracking-tight">
+                            <h3 className="text-2xl md:text-3xl font-black text-[#1A2234] mb-8 border-b border-black/10 pb-6 tracking-tight">
                                 Pilot Aanvraag
                             </h3>
 
-                            <form onSubmit={handleSubmit} className="space-y-8 relative z-10">
-                                <div className="grid md:grid-cols-2 gap-8">
-                                    <div className="space-y-3">
-                                        <label className="text-[11px] font-black text-white/50 uppercase tracking-[0.2em]">Naam</label>
+                            <form onSubmit={handleSubmit} className="space-y-6 relative z-10">
+                                <div className="grid md:grid-cols-2 gap-6">
+                                    <div className="space-y-2">
+                                        <label className="text-[11px] font-black text-slate-500 uppercase tracking-[0.2em]">Naam</label>
                                         <input
                                             type="text"
                                             name="name"
                                             value={formData.name}
                                             onChange={handleChange}
                                             required
-                                            className="w-full bg-white/5 border border-white/10 rounded-xl px-5 py-4 text-white text-lg focus:outline-none focus:border-primary focus:bg-white/10 transition-all font-medium"
+                                            className="w-full bg-white border border-transparent rounded-xl px-5 py-4 text-slate-900 text-lg focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all font-medium shadow-sm"
                                         />
                                     </div>
-                                    <div className="space-y-3">
-                                        <label className="text-[11px] font-black text-white/50 uppercase tracking-[0.2em]">Bedrijfsnaam</label>
+                                    <div className="space-y-2">
+                                        <label className="text-[11px] font-black text-slate-500 uppercase tracking-[0.2em]">Bedrijfsnaam</label>
                                         <input
                                             type="text"
                                             name="company"
                                             value={formData.company}
                                             onChange={handleChange}
                                             required
-                                            className="w-full bg-white/5 border border-white/10 rounded-xl px-5 py-4 text-white text-lg focus:outline-none focus:border-primary focus:bg-white/10 transition-all font-medium"
+                                            className="w-full bg-white border border-transparent rounded-xl px-5 py-4 text-slate-900 text-lg focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all font-medium shadow-sm"
                                         />
                                     </div>
                                 </div>
 
-                                <div className="space-y-3">
-                                    <label className="text-[11px] font-black text-white/50 uppercase tracking-[0.2em]">Zakelijk E-mailadres</label>
+                                <div className="space-y-2">
+                                    <label className="text-[11px] font-black text-slate-500 uppercase tracking-[0.2em]">Zakelijk E-mailadres</label>
                                     <input
                                         type="email"
                                         name="email"
                                         value={formData.email}
                                         onChange={handleChange}
                                         required
-                                        className="w-full bg-white/5 border border-white/10 rounded-xl px-5 py-4 text-white text-lg focus:outline-none focus:border-primary focus:bg-white/10 transition-all font-medium"
+                                        className="w-full bg-white border border-transparent rounded-xl px-5 py-4 text-slate-900 text-lg focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all font-medium shadow-sm"
                                     />
                                 </div>
 
-                                <div className="grid md:grid-cols-2 gap-8">
-                                    <div className="space-y-3">
-                                        <label className="text-[11px] font-black text-white/50 uppercase tracking-[0.2em]">Teeltlocatie</label>
+                                <div className="grid md:grid-cols-2 gap-6">
+                                    <div className="space-y-2">
+                                        <label className="text-[11px] font-black text-slate-500 uppercase tracking-[0.2em]">Teeltlocatie</label>
                                         <input
                                             type="text"
                                             name="location"
                                             value={formData.location}
                                             onChange={handleChange}
-                                            className="w-full bg-white/5 border border-white/10 rounded-xl px-5 py-4 text-white text-lg focus:outline-none focus:border-primary focus:bg-white/10 transition-all font-medium"
+                                            className="w-full bg-white border border-transparent rounded-xl px-5 py-4 text-slate-900 text-lg focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all font-medium shadow-sm"
                                         />
                                     </div>
-                                    <div className="space-y-3">
-                                        <label className="text-[11px] font-black text-white/50 uppercase tracking-[0.2em]">Weekcapaciteit (T)</label>
+                                    <div className="space-y-2">
+                                        <label className="text-[11px] font-black text-slate-500 uppercase tracking-[0.2em]">Weekcapaciteit (T)</label>
                                         <input
                                             type="text"
                                             name="capacity"
                                             value={formData.capacity}
                                             onChange={handleChange}
-                                            className="w-full bg-white/5 border border-white/10 rounded-xl px-5 py-4 text-white text-lg focus:outline-none focus:border-primary focus:bg-white/10 transition-all font-medium"
+                                            className="w-full bg-white border border-transparent rounded-xl px-5 py-4 text-slate-900 text-lg focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all font-medium shadow-sm"
                                         />
                                     </div>
                                 </div>
 
-                                <div className="space-y-3">
-                                    <label className="text-[11px] font-black text-white/50 uppercase tracking-[0.2em]">Specificaties & Vragen</label>
+                                <div className="space-y-2">
+                                    <label className="text-[11px] font-black text-slate-500 uppercase tracking-[0.2em]">Specificaties & Vragen</label>
                                     <textarea
                                         name="message"
                                         value={formData.message}
                                         onChange={handleChange}
-                                        rows={4}
-                                        className="w-full bg-white/5 border border-white/10 rounded-xl px-5 py-4 text-white text-lg focus:outline-none focus:border-primary focus:bg-white/10 transition-all resize-none font-medium"
+                                        rows={3}
+                                        className="w-full bg-white border border-transparent rounded-xl px-5 py-4 text-slate-900 text-lg focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all resize-none font-medium shadow-sm"
                                     />
                                 </div>
 
                                 <button
                                     type="submit"
-                                    className="w-full inline-flex justify-center items-center gap-3 bg-primary text-white py-5 rounded-xl font-black text-lg uppercase tracking-[0.1em] hover:bg-primary/90 hover:scale-[1.02] transition-all mt-4 shadow-xl shadow-primary/20"
+                                    className="w-full inline-flex justify-center items-center gap-3 bg-[#F58220] text-white py-5 rounded-xl font-black text-lg uppercase tracking-[0.1em] hover:bg-[#F58220]/90 hover:scale-[1.02] transition-all mt-2 shadow-xl shadow-primary/20"
                                 >
                                     VERSTUUR PROTOCOL AANVRAAG
                                     <ArrowRight className="w-5 h-5" />
                                 </button>
 
-                                <p className="text-[11px] text-center text-white/40 italic mt-8 px-4 font-medium">
+                                <p className="text-[11px] text-center text-slate-500 italic mt-6 px-4 font-medium">
                                     * Data vertrouwelijkheid strikt gegarandeerd volgens ND-industriestandaarden.
                                 </p>
                             </form>
