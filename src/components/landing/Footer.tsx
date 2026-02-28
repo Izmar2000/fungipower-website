@@ -9,7 +9,7 @@ const footerLinks = {
     { label: "Wetenschap", href: "/#science" },
     { label: "Resultaten", href: "/#results" },
     { label: "Over Ons", href: "/over-ons" },
-    { label: "Contact", href: "/#contact" },
+    { label: "Contact", href: "/contact" },
   ],
 };
 
@@ -82,7 +82,7 @@ export const Footer = () => {
               ))}
               <li>
                 <button
-                  onClick={() => scrollToSection("#contact")}
+                  onClick={() => scrollToSection("/contact#form")}
                   className="text-sm font-bold text-white hover:text-[#FFD166] hover:translate-x-1 inline-block transition-all text-left"
                 >
                   Proef Aanvragen
@@ -122,10 +122,10 @@ export const Footer = () => {
             <h4 className="text-white font-black text-xs uppercase tracking-[0.2em] mb-6">Support</h4>
             <ul className="space-y-3 font-bold text-sm text-white">
               <li>
-                <button onClick={() => scrollToSection("#contact")} className="hover:text-[#FFD166] transition-colors text-left">Product Support</button>
+                <button onClick={() => scrollToSection("/contact#form")} className="hover:text-[#FFD166] transition-colors text-left">Product Support</button>
               </li>
               <li>
-                <button onClick={() => scrollToSection("#contact")} className="hover:text-[#FFD166] transition-colors text-left">Pilot Aanvragen</button>
+                <button onClick={() => scrollToSection("/contact#form")} className="hover:text-[#FFD166] transition-colors text-left">Pilot Aanvragen</button>
               </li>
             </ul>
           </div>

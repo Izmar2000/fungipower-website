@@ -9,7 +9,7 @@ const navLinks = [
   { label: "WETENSCHAP", href: "/#science" },
   { label: "RESULTATEN", href: "/#results" },
   { label: "OVER ONS", href: "/over-ons" },
-  { label: "CONTACT", href: "/#contact" },
+  { label: "CONTACT", href: "/contact" },
 ];
 
 export const Header = ({ forceSolid = false }: { forceSolid?: boolean }) => {
@@ -80,7 +80,7 @@ export const Header = ({ forceSolid = false }: { forceSolid?: boolean }) => {
           ))}
 
           <button
-            onClick={() => scrollToSection("#contact")}
+            onClick={() => scrollToSection("/contact#form")}
             className="group relative bg-[#F58220] text-white px-8 py-3 rounded-md text-[12px] font-black tracking-[0.25em] uppercase hover:bg-white hover:text-black transition-all shadow-xl flex items-center gap-3"
           >
             <span className="relative z-10">PROEF AANVRAGEN</span>
@@ -114,7 +114,7 @@ export const Header = ({ forceSolid = false }: { forceSolid?: boolean }) => {
               </button>
             ))}
             <button
-              onClick={() => scrollToSection("#contact")}
+              onClick={() => scrollToSection("/contact#form")}
               className="bg-[#F58220] text-white px-10 py-5 rounded-xl text-[12px] font-black tracking-[0.3em] uppercase shadow-2xl mt-4"
             >
               PROEF AANVRAGEN
