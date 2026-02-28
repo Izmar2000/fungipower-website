@@ -22,7 +22,7 @@ export const HeroSection = () => {
     >
       {/* 1. Historical Black & White Photo (Left on Desktop, Top on Mobile) */}
       <div
-        className="absolute inset-0 w-full md:w-[70%] h-full z-0 pointer-events-none opacity-40 [mask-image:linear-gradient(to_bottom,black_40%,transparent_100%)] md:[mask-image:linear-gradient(to_right,black_40%,transparent_100%)] [-webkit-mask-image:linear-gradient(to_bottom,black_40%,transparent_100%)] md:[-webkit-mask-image:linear-gradient(to_right,black_40%,transparent_100%)]"
+        className="absolute inset-0 w-full md:w-[70%] h-full z-0 pointer-events-none opacity-[0.15] [mask-image:linear-gradient(to_bottom,black_10%,transparent_80%)] md:[mask-image:linear-gradient(to_right,black_10%,transparent_80%)] [-webkit-mask-image:linear-gradient(to_bottom,black_10%,transparent_80%)] md:[-webkit-mask-image:linear-gradient(to_right,black_10%,transparent_80%)]"
         style={{
           backgroundImage: 'url("/images/vintage-mushroom.png")',
           backgroundSize: 'cover',
