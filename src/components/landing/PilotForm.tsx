@@ -72,117 +72,100 @@ export const PilotForm = () => {
                                 Onze methodiek is gebaseerd op meetbare stabiliteit in elke teeltcyclus met <span className="text-white font-bold">directe resultaten</span> voor telers door een wetenschappelijk onderbouwde methodiek.
                             </p>
                         </div>
-
-                        {/* Extra Detail Block to fill empty space and look premium */}
-                        <div className="mt-12 bg-white/5 border border-white/10 rounded-2xl p-6 md:p-8 backdrop-blur-sm max-w-xl hidden md:block">
-                            <div className="grid grid-cols-2 gap-8">
-                                <div>
-                                    <span className="block text-[#F58220] text-3xl font-black mb-1">+11.3%</span>
-                                    <span className="block text-white/60 text-xs font-bold uppercase tracking-wider">Gemiddelde Rendementsstijging</span>
-                                </div>
-                                <div>
-                                    <span className="block text-[#F58220] text-3xl font-black mb-1">100%</span>
-                                    <span className="block text-white/60 text-xs font-bold uppercase tracking-wider">Biologisch & Tracable</span>
-                                </div>
-                            </div>
-                            <div className="mt-6 pt-6 border-t border-white/10">
-                                <p className="text-white/40 text-sm italic">
-                                    "Pilot programma's worden toegewezen op basis van beschikbaarheid van onze begeleidingsexperts."
-                                </p>
-                            </div>
-                        </div>
                     </div>
 
-                    {/* Right Content - Form */}
+                    {/* Right Content - Form (Beefed up/Thickened for impact) */}
                     <div className="flex-1 w-full">
-                        <div className="bg-card/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 md:p-10">
-                            <h3 className="text-xl font-bold text-white mb-8 border-b border-white/10 pb-4">
+                        <div className="bg-gradient-to-b from-slate-900 to-[#0A0D14] backdrop-blur-xl border-2 border-white/10 rounded-3xl p-10 md:p-14 shadow-[0_0_80px_rgba(0,0,0,0.8)] relative overflow-hidden group">
+                            {/* Subtle premium accent glow inside form */}
+                            <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#F58220] opacity-5 rounded-full blur-[120px] pointer-events-none group-hover:opacity-10 transition-opacity duration-1000" />
+
+                            <h3 className="text-3xl font-black text-white mb-10 border-b border-white/10 pb-6 tracking-tight">
                                 Pilot Aanvraag
                             </h3>
 
-                            <form onSubmit={handleSubmit} className="space-y-6">
-                                <div className="grid md:grid-cols-2 gap-6">
-                                    <div className="space-y-2">
-                                        <label className="text-sm font-bold text-white/70 uppercase">Naam</label>
+                            <form onSubmit={handleSubmit} className="space-y-8 relative z-10">
+                                <div className="grid md:grid-cols-2 gap-8">
+                                    <div className="space-y-3">
+                                        <label className="text-[11px] font-black text-white/50 uppercase tracking-[0.2em]">Naam</label>
                                         <input
                                             type="text"
                                             name="name"
                                             value={formData.name}
                                             onChange={handleChange}
                                             required
-                                            className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary transition-all"
+                                            className="w-full bg-white/5 border border-white/10 rounded-xl px-5 py-4 text-white text-lg focus:outline-none focus:border-primary focus:bg-white/10 transition-all font-medium"
                                         />
                                     </div>
-                                    <div className="space-y-2">
-                                        <label className="text-sm font-bold text-white/70 uppercase">Bedrijfsnaam</label>
+                                    <div className="space-y-3">
+                                        <label className="text-[11px] font-black text-white/50 uppercase tracking-[0.2em]">Bedrijfsnaam</label>
                                         <input
                                             type="text"
                                             name="company"
                                             value={formData.company}
                                             onChange={handleChange}
                                             required
-                                            className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary transition-all"
+                                            className="w-full bg-white/5 border border-white/10 rounded-xl px-5 py-4 text-white text-lg focus:outline-none focus:border-primary focus:bg-white/10 transition-all font-medium"
                                         />
                                     </div>
                                 </div>
 
-                                <div className="space-y-2">
-                                    <label className="text-sm font-bold text-white/70 uppercase">Zakelijk E-mailadres</label>
+                                <div className="space-y-3">
+                                    <label className="text-[11px] font-black text-white/50 uppercase tracking-[0.2em]">Zakelijk E-mailadres</label>
                                     <input
                                         type="email"
                                         name="email"
                                         value={formData.email}
                                         onChange={handleChange}
                                         required
-                                        className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary transition-all"
+                                        className="w-full bg-white/5 border border-white/10 rounded-xl px-5 py-4 text-white text-lg focus:outline-none focus:border-primary focus:bg-white/10 transition-all font-medium"
                                     />
                                 </div>
 
-                                <div className="grid md:grid-cols-2 gap-6">
-                                    <div className="space-y-2">
-                                        <label className="text-sm font-bold text-white/70 uppercase">Teeltlocatie</label>
+                                <div className="grid md:grid-cols-2 gap-8">
+                                    <div className="space-y-3">
+                                        <label className="text-[11px] font-black text-white/50 uppercase tracking-[0.2em]">Teeltlocatie</label>
                                         <input
                                             type="text"
                                             name="location"
                                             value={formData.location}
                                             onChange={handleChange}
-                                            className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary transition-all"
+                                            className="w-full bg-white/5 border border-white/10 rounded-xl px-5 py-4 text-white text-lg focus:outline-none focus:border-primary focus:bg-white/10 transition-all font-medium"
                                         />
                                     </div>
-                                    <div className="space-y-2">
-                                        <label className="text-sm font-bold text-white/70 uppercase">Weekcapaciteit (T)</label>
+                                    <div className="space-y-3">
+                                        <label className="text-[11px] font-black text-white/50 uppercase tracking-[0.2em]">Weekcapaciteit (T)</label>
                                         <input
                                             type="text"
                                             name="capacity"
                                             value={formData.capacity}
                                             onChange={handleChange}
-                                            className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary transition-all"
+                                            className="w-full bg-white/5 border border-white/10 rounded-xl px-5 py-4 text-white text-lg focus:outline-none focus:border-primary focus:bg-white/10 transition-all font-medium"
                                         />
                                     </div>
                                 </div>
 
-                                <div className="space-y-2">
-                                    <label className="text-sm font-bold text-white/70 uppercase">Specificaties & Vragen</label>
+                                <div className="space-y-3">
+                                    <label className="text-[11px] font-black text-white/50 uppercase tracking-[0.2em]">Specificaties & Vragen</label>
                                     <textarea
                                         name="message"
                                         value={formData.message}
                                         onChange={handleChange}
-                                        rows={3}
-                                        className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary transition-all resize-none"
+                                        rows={4}
+                                        className="w-full bg-white/5 border border-white/10 rounded-xl px-5 py-4 text-white text-lg focus:outline-none focus:border-primary focus:bg-white/10 transition-all resize-none font-medium"
                                     />
                                 </div>
 
                                 <button
                                     type="submit"
-                                    className="w-full inline-flex justify-center items-center gap-2 bg-primary text-white py-3 rounded-lg font-bold uppercase tracking-wider hover:bg-primary/90 transition-colors mt-2"
+                                    className="w-full inline-flex justify-center items-center gap-3 bg-primary text-white py-5 rounded-xl font-black text-lg uppercase tracking-[0.1em] hover:bg-primary/90 hover:scale-[1.02] transition-all mt-4 shadow-xl shadow-primary/20"
                                 >
-                                    <ArrowRight className="w-5 h-5 absolute left-6 opacity-0" />
                                     VERSTUUR PROTOCOL AANVRAAG
-                                    <ArrowRight className="w-4 h-4" />
+                                    <ArrowRight className="w-5 h-5" />
                                 </button>
 
-                                <p className="text-[10px] text-center text-white/30 italic mt-6 px-4">
-                                    * Data vertrouwelijkheid gegarandeerd volgens industrie-standaarden.
+                                <p className="text-[11px] text-center text-white/40 italic mt-8 px-4 font-medium">
+                                    * Data vertrouwelijkheid strikt gegarandeerd volgens ND-industriestandaarden.
                                 </p>
                             </form>
                         </div>
