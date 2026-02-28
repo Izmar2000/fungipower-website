@@ -72,6 +72,25 @@ export const PilotForm = () => {
                                 Onze methodiek is gebaseerd op meetbare stabiliteit in elke teeltcyclus met <span className="text-white font-bold">directe resultaten</span> voor telers door een wetenschappelijk onderbouwde methodiek.
                             </p>
                         </div>
+
+                        {/* Extra Detail Block to fill empty space and look premium */}
+                        <div className="mt-12 bg-white/5 border border-white/10 rounded-2xl p-6 md:p-8 backdrop-blur-sm max-w-xl hidden md:block">
+                            <div className="grid grid-cols-2 gap-8">
+                                <div>
+                                    <span className="block text-[#F58220] text-3xl font-black mb-1">+11.3%</span>
+                                    <span className="block text-white/60 text-xs font-bold uppercase tracking-wider">Gemiddelde Rendementsstijging</span>
+                                </div>
+                                <div>
+                                    <span className="block text-[#F58220] text-3xl font-black mb-1">100%</span>
+                                    <span className="block text-white/60 text-xs font-bold uppercase tracking-wider">Biologisch & Tracable</span>
+                                </div>
+                            </div>
+                            <div className="mt-6 pt-6 border-t border-white/10">
+                                <p className="text-white/40 text-sm italic">
+                                    "Pilot programma's worden toegewezen op basis van beschikbaarheid van onze begeleidingsexperts."
+                                </p>
+                            </div>
+                        </div>
                     </div>
 
                     {/* Right Content - Form */}
