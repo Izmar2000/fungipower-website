@@ -11,7 +11,7 @@ const navLinks = [
   { label: "CONTACT", href: "/#contact" },
 ];
 
-export const Header = () => {
+export const Header = ({ forceSolid = false }: { forceSolid?: boolean }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -40,22 +40,24 @@ export const Header = () => {
     setMobileMenuOpen(false);
   };
 
+  const isSolid = scrolled || forceSolid;
+
   return (
     <header
-      className={`fixed top-0 left-0 z-[110] w-full transition-all duration-500 ease-in-out ${scrolled ? "shadow-2xl" : ""
+      className={`fixed top-0 left-0 z-[110] w-full transition-all duration-500 ease-in-out ${isSolid ? "shadow-2xl" : ""
         }`}
       style={{
-        background: scrolled ? `linear-gradient(90deg, #F58220 0%, #D71920 100%)` : `none`,
+        background: isSolid ? `linear-gradient(90deg, #F58220 0%, #D71920 100%)` : `none`,
       }}
     >
-      <div className={`max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between relative z-30 transition-all duration-500 ease-in-out ${scrolled ? "py-4" : "py-8"}`}>
+      <div className={`max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between relative z-30 transition-all duration-500 ease-in-out ${isSolid ? "py-4" : "py-8"}`}>
 
         {/* Logo - Normal & Clean */}
         <a href="/" className="flex items-center relative group z-50">
           <img
             src="/images/fungipower-logo-3.png"
             alt="FungiPower"
-            className={`w-auto object-left object-contain transition-all brightness-0 invert duration-500 group-hover:scale-[1.05] ${scrolled ? "h-10 md:h-14 lg:h-16" : "h-16 md:h-20 lg:h-24"
+            className={`w-auto object-left object-contain transition-all brightness-0 invert duration-500 group-hover:scale-[1.05] ${isSolid ? "h-10 md:h-14 lg:h-16" : "h-16 md:h-20 lg:h-24"
               }`}
           />
         </a>

@@ -6,7 +6,7 @@ export default function Praktijkvoorbeelden() {
     return (
         <div className="min-h-screen bg-background flex flex-col pt-[88px] lg:pt-[112px]">
             <DraftWarning />
-            <Header />
+            <Header forceSolid={true} />
 
             <main className="flex-1 py-20 px-6 max-w-7xl mx-auto w-full">
                 <h1 className="text-4xl md:text-5xl font-black mb-10 text-slate-900 border-b pb-4">

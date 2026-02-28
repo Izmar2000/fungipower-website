@@ -19,7 +19,7 @@ export default function Dosering() {
     return (
         <div className="min-h-screen bg-background flex flex-col pt-[88px] lg:pt-[112px]">
             <DraftWarning />
-            <Header />
+            <Header forceSolid={true} />
 
             <main className="flex-1 py-16 px-6 max-w-7xl mx-auto w-full">
                 <div className="flex items-center gap-4 mb-4">
