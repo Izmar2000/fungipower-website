@@ -40,48 +40,74 @@ export default function OverOns() {
                 </section>
 
                 {/* Split Layout Section with Portrait and Text */}
-                <section className="pt-8 pb-24 max-w-7xl mx-auto px-6 md:px-12 relative">
+                <section className="pt-8 pb-32 max-w-7xl mx-auto px-6 md:px-12 relative">
                     {/* Subtle gradient glow behind the text/heading */}
                     <div className="absolute top-1/4 right-0 w-[600px] h-[600px] bg-[#F58220]/5 rounded-full blur-[120px] pointer-events-none" />
 
-                    <div className="grid lg:grid-cols-2 gap-16 xl:gap-24 items-start">
-                        {/* Portrait */}
-                        <div className="relative group perspective-1000">
-                            <div className="aspect-[3/4] rounded-sm overflow-hidden border border-black/10 bg-slate-100 relative shadow-2xl">
-                                <img
-                                    src="/images/jan-klerken.jpg"
-                                    alt="Jan Klerken"
-                                    className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-[1.03] filter grayscale-[20%]"
-                                />
-                                <div className="absolute inset-0 border border-black/5 mix-blend-overlay"></div>
-                            </div>
-                            <div className="mt-6 flex justify-between items-baseline border-b border-black/10 pb-4">
-                                <span className="font-black text-xl tracking-tight">Jan Klerken</span>
-                                <span className="text-xs font-bold uppercase tracking-[0.2em] text-slate-500">Oprichter</span>
+                    <div className="grid lg:grid-cols-12 gap-16 xl:gap-24 items-start">
+                        {/* LEFT: Portrait Column */}
+                        <div className="lg:col-span-5 space-y-8">
+                            <div className="relative group">
+                                <div className="aspect-[3.5/4] rounded-2xl overflow-hidden border border-black/5 bg-slate-100 relative shadow-2xl transition-all duration-700 group-hover:shadow-primary/10">
+                                    <img
+                                        src="/images/jan-klerken.jpg"
+                                        alt="Jan Klerken"
+                                        className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-[1.05] filter grayscale-[10%]"
+                                    />
+                                    {/* Subtle overlay for depth */}
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-60" />
+
+                                    {/* Name on photo for premium feel */}
+                                    <div className="absolute bottom-8 left-8 text-white">
+                                        <p className="font-black text-2xl tracking-tighter">Jan Klerken</p>
+                                        <p className="text-[10px] font-bold uppercase tracking-[0.3em] text-white/70">Oprichter FungiPower</p>
+                                    </div>
+                                </div>
+
+                                {/* 🟠 ORANGE QUOTE BLOCK - REINSTATED & IMPROVED */}
+                                <div className="mt-8 bg-gradient-to-br from-[#F58220] to-[#D71920] p-8 md:p-10 rounded-2xl shadow-xl shadow-primary/20 relative overflow-hidden group/quote">
+                                    {/* Decorative double quote mark */}
+                                    <div className="absolute -top-4 -right-2 text-white/10 text-9xl font-serif select-none pointer-events-none">
+                                        &rdquo;
+                                    </div>
+                                    <p className="relative z-10 text-white font-bold italic text-lg md:text-xl leading-relaxed">
+                                        &ldquo;Verbetering draait niet om méér toevoegen, maar om beter benutten wat er al gebeurt binnen het substraat en de teelt.&rdquo;
+                                    </p>
+                                </div>
                             </div>
                         </div>
 
-                        {/* Text Content */}
-                        <div className="space-y-6 text-base md:text-lg text-slate-600 leading-relaxed font-medium">
-                            <p className="text-xl md:text-2xl font-bold leading-snug text-slate-900 border-l-[3px] border-[#F58220] pl-6 py-1 mb-4">
-                                Niet vanuit een marketingidee, maar vanuit jaren ervaring in de sector en een diep begrip van hoe een teelt zich ontwikkelt binnen het substraat.
-                            </p>
+                        {/* RIGHT: Text Content Column */}
+                        <div className="lg:col-span-7 pt-4 space-y-10 text-base md:text-lg text-slate-600 leading-relaxed font-medium">
+                            <div className="space-y-6">
+                                <p className="text-xl md:text-2xl font-bold leading-snug text-slate-900 border-l-[4px] border-[#F58220] pl-8 py-2 mb-8 bg-gradient-to-r from-[#F58220]/5 to-transparent rounded-r-lg">
+                                    Niet vanuit een marketingidee, maar vanuit jaren ervaring in de sector en een diep begrip van hoe een teelt zich ontwikkelt binnen het substraat.
+                                </p>
 
-                            <p className="animate-fade-in-up">
-                                Jan Klerken groeide op in de champignonwereld. Wat voor anderen een product is, was voor hem dagelijkse realiteit. Door de jaren heen werkte hij in verschillende delen van de keten en zag hij hoe de sector professioneler en technischer werd. Wat daarbij altijd centraal bleef staan, is de rol van de teler. Uiteindelijk draait alles om degene die dagelijks verantwoordelijkheid draagt voor kwaliteit en continuïteit.
-                            </p>
-
-                            <p className="animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
-                                Er wordt steeds meer van de sector verwacht. Kwaliteit moet constant zijn, productie voorspelbaar en efficiënt omgaan met middelen is vanzelfsprekend geworden. In die ontwikkeling draait verbetering vaak niet om méér toevoegen, maar om beter benutten wat er al gebeurt binnen het substraat en de teelt.
-                            </p>
-
-                            <div className="pt-6 pb-2 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-                                <h2 className="text-2xl font-black text-slate-900 tracking-tight">Daar ligt de kern van FungiPower.</h2>
+                                <div className="space-y-6 animate-fade-in-up">
+                                    <p>
+                                        Jan Klerken groeide op in de champignonwereld. Wat voor anderen een product is, was voor hem dagelijkse realiteit. Door de jaren heen werkte hij in verschillende delen van de keten en zag hij hoe de sector professioneler en technischer werd. Wat daarbij altijd centraal bleef staan, is de rol van de teler. Uiteindelijk draait alles om degene die dagelijks verantwoordelijkheid draagt voor kwaliteit en continuïteit.
+                                    </p>
+                                    <p>
+                                        Er wordt steeds meer van de sector verwacht. Kwaliteit moet constant zijn, productie voorspelbaar en efficiënt omgaan met middelen is vanzelfsprekend geworden. In die ontwikkeling draait verbetering vaak niet om méér toevoegen, maar om beter benutten wat er al gebeurt binnen het substraat en de teelt.
+                                    </p>
+                                </div>
                             </div>
 
-                            <p className="animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
-                                Wij ondersteunen opname en benutting, zonder het systeem uit balans te brengen. Geen ingrijpende veranderingen, maar gerichte verfijning. Ontwikkeld vanuit praktijkkennis en getest in echte omstandigheden.
-                            </p>
+                            <div className="relative pt-10 pb-4">
+                                <div className="absolute top-0 left-0 w-24 h-[1px] bg-[#F58220]" />
+                                <h2 className="text-3xl md:text-4xl font-black text-slate-900 tracking-tight mb-8">
+                                    Daar ligt de kern van FungiPower.
+                                </h2>
+                                <p className="animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
+                                    Wij ondersteunen de natuurlijke opname en benutting, zonder het systeem uit balans te brengen. Geen ingrijpende veranderingen, maar gerichte verfijning. Ontwikkeld vanuit praktijkkennis en getest in echte omstandigheden voor de teler van nu.
+                                </p>
+                            </div>
+
+                            <div className="bg-slate-100/50 p-8 rounded-2xl border border-black/5 flex items-center justify-between group">
+                                <span className="text-sm font-bold uppercase tracking-widest text-slate-400 group-hover:text-primary transition-colors">Onze methodiek</span>
+                                <ArrowRight className="w-5 h-5 text-slate-300 group-hover:text-primary group-hover:translate-x-1 transition-all" />
+                            </div>
                         </div>
                     </div>
                 </section>

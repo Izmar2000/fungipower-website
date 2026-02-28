@@ -42,9 +42,9 @@ export const Header = ({ forceSolid = false }: { forceSolid?: boolean }) => {
     setMobileMenuOpen(false);
   };
 
-  const isLightPage = pathname === '/over-ons';
-  const isSolid = scrolled || forceSolid || isLightPage;
-  const useDarkText = false; // Always use normal menu styled text since it's now solid orange
+  const isSubPage = pathname !== "/";
+  const isSolid = scrolled || forceSolid || isSubPage;
+  const useDarkText = false; // Always white text on orange gradient for FungiPower brand consistency
 
   return (
     <header
