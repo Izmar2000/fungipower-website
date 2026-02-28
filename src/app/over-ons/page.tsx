@@ -30,8 +30,8 @@ export default function OverOns() {
                 />
 
                 {/* Clean, editorial hero section */}
-                <section className="relative z-10 pt-56 pb-8 md:pt-72 lg:pt-80 px-6 md:px-12 max-w-7xl mx-auto">
-                    <span className="block text-[#F58220] font-bold text-xs tracking-[0.2em] uppercase mb-6">
+                <section className="relative z-10 pt-32 pb-4 md:pt-40 lg:pt-48 px-6 md:px-12 max-w-7xl mx-auto">
+                    <span className="block text-[#F58220] font-bold text-xs tracking-[0.2em] uppercase mb-4">
                         Over Ons
                     </span>
                     <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold leading-[1.1] tracking-tight text-slate-900 mb-0 max-w-5xl">
@@ -40,7 +40,7 @@ export default function OverOns() {
                 </section>
 
                 {/* Split Layout Section with Portrait and Text */}
-                <section className="pt-8 pb-32 max-w-7xl mx-auto px-6 md:px-12 relative">
+                <section className="pt-6 pb-20 max-w-7xl mx-auto px-6 md:px-12 relative">
                     {/* Subtle gradient glow behind the text/heading */}
                     <div className="absolute top-1/4 right-0 w-[600px] h-[600px] bg-[#F58220]/5 rounded-full blur-[120px] pointer-events-none" />
 
@@ -116,7 +116,7 @@ export default function OverOns() {
                 </section>
 
                 {/* Horizontale “Van praktijk naar technologie” visual */}
-                <section className="py-24 md:py-32 bg-slate-50 border-y border-black/5 relative overflow-hidden">
+                <section className="py-16 md:py-24 bg-slate-50 border-y border-black/5 relative overflow-hidden">
                     {/* Faded Vintage Background Image */}
                     <div
                         className="absolute inset-0 z-0 pointer-events-none opacity-[0.07] mix-blend-multiply"
@@ -187,7 +187,7 @@ export default function OverOns() {
                 </section>
 
                 {/* Doel / Verfijnde visie met Visual */}
-                <section className="py-24 md:py-32 max-w-7xl mx-auto px-6 md:px-12 relative overflow-hidden">
+                <section className="py-16 md:py-24 max-w-7xl mx-auto px-6 md:px-12 relative overflow-hidden">
                     <div className="grid lg:grid-cols-12 gap-16 lg:gap-24 items-center">
                         <div className="lg:col-span-7 flex flex-col gap-8 md:gap-10">
                             <h2 className="text-xs font-bold text-[#F58220] tracking-[0.2em] uppercase">

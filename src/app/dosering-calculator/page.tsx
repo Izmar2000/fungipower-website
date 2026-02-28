@@ -16,7 +16,7 @@ export default function Dosering() {
 
     return (
         <div className="min-h-screen bg-background flex flex-col pt-[72px] md:pt-[88px] lg:pt-[96px]">
-            <main className="flex-1 py-16 px-6 max-w-7xl mx-auto w-full">
+            <main className="flex-1 py-10 md:py-16 px-6 max-w-7xl mx-auto w-full">
                 <div className="flex items-center gap-4 mb-4">
                     <Calculator className="w-8 h-8 text-[#F58220]" />
                     <h1 className="text-4xl md:text-5xl font-black text-slate-900 tracking-tight">
