@@ -9,7 +9,7 @@ export const HeroContent = () => {
       <div className="mb-8 flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-4 py-2 animate-fade-in shadow-lg">
         <Microscope className="w-4 h-4 text-[#FFD166]" />
         <span className="text-white text-[10px] font-black tracking-[0.2em] uppercase">
-          Biologische Systeemversterking
+          Biologische versterking
         </span>
       </div>
 
