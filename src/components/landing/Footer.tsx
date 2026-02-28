@@ -58,9 +58,9 @@ export const Footer = () => {
           {/* Logo & Description */}
           <div className="col-span-2 md:col-span-1">
             <img
-              src="/images/fungipower-logo-3.png"
+              src="/images/fungipower-logo-new.png"
               alt="FungiPower"
-              className="h-12 w-auto object-contain mb-4 brightness-0 invert"
+              className="h-12 w-auto object-contain mb-4 brightness-0 invert drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]"
             />
             <p className="text-sm font-medium leading-relaxed text-white/90">
               Maximaliseren van paddenstoelenopbrengsten door wetenschappelijk onderbouwde biologische verbetering.
