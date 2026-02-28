@@ -2,8 +2,20 @@ import { BarChart3, TrendingUp, FlaskConical, ArrowRight, FileText, Clock } from
 
 export const ResultsSection = () => {
   return (
-    <section id="results" className="py-24 bg-secondary text-secondary-foreground relative">
-      <div className="max-w-7xl mx-auto px-6 md:px-12">
+    <section id="results" className="py-24 bg-secondary text-secondary-foreground relative overflow-hidden">
+      {/* Emotional/Story background blend */}
+      <div
+        className="absolute inset-0 z-0 pointer-events-none opacity-30 mix-blend-overlay"
+        style={{
+          backgroundImage: 'url("https://images.unsplash.com/photo-1596489399827-0105dc1bfeab?q=80&auto=format&fit=crop")',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          filter: 'grayscale(100%) contrast(120%)',
+          maskImage: 'linear-gradient(to right, black 0%, transparent 80%)',
+          WebkitMaskImage: 'linear-gradient(to right, black 0%, transparent 80%)'
+        }}
+      />
+      <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
 
         <div className="flex flex-col lg:flex-row gap-16 items-start">
 

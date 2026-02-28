@@ -3,6 +3,18 @@ import { ArrowRight, Sprout, Shield, Droplets, LineChart, FlaskConical } from "l
 export const ScalabilitySection = () => {
   return (
     <section id="products" className="py-24 bg-background relative overflow-hidden">
+      {/* Editorial/Story background image */}
+      <div
+        className="absolute inset-0 z-0 pointer-events-none opacity-[0.04] mix-blend-multiply"
+        style={{
+          backgroundImage: 'url("https://images.unsplash.com/photo-1596489399827-0105dc1bfeab?q=80&auto=format&fit=crop")',
+          backgroundSize: 'cover',
+          backgroundPosition: 'left center',
+          filter: 'grayscale(100%) sepia(30%) contrast(150%)',
+          maskImage: 'linear-gradient(to right, transparent 0%, black 100%)',
+          WebkitMaskImage: 'linear-gradient(to right, transparent 0%, black 100%)'
+        }}
+      />
       <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
 
         {/* Section Header */}
@@ -95,9 +107,6 @@ export const ScalabilitySection = () => {
 
         {/* Section CTA */}
         <div className="mt-16 flex flex-col items-center gap-6">
-          <p className="text-xs text-muted-foreground italic">
-            *Beste resultaat bij toepassing na vlucht 1, op basis van praktijkproeven met beperkte dataset.
-          </p>
           <a href="#contact" className="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-widest border-b-2 border-primary pb-1 hover:text-primary transition-colors">
             Vraag technische documentatie aan
             <ArrowRight className="w-4 h-4" />
