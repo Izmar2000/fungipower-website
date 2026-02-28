@@ -160,7 +160,7 @@ export default function OverOns() {
                                     </div>
                                     <div>
                                         <h4 className="font-bold text-xl mb-3 text-slate-900">1. Sector Realiteit</h4>
-                                        <p className="text-slate-500 text-sm leading-relaxed">Begrip van de werkvloer, het substraat en de dagelijkse focus op stabiel teeltmanagement.</p>
+                                        <p className="text-slate-600 text-base leading-relaxed">Begrip van de werkvloer, het substraat en de dagelijkse focus op stabiel teeltmanagement.</p>
                                     </div>
                                 </div>
                                 <div className="flex flex-col items-start gap-6 group">
@@ -169,7 +169,7 @@ export default function OverOns() {
                                     </div>
                                     <div>
                                         <h4 className="font-bold text-xl mb-3 text-slate-900">2. Data & Biologie</h4>
-                                        <p className="text-slate-500 text-sm leading-relaxed">Wetenschappelijke validatie van nutriënten-opname en de biologische cyclus van mycelium.</p>
+                                        <p className="text-slate-600 text-base leading-relaxed">Wetenschappelijke validatie van nutriënten-opname en de biologische cyclus van mycelium.</p>
                                     </div>
                                 </div>
                                 <div className="flex flex-col items-start gap-6 group">
@@ -178,7 +178,7 @@ export default function OverOns() {
                                     </div>
                                     <div>
                                         <h4 className="font-bold text-xl mb-3 text-slate-900">3. Stabiel Resultaat</h4>
-                                        <p className="text-slate-500 text-sm leading-relaxed">Bewezen, betrouwbare biostimulanten die rendement verhogen zonder de teelt te verstoren.</p>
+                                        <p className="text-slate-600 text-base leading-relaxed">Bewezen, betrouwbare biostimulanten die rendement verhogen zonder de teelt te verstoren.</p>
                                     </div>
                                 </div>
                             </div>
