@@ -15,9 +15,22 @@ export default function OverOns() {
                 }}
             />
 
-            <main className="flex-1 relative z-10">
+            <main className="flex-1 relative z-10 w-full overflow-hidden">
+                {/* Vintage Agriculture Background behind Hero */}
+                <div
+                    className="absolute top-0 right-0 w-full md:w-2/3 h-[600px] z-0 pointer-events-none opacity-[0.08] mix-blend-multiply"
+                    style={{
+                        backgroundImage: 'url("https://images.unsplash.com/photo-1596489399827-0105dc1bfeab?q=80&auto=format&fit=crop")',
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'right center',
+                        filter: 'grayscale(100%) sepia(30%) contrast(150%)',
+                        maskImage: 'linear-gradient(to left, black 0%, transparent 100%)',
+                        WebkitMaskImage: 'linear-gradient(to left, black 0%, transparent 100%)'
+                    }}
+                />
+
                 {/* Clean, editorial hero section */}
-                <section className="pt-56 pb-8 md:pt-72 lg:pt-80 px-6 md:px-12 max-w-7xl mx-auto">
+                <section className="relative z-10 pt-56 pb-8 md:pt-72 lg:pt-80 px-6 md:px-12 max-w-7xl mx-auto">
                     <span className="block text-[#F58220] font-bold text-xs tracking-[0.2em] uppercase mb-6">
                         Over Ons
                     </span>
@@ -74,7 +87,20 @@ export default function OverOns() {
                 </section>
 
                 {/* Horizontale “Van praktijk naar technologie” visual */}
-                <section className="py-24 bg-white border-y border-black/5 relative overflow-hidden">
+                <section className="py-24 md:py-32 bg-slate-50 border-y border-black/5 relative overflow-hidden">
+                    {/* Faded Vintage Background Image */}
+                    <div
+                        className="absolute inset-0 z-0 pointer-events-none opacity-[0.07] mix-blend-multiply"
+                        style={{
+                            backgroundImage: 'url("https://images.unsplash.com/photo-1596489399827-0105dc1bfeab?q=80&auto=format&fit=crop")', // Classic agriculture/mushrooms vibe
+                            backgroundSize: 'cover',
+                            backgroundPosition: 'center',
+                            filter: 'grayscale(100%) sepia(40%) contrast(120%)',
+                            maskImage: 'radial-gradient(ellipse at center, black 0%, transparent 80%)',
+                            WebkitMaskImage: 'radial-gradient(ellipse at center, black 0%, transparent 80%)'
+                        }}
+                    />
+
                     <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
                         <div className="mb-20">
                             <h3 className="text-xs font-bold tracking-[0.2em] uppercase text-slate-400 mb-3">Evolutie</h3>

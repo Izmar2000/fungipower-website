@@ -2,8 +2,21 @@ import { Sprout, ArrowRight, Activity, TrendingUp, Layers } from "lucide-react";
 
 export const ScienceSection = () => {
   return (
-    <section id="science" className="py-24 bg-background border-t border-border">
-      <div className="max-w-7xl mx-auto px-6 md:px-12">
+    <section id="science" className="relative py-24 bg-background border-t border-border overflow-hidden">
+      {/* Faded Vintage Background Image */}
+      <div
+        className="absolute inset-0 z-0 pointer-events-none opacity-[0.05] mix-blend-multiply"
+        style={{
+          backgroundImage: 'url("https://images.unsplash.com/photo-1596489399827-0105dc1bfeab?q=80&auto=format&fit=crop")', // Vintage vibe
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          filter: 'grayscale(100%) sepia(50%) contrast(120%)',
+          maskImage: 'radial-gradient(ellipse at center, black 0%, transparent 80%)',
+          WebkitMaskImage: 'radial-gradient(ellipse at center, black 0%, transparent 80%)'
+        }}
+      />
+
+      <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12">
         {/* Section Header */}
         <div className="text-center mb-20 max-w-3xl mx-auto">
           <span className="inline-block text-primary text-xs font-black tracking-[0.2em] uppercase mb-4">
