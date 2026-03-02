@@ -208,34 +208,21 @@ export default function OverOns() {
                             </div>
                         </div>
 
-                        <div className="lg:col-span-5 relative">
-                            {/* Sketch-like / Technical layout on the right */}
-                            <div className="relative aspect-square w-full sm:w-[80%] mx-auto lg:w-full rounded-[40px] border border-slate-200/80 bg-slate-50/50 flex items-center justify-center p-8 group overflow-hidden">
-
-                                {/* Faint diagram overlay */}
-                                <div
-                                    className="absolute inset-0 opacity-[0.08] mix-blend-multiply transition-transform duration-1000 group-hover:scale-105"
-                                    style={{
-                                        backgroundImage: 'url("/images/mycelium network.jpg")',
-                                        backgroundSize: 'cover',
-                                        backgroundPosition: 'center',
-                                        filter: 'grayscale(100%) contrast(150%)'
-                                    }}
+                        <div className="lg:col-span-5">
+                            <div className="relative group rounded-3xl overflow-hidden shadow-2xl aspect-[4/3]">
+                                <img
+                                    src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2070&auto=format&fit=crop"
+                                    alt="Moderne Nederlandse Champignonkwekerij"
+                                    className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
                                 />
+                                {/* Overlay gradient for depth */}
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-60" />
 
-                                {/* Abstract Geometry */}
-                                <div className="relative z-10 w-full h-full border-[0.5px] border-black/5 rounded-[20px] flex items-center justify-center overflow-hidden">
-                                    <div className="w-56 h-56 rounded-full border-[0.5px] border-[#F58220]/30 shadow-[0_0_60px_rgba(245,130,32,0.05)] flex items-center justify-center backdrop-blur-sm">
-                                        <div className="w-32 h-32 rounded-full border border-black/5 flex flex-col items-center justify-center gap-4 bg-white/40">
-                                            <Leaf className="w-8 h-8 text-[#F58220]/70" strokeWidth={1.5} />
-                                        </div>
-                                    </div>
-
-                                    {/* Crosshairs & Lines */}
-                                    <div className="absolute top-1/2 left-0 w-full h-[0.5px] bg-[#F58220]/20" />
-                                    <div className="absolute top-0 left-1/2 w-[0.5px] h-full bg-[#F58220]/20" />
-                                    <div className="absolute top-8 left-8 w-2 h-2 rounded-full border border-[#F58220]/50" />
-                                    <div className="absolute bottom-8 right-8 w-1.5 h-1.5 rounded-full bg-slate-300" />
+                                {/* Badge overlay */}
+                                <div className="absolute bottom-6 left-6 right-6 p-4 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl">
+                                    <p className="text-white text-[10px] font-black tracking-widest uppercase">
+                                        Moderne Teeltfaciliteit • Nederland
+                                    </p>
                                 </div>
                             </div>
                         </div>
