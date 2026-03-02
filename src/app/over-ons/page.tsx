@@ -211,8 +211,8 @@ export default function OverOns() {
                         <div className="lg:col-span-5">
                             <div className="relative group rounded-3xl overflow-hidden shadow-2xl aspect-[4/3]">
                                 <img
-                                    src="https://images.unsplash.com/photo-1591261730799-ee4e6c2d16d7?q=80&w=2070&auto=format&fit=crop"
-                                    alt="Nederlandse Champignonkweker met passie voor het vak"
+                                    src="/images/vintage-mushroom.png"
+                                    alt="Prachtige champignon illustratie"
                                     className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
                                 />
                                 {/* Overlay gradient for depth */}
