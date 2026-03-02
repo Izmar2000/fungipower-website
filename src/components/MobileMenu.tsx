@@ -121,14 +121,14 @@ const MobileMenu: FC<MobileMenuProps> = ({ open, onClose, onOpenSample, dict, la
                         <span className="text-white/30 text-[10px] font-black uppercase tracking-widest">Language</span>
                         <div className="flex gap-4">
                             <div className="flex gap-6 items-center">
-                                <Link href={getLocalizedPath(pathname, 'en')} onClick={onClose} className={`transition-all duration-300 transform active:scale-95 ${lang === 'en' ? 'opacity-100 ring-2 ring-lime-500 ring-offset-4 ring-offset-[#01140f] rounded-full' : 'opacity-40'}`}>
-                                    <FlagEN className="w-8 h-8" />
+                                <Link href={getLocalizedPath(pathname, 'en')} onClick={onClose} className={`transition-all duration-300 transform active:scale-95 ${lang === 'en' ? 'opacity-100 ring-2 ring-lime-500 ring-offset-4 ring-offset-[#01140f] rounded-sm' : 'opacity-40'}`}>
+                                    <FlagEN className="w-10 h-6" />
                                 </Link>
-                                <Link href={getLocalizedPath(pathname, 'nl')} onClick={onClose} className={`transition-all duration-300 transform active:scale-95 ${lang === 'nl' ? 'opacity-100 ring-2 ring-lime-500 ring-offset-4 ring-offset-[#01140f] rounded-full' : 'opacity-40'}`}>
-                                    <FlagNL className="w-8 h-8" />
+                                <Link href={getLocalizedPath(pathname, 'nl')} onClick={onClose} className={`transition-all duration-300 transform active:scale-95 ${lang === 'nl' ? 'opacity-100 ring-2 ring-lime-500 ring-offset-4 ring-offset-[#01140f] rounded-sm' : 'opacity-40'}`}>
+                                    <FlagNL className="w-10 h-6" />
                                 </Link>
-                                <Link href={getLocalizedPath(pathname, 'de')} onClick={onClose} className={`transition-all duration-300 transform active:scale-95 ${lang === 'de' ? 'opacity-100 ring-2 ring-lime-500 ring-offset-4 ring-offset-[#01140f] rounded-full' : 'opacity-40'}`}>
-                                    <FlagDE className="w-8 h-8" />
+                                <Link href={getLocalizedPath(pathname, 'de')} onClick={onClose} className={`transition-all duration-300 transform active:scale-95 ${lang === 'de' ? 'opacity-100 ring-2 ring-lime-500 ring-offset-4 ring-offset-[#01140f] rounded-sm' : 'opacity-40'}`}>
+                                    <FlagDE className="w-10 h-6" />
                                 </Link>
                             </div>
                         </div>

@@ -105,14 +105,14 @@ const Header: React.FC<HeaderProps> = ({ onOpenSample, onOpenMenu, dict, lang })
                             Ik maak simpele links naar /en en /nl.
                          */}
             <div className="hidden md:flex items-center gap-3">
-              <Link href={getLocalizedPath(pathname, 'en')} className={`transition-all duration-300 transform hover:scale-110 ${lang === 'en' ? 'opacity-100 ring-2 ring-lime-500 ring-offset-2 ring-offset-[#011410] rounded-full' : 'opacity-40 hover:opacity-100'}`}>
-                <FlagEN className="w-5 h-5" />
+              <Link href={getLocalizedPath(pathname, 'en')} className={`transition-all duration-300 transform hover:scale-110 ${lang === 'en' ? 'opacity-100 ring-2 ring-lime-500 ring-offset-2 ring-offset-[#011410] rounded-sm' : 'opacity-40 hover:opacity-100'}`}>
+                <FlagEN className="w-6 h-4" />
               </Link>
-              <Link href={getLocalizedPath(pathname, 'nl')} className={`transition-all duration-300 transform hover:scale-110 ${lang === 'nl' ? 'opacity-100 ring-2 ring-lime-500 ring-offset-2 ring-offset-[#011410] rounded-full' : 'opacity-40 hover:opacity-100'}`}>
-                <FlagNL className="w-5 h-5" />
+              <Link href={getLocalizedPath(pathname, 'nl')} className={`transition-all duration-300 transform hover:scale-110 ${lang === 'nl' ? 'opacity-100 ring-2 ring-lime-500 ring-offset-2 ring-offset-[#011410] rounded-sm' : 'opacity-40 hover:opacity-100'}`}>
+                <FlagNL className="w-6 h-4" />
               </Link>
-              <Link href={getLocalizedPath(pathname, 'de')} className={`transition-all duration-300 transform hover:scale-110 ${lang === 'de' ? 'opacity-100 ring-2 ring-lime-500 ring-offset-2 ring-offset-[#011410] rounded-full' : 'opacity-40 hover:opacity-100'}`}>
-                <FlagDE className="w-5 h-5" />
+              <Link href={getLocalizedPath(pathname, 'de')} className={`transition-all duration-300 transform hover:scale-110 ${lang === 'de' ? 'opacity-100 ring-2 ring-lime-500 ring-offset-2 ring-offset-[#011410] rounded-sm' : 'opacity-40 hover:opacity-100'}`}>
+                <FlagDE className="w-6 h-4" />
               </Link>
             </div>
 
