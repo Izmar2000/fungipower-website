@@ -110,9 +110,6 @@ export const Footer = () => {
                 <a href="/praktijkvoorbeelden" className="hover:text-[#FFD166] transition-colors flex items-center gap-2">Casussen <span className="text-[9px] bg-white/20 px-1.5 py-0.5 rounded-sm uppercase tracking-wider text-white/70">Bèta</span></a>
               </li>
               <li>
-                <a href="/dosering-calculator" className="hover:text-[#FFD166] transition-colors flex items-center gap-2">Calculator <span className="text-[9px] bg-white/20 px-1.5 py-0.5 rounded-sm uppercase tracking-wider text-white/70">Bèta</span></a>
-              </li>
-              <li>
                 <a href="/sector-inzichten" className="hover:text-[#FFD166] transition-colors flex items-center gap-2">Inzichten <span className="text-[9px] bg-white/20 px-1.5 py-0.5 rounded-sm uppercase tracking-wider text-white/70">Bèta</span></a>
               </li>
             </ul>
