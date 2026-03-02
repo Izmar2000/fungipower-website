@@ -29,10 +29,12 @@ export async function POST(request: Request) {
                     price_data: {
                         currency: 'eur',
                         product_data: {
-                            name: locale === 'nl' ? 'PlantiPower Proefpakket' : 'PlantiPower Sample Pack',
-                            description: locale === 'nl'
-                                ? '1x 1L All12 + 1x 60ml Shield (incl. verzendkosten)'
-                                : '1x 1L All12 + 1x 60ml Shield (incl. shipping)',
+                            name: locale === 'de' ? 'PlantiPower Probepaket' : locale === 'nl' ? 'PlantiPower Proefpakket' : 'PlantiPower Sample Pack',
+                            description: locale === 'de'
+                                ? '1x 1L All12 + 1x 60ml Shield (inkl. Versandkosten)'
+                                : locale === 'nl'
+                                    ? '1x 1L All12 + 1x 60ml Shield (incl. verzendkosten)'
+                                    : '1x 1L All12 + 1x 60ml Shield (incl. shipping)',
                         },
                         unit_amount: 2995, // €29.95
                     },

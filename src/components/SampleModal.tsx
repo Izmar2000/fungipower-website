@@ -2,16 +2,16 @@
 
 import React, { useState } from 'react';
 import { X, Check, ChevronDown } from 'lucide-react';
-import { usePathname } from 'next/navigation';
 
 interface SampleModalProps {
   isOpen: boolean;
   onClose: () => void;
+  lang: string;
 }
 
-const SampleModal: React.FC<SampleModalProps> = ({ isOpen, onClose }) => {
-  const pathname = usePathname();
-  const isNL = pathname?.startsWith('/nl') ?? false;
+const SampleModal: React.FC<SampleModalProps> = ({ isOpen, onClose, lang }) => {
+  const isNL = lang === 'nl';
+  const isDE = lang === 'de';
 
   const [formData, setFormData] = useState({
     products: ['all12', 'shield'],
@@ -43,7 +43,15 @@ const SampleModal: React.FC<SampleModalProps> = ({ isOpen, onClose }) => {
     }
   }, []);
 
-  const categories = isNL ? [
+  const categories = isDE ? [
+    { id: 'groente', label: 'Gemüse' },
+    { id: 'fruit', label: 'Obst' },
+    { id: 'sierteelt', label: 'Zierpflanzen' },
+    { id: 'boomteelt', label: 'Baumschule' },
+    { id: 'akkerbouw', label: 'Ackerbau' },
+    { id: 'opkweek', label: 'Aufzucht / Jungpflanzen' },
+    { id: 'anders', label: 'Andere' }
+  ] : isNL ? [
     { id: 'groente', label: 'Groenten' },
     { id: 'fruit', label: 'Fruit' },
     { id: 'sierteelt', label: 'Sierteelt' },
@@ -62,102 +70,161 @@ const SampleModal: React.FC<SampleModalProps> = ({ isOpen, onClose }) => {
   ];
 
   const cropsByCategory: Record<string, { v: string, l: string }[]> = {
-    groente: isNL
-      ? [{ v: 'tomaat', l: 'Tomaat' }, { v: 'komkommer', l: 'Komkommer' }, { v: 'paprika', l: 'Paprika' }, { v: 'aubergine', l: 'Aubergine' }, { v: 'sla', l: 'Sla' }, { v: 'spinazie', l: 'Spinazie' }, { v: 'anders', l: 'Anders...' }]
-      : [{ v: 'tomato', l: 'Tomato' }, { v: 'cucumber', l: 'Cucumber' }, { v: 'pepper', l: 'Pepper' }, { v: 'eggplant', l: 'Eggplant' }, { v: 'lettuce', l: 'Lettuce' }, { v: 'spinach', l: 'Spinach' }, { v: 'anders', l: 'Other...' }],
-    fruit: isNL
-      ? [{ v: 'aardbei', l: 'Aardbei' }, { v: 'blauwebes', l: 'Blauwe bes' }, { v: 'framboos', l: 'Framboos' }, { v: 'bramen', l: 'Bramen' }, { v: 'appels', l: 'Appels' }, { v: 'peren', l: 'Peren' }, { v: 'anders', l: 'Anders...' }]
-      : [{ v: 'strawberry', l: 'Strawberry' }, { v: 'blueberry', l: 'Blueberry' }, { v: 'raspberry', l: 'Raspberry' }, { v: 'blackberry', l: 'Blackberry' }, { v: 'apples', l: 'Apples' }, { v: 'pears', l: 'Pears' }, { v: 'anders', l: 'Other...' }],
-    sierteelt: isNL
-      ? [{ v: 'potplanten', l: 'Potplanten' }, { v: 'perkplanten', l: 'Perkplanten' }, { v: 'snijbloemen', l: 'Snijbloemen' }, { v: 'rozen', l: 'Rozen' }, { v: 'orchideeen', l: 'Orchideeën' }, { v: 'chrysanten', l: 'Chrysanten' }, { v: 'anders', l: 'Anders...' }]
-      : [{ v: 'potted_plants', l: 'Potted Plants' }, { v: 'bedding_plants', l: 'Bedding Plants' }, { v: 'cut_flowers', l: 'Cut Flowers' }, { v: 'roses', l: 'Roses' }, { v: 'orchids', l: 'Orchids' }, { v: 'chrysanthemums', l: 'Chrysanthemums' }, { v: 'anders', l: 'Other...' }],
-    akkerbouw: isNL
-      ? [{ v: 'aardappelen', l: 'Aardappelen' }, { v: 'suikerbieten', l: 'Suikerbieten' }, { v: 'mais', l: 'Mais' }, { v: 'granen', l: 'Granen' }, { v: 'uien', l: 'Uien' }, { v: 'wortelen', l: 'Wortelen' }, { v: 'anders', l: 'Anders...' }]
-      : [{ v: 'potatoes', l: 'Potatoes' }, { v: 'sugar_beets', l: 'Sugar Beets' }, { v: 'corn', l: 'Corn' }, { v: 'grains', l: 'Grains' }, { v: 'onions', l: 'Onions' }, { v: 'carrots', l: 'Carrots' }, { v: 'anders', l: 'Other...' }],
-    boomteelt: isNL
-      ? [{ v: 'laanbomen', l: 'Laanbomen' }, { v: 'sierheesters', l: 'Sierheesters' }, { v: 'vasteplanten', l: 'Vaste planten' }, { v: 'fruitbomen', l: 'Fruitbomen' }, { v: 'coniferen', l: 'Coniferen' }, { v: 'anders', l: 'Anders...' }]
-      : [{ v: 'avenue_trees', l: 'Avenue Trees' }, { v: 'ornamental_shrubs', l: 'Ornamental Shrubs' }, { v: 'perennials', l: 'Perennials' }, { v: 'fruit_trees', l: 'Fruit Trees' }, { v: 'conifers', l: 'Conifers' }, { v: 'anders', l: 'Other...' }],
-    opkweek: isNL
-      ? [{ v: 'groenteplanten', l: 'Groenteplanten' }, { v: 'sierteeltstekken', l: 'Sierteeltstekken' }, { v: 'boomkwekerijmateriaal', l: 'Boomkwekerijmateriaal' }, { v: 'anders', l: 'Anders...' }]
-      : [{ v: 'vegetable_plants', l: 'Vegetable Plants' }, { v: 'ornamental_cuttings', l: 'Ornamental Cuttings' }, { v: 'nursery_stock', l: 'Nursery Stock' }, { v: 'anders', l: 'Other...' }]
+    groente: isDE
+      ? [{ v: 'tomaat', l: 'Tomate' }, { v: 'komkommer', l: 'Gurke' }, { v: 'paprika', l: 'Paprika' }, { v: 'aubergine', l: 'Aubergine' }, { v: 'sla', l: 'Salat' }, { v: 'spinazie', l: 'Spinat' }, { v: 'anders', l: 'Andere...' }]
+      : isNL
+        ? [{ v: 'tomaat', l: 'Tomaat' }, { v: 'komkommer', l: 'Komkommer' }, { v: 'paprika', l: 'Paprika' }, { v: 'aubergine', l: 'Aubergine' }, { v: 'sla', l: 'Sla' }, { v: 'spinazie', l: 'Spinazie' }, { v: 'anders', l: 'Anders...' }]
+        : [{ v: 'tomato', l: 'Tomato' }, { v: 'cucumber', l: 'Cucumber' }, { v: 'pepper', l: 'Pepper' }, { v: 'eggplant', l: 'Eggplant' }, { v: 'lettuce', l: 'Lettuce' }, { v: 'spinach', l: 'Spinach' }, { v: 'anders', l: 'Other...' }],
+    fruit: isDE
+      ? [{ v: 'aardbei', l: 'Erdbeere' }, { v: 'blauwebes', l: 'Blaubeere' }, { v: 'framboos', l: 'Himbeere' }, { v: 'bramen', l: 'Brombeere' }, { v: 'appels', l: 'Äpfel' }, { v: 'peren', l: 'Birnen' }, { v: 'anders', l: 'Andere...' }]
+      : isNL
+        ? [{ v: 'aardbei', l: 'Aardbei' }, { v: 'blauwebes', l: 'Blauwe bes' }, { v: 'framboos', l: 'Framboos' }, { v: 'bramen', l: 'Bramen' }, { v: 'appels', l: 'Appels' }, { v: 'peren', l: 'Peren' }, { v: 'anders', l: 'Anders...' }]
+        : [{ v: 'strawberry', l: 'Strawberry' }, { v: 'blueberry', l: 'Blueberry' }, { v: 'raspberry', l: 'Raspberry' }, { v: 'blackberry', l: 'Blackberry' }, { v: 'apples', l: 'Apples' }, { v: 'pears', l: 'Pears' }, { v: 'anders', l: 'Other...' }],
+    sierteelt: isDE
+      ? [{ v: 'potplanten', l: 'Topfpflanzen' }, { v: 'perkplanten', l: 'Beetpflanzen' }, { v: 'snijbloemen', l: 'Schnittblumen' }, { v: 'rozen', l: 'Rosen' }, { v: 'orchideeen', l: 'Orchideen' }, { v: 'chrysanten', l: 'Chrysanthemen' }, { v: 'anders', l: 'Andere...' }]
+      : isNL
+        ? [{ v: 'potplanten', l: 'Potplanten' }, { v: 'perkplanten', l: 'Perkplanten' }, { v: 'snijbloemen', l: 'Snijbloemen' }, { v: 'rozen', l: 'Rozen' }, { v: 'orchideeen', l: 'Orchideeën' }, { v: 'chrysanten', l: 'Chrysanten' }, { v: 'anders', l: 'Anders...' }]
+        : [{ v: 'potted_plants', l: 'Potted Plants' }, { v: 'bedding_plants', l: 'Bedding Plants' }, { v: 'cut_flowers', l: 'Cut Flowers' }, { v: 'roses', l: 'Roses' }, { v: 'orchids', l: 'Orchids' }, { v: 'chrysanthemums', l: 'Chrysanthemums' }, { v: 'anders', l: 'Other...' }],
+    akkerbouw: isDE
+      ? [{ v: 'aardappelen', l: 'Kartoffeln' }, { v: 'suikerbieten', l: 'Zuckerrüben' }, { v: 'mais', l: 'Mais' }, { v: 'granen', l: 'Getreide' }, { v: 'uien', l: 'Zwiebeln' }, { v: 'wortelen', l: 'Karotten' }, { v: 'anders', l: 'Andere...' }]
+      : isNL
+        ? [{ v: 'aardappelen', l: 'Aardappelen' }, { v: 'suikerbieten', l: 'Suikerbieten' }, { v: 'mais', l: 'Mais' }, { v: 'granen', l: 'Granen' }, { v: 'uien', l: 'Uien' }, { v: 'wortelen', l: 'Wortelen' }, { v: 'anders', l: 'Anders...' }]
+        : [{ v: 'potatoes', l: 'Potatoes' }, { v: 'sugar_beets', l: 'Sugar Beets' }, { v: 'corn', l: 'Corn' }, { v: 'grains', l: 'Grains' }, { v: 'onions', l: 'Onions' }, { v: 'carrots', l: 'Carrots' }, { v: 'anders', l: 'Other...' }],
+    boomteelt: isDE
+      ? [{ v: 'laanbomen', l: 'Alleebäume' }, { v: 'sierheesters', l: 'Ziersträucher' }, { v: 'vasteplanten', l: 'Stauden' }, { v: 'fruitbomen', l: 'Obstbäume' }, { v: 'coniferen', l: 'Koniferen' }, { v: 'anders', l: 'Andere...' }]
+      : isNL
+        ? [{ v: 'laanbomen', l: 'Laanbomen' }, { v: 'sierheesters', l: 'Sierheesters' }, { v: 'vasteplanten', l: 'Vaste planten' }, { v: 'fruitbomen', l: 'Fruitbomen' }, { v: 'coniferen', l: 'Coniferen' }, { v: 'anders', l: 'Anders...' }]
+        : [{ v: 'avenue_trees', l: 'Avenue Trees' }, { v: 'ornamental_shrubs', l: 'Ornamental Shrubs' }, { v: 'perennials', l: 'Perennials' }, { v: 'fruit_trees', l: 'Fruit Trees' }, { v: 'conifers', l: 'Conifers' }, { v: 'anders', l: 'Other...' }],
+    opkweek: isDE
+      ? [{ v: 'groenteplanten', l: 'Gemüsepflanzen' }, { v: 'sierteeltstekken', l: 'Zierpflanzenstecklinge' }, { v: 'boomkwekerijmateriaal', l: 'Baumschulmaterial' }, { v: 'anders', l: 'Andere...' }]
+      : isNL
+        ? [{ v: 'groenteplanten', l: 'Groenteplanten' }, { v: 'sierteeltstekken', l: 'Sierteeltstekken' }, { v: 'boomkwekerijmateriaal', l: 'Boomkwekerijmateriaal' }, { v: 'anders', l: 'Anders...' }]
+        : [{ v: 'vegetable_plants', l: 'Vegetable Plants' }, { v: 'ornamental_cuttings', l: 'Ornamental Cuttings' }, { v: 'nursery_stock', l: 'Nursery Stock' }, { v: 'anders', l: 'Other...' }]
   };
 
-  const content = {
-    title: isNL ? "BESTEL HIER JE PROEFPAKKET" : "ORDER YOUR SAMPLE PACK HERE",
-    subtitle: isNL
-      ? "Je ontvangt 1x 1 liter PlantiPower All12 en 1x 60ml PlantiPower Shield voor €29,95 (excl. BTW) inclusief verzendkosten."
-      : "You receive 1x 1 liter PlantiPower All12 and 1x 60ml PlantiPower Shield for €29.95 (excl. VAT) including shipping.",
-    product1: {
-      name: "PlantiPower All12 (1L)",
-      sub: isNL ? "VOEDING TRANSPORTEREN" : "TRANSPORT NUTRIENTS",
-    },
-    product2: {
-      name: "PlantiPower Shield (60ml)",
-      sub: isNL ? "BETERE WEERBAARHEID" : "BETTER RESILIENCE",
-    },
-    bundleTitle: isNL ? "GESELECTEERDE TEST" : "SELECTED TEST",
-    bundleSub: isNL ? "2X PRODUCTEN (ALL12 + SHIELD)" : "2X PRODUCTS (ALL12 + SHIELD)",
+  const content = isDE ? {
+    title: "PROBEPAKET BESTELLEN",
+    subtitle: "Sie erhalten 1x 1 Liter PlantiPower All12 und 1x 60ml PlantiPower Shield für €29,95 (zzgl. MwSt.) inklusive Versandkosten.",
+    product1: { name: "PlantiPower All12 (1L)", sub: "NÄHRSTOFFTRANSPORT" },
+    product2: { name: "PlantiPower Shield (60ml)", sub: "BESSERE WIDERSTANDSKRAFT" },
+    bundleTitle: "AUSGEWÄHLTER TEST",
+    bundleSub: "2X PRODUKTE (ALL12 + SHIELD)",
     price: "€29,95",
-    shipping: isNL ? "INCL. VERZENDING | EXCL. BTW" : "INCL. SHIPPING | EXCL. VAT",
-
-    labelCompany: isNL ? "BEDRIJFSNAAM" : "COMPANY NAME",
-    placeholderCompany: isNL ? "Je Kwekerij" : "Your Nursery",
-    labelName: isNL ? "CONTACTPERSOON" : "CONTACT PERSON",
-    placeholderName: isNL ? "Naam" : "Name",
-    labelEmail: isNL ? "EMAIL ADRES" : "EMAIL ADDRESS",
+    shipping: "INKL. VERSAND | ZZGL. MWST",
+    labelCompany: "UNTERNEHMENSNAME",
+    placeholderCompany: "Ihre Gärtnerei",
+    labelName: "KONTAKTPERSON",
+    placeholderName: "Name",
+    labelEmail: "E-MAIL ADRESSE",
+    placeholderEmail: "info@beispiel.de",
+    labelPhone: "TELEFONNUMMER",
+    placeholderPhone: "+49 ...",
+    labelAddress: "STRASSE + HAUSNUMMER",
+    placeholderAddress: "Musterstraße 123",
+    labelCity: "PLZ + ORT",
+    placeholderCity: "12345 Stadt",
+    labelCategory: "KULTUR / TYP DER GÄRTNEREI",
+    subtextCategory: "Wählen Sie die Hauptkategorie Ihrer Kultur.",
+    labelSpecificCrop: "Spezifische Kultur",
+    subtextSpecificCrop: "Wählen Sie Ihre Kultur aus der Liste.",
+    labelOtherCrop: "Geben Sie Ihre Kultur an",
+    subtextOtherCrop: "Nennen Sie die Kultur, auf die Sie den Test anwenden möchten.",
+    labelComments: "ANMERKUNGEN ODER SPEZIFISCHE FRAGEN",
+    placeholderComments: "Haben Sie spezifische Herausforderungen?",
+    btnSubmit: "Bestellen & Bezahlen",
+    footerNote: "Sichere Zahlung über Stripe.",
+    thankYou: "Vielen Dank!",
+    successMsg: "Ihre Anfrage wurde erfolgreich versendet."
+  } : isNL ? {
+    title: "BESTEL HIER JE PROEFPAKKET",
+    subtitle: "Je ontvangt 1x 1 liter PlantiPower All12 en 1x 60ml PlantiPower Shield voor €29,95 (excl. BTW) inclusief verzendkosten.",
+    product1: { name: "PlantiPower All12 (1L)", sub: "VOEDING TRANSPORTEREN" },
+    product2: { name: "PlantiPower Shield (60ml)", sub: "BETERE WEERBAARHEID" },
+    bundleTitle: "GESELECTEERDE TEST",
+    bundleSub: "2X PRODUCTEN (ALL12 + SHIELD)",
+    price: "€29,95",
+    shipping: "INCL. VERZENDING | EXCL. BTW",
+    labelCompany: "BEDRIJFSNAAM",
+    placeholderCompany: "Je Kwekerij",
+    labelName: "CONTACTPERSOON",
+    placeholderName: "Naam",
+    labelEmail: "E-MAIL ADRES",
     placeholderEmail: "info@voorbeeld.nl",
-    labelPhone: isNL ? "TELEFOONNUMMER" : "PHONE NUMBER",
+    labelPhone: "TELEFOONNUMMER",
     placeholderPhone: "+31 6 ...",
-    labelAddress: isNL ? "STRAAT + HUISNUMMER" : "STREET + NUMBER",
-    placeholderAddress: isNL ? "Straatnaam 123" : "Streetname 123",
-    labelCity: isNL ? "POSTCODE + PLAATS" : "ZIP + CITY",
-    placeholderCity: isNL ? "1234 AB Plaatsnaam" : "1234 AB City",
-
-    labelCategory: isNL ? "TEELT / TYPE KWEKERIJ" : "CROP / NURSERY TYPE",
-    subtextCategory: isNL ? "Kies de hoofdcategorie van je teelt." : "Choose the main category of your crop.",
-    labelSpecificCrop: isNL ? "Specifiek gewas" : "Specific crop",
-    subtextSpecificCrop: isNL ? "Kies je gewas uit de lijst." : "Choose your crop from the list.",
-
-    labelOtherCrop: isNL ? "Geef je gewas op" : "Specify your crop",
-    subtextOtherCrop: isNL ? "Vermeld het gewas waarop je de proef wilt toepassen." : "Mention the crop you want to apply the test to.",
-
-    labelComments: isNL ? "OPMERKINGEN OF SPECIFIEKE VRAGEN" : "COMMENTS OR SPECIFIC QUESTIONS",
-    placeholderComments: isNL ? "Heb je specifieke uitdagingen?" : "Do you have specific challenges?",
-
-    btnSubmit: isNL ? "Bestellen & Betalen" : "Order & Pay",
-    footerNote: isNL ? "Veilige betaling via Stripe." : "Secure payment via Stripe.",
-    thankYou: isNL ? "Bedankt!" : "Thank You!",
-    successMsg: isNL ? "Je aanvraag is succesvol verzonden." : "Your request has been successfully sent."
+    labelAddress: "STRAAT + HUISNUMMER",
+    placeholderAddress: "Straatnaam 123",
+    labelCity: "POSTCODE + PLAATS",
+    placeholderCity: "1234 AB Plaatsnaam",
+    labelCategory: "TEELT / TYPE KWEKERIJ",
+    subtextCategory: "Kies de hoofdcategorie van je teelt.",
+    labelSpecificCrop: "Specifiek gewas",
+    subtextSpecificCrop: "Kies je gewas uit de lijst.",
+    labelOtherCrop: "Geef je gewas op",
+    subtextOtherCrop: "Vermeld het gewas waarop je de proef wilt toepassen.",
+    labelComments: "OPMERKINGEN ODER SPECIFIEKE VRAGEN",
+    placeholderComments: "Heb je specifieke uitdagingen?",
+    btnSubmit: "Bestellen & Betalen",
+    footerNote: "Veilige betaling via Stripe.",
+    thankYou: "Bedankt!",
+    successMsg: "Je aanvraag is succesvol verzonden."
+  } : {
+    title: "ORDER YOUR SAMPLE PACK HERE",
+    subtitle: "You receive 1x 1 liter PlantiPower All12 and 1x 60ml PlantiPower Shield for €29.95 (excl. VAT) including shipping.",
+    product1: { name: "PlantiPower All12 (1L)", sub: "TRANSPORT NUTRIENTS" },
+    product2: { name: "PlantiPower Shield (60ml)", sub: "BETERE RESILIENCE" },
+    bundleTitle: "SELECTED TEST",
+    bundleSub: "2X PRODUCTS (ALL12 + SHIELD)",
+    price: "€29.95",
+    shipping: "INCL. SHIPPING | EXCL. VAT",
+    labelCompany: "COMPANY NAME",
+    placeholderCompany: "Your Nursery",
+    labelName: "CONTACT PERSON",
+    placeholderName: "Name",
+    labelEmail: "EMAIL ADDRESS",
+    placeholderEmail: "info@example.com",
+    labelPhone: "PHONE NUMBER",
+    placeholderPhone: "+ ...",
+    labelAddress: "STREET + NUMBER",
+    placeholderAddress: "Streetname 123",
+    labelCity: "ZIP + CITY",
+    placeholderCity: "1234 AB City",
+    labelCategory: "CROP / NURSERY TYPE",
+    subtextCategory: "Choose the main category of your crop.",
+    labelSpecificCrop: "Specific crop",
+    subtextSpecificCrop: "Choose your crop from the list.",
+    labelOtherCrop: "Specify your crop",
+    subtextOtherCrop: "Mention the crop you want to apply the test to.",
+    labelComments: "COMMENTS OR SPECIFIC QUESTIONS",
+    placeholderComments: "Do you have specific challenges?",
+    btnSubmit: "Order & Pay",
+    footerNote: "Secure payment via Stripe.",
+    thankYou: "Thank You!",
+    successMsg: "Your request has been successfully sent."
   };
 
   if (!isOpen) return null;
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submission started');
     setIsSubmitting(true);
 
     try {
-      console.log('Calling /api/create-checkout...');
       const response = await fetch('/api/create-checkout', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ ...formData, locale: isNL ? 'nl' : 'en' }),
+        body: JSON.stringify({ ...formData, locale: lang }),
       });
 
       const data = await response.json();
-      console.log('Response received:', data);
 
       if (response.ok && data.url) {
-        console.log('Redirecting to Stripe:', data.url);
         window.location.href = data.url;
       } else {
-        console.error('Checkout error:', data);
-        alert(isNL ? `Er is iets misgegaan: ${data.error || 'Er is geen URL ontvangen'}` : `Something went wrong: ${data.error || 'No URL received'}`);
+        alert(isDE ? `Etwas ist schief gelaufen: ${data.error || 'Keine URL erhalten'}` : isNL ? `Er is iets misgegaan: ${data.error || 'Er is geen URL ontvangen'}` : `Something went wrong: ${data.error || 'No URL received'}`);
       }
     } catch (error: any) {
-      console.error('Submission error:', error);
-      alert(isNL ? `Er is een fout opgetreden: ${error.message}` : `An error occurred: ${error.message}`);
+      alert(isDE ? `Ein Fehler ist aufgetreten: ${error.message}` : isNL ? `Er is een fout opgetreden: ${error.message}` : `An error occurred: ${error.message}`);
     } finally {
       setIsSubmitting(false);
     }
@@ -188,7 +255,7 @@ const SampleModal: React.FC<SampleModalProps> = ({ isOpen, onClose }) => {
             <div className="mb-8 flex flex-col md:flex-row md:items-end justify-between gap-6">
               <div className="flex-1">
                 <div className="inline-block px-3 py-1 rounded-md bg-[#0d2b24] border border-lime-500/30 text-lime-500 text-[10px] font-bold uppercase tracking-wider mb-4">
-                  {isNL ? "Proefpakket" : "Sample Pack"}
+                  {isDE ? "Probepaket" : isNL ? "Proefpakket" : "Sample Pack"}
                 </div>
                 <h2 className="text-2xl md:text-3xl font-bold text-white uppercase tracking-tight mb-3">
                   {content.title}
@@ -198,7 +265,6 @@ const SampleModal: React.FC<SampleModalProps> = ({ isOpen, onClose }) => {
                 </p>
               </div>
 
-              {/* COMPACT BOTTLES VISUAL */}
               <div className="flex items-center -space-x-4 pr-4">
                 <div className="relative z-10 filter drop-shadow(0 10px 20px rgba(0,0,0,0.4))">
                   <img src="/images/products/plantipower-all12-transparant.png" alt="All12" className="h-24 md:h-32 object-contain" />
@@ -209,11 +275,10 @@ const SampleModal: React.FC<SampleModalProps> = ({ isOpen, onClose }) => {
               </div>
             </div>
 
-            {/* Price section - Subtle */}
             <div className="bg-[#021814] rounded-xl p-4 border border-white/5 flex items-center justify-between mb-8">
               <div className="flex items-center gap-3">
                 <div className="w-2 h-2 rounded-full bg-lime-500 animate-pulse" />
-                <span className="text-[10px] font-bold text-white uppercase tracking-[0.2em]">{isNL ? "PROEFPAKKET BUNDEL: OP VOORRAAD" : "SAMPLE PACK BUNDLE: IN STOCK"}</span>
+                <span className="text-[10px] font-bold text-white uppercase tracking-[0.2em]">{isDE ? "PROBEPAKET BUNDEL: AUF LAGER" : isNL ? "PROEFPAKKET BUNDEL: OP VOORRAAD" : "SAMPLE PACK BUNDLE: IN STOCK"}</span>
               </div>
               <div className="flex items-center gap-4">
                 <div className="text-right">
@@ -243,9 +308,7 @@ const SampleModal: React.FC<SampleModalProps> = ({ isOpen, onClose }) => {
                 </div>
               </div>
 
-              {/* TWO DROPDOWNS FOR CROP SELECTION */}
               <div className="grid md:grid-cols-2 gap-6">
-                {/* Category Dropdown */}
                 <div className="space-y-3">
                   <div className="ml-1">
                     <label className="text-[10px] font-bold text-emerald-100/50 uppercase tracking-widest block">{content.labelCategory}</label>
@@ -258,7 +321,7 @@ const SampleModal: React.FC<SampleModalProps> = ({ isOpen, onClose }) => {
                       onChange={(e) => setFormData(prev => ({ ...prev, cropCategory: e.target.value, crop: '', otherCrop: '' }))}
                       required
                     >
-                      <option value="">{isNL ? "Maak een keuze..." : "Make a choice..."}</option>
+                      <option value="">{isDE ? "Wählen Sie..." : isNL ? "Maak een keuze..." : "Make a choice..."}</option>
                       {categories.map(cat => (
                         <option key={cat.id} value={cat.id}>{cat.label}</option>
                       ))}
@@ -267,7 +330,6 @@ const SampleModal: React.FC<SampleModalProps> = ({ isOpen, onClose }) => {
                   </div>
                 </div>
 
-                {/* Specific Crop Dropdown */}
                 <div className={`space-y-3 transition-all duration-300 ${!formData.cropCategory || !cropsByCategory[formData.cropCategory] ? 'opacity-30 pointer-events-none' : 'opacity-100'}`}>
                   <div className="ml-1">
                     <label className="text-[10px] font-bold text-emerald-100/50 uppercase tracking-widest block">{content.labelSpecificCrop}</label>
@@ -281,7 +343,7 @@ const SampleModal: React.FC<SampleModalProps> = ({ isOpen, onClose }) => {
                       required={!!(formData.cropCategory && cropsByCategory[formData.cropCategory])}
                       disabled={!formData.cropCategory || !cropsByCategory[formData.cropCategory]}
                     >
-                      <option value="">{isNL ? "Maak een keuze..." : "Make a choice..."}</option>
+                      <option value="">{isDE ? "Wählen Sie..." : isNL ? "Maak een keuze..." : "Make a choice..."}</option>
                       {formData.cropCategory && cropsByCategory[formData.cropCategory]?.map(c => (
                         <option key={c.v} value={c.v}>{c.l}</option>
                       ))}
@@ -291,7 +353,6 @@ const SampleModal: React.FC<SampleModalProps> = ({ isOpen, onClose }) => {
                 </div>
               </div>
 
-              {/* Conditional "Anders" Field */}
               {(formData.cropCategory === 'anders' || formData.crop === 'anders') && (
                 <div className="space-y-3 animate-in fade-in duration-300">
                   <div className="ml-1">
@@ -301,7 +362,7 @@ const SampleModal: React.FC<SampleModalProps> = ({ isOpen, onClose }) => {
                   <input
                     type="text"
                     required
-                    placeholder={isNL ? "Vul je gewas in..." : "Enter your crop..."}
+                    placeholder={isDE ? "Geben Sie Ihre Kultur ein..." : isNL ? "Vul je gewas in..." : "Enter your crop..."}
                     className="w-full bg-[#0d2b24] border border-white/5 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-lime-500/50 transition-all font-medium"
                     value={formData.otherCrop}
                     onChange={(e) => setFormData({ ...formData, otherCrop: e.target.value })}
@@ -314,7 +375,6 @@ const SampleModal: React.FC<SampleModalProps> = ({ isOpen, onClose }) => {
                 <textarea className="w-full bg-[#0d2b24] border border-white/5 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-lime-500/50 transition-all h-24 resize-none font-medium" placeholder={content.placeholderComments} value={formData.comments} onChange={(e) => setFormData({ ...formData, comments: e.target.value })} />
               </div>
 
-              {/* Honeypot field - Invisible to humans */}
               <div style={{ display: 'none' }} aria-hidden="true">
                 <input
                   type="text"
@@ -324,7 +384,6 @@ const SampleModal: React.FC<SampleModalProps> = ({ isOpen, onClose }) => {
                   onChange={(e) => setFormData({ ...formData, website_url: e.target.value } as any)}
                 />
               </div>
-
 
               <div className="pt-4">
                 <button

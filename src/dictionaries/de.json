@@ -1,0 +1,276 @@
+{
+    "Header": {
+        "home": "Home",
+        "about": "Über uns",
+        "products": "Produkte",
+        "faq": "FAQ",
+        "contact": "Kontakt",
+        "cta": "Probe anfordern",
+        "all12": "PlantiPower All12",
+        "all12Desc": "Optimieren Sie die Aufnahme",
+        "shield": "PlantiPower Shield",
+        "shieldDesc": "Maximale Widerstandskraft",
+        "aboutLabel": "Über uns"
+    },
+    "Hero": {
+        "titleLine1": "MEHR AUFNAHME",
+        "titleLine2": "STÄRKERE WURZELN",
+        "titleLine3": "HÖHERER ERTRAG",
+        "uspsPart1": "WENIGER VERSCHWENDUNG",
+        "uspsPart2": "BESSERE AUFNAHME",
+        "uspsPart3": "GESÜNDERE KULTUREN",
+        "description": "Ein Teil der Nährstoffe, die Sie zuführen, verbleibt immer im Boden oder Substrat. Die Folge: Die Pflanze nutzt ihr volles Potenzial nicht.<br /><br />PlantiPower ALL12 transportiert alle 12 essentiellen Nährstoffe zur Wurzel, wodurch die Pflanze vitaler ist und effizienter wächst.",
+        "ctaMore": "Mehr über",
+        "ctaProduct": "PlantiPower ALL12",
+        "ctaView": "Ansehen",
+        "ctaCases": "Praxisbeispiele"
+    },
+    "GrowerFocus": {
+        "badge": "DIE PHILOSOPHIE",
+        "title": "Wir ändern nichts",
+        "titleAccent": "Sie optimieren alles",
+        "description": "Ihr Düngeplan ist das Fundament Ihres Erfolgs. PlantiPower wurde entwickelt, um dieses Fundament zu stärken, nicht zu ersetzen. Wir bieten die technologische Unterstützung für eine stabile Aufnahme und konsistente Ergebnisse in jeder Phase der Kultur.",
+        "usps": [
+            {
+                "title": "Ihr Plan bleibt führend",
+                "desc": "Keine Anpassungen bei EC oder pH erforderlich. PlantiPower integriert sich nahtlos."
+            },
+            {
+                "title": "Sofort sichtbares Ergebnis",
+                "desc": "Bessere Aufnahme bedeutet direkt eine vitalere und widerstandsfähigere Kultur."
+            },
+            {
+                "title": "Machen Sie weiter wie bisher",
+                "desc": "PlantiPower erledigt den Rest im Hintergrund."
+            }
+        ],
+        "cta": "Probe anfordern"
+    },
+    "CropResults": {
+        "badge": "Das Ergebnis",
+        "title": "Validierte",
+        "titleHighlight": "Praxisresultate",
+        "validated": "Validiert",
+        "description": "Vom Tomatenanbau bis zur Gurkenzucht: PlantiPower maximiert die Aufnahmekapazität in jedem professionellen Umfeld.",
+        "crops": [
+            {
+                "name": "Tomatenanbau",
+                "stats_0_title": "Fruchtqualität",
+                "stats_0_desc": "Konsistentes Gewicht und höherer Brix-Wert.",
+                "stats_1_title": "Effiziente Aufnahme",
+                "stats_1_desc": "Weniger Verschwendung von Düngemitteln."
+            },
+            {
+                "name": "Gurkenanbau",
+                "stats_0_badgeLabel": "+2",
+                "stats_0_title": "+2 Gurken / m²",
+                "stats_0_desc": "Gewinn bei Van Gog Gärtnereien.",
+                "stats_1_title": "1 Tag früher ernten",
+                "stats_1_desc": "Schnellerer Zyklus durch Transporteffizienz."
+            }
+        ]
+    },
+    "GlobalStandard": {
+        "badge": "Industrielle Exzellenz",
+        "title": "Niederländische Qualität",
+        "titleHighlight": "Weltweite Wirkung",
+        "desc": "Begonnen im agrarischen Herzen von Venlo, Niederlande, gewachsen zu einer Lösung für professionelle Erzeuger weltweit.",
+        "dutchMade": "100% Niederländisches Fabrikat",
+        "premiumQuality": "Premium Qualität",
+        "exportReady": "Bereit für den Export",
+        "logistics": "Weltweite Logistik"
+    },
+    "Testimonials": {
+        "title": "Die Erfahrung der Erzeuger",
+        "average": "DURCHSCHNITT",
+        "reviews": [
+            {
+                "name": "Tomatenerzeuger",
+                "role": "Noord-Brabant",
+                "text": "Seit wir PlantiPower zu unserem Plan hinzufügen, sehen wir einen deutlichen Unterschied: stärkere Pflanzen, vollere Blüte und einen kürzeren Wachstumszyklus. Und das ohne zusätzliche Zusätze."
+            },
+            {
+                "name": "Kräutererzeuger",
+                "role": "Biologischer Anbau",
+                "text": "Was mich anspricht, ist, dass PlantiPower nicht nur Ergebnisse liefert, sondern die Pflanze wirklich stärkt. Weniger Ausfall, bessere Aufnahme und 100% natürlich. Genau das, was der Sektor braucht."
+            }
+        ]
+    },
+    "ProblemSection": {
+        "badge": "DIE HERAUSFORDERUNG",
+        "title": "Das Problem in",
+        "titleAccent": "der Praxis",
+        "description": "In einer perfekten Welt wird jedes Gramm Dünger, das Sie geben, auch tatsächlich von der Pflanze aufgenommen. Die Realität sieht anders aus. Faktoren wie pH-Schwankungen, kaltes Wasser oder ein Ungleichgewicht in der Wurzelzone verursachen oft Blockaden.",
+        "quote": "\"Dies führt dazu, dass ungenutzte Nährstoffe im Substrat verbleiben – eine Verschwendung der Investition und belastend für die Kultur.\"",
+        "closing": "Indem Sie diese 'Blocker' mit PlantiPower beseitigen, holen Sie das Maximum aus Ihrem bestehenden Plan heraus."
+    },
+    "About": {
+        "metaTitle": "Über Uns | PlantiPower",
+        "metaDesc": "PlantiPower ist aus der Praxis entstanden. Wir entwickeln natürliche Lösungen, die Pflanzen in ihren natürlichen Prozessen unterstützen.",
+        "heroBadge": "Aus der Praxis entstanden",
+        "heroTitle": "ERZEUGER FÜHREND.",
+        "heroTitleAccent": "WISSENSCHAFT UNTERSTÜTZEND.",
+        "heroDesc": "PlantiPower wird wissenschaftlich entwickelt, entsteht aber immer aus der Praxis der Erzeuger. Nur was für Pflanze und Erzeuger funktioniert, hat Bestand.",
+        "visionBadge": "Unsere Vision",
+        "visionTitle": "Wofür wir",
+        "visionTitleAccent": "stehen.",
+        "visionDesc": "Gesundes Wachstum beginnt mit Balance. Wir unterstützen die natürlichen Prozesse der Pflanze, ohne sie zu forcieren.",
+        "coreTitle": "Der Kern",
+        "coreDesc": "Wir glauben, dass gesundes Wachstum mit Balance beginnt. Nicht durch das Forcieren des Wachstums, sondern durch die Unterstützung von Prozessen, die bereits in der Pflanze stattfinden.",
+        "approachTitle": "Der Ansatz",
+        "approachDesc": "Wir entwickeln Produkte, die Pflanzen in ihren natürlichen Prozessen unterstützen. Durch einen intelligenteren Umgang mit dem, was bereits vorhanden ist, tragen unsere Lösungen zu einem gleichmäßigen Wachstum und einem besser funktionierenden Anbausystem bei.",
+        "values": [
+            {
+                "title": "Balance",
+                "desc": "Unterstützung natürlicher Prozesse.",
+                "icon": "Leaf"
+            },
+            {
+                "title": "Gleichmäßigkeit",
+                "desc": "Stabiles Wachstum über die ganze Saison.",
+                "icon": "Zap"
+            },
+            {
+                "title": "Effizienz",
+                "desc": "Intelligenterer Umgang mit verfügbarem Input.",
+                "icon": "Target"
+            },
+            {
+                "title": "Widerstandsfähigkeit",
+                "desc": "Respekt vor Pflanze, Boden und Umwelt.",
+                "icon": "ShieldCheck"
+            }
+        ],
+        "whoWeAreTitle": "Wofür wir",
+        "whoWeAreAccent": "stehen.",
+        "whoWeAreDesc": "\"Unsere Produkte wurden für professionelle Erzeuger entwickelt, die auf Qualität, Stabilität und Effizienz setzen. Erzeuger, die langfristig bauen.\"",
+        "productionBadge": "In den Niederlanden entwickelt",
+        "productionTitle": "Entwickelt und produziert in den Niederlanden",
+        "productionDesc": "PlantiPower wird in enger Zusammenarbeit mit Erzeugern und Agrarexperten entwickelt und produziert. Die Produkte werden unter realistischen Bedingungen getestet und auf Basis von Praxiserfahrungen optimiert.",
+        "productionPoints": [
+            "Praktisch anwendbar im täglichen Anbau",
+            "Kombinierbar mit bestehenden Plänen",
+            "Geeignet für verschiedene Substrate",
+            "100% natürliche Zusammensetzung"
+        ],
+        "missionTitle": "Unsere Mission",
+        "missionDesc": "\"Die Entwicklung natürlicher, praktischer Lösungen, die Erzeuger dabei unterstützen, ihren Anbau stabiler, effizienter und zukunftssicherer zu machen.\""
+    },
+    "Contact": {
+        "title": "Nehmen Sie Kontakt auf,",
+        "titleAccent": "noch heute",
+        "desc": "Möchten Sie Ihren Anbau optimieren und mehr Ertrag aus Ihren Kulturen herausholen? Fordern Sie eine Probe an oder kontaktieren Sie uns für eine persönliche Beratung.",
+        "labelName": "Name",
+        "labelCompany": "Unternehmen",
+        "labelEmail": "E-Mail",
+        "labelMessage": "Nachricht",
+        "btnSend": "Anfrage senden",
+        "sending": "Senden...",
+        "successTitle": "Nachricht gesendet!",
+        "successMsg": "Vielen Dank für Ihre Nachricht. Wir werden uns so schnell wie möglich mit Ihnen in Verbindung setzen.",
+        "newMsg": "Neue Nachricht senden",
+        "subject": "Neue Kontaktanfrage",
+        "metaTitle": "Kontakt | PlantiPower",
+        "metaDesc": "Kontaktieren Sie PlantiPower für Fragen, Beratung oder Kooperationen.",
+        "heroTitle": "Nehmen Sie Kontakt",
+        "heroTitleAccent": "mit uns auf"
+    },
+    "ContactPage": {
+        "title": "Nehmen Sie",
+        "titleAccent": "Kontakt auf",
+        "description": "Haben Sie Fragen zu unseren Produkten oder möchten Sie Partner werden? Wir sind für Sie da.",
+        "metaTitle": "Kontakt | PlantiPower",
+        "metaDesc": "Kontaktieren Sie PlantiPower. Fragen zu Produkten, Partnerschaften oder Vertrieb? Wir helfen Ihnen gerne weiter."
+    },
+    "FAQ": {
+        "title": "HÄUFIG GESTELLTE",
+        "titleAccent": " FRAGEN",
+        "metaTitle": "Häufig gestellte Fragen | PlantiPower",
+        "metaDesc": "Häufig gestellte Fragen zu PlantiPower Biostimulanzien.",
+        "items": [
+            {
+                "q": "Was ist PlantiPower?",
+                "a": "PlantiPower ist ein natürlicher Nährstoff-Transporter, der Düngemittel direkt an die Pflanzenwurzeln liefert. Es hilft Pflanzen, Nährstoffe effizienter aufzunehmen, was zu stärkerem Wachstum, höherem Ertrag und besserer Bodengesundheit führt."
+            },
+            {
+                "q": "Wie oft sollte ich PlantiPower anwenden?",
+                "a": "Für optimale Ergebnisse empfehlen wir eine monatliche Anwendung. Konsultieren Sie die Produktinformationen für spezifische Dosierungen pro Kultur."
+            },
+            {
+                "q": "Ist PlantiPower ein Dünger?",
+                "a": "Nein, PlantiPower ist kein Dünger, sondern ein Biostimulans und Transportmittel, das die Wirkung Ihrer bestehenden Düngemittel verstärkt."
+            },
+            {
+                "q": "Kann ich es mit anderen Düngemitteln verwenden?",
+                "a": "Ja, PlantiPower ist so konzipiert, dass es synergetisch mit allen gängigen Düngeprogrammen arbeitet und deren Aufnahme verbessert."
+            },
+            {
+                "q": "Wie funktioniert PlantiPower?",
+                "a": "Es verbessert die Aufnahmekapazität der Wurzeln und erleichtert den Transport von Mineralien in der Pflanze, wodurch die Pflanze weniger Energie für die Aufnahme verliert."
+            },
+            {
+                "q": "Welche Verpackungsgrößen gibt es?",
+                "a": "All12 ist in 1 Liter, 10 Liter und 1000 Liter erhältlich. Shield ist in 1 Liter und 5 Liter erhältlich. Abweichende Mengen/Verpackungen auf Anfrage."
+            },
+            {
+                "q": "Für welche Kulturen ist PlantiPower geeignet?",
+                "a": "Es ist effektiv für eine breite Palette von Kulturen, darunter Gemüse (Tomaten, Gurken), Obst, Zierpflanzen und Baumschulen."
+            },
+            {
+                "q": "Ist PlantiPower sicher für alle Pflanzen?",
+                "a": "Ja, bei korrekter Anwendung gemäß den Vorschriften ist es sicher für alle Pflanzen und unterstützt die natürlichen Wachstumsprozesse."
+            },
+            {
+                "q": "Was sind die Vorteile von PlantiPower?",
+                "a": "Höherer Ertrag, bessere Fruchtqualität (u.a. Brix-Wert), effizientere Düngemittelnutzung und eine vitalere Kultur."
+            },
+            {
+                "q": "Kann ich es in der Hydrokultur verwenden?",
+                "a": "Absolut, PlantiPower eignet sich hervorragend für Hydrokultur und andere Substratsysteme."
+            },
+            {
+                "q": "Ist PlantiPower biologisch und nachhaltig?",
+                "a": "Ja, es trägt zum nachhaltigen Anbau bei, indem es die Effizienz der Düngemittel erhöht und so die Auswaschung reduziert."
+            },
+            {
+                "q": "Was macht PlantiPower einzigartig?",
+                "a": "Die einzigartige ALL12-Technologie, die nicht nur nährt, sondern die Aufnahmekapazität der Pflanze selbst fundamental verbessert."
+            },
+            {
+                "q": "Wie verwende ich PlantiPower?",
+                "a": "Mischen Sie die empfohlene Menge mit Wasser und führen Sie sie über Ihr reguläres Bewässerungssystem zu. Beachten Sie die Verpackung für genaue Anweisungen."
+            }
+        ]
+    },
+    "Footer": {
+        "desc": "Begonnen im agrarischen Herzen von Venlo, Niederlande, gewachsen zu einer Lösung für professionelle Erzeuger weltweit.",
+        "links": {
+            "home": "Home",
+            "about": "Über uns",
+            "products": "Produkte",
+            "faq": "Häufig gestellte Fragen",
+            "contact": "Kontakt"
+        },
+        "contactTitle": "Kontakt",
+        "rights": "Alle Rechte vorbehalten",
+        "address": {
+            "line1": "L.J. Costerstraat 48",
+            "line2": "5916 PS Venlo",
+            "country": "Niederlande"
+        }
+    },
+    "NutrientGrid": {
+        "macro": "Makroelemente",
+        "secondary": "Sekundärelemente",
+        "micro": "Mikroelemente"
+    },
+    "Products": {
+        "coreSystem": "Kernsystem",
+        "technicalData": "Technische Daten",
+        "spectrumBadge": "Vollspektrum-Aufnahme",
+        "advantageBadgeAll12": "Der All12-Vorteil",
+        "advantageBadgeShield": "Der Shield-Vorteil",
+        "expertAdvice": "Expertenrat",
+        "importantInstructions": "Wichtige Anweisungen"
+    }
+}

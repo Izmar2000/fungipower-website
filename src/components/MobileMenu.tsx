@@ -119,9 +119,11 @@ const MobileMenu: FC<MobileMenuProps> = ({ open, onClose, onOpenSample, dict, la
                     <div className="flex items-center justify-between">
                         <span className="text-white/30 text-[10px] font-black uppercase tracking-widest">Language</span>
                         <div className="flex gap-4">
-                            <Link href={getLocalizedPath(pathname, 'en')} onClick={onClose} className={`text-sm font-bold ${!isNL ? 'text-lime-400 underline underline-offset-4 decoration-lime-500/50' : 'text-white/40 hover:text-white'}`}>EN</Link>
+                            <Link href={getLocalizedPath(pathname, 'en')} onClick={onClose} className={`text-sm font-bold ${lang === 'en' ? 'text-lime-400 underline underline-offset-4 decoration-lime-500/50' : 'text-white/40 hover:text-white'}`}>EN</Link>
                             <span className="text-white/10">|</span>
-                            <Link href={getLocalizedPath(pathname, 'nl')} onClick={onClose} className={`text-sm font-bold ${isNL ? 'text-lime-400 underline underline-offset-4 decoration-lime-500/50' : 'text-white/40 hover:text-white'}`}>NL</Link>
+                            <Link href={getLocalizedPath(pathname, 'nl')} onClick={onClose} className={`text-sm font-bold ${lang === 'nl' ? 'text-lime-400 underline underline-offset-4 decoration-lime-500/50' : 'text-white/40 hover:text-white'}`}>NL</Link>
+                            <span className="text-white/10">|</span>
+                            <Link href={getLocalizedPath(pathname, 'de')} onClick={onClose} className={`text-sm font-bold ${lang === 'de' ? 'text-lime-400 underline underline-offset-4 decoration-lime-500/50' : 'text-white/40 hover:text-white'}`}>DE</Link>
                         </div>
                     </div>
                     <button

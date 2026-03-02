@@ -10,6 +10,9 @@ function getLocale(request: NextRequest): string {
     if (country === 'nl' || country === 'be') {
         return 'nl'
     }
+    if (country === 'de' || country === 'at' || country === 'ch') {
+        return 'de'
+    }
 
     // Fallback to browser language
     const negotiatorHeaders: Record<string, string> = {}

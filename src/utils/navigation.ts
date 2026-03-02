@@ -14,6 +14,13 @@ const slugMap: Record<string, Record<string, string>> = {
         'products/shield': 'plantipower-shield',
         'faq': 'faq',
         'contact': 'contact'
+    },
+    de: {
+        'about': 'ueber-uns',
+        'products/all12': 'plantipower-all12',
+        'products/shield': 'plantipower-shield',
+        'faq': 'faq',
+        'contact': 'kontakt'
     }
 };
 
@@ -25,7 +32,7 @@ export function getLocalizedPath(path: string, targetLocale: Locale): string {
     let currentLocale: Locale = 'en';
     let rest = '';
 
-    if (segments.length > 0 && (segments[0] === 'nl' || segments[0] === 'en')) {
+    if (segments.length > 0 && (segments[0] === 'nl' || segments[0] === 'en' || segments[0] === 'de')) {
         currentLocale = segments[0] as Locale;
         rest = segments.slice(1).join('/');
     } else {

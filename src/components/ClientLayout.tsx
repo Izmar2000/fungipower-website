@@ -65,6 +65,7 @@ function LayoutContent({
                 <SampleModal
                     isOpen={isSampleModalOpen}
                     onClose={closeSampleModal}
+                    lang={lang}
                 />
             </div>
             <SpeedInsights />

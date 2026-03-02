@@ -107,6 +107,8 @@ const Header: React.FC<HeaderProps> = ({ onOpenSample, onOpenMenu, dict, lang })
               <Link href={getLocalizedPath(pathname, 'en')} className={`hover:text-lime-400 transition-colors ${lang === 'en' ? 'text-lime-400 underline underline-offset-4 decoration-lime-500/50' : 'text-white/40'}`}>EN</Link>
               <span className="text-white/10">|</span>
               <Link href={getLocalizedPath(pathname, 'nl')} className={`hover:text-lime-400 transition-colors ${lang === 'nl' ? 'text-lime-400 underline underline-offset-4 decoration-lime-500/50' : 'text-white/40'}`}>NL</Link>
+              <span className="text-white/10">|</span>
+              <Link href={getLocalizedPath(pathname, 'de')} className={`hover:text-lime-400 transition-colors ${lang === 'de' ? 'text-lime-400 underline underline-offset-4 decoration-lime-500/50' : 'text-white/40'}`}>DE</Link>
             </div>
 
             <button
