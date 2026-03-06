@@ -29,7 +29,7 @@ export default function OverOns() {
                     }}
                 />
 
-                <section className="relative z-10 pt-[180px] md:pt-[220px] lg:pt-[280px] pb-4 px-6 md:px-12 max-w-7xl mx-auto">
+                <section className="relative z-10 pt-[100px] md:pt-[120px] lg:pt-[140px] pb-4 px-6 md:px-12 max-w-7xl mx-auto">
                     <span className="block text-[#F58220] font-bold text-xs tracking-[0.2em] uppercase mb-4">
                         Over Ons
                     </span>
