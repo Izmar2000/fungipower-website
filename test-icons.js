@@ -1,0 +1,2 @@
+import * as lucide from 'lucide-react';
+console.log(Object.keys(lucide).filter(k => k.toLowerCase().includes('leaf') || k.toLowerCase().includes('plant') || k.toLowerCase().includes('micro') || k.toLowerCase().includes('bio') || k.toLowerCase().includes('test') || k.toLowerCase().includes('flask') || k.toLowerCase().includes('fung') || k.toLowerCase().includes('mushroom') || k.toLowerCase().includes('tree') || k.toLowerCase().includes('sprout') || k.toLowerCase().includes('wave') || k.toLowerCase().includes('dna')));

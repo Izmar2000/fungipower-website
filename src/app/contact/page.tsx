@@ -43,8 +43,7 @@ export default function Contact() {
 
             <main className="flex-1 relative z-10 w-full overflow-hidden">
 
-                {/* Visual Header / Hero Section - Compact & Editorial */}
-                <section className="relative z-10 pt-32 pb-16 md:pt-40 lg:pt-48 px-6 md:px-12 max-w-7xl mx-auto border-b border-black/5">
+                <section className="relative z-10 pt-40 pb-16 md:pt-48 lg:pt-64 px-6 md:px-12 max-w-7xl mx-auto border-b border-black/5">
                     <div className="flex flex-col md:flex-row md:items-end justify-between gap-8">
                         <div className="max-w-3xl">
                             <span className="block text-[#F58220] font-bold text-xs tracking-[0.2em] uppercase mb-6">
@@ -67,7 +66,7 @@ export default function Contact() {
                     <div className="grid lg:grid-cols-12 gap-16 xl:gap-24 items-start">
 
                         {/* LEFT: Contact Information Cards */}
-                        <div className="lg:col-span-5 space-y-10 md:sticky md:top-32">
+                        <div className="lg:col-span-5 space-y-10 lg:sticky lg:top-40">
                             <div className="space-y-8">
                                 <h3 className="text-2xl font-black text-slate-900 tracking-tight">Direct contact</h3>
                                 <p className="text-slate-500 font-medium leading-relaxed">

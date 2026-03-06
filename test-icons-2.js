@@ -1,0 +1,2 @@
+import * as lucide from 'lucide-react';
+console.log(Object.keys(lucide).filter(k => k.toLowerCase().includes('atom') || k.toLowerCase().includes('scale') || k.toLowerCase().includes('network') || k.toLowerCase().includes('radar') || k.toLowerCase().includes('flask') || k.toLowerCase().includes('dna') || k.toLowerCase().includes('test') || k.toLowerCase().includes('micro') || k.toLowerCase().includes('drop') || k.toLowerCase().includes('target') || k.toLowerCase().includes('scan') || k.toLowerCase().includes('sparkle') || k.toLowerCase().includes('star')));
