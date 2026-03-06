@@ -51,13 +51,15 @@ export const Header = ({ forceSolid = false }: { forceSolid?: boolean }) => {
       className={`fixed top-0 left-0 z-[110] w-full transition-all duration-500 ease-in-out ${isSolid ? "shadow-2xl" : ""
         }`}
       style={{
-        background: isSolid ? `#000000` : `none`,
+        background: isSolid ? `linear-gradient(90deg, #F58220 0%, #D71920 100%)` : `none`,
       }}
     >
       <div className={`max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between relative z-30 transition-all duration-500 ease-in-out ${isSolid ? "py-4" : "py-8"}`}>
 
         {/* Logo - Normal & Clean */}
         <a href="/" className="flex items-center relative group z-50">
+          {/* Subtle dark orange/red glow that only appears when scrolled to make it pop against the gradient */}
+          <div className={`absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[80%] bg-[#8B0000] blur-[30px] rounded-[100%] transition-opacity duration-700 pointer-events-none -z-10 ${isSolid ? "opacity-60" : "opacity-0"}`}></div>
           <img
             src="/images/fungipower-logo-final.png"
             alt="FungiPower"
