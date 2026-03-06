@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X, ArrowRight } from "lucide-react";
 import { usePathname } from "next/navigation";
+import { useTrialPopup } from "@/context/TrialPopupContext";
 
 const navLinks = [
   { label: "HOME", href: "/" },
@@ -15,6 +16,7 @@ const navLinks = [
 export const Header = ({ forceSolid = false }: { forceSolid?: boolean }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const { openTrialPopup } = useTrialPopup();
   const pathname = usePathname();
 
   useEffect(() => {
@@ -124,7 +126,7 @@ export const Header = ({ forceSolid = false }: { forceSolid?: boolean }) => {
           ))}
 
           <button
-            onClick={() => scrollToSection("/contact#form")}
+            onClick={openTrialPopup}
             className="group relative bg-[#F58220] text-white px-8 py-3 rounded-md text-[12px] font-black tracking-[0.25em] uppercase hover:bg-white hover:text-black transition-all shadow-xl flex items-center gap-3"
           >
             <span className="relative z-10">PROEF AANVRAGEN</span>
@@ -158,7 +160,10 @@ export const Header = ({ forceSolid = false }: { forceSolid?: boolean }) => {
               </button>
             ))}
             <button
-              onClick={() => scrollToSection("/contact#form")}
+              onClick={() => {
+                setMobileMenuOpen(false);
+                openTrialPopup();
+              }}
               className="bg-[#F58220] text-white px-10 py-5 rounded-xl text-[12px] font-black tracking-[0.3em] uppercase shadow-2xl mt-4"
             >
               PROEF AANVRAGEN
