@@ -8,7 +8,7 @@ export default function SectorInzichten() {
                     Sector Inzichten & Nieuws
                 </h1>
                 <p className="text-xl text-slate-600 mb-12 max-w-3xl">
-                    De laatste stand van zaken binnen de teelt. Actuele prijzen, grondstof-trends, en belangrijke inzichten direct uit het netwerk van Jan Klerken.
+                    De laatste stand van zaken binnen de teelt. Actuele prijzen, grondstof-trends, en belangrijke inzichten.
                 </p>
 
                 {/* Dummy Nieuws Artikelen */}
