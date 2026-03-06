@@ -43,13 +43,13 @@ export default function Contact() {
 
             <main className="flex-1 relative z-10 w-full overflow-hidden">
 
-                <section className="relative z-10 pt-[180px] md:pt-[220px] lg:pt-[280px] pb-16 px-6 md:px-12 max-w-7xl mx-auto border-b border-black/5">
+                <section className="relative z-10 pt-[120px] md:pt-[140px] lg:pt-[160px] pb-8 px-6 md:px-12 max-w-7xl mx-auto border-b border-black/5">
                     <div className="flex flex-col md:flex-row md:items-end justify-between gap-8">
                         <div className="max-w-3xl">
                             <span className="block text-[#F58220] font-bold text-xs tracking-[0.2em] uppercase mb-6">
                                 Contact
                             </span>
-                            <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold leading-[1.1] tracking-tight text-slate-900 mb-0">
+                            <h1 className="text-3xl md:text-5xl lg:text-6xl font-extrabold leading-[1.1] tracking-tight text-slate-900 mb-0">
                                 Laten we de teelt <br className="hidden md:block" />verder verfijnen.
                             </h1>
                         </div>
@@ -62,14 +62,14 @@ export default function Contact() {
                     </div>
                 </section>
 
-                <section className="py-16 md:py-24 max-w-7xl mx-auto px-6 md:px-12 relative">
+                <section className="py-8 md:py-12 max-w-7xl mx-auto px-6 md:px-12 relative">
                     <div className="grid lg:grid-cols-12 gap-16 xl:gap-24 items-start">
 
                         {/* LEFT: Contact Information Cards */}
                         <div className="lg:col-span-5 space-y-10 lg:sticky lg:top-40">
                             <div className="space-y-8">
                                 <h3 className="text-2xl font-black text-slate-900 tracking-tight">Direct contact</h3>
-                                <p className="text-slate-500 font-medium leading-relaxed">
+                                <p className="text-slate-500 font-medium leading-relaxed text-sm">
                                     Heeft u specifieke vragen over de biologische werking van FungiPower of wilt u de mogelijkheden voor uw kwekerij bespreken? Neem direct contact op met onze specialisten.
                                 </p>
                             </div>
@@ -218,7 +218,7 @@ export default function Contact() {
                 </section>
 
                 {/* Banner - Newsletter (Compact version) */}
-                <section className="pb-32 max-w-7xl mx-auto px-6 md:px-12">
+                <section className="pb-16 max-w-7xl mx-auto px-6 md:px-12">
                     <div className="bg-slate-950 rounded-3xl p-8 md:p-12 relative overflow-hidden border border-white/10 shadow-2xl">
                         <div className="absolute top-0 right-0 w-64 h-64 bg-[#F58220] opacity-[0.05] rounded-full blur-[100px]" />
                         <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-12">
