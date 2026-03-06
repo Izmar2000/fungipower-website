@@ -25,16 +25,49 @@ export const Header = ({ forceSolid = false }: { forceSolid?: boolean }) => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+    // Handle initial scroll if there's a hash in the URL on mount
+    const handleInitialHash = () => {
+      if (window.location.hash) {
+        const id = window.location.hash.substring(1);
+        const element = document.getElementById(id);
+        if (element) {
+          // Wrap in a small timeout to ensure layout is ready
+          setTimeout(() => {
+            const header = document.querySelector('header');
+            const headerHeight = header ? header.offsetHeight : 80;
+            const elementPosition = element.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - headerHeight - 32;
+
+            window.scrollTo({
+              top: offsetPosition,
+              behavior: "smooth"
+            });
+          }, 100);
+        }
+      }
+    };
+
+    handleInitialHash();
+    window.addEventListener("hashchange", handleInitialHash);
+    return () => window.removeEventListener("hashchange", handleInitialHash);
+  }, []);
+
   const scrollToSection = (href: string) => {
-    if (href.startsWith("/#")) {
-      const id = href.split("#")[1];
-      if (window.location.pathname === "/") {
+    if (href.includes("#")) {
+      const parts = href.split("#");
+      const path = parts[0];
+      const id = parts[1];
+
+      const isSamePage = pathname === path || path === "" || (path === "/" && pathname === "/");
+
+      if (isSamePage) {
         const element = document.getElementById(id);
         if (element) {
           const header = document.querySelector('header');
           const headerHeight = header ? header.offsetHeight : 80;
           const elementPosition = element.getBoundingClientRect().top;
-          const offsetPosition = elementPosition + window.pageYOffset - headerHeight - 32; // 32px extra safe space
+          const offsetPosition = elementPosition + window.pageYOffset - headerHeight - 32;
 
           window.scrollTo({
             top: offsetPosition,
@@ -56,10 +89,14 @@ export const Header = ({ forceSolid = false }: { forceSolid?: boolean }) => {
 
   return (
     <header
-      className={`fixed top-0 left-0 z-[110] w-full transition-all duration-500 ease-in-out ${isSolid ? "shadow-2xl" : ""
+      className={`fixed top-0 left-0 z-[110] w-full transition-all duration-500 ease-in-out ${isSolid ? "shadow-2xl border-b border-white/10" : ""
         }`}
       style={{
-        background: isSolid ? `linear-gradient(90deg, #cc4400 0%, #D71920 100%)` : `none`,
+        background: isSolid
+          ? `linear-gradient(90deg, rgba(204, 68, 0, 0.92) 0%, rgba(215, 25, 32, 0.95) 100%)`
+          : `none`,
+        backdropBlur: isSolid ? "12px" : "none",
+        WebkitBackdropFilter: isSolid ? "blur(12px)" : "none",
       }}
     >
       <div className={`max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between relative z-30 transition-all duration-500 ease-in-out ${isSolid ? "py-2 md:py-3" : "py-4 md:py-6"}`}>

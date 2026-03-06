@@ -18,8 +18,8 @@ export default function Contact() {
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
         toast({
-            title: "Bericht verzonden",
-            description: "Bedankt voor uw bericht. We nemen zo snel mogelijk contact met u op.",
+            title: "Aanmelding gelukt!",
+            description: "Je bent succesvol aangemeld voor onze sector-updates.",
         });
         setFormData({ name: "", email: "", company: "", subject: "General Inquiry", message: "" });
     };
@@ -62,7 +62,7 @@ export default function Contact() {
                     </div>
                 </section>
 
-                <section className="py-8 md:py-12 max-w-7xl mx-auto px-6 md:px-12 relative">
+                <section className="py-8 md:py-12 max-w-7xl mx-auto px-6 md:px-12 relative" id="form">
                     <div className="grid lg:grid-cols-12 gap-16 xl:gap-24 items-start">
 
                         {/* LEFT: Contact Information Cards */}
@@ -122,7 +122,7 @@ export default function Contact() {
                         </div>
 
                         {/* RIGHT: Premium Form Column */}
-                        <div className="lg:col-span-7" id="form">
+                        <div className="lg:col-span-7">
                             <div className="bg-white rounded-3xl p-8 md:p-12 shadow-2xl border border-black/5 relative overflow-hidden group">
                                 {/* Subtle internal branding */}
                                 <div className="absolute top-0 right-0 w-64 h-64 bg-[#F58220]/5 rounded-full blur-[80px] -mr-32 -mt-32 pointer-events-none" />
@@ -224,9 +224,9 @@ export default function Contact() {
                         <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-12">
                             <div className="max-w-xl text-center lg:text-left">
                                 <span className="inline-block text-[#F58220] text-[10px] font-black tracking-[0.3em] uppercase mb-4">Inzichten</span>
-                                <h3 className="text-3xl md:text-4xl font-black text-white mb-4 tracking-tight leading-tight">Blijf op de hoogte van de markt.</h3>
+                                <h3 className="text-3xl md:text-4xl font-black text-white mb-4 tracking-tight leading-tight">Blijf op de hoogte van de belangrijkste sector-ontwikkelingen.</h3>
                                 <p className="text-white/60 text-lg font-medium leading-relaxed">
-                                    Meld je aan voor onze dagelijkse briefing met actuele prijzen en sectornieuws. Kort, krachtig en relevant.
+                                    Meld je aan voor onze briefing met actuele marktinformatie en nieuws uit de sector. Kort, krachtig en relevant.
                                 </p>
                             </div>
                             <div className="w-full lg:w-auto min-w-[320px]">
@@ -234,8 +234,8 @@ export default function Contact() {
                                     onSubmit={(e) => {
                                         e.preventDefault();
                                         toast({
-                                            title: "Gelukt!",
-                                            description: "U bent aangemeld voor de dagelijkse updates.",
+                                            title: "Aanmelding gelukt!",
+                                            description: "U bent aangemeld voor onze sector-updates.",
                                         });
                                     }}
                                     className="flex flex-col sm:flex-row gap-3"
