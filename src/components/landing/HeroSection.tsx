@@ -20,24 +20,24 @@ export const HeroSection = () => {
       id="home"
       className="relative w-full min-h-[600px] md:min-h-[800px] overflow-hidden flex flex-col"
       style={{
-        background: `linear-gradient(135deg, #F58220 0%, #E65100 50%, #D71920 100%)`
+        background: `linear-gradient(135deg, #F58220 0%, #D71920 100%)`
       }}
     >
-      {/* Clean horizontal orange → red gradient */}
-      {/* No dark overlay needed on the left; the gradient itself provides contrast */}
+      {/* 1. Darker Overlay for Text Legibility (Left side focus) */}
+      <div className="absolute inset-y-0 left-0 w-full md:w-1/2 z-[1] pointer-events-none bg-gradient-to-r from-black/25 via-black/10 to-transparent" />
 
-      {/* 1. Subtle dark fade at the top for logo legibility */}
-      <div className="absolute top-0 left-0 w-full h-32 md:h-48 z-[2] pointer-events-none bg-gradient-to-b from-black/20 via-black/5 to-transparent" />
-
-      {/* 2. Mushroom image very faintly visible through the gradient, like Scelta */}
+      {/* 2. Historical Black & White Photo blended directly into the Orange background */}
+      {/* Organic, ultra-soft elliptical mask: clear subjects on left, invisible transition right */}
       <div
-        className="absolute inset-0 w-full h-full z-0 pointer-events-none"
+        className="absolute inset-0 w-full h-full z-0 pointer-events-none opacity-[0.38]"
         style={{
           backgroundImage: 'url("/images/vintage-mushroom.png")',
           backgroundSize: 'cover',
-          backgroundPosition: 'center center',
-          opacity: 0.05,
-          mixBlendMode: 'luminosity',
+          backgroundPosition: 'left center',
+          mixBlendMode: 'multiply',
+          WebkitMaskImage: 'radial-gradient(ellipse 100% 150% at -15% center, black 0%, black 25%, rgba(0,0,0,0.6) 55%, transparent 95%)',
+          maskImage: 'radial-gradient(ellipse 100% 150% at -15% center, black 0%, black 25%, rgba(0,0,0,0.6) 55%, transparent 95%)',
+          transform: `translateY(${scrollY * 0.15}px)`,
         }}
       />
 

@@ -2,7 +2,7 @@ import { ArrowRight, Activity, Droplets, LineChart, FlaskConical, Dna } from "lu
 
 export const ScalabilitySection = () => {
   return (
-    <section id="products" className="py-24 bg-white relative overflow-hidden">
+    <section id="products" className="py-24 bg-background relative overflow-hidden">
       {/* Editorial/Story background image */}
       <div
         className="absolute inset-0 z-0 pointer-events-none opacity-[0.04] mix-blend-multiply"

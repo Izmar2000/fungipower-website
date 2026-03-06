@@ -2,7 +2,7 @@ import { Droplets, Network, Microscope, Scale } from "lucide-react";
 
 export const ScienceSection = () => {
   return (
-    <section id="science" className="relative py-32 md:py-40 bg-slate-50 border-t border-border overflow-hidden clear-both">
+    <section id="science" className="relative py-32 md:py-40 bg-background border-t border-border overflow-hidden clear-both">
       {/* Faded Vintage Background Image */}
       <div
         className="absolute inset-0 z-0 pointer-events-none opacity-[0.05] mix-blend-multiply"
@@ -39,8 +39,8 @@ export const ScienceSection = () => {
           <div className="grid md:grid-cols-4 gap-8">
 
             {/* Step 1 */}
-            <div className="flex flex-col items-center text-center group bg-white rounded-2xl p-8 shadow-md border border-slate-100 hover:shadow-xl hover:border-primary/20 transition-all duration-300">
-              <div className="w-20 h-20 bg-gradient-to-br from-primary/10 to-primary/5 border-2 border-border group-hover:border-primary transition-colors rounded-full flex items-center justify-center mb-6 shadow-sm z-10">
+            <div className="flex flex-col items-center text-center group bg-background pt-4">
+              <div className="w-20 h-20 bg-card border-2 border-border group-hover:border-primary transition-colors rounded-full flex items-center justify-center mb-6 shadow-sm z-10">
                 <Droplets className="w-8 h-8 text-secondary group-hover:text-primary transition-colors" />
               </div>
               <h3 className="text-xl font-bold text-foreground mb-2">Substraat</h3>
@@ -48,8 +48,8 @@ export const ScienceSection = () => {
             </div>
 
             {/* Step 2 */}
-            <div className="flex flex-col items-center text-center group bg-white rounded-2xl p-8 shadow-md border border-slate-100 hover:shadow-xl hover:border-primary/20 transition-all duration-300">
-              <div className="w-20 h-20 bg-gradient-to-br from-primary/10 to-primary/5 border-2 border-border group-hover:border-primary transition-colors rounded-full flex items-center justify-center mb-6 shadow-sm z-10">
+            <div className="flex flex-col items-center text-center group bg-background pt-4">
+              <div className="w-20 h-20 bg-card border-2 border-border group-hover:border-primary transition-colors rounded-full flex items-center justify-center mb-6 shadow-sm z-10">
                 <Network className="w-8 h-8 text-secondary group-hover:text-primary transition-colors" />
               </div>
               <h3 className="text-xl font-bold text-foreground mb-2">Opname</h3>
@@ -57,8 +57,8 @@ export const ScienceSection = () => {
             </div>
 
             {/* Step 3 */}
-            <div className="flex flex-col items-center text-center group bg-white rounded-2xl p-8 shadow-md border border-slate-100 hover:shadow-xl hover:border-primary/20 transition-all duration-300">
-              <div className="w-20 h-20 bg-gradient-to-br from-primary/10 to-primary/5 border-2 border-border group-hover:border-primary transition-colors rounded-full flex items-center justify-center mb-6 shadow-sm z-10">
+            <div className="flex flex-col items-center text-center group bg-background pt-4">
+              <div className="w-20 h-20 bg-card border-2 border-border group-hover:border-primary transition-colors rounded-full flex items-center justify-center mb-6 shadow-sm z-10">
                 <Microscope className="w-8 h-8 text-secondary group-hover:text-primary transition-colors" />
               </div>
               <h3 className="text-xl font-bold text-foreground mb-2">Myceliumactiviteit</h3>
@@ -66,8 +66,8 @@ export const ScienceSection = () => {
             </div>
 
             {/* Step 4 */}
-            <div className="flex flex-col items-center text-center group bg-white rounded-2xl p-8 shadow-md border border-primary/20 hover:shadow-xl hover:border-primary/50 transition-all duration-300">
-              <div className="w-20 h-20 bg-gradient-to-br from-primary/20 to-primary/10 border-2 border-primary transition-colors rounded-full flex items-center justify-center mb-6 shadow-lg z-10">
+            <div className="flex flex-col items-center text-center group bg-background pt-4">
+              <div className="w-20 h-20 bg-card border-2 border-primary transition-colors rounded-full flex items-center justify-center mb-6 shadow-lg z-10">
                 <Scale className="w-8 h-8 text-primary" />
               </div>
               <h3 className="text-xl font-bold text-primary mb-2">Opbrengst</h3>

@@ -54,14 +54,14 @@ export const Header = ({ forceSolid = false }: { forceSolid?: boolean }) => {
         background: isSolid ? `linear-gradient(90deg, #cc4400 0%, #D71920 100%)` : `none`,
       }}
     >
-      <div className={`max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between relative z-30 transition-all duration-500 ease-in-out ${isSolid ? "py-2 md:py-3" : "py-4 md:py-6"}`}>
+      <div className={`max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between relative z-30 transition-all duration-500 ease-in-out ${isSolid ? "py-4" : "py-8"}`}>
 
         {/* Logo - Normal & Clean */}
         <a href="/" className="flex items-center relative group z-50">
           <img
             src="/images/fungipower-logo-final.png"
             alt="FungiPower"
-            className={`w-auto object-left object-contain transition-all duration-500 hover:scale-[1.3] scale-[1.25] origin-left h-16 md:h-20 lg:h-24 ${useDarkText ? "brightness-0 opacity-90" : "brightness-0 invert"}`}
+            className={`w-auto object-left object-contain transition-all duration-500 group-hover:scale-[1.05] h-24 md:h-32 lg:h-40 ${useDarkText ? "brightness-0 opacity-90" : "brightness-0 invert"}`}
           />
         </a>
 
