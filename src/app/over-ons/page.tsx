@@ -29,8 +29,7 @@ export default function OverOns() {
                     }}
                 />
 
-                {/* Clean, editorial hero section */}
-                <section className="relative z-10 pt-40 pb-4 md:pt-48 lg:pt-64 px-6 md:px-12 max-w-7xl mx-auto">
+                <section className="relative z-10 pt-[180px] md:pt-[220px] lg:pt-[280px] pb-4 px-6 md:px-12 max-w-7xl mx-auto">
                     <span className="block text-[#F58220] font-bold text-xs tracking-[0.2em] uppercase mb-4">
                         Over Ons
                     </span>

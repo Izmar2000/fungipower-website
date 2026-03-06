@@ -1,7 +1,7 @@
 "use client";
 
 import { Footer } from "@/components/landing/Footer";
-import { Mail, MapPin, Linkedin, Send, Clock, Globe } from "lucide-react";
+import { Mail, MapPin, Linkedin, Send, Clock, ShieldCheck } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 
@@ -43,7 +43,7 @@ export default function Contact() {
 
             <main className="flex-1 relative z-10 w-full overflow-hidden">
 
-                <section className="relative z-10 pt-40 pb-16 md:pt-48 lg:pt-64 px-6 md:px-12 max-w-7xl mx-auto border-b border-black/5">
+                <section className="relative z-10 pt-[180px] md:pt-[220px] lg:pt-[280px] pb-16 px-6 md:px-12 max-w-7xl mx-auto border-b border-black/5">
                     <div className="flex flex-col md:flex-row md:items-end justify-between gap-8">
                         <div className="max-w-3xl">
                             <span className="block text-[#F58220] font-bold text-xs tracking-[0.2em] uppercase mb-6">
@@ -55,8 +55,8 @@ export default function Contact() {
                         </div>
                         <div className="hidden lg:block pb-2">
                             <div className="flex items-center gap-3 text-slate-400 font-bold text-[10px] uppercase tracking-[0.2em]">
-                                <Globe className="w-4 h-4" />
-                                <span>Operationeel in de gehele EU</span>
+                                <ShieldCheck className="w-4 h-4" />
+                                <span>Geen risico • Beveiligde aanvraag</span>
                             </div>
                         </div>
                     </div>

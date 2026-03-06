@@ -2,7 +2,7 @@ import { Footer } from "@/components/landing/Footer";
 
 export default function SectorInzichten() {
     return (
-        <div className="min-h-screen bg-background flex flex-col pt-40 md:pt-48 lg:pt-64">
+        <div className="min-h-screen bg-background flex flex-col pt-[180px] md:pt-[220px] lg:pt-[280px]">
             <main className="flex-1 py-10 md:py-16 px-6 max-w-7xl mx-auto w-full">
                 <h1 className="text-4xl md:text-5xl font-black mb-10 text-slate-900 border-b pb-4">
                     Sector Inzichten & Nieuws
