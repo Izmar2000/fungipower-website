@@ -54,14 +54,14 @@ export const Header = ({ forceSolid = false }: { forceSolid?: boolean }) => {
         background: isSolid ? `linear-gradient(90deg, #cc4400 0%, #D71920 100%)` : `none`,
       }}
     >
-      <div className={`max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between relative z-30 transition-all duration-500 ease-in-out ${isSolid ? "py-1.5" : "py-3"}`}>
+      <div className={`max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between relative z-30 transition-all duration-500 ease-in-out ${isSolid ? "py-2 md:py-3" : "py-4 md:py-6"}`}>
 
         {/* Logo - Normal & Clean */}
         <a href="/" className="flex items-center relative group z-50">
           <img
             src="/images/fungipower-logo-final.png"
             alt="FungiPower"
-            className={`w-auto object-left object-contain transition-all duration-500 group-hover:scale-[1.05] h-10 md:h-12 lg:h-14 ${useDarkText ? "brightness-0 opacity-90" : "brightness-0 invert"}`}
+            className={`w-auto object-left object-contain transition-all duration-500 hover:scale-[1.3] scale-[1.25] origin-left h-16 md:h-20 lg:h-24 ${useDarkText ? "brightness-0 opacity-90" : "brightness-0 invert"}`}
           />
         </a>
 
@@ -80,7 +80,7 @@ export const Header = ({ forceSolid = false }: { forceSolid?: boolean }) => {
 
           <button
             onClick={() => scrollToSection("/contact#form")}
-            className="group relative bg-[#F58220] text-white px-6 py-2 rounded-md text-[11px] font-black tracking-[0.25em] uppercase hover:bg-white hover:text-black transition-all shadow-xl flex items-center gap-3"
+            className="group relative bg-[#F58220] text-white px-8 py-3 rounded-md text-[12px] font-black tracking-[0.25em] uppercase hover:bg-white hover:text-black transition-all shadow-xl flex items-center gap-3"
           >
             <span className="relative z-10">PROEF AANVRAGEN</span>
             <ArrowRight className="w-4 h-4 relative z-10 transition-transform group-hover:translate-x-1" />

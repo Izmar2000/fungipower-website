@@ -4,8 +4,8 @@ export const GlassmorphismPanel = () => {
   return (
     <div className="w-full flex-1 max-w-2xl relative z-10 transform transition-transform duration-700 hover:scale-[1.01]">
 
-      {/* Premium Glass Effect Card with Stronger Shadow Depth */}
-      <div className="bg-white/98 backdrop-blur-2xl p-8 md:p-12 shadow-[0_32px_64px_-16px_rgba(0,0,0,0.2)] relative overflow-hidden rounded-[24px] border border-white/80">
+      {/* Premium Glass Effect Card with Subtle Shadow Depth */}
+      <div className="bg-white/95 backdrop-blur-2xl p-8 md:p-12 shadow-2xl shadow-black/10 relative overflow-hidden rounded-[24px] border border-white/60">
 
         {/* Subtle inner glow for depth */}
         <div className="absolute top-[-50%] right-[-50%] w-full h-full bg-gradient-radial from-[#F58220]/5 to-transparent blur-3xl" />
@@ -62,7 +62,7 @@ export const GlassmorphismPanel = () => {
             <div className="relative inline-block">
               {/* Soft glow behind the massive text */}
               <div className="absolute inset-0 bg-[#F58220] blur-[40px] opacity-20" />
-              <span className="relative text-7xl md:text-[90px] font-black leading-none text-slate-950 tracking-tighter drop-shadow-md">
+              <span className="relative text-6xl md:text-[80px] font-black leading-none text-slate-900 tracking-tighter drop-shadow-sm">
                 +14%
               </span>
             </div>
