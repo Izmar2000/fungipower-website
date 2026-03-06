@@ -12,7 +12,7 @@ export const GlassmorphismPanel = () => {
 
         {/* Case Study Heading */}
         <h3 className="text-sm md:text-base font-bold text-slate-800 uppercase tracking-widest mb-10 border-b border-black/5 pb-4">
-          Praktijkvoorbeeld Anonieme Kweker
+          Praktijkvoorbeeld Grubbenvorst
         </h3>
 
         {/* Dominant +14% & Graph Row */}
