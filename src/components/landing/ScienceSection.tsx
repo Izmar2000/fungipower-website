@@ -1,8 +1,8 @@
-import { Sprout, ArrowRight, Activity, TrendingUp, Layers } from "lucide-react";
+import { Droplets, Network, Microscope, Scale } from "lucide-react";
 
 export const ScienceSection = () => {
   return (
-    <section id="science" className="relative py-24 bg-background border-t border-border overflow-hidden">
+    <section id="science" className="relative py-32 md:py-40 bg-background border-t border-border overflow-hidden clear-both">
       {/* Faded Vintage Background Image */}
       <div
         className="absolute inset-0 z-0 pointer-events-none opacity-[0.05] mix-blend-multiply"
@@ -41,7 +41,7 @@ export const ScienceSection = () => {
             {/* Step 1 */}
             <div className="flex flex-col items-center text-center group bg-background pt-4">
               <div className="w-20 h-20 bg-card border-2 border-border group-hover:border-primary transition-colors rounded-full flex items-center justify-center mb-6 shadow-sm z-10">
-                <Layers className="w-8 h-8 text-secondary group-hover:text-primary transition-colors" />
+                <Droplets className="w-8 h-8 text-secondary group-hover:text-primary transition-colors" />
               </div>
               <h3 className="text-lg font-bold text-foreground mb-2">Substraat</h3>
               <p className="text-sm text-muted-foreground px-2">Optimalisatie van de basisstructuur en vochtbalans.</p>
@@ -50,7 +50,7 @@ export const ScienceSection = () => {
             {/* Step 2 */}
             <div className="flex flex-col items-center text-center group bg-background pt-4">
               <div className="w-20 h-20 bg-card border-2 border-border group-hover:border-primary transition-colors rounded-full flex items-center justify-center mb-6 shadow-sm z-10">
-                <Activity className="w-8 h-8 text-secondary group-hover:text-primary transition-colors" />
+                <Network className="w-8 h-8 text-secondary group-hover:text-primary transition-colors" />
               </div>
               <h3 className="text-lg font-bold text-foreground mb-2">Opname</h3>
               <p className="text-sm text-muted-foreground px-2">Verhoogde efficiëntie van nutriëntenopname door mycelium.</p>
@@ -59,7 +59,7 @@ export const ScienceSection = () => {
             {/* Step 3 */}
             <div className="flex flex-col items-center text-center group bg-background pt-4">
               <div className="w-20 h-20 bg-card border-2 border-border group-hover:border-primary transition-colors rounded-full flex items-center justify-center mb-6 shadow-sm z-10">
-                <Sprout className="w-8 h-8 text-secondary group-hover:text-primary transition-colors" />
+                <Microscope className="w-8 h-8 text-secondary group-hover:text-primary transition-colors" />
               </div>
               <h3 className="text-lg font-bold text-foreground mb-2">Myceliumactiviteit</h3>
               <p className="text-sm text-muted-foreground px-2">Stimulering van herstel en herkolonisatie na elke vlucht.</p>
@@ -68,7 +68,7 @@ export const ScienceSection = () => {
             {/* Step 4 */}
             <div className="flex flex-col items-center text-center group bg-background pt-4">
               <div className="w-20 h-20 bg-card border-2 border-primary transition-colors rounded-full flex items-center justify-center mb-6 shadow-lg z-10">
-                <TrendingUp className="w-8 h-8 text-primary" />
+                <Scale className="w-8 h-8 text-primary" />
               </div>
               <h3 className="text-lg font-bold text-primary mb-2">Opbrengst</h3>
               <p className="text-sm text-muted-foreground px-2">Hogere productie per vlucht en langere levensduur.</p>

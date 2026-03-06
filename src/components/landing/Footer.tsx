@@ -107,7 +107,7 @@ export const Footer = () => {
             <h4 className="text-white font-black text-xs uppercase tracking-[0.2em] mb-6">Platform</h4>
             <ul className="space-y-3 font-bold text-sm text-white">
               <li>
-                <a href="/praktijkvoorbeelden" className="hover:text-[#FFD166] transition-colors flex items-center gap-2">Casussen <span className="text-[9px] bg-white/20 px-1.5 py-0.5 rounded-sm uppercase tracking-wider text-white/70">Bèta</span></a>
+                <a href="#" className="hover:text-[#FFD166] transition-colors flex items-center gap-2">Casussen <span className="text-[9px] bg-white/20 px-1.5 py-0.5 rounded-sm uppercase tracking-wider text-white/70">Bèta</span></a>
               </li>
               <li>
                 <a href="/sector-inzichten" className="hover:text-[#FFD166] transition-colors flex items-center gap-2">Inzichten <span className="text-[9px] bg-white/20 px-1.5 py-0.5 rounded-sm uppercase tracking-wider text-white/70">Bèta</span></a>
@@ -122,7 +122,7 @@ export const Footer = () => {
                 <button onClick={() => scrollToSection("/contact#form")} className="hover:text-[#FFD166] transition-colors text-left">Product Support</button>
               </li>
               <li>
-                <button onClick={() => scrollToSection("/contact#form")} className="hover:text-[#FFD166] transition-colors text-left">Pilot Aanvragen</button>
+                <button onClick={() => scrollToSection("/contact#form")} className="hover:text-[#FFD166] transition-colors text-left">Proef Aanvragen</button>
               </li>
             </ul>
           </div>

@@ -117,7 +117,7 @@ export default function Contact() {
                                     <span className="font-bold text-sm uppercase tracking-widest text-[#F58220]">Response TIme</span>
                                 </div>
                                 <p className="text-slate-600 font-medium">
-                                    Wij streven ernaar om alle aanvragen binnen 24 uur te beantwoorden. Voor bestaande pilot-deelnemers geldt direct support.
+                                    Wij streven ernaar om alle aanvragen binnen 24 uur te beantwoorden. Voor bestaande proef-deelnemers geldt direct support.
                                 </p>
                             </div>
                         </div>
@@ -182,7 +182,7 @@ export default function Contact() {
                                             className="w-full bg-[#F8F9FA] border border-black/5 rounded-2xl px-6 py-4 text-slate-900 text-base focus:outline-none focus:border-[#F58220] transition-all font-medium appearance-none cursor-pointer shadow-inner"
                                         >
                                             <option value="General Inquiry" className="text-slate-900">Algemene vraag</option>
-                                            <option value="Pilot Program" className="text-slate-900">Pilot programma aanvraag</option>
+                                            <option value="Pilot Program" className="text-slate-900">Proef aanvraag</option>
                                             <option value="Technical Support" className="text-slate-900">Technische support</option>
                                             <option value="Partnerships" className="text-slate-900">Partnership / Distributie</option>
                                         </select>

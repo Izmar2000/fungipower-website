@@ -29,17 +29,17 @@ export const ResultsSection = () => {
             </h2>
             <div className="space-y-6 text-lg text-white/80 leading-relaxed max-w-xl">
               <p>
-                Onze claims zijn gebaseerd op uitgebreide praktijkproeven uitgevoerd bij diverse praktijktelers in Nederland.
+                Binnen onze sector is het gebruikelijk dat telers terughoudend omgaan met het openbaar delen van concrete resultaten en opbrengstcijfers. Dat begrijpen wij zeer goed. Tegelijkertijd willen wij de kracht en impact van onze praktijkdata inzichtelijk maken. Daarom werken wij veel met geanonimiseerde klantresultaten.
               </p>
               <p>
-                We hanteren een strikt <span className="text-white font-bold">split-plot design</span> met interne controle per cel, waarbij de resultaten worden geanalyseerd via een paired t-test (p &lt; 0,05).
+                Op die manier kunnen wij transparant communiceren over prestaties en effecten, terwijl wij de vertrouwelijkheid en concurrentiepositie van onze klanten volledig waarborgen.
               </p>
             </div>
 
             <div className="mt-10 flex flex-col gap-4">
               <a href="#contact" className="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg font-bold uppercase tracking-wider hover:bg-primary/90 transition-colors w-fit">
                 <FileText className="w-4 h-4" />
-                Ontvang het volledige proefrapport
+                Vraag een proef aan
               </a>
             </div>
           </div>
@@ -47,7 +47,10 @@ export const ResultsSection = () => {
           {/* Right Content - Data Viz */}
           <div className="flex-1 w-full">
             <div className="bg-white/80 backdrop-blur-xl border border-white/50 shadow-2xl shadow-black/10 rounded-2xl p-8 md:p-10">
-              <h3 className="text-xl font-bold text-slate-900 mb-8 border-b border-black/10 pb-4">Kernbevindingen FungiPower Boost</h3>
+              <div className="mb-8 border-b border-black/10 pb-4">
+                <h3 className="text-xl font-bold text-slate-900">Kernbevindingen FungiPower Boost</h3>
+                <p className="text-xs text-slate-500 italic mt-1">*Deze dataset wordt periodiek geactualiseerd aan de hand van nieuwe praktijkmetingen.</p>
+              </div>
 
               <div className="grid gap-8">
                 {/* Stat 1 */}

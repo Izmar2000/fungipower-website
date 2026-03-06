@@ -5,9 +5,9 @@ import { PasswordProtection } from "@/components/PasswordProtection";
 import { Header } from "@/components/landing/Header";
 
 export const metadata: Metadata = {
-    title: "FungiPower | Industriële Paddenstoelen Kweek Verbetering",
+    title: "FungiPower | Biostimulant voor de Professionele Paddenstoelenteelt",
     description:
-        "Maximaliseer uw rendement uit elke vlucht met de biologische versterker van FungiPower. Bewezen resultaten voor commerciële paddenstoelenkwekers. +11,3% gemiddelde opbrengstverhoging.",
+        "Maximaliseer uw rendement uit elke vlucht met de biologische versterker van FungiPower. Bewezen resultaten voor commerciële paddenstoelenkwekers.",
     keywords:
         "paddenstoelenkweek, fungi, opbrengstverbetering, commerciële teelt, biologische versterker",
     icons: {

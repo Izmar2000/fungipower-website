@@ -18,7 +18,7 @@ export const PilotForm = () => {
         e.preventDefault();
         setSubmitted(true);
         toast({
-            title: "Pilot aanvraag verzonden",
+            title: "Proef aanvraag verzonden",
             description: "Onze specialisten nemen binnen 24 uur contact met u op.",
         });
     };
@@ -36,7 +36,7 @@ export const PilotForm = () => {
                     </div>
                     <h2 className="text-4xl font-black mb-4 uppercase tracking-tight">Bedankt voor de aanvraag</h2>
                     <p className="text-white/60 text-lg mb-8">
-                        Uw interesse in FungiPower is geregistreerd. we nemen zo snel mogelijk contact op om de details van de wetenschappelijke pilot te bespreken.
+                        Uw interesse in FungiPower is geregistreerd. we nemen zo snel mogelijk contact op om de details van de wetenschappelijke proef te bespreken.
                     </p>
                     <button
                         onClick={() => setSubmitted(false)}
@@ -137,7 +137,7 @@ export const PilotForm = () => {
                             <div className="absolute top-0 right-0 w-48 h-48 bg-[#F58220]/5 rounded-full blur-[60px] -mr-24 -mt-24 pointer-events-none" />
 
                             <h3 className="text-3xl font-black text-slate-900 mb-8 border-b border-black/5 pb-6 tracking-tight">
-                                Pilot Aanvraag
+                                Proef Aanvraag
                             </h3>
 
                             <form onSubmit={handleSubmit} className="space-y-6 relative z-10">

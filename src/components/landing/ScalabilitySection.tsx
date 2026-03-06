@@ -1,4 +1,4 @@
-import { ArrowRight, Zap, Droplets, LineChart, FlaskConical, Microscope } from "lucide-react";
+import { ArrowRight, Activity, Droplets, LineChart, FlaskConical, Dna } from "lucide-react";
 
 export const ScalabilitySection = () => {
   return (
@@ -36,7 +36,7 @@ export const ScalabilitySection = () => {
           <div className="bg-white dark:bg-card p-8 md:p-10 rounded-lg shadow-sm border border-border flex flex-col h-full group">
             <div className="mb-6 flex items-start justify-between">
               <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary/15 to-primary/5 border border-primary/20 flex items-center justify-center shadow-inner group-hover:border-primary/40 transition-all text-primary">
-                <Microscope className="w-8 h-8" strokeWidth={1.5} />
+                <Dna className="w-8 h-8" strokeWidth={1.5} />
               </div>
               <span className="text-xs font-bold uppercase tracking-widest text-muted-foreground bg-muted px-3 py-1 rounded-full">
                 FASE 1
@@ -72,7 +72,7 @@ export const ScalabilitySection = () => {
           <div className="bg-white dark:bg-card p-8 md:p-10 rounded-lg shadow-sm border border-border flex flex-col h-full group">
             <div className="mb-6 flex items-start justify-between">
               <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary/15 to-primary/5 border border-primary/20 flex items-center justify-center shadow-inner group-hover:border-primary/40 transition-all text-primary">
-                <Zap className="w-8 h-8 fill-primary/10" strokeWidth={1.5} />
+                <Activity className="w-8 h-8" strokeWidth={1.5} />
               </div>
               <span className="text-xs font-bold uppercase tracking-widest text-muted-foreground bg-muted px-3 py-1 rounded-full">
                 FASE 2

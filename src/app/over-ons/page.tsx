@@ -20,7 +20,7 @@ export default function OverOns() {
                 <div
                     className="absolute top-0 right-0 w-full md:w-2/3 h-[600px] z-0 pointer-events-none opacity-[0.08] mix-blend-multiply"
                     style={{
-                        backgroundImage: 'url("https://images.unsplash.com/photo-1596489399827-0105dc1bfeab?q=80&auto=format&fit=crop")',
+                        backgroundImage: 'url("https://images.unsplash.com/photo-1587588264560-eb0c968f4e19?q=80&auto=format&fit=crop")',
                         backgroundSize: 'cover',
                         backgroundPosition: 'right center',
                         filter: 'grayscale(100%) sepia(30%) contrast(150%)',
@@ -107,10 +107,10 @@ export default function OverOns() {
                                 </p>
                             </div>
 
-                            <div className="bg-slate-100/50 p-8 rounded-2xl border border-black/5 flex items-center justify-between group">
+                            <a href="/#science" className="bg-slate-100/50 p-8 rounded-2xl border border-black/5 flex items-center justify-between group cursor-pointer hover:bg-slate-100/80 transition-all">
                                 <span className="text-sm font-bold uppercase tracking-widest text-slate-400 group-hover:text-primary transition-colors">Onze methodiek</span>
                                 <ArrowRight className="w-5 h-5 text-slate-300 group-hover:text-primary group-hover:translate-x-1 transition-all" />
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </section>
@@ -121,7 +121,7 @@ export default function OverOns() {
                     <div
                         className="absolute inset-0 z-0 pointer-events-none opacity-[0.07] mix-blend-multiply"
                         style={{
-                            backgroundImage: 'url("https://images.unsplash.com/photo-1596489399827-0105dc1bfeab?q=80&auto=format&fit=crop")', // Classic agriculture/mushrooms vibe
+                            backgroundImage: 'url("https://images.unsplash.com/photo-1587588264560-eb0c968f4e19?q=80&auto=format&fit=crop")',
                             backgroundSize: 'cover',
                             backgroundPosition: 'center',
                             filter: 'grayscale(100%) sepia(40%) contrast(120%)',
@@ -211,8 +211,8 @@ export default function OverOns() {
                         <div className="lg:col-span-5">
                             <div className="relative group rounded-3xl overflow-hidden shadow-2xl aspect-[4/3]">
                                 <img
-                                    src="/images/vintage-mushroom.png"
-                                    alt="Prachtige champignon illustratie"
+                                    src="/images/modern-mushroom.png"
+                                    alt="Moderne champignonteelt"
                                     className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
                                 />
                                 {/* Overlay gradient for depth */}
@@ -221,7 +221,7 @@ export default function OverOns() {
                                 {/* Badge overlay */}
                                 <div className="absolute bottom-6 left-6 right-6 p-4 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl">
                                     <p className="text-white text-[10px] font-black tracking-widest uppercase">
-                                        Moderne Teeltfaciliteit • Nederland
+                                        Moderne teeltfaciliteit • Nederland
                                     </p>
                                 </div>
                             </div>

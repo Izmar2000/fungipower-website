@@ -61,7 +61,7 @@ export const Header = ({ forceSolid = false }: { forceSolid?: boolean }) => {
           <img
             src="/images/fungipower-logo-final.png"
             alt="FungiPower"
-            className={`w-auto object-left object-contain transition-all duration-500 group-hover:scale-[1.05] ${isSolid ? "h-12 md:h-14 lg:h-16" : "h-20 md:h-24 lg:h-28"
+            className={`w-auto object-left object-contain transition-all duration-500 group-hover:scale-[1.05] ${isSolid ? "h-16 md:h-20 lg:h-24" : "h-24 md:h-32 lg:h-40"
               } ${useDarkText ? "brightness-0 opacity-90" : "brightness-0 invert"}`}
           />
         </a>
