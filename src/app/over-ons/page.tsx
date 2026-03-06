@@ -87,12 +87,9 @@ export default function OverOns() {
                                 </p>
 
                                 <div className="space-y-6 animate-fade-in-up">
-                                    <p>FungiPower combineert diepgaande kennis van biostimulanten met decennia aan praktijkervaring in de
-                                        champignonteelt. De drijvende kracht achter het product is Jan Klerken, ondernemer met wortels diep in de
-                                        sector. Vanuit Ourcelia — primair producent van kwalitatief broed — zag hij van dichtbij hoe de sector steeds
-                                        professioneler en technischer werd. Wat voor anderen een product is, was voor hem jarenlang dagelijkse praktijk.
-                                        Wat daarbij altijd centraal bleef staan, is de rol van de teler — degene die dagelijks verantwoordelijk is
-                                        voor kwaliteit, productie en continuïteit.</p>
+                                    <p>
+                                        Jan Klerken groeide op in de champignonwereld. Wat voor anderen een product is, was voor hem dagelijkse realiteit. Door de jaren heen werkte hij in verschillende delen van de keten en zag hij hoe de sector professioneler en technischer werd. Wat daarbij altijd centraal bleef staan, is de rol van de teler. Uiteindelijk draait alles om degene die dagelijks verantwoordelijkheid draagt voor kwaliteit en continuïteit.
+                                    </p>
                                     <p>
                                         Er wordt steeds meer van de sector verwacht. Kwaliteit moet constant zijn, productie voorspelbaar en efficiënt omgaan met middelen is vanzelfsprekend geworden. In die ontwikkeling draait verbetering vaak niet om méér toevoegen, maar om beter benutten wat er al gebeurt binnen het substraat en de teelt.
                                     </p>
