@@ -71,8 +71,8 @@ export const ResultsSection = () => {
                 <div className="flex items-start gap-4 p-4 bg-white/60 rounded-lg border border-white/40 shadow-sm">
                   <TrendingUp className="w-8 h-8 text-primary flex-shrink-0" />
                   <div>
-                    <h4 className="text-slate-900 font-bold text-lg">Impact op 3e Vlucht</h4>
-                    <p className="text-slate-700 text-sm mt-1">
+                    <h4 className="text-slate-900 font-bold text-xl">Impact op 3e Vlucht</h4>
+                    <p className="text-slate-700 text-base mt-1">
                       De grootste procentuele winst wordt gerealiseerd in de derde vlucht, door verlenging van de productieve levensduur.
                     </p>
                   </div>
@@ -82,8 +82,8 @@ export const ResultsSection = () => {
                 <div className="flex items-start gap-4 p-4 bg-white/60 rounded-lg border border-white/40 shadow-sm">
                   <Clock className="w-8 h-8 text-primary flex-shrink-0" />
                   <div>
-                    <h4 className="text-slate-900 font-bold text-lg">Timing is Cruciaal</h4>
-                    <p className="text-slate-700 text-sm mt-1">
+                    <h4 className="text-slate-900 font-bold text-xl">Timing is Cruciaal</h4>
+                    <p className="text-slate-700 text-base mt-1">
                       Toepassing direct na de eerste vlucht geeft het maximale effect op de totale cyclus.
                     </p>
                   </div>

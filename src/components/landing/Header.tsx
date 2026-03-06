@@ -51,7 +51,7 @@ export const Header = ({ forceSolid = false }: { forceSolid?: boolean }) => {
       className={`fixed top-0 left-0 z-[110] w-full transition-all duration-500 ease-in-out ${isSolid ? "shadow-2xl" : ""
         }`}
       style={{
-        background: isSolid ? `linear-gradient(90deg, #F58220 0%, #D71920 100%)` : `none`,
+        background: isSolid ? `#000000` : `none`,
       }}
     >
       <div className={`max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between relative z-30 transition-all duration-500 ease-in-out ${isSolid ? "py-4" : "py-8"}`}>

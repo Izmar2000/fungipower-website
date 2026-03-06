@@ -43,8 +43,8 @@ export const ScienceSection = () => {
               <div className="w-20 h-20 bg-card border-2 border-border group-hover:border-primary transition-colors rounded-full flex items-center justify-center mb-6 shadow-sm z-10">
                 <Droplets className="w-8 h-8 text-secondary group-hover:text-primary transition-colors" />
               </div>
-              <h3 className="text-lg font-bold text-foreground mb-2">Substraat</h3>
-              <p className="text-sm text-muted-foreground px-2">Optimalisatie van de basisstructuur en vochtbalans.</p>
+              <h3 className="text-xl font-bold text-foreground mb-2">Substraat</h3>
+              <p className="text-base text-muted-foreground px-2">Optimalisatie van de basisstructuur en vochtbalans.</p>
             </div>
 
             {/* Step 2 */}
@@ -52,8 +52,8 @@ export const ScienceSection = () => {
               <div className="w-20 h-20 bg-card border-2 border-border group-hover:border-primary transition-colors rounded-full flex items-center justify-center mb-6 shadow-sm z-10">
                 <Network className="w-8 h-8 text-secondary group-hover:text-primary transition-colors" />
               </div>
-              <h3 className="text-lg font-bold text-foreground mb-2">Opname</h3>
-              <p className="text-sm text-muted-foreground px-2">Verhoogde efficiëntie van nutriëntenopname door mycelium.</p>
+              <h3 className="text-xl font-bold text-foreground mb-2">Opname</h3>
+              <p className="text-base text-muted-foreground px-2">Verhoogde efficiëntie van nutriëntenopname door mycelium.</p>
             </div>
 
             {/* Step 3 */}
@@ -61,8 +61,8 @@ export const ScienceSection = () => {
               <div className="w-20 h-20 bg-card border-2 border-border group-hover:border-primary transition-colors rounded-full flex items-center justify-center mb-6 shadow-sm z-10">
                 <Microscope className="w-8 h-8 text-secondary group-hover:text-primary transition-colors" />
               </div>
-              <h3 className="text-lg font-bold text-foreground mb-2">Myceliumactiviteit</h3>
-              <p className="text-sm text-muted-foreground px-2">Stimulering van herstel en herkolonisatie na elke vlucht.</p>
+              <h3 className="text-xl font-bold text-foreground mb-2">Myceliumactiviteit</h3>
+              <p className="text-base text-muted-foreground px-2">Stimulering van herstel en herkolonisatie na elke vlucht.</p>
             </div>
 
             {/* Step 4 */}
@@ -70,8 +70,8 @@ export const ScienceSection = () => {
               <div className="w-20 h-20 bg-card border-2 border-primary transition-colors rounded-full flex items-center justify-center mb-6 shadow-lg z-10">
                 <Scale className="w-8 h-8 text-primary" />
               </div>
-              <h3 className="text-lg font-bold text-primary mb-2">Opbrengst</h3>
-              <p className="text-sm text-muted-foreground px-2">Hogere productie per vlucht en langere levensduur.</p>
+              <h3 className="text-xl font-bold text-primary mb-2">Opbrengst</h3>
+              <p className="text-base text-muted-foreground px-2">Hogere productie per vlucht en langere levensduur.</p>
             </div>
 
           </div>
