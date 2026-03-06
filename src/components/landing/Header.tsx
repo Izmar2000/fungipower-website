@@ -93,9 +93,9 @@ export const Header = ({ forceSolid = false }: { forceSolid?: boolean }) => {
         }`}
       style={{
         background: isSolid
-          ? `linear-gradient(90deg, rgba(204, 68, 0, 0.92) 0%, rgba(215, 25, 32, 0.95) 100%)`
+          ? `linear-gradient(90deg, rgba(204, 68, 0, 0.95) 0%, rgba(215, 25, 32, 0.98) 100%)`
           : `none`,
-        backdropBlur: isSolid ? "12px" : "none",
+        backdropFilter: isSolid ? "blur(12px)" : "none",
         WebkitBackdropFilter: isSolid ? "blur(12px)" : "none",
       }}
     >
