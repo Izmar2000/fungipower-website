@@ -18,7 +18,7 @@ export const HeroSection = () => {
   return (
     <section
       id="home"
-      className="relative w-full min-h-[600px] md:min-h-[800px] overflow-hidden flex flex-col"
+      className="relative w-full min-h-[600px] md:min-h-[800px] overflow-hidden flex flex-col scroll-mt-44"
       style={{
         background: `linear-gradient(135deg, #F58220 0%, #D71920 100%)`
       }}

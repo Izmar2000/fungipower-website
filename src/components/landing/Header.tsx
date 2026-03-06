@@ -31,7 +31,15 @@ export const Header = ({ forceSolid = false }: { forceSolid?: boolean }) => {
       if (window.location.pathname === "/") {
         const element = document.getElementById(id);
         if (element) {
-          element.scrollIntoView({ behavior: "smooth" });
+          const header = document.querySelector('header');
+          const headerHeight = header ? header.offsetHeight : 80;
+          const elementPosition = element.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - headerHeight - 32; // 32px extra safe space
+
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth"
+          });
         }
       } else {
         window.location.href = href;

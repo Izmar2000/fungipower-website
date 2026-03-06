@@ -2,7 +2,7 @@ import { BarChart3, TrendingUp, FlaskConical, ArrowRight, FileText, Clock } from
 
 export const ResultsSection = () => {
   return (
-    <section id="results" className="py-24 bg-secondary text-secondary-foreground relative overflow-hidden">
+    <section id="results" className="py-24 bg-secondary text-secondary-foreground relative overflow-hidden scroll-mt-44">
       {/* Emotional/Story background blend */}
       <div
         className="absolute inset-0 z-0 pointer-events-none opacity-30 mix-blend-overlay"
@@ -46,7 +46,8 @@ export const ResultsSection = () => {
 
           {/* Right Content - Data Viz */}
           <div className="flex-1 w-full">
-            <div className="bg-white/80 backdrop-blur-xl border border-white/50 shadow-2xl shadow-black/10 rounded-2xl p-8 md:p-10">
+            <div className="bg-gradient-to-br from-white/95 via-white/85 to-white/75 backdrop-blur-2xl border border-white/60 shadow-2xl shadow-black/10 rounded-2xl p-8 md:p-10 relative overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-tr from-[#F58220]/5 via-transparent to-transparent pointer-events-none" />
               <div className="mb-8 border-b border-black/10 pb-4">
                 <h3 className="text-xl font-bold text-slate-900">Kernbevindingen FungiPower Boost</h3>
                 <p className="text-xs text-slate-500 italic mt-1">*Deze dataset wordt periodiek geactualiseerd aan de hand van nieuwe praktijkmetingen.</p>

@@ -4,11 +4,11 @@ export const GlassmorphismPanel = () => {
   return (
     <div className="w-full flex-1 max-w-2xl relative z-10 transform transition-transform duration-700 hover:scale-[1.01]">
 
-      {/* Premium Glass Effect Card with Subtle Shadow Depth */}
-      <div className="bg-white/95 backdrop-blur-2xl p-8 md:p-12 shadow-2xl shadow-black/10 relative overflow-hidden rounded-[24px] border border-white/60">
+      {/* Premium Glass Effect Card with Fuller Gradient & Shadow Depth */}
+      <div className="bg-gradient-to-br from-white/95 via-white/90 to-white/80 backdrop-blur-2xl p-8 md:p-12 shadow-2xl shadow-black/10 relative overflow-hidden rounded-[24px] border border-white/60">
 
-        {/* Subtle inner glow for depth */}
-        <div className="absolute top-[-50%] right-[-50%] w-full h-full bg-gradient-radial from-[#F58220]/5 to-transparent blur-3xl" />
+        {/* Subtle inner glow for extra depth */}
+        <div className="absolute inset-0 bg-gradient-to-tr from-[#F58220]/5 via-transparent to-transparent pointer-events-none" />
 
         {/* Case Study Heading */}
         <h3 className="text-sm md:text-base font-bold text-slate-800 uppercase tracking-widest mb-10 border-b border-black/5 pb-4">

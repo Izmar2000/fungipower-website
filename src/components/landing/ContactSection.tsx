@@ -26,7 +26,7 @@ export const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="py-24 bg-muted/30">
+    <section id="contact" className="py-24 bg-muted/30 scroll-mt-44">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="grid lg:grid-cols-2 gap-16 items-start">
 
@@ -153,10 +153,10 @@ export const ContactSection = () => {
                 SECTOR INZICHTEN
               </span>
               <h3 className="text-3xl md:text-4xl font-black text-white mb-4 tracking-tight leading-tight">
-                Elke ochtend de actuele beurs- en branche-updates in je inbox.
+                Meld je aan voor onze briefing.
               </h3>
               <p className="text-white/70 text-lg">
-                Meld je kosteloos aan voor onze dagelijkse briefing (ma-vrij). Ontvang direct de nieuwste compostprijzen, internationale champignontarieven en relevante marktontwikkelingen, verpakt in één korte e-mail.
+                Kort, krachtig en relevant. Ontvang updates over marktontwikkelingen en prijzen wanneer er écht iets te melden is.
               </p>
             </div>
 
@@ -166,7 +166,7 @@ export const ContactSection = () => {
                   e.preventDefault();
                   toast({
                     title: "Aanmelding gelukt!",
-                    description: "Je ontvangt vanaf morgenochtend de dagelijkse branche-update.",
+                    description: "Je bent succesvol aangemeld voor onze sector-updates.",
                   });
                 }}
                 className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10 flex flex-col gap-4"

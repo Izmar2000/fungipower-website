@@ -2,7 +2,7 @@ import { Droplets, Network, Microscope, Scale } from "lucide-react";
 
 export const ScienceSection = () => {
   return (
-    <section id="science" className="relative py-32 md:py-40 bg-background border-t border-border overflow-hidden clear-both">
+    <section id="science" className="relative py-32 md:py-40 bg-background border-t border-border overflow-hidden clear-both scroll-mt-44">
       {/* Faded Vintage Background Image */}
       <div
         className="absolute inset-0 z-0 pointer-events-none opacity-[0.05] mix-blend-multiply"
