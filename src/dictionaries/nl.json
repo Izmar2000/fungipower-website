@@ -272,5 +272,40 @@
         "advantageBadgeShield": "Het Shield Voordeel",
         "expertAdvice": "Expert Advies",
         "importantInstructions": "Belangrijke instructies"
+    },
+    "Cucumbers": {
+        "metaTitle": "Komkommer Resultaten & Testen | PlantiPower",
+        "metaDesc": "Bekijk de indrukwekkende resultaten van PlantiPower in de komkommerteelt. Meer opbrengst, betere kwaliteit en snellere cycli.",
+        "heroBadge": "Praktijkresultaten",
+        "heroTitle": "KOMKOMMER",
+        "heroTitleAccent": "TEELT OPTIMALISATIE",
+        "heroDesc": "Ontdek hoe PlantiPower de standaard zet in de professionele komkommerteelt. Maximale opname voor een top-opbrengst.",
+        "resultsTitle": "Gevalideerde",
+        "resultsTitleAccent": "Resultaten",
+        "resultsDesc": "Onze testen bij toonaangevende kwekers laten consistente verbeteringen zien in zowel kwaliteit als kwantiteit.",
+        "stats": [
+            {
+                "label": "Opbrengst",
+                "value": "+2",
+                "unit": "stuks / m²",
+                "desc": "Gemeten bij Van Gog Kwekerijen"
+            },
+            {
+                "label": "Cyclus",
+                "value": "1",
+                "unit": "dag sneller",
+                "desc": "Eerdere oogst door efficiënt transport"
+            },
+            {
+                "label": "Kwaliteit",
+                "value": "Top",
+                "unit": "Klasse",
+                "desc": "Uniforme vruchten en betere houdbaarheid"
+            }
+        ],
+        "testimonialTitle": "Wat kwekers zeggen",
+        "testimonialText": "\"De toevoeging van PlantiPower aan ons bestaande schema gaf binnen enkele weken een zichtbaar vitaler gewas. De komkommers zijn uniformer en de plant blijft langer sterk, zelfs bij hoge belasting.\"",
+        "testimonialAuthor": "Komkommerkweker",
+        "testimonialLocation": "Regio Venlo"
     }
 }

@@ -6,21 +6,24 @@ const slugMap: Record<string, Record<string, string>> = {
         'products/all12': 'plantipower-all12',
         'products/shield': 'plantipower-shield',
         'faq': 'faq',
-        'contact': 'contact'
+        'contact': 'contact',
+        'cucumbers': 'cucumbers'
     },
     nl: {
         'about': 'over-ons',
         'products/all12': 'plantipower-all12',
         'products/shield': 'plantipower-shield',
         'faq': 'faq',
-        'contact': 'contact'
+        'contact': 'contact',
+        'cucumbers': 'komkommers'
     },
     de: {
         'about': 'ueber-uns',
         'products/all12': 'plantipower-all12',
         'products/shield': 'plantipower-shield',
         'faq': 'faq',
-        'contact': 'kontakt'
+        'contact': 'kontakt',
+        'cucumbers': 'gurken'
     }
 };
 

@@ -272,5 +272,40 @@
         "advantageBadgeShield": "Der Shield-Vorteil",
         "expertAdvice": "Expertenrat",
         "importantInstructions": "Wichtige Anweisungen"
+    },
+    "Cucumbers": {
+        "metaTitle": "Gurken Ergebnisse & Tests | PlantiPower",
+        "metaDesc": "Entdecken Sie die beeindruckenden Ergebnisse von PlantiPower im Gurkenanbau. Mehr Ertrag, bessere Qualität und schnellere Zyklen.",
+        "heroBadge": "Praxisresultate",
+        "heroTitle": "GURKEN",
+        "heroTitleAccent": "KULTUR OPTIMIERUNG",
+        "heroDesc": "Entdecken Sie, wie PlantiPower den Standard im professionellen Gurkenanbau setzt. Maximale Aufnahme für Spitzenerträge.",
+        "resultsTitle": "Validierte",
+        "resultsTitleAccent": "Ergebnisse",
+        "resultsDesc": "Unsere Tests bei führenden Erzeugern zeigen konsistente Verbesserungen in Qualität und Quantität.",
+        "stats": [
+            {
+                "label": "Ertrag",
+                "value": "+2",
+                "unit": "Stück / m²",
+                "desc": "Gemessen bei Van Gog Gärtnereien"
+            },
+            {
+                "label": "Zyklus",
+                "value": "1",
+                "unit": "Tag schneller",
+                "desc": "Frühere Ernte durch effizienten Transport"
+            },
+            {
+                "label": "Qualität",
+                "value": "Top",
+                "unit": "Klasse",
+                "desc": "Uniforme Früchte und bessere Haltbarkeit"
+            }
+        ],
+        "testimonialTitle": "Was Erzeuger sagen",
+        "testimonialText": "\"Die Ergänzung von PlantiPower zu unserem bestehenden Plan führte innerhalb weniger Wochen zu einer sichtbar vitaleren Kultur. Die Gurken sind gleichmäßiger und die Pflanze bleibt länger kräftig, selbst bei hoher Belastung.\"",
+        "testimonialAuthor": "Gurkenerzeuger",
+        "testimonialLocation": "Region Venlo"
     }
 }

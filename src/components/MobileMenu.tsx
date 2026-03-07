@@ -68,9 +68,9 @@ const MobileMenu: FC<MobileMenuProps> = ({ open, onClose, onOpenSample, dict, la
                     <Link
                         href={getPath('about', lang)}
                         onClick={onClose}
-                        className={`text-3xl font-black uppercase tracking-tighter py-2 transition-colors ${isActive('about') ? 'text-lime-400' : 'text-white'}`}
+                        className={`text-3xl font-black uppercase tracking-tighter py-2 transition-colors whitespace-nowrap ${isActive('about') ? 'text-lime-400' : 'text-white'}`}
                     >
-                        {t?.aboutLabel || (isDE ? "Über uns" : isNL ? "Over ons" : "About")}
+                        {String(t?.aboutLabel || (isDE ? "Über uns" : isNL ? "Over ons" : "About")).replace(/ /g, '\u00A0')}
                     </Link>
                 </div>
 

@@ -267,10 +267,45 @@
     "Products": {
         "coreSystem": "Core System",
         "technicalData": "Technical Data",
-        "spectrumBadge": "Complete Spectrum Capture",
+        "spectrumBadge": "Full Spectrum Uptake",
         "advantageBadgeAll12": "The All12 Advantage",
         "advantageBadgeShield": "The Shield Advantage",
         "expertAdvice": "Expert Advice",
-        "importantInstructions": "Important Instructions"
+        "importantInstructions": "Important instructions"
+    },
+    "Cucumbers": {
+        "metaTitle": "Cucumber Results & Trials | PlantiPower",
+        "metaDesc": "Explore the impressive results of PlantiPower in cucumber cultivation. Higher yield, better quality, and faster cycles.",
+        "heroBadge": "Field Results",
+        "heroTitle": "CUCUMBER",
+        "heroTitleAccent": "CROP OPTIMIZATION",
+        "heroDesc": "Discover how PlantiPower sets the standard in professional cucumber cultivation. Maximum uptake for top yields.",
+        "resultsTitle": "Validated",
+        "resultsTitleAccent": "Results",
+        "resultsDesc": "Our trials with leading growers show consistent improvements in both quality and quantity.",
+        "stats": [
+            {
+                "label": "Yield",
+                "value": "+2",
+                "unit": "pieces / m²",
+                "desc": "Measured at Van Gog Kwekerijen"
+            },
+            {
+                "label": "Cycle",
+                "value": "1",
+                "unit": "day faster",
+                "desc": "Earlier harvest through efficient transport"
+            },
+            {
+                "label": "Quality",
+                "value": "Top",
+                "unit": "Class",
+                "desc": "Uniform fruits and better shelf life"
+            }
+        ],
+        "testimonialTitle": "What growers say",
+        "testimonialText": "\"Adding PlantiPower to our existing schedule resulted in a visibly more vital crop within weeks. The cucumbers are more uniform and the plant remains strong longer, even under heavy load.\"",
+        "testimonialAuthor": "Cucumber Grower",
+        "testimonialLocation": "Venlo Region"
     }
 }

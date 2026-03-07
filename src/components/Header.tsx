@@ -52,20 +52,20 @@ const Header: React.FC<HeaderProps> = ({ onOpenSample, onOpenMenu, dict, lang })
           </div>
 
           {/* CENTER: NAV LINKS */}
-          <div className="hidden lg:flex flex-1 justify-center items-center gap-5 xl:gap-10 text-[12px] font-bold uppercase tracking-[0.4em] text-white relative z-10 transition-all lg:px-6">
-            <Link href={`/${lang}`} className={`hover:text-lime-400 transition-all relative group ${isActive(`/${lang}`) ? 'text-lime-400' : ''}`}>
-              {t.home}
+          <div className="hidden lg:flex flex-1 justify-center items-center gap-5 xl:gap-8 text-[12px] font-bold uppercase tracking-[0.3em] xl:tracking-[0.4em] text-white relative z-10 transition-all lg:px-2">
+            <Link href={`/${lang}`} className={`hover:text-lime-400 transition-all relative group whitespace-nowrap shrink-0 ${isActive(`/${lang}`) ? 'text-lime-400' : ''}`}>
+              {t.home.replace(/ /g, '\u00A0')}
               <span className={`absolute -bottom-1 left-0 h-px bg-lime-500 transition-all duration-300 ${isActive(`/${lang}`) ? 'w-full' : 'w-0 group-hover:w-full'}`}></span>
             </Link>
 
-            <Link href={getPath('about', lang)} className={`hover:text-lime-400 transition-all relative group ${isActive(getPath('about', lang)) ? 'text-lime-400' : ''}`}>
-              {t.about}
+            <Link href={getPath('about', lang)} className={`hover:text-lime-400 transition-all relative group whitespace-nowrap shrink-0 ${isActive(getPath('about', lang)) ? 'text-lime-400' : ''}`}>
+              {t.about.replace(/ /g, '\u00A0')}
               <span className={`absolute -bottom-1 left-0 h-px bg-lime-500 transition-all duration-300 ${isActive(getPath('about', lang)) ? 'w-full' : 'w-0 group-hover:w-full'}`}></span>
             </Link>
 
-            <div className="relative group/dropdown py-4">
-              <button className={`flex items-center gap-2 hover:text-lime-400 transition-all tracking-[0.4em] uppercase ${pathname.includes('products') || pathname.includes('plantipower-') ? 'text-lime-400' : ''}`}>
-                {t.products}
+            <div className="relative group/dropdown py-4 shrink-0">
+              <button className={`flex items-center gap-2 hover:text-lime-400 transition-all tracking-[0.3em] xl:tracking-[0.4em] uppercase whitespace-nowrap ${pathname.includes('products') || pathname.includes('plantipower-') ? 'text-lime-400' : ''}`}>
+                {t.products.replace(/ /g, '\u00A0')}
                 <ChevronDown className="w-3 h-3 opacity-50 transition-transform duration-300 group-hover/dropdown:rotate-180" />
               </button>
 
@@ -84,13 +84,13 @@ const Header: React.FC<HeaderProps> = ({ onOpenSample, onOpenMenu, dict, lang })
               </div>
             </div>
 
-            <Link href={getPath('faq', lang)} className={`hover:text-lime-400 transition-all relative group ${isActive(getPath('faq', lang)) ? 'text-lime-400' : ''}`}>
-              {t.faq}
+            <Link href={getPath('faq', lang)} className={`hover:text-lime-400 transition-all relative group whitespace-nowrap shrink-0 ${isActive(getPath('faq', lang)) ? 'text-lime-400' : ''}`}>
+              {t.faq.replace(/ /g, '\u00A0')}
               <span className={`absolute -bottom-1 left-0 h-px bg-lime-500 transition-all duration-300 ${isActive(getPath('faq', lang)) ? 'w-full' : 'w-0 group-hover:w-full'}`}></span>
             </Link>
 
-            <Link href={getPath('contact', lang)} className={`hover:text-lime-400 transition-all relative group ${isActive(getPath('contact', lang)) ? 'text-lime-400' : ''}`}>
-              {t.contact}
+            <Link href={getPath('contact', lang)} className={`hover:text-lime-400 transition-all relative group whitespace-nowrap shrink-0 ${isActive(getPath('contact', lang)) ? 'text-lime-400' : ''}`}>
+              {t.contact.replace(/ /g, '\u00A0')}
               <span className={`absolute -bottom-1 left-0 h-px bg-lime-500 transition-all duration-300 ${isActive(getPath('contact', lang)) ? 'w-full' : 'w-0 group-hover:w-full'}`}></span>
             </Link>
           </div>
