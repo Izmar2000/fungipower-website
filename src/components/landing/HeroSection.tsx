@@ -33,7 +33,7 @@ export const HeroSection = () => {
       <div
         className="absolute inset-0 w-full h-full z-0 pointer-events-none opacity-[0.45]"
         style={{
-          backgroundImage: 'url("https://images.unsplash.com/photo-1549488344-1f9b8d2bd1f3?q=80&auto=format&fit=crop")',
+          backgroundImage: 'url("https://images.unsplash.com/photo-1506459225024-1428097a7e18?q=80&auto=format&fit=crop")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           mixBlendMode: 'multiply',
