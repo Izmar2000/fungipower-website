@@ -71,38 +71,18 @@ export const TrialPopup = ({ open, onOpenChange }: TrialPopupProps) => {
 
     return (
         <Dialog open={open} onOpenChange={onOpenChange}>
-            <DialogContent className="sm:max-w-[700px] max-h-[95vh] overflow-y-auto bg-[#050A0F] text-white border-white/10 p-0 shadow-2xl z-[100]">
-                {/* Header Section with Image */}
+            <DialogContent className="sm:max-w-[700px] max-h-[95vh] overflow-y-auto bg-[#050A0F] text-white border-white/10 p-0 shadow-2xl z-[200]">
+                {/* Header Section */}
                 <div className="relative bg-gradient-to-br from-[#1A0A00] to-[#050A0F] p-8 md:p-12 overflow-hidden border-b border-white/5">
                     <div className="absolute top-0 right-0 w-80 h-80 bg-[#F58220]/10 rounded-full blur-[100px] -mr-40 -mt-40 pointer-events-none" />
 
-                    <div className="flex flex-col md:flex-row gap-8 items-center relative z-[10]">
-                        <div className="flex-1 text-left">
-                            <h2 className="text-3xl md:text-5xl font-black mb-4 tracking-tight leading-none uppercase">
-                                BESTEL HIER UW <br /><span className="text-[#F58220]">PROEFPAKKET</span>
-                            </h2>
-                            <p className="text-white/60 text-sm font-medium leading-relaxed max-w-sm">
-                                Ontvang 1x 1 liter FungiPower Start en 1x 1 liter FungiPower Boost voor slechts <span className="text-white font-bold">€29,95</span> (excl. BTW) inclusief verzendkosten.
-                            </p>
-                        </div>
-                        <div className="w-full md:w-48 lg:w-56 shrink-0 aspect-square flex items-center justify-center relative">
-                            <div className="absolute inset-0 bg-[#F58220]/10 blur-3xl rounded-full scale-75 group-hover:scale-100 transition-transform duration-700" />
-                            {!imgError ? (
-                                <img
-                                    src="/images/trial-bottles.png"
-                                    alt="FungiPower Trial Package"
-                                    className="relative z-10 w-full h-auto drop-shadow-2xl transition-transform duration-500 hover:scale-105"
-                                    onError={() => setImgError(true)}
-                                />
-                            ) : (
-                                <div className="relative z-10 w-full h-full border border-white/10 border-dashed rounded-3xl flex flex-col items-center justify-center p-6 text-center bg-white/5 backdrop-blur-sm">
-                                    <span className="text-[10px] font-black uppercase tracking-[0.2em] text-[#F58220]">Hier komt afb.</span>
-                                    <p className="text-[9px] font-bold text-white/30 uppercase tracking-widest mt-2 px-2 leading-tight">
-                                        Visualisatie in productie
-                                    </p>
-                                </div>
-                            )}
-                        </div>
+                    <div className="relative z-[10] text-left">
+                        <h2 className="text-3xl md:text-5xl font-black mb-4 tracking-tight leading-none uppercase">
+                            BESTEL HIER UW <br /><span className="text-[#F58220]">PROEFPAKKET</span>
+                        </h2>
+                        <p className="text-white/60 text-sm font-medium leading-relaxed max-w-xl">
+                            Ontvang 1x 1 liter FungiPower Start en 1x 1 liter FungiPower Boost voor slechts <span className="text-white font-bold">€29,95</span> (excl. BTW) inclusief verzendkosten.
+                        </p>
                     </div>
                 </div>
 
