@@ -61,16 +61,16 @@ const MobileMenu: FC<MobileMenuProps> = ({ open, onClose, onOpenSample, dict, la
                     <Link
                         href={`/${lang}`}
                         onClick={onClose}
-                        className={`text-3xl font-black uppercase tracking-tighter py-2 transition-colors ${isActive('/') ? 'text-lime-400' : 'text-white'}`}
+                        className={`text-2xl sm:text-3xl font-black uppercase tracking-tighter py-2 transition-colors whitespace-nowrap ${isActive('/') ? 'text-lime-400' : 'text-white'}`}
                     >
                         {t?.home || "Home"}
                     </Link>
                     <Link
                         href={getPath('about', lang)}
                         onClick={onClose}
-                        className={`text-3xl font-black uppercase tracking-tighter py-2 transition-colors whitespace-nowrap ${isActive('about') ? 'text-lime-400' : 'text-white'}`}
+                        className={`text-2xl sm:text-3xl font-black uppercase tracking-tighter py-2 transition-colors whitespace-nowrap ${isActive('about') ? 'text-lime-400' : 'text-white'}`}
                     >
-                        {String(t?.aboutLabel || (isDE ? "Über uns" : isNL ? "Over ons" : "About")).replace(/ /g, '\u00A0')}
+                        {String(t?.about || t?.aboutLabel || (isDE ? "Über uns" : isNL ? "Over ons" : "About")).replace(/ /g, '\u00A0')}
                     </Link>
                 </div>
 

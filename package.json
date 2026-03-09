@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "sync": "cd \"/Users/hadad/Documents/AntiGravity/The Road To /road-to-wimbledon\" && npm run build && rm -rf \"/Users/hadad/Documents/AntiGravity/plantipower-next/public/theroadto/\"* && cp -R \"/Users/hadad/Documents/AntiGravity/The Road To /road-to-wimbledon/out/\"* \"/Users/hadad/Documents/AntiGravity/plantipower-next/public/theroadto/\""
   },
   "dependencies": {
     "@formatjs/intl-localematcher": "^0.8.1",

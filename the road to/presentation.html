@@ -43,6 +43,60 @@
       background: var(--brand-dark);
     }
 
+    @media screen and (max-width: 768px) {
+      html, body {
+        overflow-x: hidden;
+      }
+      .page {
+        width: 100vw !important;
+        height: auto !important;
+        min-height: 100vh;
+        overflow: hidden;
+      }
+      .content-wrapper,
+      #p1 .content,
+      #p2 .content-wrapper,
+      #p3 .content-wrapper,
+      #p4 .content-wrapper,
+      #p5 .content-wrapper,
+      #p6 .content-wrapper {
+        padding: 50px 20px 80px 20px !important;
+      }
+      h1, h2 { font-size: 40px !important; }
+      h3 { font-size: 22px !important; }
+      #p1 h1 { font-size: 48px !important; letter-spacing: -1px !important; }
+      #p1 h1 span.green-text { font-size: 56px !important; }
+      #p5 .price-huge { font-size: 80px !important; }
+      #p6 h2 { font-size: 48px !important; }
+      .grid-story,
+      .dynamic-grid,
+      .benefits-grid,
+      .breakdown-grid,
+      #p5 .breakdown-grid,
+      #p6 .contact-box {
+        grid-template-columns: 1fr !important;
+        flex-direction: column !important;
+        display: flex !important;
+        flex-wrap: wrap;
+      }
+      #p4 .benefit-wide { grid-column: auto !important; }
+      .bus-inserted { display: none !important; }
+      #p1 .stats-road {
+        flex-direction: column !important;
+        gap: 12px;
+      }
+      #p6 .person { width: 100% !important; }
+      .header-top { letter-spacing: 4px !important; font-size: 12px !important; }
+      .footer-road {
+        flex-direction: column !important;
+        gap: 6px !important;
+        text-align: center !important;
+      }
+      #p5 div[style*="display:flex"] {
+        flex-direction: column !important;
+      }
+    }
+
     /* Typography */
     h1,
     h2,
