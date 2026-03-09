@@ -55,10 +55,7 @@ export async function generateMetadata(
         { url: '/favicon.ico?v=3' },
         { url: '/icon.png?v=3', type: 'image/png' },
       ],
-  ],
-},
-}
-}       apple: [
+      apple: [
         { url: '/apple-touch-icon.png?v=3' },
       ],
     },
