@@ -12,10 +12,10 @@ export const GlassmorphismPanel = () => {
 
         {/* Case Study Heading */}
         <h3 className="text-sm md:text-base font-bold text-slate-800 uppercase tracking-widest mb-10 border-b border-black/5 pb-4">
-          Praktijkvoorbeeld Grubbenvorst
+          Praktijkvoorbeelden & Resultaten
         </h3>
 
-        {/* Dominant +14% & Graph Row */}
+        {/* Dominant +XX% & Graph Row */}
         <div className="mb-12 relative flex flex-col justify-end min-h-[160px]">
 
           {/* Background Graph Animation */}
@@ -54,44 +54,21 @@ export const GlassmorphismPanel = () => {
             }
           `}</style>
 
-          {/* Brutal/Dominant +14% Overlapping the graph */}
+          {/* Brutal/Dominant +XX% Overlapping the graph */}
           <div className="relative z-10 pl-2">
             <span className="block text-xs font-black text-slate-500 uppercase tracking-[0.2em] mb-1">
-              Resultaat 2e Vlucht
+              Opbrengstverbetering per vlucht
             </span>
             <div className="relative inline-block">
               {/* Soft glow behind the massive text */}
               <div className="absolute inset-0 bg-[#F58220] blur-[40px] opacity-20" />
               <span className="relative text-6xl md:text-[80px] font-black leading-none text-slate-900 tracking-tighter drop-shadow-sm">
-                +14%
+                +XX%
               </span>
             </div>
             <p className="text-xs text-slate-500 mt-12 font-medium">
-              Constante groei en verhoogde knopvorming geobserveerd in praktijk.
+              Geobserveerde verbetering in commerciële praktijkproeven.
             </p>
-          </div>
-        </div>
-
-        {/* Detailed Impact Cards */}
-        <div className="grid sm:grid-cols-2 gap-4 mb-10">
-          <div className="flex flex-col gap-3 p-5 bg-slate-50/80 rounded-xl border border-black/5 shadow-sm transform transition-all duration-300 hover:bg-white hover:shadow-md hover:-translate-y-1">
-            <Droplets className="w-7 h-7 text-[#F58220]" />
-            <div>
-              <h4 className="text-slate-900 font-bold text-base leading-tight">Vochtigheid & CO2</h4>
-              <p className="text-slate-500 text-sm mt-1 leading-relaxed">
-                Stabiel <strong>88.2%</strong> vocht en <strong>948 PPM</strong> CO2.
-              </p>
-            </div>
-          </div>
-
-          <div className="flex flex-col gap-3 p-5 bg-slate-50/80 rounded-xl border border-black/5 shadow-sm transform transition-all duration-300 hover:bg-white hover:shadow-md hover:-translate-y-1">
-            <Thermometer className="w-7 h-7 text-[#F58220]" />
-            <div>
-              <h4 className="text-slate-900 font-bold text-base leading-tight">Temperatuur</h4>
-              <p className="text-slate-500 text-sm mt-1 leading-relaxed">
-                Constante core van <strong>24.1 °C</strong> zonder schommeling.
-              </p>
-            </div>
           </div>
         </div>
 

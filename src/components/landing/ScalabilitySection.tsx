@@ -82,10 +82,10 @@ export const ScalabilitySection = () => {
             <h3 className="text-2xl font-black text-secondary mb-2">FungiPower Boost</h3>
             <p className="text-sm font-bold text-primary uppercase tracking-wider mb-6">Maximaliseer elke vlucht</p>
 
-            <h4 className="text-lg font-bold text-foreground mb-4">Verleng de productieve levensduur.</h4>
+            <h4 className="text-lg font-bold text-foreground mb-4">Optimale opbrengst in latere vluchten.</h4>
 
             <p className="text-muted-foreground mb-8 flex-grow leading-relaxed">
-              FungiPower Boost wordt toegepast na elke vlucht. Uit praktijktesten blijkt dat toepassing na vlucht 1 het grootste effect geeft, met tot <span className="text-foreground font-bold">+27,7%*</span> opbrengstverbetering.
+              FungiPower Boost wordt toegepast na elke vlucht. Uit praktijktesten blijkt dat toepassing na vlucht 1 het grootste effect geeft, met tot <span className="text-foreground font-bold">XX%*</span> opbrengstverbetering.
             </p>
 
             <div className="space-y-4 border-t border-border pt-6">

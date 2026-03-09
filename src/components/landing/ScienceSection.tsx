@@ -27,7 +27,7 @@ export const ScienceSection = () => {
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed">
             FungiPower werkt niet als voeding, maar als biostimulant die de opname en benutting van nutriënten optimaliseert.
-            Het ondersteunt de activiteit binnen het substraat en verlengt de productieve fase van de teeltcyclus.
+            Het optimaliseert omstandigheden voor Agaricus mycelium, met name in latere vluchten.
           </p>
         </div>
 
@@ -43,8 +43,8 @@ export const ScienceSection = () => {
               <div className="w-20 h-20 bg-card border-2 border-border group-hover:border-primary transition-colors rounded-full flex items-center justify-center mb-6 shadow-sm z-10">
                 <Droplets className="w-8 h-8 text-secondary group-hover:text-primary transition-colors" />
               </div>
-              <h3 className="text-xl font-bold text-foreground mb-2">Substraat</h3>
-              <p className="text-base text-muted-foreground px-2">Optimalisatie van de basisstructuur en vochtbalans.</p>
+              <h3 className="text-xl font-bold text-foreground mb-2">Mycelium</h3>
+              <p className="text-base text-muted-foreground px-2">Optimalisatie van de omstandigheden voor mycelium.</p>
             </div>
 
             {/* Step 2 */}
@@ -71,7 +71,7 @@ export const ScienceSection = () => {
                 <Scale className="w-8 h-8 text-primary" />
               </div>
               <h3 className="text-xl font-bold text-primary mb-2">Opbrengst</h3>
-              <p className="text-base text-muted-foreground px-2">Hogere productie per vlucht en langere levensduur.</p>
+              <p className="text-base text-muted-foreground px-2">Hogere productie per vlucht met focus op latere vluchten.</p>
             </div>
 
           </div>

@@ -57,8 +57,8 @@ export const ResultsSection = () => {
                 {/* Stat 1 */}
                 <div className="relative">
                   <div className="flex justify-between items-end mb-2">
-                    <span className="text-sm font-bold text-slate-500 uppercase">Gemiddelde Opbrengstverhoging</span>
-                    <span className="text-3xl font-black text-primary">+11,3%</span>
+                    <span className="text-sm font-bold text-slate-500 uppercase">Gemiddelde Opbrengstverbetering</span>
+                    <span className="text-3xl font-black text-primary">+XX%</span>
                   </div>
                   <div className="h-4 bg-black/5 rounded-full overflow-hidden shadow-inner">
                     <div className="h-full bg-primary w-[85%] rounded-full relative">
@@ -72,9 +72,9 @@ export const ResultsSection = () => {
                 <div className="flex items-start gap-4 p-4 bg-white/60 rounded-lg border border-white/40 shadow-sm">
                   <TrendingUp className="w-8 h-8 text-primary flex-shrink-0" />
                   <div>
-                    <h4 className="text-slate-900 font-bold text-xl">Impact op 3e Vlucht</h4>
+                    <h4 className="text-slate-900 font-bold text-xl">Opbrengst per vlucht</h4>
                     <p className="text-slate-700 text-base mt-1">
-                      De grootste procentuele winst wordt gerealiseerd in de derde vlucht, door verlenging van de productieve levensduur.
+                      Effect op opbrengst per vlucht wordt momenteel onderzocht in praktijkproeven.
                     </p>
                   </div>
                 </div>
@@ -92,7 +92,7 @@ export const ResultsSection = () => {
               </div>
 
               <p className="text-[10px] text-slate-500 italic mt-6 px-4">
-                * Resultaten op basis van onafhankelijke praktijkproeven bij Nederlandse kwekers (n=12). Individuele resultaten kunnen variëren per teeltsituatie.
+                * Resultaten uit praktijkproeven in standaard commerciële champignonteelt. Individuele resultaten kunnen variëren per teeltsituatie.
               </p>
             </div>
           </div>

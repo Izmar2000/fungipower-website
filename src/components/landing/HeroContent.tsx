@@ -1,5 +1,5 @@
 // HeroContent.tsx
-import { ArrowRight, Droplets, Microscope, LineChart } from "lucide-react";
+import { ArrowRight, Droplets, Microscope, LineChart, TrendingUp } from "lucide-react";
 
 export const HeroContent = () => {
   return (
@@ -15,30 +15,34 @@ export const HeroContent = () => {
 
       {/* Main Headline - Identical font size for both lines */}
       <h1 className="text-4xl md:text-[50px] lg:text-[55px] xl:text-[60px] font-black text-white leading-[1.0] mb-10 tracking-[-0.02em] animate-fade-in-up uppercase whitespace-nowrap flex flex-col items-start gap-2">
-        <span className="block">Minder verlies</span>
+        <span className="block">Maximale bio-efficiëntie</span>
         <span className="block text-white/80">Meer rendement</span>
       </h1>
 
       {/* Intro Block - Elegant, structured, non-bold to reduce noise */}
       <div className="mb-12 animate-fade-in" style={{ animationDelay: '0.2s' }}>
         <p className="text-white/95 text-lg md:text-xl font-medium leading-[1.6] max-w-2xl border-l-[3px] border-[#F58220] pl-6 py-0">
-          FungiPower versterkt de natuurlijke cyclus van het substraat voor stabiele productie en minder verlies.
+          FungiPower versterkt de natuurlijke cyclus van het mycelium voor stabiele productie en optimaal rendement.
         </p>
       </div>
 
-      {/* 3 Kernpunten - Structured list with icons, NOT ALL CAPS */}
+      {/* 4 Kernpunten - Structured list with icons, NOT ALL CAPS */}
       <div className="flex flex-col gap-5 mb-12 animate-fade-in" style={{ animationDelay: '0.4s' }}>
         <div className="flex items-center gap-4 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl px-5 py-3 shadow-md max-w-md">
-          <Droplets className="w-6 h-6 text-white flex-shrink-0" />
-          <span className="text-white font-semibold text-[15px] tracking-wide">Optimale nutriënten-absorptie</span>
+          <LineChart className="w-6 h-6 text-white flex-shrink-0" />
+          <span className="text-white font-semibold text-[15px] tracking-wide">Verhoogde bio-efficiëntie</span>
+        </div>
+        <div className="flex items-center gap-4 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl px-5 py-3 shadow-md max-w-md">
+          <TrendingUp className="w-6 h-6 text-white flex-shrink-0" strokeWidth={2.5} />
+          <span className="text-white font-semibold text-[15px] tracking-wide">Meer opbrengst in latere vluchten</span>
         </div>
         <div className="flex items-center gap-4 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl px-5 py-3 shadow-md max-w-md">
           <Microscope className="w-6 h-6 text-white flex-shrink-0" />
-          <span className="text-white font-semibold text-[15px] tracking-wide">Verlengde levensduur van substraat</span>
+          <span className="text-white font-semibold text-[15px] tracking-wide">Getest in commerciële champignonteelt</span>
         </div>
         <div className="flex items-center gap-4 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl px-5 py-3 shadow-md max-w-md">
-          <LineChart className="w-6 h-6 text-white flex-shrink-0" />
-          <span className="text-white font-semibold text-[15px] tracking-wide">Data-driven resultaten per vlucht</span>
+          <Droplets className="w-6 h-6 text-white flex-shrink-0" />
+          <span className="text-white font-semibold text-[15px] tracking-wide">Resultaten uit praktijkproeven</span>
         </div>
       </div>
 

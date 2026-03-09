@@ -38,60 +38,46 @@ export default function OverOns() {
                     </h1>
                 </section>
 
-                {/* Split Layout Section with Portrait and Text */}
+                {/* 1. Jan Klerken & Sectorervaring */}
                 <section className="pt-6 pb-20 max-w-7xl mx-auto px-6 md:px-12 relative">
-                    {/* Subtle gradient glow behind the text/heading */}
                     <div className="absolute top-1/4 right-0 w-[600px] h-[600px] bg-[#F58220]/5 rounded-full blur-[120px] pointer-events-none" />
 
                     <div className="grid lg:grid-cols-12 gap-16 xl:gap-24 items-start">
-                        {/* LEFT: Portrait Column - Unified Editorial Unit */}
                         <div className="lg:col-span-5">
                             <div className="relative group shadow-2xl rounded-3xl overflow-hidden">
-                                {/* Photo cropped at navel/waist */}
                                 <div className="aspect-[4/4.5] bg-slate-100 relative overflow-hidden">
                                     <img
                                         src="/images/jan-klerken.jpg"
                                         alt="Jan Klerken"
                                         className="w-full h-full object-cover object-top transition-transform duration-1000 group-hover:scale-[1.05] filter grayscale-[10%]"
                                     />
-                                    {/* Subtle gradient vignette at the very top for class */}
                                     <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-black/20 to-transparent opacity-40" />
                                 </div>
 
-                                {/* 🟠 ORANGE BLOCK - Attached directly below photo */}
                                 <div className="bg-gradient-to-br from-[#F58220] to-[#D71920] p-10 md:p-12 relative overflow-hidden">
-                                    {/* Name & Title Header */}
                                     <div className="mb-8 border-b border-white/20 pb-8">
                                         <h4 className="font-black text-3xl md:text-4xl text-white tracking-tighter mb-1">Jan Klerken</h4>
                                         <p className="text-[10px] font-bold uppercase tracking-[0.4em] text-white/70">Oprichter FungiPower</p>
                                     </div>
-
-                                    {/* Quote Mark Decoration */}
                                     <div className="absolute top-1/2 right-4 text-white/10 text-[180px] font-serif select-none pointer-events-none -translate-y-1/2">
                                         &rdquo;
                                     </div>
-
-                                    {/* The Quote */}
                                     <p className="relative z-10 text-white font-bold italic text-lg md:text-2xl leading-relaxed">
-                                        &ldquo;Verbetering draait niet om méér toevoegen, maar om beter benutten wat er al gebeurt binnen het substraat en de teelt.&rdquo;
+                                        &ldquo;Verbetering draait niet om méér toevoegen, maar om beter benutten van de natuurlijke kracht van de teelt.&rdquo;
                                     </p>
                                 </div>
                             </div>
                         </div>
 
-                        {/* RIGHT: Text Content Column */}
                         <div className="lg:col-span-7 pt-4 space-y-10 text-base md:text-lg text-slate-600 leading-relaxed font-medium">
                             <div className="space-y-6">
                                 <p className="text-xl md:text-2xl font-bold leading-snug text-slate-900 border-l-[4px] border-[#F58220] pl-8 py-2 mb-8 bg-gradient-to-r from-[#F58220]/5 to-transparent rounded-r-lg">
-                                    Ontstaan vanuit pure praktijkervaring en een diep, technisch begrip van hoe een teelt zich écht ontwikkelt binnen het substraat.
+                                    Ontstaan vanuit pure praktijkervaring en een diep begrip van hoe een teelt zich écht ontwikkelt.
                                 </p>
 
                                 <div className="space-y-6 animate-fade-in-up">
                                     <p>
                                         Jan Klerken groeide op in de champignonwereld. Wat voor anderen een product is, was voor hem dagelijkse realiteit. Door de jaren heen werkte hij in verschillende delen van de keten en zag hij hoe de sector professioneler en technischer werd. Wat daarbij altijd centraal bleef staan, is de rol van de teler. Uiteindelijk draait alles om degene die dagelijks verantwoordelijkheid draagt voor kwaliteit en continuïteit.
-                                    </p>
-                                    <p>
-                                        Er wordt steeds meer van de sector verwacht. Kwaliteit moet constant zijn, productie voorspelbaar en efficiënt omgaan met middelen is vanzelfsprekend geworden. In die ontwikkeling draait verbetering vaak niet om méér toevoegen, maar om beter benutten wat er al gebeurt binnen het substraat en de teelt.
                                     </p>
                                 </div>
                             </div>
@@ -99,24 +85,60 @@ export default function OverOns() {
                             <div className="relative pt-10 pb-4">
                                 <div className="absolute top-0 left-0 w-24 h-[1px] bg-[#F58220]" />
                                 <h2 className="text-3xl md:text-4xl font-black text-slate-900 tracking-tight mb-8">
-                                    Daar ligt de kern van FungiPower.
+                                    De uitdaging in de sector.
                                 </h2>
-                                <p className="animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
-                                    Wij ondersteunen de natuurlijke opname en benutting, zonder het systeem uit balans te brengen. Geen ingrijpende veranderingen, maar gerichte verfijning. Ontwikkeld vanuit praktijkkennis en getest in echte omstandigheden voor de teler van nu.
-                                </p>
+                                <div className="space-y-6 animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
+                                    <p>
+                                        De moderne champignonteelt staat voor grote uitdagingen. Grondstoffen worden schaarser en duurder, terwijl de eisen aan kwaliteit en opbrengst alleen maar toenemen. Kwekers moeten steeds efficiënter werken om rendabel te blijven in een competitieve markt.
+                                    </p>
+                                    <p>
+                                        In die ontwikkeling draait verbetering vaak niet om méér toevoegen, maar om het optimaliseren van wat er al aanwezig is. Het maximale rendement uit elke vlucht halen op een duurzame en betrouwbare manier.
+                                    </p>
+                                </div>
                             </div>
-
-                            <a href="/#science" className="bg-slate-100/50 p-8 rounded-2xl border border-black/5 flex items-center justify-between group cursor-pointer hover:bg-slate-100/80 transition-all">
-                                <span className="text-sm font-bold uppercase tracking-widest text-slate-400 group-hover:text-primary transition-colors">Onze methodiek</span>
-                                <ArrowRight className="w-5 h-5 text-slate-300 group-hover:text-primary group-hover:translate-x-1 transition-all" />
-                            </a>
                         </div>
                     </div>
                 </section>
 
-                {/* Horizontale “Van praktijk naar technologie” visual */}
+                {/* 2. Samenwerking Ourcelia x PlantiPower */}
+                <section className="py-20 bg-slate-900 text-white relative overflow-hidden">
+                    <div className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
+                        <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-[#F58220]/20 rounded-full blur-[150px]" />
+                    </div>
+
+                    <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
+                        <div className="grid lg:grid-cols-2 gap-16 items-center">
+                            <div>
+                                <span className="block text-[#F58220] font-bold text-xs tracking-[0.2em] uppercase mb-4">Samenwerking</span>
+                                <h2 className="text-4xl md:text-5xl font-black mb-8 tracking-tight">Ourcelia × PlantiPower</h2>
+                                <div className="space-y-6 text-lg text-white/70 leading-relaxed">
+                                    <p>
+                                        FungiPower is het resultaat van een strategische samenwerking tussen PlantiPower en Ourcelia. Deze joint venture combineert twee werelden: de diepgaande biologische expertise van Ourcelia als producent van kwalitatief broed, en de jarenlange sectorervaring van PlantiPower.
+                                    </p>
+                                    <p>
+                                        Door wetenschappelijke validatie te koppelen aan de dagelijkse realiteit van de kwekerij, hebben we een biostimulant ontwikkeld die écht impact heeft waar het telt: in de teeltcel.
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="bg-white/5 backdrop-blur-md border border-white/10 p-10 rounded-3xl">
+                                <h4 className="text-[#F58220] font-bold uppercase tracking-widest text-xs mb-6 text-center">De Kracht van de Combinatie</h4>
+                                <div className="grid grid-cols-2 gap-8">
+                                    <div className="text-center">
+                                        <div className="text-3xl font-black text-white mb-2">Ourcelia</div>
+                                        <p className="text-xs text-white/50 uppercase tracking-widest leading-loose">Biologische kennis & <br />Broedproductie</p>
+                                    </div>
+                                    <div className="text-center">
+                                        <div className="text-3xl font-black text-white mb-2">PlantiPower</div>
+                                        <p className="text-xs text-white/50 uppercase tracking-widest leading-loose">Sectorervaring & <br />Praktijkkennis</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                {/* 3. Technologie behind FungiPower */}
                 <section className="py-16 md:py-24 bg-slate-50 border-y border-black/5 relative overflow-hidden">
-                    {/* Faded Vintage Background Image */}
                     <div
                         className="absolute inset-0 z-0 pointer-events-none opacity-[0.07] mix-blend-multiply"
                         style={{
@@ -131,26 +153,16 @@ export default function OverOns() {
 
                     <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
                         <div className="mb-20">
-                            <h3 className="text-xs font-bold tracking-[0.2em] uppercase text-slate-400 mb-3">Evolutie</h3>
-                            <h2 className="text-4xl md:text-5xl font-black tracking-tight text-slate-900">Van praktijk naar technologie.</h2>
+                            <h3 className="text-xs font-bold tracking-[0.2em] uppercase text-slate-400 mb-3">Technologie</h3>
+                            <h2 className="text-4xl md:text-5xl font-black tracking-tight text-slate-900">Onderbouwd door wetenschap.</h2>
                         </div>
 
                         <div className="relative">
-                            {/* Thin connection line */}
                             <div className="absolute top-8 left-10 right-10 h-[1px] bg-gradient-to-r from-transparent via-[#F58220]/40 to-transparent z-0 hidden md:block"></div>
 
-                            {/* Abstract Mycelium line draw animation SVG behind */}
                             <svg className="absolute top-[-50px] right-0 w-full h-[200px] z-0 opacity-10 pointer-events-none" viewBox="0 0 1000 200" preserveAspectRatio="none">
                                 <path className="animate-[dash_8s_linear_infinite]" d="M0,100 Q200,50 400,100 T800,100 T1000,50" fill="none" stroke="#F58220" strokeWidth="1" strokeDasharray="10 20" />
                             </svg>
-
-                            <style>{`
-                              @keyframes dash {
-                                to {
-                                  stroke-dashoffset: -100;
-                                }
-                              }
-                            `}</style>
 
                             <div className="grid md:grid-cols-3 gap-16 relative z-10">
                                 <div className="flex flex-col items-start gap-6 group">
@@ -159,7 +171,7 @@ export default function OverOns() {
                                     </div>
                                     <div>
                                         <h4 className="font-bold text-xl mb-3 text-slate-900">1. Sector Realiteit</h4>
-                                        <p className="text-slate-600 text-base leading-relaxed">Begrip van de werkvloer, het substraat en de dagelijkse focus op stabiel teeltmanagement.</p>
+                                        <p className="text-slate-600 text-base leading-relaxed">Begrip van de werkvloer en de dagelijkse focus op stabiel teeltmanagement.</p>
                                     </div>
                                 </div>
                                 <div className="flex flex-col items-start gap-6 group">
@@ -185,7 +197,7 @@ export default function OverOns() {
                     </div>
                 </section>
 
-                {/* Doel / Verfijnde visie met Visual */}
+                {/* Doel / Visie */}
                 <section className="py-16 md:py-24 max-w-7xl mx-auto px-6 md:px-12 relative overflow-hidden">
                     <div className="grid lg:grid-cols-12 gap-16 lg:gap-24 items-center">
                         <div className="lg:col-span-7 flex flex-col gap-8 md:gap-10">
@@ -214,10 +226,7 @@ export default function OverOns() {
                                     alt="Moderne champignonteelt"
                                     className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
                                 />
-                                {/* Overlay gradient for depth */}
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-60" />
-
-                                {/* Badge overlay */}
                                 <div className="absolute bottom-6 left-6 right-6 p-4 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl">
                                     <p className="text-white text-[10px] font-black tracking-widest uppercase">
                                         Moderne teeltfaciliteit • Nederland
