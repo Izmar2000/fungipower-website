@@ -95,10 +95,10 @@ export const Header = ({ forceSolid = false }: { forceSolid?: boolean }) => {
         }`}
       style={{
         background: isSolid
-          ? `linear-gradient(90deg, rgba(204, 68, 0, 0.95) 0%, rgba(215, 25, 32, 0.98) 100%)`
+          ? `linear-gradient(135deg, rgba(204, 68, 0, 0.5) 0%, rgba(215, 25, 32, 0.6) 100%)`
           : `none`,
-        backdropFilter: isSolid ? "blur(12px)" : "none",
-        WebkitBackdropFilter: isSolid ? "blur(12px)" : "none",
+        backdropFilter: isSolid ? "blur(24px)" : "none",
+        WebkitBackdropFilter: isSolid ? "blur(24px)" : "none",
       }}
     >
       <div className={`max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between relative z-30 transition-all duration-500 ease-in-out ${isSolid ? "py-2 md:py-3" : "py-4 md:py-6"}`}>

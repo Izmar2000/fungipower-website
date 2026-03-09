@@ -29,17 +29,16 @@ export const HeroSection = () => {
       {/* 1.5 Subtle dark fade at the top for logo legibility */}
       <div className="absolute top-0 left-0 w-full h-32 md:h-48 z-[2] pointer-events-none bg-gradient-to-b from-black/20 via-black/5 to-transparent" />
 
-      {/* 2. Historical Black & White Photo blended directly into the Orange background */}
-      {/* Organic, ultra-soft elliptical mask: clear subjects on left, invisible transition right */}
+      {/* 2. White Mushroom Photo - Blended into the background */}
       <div
-        className="absolute inset-0 w-full h-full z-0 pointer-events-none opacity-[0.38]"
+        className="absolute inset-0 w-full h-full z-0 pointer-events-none opacity-[0.45]"
         style={{
-          backgroundImage: 'url("/images/vintage-mushroom.png")',
+          backgroundImage: 'url("https://images.unsplash.com/photo-1549488344-1f9b8d2bd1f3?q=80&auto=format&fit=crop")',
           backgroundSize: 'cover',
-          backgroundPosition: 'left center',
+          backgroundPosition: 'center',
           mixBlendMode: 'multiply',
-          WebkitMaskImage: 'radial-gradient(ellipse 100% 150% at -15% center, black 0%, black 25%, rgba(0,0,0,0.6) 55%, transparent 95%)',
-          maskImage: 'radial-gradient(ellipse 100% 150% at -15% center, black 0%, black 25%, rgba(0,0,0,0.6) 55%, transparent 95%)',
+          WebkitMaskImage: 'radial-gradient(ellipse 100% 150% at 20% center, black 0%, black 35%, rgba(0,0,0,0.7) 65%, transparent 100%)',
+          maskImage: 'radial-gradient(ellipse 100% 150% at 20% center, black 0%, black 35%, rgba(0,0,0,0.7) 65%, transparent 100%)',
           transform: `translateY(${scrollY * 0.15}px)`,
         }}
       />
