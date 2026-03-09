@@ -27,23 +27,7 @@ export const HeroSection = () => {
       <div className="absolute inset-y-0 left-0 w-full md:w-1/2 z-[1] pointer-events-none bg-gradient-to-r from-black/25 via-black/10 to-transparent" />
 
       {/* 1.5 Subtle dark fade at the top for logo legibility */}
-      <div className="absolute top-0 left-0 w-full h-32 md:h-48 z-[2] pointer-events-none bg-gradient-to-b from-black/20 via-black/5 to-transparent">
-        <span className="absolute top-4 right-4 text-[8px] text-white/20 font-mono">v1.1-vis-update</span>
-      </div>
-
-      {/* 2. White Mushroom Photo - Direct Visibility */}
-      <div
-        className="absolute inset-0 w-full h-full z-[3] pointer-events-none opacity-[0.8]"
-        style={{
-          backgroundImage: 'url("https://images.unsplash.com/photo-1591261730799-ee4e6c2d16d7?q=80&auto=format&fit=crop")',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          WebkitMaskImage: 'radial-gradient(ellipse 100% 150% at 50% center, black 0%, rgba(0,0,0,0.8) 30%, rgba(0,0,0,0.4) 60%, transparent 100%)',
-          maskImage: 'radial-gradient(ellipse 100% 150% at 50% center, black 0%, rgba(0,0,0,0.8) 30%, rgba(0,0,0,0.4) 60%, transparent 100%)',
-          transform: `translateY(${scrollY * 0.1}px)`,
-          filter: 'brightness(1.05) contrast(1.1)',
-        }}
-      />
+      <div className="absolute top-0 left-0 w-full h-32 md:h-48 z-[2] pointer-events-none bg-gradient-to-b from-black/20 via-black/5 to-transparent" />
 
       {/* 3. Very subtle mycelium structure overlay (3-5% opacity) */}
       <div
