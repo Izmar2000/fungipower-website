@@ -40,5 +40,7 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-public/**/_next
+# explicitly allow static landing page assets
 !/public/theroadto/
+!/public/theroadto/_next/
+!/public/theroadto/_next/**
