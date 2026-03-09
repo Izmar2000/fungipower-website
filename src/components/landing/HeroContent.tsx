@@ -14,8 +14,9 @@ export const HeroContent = () => {
       </div>
 
       {/* Main Headline - Identical font size for both lines */}
-      <h1 className="text-4xl md:text-[50px] lg:text-[55px] xl:text-[60px] font-black text-white leading-[1.0] mb-10 tracking-[-0.02em] animate-fade-in-up uppercase whitespace-nowrap flex flex-col items-start gap-2">
-        <span className="block">Maximale bio-efficiëntie</span>
+      <h1 className="text-4xl md:text-[50px] lg:text-[55px] xl:text-[60px] font-black text-white leading-[1.0] mb-10 tracking-[-0.02em] animate-fade-in-up uppercase flex flex-col items-start gap-2">
+        <span className="block">Maximale</span>
+        <span className="block">bio-efficiëntie</span>
         <span className="block text-white/80">Meer rendement</span>
       </h1>
 
