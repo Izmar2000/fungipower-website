@@ -72,25 +72,7 @@ export const GlassmorphismPanel = () => {
           </div>
         </div>
 
-        {/* Immersive Image Grid */}
-        <div className="grid grid-cols-4 gap-3">
-          {[1, 2, 3, 4].map((i) => (
-            <div
-              key={i}
-              className="rounded-xl overflow-hidden relative pt-[100%] shadow-sm border border-black/5"
-            >
-              <img
-                src={`/images/panel-${i === 1 || i === 4 ? 1 : 2}.jpg`}
-                alt="Growth process"
-                className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 hover:scale-110"
-                onError={(e) => {
-                  (e.target as HTMLImageElement).src = `https://images.unsplash.com/photo-1591261730799-ee4e6c2d16d7?q=80&auto=format&fit=crop`;
-                }}
-              />
-            </div>
-          ))}
-        </div>
-
+        {/* Removed Image Grid per user request */}
       </div>
     </div>
   );

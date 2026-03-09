@@ -29,17 +29,7 @@ export const HeroSection = () => {
       {/* 1.5 Subtle dark fade at the top for logo legibility */}
       <div className="absolute top-0 left-0 w-full h-32 md:h-48 z-[2] pointer-events-none bg-gradient-to-b from-black/20 via-black/5 to-transparent" />
 
-      {/* 3. Very subtle mycelium structure overlay (3-5% opacity) */}
-      <div
-        className="absolute inset-0 z-0 pointer-events-none opacity-[0.05] mix-blend-overlay"
-        style={{
-          backgroundImage: 'url("https://images.unsplash.com/photo-1587588264560-eb0c968f4e19?q=80&width=2000&auto=format&fit=crop")',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          filter: 'grayscale(100%) contrast(150%)',
-          transform: `translateY(${scrollY * 0.05}px)`,
-        }}
-      />
+      {/* Mycelium structure overlay removed per user request */}
 
       {/* 4. Subtle unified glow/vignette to bring it all together */}
       <div className="absolute inset-0 z-0 pointer-events-none bg-gradient-to-t from-black/20 via-transparent to-transparent" />
