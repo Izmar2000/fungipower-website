@@ -31,14 +31,14 @@ export const HeroSection = () => {
 
       {/* 2. White Mushroom Photo - Blended into the background */}
       <div
-        className="absolute inset-0 w-full h-full z-0 pointer-events-none opacity-[0.25]"
+        className="absolute inset-0 w-full h-full z-0 pointer-events-none opacity-[0.65]"
         style={{
           backgroundImage: 'url("https://images.unsplash.com/photo-1594910352423-3a79d068772f?q=80&auto=format&fit=crop")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          mixBlendMode: 'screen',
-          WebkitMaskImage: 'radial-gradient(ellipse 100% 150% at 50% center, black 0%, black 20%, rgba(0,0,0,0.4) 50%, transparent 90%)',
-          maskImage: 'radial-gradient(ellipse 100% 150% at 50% center, black 0%, black 20%, rgba(0,0,0,0.4) 50%, transparent 90%)',
+          mixBlendMode: 'soft-light',
+          WebkitMaskImage: 'radial-gradient(ellipse 100% 150% at 50% center, black 0%, black 25%, rgba(0,0,0,0.6) 55%, transparent 100%)',
+          maskImage: 'radial-gradient(ellipse 100% 150% at 50% center, black 0%, black 25%, rgba(0,0,0,0.6) 55%, transparent 100%)',
           transform: `translateY(${scrollY * 0.15}px)`,
         }}
       />
