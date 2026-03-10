@@ -325,3 +325,33 @@ h6 {
   animation: flag-wave 3s ease-in-out infinite;
   transform-origin: left;
 }
+
+/* iOS Safari Body Scroll Lock Fix */
+html.no-scroll,
+body.no-scroll {
+  overflow: hidden !important;
+  position: relative;
+  height: 100%;
+}
+
+/* Fixed Containers & Momentum Scrolling (Flickering) */
+.fixed-container-class {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.scrollable-inner-class {
+  -webkit-overflow-scrolling: touch;
+}
+
+/* WebKit Resets */
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  a,
+  button {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
