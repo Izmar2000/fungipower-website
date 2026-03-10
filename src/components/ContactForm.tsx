@@ -73,7 +73,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ dict, lang }) => {
               <div className="space-y-6">
                 <div className="flex items-center gap-6 group">
                   <div className="w-14 h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-2xl group-hover:bg-lime-500/10 transition-all shadow-inner">📞</div>
-                  <a href="tel:+31772058365" className="font-black text-xl tracking-tight hover:text-lime-400 transition-colors">+31 (0)77 205 8365</a>
+                  <a href="tel:+31772086033" className="font-black text-xl tracking-tight hover:text-lime-400 transition-colors">+31 (0)77 208 6033</a>
                 </div>
                 <div className="flex items-center gap-6 group">
                   <div className="w-14 h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-2xl group-hover:bg-lime-500/10 transition-all shadow-inner">✉️</div>
