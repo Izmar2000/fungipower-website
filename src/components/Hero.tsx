@@ -35,16 +35,16 @@ const Hero: React.FC<HeroProps> = ({ dict, lang }) => {
             </h1>
 
             {/* USPs Line */}
-            <div className="flex flex-wrap items-center justify-start gap-y-2 gap-x-4 mb-6">
-              <span className="text-[10px] md:text-xs font-bold uppercase tracking-[0.3em] text-lime-400 whitespace-nowrap">
+            <div className="flex flex-nowrap items-center justify-start gap-x-3 md:gap-x-4 mb-6">
+              <span className="text-[9px] min-[400px]:text-[10px] md:text-xs font-bold uppercase tracking-[0.1em] min-[400px]:tracking-[0.2em] md:tracking-[0.3em] text-lime-400 whitespace-nowrap">
                 {t.uspsPart1}
               </span>
-              <span className="text-white/20 hidden sm:block">|</span>
-              <span className="text-[10px] md:text-xs font-bold uppercase tracking-[0.3em] text-white/90 whitespace-nowrap">
+              <span className="text-white/20">|</span>
+              <span className="text-[9px] min-[400px]:text-[10px] md:text-xs font-bold uppercase tracking-[0.1em] min-[400px]:tracking-[0.2em] md:tracking-[0.3em] text-white/90 whitespace-nowrap">
                 {t.uspsPart2}
               </span>
-              <span className="text-white/20 hidden sm:block">|</span>
-              <span className="text-[10px] md:text-xs font-bold uppercase tracking-[0.3em] text-white/90 whitespace-nowrap">
+              <span className="text-white/20">|</span>
+              <span className="text-[9px] min-[400px]:text-[10px] md:text-xs font-bold uppercase tracking-[0.1em] min-[400px]:tracking-[0.2em] md:tracking-[0.3em] text-white/90 whitespace-nowrap">
                 {t.uspsPart3}
               </span>
             </div>
