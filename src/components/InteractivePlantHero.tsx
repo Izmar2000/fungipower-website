@@ -43,8 +43,8 @@ const InteractivePlantHero = () => {
         { id: 'S', x: 50.5, y: 74, size: 55, color: '#34d399', label: 'S', type: 'secondary' },
 
         // MICRO (Smaller - Vivid Teal)
-        { id: 'Fe', x: 20, y: 48, size: 40, color: '#2dd4bf', label: 'Fe', type: 'micro' },
-        { id: 'Mn', x: 80, y: 48, size: 40, color: '#2dd4bf', label: 'Mn', type: 'micro' },
+        { id: 'Fe', x: 20, y: 78, size: 40, color: '#2dd4bf', label: 'Fe', type: 'micro' },
+        { id: 'Mn', x: 80, y: 78, size: 40, color: '#2dd4bf', label: 'Mn', type: 'micro' },
         { id: 'Zn', x: 25, y: 88, size: 40, color: '#2dd4bf', label: 'Zn', type: 'micro' },
         { id: 'B', x: 75, y: 88, size: 40, color: '#2dd4bf', label: 'B', type: 'micro' },
         { id: 'Cu', x: 40, y: 82, size: 38, color: '#14b8a6', label: 'Cu', type: 'micro' },
