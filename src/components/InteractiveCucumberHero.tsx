@@ -89,10 +89,10 @@ const InteractiveCucumberHero: React.FC<InteractiveCucumberHeroProps> = ({ dict 
                 >
                     <div className="text-[10px] uppercase tracking-[0.3em] text-emerald-100/40 font-bold w-full text-center mb-2">Onderzoekspartners</div>
                     <img src="/images/vangog-logo.png" alt="Van Gog Kwekerijen" className="h-8 md:h-10 w-auto brightness-0 invert opacity-70" />
-                    <img src="/images/logo-eurofins-agro.jpg" alt="Eurofins Agro" className="h-8 md:h-10 w-auto rounded-sm brightness-110 contrast-125" />
+                    <img src="/logo-eurofins-agro.jpg" alt="Eurofins Agro" className="h-8 md:h-10 w-auto rounded-sm" />
                 </motion.div>
 
-                {/* 1. The Plant (Fades in softly) Tune positioning to avoid the card overlap if needed */}
+                {/* 1. The Plant (Fades in softly) */}
                 <div className="relative z-10 w-full flex justify-center">
                     <motion.div 
                         initial={{ opacity: 0, scale: 0.95 }}
@@ -100,15 +100,14 @@ const InteractiveCucumberHero: React.FC<InteractiveCucumberHeroProps> = ({ dict 
                         transition={{ duration: 2, ease: "easeOut" }}
                         className="relative w-full max-w-[850px] flex justify-center overflow-hidden"
                         style={{
-                            maskImage: 'radial-gradient(circle at 50% 60%, white 0%, transparent 65%)',
-                            WebkitMaskImage: 'radial-gradient(circle at 50% 60%, white 0%, transparent 65%)',
-                            mixBlendMode: 'lighten',
+                            maskImage: 'radial-gradient(ellipse at 50% 50%, black 40%, transparent 95%)',
+                            WebkitMaskImage: 'radial-gradient(ellipse at 50% 50%, black 40%, transparent 95%)',
                         }}
                     >
                         {/* Shadow/Base Glow */}
                         <div className="absolute bottom-[2%] left-1/2 -translate-x-1/2 w-full h-40 bg-lime-500/5 blur-[150px] rounded-full opacity-20"></div>
                         
-                        {/* THE NEW PROVIDED PLANT IMAGE - RESTORED ORIGINAL COLORS */}
+                        {/* THE NEW PROVIDED PLANT IMAGE - 100% ORIGINAL COLORS */}
                         <img
                             src="/cucumber-plant-provided.png"
                             alt="PlantiPower"
