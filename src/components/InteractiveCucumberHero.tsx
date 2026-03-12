@@ -10,7 +10,7 @@ interface InteractiveCucumberHeroProps {
 const InteractiveCucumberHero: React.FC<InteractiveCucumberHeroProps> = ({ dict }) => {
     const [isMounted, setIsMounted] = useState(false);
     const containerRef = useRef<HTMLDivElement>(null);
-    const isInView = useInView(containerRef, { once: true, amount: 0.2 });
+    const isInView = useInView(containerRef, { once: true, amount: 0.1 });
     
     const mouseX = useMotionValue(0);
     const mouseY = useMotionValue(0);
@@ -43,13 +43,12 @@ const InteractiveCucumberHero: React.FC<InteractiveCucumberHeroProps> = ({ dict 
 
     if (!isMounted) return <div ref={containerRef} className="min-h-[800px] w-full" />;
 
-    // Perfectly aligned coordinates on the vertical stem axis
-    // Timing:baseDelay triggers Dot -> baseDelay+0.3 triggers Line -> baseDelay+1.1 triggers Card
+    // perfectly axial coordinates
     const hotspots = [
         { id: 'leaves', x: 50, y: 15, label: t.leaves, align: 'left', baseDelay: 0 },
         { id: 'fruit', x: 50, y: 42, label: t.fruit, align: 'right', baseDelay: 1.2 }, 
         { id: 'uptake', x: 50, y: 65, label: t.uptake, align: 'left', baseDelay: 2.4 },
-        { id: 'roots', x: 50, y: 86, label: t.roots, align: 'right', baseDelay: 3.6 },
+        { id: 'roots', x: 50.5, y: 86, label: t.roots, align: 'right', baseDelay: 3.6 },
     ];
 
     return (
@@ -64,8 +63,6 @@ const InteractiveCucumberHero: React.FC<InteractiveCucumberHeroProps> = ({ dict 
                 className="relative w-full max-w-[800px] px-4"
                 style={{ scale, opacity, rotateX, rotateY, perspective: 1500 }}
             >
-                <div className="absolute top-0 bottom-0 left-1/2 -translate-x-1/2 w-px bg-white/5 z-0 pointer-events-none hidden md:block"></div>
-
                 <div className="relative z-10 w-full flex justify-center">
                     <motion.div 
                         initial={{ opacity: 0, y: 40 }}
@@ -73,7 +70,6 @@ const InteractiveCucumberHero: React.FC<InteractiveCucumberHeroProps> = ({ dict 
                         transition={{ duration: 1.8, ease: "easeOut" }}
                         className="relative w-full max-w-[500px]"
                     >
-                        <div className="absolute inset-0 bg-lime-400/10 blur-[200px] rounded-full scale-110 opacity-20"></div>
                         <img
                             src="/images/cucumber-plant-new.png"
                             alt="Premium Cucumber Plant"
@@ -88,63 +84,52 @@ const InteractiveCucumberHero: React.FC<InteractiveCucumberHeroProps> = ({ dict 
                                 className="absolute"
                                 style={{ left: `${spot.x}%`, top: `${spot.y}%` }}
                             >
-                                {/* Step 1: Central Node (Stipje) */}
+                                {/* Dot (Stipje) */}
                                 <motion.div
                                     initial={{ opacity: 0, scale: 0 }}
-                                    animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0 }}
+                                    animate={isInView ? { opacity: 1, scale: 1 } : {}}
                                     transition={{ delay: spot.baseDelay, type: "spring", stiffness: 200 }}
                                 >
-                                    <div className="relative flex items-center justify-center w-8 h-8 md:w-12 md:h-12 pointer-events-none">
+                                    <div className="relative flex items-center justify-center w-8 h-8 md:w-12 md:h-12">
                                         <div className="absolute inset-0 rounded-full bg-lime-400/50 animate-ping opacity-40"></div>
                                         <div className="relative w-3 h-3 md:w-4 md:h-4 rounded-full bg-white shadow-[0_0_20px_rgba(163,230,21,1)]"></div>
                                     </div>
                                 </motion.div>
 
-                                {/* Step 2 & 3: Connector Line and Panel */}
+                                {/* Sequential Content Overlay */}
                                 <div className={`
                                     absolute top-1/2 -translate-y-1/2 
                                     ${spot.align === 'left' ? 'right-[20px] md:right-[32px] flex-row-reverse' : 'left-[20px] md:left-[32px]'} 
-                                    flex items-center pointer-events-none
+                                    flex items-center
                                 `}>
                                     
-                                    {/* Line Drawing with Fade-out toward the plant */}
-                                    <div className="relative w-[140px] h-[2px] hidden md:block overflow-visible">
-                                        <svg 
-                                            className="overflow-visible"
-                                            width="100%" height="2" viewBox="0 0 140 2"
-                                        >
+                                    {/* Line with Fade Out */}
+                                    <div className="relative w-[120px] md:w-[140px] h-[2px] hidden md:block">
+                                        <svg className="overflow-visible w-full h-full">
                                             <defs>
-                                                <filter id={`glow-${spot.id}`} x="-50%" y="-50%" width="200%" height="200%">
-                                                    <feGaussianBlur in="SourceGraphic" stdDeviation="2.5" result="blur"></feGaussianBlur>
-                                                    <feMerge>
-                                                        <feMergeNode in="blur"></feMergeNode>
-                                                        <feMergeNode in="SourceGraphic"></feMergeNode>
-                                                    </feMerge>
-                                                </filter>
-                                                <linearGradient id={`gradient-${spot.id}`} x1={spot.align === 'left' ? "0%" : "100%"} y1="0%" x2={spot.align === 'left' ? "100%" : "0%"} y2="0%">
-                                                    <stop offset="0%" stopColor="rgba(163,230,21,1)" />
-                                                    <stop offset="70%" stopColor="rgba(163,230,21,0.6)" />
-                                                    <stop offset="100%" stopColor="rgba(163,230,21,0)" />
+                                                <linearGradient id={`line-fade-${spot.id}`} x1={spot.align === 'left' ? "100%" : "0%"} y1="0%" x2={spot.align === 'left' ? "0%" : "100%"} y2="0%">
+                                                    <stop offset="0%" stopColor="#A3E615" stopOpacity="0.8" />
+                                                    <stop offset="100%" stopColor="#A3E615" stopOpacity="0" />
                                                 </linearGradient>
                                             </defs>
-                                            <motion.path
-                                                d={spot.align === 'left' ? "M 140 1 L 0 1" : "M 0 1 L 140 1"}
-                                                fill="transparent"
-                                                stroke={`url(#gradient-${spot.id})`}
-                                                strokeWidth="2.5"
-                                                strokeLinecap="round"
-                                                filter={`url(#glow-${spot.id})`}
+                                            <motion.line
+                                                x1={spot.align === 'left' ? "100%" : "0%"}
+                                                y1="50%"
+                                                x2={spot.align === 'left' ? "0%" : "100%"}
+                                                y2="50%"
+                                                stroke={`url(#line-fade-${spot.id})`}
+                                                strokeWidth="2"
                                                 initial={{ pathLength: 0 }}
-                                                animate={isInView ? { pathLength: 1 } : { pathLength: 0 }}
-                                                transition={{ delay: spot.baseDelay + 0.3, duration: 0.8, ease: "easeInOut" }}
+                                                animate={isInView ? { pathLength: 1 } : {}}
+                                                transition={{ delay: spot.baseDelay + 0.3, duration: 0.8 }}
                                             />
                                         </svg>
                                     </div>
 
-                                    {/* Step 3: The Information Panel (Vlakje) */}
+                                    {/* Info Card */}
                                     <motion.div
-                                        initial={{ opacity: 0, x: spot.align === 'left' ? -20 : 20 }}
-                                        animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: spot.align === 'left' ? -20 : 20 }}
+                                        initial={{ opacity: 0, scale: 0.9, x: spot.align === 'left' ? -20 : 20 }}
+                                        animate={isInView ? { opacity: 1, scale: 1, x: 0 } : {}}
                                         transition={{ delay: spot.baseDelay + 1.1, duration: 0.5 }}
                                         className={`
                                             relative glass-panel px-6 py-5 md:px-8 md:py-6 rounded-[2rem] bg-[#011410]/95 backdrop-blur-3xl border border-white/20 shadow-[0_50px_100px_rgba(0,0,0,0.8)]
@@ -152,7 +137,7 @@ const InteractiveCucumberHero: React.FC<InteractiveCucumberHeroProps> = ({ dict 
                                         `}
                                     >
                                         <div className="flex items-center gap-2 mb-2">
-                                            <div className="w-1.5 h-1.5 rounded-full bg-lime-400 shadow-[0_0_8px_rgba(163,230,21,1)]"></div>
+                                            <div className="w-1.5 h-1.5 rounded-full bg-lime-400"></div>
                                             <div className="text-lime-400 text-[10px] md:text-[11px] font-black uppercase tracking-[0.3em] font-outfit">Validated Node</div>
                                         </div>
                                         <div className="text-white text-xl md:text-2xl lg:text-3xl font-black leading-[1.1] uppercase tracking-tighter font-outfit">
@@ -162,11 +147,9 @@ const InteractiveCucumberHero: React.FC<InteractiveCucumberHeroProps> = ({ dict 
                                         <div className={`
                                             absolute top-1/2 -translate-y-1/2 
                                             ${spot.align === 'right' ? '-left-3' : '-right-3'} 
-                                            text-lime-400 flex items-center
+                                            text-lime-400
                                         `}>
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" 
-                                                className={spot.align === 'right' ? 'rotate-0' : 'rotate-180'}
-                                            >
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className={spot.align === 'right' ? '' : 'rotate-180'}>
                                                 <path d="M15 18L9 12L15 6" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
                                             </svg>
                                         </div>
