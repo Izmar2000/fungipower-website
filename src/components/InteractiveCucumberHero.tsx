@@ -53,7 +53,7 @@ const InteractiveCucumberHero: React.FC<InteractiveCucumberHeroProps> = ({ dict,
                 };
             case 'roots':
                 return {
-                    image: "/images/roots.png",
+                    image: "/wortels1.png",
                     maxWidth: "max-w-[600px]",
                     imgStyle: { marginBottom: '0%' },
                     hotspots: [

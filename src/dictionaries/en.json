@@ -272,46 +272,94 @@
         "advantageBadgeShield": "The Shield Advantage",
         "expertAdvice": "Expert Advice",
         "importantInstructions": "Important instructions"
-    },
-    "Cucumbers": {
-        "metaTitle": "Cucumber Results & Trials | PlantiPower",
-        "metaDesc": "Explore the impressive results of PlantiPower in cucumber cultivation. Higher yield, better quality, and faster cycles.",
-        "heroBadge": "Field Results",
-        "heroTitle": "CUCUMBER",
-        "heroTitleAccent": "CROP OPTIMIZATION",
-        "heroDesc": "Discover how PlantiPower sets the standard in professional cucumber cultivation. Maximum uptake for top yields.",
-        "resultsTitle": "Validated",
-        "resultsTitleAccent": "Results",
-        "resultsDesc": "Our trials with leading growers show consistent improvements in both quality and quantity.",
-        "stats": [
-            {
-                "label": "Yield",
-                "value": "+2",
-                "unit": "pieces / m²",
-                "desc": "Measured at Van Gog Kwekerijen"
-            },
-            {
-                "label": "Cycle",
-                "value": "1",
-                "unit": "day faster",
-                "desc": "Earlier harvest through efficient transport"
-            },
-            {
-                "label": "Quality",
-                "value": "Top",
-                "unit": "Class",
-                "desc": "Uniform fruits and better shelf life"
-            }
-        ],
-        "testimonialTitle": "What growers say",
-        "testimonialText": "\"Adding PlantiPower to our existing schedule resulted in a visibly more vital crop within weeks. The cucumbers are more uniform and the plant remains strong longer, even under heavy load.\"",
-        "testimonialAuthor": "Cucumber Grower",
-        "testimonialLocation": "Venlo Region",
-        "infographic": {
-            "roots": "Powerful roots through ALL12 technology",
-            "fruit": "+2 cucumbers per m²",
-            "leaves": "Maximum leaf activity & evaporation",
-            "uptake": "Efficient transport of 12 minerals"
+    },    "Cucumbers": {
+    "metaTitle": "Validated Crop Optimization | PlantiPower",
+    "metaDesc": "Practical research results at Van Gog Kwekerijen. Independently validated by Eurofins Agro.",
+    "sections": {
+      "s1": {
+        "badge": "Validated Research",
+        "title": "VALIDATED",
+        "titleAccent": "CROP OPTIMIZATION",
+        "desc": "This report presents the results of a practical trial with PlantiPower at Van Gog Kwekerijen CV. The dataset includes 65 independent laboratory measurements by Eurofins Agro Wageningen over the period September 2025 to February 2026.",
+        "footer": "PlantiPower_PracticalResults_2026"
+      },
+      "s2": {
+        "title": "PLANT WITH NODES",
+        "nodes": {
+          "silicon": {
+            "label": "Silicon uptake doubled",
+            "desc": "Silicon uptake efficiency increased from 48% to 94%.",
+            "footer": "PlantiPower_PracticalResults_2026"
+          },
+          "siliconLeaf": {
+            "label": "+38% silicon in young leaves",
+            "desc": "Silicon increased from 1.73 to 2.39 mmol/l in young plant sap.",
+            "footer": "PlantiPower_PracticalResults_2026"
+          },
+          "phosphorus": {
+            "label": "Phosphorus uptake 11% → 86%",
+            "desc": "The plant absorbed more phosphorus while phosphorus in the drain dropped significantly.",
+            "footer": "PlantiPower_PracticalResults_2026"
+          },
+          "molybdenum": {
+            "label": "+61% molybdenum",
+            "desc": "Molybdenum in young plant sap increased from 2.32 to 3.73 µmol/l.",
+            "footer": "PlantiPower_PracticalResults_2026"
+          }
         }
+      },
+      "s3": {
+        "title": "ROOTS",
+        "nodes": {
+          "iron": {
+            "label": "+243% iron available",
+            "desc": "Fe in the drain increased from 20 to 69 µmol/l.",
+            "footer": "PlantiPower_PracticalResults_2026"
+          },
+          "zinc": {
+            "label": "+46% zinc available",
+            "desc": "Zinc in the drain increased from 5.6 to 8.1 µmol/l.",
+            "footer": "PlantiPower_PracticalResults_2026"
+          },
+          "mobilization": {
+            "label": "Nutrient mobilization",
+            "desc": "Fulvic acids can mobilize nutrients that are bound to the substrate.",
+            "footer": "PlantiPower_PracticalResults_2026"
+          }
+        }
+      },
+      "s4": {
+        "title": "CUCUMBER",
+        "nodes": {
+          "brix": {
+            "label": "+15.8% Brix",
+            "desc": "Brix increased from 4.95 to 5.73 in young plant sap.",
+            "footer": "PlantiPower_PracticalResults_2026"
+          },
+          "exclusion": {
+            "label": "Selective ion exclusion",
+            "desc": "Na in young leaves −42%, Cl in young leaves −46%.",
+            "footer": "PlantiPower_PracticalResults_2026"
+          },
+          "zincOld": {
+            "label": "+46% zinc in old leaves",
+            "desc": "Zinc increased from 10.1 to 14.7 µmol/l.",
+            "footer": "PlantiPower_PracticalResults_2026"
+          },
+          "molyOld": {
+            "label": "+88% molybdenum",
+            "desc": "Old plant sap increased from 4.27 to 8.00 µmol/l.",
+            "footer": "PlantiPower_PracticalResults_2026"
+          }
+        }
+      },
+      "s5": {
+        "title": "ALL12®",
+        "titleAccent": "TECHNOLOGY",
+        "desc": "PlantiPower is a nutrient transporter based on modified fulvic acids. While standard fulvic acid products transport three to four elements, PlantiPower transports all twelve essential nutrients directly to the roots.",
+        "footer": "PlantiPower_PracticalResults_2026",
+        "nutrients": ["N", "P", "K", "Ca", "Mg", "S", "Mn", "Mo", "B", "Cu", "Zn", "Fe"]
+      }
     }
+  }
 }

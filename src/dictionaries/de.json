@@ -274,44 +274,93 @@
         "importantInstructions": "Wichtige Anweisungen"
     },
     "Cucumbers": {
-        "metaTitle": "Gurken Ergebnisse & Tests | PlantiPower",
-        "metaDesc": "Entdecken Sie die beeindruckenden Ergebnisse von PlantiPower im Gurkenanbau. Mehr Ertrag, bessere Qualität und schnellere Zyklen.",
-        "heroBadge": "Praxisresultate",
-        "heroTitle": "GURKEN",
-        "heroTitleAccent": "KULTUR OPTIMIERUNG",
-        "heroDesc": "Entdecken Sie, wie PlantiPower den Standard im professionellen Gurkenanbau setzt. Maximale Aufnahme für Spitzenerträge.",
-        "resultsTitle": "Validierte",
-        "resultsTitleAccent": "Ergebnisse",
-        "resultsDesc": "Unsere Tests bei führenden Erzeugern zeigen konsistente Verbesserungen in Qualität und Quantität.",
-        "stats": [
-            {
-                "label": "Ertrag",
-                "value": "+2",
-                "unit": "Stück / m²",
-                "desc": "Gemessen bei Van Gog Gärtnereien"
-            },
-            {
-                "label": "Zyklus",
-                "value": "1",
-                "unit": "Tag schneller",
-                "desc": "Frühere Ernte durch effizienten Transport"
-            },
-            {
-                "label": "Qualität",
-                "value": "Top",
-                "unit": "Klasse",
-                "desc": "Uniforme Früchte und bessere Haltbarkeit"
-            }
-        ],
-        "testimonialTitle": "Was Erzeuger sagen",
-        "testimonialText": "\"Die Ergänzung von PlantiPower zu unserem bestehenden Plan führte innerhalb weniger Wochen zu einer sichtbar vitaleren Kultur. Die Gurken sind gleichmäßiger und die Pflanze bleibt länger kräftig, selbst bei hoher Belastung.\"",
-        "testimonialAuthor": "Gurkenerzeuger",
-        "testimonialLocation": "Region Venlo",
-        "infographic": {
-            "roots": "Starke Wurzeln durch ALL12-Technologie",
-            "fruit": "+2 Gurken pro m²",
-            "leaves": "Maximale Blattaktivität & Verdunstung",
-            "uptake": "Effizienter Transport von 12 Mineralien"
+    "metaTitle": "Validierte Anbauoptimierung | PlantiPower",
+    "metaDesc": "Ergebnisse aus der Praxis bei Van Gog Kwekerijen. Unabhängig validiert durch Eurofins Agro.",
+    "sections": {
+      "s1": {
+        "badge": "Validierte Forschung",
+        "title": "VALIDIERTE",
+        "titleAccent": "ANBAUOPTIMIERUNG",
+        "desc": "Dieser Bericht präsentiert die Ergebnisse eines Praxisversuchs mit PlantiPower bei Van Gog Kwekerijen CV. Der Datensatz umfasst 65 unabhängige Labormessungen von Eurofins Agro Wageningen im Zeitraum von September 2025 bis Februar 2026.",
+        "footer": "PlantiPower_Praxisresultate_2026"
+      },
+      "s2": {
+        "title": "PFLANZE MIT NODES",
+        "nodes": {
+          "silicon": {
+            "label": "Siliziumaufnahme verdoppelt",
+            "desc": "Die Siliziumaufnahme-Effizienz stieg von 48 % auf 94 %.",
+            "footer": "PlantiPower_Praxisresultate_2026"
+          },
+          "siliconLeaf": {
+            "label": "+38 % Silizium in jungen Blättern",
+            "desc": "Silizium stieg von 1,73 auf 2,39 mmol/l im jungen Pflanzensaft.",
+            "footer": "PlantiPower_Praxisresultate_2026"
+          },
+          "phosphorus": {
+            "label": "Phosphoraufnahme 11 % → 86 %",
+            "desc": "Die Pflanze nahm mehr Phosphor auf, während der Phosphorgehalt im Drain stark sank.",
+            "footer": "PlantiPower_Praxisresultate_2026"
+          },
+          "molybdenum": {
+            "label": "+61 % Molybdän",
+            "desc": "Molybdän im jungen Pflanzensaft stieg von 2,32 auf 3,73 µmol/l.",
+            "footer": "PlantiPower_Praxisresultate_2026"
+          }
         }
+      },
+      "s3": {
+        "title": "WURZELN",
+        "nodes": {
+          "iron": {
+            "label": "+243 % Eisen verfügbar",
+            "desc": "Fe im Drain stieg von 20 auf 69 µmol/l.",
+            "footer": "PlantiPower_Praxisresultate_2026"
+          },
+          "zinc": {
+            "label": "+46 % Zink verfügbar",
+            "desc": "Zink im Drain stieg von 5,6 auf 8,1 µmol/l.",
+            "footer": "PlantiPower_Praxisresultate_2026"
+          },
+          "mobilization": {
+            "label": "Nährstoffmobilisierung",
+            "desc": "Fulvinsäuren können Nährstoffe mobilisieren, die an das Substrat gebunden sind.",
+            "footer": "PlantiPower_Praxisresultate_2026"
+          }
+        }
+      },
+      "s4": {
+        "title": "GURKE",
+        "nodes": {
+          "brix": {
+            "label": "+15,8 % Brix",
+            "desc": "Brix stieg von 4,95 auf 5,73 im jungen Pflanzensaft.",
+            "footer": "PlantiPower_Praxisresultate_2026"
+          },
+          "exclusion": {
+            "label": "Selektive Ionen-Exklusion",
+            "desc": "Na in jungen Blättern −42 %, Cl in jungen Blättern −46 %.",
+            "footer": "PlantiPower_Praxisresultate_2026"
+          },
+          "zincOld": {
+            "label": "+46 % Zink in alten Blättern",
+            "desc": "Zink stieg von 10,1 auf 14,7 µmol/l.",
+            "footer": "PlantiPower_Praxisresultate_2026"
+          },
+          "molyOld": {
+            "label": "+88 % Molybdän",
+            "desc": "Alter Pflanzensaft stieg von 4,27 auf 8,00 µmol/l.",
+            "footer": "PlantiPower_Praxisresultate_2026"
+          }
+        }
+      },
+      "s5": {
+        "title": "ALL12®",
+        "titleAccent": "TECHNOLOGIE",
+        "desc": "PlantiPower ist ein Nährstofftransporter auf Basis modifizierter Fulvinsäuren. Während Standard-Fulvinsäureprodukte drei bis vier Elemente transportieren, transportiert PlantiPower alle zwölf essenziellen Nährstoffe direkt zu den Wurzeln.",
+        "footer": "PlantiPower_Praxisresultate_2026",
+        "nutrients": ["N", "P", "K", "Ca", "Mg", "S", "Mn", "Mo", "B", "Cu", "Zn", "Fe"]
+      }
     }
+  }
 }
