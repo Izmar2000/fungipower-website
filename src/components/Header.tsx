@@ -36,7 +36,7 @@ const Header: React.FC<HeaderProps> = ({ onOpenSample, onOpenMenu, dict, lang })
   };
 
   return (
-    <nav className="w-full h-full border-b border-white/10 bg-[#011410] py-3">
+    <nav className="w-full h-full border-b border-white/10 bg-[#080a0a] py-3">
       <div className="site-header-content">
         <div className="max-w-7xl mx-auto px-6 flex justify-between items-center relative">
 

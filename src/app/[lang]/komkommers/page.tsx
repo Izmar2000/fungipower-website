@@ -45,88 +45,113 @@ export default async function CucumberPage({
 
     const statIcons = [TrendingUp, Sprout, Target];
 
-    return (
         <ClientLayout dict={dict} lang={lang}>
-            <main className="bg-black relative min-h-screen snap-y snap-mandatory overflow-x-hidden">
+            <main className="bg-black relative min-h-screen snap-y snap-mandatory overflow-y-auto overflow-x-hidden">
 
-                {/* HERO SECTION - Now with Interactive Infographic */}
-                <section className="relative pt-24 md:pt-28 pb-0 overflow-hidden min-h-screen flex flex-col items-center justify-start snap-start snap-always" style={{ background: 'linear-gradient(to bottom, #080a0a 0%, #000000 300px, #000000 100%)' }}>
-                    <div className="max-w-7xl mx-auto px-6 relative z-10 text-center mb-0">
+                {/* SECTION 1: HEADER (CLEAN PLANT) */}
+                <section className="relative min-h-screen flex flex-col items-center justify-start snap-start snap-always pt-24 md:pt-32" style={{ background: 'linear-gradient(to bottom, #080a0a 0%, #000000 100%)' }}>
+                    <div className="max-w-4xl mx-auto px-6 relative z-20 text-center mb-0">
                         <div className="animate-reveal">
-                            <div className="section-badge mb-6 mx-auto">{t.heroBadge}</div>
-                            <h1 className="font-outfit font-black uppercase text-[42px] md:text-[60px] lg:text-[72px] tracking-[0.02em] leading-[0.95] text-white mb-6">
-                                {t.heroTitle}<br />
-                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-lime-400 to-emerald-400 font-black">
-                                    {t.heroTitleAccent}
+                            <div className="section-badge mb-6 mx-auto">{t.sections.s1.badge}</div>
+                            <h1 className="font-outfit font-black uppercase text-[42px] md:text-[64px] lg:text-[86px] tracking-tight leading-[0.9] text-white mb-6">
+                                {t.sections.s1.title}<br />
+                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-lime-400 to-emerald-400">
+                                    {t.sections.s1.titleAccent}
                                 </span>
                             </h1>
-                            <p className="text-lg md:text-xl text-emerald-100/70 leading-relaxed font-medium max-w-3xl mx-auto mb-2">
-                                {t.heroDesc}
+                            <p className="text-lg md:text-xl text-emerald-100/70 leading-relaxed font-medium max-w-2xl mx-auto mb-4 italic">
+                                {t.sections.s1.desc}
                             </p>
+                            <div className="text-[10px] text-white/20 uppercase tracking-[0.3em] font-bold">
+                                {t.sections.s1.footer}
+                            </div>
                         </div>
                     </div>
-
-                    {/* INTERACTIVE INFOGRAPHIC - AGGRESSIVE OFFSET */}
-                    <div className="w-full relative animate-reveal [animation-delay:600ms] -mt-24 md:-mt-48">
-                        <InteractiveCucumberHero dict={dict} />
+                    
+                    <div className="w-full relative mt-[-100px] md:mt-[-150px] z-10">
+                        <InteractiveCucumberHero dict={dict} mode="header" />
                     </div>
                 </section>
 
-                {/* RESULTS STATS SECTION */}
-                <section id="results-section" className="py-24 relative min-h-screen flex items-center snap-start snap-always">
-                    <div className="max-w-7xl mx-auto px-6">
-                        <div className="text-center mb-20">
-                            <h2 className="section-title text-white">
-                                {t.resultsTitle} <span className="text-lime-400">{t.resultsTitleAccent}</span>
+                {/* SECTION 2: PLANT (NODES) */}
+                <section className="relative min-h-screen flex flex-col items-center justify-center snap-start snap-always py-20 bg-black">
+                    <div className="w-full max-w-7xl mx-auto px-6 relative z-10">
+                        <InteractiveCucumberHero dict={dict} mode="plant" sectionData={t.sections.s2} />
+                    </div>
+                    {/* Background label */}
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[15vw] font-black text-white/[0.02] pointer-events-none select-none uppercase tracking-tighter">
+                        Plant Results
+                    </div>
+                </section>
+
+                {/* SECTION 3: ROOTS (NODES) */}
+                <section className="relative min-h-screen flex flex-col items-center justify-center snap-start snap-always py-20 bg-black">
+                    <div className="w-full max-w-7xl mx-auto px-6 relative z-10">
+                        <InteractiveCucumberHero dict={dict} mode="roots" sectionData={t.sections.s3} />
+                    </div>
+                    {/* Background label */}
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[15vw] font-black text-white/[0.02] pointer-events-none select-none uppercase tracking-tighter">
+                        Root System
+                    </div>
+                </section>
+
+                {/* SECTION 4: CUCUMBER (NODES) */}
+                <section className="relative min-h-screen flex flex-col items-center justify-center snap-start snap-always py-20 bg-black">
+                    <div className="w-full max-w-7xl mx-auto px-6 relative z-10">
+                        <InteractiveCucumberHero dict={dict} mode="cucumber" sectionData={t.sections.s4} />
+                    </div>
+                    {/* Background label */}
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[15vw] font-black text-white/[0.02] pointer-events-none select-none uppercase tracking-tighter">
+                        Fruit Data
+                    </div>
+                </section>
+
+                {/* SECTION 5: ALL12 TECHNOLOGY */}
+                <section className="relative min-h-screen flex flex-col items-center justify-center snap-start snap-always py-32 bg-black overflow-hidden">
+                    <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(132,204,22,0.05)_0%,transparent_70%)] opacity-50"></div>
+                    
+                    <div className="max-w-5xl mx-auto px-6 relative z-10 text-center">
+                        <motion.div
+                            initial={{ opacity: 0, y: 30 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 1 }}
+                        >
+                            <h2 className="font-outfit font-black uppercase text-[42px] md:text-[64px] tracking-tight leading-none text-white mb-8">
+                                {t.sections.s5.title}<br />
+                                <span className="text-lime-400 italic">{t.sections.s5.titleAccent}</span>
                             </h2>
-                            <p className="text-lg text-emerald-100/60 max-w-2xl mx-auto italic">
-                                {t.resultsDesc}
+                            <p className="text-xl md:text-2xl text-emerald-100/60 leading-relaxed font-light max-w-3xl mx-auto mb-16">
+                                {t.sections.s5.desc}
                             </p>
-                        </div>
 
-                        <div className="grid md:grid-cols-3 gap-8">
-                            {t.stats.map((stat: any, idx: number) => {
-                                const Icon = statIcons[idx % statIcons.length];
-                                return (
-                                    <div key={idx} className="glass-panel p-10 rounded-[2.5rem] border-white/5 bg-white/[0.03] group hover:bg-white/[0.05] transition-all duration-500">
-                                        <div className="w-14 h-14 rounded-2xl bg-lime-500/10 flex items-center justify-center text-lime-400 mb-8 border border-lime-500/10 group-hover:scale-110 group-hover:bg-lime-500/20 transition-all">
-                                            <Icon className="w-7 h-7" />
-                                        </div>
-                                        <div className="flex items-baseline gap-2 mb-2">
-                                            <span className="text-5xl font-black text-white font-outfit">{stat.value}</span>
-                                            <span className="text-xl font-bold text-lime-400 uppercase tracking-widest">{stat.unit}</span>
-                                        </div>
-                                        <div className="text-lg font-bold text-emerald-50/90 uppercase tracking-tight mb-3">{stat.label}</div>
-                                        <p className="text-emerald-100/50 leading-relaxed font-medium">{stat.desc}</p>
-                                    </div>
-                                );
-                            })}
-                        </div>
+                            {/* Nutrients Table / Grid */}
+                            <div className="grid grid-cols-4 md:grid-cols-6 lg:grid-cols-12 gap-3 mb-16">
+                                {t.sections.s5.nutrients.map((nutrient: string, i: number) => (
+                                    <motion.div
+                                        key={nutrient}
+                                        initial={{ opacity: 0, scale: 0.8 }}
+                                        whileInView={{ opacity: 1, scale: 1 }}
+                                        transition={{ delay: i * 0.05 }}
+                                        className="aspect-square flex items-center justify-center rounded-xl bg-white/[0.03] border border-white/10 hover:border-lime-500/50 hover:bg-lime-500/10 transition-all duration-300 group"
+                                    >
+                                        <span className="text-xl font-black text-emerald-50/40 group-hover:text-lime-400 transition-colors">{nutrient}</span>
+                                    </motion.div>
+                                ))}
+                            </div>
+
+                            <div className="flex flex-col items-center gap-4">
+                                <div className="h-px w-24 bg-gradient-to-r from-transparent via-lime-500/30 to-transparent"></div>
+                                <div className="text-[12px] text-white/30 uppercase tracking-[0.4em] font-black">
+                                    {t.sections.s5.footer}
+                                </div>
+                            </div>
+                        </motion.div>
                     </div>
                 </section>
 
-                {/* TESTIMONIAL HIGHLIGHT */}
-                <section className="py-32 relative overflow-hidden bg-white/[0.01]">
-                    <div className="absolute inset-0 bg-[radial-gradient(circle_at_right,rgba(132,204,22,0.05)_0%,transparent_50%)]"></div>
-                    <div className="max-w-4xl mx-auto px-6 relative z-10 text-center">
-                        <Quote className="w-16 h-16 text-lime-500/20 mx-auto mb-10" />
-                        <blockquote className="text-3xl md:text-4xl font-light text-white leading-tight italic mb-12">
-                            {t.testimonialText}
-                        </blockquote>
-                        <div className="flex flex-col items-center">
-                            <div className="h-px w-20 bg-lime-500/30 mb-6"></div>
-                            <cite className="not-italic">
-                                <span className="block text-xl font-bold text-white uppercase tracking-widest">{t.testimonialAuthor}</span>
-                                <span className="text-lime-500/60 font-medium uppercase tracking-[0.2em] text-sm mt-1 block">{t.testimonialLocation}</span>
-                            </cite>
-                        </div>
-                    </div>
-                </section>
-
-                {/* CLOSING CONTACT */}
                 <ContactForm dict={dict} lang={lang} />
-
             </main>
+        </ClientLayout>
         </ClientLayout>
     );
 }

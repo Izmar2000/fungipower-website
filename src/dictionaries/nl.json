@@ -274,45 +274,93 @@
         "importantInstructions": "Belangrijke instructies"
     },
     "Cucumbers": {
-        "metaTitle": "Komkommer Resultaten & Testen | PlantiPower",
-        "metaDesc": "Bekijk de indrukwekkende resultaten van PlantiPower in de komkommerteelt. Meer opbrengst, betere kwaliteit en snellere cycli.",
-        "heroBadge": "Gevalideerd Onderzoek",
-        "heroTitle": "GEVALIDEERDE",
-        "heroTitleAccent": "TEELTOPTIMALISATIE",
-        "heroDesc": "In onafhankelijk onderzoek bij Van Gog Kwekerijen, gevalideerd door Eurofins Agro, is de impact van PlantiPower ALL12 wetenschappelijk bewezen. Meer opbrengst, meer vitaliteit.",
-        "labCredit": "Onderzoekspartners:",
-        "resultsTitle": "Gevalideerde",
-        "resultsTitleAccent": "Resultaten",
-        "resultsDesc": "Onze testen bij toonaangevende kwekers laten consistente verbeteringen zien in zowel kwaliteit als kwantiteit.",
-        "stats": [
-            {
-                "label": "Opbrengst",
-                "value": "+2",
-                "unit": "stuks / m²",
-                "desc": "Gemeten bij Van Gog Kwekerijen"
-            },
-            {
-                "label": "Cyclus",
-                "value": "1",
-                "unit": "dag sneller",
-                "desc": "Eerdere oogst door efficiënt transport"
-            },
-            {
-                "label": "Kwaliteit",
-                "value": "Top",
-                "unit": "Klasse",
-                "desc": "Uniforme vruchten en betere houdbaarheid"
-            }
-        ],
-        "testimonialTitle": "Wat kwekers zeggen",
-        "testimonialText": "\"De toevoeging van PlantiPower aan ons bestaande schema gaf binnen enkele weken een zichtbaar vitaler gewas. De komkommers zijn uniformer en de plant blijft langer sterk, zelfs bij hoge belasting.\"",
-        "testimonialAuthor": "Komkommerkweker",
-        "testimonialLocation": "Regio Venlo",
-        "infographic": {
-            "roots": "Krachtige wortels door ALL12 technologie",
-            "fruit": "+2 komkommers per m²",
-            "leaves": "Maximale bladactiviteit & verdamping",
-            "uptake": "Efficiënt transport van 12 mineralen"
+    "metaTitle": "Gevalideerde Teeltoptimalisatie | PlantiPower",
+    "metaDesc": "Resultaten van praktijkonderzoek bij Van Gog Kwekerijen. Onafhankelijk gevalideerd door Eurofins Agro.",
+    "sections": {
+      "s1": {
+        "badge": "Gevalideerd Onderzoek",
+        "title": "GEVALIDEERDE",
+        "titleAccent": "TEELTOPTIMALISATIE",
+        "desc": "Dit rapport presenteert de resultaten van een praktijkproef met PlantiPower bij Van Gog Kwekerijen CV. De dataset omvat 65 onafhankelijke laboratoriummetingen door Eurofins Agro Wageningen over de periode september 2025 tot februari 2026.",
+        "footer": "PlantiPower_Praktijkresultaten_2026"
+      },
+      "s2": {
+        "title": "PLANT MET NODES",
+        "nodes": {
+          "silicon": {
+            "label": "Silicium opname verdubbeld",
+            "desc": "Silicium opname-efficiëntie steeg van 48% naar 94%.",
+            "footer": "PlantiPower_Praktijkresultaten_2026"
+          },
+          "siliconLeaf": {
+            "label": "+38% silicium in jong blad",
+            "desc": "Silicium steeg van 1,73 naar 2,39 mmol/l in jong plantsap.",
+            "footer": "PlantiPower_Praktijkresultaten_2026"
+          },
+          "phosphorus": {
+            "label": "Fosfor opname 11% → 86%",
+            "desc": "De plant nam meer fosfor op terwijl fosfor in de drain sterk daalde.",
+            "footer": "PlantiPower_Praktijkresultaten_2026"
+          },
+          "molybdenum": {
+            "label": "+61% molybdeen",
+            "desc": "Molybdeen in jong plantsap steeg van 2,32 naar 3,73 µmol/l.",
+            "footer": "PlantiPower_Praktijkresultaten_2026"
+          }
         }
+      },
+      "s3": {
+        "title": "WORTELS",
+        "nodes": {
+          "iron": {
+            "label": "+243% ijzer beschikbaar",
+            "desc": "Fe in de drain steeg van 20 naar 69 µmol/l.",
+            "footer": "PlantiPower_Praktijkresultaten_2026"
+          },
+          "zinc": {
+            "label": "+46% zink beschikbaar",
+            "desc": "Zink in de drain steeg van 5,6 naar 8,1 µmol/l.",
+            "footer": "PlantiPower_Praktijkresultaten_2026"
+          },
+          "mobilization": {
+            "label": "Mobilisatie van nutriënten",
+            "desc": "Fulvinezuren kunnen nutriënten mobiliseren die gebonden zijn aan het substraat.",
+            "footer": "PlantiPower_Praktijkresultaten_2026"
+          }
+        }
+      },
+      "s4": {
+        "title": "KOMKOMMER",
+        "nodes": {
+          "brix": {
+            "label": "+15,8% Brix",
+            "desc": "Brix steeg van 4,95 naar 5,73 in jong plantsap.",
+            "footer": "PlantiPower_Praktijkresultaten_2026"
+          },
+          "exclusion": {
+            "label": "Selectieve ionen-exclusie",
+            "desc": "Na in jong blad −42%, Cl in jong blad −46%.",
+            "footer": "PlantiPower_Praktijkresultaten_2026"
+          },
+          "zincOld": {
+            "label": "+46% zink in oud blad",
+            "desc": "Zink steeg van 10,1 naar 14,7 µmol/l.",
+            "footer": "PlantiPower_Praktijkresultaten_2026"
+          },
+          "molyOld": {
+            "label": "+88% molybdeen",
+            "desc": "Oud plantsap steeg van 4,27 naar 8,00 µmol/l.",
+            "footer": "PlantiPower_Praktijkresultaten_2026"
+          }
+        }
+      },
+      "s5": {
+        "title": "ALL12®",
+        "titleAccent": "TECHNOLOGY",
+        "desc": "PlantiPower is een nutriëntentransporter op basis van gemodificeerde fulvinezuren. Waar standaard fulvinezuurproducten drie tot vier elementen transporteren, transporteert PlantiPower alle twaalf essentiële nutriënten direct naar de wortels.",
+        "footer": "PlantiPower_Praktijkresultaten_2026",
+        "nutrients": ["N", "P", "K", "Ca", "Mg", "S", "Mn", "Mo", "B", "Cu", "Zn", "Fe"]
+      }
     }
+  }
 }
