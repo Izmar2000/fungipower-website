@@ -47,10 +47,10 @@ export default async function CucumberPage({
 
     return (
         <ClientLayout dict={dict} lang={lang}>
-            <main className="bg-[#011410] relative min-h-screen">
+            <main className="bg-[#011410] relative min-h-screen scroll-smooth h-screen overflow-y-auto snap-y snap-mandatory">
 
                 {/* HERO SECTION - Now with Interactive Infographic */}
-                <div className="relative pt-32 md:pt-40 pb-12 md:pb-20 overflow-hidden">
+                <section className="relative pt-32 md:pt-40 pb-12 md:pb-20 overflow-hidden min-h-screen flex flex-col justify-center snap-start snap-always">
                     <div className="max-w-7xl mx-auto px-6 relative z-10 text-center mb-16">
                         <div className="animate-reveal">
                             <div className="section-badge mb-8 mx-auto">{t.heroBadge}</div>
@@ -70,10 +70,10 @@ export default async function CucumberPage({
                     <div className="relative animate-reveal [animation-delay:200ms]">
                         <InteractiveCucumberHero dict={dict} />
                     </div>
-                </div>
+                </section>
 
                 {/* RESULTS STATS SECTION */}
-                <section className="py-24 relative">
+                <section className="py-24 relative min-h-screen flex items-center snap-start snap-always">
                     <div className="max-w-7xl mx-auto px-6">
                         <div className="text-center mb-20">
                             <h2 className="section-title text-white">

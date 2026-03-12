@@ -43,12 +43,12 @@ const InteractiveCucumberHero: React.FC<InteractiveCucumberHeroProps> = ({ dict 
     };
 
     if (!isMounted) return <div ref={containerRef} className="min-h-[800px] w-full" />;
-    // Aligned to a central vertical axis with balanced Zig-Zag panels
+    // Perfectly aligned to the central vertical axis (the stem)
     const hotspots = [
-        { id: 'leaves', x: 49, y: 15, label: t.leaves, align: 'left', delay: 0.3 },
-        { id: 'fruit', x: 48.5, y: 42, label: t.fruit, align: 'right', delay: 0.6 }, 
-        { id: 'uptake', x: 49.2, y: 65, label: t.uptake, align: 'left', delay: 0.9 },
-        { id: 'roots', x: 49.5, y: 86, label: t.roots, align: 'right', delay: 1.2 },
+        { id: 'leaves', x: 50, y: 15, label: t.leaves, align: 'left', delay: 0.3 },
+        { id: 'fruit', x: 50, y: 42, label: t.fruit, align: 'right', delay: 0.6 }, 
+        { id: 'uptake', x: 50, y: 65, label: t.uptake, align: 'left', delay: 0.9 },
+        { id: 'roots', x: 50, y: 86, label: t.roots, align: 'right', delay: 1.2 },
     ];
 
     return (
@@ -107,30 +107,40 @@ const InteractiveCucumberHero: React.FC<InteractiveCucumberHeroProps> = ({ dict 
                                     {(isInView || activeHotspot === spot.id) && (
                                         <div className={`
                                             absolute top-1/2 -translate-y-1/2 
-                                            ${spot.align === 'left' ? 'right-[24px] md:right-[32px] flex-row-reverse' : 'left-[24px] md:left-[32px]'} 
+                                            ${spot.align === 'left' ? 'right-[20px] md:right-[32px] flex-row-reverse' : 'left-[20px] md:left-[32px]'} 
                                             flex items-center pointer-events-none
                                         `}>
                                             
                                             {/* Line Drawing with Fade-out toward the plant */}
-                                            <div className="relative w-[120px] h-[2px] hidden md:block">
+                                            <div className="relative w-[140px] h-[2px] hidden md:block overflow-visible">
                                                 <svg 
                                                     className="overflow-visible"
-                                                    width="100%" height="2" viewBox="0 0 120 2"
+                                                    width="100%" height="2" viewBox="0 0 140 2"
                                                 >
                                                     <defs>
+                                                        <filter id={`glow-${spot.id}`} x="-50%" y="-50%" width="200%" height="200%">
+                                                            <feGaussianBlur in="SourceGraphic" stdDeviation="2.5" result="blur"></feGaussianBlur>
+                                                            <feMerge>
+                                                                <feMergeNode in="blur"></feMergeNode>
+                                                                <feMergeNode in="SourceGraphic"></feMergeNode>
+                                                            </feMerge>
+                                                        </filter>
                                                         <linearGradient id={`gradient-${spot.id}`} x1={spot.align === 'left' ? "0%" : "100%"} y1="0%" x2={spot.align === 'left' ? "100%" : "0%"} y2="0%">
                                                             <stop offset="0%" stopColor="rgba(163,230,21,1)" />
+                                                            <stop offset="70%" stopColor="rgba(163,230,21,0.5)" />
                                                             <stop offset="100%" stopColor="rgba(163,230,21,0)" />
                                                         </linearGradient>
                                                     </defs>
                                                     <motion.path
-                                                        d={spot.align === 'left' ? "M 120 1 L 0 1" : "M 0 1 L 120 1"}
+                                                        d={spot.align === 'left' ? "M 140 1 L 0 1" : "M 0 1 L 140 1"}
                                                         fill="transparent"
                                                         stroke={`url(#gradient-${spot.id})`}
                                                         strokeWidth="2.5"
+                                                        strokeLinecap="round"
+                                                        filter={`url(#glow-${spot.id})`}
                                                         initial={{ pathLength: 0 }}
                                                         animate={{ pathLength: 1 }}
-                                                        transition={{ delay: spot.delay + 0.4, duration: 0.8 }}
+                                                        transition={{ delay: spot.delay + 0.4, duration: 1 }}
                                                     />
                                                 </svg>
                                             </div>
