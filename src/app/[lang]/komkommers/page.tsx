@@ -50,7 +50,7 @@ export default async function CucumberPage({
             <main className="bg-black relative min-h-screen snap-y snap-mandatory overflow-x-hidden">
 
                 {/* HERO SECTION - Now with Interactive Infographic */}
-                <section className="relative pt-24 md:pt-28 pb-0 overflow-hidden min-h-screen flex flex-col items-center justify-start snap-start snap-always">
+                <section className="relative pt-24 md:pt-28 pb-0 overflow-hidden min-h-screen flex flex-col items-center justify-start snap-start snap-always" style={{ background: 'linear-gradient(to bottom, #080a0a 0%, #000000 300px, #000000 100%)' }}>
                     <div className="max-w-7xl mx-auto px-6 relative z-10 text-center mb-0">
                         <div className="animate-reveal">
                             <div className="section-badge mb-6 mx-auto">{t.heroBadge}</div>

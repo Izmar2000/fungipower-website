@@ -71,7 +71,7 @@ const InteractiveCucumberHero: React.FC<InteractiveCucumberHeroProps> = ({ dict 
     return (
         <div 
             ref={containerRef} 
-            className="relative w-full min-h-[900px] md:min-h-[1200px] flex flex-col items-center justify-start overflow-visible select-none"
+            className="relative w-full min-h-[900px] md:min-h-[1200px] flex flex-col items-center justify-start overflow-visible select-none bg-black"
         >
             <motion.div
                 className="relative w-full max-w-[1000px] px-4 pt-0 -mt-32 md:-mt-60"
@@ -160,9 +160,9 @@ const InteractiveCucumberHero: React.FC<InteractiveCucumberHeroProps> = ({ dict 
                                     className={`
                                         absolute top-0 -translate-y-1/2 pointer-events-auto
                                         ${spot.align === 'left' ? 'right-[70px] md:right-[170px] lg:right-[240px]' : 'left-[70px] md:left-[170px] lg:left-[240px]'}
-                                        glass-panel px-6 py-5 md:px-8 md:py-6 rounded-3xl bg-black/95 backdrop-blur-2xl border border-white/10 shadow-[0_40px_80px_rgba(0,0,0,0.9)]
+                                        glass-panel px-6 py-5 md:px-8 md:py-6 rounded-3xl bg-black/95 backdrop-blur-2xl border border-lime-500/40 shadow-[0_40px_80px_rgba(0,0,0,0.9)]
                                         min-w-[240px] md:min-w-[280px] lg:min-w-[400px]
-                                        hover:border-lime-500/40 transition-all duration-300
+                                        transition-all duration-300
                                     `}
                                 >
                                     <div className="flex items-center gap-2 mb-2">
