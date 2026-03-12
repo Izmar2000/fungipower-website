@@ -30,8 +30,8 @@ const InteractiveCucumberHero: React.FC<InteractiveCucumberHeroProps> = ({ dict,
                 return {
                     image: "/cucumber-plant-provided.png",
                     hotspots: [],
-                    maxWidth: "max-w-[700px]",
-                    imgStyle: { marginBottom: '-45%', marginTop: '-10%' },
+                    maxWidth: "max-w-[800px]",
+                    imgStyle: { marginBottom: '-30%', marginTop: '-5%' },
                 };
             case 'plant':
                 return {
@@ -48,7 +48,7 @@ const InteractiveCucumberHero: React.FC<InteractiveCucumberHeroProps> = ({ dict,
             case 'roots':
                 return {
                     image: "/wortels1.png",
-                    maxWidth: "max-w-[600px]",
+                    maxWidth: "max-w-[800px]",
                     imgStyle: { marginBottom: '0%' },
                     hotspots: [
                         { id: 'iron', x: 42, y: 50, label: sectionData?.nodes?.iron?.label, desc: sectionData?.nodes?.iron?.desc, align: 'left', delay: 0.8 },
@@ -128,14 +128,18 @@ const InteractiveCucumberHero: React.FC<InteractiveCucumberHeroProps> = ({ dict,
                             <div className="absolute">
                                 {/* Card */}
                                 <motion.div
-                                    initial={{ opacity: 0, y: 20 }}
-                                    animate={isInView ? { opacity: 1, y: -20 } : {}}
+                                    initial={{ 
+                                        opacity: 0, 
+                                        y: typeof window !== 'undefined' && window.innerWidth < 768 ? 20 : 0,
+                                        x: typeof window !== 'undefined' && window.innerWidth >= 768 ? (spot.align === 'left' ? -20 : 20) : 0
+                                    }}
+                                    animate={isInView ? { opacity: 1, y: -20, x: 0 } : {}}
                                     transition={{ delay: spot.delay + 0.6, duration: 0.6 }}
                                     className={`
                                         fixed md:absolute bottom-10 md:bottom-auto left-1/2 md:left-auto -translate-x-1/2 md:translate-x-0 md:top-0 md:-translate-y-1/2 pointer-events-auto
                                         ${spot.align === 'left' ? 'md:right-[310px]' : 'md:left-[310px]'}
                                         glass-panel px-4 py-3 md:px-6 md:py-5 rounded-2xl bg-black/95 backdrop-blur-xl border border-lime-500/40 shadow-[0_30px_60px_rgba(0,0,0,0.8)]
-                                        w-[90vw] md:w-auto min-w-[280px] md:min-w-[320px]
+                                        w-[90vw] md:w-auto min-w-[280px] md:min-w-[400px]
                                         z-50
                                     `}
                                 >
