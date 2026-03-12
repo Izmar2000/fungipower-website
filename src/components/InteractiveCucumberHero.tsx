@@ -93,7 +93,7 @@ const InteractiveCucumberHero: React.FC<InteractiveCucumberHeroProps> = ({ dict 
                         
                         {/* THE NEW PROVIDED PLANT IMAGE */}
                         <img
-                            src="/images/cucumber-plant-provided.png"
+                            src="/cucumber-plant-provided.png"
                             alt="PlantiPower Performance Plant"
                             className="w-full h-auto object-contain relative z-10 drop-shadow-[0_40px_80px_rgba(0,0,0,0.8)]"
                         />
