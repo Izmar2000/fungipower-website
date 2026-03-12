@@ -80,7 +80,19 @@ const InteractiveCucumberHero: React.FC<InteractiveCucumberHeroProps> = ({ dict 
                 className="relative w-full max-w-[1000px] px-4 pt-0 -mt-32 md:-mt-60"
                 style={{ scale, opacity }}
             >
-                {/* 1. The Plant (Fades in softly) */}
+                {/* Partner Logos Row */}
+                <motion.div 
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={isInView ? { opacity: 1, y: 0 } : {}}
+                    transition={{ delay: 0.4, duration: 1 }}
+                    className="flex flex-wrap items-center justify-center gap-8 md:gap-12 mb-12 opacity-60 hover:opacity-100 transition-opacity duration-500"
+                >
+                    <div className="text-[10px] uppercase tracking-[0.3em] text-emerald-100/40 font-bold w-full text-center mb-2">Onderzoekspartners</div>
+                    <img src="/images/vangog-logo.png" alt="Van Gog Kwekerijen" className="h-8 md:h-10 w-auto brightness-0 invert opacity-70" />
+                    <img src="/images/logo-eurofins-agro.jpg" alt="Eurofins Agro" className="h-8 md:h-10 w-auto rounded-sm brightness-110 contrast-125" />
+                </motion.div>
+
+                {/* 1. The Plant (Fades in softly) Tune positioning to avoid the card overlap if needed */}
                 <div className="relative z-10 w-full flex justify-center">
                     <motion.div 
                         initial={{ opacity: 0, scale: 0.95 }}
@@ -96,11 +108,11 @@ const InteractiveCucumberHero: React.FC<InteractiveCucumberHeroProps> = ({ dict 
                         {/* Shadow/Base Glow */}
                         <div className="absolute bottom-[2%] left-1/2 -translate-x-1/2 w-full h-40 bg-lime-500/5 blur-[150px] rounded-full opacity-20"></div>
                         
-                        {/* THE NEW PROVIDED PLANT IMAGE */}
+                        {/* THE NEW PROVIDED PLANT IMAGE - RESTORED ORIGINAL COLORS */}
                         <img
                             src="/cucumber-plant-provided.png"
                             alt="PlantiPower"
-                            className="w-full h-auto object-contain relative z-10 brightness-110 contrast-125 saturate-[1.2]"
+                            className="w-full h-auto object-contain relative z-10"
                             style={{ 
                                 objectPosition: 'bottom center',
                                 marginBottom: '-5%' 
