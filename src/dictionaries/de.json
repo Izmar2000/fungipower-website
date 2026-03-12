@@ -306,6 +306,12 @@
         "testimonialTitle": "Was Erzeuger sagen",
         "testimonialText": "\"Die Ergänzung von PlantiPower zu unserem bestehenden Plan führte innerhalb weniger Wochen zu einer sichtbar vitaleren Kultur. Die Gurken sind gleichmäßiger und die Pflanze bleibt länger kräftig, selbst bei hoher Belastung.\"",
         "testimonialAuthor": "Gurkenerzeuger",
-        "testimonialLocation": "Region Venlo"
+        "testimonialLocation": "Region Venlo",
+        "infographic": {
+            "roots": "Starke Wurzeln durch ALL12-Technologie",
+            "fruit": "+2 Gurken pro m²",
+            "leaves": "Maximale Blattaktivität & Verdunstung",
+            "uptake": "Effizienter Transport von 12 Mineralien"
+        }
     }
 }

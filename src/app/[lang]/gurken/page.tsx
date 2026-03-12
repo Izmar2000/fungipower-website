@@ -10,6 +10,8 @@ import {
     Quote
 } from 'lucide-react';
 
+import InteractiveCucumberHero from '@/components/InteractiveCucumberHero'
+
 export async function generateMetadata(
     { params }: { params: Promise<{ lang: Locale }> }
 ): Promise<Metadata> {
@@ -47,38 +49,26 @@ export default async function CucumberPage({
         <ClientLayout dict={dict} lang={lang}>
             <main className="bg-[#011410] relative min-h-screen">
 
-                {/* HERO SECTION */}
-                <div className="relative pt-32 md:pt-48 pb-24 md:pb-32 overflow-hidden">
-                    {/* Background Ambient Glow */}
-                    <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-[radial-gradient(circle_at_center,rgba(132,204,22,0.08)_0%,transparent_70%)] pointer-events-none"></div>
-
-                    <div className="max-w-7xl mx-auto px-6 relative z-10">
-                        <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
-                            <div className="animate-reveal">
-                                <div className="section-badge mb-8">{t.heroBadge}</div>
-                                <h1 className="font-outfit font-black uppercase text-[42px] md:text-[64px] lg:text-[80px] tracking-[0.02em] leading-[0.95] text-white mb-8">
-                                    {t.heroTitle}<br />
-                                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-lime-400 to-emerald-400">
-                                        {t.heroTitleAccent}
-                                    </span>
-                                </h1>
-                                <p className="text-xl text-emerald-100/70 leading-relaxed font-medium max-w-xl">
-                                    {t.heroDesc}
-                                </p>
-                            </div>
-
-                            <div className="relative group animate-reveal [animation-delay:200ms]">
-                                <div className="absolute -inset-4 bg-lime-500/20 blur-3xl rounded-[3rem] opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-                                <div className="relative aspect-[4/5] rounded-[3rem] overflow-hidden border border-white/10 shadow-2xl">
-                                    <img
-                                        src="/images/cucumber-hero.png"
-                                        alt="Cucumber Cultivation"
-                                        className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
-                                    />
-                                    <div className="absolute inset-0 bg-gradient-to-t from-[#011410] via-transparent to-transparent opacity-60"></div>
-                                </div>
-                            </div>
+                {/* HERO SECTION - Now with Interactive Infographic */}
+                <div className="relative pt-32 md:pt-40 pb-12 md:pb-20 overflow-hidden">
+                    <div className="max-w-7xl mx-auto px-6 relative z-10 text-center mb-16">
+                        <div className="animate-reveal">
+                            <div className="section-badge mb-8 mx-auto">{t.heroBadge}</div>
+                            <h1 className="font-outfit font-black uppercase text-[42px] md:text-[64px] lg:text-[80px] tracking-[0.02em] leading-[0.95] text-white mb-8">
+                                {t.heroTitle}<br />
+                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-lime-400 to-emerald-400">
+                                    {t.heroTitleAccent}
+                                </span>
+                            </h1>
+                            <p className="text-xl text-emerald-100/70 leading-relaxed font-medium max-w-2xl mx-auto">
+                                {t.heroDesc}
+                            </p>
                         </div>
+                    </div>
+
+                    {/* INTERACTIVE INFOGRAPHIC */}
+                    <div className="relative animate-reveal [animation-delay:200ms]">
+                        <InteractiveCucumberHero dict={dict} />
                     </div>
                 </div>
 

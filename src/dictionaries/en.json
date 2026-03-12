@@ -306,6 +306,12 @@
         "testimonialTitle": "What growers say",
         "testimonialText": "\"Adding PlantiPower to our existing schedule resulted in a visibly more vital crop within weeks. The cucumbers are more uniform and the plant remains strong longer, even under heavy load.\"",
         "testimonialAuthor": "Cucumber Grower",
-        "testimonialLocation": "Venlo Region"
+        "testimonialLocation": "Venlo Region",
+        "infographic": {
+            "roots": "Powerful roots through ALL12 technology",
+            "fruit": "+2 cucumbers per m²",
+            "leaves": "Maximum leaf activity & evaporation",
+            "uptake": "Efficient transport of 12 minerals"
+        }
     }
 }

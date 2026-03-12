@@ -306,6 +306,12 @@
         "testimonialTitle": "Wat kwekers zeggen",
         "testimonialText": "\"De toevoeging van PlantiPower aan ons bestaande schema gaf binnen enkele weken een zichtbaar vitaler gewas. De komkommers zijn uniformer en de plant blijft langer sterk, zelfs bij hoge belasting.\"",
         "testimonialAuthor": "Komkommerkweker",
-        "testimonialLocation": "Regio Venlo"
+        "testimonialLocation": "Regio Venlo",
+        "infographic": {
+            "roots": "Krachtige wortels door ALL12 technologie",
+            "fruit": "+2 komkommers per m²",
+            "leaves": "Maximale bladactiviteit & verdamping",
+            "uptake": "Efficiënt transport van 12 mineralen"
+        }
     }
 }
