@@ -14,8 +14,8 @@ export async function generateMetadata(
         title: t.metaTitle,
         description: t.metaDesc,
         robots: {
-            index: true,
-            follow: true,
+            index: false,
+            follow: false,
         },
     }
 }

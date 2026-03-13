@@ -46,18 +46,21 @@ const InteractiveCucumberHero: React.FC<InteractiveCucumberHeroProps> = ({ mode,
                 return {
                     image: "/cucumber-plant-provided.png",
                     maxWidth: "max-w-[1600px]",
-                    imgHeight: '95vh',
+                    imgHeight: '107vh',
                     // Wide ellipse — edges fade softly into black
-                    mask: 'radial-gradient(ellipse 82% 78% at center, black 50%, transparent 100%)',
+                    mask: 'radial-gradient(ellipse 85% 90% at center, black 55%, transparent 100%)',
+                    // Smaller top/bottom gradients so top leaf stays visible after crop
+                    gradientTop: '8%',
+                    gradientBottom: '18%',
                     hotspots: [
                         // Bovenste blad → silicium in celwand van blad
-                        { id: 'silicon', x: 46, y: 12, label: sectionData?.nodes?.silicon?.label, desc: sectionData?.nodes?.silicon?.desc, align: 'left' as const, delay: 0.8 },
+                        { id: 'silicon', x: 46, y: 8, label: sectionData?.nodes?.silicon?.label, desc: sectionData?.nodes?.silicon?.desc, align: 'left' as const, delay: 0.8 },
                         // Jong blad halverwege rechts → +38% silicium
-                        { id: 'siliconLeaf', x: 60, y: 35, label: sectionData?.nodes?.siliconLeaf?.label, desc: sectionData?.nodes?.siliconLeaf?.desc, align: 'right' as const, delay: 1.5 },
+                        { id: 'siliconLeaf', x: 60, y: 30, label: sectionData?.nodes?.siliconLeaf?.label, desc: sectionData?.nodes?.siliconLeaf?.desc, align: 'right' as const, delay: 1.5 },
                         // Stengel midden → molybdeen (vaatbundels)
-                        { id: 'molybdenum', x: 43, y: 58, label: sectionData?.nodes?.molybdenum?.label, desc: sectionData?.nodes?.molybdenum?.desc, align: 'left' as const, delay: 2.2 },
+                        { id: 'molybdenum', x: 43, y: 52, label: sectionData?.nodes?.molybdenum?.label, desc: sectionData?.nodes?.molybdenum?.desc, align: 'left' as const, delay: 2.2 },
                         // Onderstengel/wortelzone → fosfor opname
-                        { id: 'phosphorus', x: 56, y: 78, label: sectionData?.nodes?.phosphorus?.label, desc: sectionData?.nodes?.phosphorus?.desc, align: 'right' as const, delay: 2.9 },
+                        { id: 'phosphorus', x: 56, y: 71, label: sectionData?.nodes?.phosphorus?.label, desc: sectionData?.nodes?.phosphorus?.desc, align: 'right' as const, delay: 2.9 },
                     ]
                 };
             case 'roots':
@@ -200,31 +203,43 @@ const InteractiveCucumberHero: React.FC<InteractiveCucumberHeroProps> = ({ mode,
                 transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
                 className={`relative z-10 w-full ${assets.maxWidth}`}
             >
-                <div className="relative">
-                    <img
-                        src={assets.image}
-                        alt="Technical Analysis"
-                        className="w-full object-contain mx-auto"
-                        style={{
-                            maskImage: assets.mask,
-                            WebkitMaskImage: assets.mask,
-                            height: assets.imgHeight,
-                            mixBlendMode: 'screen',
-                        }}
-                    />
-                    {/* Gradient overlays — verbergen de fotorand aan alle kanten */}
-                    <div className="absolute inset-y-0 left-0 w-[20%] bg-gradient-to-r from-black to-transparent pointer-events-none z-10" />
-                    <div className="absolute inset-y-0 right-0 w-[20%] bg-gradient-to-l from-black to-transparent pointer-events-none z-10" />
-                    <div className="absolute inset-x-0 top-0 h-[20%] bg-gradient-to-b from-black to-transparent pointer-events-none z-10" />
-                    <div className="absolute inset-x-0 bottom-0 h-[20%] bg-gradient-to-t from-black to-transparent pointer-events-none z-10" />
-
-                    {/* Bottom gradient overlay (roots only) */}
-                    {(assets as any).overlay && (
-                        <div
-                            className="absolute inset-x-0 bottom-0 h-[28%] pointer-events-none z-20"
-                            style={{ background: 'linear-gradient(to top, #0c0f0f 0%, transparent 100%)' }}
+                {/* Outer div = positioning context for hotspots (overflow visible) */}
+                <div
+                    className="relative"
+                    style={mode === 'plant' ? { height: '100vh' } : {}}
+                >
+                    {/* Image container — clipped for plant so it crops top/bottom */}
+                    <div style={mode === 'plant'
+                        ? { position: 'absolute', inset: 0, overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center' }
+                        : { position: 'relative' }
+                    }>
+                        <img
+                            src={assets.image}
+                            alt="Technical Analysis"
+                            className="w-full object-contain mx-auto"
+                            style={{
+                                maskImage: assets.mask,
+                                WebkitMaskImage: assets.mask,
+                                height: assets.imgHeight,
+                                mixBlendMode: 'screen',
+                            }}
                         />
-                    )}
+                        {/* Gradient overlays — hide photo edges on all sides */}
+                        <div className="absolute inset-y-0 left-0 w-[22%] bg-gradient-to-r from-black to-transparent pointer-events-none z-10" />
+                        <div className="absolute inset-y-0 right-0 w-[22%] bg-gradient-to-l from-black to-transparent pointer-events-none z-10" />
+                        <div className="absolute inset-x-0 top-0 bg-gradient-to-b from-black to-transparent pointer-events-none z-10"
+                            style={{ height: (assets as any).gradientTop ?? '25%' }} />
+                        <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black to-transparent pointer-events-none z-10"
+                            style={{ height: (assets as any).gradientBottom ?? '25%' }} />
+
+                        {/* Bottom gradient overlay (roots only) */}
+                        {(assets as any).overlay && (
+                            <div
+                                className="absolute inset-x-0 bottom-0 h-[28%] pointer-events-none z-20"
+                                style={{ background: 'linear-gradient(to top, #0c0f0f 0%, transparent 100%)' }}
+                            />
+                        )}
+                    </div>
 
                     {/* Hotspots — desktop only */}
                     {assets.hotspots.map((spot) => (
@@ -291,7 +306,7 @@ const InteractiveCucumberHero: React.FC<InteractiveCucumberHeroProps> = ({ mode,
                             </motion.div>
                         </div>
                     ))}
-                </div>
+                </div>{/* end outer positioning div */}
             </motion.div>
         </div>
     );

@@ -21,8 +21,10 @@ function ScrollButton({ targetId }: { targetId: string }) {
                 transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
                 className="flex flex-col items-center gap-1"
             >
-                <span className="text-xl">🥒</span>
-                <div className="w-[1px] h-4 bg-gradient-to-b from-lime-500/60 to-transparent"></div>
+                <span className="text-[10px] text-white/40 uppercase tracking-[0.2em] font-outfit font-bold">Verder</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" className="text-lime-400/70">
+                    <path d="M6 9L12 15L18 9" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
             </motion.div>
         </button>
     )
@@ -125,9 +127,9 @@ export default function CucumberClientPage({
                                         whileInView={{ opacity: 1, scale: 1 }}
                                         viewport={{ once: true }}
                                         transition={{ delay: i * 0.05 }}
-                                        className="aspect-square flex items-center justify-center rounded-xl bg-[#1cff7a] shadow-[0_0_10px_rgba(28,255,122,0.27)] transition-all duration-300"
+                                        className="aspect-square flex items-center justify-center rounded-xl bg-lime-400/10 border border-lime-400/25 transition-all duration-300"
                                     >
-                                        <span className="text-xl font-black text-[#0c0f0f]">{nutrient}</span>
+                                        <span className="text-xl font-black text-lime-400">{nutrient}</span>
                                     </motion.div>
                                 ))}
                             </div>
