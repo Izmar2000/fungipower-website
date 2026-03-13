@@ -353,35 +353,6 @@ export default async function ProductShield({
                     </div>
                 </div>
 
-                {/* LABEL SPOTLIGHT */}
-                {(isNL || isDE) && (
-                    <div className="py-24 bg-[#010816] relative overflow-hidden">
-                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-cyan-500/5 blur-[120px] rounded-full pointer-events-none"></div>
-                        <div className="max-w-7xl mx-auto px-6 relative z-10 text-center">
-                            <div className="max-w-3xl mx-auto mb-16">
-                                <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 font-outfit uppercase tracking-tight">
-                                    {content.labelTitle}
-                                </h2>
-                                <p className="text-slate-400 text-lg font-light leading-relaxed">
-                                    {isDE
-                                        ? 'Unsere Etiketten stehen für unsichtbare Kraft, maximale Widerstandsfähigkeit und 100% natürlichen Schutz.'
-                                        : 'Onze etiketten staan voor onzichtbare kracht, maximale weerbaarheid en 100% natuurlijke bescherming.'}
-                                </p>
-                            </div>
-
-                            <div className="relative group max-w-2xl mx-auto">
-                                <div className="absolute -inset-4 bg-cyan-500/20 blur-[40px] rounded-[3rem] opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-                                <div className="relative glass-panel rounded-[2.5rem] p-4 bg-white/5 border-white/10 shadow-2xl overflow-hidden group-hover:scale-[1.02] transition-transform duration-700">
-                                    <img
-                                        src={content.labelImage}
-                                        alt={isDE ? "PlantiPower Shield DE Etikett" : "PlantiPower Shield NL Etiket"}
-                                        className="w-full h-auto rounded-[1.5rem] shadow-inner"
-                                    />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                )}
 
                 {/* DOWNLOADS */}
                 <div id="downloads" className="py-20 bg-[#010816] border-t border-white/5">

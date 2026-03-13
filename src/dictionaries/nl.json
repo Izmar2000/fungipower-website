@@ -360,6 +360,13 @@
         "desc": "PlantiPower is een nutriëntentransporter op basis van gemodificeerde fulvinezuren. Waar standaard fulvinezuurproducten drie tot vier elementen transporteren, transporteert PlantiPower alle twaalf essentiële nutriënten direct naar de wortels.",
         "footer": "PlantiPower_Praktijkresultaten_2026",
         "nutrients": ["N", "P", "K", "Ca", "Mg", "S", "Mn", "Mo", "B", "Cu", "Zn", "Fe"]
+      },
+      "s6": {
+        "title": "RESULTAAT",
+        "titleAccent": "IN DE HAND",
+        "desc": "Klaar voor de volgende stap in teeltoptimalisatie? Start vandaag nog met PlantiPower ALL12 en ervaar het verschil in opname en rendement.",
+        "btnProduct": "Productpagina",
+        "btnSample": "Proefpakket aanvragen"
       }
     }
   }

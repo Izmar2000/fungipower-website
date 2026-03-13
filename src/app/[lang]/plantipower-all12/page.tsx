@@ -382,35 +382,6 @@ export default async function ProductAll12({
                     </div>
                 </div>
 
-                {/* LABEL SPOTLIGHT */}
-                {(isNL || isDE) && (
-                    <div className="py-24 bg-[#011a14] relative overflow-hidden">
-                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-lime-500/5 blur-[120px] rounded-full pointer-events-none"></div>
-                        <div className="max-w-7xl mx-auto px-6 relative z-10 text-center">
-                            <div className="max-w-3xl mx-auto mb-16">
-                                <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 font-outfit uppercase tracking-tight">
-                                    {content.labelTitle}
-                                </h2>
-                                <p className="text-emerald-100/50 text-lg font-light leading-relaxed">
-                                    {isDE
-                                        ? 'Unsere Etiketten spiegeln unser Versprechen wider: pure Qualität, kraftvolles Wachstum und 100% biologisch.'
-                                        : 'Onze etiketten weerspiegelen onze belofte: pure kwaliteit, krachtige groei en 100% biologisch.'}
-                                </p>
-                            </div>
-
-                            <div className="relative group max-w-2xl mx-auto">
-                                <div className="absolute -inset-4 bg-lime-500/20 blur-[40px] rounded-[3rem] opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-                                <div className="relative glass-panel rounded-[2.5rem] p-4 bg-white/5 border-white/10 shadow-2xl overflow-hidden group-hover:scale-[1.02] transition-transform duration-700">
-                                    <img
-                                        src={content.labelImage}
-                                        alt={isDE ? "PlantiPower All12 DE Etikett" : "PlantiPower All12 NL Etiket"}
-                                        className="w-full h-auto rounded-[1.5rem] shadow-inner"
-                                    />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                )}
 
                 {/* DOWNLOADS */}
                 <div id="downloads" className="py-20 bg-[#011410] border-t border-white/5">

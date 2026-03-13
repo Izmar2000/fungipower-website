@@ -359,6 +359,13 @@
         "desc": "PlantiPower is a nutrient transporter based on modified fulvic acids. While standard fulvic acid products transport three to four elements, PlantiPower transports all twelve essential nutrients directly to the roots.",
         "footer": "PlantiPower_PracticalResults_2026",
         "nutrients": ["N", "P", "K", "Ca", "Mg", "S", "Mn", "Mo", "B", "Cu", "Zn", "Fe"]
+      },
+      "s6": {
+        "title": "RESULTS",
+        "titleAccent": "IN HAND",
+        "desc": "Ready for the next step in crop optimization? Start today with PlantiPower ALL12 and experience the difference in uptake and yield.",
+        "btnProduct": "Product Page",
+        "btnSample": "Request Sample Pack"
       }
     }
   }

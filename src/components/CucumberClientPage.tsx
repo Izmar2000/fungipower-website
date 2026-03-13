@@ -20,7 +20,7 @@ export default function CucumberClientPage({
             <main className="bg-black relative min-h-screen snap-y snap-mandatory overflow-y-auto overflow-x-hidden h-screen">
 
                 {/* SECTION 1: HEADER (CLEAN PLANT) */}
-                <section className="relative h-screen flex flex-col items-center justify-start snap-start snap-always pt-24 md:pt-32" style={{ background: 'linear-gradient(to bottom, #080a0a 0%, #000000 100%)' }}>
+                <section className="relative h-screen flex flex-col items-center justify-start snap-start snap-always pt-12 md:pt-16 overflow-hidden" style={{ background: 'linear-gradient(to bottom, #080a0a 0%, #000000 100%)' }}>
                     <div className="max-w-4xl mx-auto px-6 relative z-20 text-center mb-0">
                         <div className="animate-reveal">
                             <div className="section-badge mb-6 mx-auto">{t.sections?.s1?.badge}</div>
@@ -41,9 +41,27 @@ export default function CucumberClientPage({
                         </div>
                     </div>
                     
-                    <div className="w-full relative mt-[-100px] md:mt-[-150px] z-10">
+                    <div className="w-full relative mt-[-150px] md:mt-[-280px] z-10">
                         <InteractiveCucumberHero dict={dict} mode="header" />
                     </div>
+
+                    {/* Scroll Indicator */}
+                    <motion.div 
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ delay: 2, duration: 1 }}
+                        className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 opacity-50 z-30"
+                    >
+                        <motion.div
+                            animate={{ y: [0, 8, 0] }}
+                            transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
+                            className="flex flex-col items-center"
+                        >
+                            <div className="w-[1px] h-8 bg-gradient-to-b from-lime-500 to-transparent"></div>
+                            <div className="w-2 h-2 border-b-2 border-r-2 border-lime-500 rotate-45 -mt-1"></div>
+                            <div className="w-2 h-2 border-b-2 border-r-2 border-lime-500 rotate-45 -mt-1 opacity-50"></div>
+                        </motion.div>
+                    </motion.div>
                 </section>
 
                 {/* SECTION 2: PLANT (NODES) */}
@@ -55,10 +73,23 @@ export default function CucumberClientPage({
                     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[15vw] font-black text-white/[0.02] pointer-events-none select-none uppercase tracking-tighter">
                         Plant Results
                     </div>
+
+                    {/* Scroll Indicator */}
+                    <div className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 opacity-30 z-30">
+                        <motion.div
+                            animate={{ y: [0, 8, 0] }}
+                            transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
+                            className="flex flex-col items-center"
+                        >
+                            <div className="w-[1px] h-8 bg-gradient-to-b from-white to-transparent"></div>
+                            <div className="w-2 h-2 border-b-2 border-r-2 border-white rotate-45 -mt-1"></div>
+                        </motion.div>
+                    </div>
                 </section>
 
                 {/* SECTION 3: ROOTS (NODES) */}
-                <section className="relative h-screen flex flex-col items-center justify-center snap-start snap-always bg-black">
+                <section className="relative h-screen flex flex-col items-center justify-center snap-start snap-always bg-black overflow-hidden select-none">
+                    <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-black to-transparent z-20 pointer-events-none"></div>
                     <div className="w-full h-full relative z-10">
                         <InteractiveCucumberHero dict={dict} mode="roots" sectionData={t.sections?.s3} />
                     </div>
@@ -66,16 +97,41 @@ export default function CucumberClientPage({
                     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[15vw] font-black text-white/[0.02] pointer-events-none select-none uppercase tracking-tighter">
                         Root System
                     </div>
+
+                    {/* Scroll Indicator */}
+                    <div className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 opacity-30 z-30">
+                        <motion.div
+                            animate={{ y: [0, 8, 0] }}
+                            transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
+                            className="flex flex-col items-center"
+                        >
+                            <div className="w-[1px] h-8 bg-gradient-to-b from-white to-transparent"></div>
+                            <div className="w-2 h-2 border-b-2 border-r-2 border-white rotate-45 -mt-1"></div>
+                        </motion.div>
+                    </div>
                 </section>
 
                 {/* SECTION 4: CUCUMBER (NODES) */}
-                <section className="relative h-screen flex flex-col items-center justify-center snap-start snap-always bg-black">
+                <section className="relative h-screen flex flex-col items-center justify-center snap-start snap-always bg-black overflow-hidden select-none">
+                    <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-black to-transparent z-20 pointer-events-none"></div>
                     <div className="w-full h-full relative z-10">
                         <InteractiveCucumberHero dict={dict} mode="cucumber" sectionData={t.sections?.s4} />
                     </div>
                     {/* Background label */}
                     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[15vw] font-black text-white/[0.02] pointer-events-none select-none uppercase tracking-tighter">
                         Fruit Data
+                    </div>
+
+                    {/* Scroll Indicator */}
+                    <div className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 opacity-30 z-30">
+                        <motion.div
+                            animate={{ y: [0, 8, 0] }}
+                            transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
+                            className="flex flex-col items-center"
+                        >
+                            <div className="w-[1px] h-8 bg-gradient-to-b from-white to-transparent"></div>
+                            <div className="w-2 h-2 border-b-2 border-r-2 border-white rotate-45 -mt-1"></div>
+                        </motion.div>
                     </div>
                 </section>
 
@@ -121,6 +177,73 @@ export default function CucumberClientPage({
                                 </div>
                             </div>
                         </motion.div>
+                    </div>
+                </section>
+
+                {/* SECTION 6: PRODUCT CTA */}
+                <section className="relative h-screen flex flex-col items-center justify-center snap-start snap-always bg-black overflow-hidden">
+                    <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(52,211,153,0.1)_0%,transparent_70%)] opacity-30"></div>
+                    
+                    <div className="max-w-5xl mx-auto px-6 relative z-20 text-center">
+                        <motion.div
+                            initial={{ opacity: 0, scale: 0.9 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
+                            className="mb-12"
+                        >
+                            <div className="relative inline-block group">
+                                <div className="absolute inset-x-0 bottom-0 h-24 bg-emerald-500/20 blur-3xl rounded-full scale-150 transform translate-y-12 opacity-50"></div>
+                                <motion.div
+                                    animate={{ 
+                                        y: [0, -15, 0],
+                                        rotate: [0, 2, 0, -2, 0]
+                                    }}
+                                    transition={{ 
+                                        duration: 6, 
+                                        repeat: Infinity,
+                                        ease: "easeInOut"
+                                    }}
+                                >
+                                    <img 
+                                        src="/images/all12-clean.png" 
+                                        alt="PlantiPower ALL12" 
+                                        className="h-[300px] md:h-[450px] w-auto object-contain relative z-10"
+                                    />
+                                </motion.div>
+                            </div>
+
+                            <h2 className="font-outfit font-black uppercase text-[42px] md:text-[64px] tracking-tight leading-none text-white mt-12 mb-6">
+                                {t.sections?.s6?.title}<br />
+                                <span className="text-lime-400 italic">{t.sections?.s6?.titleAccent}</span>
+                            </h2>
+                            <p className="text-lg md:text-xl text-emerald-100/60 leading-relaxed font-light max-w-2xl mx-auto mb-12">
+                                {t.sections?.s6?.desc}
+                            </p>
+
+                            <div className="flex flex-col md:flex-row items-center justify-center gap-6">
+                                <a 
+                                    href={`/${lang}/plantipower-all12`}
+                                    className="px-10 py-5 bg-white text-black font-black uppercase tracking-widest text-sm rounded-full hover:bg-lime-400 transition-all duration-300 transform hover:scale-105"
+                                >
+                                    {t.sections?.s6?.btnProduct}
+                                </a>
+                                <a 
+                                    href={`/${lang}/contact`}
+                                    className="px-10 py-5 bg-transparent border-2 border-white/20 text-white font-black uppercase tracking-widest text-sm rounded-full hover:border-lime-400 hover:text-lime-400 transition-all duration-300 transform hover:scale-105"
+                                >
+                                    {t.sections?.s6?.btnSample}
+                                </a>
+                            </div>
+                        </motion.div>
+                    </div>
+
+                    {/* Industrial floating labels */}
+                    <div className="absolute top-[20%] left-[-5%] text-[10vw] font-black text-white/[0.01] pointer-events-none select-none uppercase tracking-tighter -rotate-12">
+                        ALL12® TECH
+                    </div>
+                    <div className="absolute bottom-[15%] right-[-5%] text-[10vw] font-black text-white/[0.01] pointer-events-none select-none uppercase tracking-tighter rotate-12">
+                        MAX YIELD
                     </div>
                 </section>
 

@@ -360,6 +360,13 @@
         "desc": "PlantiPower ist ein Nährstofftransporter auf Basis modifizierter Fulvinsäuren. Während Standard-Fulvinsäureprodukte drei bis vier Elemente transportieren, transportiert PlantiPower alle zwölf essenziellen Nährstoffe direkt zu den Wurzeln.",
         "footer": "PlantiPower_Praxisresultate_2026",
         "nutrients": ["N", "P", "K", "Ca", "Mg", "S", "Mn", "Mo", "B", "Cu", "Zn", "Fe"]
+      },
+      "s6": {
+        "title": "ERGEBNIS",
+        "titleAccent": "IN DER HAND",
+        "desc": "Bereit für den nächsten Schritt in der Anbauoptimierung? Starten Sie noch heute mit PlantiPower ALL12 und erleben Sie den Unterschied in Aufnahme und Ertrag.",
+        "btnProduct": "Produktseite",
+        "btnSample": "Probierpaket anfordern"
       }
     }
   }

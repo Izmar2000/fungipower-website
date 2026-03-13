@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useRef } from 'react'
+import React, { useRef, useState, useEffect } from 'react'
 import { motion, useInView } from 'framer-motion'
 import Image from 'next/image'
 
@@ -23,6 +23,14 @@ interface InteractiveCucumberHeroProps {
 const InteractiveCucumberHero: React.FC<InteractiveCucumberHeroProps> = ({ dict, mode, sectionData }) => {
     const containerRef = useRef<HTMLDivElement>(null);
     const isInView = useInView(containerRef, { once: true, amount: 0.3 });
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const checkMobile = () => setIsMobile(window.innerWidth < 768);
+        checkMobile();
+        window.addEventListener('resize', checkMobile);
+        return () => window.removeEventListener('resize', checkMobile);
+    }, []);
 
     const getSectionAssets = () => {
         switch (mode) {
@@ -30,14 +38,14 @@ const InteractiveCucumberHero: React.FC<InteractiveCucumberHeroProps> = ({ dict,
                 return {
                     image: "/cucumber-plant-provided.png",
                     hotspots: [],
-                    maxWidth: "max-w-[800px]",
-                    imgStyle: { marginBottom: '-30%', marginTop: '-5%' },
+                    maxWidth: "max-w-[1000px]",
+                    imgStyle: { marginBottom: '-30%', marginTop: '-5%', scale: 1.05 },
                 };
             case 'plant':
                 return {
                     image: "/cucumber-plant-provided.png",
-                    maxWidth: "max-w-[700px]",
-                    imgStyle: { marginBottom: '-20%' },
+                    maxWidth: "max-w-[1400px]",
+                    imgStyle: { marginBottom: '-30%', marginTop: '5%', transformOrigin: 'bottom center', scale: 1.1 },
                     hotspots: [
                         { id: 'silicon', x: 45, y: 30, label: sectionData?.nodes?.silicon?.label, desc: sectionData?.nodes?.silicon?.desc, align: 'left', delay: 0.8 },
                         { id: 'siliconLeaf', x: 55, y: 40, label: sectionData?.nodes?.siliconLeaf?.label, desc: sectionData?.nodes?.siliconLeaf?.desc, align: 'right', delay: 1.5 },
@@ -48,8 +56,8 @@ const InteractiveCucumberHero: React.FC<InteractiveCucumberHeroProps> = ({ dict,
             case 'roots':
                 return {
                     image: "/wortels1.png",
-                    maxWidth: "max-w-[800px]",
-                    imgStyle: { marginBottom: '0%' },
+                    maxWidth: "max-w-[900px]",
+                    imgStyle: { marginBottom: '0%', scale: 1.1 },
                     hotspots: [
                         { id: 'iron', x: 42, y: 50, label: sectionData?.nodes?.iron?.label, desc: sectionData?.nodes?.iron?.desc, align: 'left', delay: 0.8 },
                         { id: 'zincRoots', x: 60, y: 55, label: sectionData?.nodes?.zincRoots?.label, desc: sectionData?.nodes?.zincRoots?.desc, align: 'right', delay: 1.5 },
@@ -116,11 +124,11 @@ const InteractiveCucumberHero: React.FC<InteractiveCucumberHeroProps> = ({ dict,
                             {/* Connecting Line - HIDDEN ON MOBILE */}
                             <motion.div 
                                 initial={{ width: 0 }}
-                                animate={isInView ? { width: spot.align === 'left' ? 300 : 300 } : {}}
+                                animate={isInView ? { width: 300 } : { width: 0 }}
                                 transition={{ delay: spot.delay + 0.3, duration: 0.8 }}
                                 className={`
-                                    hidden md:block absolute top-1/2 h-[1px] bg-gradient-to-r from-white to-lime-400
-                                    ${spot.align === 'left' ? 'right-full' : 'left-full'}
+                                    hidden md:block absolute top-1/2 h-[1px] bg-gradient-to-r from-white/50 to-lime-400/50
+                                    ${spot.align === 'left' ? 'right-full bg-gradient-to-l' : 'left-full'}
                                 `}
                             ></motion.div>
 
@@ -130,16 +138,16 @@ const InteractiveCucumberHero: React.FC<InteractiveCucumberHeroProps> = ({ dict,
                                 <motion.div
                                     initial={{ 
                                         opacity: 0, 
-                                        y: typeof window !== 'undefined' && window.innerWidth < 768 ? 20 : 0,
-                                        x: typeof window !== 'undefined' && window.innerWidth >= 768 ? (spot.align === 'left' ? -20 : 20) : 0
+                                        y: isMobile ? 20 : 0,
+                                        x: !isMobile ? (spot.align === 'left' ? -20 : 20) : 0
                                     }}
                                     animate={isInView ? { opacity: 1, y: -20, x: 0 } : {}}
                                     transition={{ delay: spot.delay + 0.6, duration: 0.6 }}
                                     className={`
-                                        fixed md:absolute bottom-10 md:bottom-auto left-1/2 md:left-auto -translate-x-1/2 md:translate-x-0 md:top-0 md:-translate-y-1/2 pointer-events-auto
-                                        ${spot.align === 'left' ? 'md:right-[310px]' : 'md:left-[310px]'}
+                                        fixed md:absolute bottom-10 md:bottom-auto left-1/2 md:left-auto -translate-x-1/2 md:translate-x-0 md:top-1/2 md:-translate-y-1/2 pointer-events-auto
+                                        ${spot.align === 'left' ? 'md:right-full md:mr-24' : 'md:left-full md:ml-24'}
                                         glass-panel px-4 py-3 md:px-6 md:py-5 rounded-2xl bg-black/95 backdrop-blur-xl border border-lime-500/40 shadow-[0_30px_60px_rgba(0,0,0,0.8)]
-                                        w-[90vw] md:w-auto min-w-[280px] md:min-w-[400px]
+                                        w-[90vw] md:w-auto min-w-[280px] md:min-w-[420px]
                                         z-50
                                     `}
                                 >
