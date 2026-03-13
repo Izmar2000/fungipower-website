@@ -50,14 +50,14 @@ const InteractiveCucumberHero: React.FC<InteractiveCucumberHeroProps> = ({ mode,
                     // Wide ellipse — edges fade softly into black
                     mask: 'radial-gradient(ellipse 82% 78% at center, black 50%, transparent 100%)',
                     hotspots: [
-                        // Top leaf → silicium opname
-                        { id: 'silicon', x: 50, y: 9, label: sectionData?.nodes?.silicon?.label, desc: sectionData?.nodes?.silicon?.desc, align: 'left' as const, delay: 0.8 },
-                        // Mid leaf → silicium in jong blad
-                        { id: 'siliconLeaf', x: 58, y: 30, label: sectionData?.nodes?.siliconLeaf?.label, desc: sectionData?.nodes?.siliconLeaf?.desc, align: 'right' as const, delay: 1.5 },
-                        // Stem → molybdeen
-                        { id: 'molybdenum', x: 44, y: 52, label: sectionData?.nodes?.molybdenum?.label, desc: sectionData?.nodes?.molybdenum?.desc, align: 'left' as const, delay: 2.2 },
-                        // Lower stem → fosfor
-                        { id: 'phosphorus', x: 54, y: 70, label: sectionData?.nodes?.phosphorus?.label, desc: sectionData?.nodes?.phosphorus?.desc, align: 'right' as const, delay: 2.9 },
+                        // Bovenste blad → silicium in celwand van blad
+                        { id: 'silicon', x: 46, y: 12, label: sectionData?.nodes?.silicon?.label, desc: sectionData?.nodes?.silicon?.desc, align: 'left' as const, delay: 0.8 },
+                        // Jong blad halverwege rechts → +38% silicium
+                        { id: 'siliconLeaf', x: 60, y: 35, label: sectionData?.nodes?.siliconLeaf?.label, desc: sectionData?.nodes?.siliconLeaf?.desc, align: 'right' as const, delay: 1.5 },
+                        // Stengel midden → molybdeen (vaatbundels)
+                        { id: 'molybdenum', x: 43, y: 58, label: sectionData?.nodes?.molybdenum?.label, desc: sectionData?.nodes?.molybdenum?.desc, align: 'left' as const, delay: 2.2 },
+                        // Onderstengel/wortelzone → fosfor opname
+                        { id: 'phosphorus', x: 56, y: 78, label: sectionData?.nodes?.phosphorus?.label, desc: sectionData?.nodes?.phosphorus?.desc, align: 'right' as const, delay: 2.9 },
                     ]
                 };
             case 'roots':
@@ -80,10 +80,14 @@ const InteractiveCucumberHero: React.FC<InteractiveCucumberHeroProps> = ({ mode,
                     imgHeight: '62vh',
                     mask: 'radial-gradient(ellipse 80% 70% at center 40%, black 50%, transparent 100%)',
                     hotspots: [
-                        { id: 'brix',      x: 35, y: 28, label: sectionData?.nodes?.brix?.label,      desc: sectionData?.nodes?.brix?.desc,      align: 'left' as const,  delay: 0.8 },
-                        { id: 'exclusion', x: 65, y: 28, label: sectionData?.nodes?.exclusion?.label,  desc: sectionData?.nodes?.exclusion?.desc,  align: 'right' as const, delay: 1.5 },
-                        { id: 'zincOld',   x: 35, y: 68, label: sectionData?.nodes?.zincOld?.label,   desc: sectionData?.nodes?.zincOld?.desc,   align: 'left' as const,  delay: 2.2 },
-                        { id: 'molyOld',   x: 65, y: 68, label: sectionData?.nodes?.molyOld?.label,   desc: sectionData?.nodes?.molyOld?.desc,   align: 'right' as const, delay: 2.9 },
+                        // Brix — links bovenaan (kwaliteit vrucht, tip komkommer)
+                        { id: 'brix',      x: 34, y: 22, label: sectionData?.nodes?.brix?.label,      desc: sectionData?.nodes?.brix?.desc,      align: 'left' as const,  delay: 0.8 },
+                        // Ionen-exclusie — rechts bovenaan (plant-niveau, niet vrucht)
+                        { id: 'exclusion', x: 66, y: 30, label: sectionData?.nodes?.exclusion?.label,  desc: sectionData?.nodes?.exclusion?.desc,  align: 'right' as const, delay: 1.5 },
+                        // Zink oud blad — links onderaan
+                        { id: 'zincOld',   x: 34, y: 68, label: sectionData?.nodes?.zincOld?.label,   desc: sectionData?.nodes?.zincOld?.desc,   align: 'left' as const,  delay: 2.2 },
+                        // Molybdeen — rechts onderaan
+                        { id: 'molyOld',   x: 66, y: 76, label: sectionData?.nodes?.molyOld?.label,   desc: sectionData?.nodes?.molyOld?.desc,   align: 'right' as const, delay: 2.9 },
                     ]
                 };
             default:
