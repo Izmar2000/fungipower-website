@@ -36,13 +36,13 @@ const InteractiveCucumberHero: React.FC<InteractiveCucumberHeroProps> = ({ mode,
         switch (mode) {
             case 'header':
                 return {
-                    image: "/images/komkommer_hero2.png",
+                    image: "/images/komkommer_hero2_nobg.png",
                     hotspots: [] as Hotspot[],
                     maxWidth: "max-w-[1400px]",
                     imgHeight: '100%',
                     objectFit: 'cover' as const,
                     // Strong fade on all edges — image blends into black background
-                    mask: 'radial-gradient(ellipse 80% 78% at center 45%, black 20%, transparent 100%)',
+                    mask: 'radial-gradient(ellipse 70% 72% at 50% 52%, black 0%, black 40%, transparent 100%)',
                     gradientTop: '18%',
                     gradientBottom: '22%',
                 };
@@ -106,33 +106,33 @@ const InteractiveCucumberHero: React.FC<InteractiveCucumberHeroProps> = ({ mode,
 
     if (!mounted) return null;
 
-    // ─── HEADER MODE — absolute fill, no height chain issues ─────────────────────
+    // ─── HEADER MODE ─────────────────────────────────────────────────────────────
     if (mode === 'header') {
         return (
-            <motion.div
-                ref={containerRef}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 1.4, ease: [0.16, 1, 0.3, 1] }}
-                className="absolute inset-0 overflow-hidden"
-            >
+            <div className="absolute inset-0 overflow-hidden">
+                {/* Spotlight achter de plant */}
+                <div
+                    className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[500px] pointer-events-none"
+                    style={{ background: 'radial-gradient(ellipse at 50% 80%, rgba(180,255,120,0.13) 0%, rgba(80,200,80,0.06) 40%, transparent 70%)' }}
+                />
+                {/* Grondschaduw */}
+                <div
+                    className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[320px] h-[28px] pointer-events-none"
+                    style={{ background: 'radial-gradient(ellipse at 50% 100%, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 50%, transparent 100%)', filter: 'blur(6px)' }}
+                />
                 <img
                     src={assets.image}
                     alt="Komkommer hero"
-                    className="w-full h-full"
                     style={{
-                        objectFit: 'cover',
-                        maskImage: assets.mask,
-                        WebkitMaskImage: assets.mask,
-                        mixBlendMode: 'screen',
+                        position: 'absolute',
+                        bottom: 0,
+                        left: '50%',
+                        transform: 'translateX(-50%)',
+                        height: isMobile ? '42vh' : '68vh',
+                        width: 'auto',
                     }}
                 />
-                {/* Edge fade overlays */}
-                <div className="absolute inset-y-0 left-0 w-[20%] bg-gradient-to-r from-black to-transparent pointer-events-none" />
-                <div className="absolute inset-y-0 right-0 w-[20%] bg-gradient-to-l from-black to-transparent pointer-events-none" />
-                <div className="absolute inset-x-0 top-0 h-[18%] bg-gradient-to-b from-black to-transparent pointer-events-none" />
-                <div className="absolute inset-x-0 bottom-0 h-[28%] bg-gradient-to-t from-black to-transparent pointer-events-none" />
-            </motion.div>
+            </div>
         );
     }
 

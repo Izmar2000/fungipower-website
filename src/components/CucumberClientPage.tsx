@@ -13,7 +13,7 @@ function ScrollButton({ targetId }: { targetId: string }) {
             onClick={() => {
                 document.getElementById(targetId)?.scrollIntoView({ behavior: 'smooth' })
             }}
-            className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-50 hover:opacity-100 transition-opacity z-30 group cursor-pointer"
+            className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-70 hover:opacity-100 transition-opacity z-50 group cursor-pointer"
             aria-label="Volgende sectie"
         >
             <motion.div
@@ -58,8 +58,8 @@ export default function CucumberClientPage({
                             {t.sections?.s1?.desc}
                         </p>
                     </div>
-                    {/* Plant afbeelding — vult zo groot mogelijk, bijna tot de tekst */}
-                    <div className="w-full flex-1 relative z-10 flex items-center justify-center overflow-hidden">
+                    {/* Plant afbeelding — absolute fill van de sectie zodat mask over volle breedte werkt */}
+                    <div className="absolute inset-0 z-10">
                         <InteractiveCucumberHero dict={dict} mode="header" />
                     </div>
                     <ScrollButton targetId="s2" />
