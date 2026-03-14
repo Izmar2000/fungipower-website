@@ -13,7 +13,7 @@ function ScrollButton({ targetId }: { targetId: string }) {
             onClick={() => {
                 document.getElementById(targetId)?.scrollIntoView({ behavior: 'smooth' })
             }}
-            className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-70 hover:opacity-100 transition-opacity z-50 group cursor-pointer"
+            className="absolute bottom-10 left-1/2 -translate-x-1/2 hidden md:flex flex-col items-center gap-2 opacity-70 hover:opacity-100 transition-opacity z-50 group cursor-pointer"
             aria-label="Volgende sectie"
         >
             <motion.div
@@ -41,12 +41,12 @@ export default function CucumberClientPage({
 }) {
     return (
         <ClientLayout dict={dict} lang={lang}>
-            <main className="bg-black relative min-h-[100dvh] scroll-smooth snap-y snap-mandatory overflow-y-auto overflow-x-hidden h-[100dvh]">
+            <main className="bg-black relative scroll-smooth md:snap-y md:snap-mandatory overflow-y-auto overflow-x-hidden md:h-[100dvh]">
 
                 {/* SECTION 1: HEADER */}
-                <section id="s1" className="relative h-[100dvh] flex flex-col items-center snap-start snap-always overflow-hidden bg-black" style={{ background: 'linear-gradient(to bottom, #080a0a 0%, #000000 100%)' }}>
+                <section id="s1" className="relative md:h-[100dvh] h-auto min-h-[100dvh] flex flex-col items-center md:snap-start md:snap-always overflow-hidden bg-black" style={{ background: 'linear-gradient(to bottom, #080a0a 0%, #000000 100%)' }}>
                     {/* Tekst bovenaan */}
-                    <div className="z-20 flex flex-col items-center text-center w-full max-w-5xl px-6 pt-10 pb-2 flex-none">
+                    <div className="z-20 flex flex-col items-center text-center w-full max-w-5xl px-6 pt-12 pb-4 flex-none">
                         <h1 className="font-outfit font-black uppercase text-[32px] md:text-[48px] lg:text-[58px] tracking-tight leading-[0.95] text-white mb-6">
                             {t.sections?.s1?.title}<br />
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-lime-400 to-emerald-400">
@@ -54,7 +54,7 @@ export default function CucumberClientPage({
                             </span>
                         </h1>
 
-                        {/* Validatie strip — zelfde stijl als section-badge maar wit */}
+                        {/* Validatie strip */}
                         <div className="inline-flex items-center gap-7 px-12 py-4 bg-white/5 border border-white/20 rounded-sm mb-5">
                             <img src="/images/eurofins_WHITE_nobg.png" alt="Eurofins Agro"
                                 className="h-10 w-auto object-contain brightness-0 invert opacity-90" />
@@ -69,8 +69,9 @@ export default function CucumberClientPage({
                             {t.sections?.s1?.desc}
                         </p>
                     </div>
-                    {/* Plant afbeelding — absolute fill van de sectie zodat mask over volle breedte werkt */}
-                    <div className="absolute inset-0 bottom-[72px] z-10">
+
+                    {/* Plant — inline below text, fills remaining height */}
+                    <div className="relative z-10 flex-1 w-full min-h-[40vh] md:min-h-0">
                         <InteractiveCucumberHero dict={dict} mode="header" />
                     </div>
 
@@ -78,42 +79,42 @@ export default function CucumberClientPage({
                 </section>
 
                 {/* SECTION 2: PLANT (NODES) */}
-                <section id="s2" className="relative h-[100dvh] flex flex-col items-center justify-center snap-start snap-always bg-black">
-                    <div className="w-full h-full relative z-10 flex flex-col items-center justify-center">
+                <section id="s2" className="relative md:h-[100dvh] h-auto flex flex-col items-center md:justify-center md:snap-start md:snap-always bg-black">
+                    <div className="w-full md:h-full relative z-10 flex flex-col items-center justify-center">
                         <InteractiveCucumberHero dict={dict} mode="plant" sectionData={t.sections?.s2} />
                     </div>
-                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[15vw] font-black text-white/[0.02] pointer-events-none select-none uppercase tracking-tighter">
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[15vw] font-black text-white/[0.02] pointer-events-none select-none uppercase tracking-tighter hidden md:block">
                         Plant Results
                     </div>
                     <ScrollButton targetId="s3" />
                 </section>
 
                 {/* SECTION 3: ROOTS (NODES) */}
-                <section id="s3" className="relative h-[100dvh] flex flex-col items-center justify-center snap-start snap-always bg-black select-none">
-                    <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-black to-transparent z-20 pointer-events-none"></div>
-                    <div className="w-full h-full relative z-10">
+                <section id="s3" className="relative md:h-[100dvh] h-auto flex flex-col items-center md:justify-center md:snap-start md:snap-always bg-black select-none">
+                    <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-black to-transparent z-20 pointer-events-none hidden md:block" />
+                    <div className="w-full md:h-full relative z-10">
                         <InteractiveCucumberHero dict={dict} mode="roots" sectionData={t.sections?.s3} />
                     </div>
-                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[15vw] font-black text-white/[0.02] pointer-events-none select-none uppercase tracking-tighter">
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[15vw] font-black text-white/[0.02] pointer-events-none select-none uppercase tracking-tighter hidden md:block">
                         Root System
                     </div>
                     <ScrollButton targetId="s4" />
                 </section>
 
                 {/* SECTION 4: CUCUMBER (NODES) */}
-                <section id="s4" className="relative h-[100dvh] flex flex-col items-center justify-center snap-start snap-always bg-black select-none">
-                    <div className="w-full h-full relative z-10 flex flex-col items-center justify-center">
+                <section id="s4" className="relative md:h-[100dvh] h-auto flex flex-col items-center md:justify-center md:snap-start md:snap-always bg-black select-none">
+                    <div className="w-full md:h-full relative z-10 flex flex-col items-center justify-center">
                         <InteractiveCucumberHero dict={dict} mode="cucumber" sectionData={t.sections?.s4} />
                     </div>
-                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[15vw] font-black text-white/[0.02] pointer-events-none select-none uppercase tracking-tighter">
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[15vw] font-black text-white/[0.02] pointer-events-none select-none uppercase tracking-tighter hidden md:block">
                         Fruit Data
                     </div>
                     <ScrollButton targetId="s5" />
                 </section>
 
                 {/* SECTION 5: ALL12® TECHNOLOGY */}
-                <section id="s5" className="relative h-[100dvh] flex flex-col items-center justify-center snap-start snap-always py-12 bg-black overflow-hidden">
-                    <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(52,255,122,0.05)_0%,transparent_70%)] opacity-50"></div>
+                <section id="s5" className="relative md:h-[100dvh] h-auto flex flex-col items-center justify-center md:snap-start md:snap-always py-12 bg-black overflow-hidden">
+                    <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(52,255,122,0.05)_0%,transparent_70%)] opacity-50" />
 
                     <div className="max-w-5xl mx-auto px-6 relative z-10 text-center">
                         <motion.div
@@ -139,9 +140,10 @@ export default function CucumberClientPage({
                                         whileInView={{ opacity: 1, scale: 1 }}
                                         viewport={{ once: true }}
                                         transition={{ delay: i * 0.05 }}
-                                        className="aspect-square flex items-center justify-center rounded-xl bg-lime-400/10 border border-lime-400/25 transition-all duration-300"
+                                        className="aspect-square flex items-center justify-center rounded-xl transition-all duration-300"
+                                        style={{ background: '#1cff7a', boxShadow: '0 0 10px #1cff7a44' }}
                                     >
-                                        <span className="text-xl font-black text-lime-400">{nutrient}</span>
+                                        <span className="text-xl font-black text-[#0c0f0f]">{nutrient}</span>
                                     </motion.div>
                                 ))}
                             </div>
@@ -162,15 +164,13 @@ export default function CucumberClientPage({
                     <ScrollButton targetId="s6" />
                 </section>
 
-                {/* SECTION 6: PRODUCT CTA — gecentreerd */}
-                <section id="s6" className="relative h-[100dvh] flex flex-col items-center justify-center snap-start snap-always bg-black overflow-hidden">
+                {/* SECTION 6: PRODUCT CTA */}
+                <section id="s6" className="relative md:h-[100dvh] h-auto min-h-screen flex flex-col items-center justify-center md:snap-start md:snap-always bg-black overflow-hidden">
 
-                    {/* Spotlight centered */}
                     <div className="absolute inset-0 pointer-events-none">
                         <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_70%_at_50%_50%,rgba(132,204,22,0.10)_0%,transparent_70%)]" />
                     </div>
 
-                    {/* Jerrycan */}
                     <div className="relative z-20 flex items-center justify-center mb-8">
                         <div className="relative">
                             <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[60%] h-16 bg-lime-400/10 blur-2xl rounded-full" />
@@ -188,7 +188,6 @@ export default function CucumberClientPage({
                         </div>
                     </div>
 
-                    {/* Tekst gecentreerd */}
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
