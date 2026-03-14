@@ -70,9 +70,9 @@ export default function CucumberClientPage({
                         <div className="inline-flex items-center gap-3 md:gap-5 px-4 md:px-7 py-1 bg-white/5 border border-white/15 rounded-sm mb-4 md:mb-6">
                             <img src="/images/eurofins_WHITE_nobg.png" alt="Eurofins Agro"
                                 className="h-6 md:h-8 w-auto object-contain brightness-0 invert opacity-80" />
-                            <div className="w-px h-5 bg-white/20" />
+                            <div className="hidden md:block w-px h-5 bg-white/20" />
                             <span className="text-[9px] md:text-[10px] font-bold tracking-[0.2em] md:tracking-[0.25em] text-white/60 uppercase">65 laboratoriummetingen</span>
-                            <div className="w-px h-5 bg-white/20" />
+                            <div className="hidden md:block w-px h-5 bg-white/20" />
                             <img src="/images/vangog-logo.png" alt="Van Gog Kwekerijen"
                                 className="h-4 md:h-5 w-auto object-contain brightness-0 invert opacity-65" />
                         </div>
