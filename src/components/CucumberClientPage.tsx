@@ -203,14 +203,35 @@ export default function CucumberClientPage({
                             }} />
                         </div>
 
-                        {/* MOBILE DRAIN: [ijzer kaart] [afbeelding] [zink kaart] */}
-                        <div className="md:hidden flex items-center gap-2 px-3 w-full">
-                            {/* Iron card */}
+                        {/* MOBILE DRAIN: groot beeld, kaartjes links-hoog en rechts-laag */}
+                        <div className="md:hidden relative w-full flex justify-center">
+                            {/* Drain image — zo groot mogelijk */}
+                            <div className="relative" style={{ width: '84vw' }}>
+                                <img
+                                    src="/images/drain1_nobg.png"
+                                    alt="PlantiPower drainmeting"
+                                    style={{ width: '100%', height: 'auto', objectFit: 'contain',
+                                        filter: 'drop-shadow(0 15px 45px rgba(40,180,80,0.28))' }}
+                                />
+                                {/* Dot 1 */}
+                                <div className="absolute z-10 -translate-x-1/2 -translate-y-1/2" style={{ left: '73%', top: '60%' }}>
+                                    <div style={{ position: 'absolute', width: 16, height: 16, borderRadius: '50%', background: 'rgba(163,230,53,0.15)', top: '50%', left: '50%', transform: 'translate(-50%,-50%)', animation: 'drainPulse 3s ease-out infinite' }} />
+                                    <div style={{ width: 6, height: 6, borderRadius: '50%', background: '#a3e635', boxShadow: '0 0 6px 2px rgba(163,230,53,0.4)', position: 'relative', zIndex: 1 }} />
+                                </div>
+                                {/* Dot 2 */}
+                                <div className="absolute z-10 -translate-x-1/2 -translate-y-1/2" style={{ left: '83%', top: '68%' }}>
+                                    <div style={{ position: 'absolute', width: 16, height: 16, borderRadius: '50%', background: 'rgba(163,230,53,0.15)', top: '50%', left: '50%', transform: 'translate(-50%,-50%)', animation: 'drainPulse 3s ease-out 1.5s infinite' }} />
+                                    <div style={{ width: 6, height: 6, borderRadius: '50%', background: '#a3e635', boxShadow: '0 0 6px 2px rgba(163,230,53,0.4)', position: 'relative', zIndex: 1 }} />
+                                </div>
+                            </div>
+
+                            {/* Iron card — links, hoger */}
                             <div
-                                className="flex-1 min-w-0 px-3 py-3 rounded-xl bg-black/95 border border-lime-500/40 cursor-pointer active:border-lime-400/70"
+                                className="absolute left-2 w-[92px] px-2.5 py-2.5 rounded-xl bg-black/92 border border-lime-500/40 cursor-pointer active:border-lime-400/70 z-10"
+                                style={{ top: '10%' }}
                                 onClick={() => setExpandedDrainCard('iron')}
                             >
-                                <div className="flex items-center gap-1.5 mb-1">
+                                <div className="flex items-center gap-1 mb-1">
                                     <div className="w-1 h-1 rounded-full bg-lime-400 flex-shrink-0" />
                                     <span className="text-lime-400 text-[7px] font-black uppercase tracking-wider font-outfit">Node</span>
                                     <svg width="7" height="7" viewBox="0 0 8 8" fill="none" className="ml-auto text-lime-400/40 flex-shrink-0">
@@ -225,32 +246,13 @@ export default function CucumberClientPage({
                                 </div>
                             </div>
 
-                            {/* Drain image with dots */}
-                            <div className="flex-shrink-0 relative" style={{ width: '40vw' }}>
-                                <img
-                                    src="/images/drain1_nobg.png"
-                                    alt="PlantiPower drainmeting"
-                                    style={{ width: '100%', height: 'auto', maxHeight: '65dvh', objectFit: 'contain',
-                                        filter: 'drop-shadow(0 10px 30px rgba(40,180,80,0.2))' }}
-                                />
-                                {/* Dot 1 */}
-                                <div className="absolute z-10 -translate-x-1/2 -translate-y-1/2" style={{ left: '73%', top: '60%' }}>
-                                    <div style={{ position: 'absolute', width: 16, height: 16, borderRadius: '50%', background: 'rgba(163,230,53,0.15)', top: '50%', left: '50%', transform: 'translate(-50%,-50%)', animation: 'drainPulse 3s ease-out infinite' }} />
-                                    <div style={{ width: 6, height: 6, borderRadius: '50%', background: '#a3e635', boxShadow: '0 0 6px 2px rgba(163,230,53,0.4)', position: 'relative', zIndex: 1 }} />
-                                </div>
-                                {/* Dot 2 */}
-                                <div className="absolute z-10 -translate-x-1/2 -translate-y-1/2" style={{ left: '83%', top: '68%' }}>
-                                    <div style={{ position: 'absolute', width: 16, height: 16, borderRadius: '50%', background: 'rgba(163,230,53,0.15)', top: '50%', left: '50%', transform: 'translate(-50%,-50%)', animation: 'drainPulse 3s ease-out 1.5s infinite' }} />
-                                    <div style={{ width: 6, height: 6, borderRadius: '50%', background: '#a3e635', boxShadow: '0 0 6px 2px rgba(163,230,53,0.4)', position: 'relative', zIndex: 1 }} />
-                                </div>
-                            </div>
-
-                            {/* Zinc card */}
+                            {/* Zinc card — rechts, lager */}
                             <div
-                                className="flex-1 min-w-0 px-3 py-3 rounded-xl bg-black/95 border border-lime-500/40 cursor-pointer active:border-lime-400/70"
+                                className="absolute right-2 w-[92px] px-2.5 py-2.5 rounded-xl bg-black/92 border border-lime-500/40 cursor-pointer active:border-lime-400/70 z-10"
+                                style={{ bottom: '14%' }}
                                 onClick={() => setExpandedDrainCard('zinc')}
                             >
-                                <div className="flex items-center gap-1.5 mb-1">
+                                <div className="flex items-center gap-1 mb-1">
                                     <div className="w-1 h-1 rounded-full bg-lime-400 flex-shrink-0" />
                                     <span className="text-lime-400 text-[7px] font-black uppercase tracking-wider font-outfit">Node</span>
                                     <svg width="7" height="7" viewBox="0 0 8 8" fill="none" className="ml-auto text-lime-400/40 flex-shrink-0">
