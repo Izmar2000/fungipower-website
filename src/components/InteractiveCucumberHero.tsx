@@ -115,9 +115,12 @@ const InteractiveCucumberHero: React.FC<InteractiveCucumberHeroProps> = ({ mode,
     if (mode === 'header') {
         return (
             <div className="w-full h-full flex items-end justify-center relative">
-                <div
-                    className="absolute inset-0 pointer-events-none"
-                    style={{ background: 'radial-gradient(ellipse at 50% 80%, rgba(180,255,120,0.13) 0%, rgba(80,200,80,0.06) 40%, transparent 70%)' }}
+                {/* Groene spotlight achter de plant */}
+                <div className="absolute inset-0 pointer-events-none"
+                    style={{ background: 'radial-gradient(ellipse 70% 60% at 50% 85%, rgba(100,220,60,0.22) 0%, rgba(60,180,40,0.12) 40%, transparent 75%)' }}
+                />
+                <div className="absolute inset-0 pointer-events-none"
+                    style={{ background: 'radial-gradient(ellipse 40% 40% at 50% 90%, rgba(140,255,80,0.15) 0%, transparent 60%)' }}
                 />
                 <img
                     src={assets.image}
