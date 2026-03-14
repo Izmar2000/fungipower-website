@@ -292,7 +292,7 @@ export default function CucumberClientPage({
                                     viewport={{ once: true }}
                                     transition={{ delay: 2.0, duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
                                     className="absolute z-20 -translate-x-1/2 -translate-y-1/2"
-                                    style={{ left: '28%', top: '78%' }}
+                                    style={{ left: '75%', top: '72%' }}
                                 >
                                     <div style={{
                                         position: 'absolute',
@@ -353,7 +353,7 @@ export default function CucumberClientPage({
                                     whileInView={{ opacity: 1, x: 0 }}
                                     viewport={{ once: true }}
                                     transition={{ delay: 1.3, duration: 0.6 }}
-                                    className="absolute top-[62%] left-[-10px] md:left-[-105px] w-[170px] md:w-[200px] px-5 py-4 rounded-2xl bg-black/95 backdrop-blur-xl border border-lime-500/40 shadow-[0_20px_50px_rgba(0,0,0,0.8)] z-30"
+                                    className="absolute top-[54%] right-[-10px] md:right-[-105px] w-[170px] md:w-[200px] px-5 py-4 rounded-2xl bg-black/95 backdrop-blur-xl border border-lime-500/40 shadow-[0_20px_50px_rgba(0,0,0,0.8)] z-30"
                                 >
                                     <div className="flex items-center gap-2 mb-1.5">
                                         <div className="w-1.5 h-1.5 rounded-full bg-lime-400" />
@@ -365,8 +365,8 @@ export default function CucumberClientPage({
                                     <div className="text-emerald-100/60 text-xs font-medium leading-relaxed">
                                         {t.sections?.s4?.nodes?.zinc?.desc}
                                     </div>
-                                    <div className="flex absolute top-1/2 -translate-y-1/2 -right-[14px] text-lime-400">
-                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" className="rotate-180">
+                                    <div className="flex absolute top-1/2 -translate-y-1/2 -left-[14px] text-lime-400">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
                                             <path d="M15 18L9 12L15 6" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
                                         </svg>
                                     </div>
