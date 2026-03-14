@@ -2,7 +2,7 @@
 
 
 import { motion } from 'framer-motion'
-import { useRef, useState, useEffect } from 'react'
+import { useRef, useState } from 'react'
 import InteractiveCucumberHero from '@/components/InteractiveCucumberHero'
 import ContactForm from '@/components/ContactForm'
 import ClientLayout from '@/components/ClientLayout'
@@ -44,56 +44,6 @@ export default function CucumberClientPage({
     const drainContainerRef = useRef<HTMLDivElement>(null)
     const ironCardRef = useRef<HTMLDivElement>(null)
     const zincCardRef = useRef<HTMLDivElement>(null)
-    const [drainLines, setDrainLines] = useState<{
-        iron: { x1: number; y1: number; x2: number; y2: number } | null
-        zinc: { x1: number; y1: number; x2: number; y2: number } | null
-    }>({ iron: null, zinc: null })
-
-    useEffect(() => {
-        const update = () => {
-            const container = drainContainerRef.current
-            const iron = ironCardRef.current
-            const zinc = zincCardRef.current
-            if (!container || !iron || !zinc) return
-
-            const cr = container.getBoundingClientRect()
-            const ir = iron.getBoundingClientRect()
-            const zr = zinc.getBoundingClientRect()
-
-            // dot 1: standing water in tray at 73% x, 60% y of image container
-            const dot1x = cr.width * 0.73
-            const dot1y = cr.height * 0.60
-            // dot 2: outflow cascade at 83% x, 68% y of image container
-            const dot2x = cr.width * 0.83
-            const dot2y = cr.height * 0.68
-
-            setDrainLines({
-                iron: {
-                    x1: ir.right - cr.left,
-                    y1: ir.top + ir.height / 2 - cr.top,
-                    x2: dot1x,
-                    y2: dot1y,
-                },
-                zinc: {
-                    x1: zr.left - cr.left,
-                    y1: zr.top + zr.height / 2 - cr.top,
-                    x2: dot2x,
-                    y2: dot2y,
-                },
-            })
-        }
-
-        // direct + na layout + na image load (cached images fire geen onLoad)
-        update()
-        const t1 = setTimeout(update, 100)
-        const t2 = setTimeout(update, 600)
-        window.addEventListener('resize', update)
-        return () => {
-            clearTimeout(t1)
-            clearTimeout(t2)
-            window.removeEventListener('resize', update)
-        }
-    }, [])
 
     return (
         <ClientLayout dict={dict} lang={lang}>
@@ -286,20 +236,6 @@ export default function CucumberClientPage({
                                 <img
                                     src="/images/drain1_nobg.png"
                                     alt="PlantiPower drainmeting"
-                                    onLoad={() => {
-                                        // recalculate lines once image is fully rendered
-                                        const container = drainContainerRef.current
-                                        const iron = ironCardRef.current
-                                        const zinc = zincCardRef.current
-                                        if (!container || !iron || !zinc) return
-                                        const cr = container.getBoundingClientRect()
-                                        const ir = iron.getBoundingClientRect()
-                                        const zr = zinc.getBoundingClientRect()
-                                        setDrainLines({
-                                            iron: { x1: ir.right - cr.left, y1: ir.top + ir.height / 2 - cr.top, x2: cr.width * 0.73, y2: cr.height * 0.60 },
-                                            zinc: { x1: zr.left - cr.left, y1: zr.top + zr.height / 2 - cr.top, x2: cr.width * 0.83, y2: cr.height * 0.68 },
-                                        })
-                                    }}
                                     style={{
                                         maxHeight: 'calc(60dvh)',
                                         maxWidth: '75vw',
@@ -376,52 +312,6 @@ export default function CucumberClientPage({
                                     }
                                 `}</style>
 
-                                {/* SVG: pixel-exacte bezier curves, fade naar kaart */}
-                                {(drainLines.iron || drainLines.zinc) && (
-                                    <svg
-                                        className="absolute inset-0 pointer-events-none z-10"
-                                        style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', overflow: 'visible' }}
-                                    >
-                                        <defs>
-                                            {drainLines.iron && (
-                                                <linearGradient id="ironGrad" gradientUnits="userSpaceOnUse"
-                                                    x1={drainLines.iron.x2} y1={drainLines.iron.y2}
-                                                    x2={drainLines.iron.x1} y2={drainLines.iron.y1}>
-                                                    <stop offset="0%" stopColor="#a3e635" stopOpacity="0.7" />
-                                                    <stop offset="100%" stopColor="#a3e635" stopOpacity="0.08" />
-                                                </linearGradient>
-                                            )}
-                                            {drainLines.zinc && (
-                                                <linearGradient id="zincGrad" gradientUnits="userSpaceOnUse"
-                                                    x1={drainLines.zinc.x2} y1={drainLines.zinc.y2}
-                                                    x2={drainLines.zinc.x1} y2={drainLines.zinc.y1}>
-                                                    <stop offset="0%" stopColor="#a3e635" stopOpacity="0.7" />
-                                                    <stop offset="100%" stopColor="#a3e635" stopOpacity="0.08" />
-                                                </linearGradient>
-                                            )}
-                                        </defs>
-                                        {drainLines.iron && (() => {
-                                            const { x1, y1, x2, y2 } = drainLines.iron
-                                            const dx = x2 - x1
-                                            // Cubic bezier: exit card horizontally, arrive at dot from slight left-above
-                                            const d = `M ${x1} ${y1} C ${x1 + dx * 0.55} ${y1}, ${x2 - dx * 0.25} ${y2 - 18}, ${x2} ${y2}`
-                                            return (
-                                                <path d={d} stroke="url(#ironGrad)" strokeWidth="1" fill="none"
-                                                    strokeDasharray="5 3.5" strokeLinecap="round" />
-                                            )
-                                        })()}
-                                        {drainLines.zinc && (() => {
-                                            const { x1, y1, x2, y2 } = drainLines.zinc
-                                            const dx = x1 - x2
-                                            // Cubic bezier: exit card to the left, curve down to outflow dot
-                                            const d = `M ${x1} ${y1} C ${x1 - dx * 0.4} ${y1 + 10}, ${x2 + dx * 0.2} ${y2 - 20}, ${x2} ${y2}`
-                                            return (
-                                                <path d={d} stroke="url(#zincGrad)" strokeWidth="1" fill="none"
-                                                    strokeDasharray="5 3.5" strokeLinecap="round" />
-                                            )
-                                        })()}
-                                    </svg>
-                                )}
 
                                 {/* Node: ijzer — links */}
                                 <motion.div
