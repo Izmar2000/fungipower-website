@@ -279,8 +279,8 @@
     "sections": {
       "s1": {
         "badge": "Gevalideerd Onderzoek",
-        "title": "GEVALIDEERDE",
-        "titleAccent": "TEELTOPTIMALISATIE",
+        "title": "ONDERZOEKSRESULTATEN",
+        "titleAccent": "KOMKOMMERTEELT",
         "desc": "Dit rapport presenteert de resultaten van een praktijkproef met PlantiPower bij Van Gog Kwekerijen CV. De dataset omvat 65 onafhankelijke laboratoriummetingen door Eurofins Agro Wageningen over de periode september 2025 tot februari 2026.",
         "footer": "PlantiPower_Praktijkresultaten_2026"
       },
@@ -322,25 +322,44 @@
       "s3": {
         "title": "WORTELS",
         "nodes": {
-          "iron": {
-            "label": "+243% ijzer beschikbaar",
-            "desc": "Fe in de drain steeg van 20 naar 69 µmol/l.",
-            "footer": "PlantiPower_Praktijkresultaten_2026"
-          },
-          "zinc": {
-            "label": "+46% zink beschikbaar",
-            "desc": "Zink in de drain steeg van 5,6 naar 8,1 µmol/l.",
-            "footer": "PlantiPower_Praktijkresultaten_2026"
-          },
           "mobilization": {
-            "label": "Mobilisatie van nutriënten",
-            "desc": "Fulvinezuren kunnen nutriënten mobiliseren die gebonden zijn aan het substraat.",
+            "label": "Nutriënten-mobilisatie",
+            "desc": "Gemodificeerde fulvinezuren mobiliseren gebonden nutriënten in het substraat en maken ze beschikbaar voor de wortel.",
+            "footer": "PlantiPower_Praktijkresultaten_2026"
+          },
+          "uptake": {
+            "label": "Verbeterde wortelopname",
+            "desc": "Silicium versterkt de celwanden van de wortel, wat de selectieve opname van nutriënten bevordert.",
+            "footer": "PlantiPower_Praktijkresultaten_2026"
+          },
+          "rhizosphere": {
+            "label": "Rhizosfeer activatie",
+            "desc": "PlantiPower stimuleert microbiële activiteit rond de wortel, wat de beschikbaarheid van fosfaat en sporenelementen vergroot.",
             "footer": "PlantiPower_Praktijkresultaten_2026"
           }
         }
       },
       "s4": {
+        "title": "DRAINWATER",
+        "titleAccent": "ANALYSE",
+        "desc": "65 onafhankelijke Eurofins-metingen tonen aan dat PlantiPower de nutriëntenopname structureel verbetert. De drainsamenstelling bewijst het: minder verlies, betere benutting.",
+        "footer": "PlantiPower_Praktijkresultaten_2026",
+        "nodes": {
+          "iron": {
+            "label": "+243% ijzer in drain",
+            "desc": "Fe steeg van 20 naar 69 µmol/l in het drainwater.",
+            "footer": "PlantiPower_Praktijkresultaten_2026"
+          },
+          "zinc": {
+            "label": "+46% zink in drain",
+            "desc": "Zn steeg van 5,6 naar 8,1 µmol/l in het drainwater.",
+            "footer": "PlantiPower_Praktijkresultaten_2026"
+          }
+        }
+      },
+      "s5": {
         "title": "KOMKOMMER",
+
         "nodes": {
           "brix": {
             "label": "+15,8% Brix",
@@ -364,7 +383,7 @@
           }
         }
       },
-      "s5": {
+      "s6": {
         "title": "ALL12®",
         "titleAccent": "TECHNOLOGY",
         "desc": "PlantiPower is een nutriëntentransporter op basis van gemodificeerde fulvinezuren. Waar standaard fulvinezuurproducten drie tot vier elementen transporteren, transporteert PlantiPower alle twaalf essentiële nutriënten direct naar de wortels.",
@@ -384,7 +403,7 @@
           "Fe"
         ]
       },
-      "s6": {
+      "s7": {
         "title": "RESULTAAT",
         "titleAccent": "IN DE HAND",
         "desc": "Klaar voor de volgende stap in teeltoptimalisatie? Start vandaag nog met PlantiPower ALL12 en ervaar het verschil in opname en rendement.",

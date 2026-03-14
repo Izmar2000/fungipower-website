@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useRef, useState, useEffect } from 'react'
+import React, { useRef, useState, useEffect, useMemo } from 'react'
 import { motion } from 'framer-motion'
 
 interface Hotspot {
@@ -11,6 +11,7 @@ interface Hotspot {
     desc: string;
     align: 'left' | 'right';
     delay: number;
+    gap?: 'default' | 'wide';
 }
 
 interface SectionAssets {
@@ -61,31 +62,31 @@ const InteractiveCucumberHero: React.FC<InteractiveCucumberHeroProps> = ({ mode,
                 return {
                     image: "/images/komkommers10_nobg.png",
                     maxWidth: "max-w-[1600px]",
-                    imgHeight: 'calc(100dvh - 120px)',
+                    imgHeight: 'calc(86dvh - 80px)',
                     mask: 'none',
                     gradientTop: '0%',
                     gradientBottom: '0%',
                     hotspots: [
-                        { id: 'silicon',     x: 52, y: 14, label: sectionData?.nodes?.silicon?.label,     desc: sectionData?.nodes?.silicon?.desc,     align: 'left',  delay: 0.8 },
+                        { id: 'silicon',     x: 44, y: 24, label: sectionData?.nodes?.silicon?.label,     desc: sectionData?.nodes?.silicon?.desc,     align: 'left',  delay: 0.8, gap: 'wide' },
                         { id: 'siliconLeaf', x: 62, y: 28, label: sectionData?.nodes?.siliconLeaf?.label, desc: sectionData?.nodes?.siliconLeaf?.desc, align: 'right', delay: 1.5 },
-                        { id: 'molybdenum',  x: 50, y: 55, label: sectionData?.nodes?.molybdenum?.label,  desc: sectionData?.nodes?.molybdenum?.desc,  align: 'left',  delay: 2.2 },
-                        { id: 'phosphorus',  x: 56, y: 71, label: sectionData?.nodes?.phosphorus?.label,  desc: sectionData?.nodes?.phosphorus?.desc,  align: 'right', delay: 2.9 },
-                        { id: 'zincOld',     x: 38, y: 65, label: sectionData?.nodes?.zincOld?.label,     desc: sectionData?.nodes?.zincOld?.desc,     align: 'left',  delay: 3.6 },
-                        { id: 'molyOld',     x: 62, y: 70, label: sectionData?.nodes?.molyOld?.label,     desc: sectionData?.nodes?.molyOld?.desc,     align: 'right', delay: 4.3 },
+                        { id: 'molybdenum',  x: 50, y: 45, label: sectionData?.nodes?.molybdenum?.label,  desc: sectionData?.nodes?.molybdenum?.desc,  align: 'left',  delay: 2.2 },
+                        { id: 'phosphorus',  x: 56, y: 62, label: sectionData?.nodes?.phosphorus?.label,  desc: sectionData?.nodes?.phosphorus?.desc,  align: 'right', delay: 2.9 },
+                        { id: 'zincOld',     x: 38, y: 68, label: sectionData?.nodes?.zincOld?.label,     desc: sectionData?.nodes?.zincOld?.desc,     align: 'left',  delay: 3.6 },
+                        { id: 'molyOld',     x: 62, y: 79, label: sectionData?.nodes?.molyOld?.label,     desc: sectionData?.nodes?.molyOld?.desc,     align: 'right', delay: 4.3 },
                     ]
                 };
             case 'roots':
                 return {
                     image: "/images/komkommers10_roots.png",
-                    maxWidth: "max-w-[700px]",
-                    imgHeight: 'calc(70dvh - 40px)',
-                    mask: 'linear-gradient(to bottom, transparent 0%, black 15%, black 90%, transparent 100%)',
-                    gradientTop: '0%',
-                    gradientBottom: '0%',
+                    maxWidth: "max-w-[900px]",
+                    imgHeight: 'calc(75dvh - 40px)',
+                    mask: 'radial-gradient(ellipse 62% 62% at 50% 58%, black 20%, transparent 100%)',
+                    gradientTop: '38%',
+                    gradientBottom: '22%',
                     hotspots: [
-                        { id: 'iron',         x: 42, y: 55, label: sectionData?.nodes?.iron?.label,         desc: sectionData?.nodes?.iron?.desc,         align: 'left',  delay: 0.8 },
-                        { id: 'zinc',         x: 60, y: 50, label: sectionData?.nodes?.zinc?.label,         desc: sectionData?.nodes?.zinc?.desc,          align: 'right', delay: 1.5 },
-                        { id: 'mobilization', x: 55, y: 72, label: sectionData?.nodes?.mobilization?.label, desc: sectionData?.nodes?.mobilization?.desc, align: 'right', delay: 2.2 },
+                        { id: 'mobilization', x: 48, y: 52, label: sectionData?.nodes?.mobilization?.label, desc: sectionData?.nodes?.mobilization?.desc, align: 'left',  delay: 0.8 },
+                        { id: 'uptake',       x: 58, y: 38, label: sectionData?.nodes?.uptake?.label,       desc: sectionData?.nodes?.uptake?.desc,       align: 'right', delay: 1.5 },
+                        { id: 'rhizosphere',  x: 52, y: 70, label: sectionData?.nodes?.rhizosphere?.label,  desc: sectionData?.nodes?.rhizosphere?.desc,  align: 'right', delay: 2.2 },
                     ],
                 };
             case 'cucumber':
@@ -93,9 +94,9 @@ const InteractiveCucumberHero: React.FC<InteractiveCucumberHeroProps> = ({ mode,
                     image: "/komkommer los.png",
                     maxWidth: "max-w-[900px]",
                     imgHeight: 'calc(75dvh - 80px)',
-                    mask: 'radial-gradient(ellipse 80% 70% at center 40%, black 50%, transparent 100%)',
+                    mask: 'radial-gradient(ellipse 90% 80% at center 38%, black 35%, rgba(0,0,0,0.6) 65%, transparent 90%)',
                     gradientTop: '0%',
-                    gradientBottom: '0%',
+                    gradientBottom: '22%',
                     captionText: 'PlantiPower helpt de plant niet alleen voedingsstoffen efficiënter op te nemen, maar ook weerbaarder te worden tegen zoutstress.',
                     hotspots: [
                         { id: 'brix',      x: 44, y: 46, label: sectionData?.nodes?.brix?.label,      desc: sectionData?.nodes?.brix?.desc,      align: 'left',  delay: 0.8 },
@@ -109,12 +110,21 @@ const InteractiveCucumberHero: React.FC<InteractiveCucumberHeroProps> = ({ mode,
 
     const assets = getSectionAssets();
 
+    // Depth particles for cucumber mode — deterministic positions (no Math.random to avoid hydration issues)
+    const cucumberParticles = useMemo(() => [
+        { id: 0, x: 11, y: 22, size: 1.2, dur: 9,  delay: 0   },
+        { id: 1, x: 27, y: 68, size: 0.8, dur: 11, delay: 2.3 },
+        { id: 2, x: 74, y: 28, size: 1.0, dur: 8,  delay: 1.1 },
+        { id: 3, x: 84, y: 72, size: 1.3, dur: 13, delay: 3.4 },
+        { id: 4, x: 52, y: 14, size: 0.9, dur: 10, delay: 4.0 },
+    ], []);
+
     if (!mounted) return null;
 
     // ─── HEADER MODE ─────────────────────────────────────────────────────────────
     if (mode === 'header') {
         return (
-            <div className="w-full h-full flex items-end justify-center relative">
+            <div className="w-full h-full flex items-end justify-center relative pb-[12px]">
                 {/* Groene spotlight achter de plant */}
                 <div className="absolute inset-0 pointer-events-none"
                     style={{ background: 'radial-gradient(ellipse 70% 60% at 50% 85%, rgba(100,220,60,0.22) 0%, rgba(60,180,40,0.12) 40%, transparent 75%)' }}
@@ -122,28 +132,63 @@ const InteractiveCucumberHero: React.FC<InteractiveCucumberHeroProps> = ({ mode,
                 <div className="absolute inset-0 pointer-events-none"
                     style={{ background: 'radial-gradient(ellipse 40% 40% at 50% 90%, rgba(140,255,80,0.15) 0%, transparent 60%)' }}
                 />
-                {/* Grondreflectie / schaduw */}
-                <div className="absolute bottom-0 left-1/2 -translate-x-1/2 pointer-events-none"
+                {/* Mirror reflection — flipped plant fading into the floor */}
+                <img
+                    src={assets.image}
+                    alt=""
+                    aria-hidden="true"
                     style={{
-                        width: '60%',
-                        height: '80px',
-                        background: 'radial-gradient(ellipse at 50% 100%, rgba(80,200,40,0.18) 0%, rgba(40,120,20,0.08) 50%, transparent 100%)',
-                        filter: 'blur(12px)',
+                        position: 'absolute',
+                        bottom: '12px',
+                        left: '50%',
+                        transform: 'translateX(-50%) scaleY(-1)',
+                        height: '62%',
+                        width: 'auto',
+                        objectFit: 'contain',
+                        opacity: 0.13,
+                        maskImage: 'linear-gradient(to bottom, black 0%, transparent 32%)',
+                        WebkitMaskImage: 'linear-gradient(to bottom, black 0%, transparent 32%)',
+                        filter: 'blur(2px)',
+                        zIndex: 0,
+                        pointerEvents: 'none',
                     }}
                 />
-                <div className="absolute bottom-0 left-1/2 -translate-x-1/2 pointer-events-none"
-                    style={{
-                        width: '35%',
-                        height: '30px',
-                        background: 'radial-gradient(ellipse at 50% 100%, rgba(0,0,0,0.7) 0%, transparent 100%)',
-                        filter: 'blur(8px)',
-                    }}
-                />
+                {/* Floor sheen — thin bright line where plant meets ground */}
+                <div className="absolute pointer-events-none" style={{
+                    bottom: '12px',
+                    left: '18%',
+                    right: '18%',
+                    height: '1px',
+                    background: 'linear-gradient(to right, transparent, rgba(140,255,100,0.18) 25%, rgba(180,255,140,0.30) 50%, rgba(140,255,100,0.18) 75%, transparent)',
+                    zIndex: 2,
+                }} />
+                {/* Contact shadow — dark ellipse at base */}
+                <div className="absolute pointer-events-none" style={{
+                    bottom: '10px',
+                    left: '50%',
+                    transform: 'translateX(-50%)',
+                    width: '32%',
+                    height: '18px',
+                    background: 'radial-gradient(ellipse at 50% 100%, rgba(0,0,0,0.75) 0%, transparent 100%)',
+                    filter: 'blur(6px)',
+                    zIndex: 3,
+                }} />
+                {/* Green ambient glow at base */}
+                <div className="absolute pointer-events-none" style={{
+                    bottom: '0px',
+                    left: '50%',
+                    transform: 'translateX(-50%)',
+                    width: '55%',
+                    height: '70px',
+                    background: 'radial-gradient(ellipse at 50% 100%, rgba(80,200,40,0.20) 0%, rgba(40,120,20,0.08) 55%, transparent 100%)',
+                    filter: 'blur(14px)',
+                    zIndex: 1,
+                }} />
                 <img
                     src={assets.image}
                     alt="Komkommer hero"
                     style={{
-                        height: '100%',
+                        height: '62%',
                         width: 'auto',
                         objectFit: 'contain',
                         position: 'relative',
@@ -206,6 +251,24 @@ const InteractiveCucumberHero: React.FC<InteractiveCucumberHeroProps> = ({ mode,
             ref={containerRef}
             className="relative w-full h-full flex flex-col items-center justify-center overflow-visible select-none"
         >
+            {/* Floating depth particles — cucumber only */}
+            {mode === 'cucumber' && cucumberParticles.map(p => (
+                <motion.div
+                    key={p.id}
+                    className="absolute rounded-full pointer-events-none"
+                    style={{
+                        left: `${p.x}%`,
+                        top: `${p.y}%`,
+                        width: p.size * 2,
+                        height: p.size * 2,
+                        background: 'rgba(163,230,53,0.45)',
+                        boxShadow: `0 0 ${p.size * 6}px rgba(163,230,53,0.18)`,
+                        zIndex: 0,
+                    }}
+                    animate={{ y: [0, -24, 0], opacity: [0, 0.6, 0] }}
+                    transition={{ duration: p.dur, repeat: Infinity, delay: p.delay, ease: 'easeInOut' }}
+                />
+            ))}
             <motion.div
                 initial={{ opacity: 0, scale: 0.95 }}
                 animate={{ opacity: 1, scale: 1 }}
@@ -235,38 +298,94 @@ const InteractiveCucumberHero: React.FC<InteractiveCucumberHeroProps> = ({ mode,
                                 <div className="absolute inset-0 pointer-events-none" style={{
                                     background: 'radial-gradient(ellipse 40% 50% at 50% 0%, rgba(200,255,150,0.10) 0%, transparent 60%)',
                                 }} />
+                                {/* Rim light — separates cucumber from dark bg */}
+                                <div className="absolute inset-0 pointer-events-none" style={{
+                                    background: 'radial-gradient(ellipse 38% 60% at 50% 44%, rgba(132,204,22,0.10) 20%, rgba(132,204,22,0.04) 55%, transparent 80%)',
+                                    filter: 'blur(22px)',
+                                }} />
                                 <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[300px] h-[20px] pointer-events-none" style={{
                                     background: 'radial-gradient(ellipse at 50% 100%, rgba(0,0,0,0.6) 0%, transparent 100%)',
                                     filter: 'blur(8px)',
                                 }} />
                             </>
                         )}
-                        <img
-                            src={assets.image}
-                            alt="Technical Analysis"
-                            className="w-full mx-auto"
-                            style={{
-                                objectFit: assets.objectFit ?? 'contain',
-                                maskImage: assets.mask,
-                                WebkitMaskImage: assets.mask,
-                                height: assets.imgHeight,
-                                mixBlendMode: (mode === 'plant' || mode === 'roots' || mode === 'cucumber') ? 'normal' : 'screen',
-                            }}
-                        />
-                        <div className="absolute inset-y-0 left-0 w-[22%] bg-gradient-to-r from-black to-transparent pointer-events-none z-10" />
-                        <div className="absolute inset-y-0 right-0 w-[22%] bg-gradient-to-l from-black to-transparent pointer-events-none z-10" />
-                        <div className="absolute inset-x-0 top-0 bg-gradient-to-b from-black to-transparent pointer-events-none z-10"
-                            style={{ height: assets.gradientTop ?? '25%' }} />
-                        <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black to-transparent pointer-events-none z-10"
-                            style={{ height: assets.gradientBottom ?? '25%' }} />
+                        {mode === 'cucumber' ? (
+                            <motion.div
+                                className="relative inline-block mx-auto"
+                                animate={{ y: [0, -3, 0] }}
+                                transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }}
+                            >
+                                <img
+                                    src={assets.image}
+                                    alt="Technical Analysis"
+                                    className="block mx-auto"
+                                    style={{
+                                        objectFit: 'contain',
+                                        maskImage: assets.mask,
+                                        WebkitMaskImage: assets.mask,
+                                        height: 'auto',
+                                        maxHeight: assets.imgHeight,
+                                        maxWidth: '100%',
+                                        mixBlendMode: 'normal',
+                                    }}
+                                />
+                                {/* Shimmer — slow sliding light reflection */}
+                                <motion.div className="absolute inset-0 pointer-events-none overflow-hidden" style={{ zIndex: 2 }}>
+                                    <motion.div
+                                        style={{
+                                            position: 'absolute',
+                                            top: '-100%',
+                                            left: '-60%',
+                                            width: '22%',
+                                            height: '300%',
+                                            background: 'linear-gradient(90deg, transparent, rgba(210,255,180,0.055), transparent)',
+                                            transform: 'rotate(16deg)',
+                                        }}
+                                        animate={{ x: ['0%', '700%'] }}
+                                        transition={{ duration: 5.5, repeat: Infinity, ease: 'linear', repeatDelay: 6 }}
+                                    />
+                                </motion.div>
+                            </motion.div>
+                        ) : (
+                            <img
+                                src={assets.image}
+                                alt="Technical Analysis"
+                                className="w-full mx-auto"
+                                style={{
+                                    objectFit: assets.objectFit ?? 'contain',
+                                    maskImage: assets.mask,
+                                    WebkitMaskImage: assets.mask,
+                                    height: assets.imgHeight,
+                                    maxWidth: '100%',
+                                    mixBlendMode: (mode === 'plant' || mode === 'roots') ? 'normal' : 'screen',
+                                }}
+                            />
+                        )}
+                        {/* Side gradients — only for modes without a mask (plant) */}
+                        {assets.mask === 'none' && <>
+                            <div className="absolute inset-y-0 left-0 w-[22%] bg-gradient-to-r from-black to-transparent pointer-events-none z-10" />
+                            <div className="absolute inset-y-0 right-0 w-[22%] bg-gradient-to-l from-black to-transparent pointer-events-none z-10" />
+                        </>}
+                        {assets.gradientTop && assets.gradientTop !== '0%' && (
+                            <div className="absolute inset-x-0 top-0 bg-gradient-to-b from-black to-transparent pointer-events-none z-10"
+                                style={{ height: assets.gradientTop }} />
+                        )}
+                        {assets.gradientBottom && assets.gradientBottom !== '0%' && (
+                            <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black to-transparent pointer-events-none z-10"
+                                style={{ height: assets.gradientBottom }} />
+                        )}
                     </div>
 
                     {/* Hotspots */}
                     {assets.hotspots.map((spot) => (
-                        <div
+                        <motion.div
                             key={spot.id}
                             className="absolute z-20"
                             style={{ left: `${spot.x}%`, top: `${spot.y}%` }}
+                            {...(mode === 'cucumber' && {
+                                animate: { y: [0, -1.5, 0] },
+                                transition: { duration: 7, repeat: Infinity, ease: 'easeInOut' },
+                            })}
                         >
                             <motion.div
                                 initial={{ scale: 0, opacity: 0 }}
@@ -285,7 +404,9 @@ const InteractiveCucumberHero: React.FC<InteractiveCucumberHeroProps> = ({ mode,
                                 transition={{ delay: spot.delay + 0.6, duration: 0.6 }}
                                 className={`
                                     absolute top-1/2 -translate-y-1/2
-                                    ${spot.align === 'left' ? 'right-full mr-6' : 'left-full ml-6'}
+                                    ${spot.align === 'left'
+                                        ? spot.gap === 'wide' ? 'right-full mr-16' : 'right-full mr-6'
+                                        : spot.gap === 'wide' ? 'left-full ml-16' : 'left-full ml-6'}
                                     px-5 py-4 rounded-2xl bg-black/95 backdrop-blur-xl border border-lime-500/40
                                     shadow-[0_20px_50px_rgba(0,0,0,0.8)]
                                     w-[200px] xl:w-[240px] z-30
@@ -301,13 +422,19 @@ const InteractiveCucumberHero: React.FC<InteractiveCucumberHeroProps> = ({ mode,
                                 <div className="text-emerald-100/60 text-xs mt-2 font-medium leading-relaxed">
                                     {spot.desc}
                                 </div>
+                                {/* Connector line to dot */}
+                                <div className={`absolute top-1/2 -translate-y-1/2 h-px bg-lime-400/50 ${
+                                    spot.gap === 'wide' ? 'w-20' : 'w-8'
+                                } ${
+                                    spot.align === 'right' ? 'right-full' : 'left-full'
+                                }`} />
                                 <div className={`flex absolute top-1/2 -translate-y-1/2 ${spot.align === 'right' ? '-left-3' : '-right-3'} text-lime-400`}>
                                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" className={spot.align === 'right' ? '' : 'rotate-180'}>
                                         <path d="M15 18L9 12L15 6" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
                                     </svg>
                                 </div>
                             </motion.div>
-                        </div>
+                        </motion.div>
                     ))}
 
                     {/* Caption text — cucumber section */}

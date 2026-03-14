@@ -49,6 +49,10 @@ export async function generateMetadata(
         'de-DE': '/de',
       },
     },
+    robots: {
+      index: false,
+      follow: false,
+    },
     icons: {
       icon: [
         { url: '/favicon.ico?v=3' },
