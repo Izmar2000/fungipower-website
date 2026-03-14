@@ -469,22 +469,6 @@ const InteractiveCucumberHero: React.FC<InteractiveCucumberHeroProps> = ({ mode,
                                         mixBlendMode: 'normal',
                                     }}
                                 />
-                                {/* Shimmer — slow sliding light reflection */}
-                                <motion.div className="absolute inset-0 pointer-events-none overflow-hidden" style={{ zIndex: 2 }}>
-                                    <motion.div
-                                        style={{
-                                            position: 'absolute',
-                                            top: '-100%',
-                                            left: '-60%',
-                                            width: '22%',
-                                            height: '300%',
-                                            background: 'linear-gradient(90deg, transparent, rgba(210,255,180,0.055), transparent)',
-                                            transform: 'rotate(16deg)',
-                                        }}
-                                        animate={{ x: ['0%', '700%'] }}
-                                        transition={{ duration: 5.5, repeat: Infinity, ease: 'linear', repeatDelay: 6 }}
-                                    />
-                                </motion.div>
                             </motion.div>
                         ) : (
                             <img
