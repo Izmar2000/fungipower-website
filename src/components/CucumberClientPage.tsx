@@ -61,8 +61,8 @@ export default function CucumberClientPage({
                         style={{ background: 'linear-gradient(to bottom, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.75) 25%, rgba(0,0,0,0.3) 50%, transparent 70%)' }}
                     />
 
-                    {/* Tekst + strip direct onder nav */}
-                    <div className="relative z-20 flex flex-col items-center text-center w-full max-w-5xl mx-auto px-6 pt-5 md:pt-6">
+                    {/* Tekst + strip: absoluut vastgezet, beweegt nooit */}
+                    <div className="absolute top-5 inset-x-0 z-20 flex flex-col items-center text-center px-6">
                         {/* Validatie strip */}
                         <div className="inline-flex items-center gap-3 md:gap-5 px-4 md:px-7 py-1 bg-white/5 border border-white/15 rounded-sm mb-4 md:mb-6">
                             <img src="/images/eurofins_WHITE_nobg.png" alt="Eurofins Agro"
