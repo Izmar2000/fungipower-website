@@ -92,7 +92,7 @@ export default function CucumberClientPage({
                     <ScrollButton targetId="s2" bottom="bottom-[50px]" />
 
                     {/* Bronvermelding — volle breedte, bodem sectie 1 */}
-                    <div className="absolute bottom-0 inset-x-0 z-30 border-t border-white/10 py-2 px-6">
+                    <div className="absolute bottom-0 inset-x-0 z-30 py-2 px-6">
                         <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-0.5 text-[8px] md:text-[9px] text-white/70 uppercase tracking-[0.2em] font-medium">
                             <span>Eurofins Agro Wageningen</span>
                             <span className="text-white/30">|</span>
