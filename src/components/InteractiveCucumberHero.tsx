@@ -256,14 +256,6 @@ const InteractiveCucumberHero: React.FC<InteractiveCucumberHeroProps> = ({ mode,
                                 <div className="absolute w-4 h-4 rounded-full bg-white shadow-[0_0_15px_white]" />
                             </motion.div>
 
-                            <motion.div
-                                initial={{ width: 0 }}
-                                animate={{ width: 220 }}
-                                transition={{ delay: spot.delay + 0.3, duration: 0.7 }}
-                                className={`absolute top-1/2 h-[1px] ${spot.align === 'left'
-                                    ? 'right-full bg-gradient-to-l from-white/50 to-lime-400/30'
-                                    : 'left-full bg-gradient-to-r from-white/50 to-lime-400/30'}`}
-                            />
 
                             <motion.div
                                 initial={{ opacity: 0, x: spot.align === 'left' ? -16 : 16 }}
@@ -271,7 +263,7 @@ const InteractiveCucumberHero: React.FC<InteractiveCucumberHeroProps> = ({ mode,
                                 transition={{ delay: spot.delay + 0.6, duration: 0.6 }}
                                 className={`
                                     absolute top-1/2 -translate-y-1/2
-                                    ${spot.align === 'left' ? 'right-full mr-[232px]' : 'left-full ml-[232px]'}
+                                    ${spot.align === 'left' ? 'right-full mr-6' : 'left-full ml-6'}
                                     px-5 py-4 rounded-2xl bg-black/95 backdrop-blur-xl border border-lime-500/40
                                     shadow-[0_20px_50px_rgba(0,0,0,0.8)]
                                     w-[300px] xl:w-[360px] z-30
