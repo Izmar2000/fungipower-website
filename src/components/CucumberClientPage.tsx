@@ -47,25 +47,28 @@ export default function CucumberClientPage({
                 <section id="s1" className="relative h-[100dvh] flex flex-col items-center snap-start snap-always overflow-hidden bg-black" style={{ background: 'linear-gradient(to bottom, #080a0a 0%, #000000 100%)' }}>
                     {/* Tekst bovenaan */}
                     <div className="z-20 flex flex-col items-center text-center w-full max-w-5xl px-6 pt-10 pb-2 flex-none">
-                        <div className="mb-5 mx-auto flex items-center gap-3 px-4 py-2 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm">
-                            <img src="/images/eurofins_WHITE_nobg.png" alt="Eurofins Agro"
-                                className="h-5 w-auto object-contain opacity-70" />
-                            <div className="w-px h-4 bg-white/20" />
-                            <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-white/50">65 onafh. laboratoriummetingen</span>
-                            <div className="w-px h-4 bg-white/20" />
-                            <img src="/images/vangog-logo.png" alt="Van Gog Kwekerijen"
-                                className="h-5 w-auto object-contain brightness-0 invert opacity-50" />
-                        </div>
-                        <h1 className="font-outfit font-black uppercase text-[32px] md:text-[48px] lg:text-[58px] tracking-tight leading-[0.95] text-white mb-4">
+                        <div className="section-badge mb-5 mx-auto">{t.sections?.s1?.badge}</div>
+                        <h1 className="font-outfit font-black uppercase text-[32px] md:text-[48px] lg:text-[58px] tracking-tight leading-[0.95] text-white mb-6">
                             {t.sections?.s1?.title}<br />
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-lime-400 to-emerald-400">
                                 {t.sections?.s1?.titleAccent}
                             </span>
                         </h1>
+
+                        {/* Validatie strip — tussen titel en beschrijving */}
+                        <div className="flex items-center gap-4 mb-5">
+                            <img src="/images/eurofins_WHITE_nobg.png" alt="Eurofins Agro"
+                                className="h-6 w-auto object-contain brightness-0 invert opacity-60" />
+                            <div className="w-px h-5 bg-white/15" />
+                            <span className="text-[10px] font-semibold uppercase tracking-[0.25em] text-white/35">65 laboratoriummetingen</span>
+                            <div className="w-px h-5 bg-white/15" />
+                            <img src="/images/vangog-logo.png" alt="Van Gog Kwekerijen"
+                                className="h-6 w-auto object-contain brightness-0 invert opacity-40" />
+                        </div>
+
                         <p className="text-base md:text-lg text-emerald-100/70 leading-relaxed font-medium max-w-2xl mx-auto italic">
                             {t.sections?.s1?.desc}
                         </p>
-
                     </div>
                     {/* Plant afbeelding — absolute fill van de sectie zodat mask over volle breedte werkt */}
                     <div className="absolute inset-0 bottom-[72px] z-10">
