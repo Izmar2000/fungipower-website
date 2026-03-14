@@ -228,6 +228,8 @@ export default function PraktijkresultatenAnimation() {
                         // Start at last frame so static end-state is visible before play
                         initialFrame={DURATION - 1}
                         spaceKeyToPlayOrPause={false}
+                        // Freeze on last frame when done
+                        onEnded={() => playerRef.current?.seekTo(DURATION - 1)}
                     />
                 </div>
             </div>
