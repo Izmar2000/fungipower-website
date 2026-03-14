@@ -1,12 +1,35 @@
 'use client'
 
 
-import { motion } from 'framer-motion'
-import { useRef, useState } from 'react'
+import { motion, useInView } from 'framer-motion'
+import { useRef, useState, useEffect } from 'react'
 import InteractiveCucumberHero from '@/components/InteractiveCucumberHero'
 import ContactForm from '@/components/ContactForm'
 import ClientLayout from '@/components/ClientLayout'
 import { Locale } from '@/i18n-config'
+
+function CountUp({ to, from = 0, suffix = '', prefix = '', duration = 1.8, delay = 0 }: {
+    to: number, from?: number, suffix?: string, prefix?: string, duration?: number, delay?: number
+}) {
+    const ref = useRef(null)
+    const inView = useInView(ref, { once: true })
+    const [val, setVal] = useState(from)
+    useEffect(() => {
+        if (!inView) return
+        const t = setTimeout(() => {
+            const start = performance.now()
+            const tick = (now: number) => {
+                const p = Math.min((now - start) / (duration * 1000), 1)
+                const eased = 1 - Math.pow(1 - p, 3)
+                setVal(Math.round(from + (to - from) * eased))
+                if (p < 1) requestAnimationFrame(tick)
+            }
+            requestAnimationFrame(tick)
+        }, delay * 1000)
+        return () => clearTimeout(t)
+    }, [inView])
+    return <span ref={ref}>{prefix}{val}{suffix}</span>
+}
 
 function ScrollButton({ targetId, bottom = 'bottom-[50px]' }: { targetId: string, bottom?: string }) {
     return (
@@ -459,7 +482,7 @@ export default function CucumberClientPage({
                             <div className="grid grid-cols-2 md:grid-cols-3 gap-3 mb-8">
                                 {[
                                     {
-                                        num: '48% → 94%',
+                                        num: <><CountUp from={0} to={48} suffix="%" delay={0.3} />{ ' → '}<CountUp from={0} to={94} suffix="%" delay={0.3} /></>,
                                         label: 'Silicium opname verdubbeld',
                                         sub: 'gietwater stabiel',
                                         color: 'rgba(132,204,22,0.15)',
@@ -467,7 +490,7 @@ export default function CucumberClientPage({
                                         accent: '#84cc16',
                                     },
                                     {
-                                        num: '11% → 86%',
+                                        num: <><CountUp from={0} to={11} suffix="%" delay={0.5} />{ ' → '}<CountUp from={0} to={86} suffix="%" delay={0.5} /></>,
                                         label: 'Fosfor opname',
                                         sub: 'bij 45% hogere P-gift via gietwater',
                                         color: 'rgba(52,211,153,0.08)',
@@ -475,7 +498,7 @@ export default function CucumberClientPage({
                                         accent: '#34d399',
                                     },
                                     {
-                                        num: '+88%',
+                                        num: <CountUp from={0} to={88} prefix="+" suffix="%" delay={0.7} />,
                                         label: 'Molybdeen in oud plantsap',
                                         sub: 'direct bewijs ALL12® · bij lagere Mo-gift',
                                         color: 'rgba(52,211,153,0.08)',
@@ -483,7 +506,7 @@ export default function CucumberClientPage({
                                         accent: '#34d399',
                                     },
                                     {
-                                        num: '+243%',
+                                        num: <CountUp from={0} to={243} prefix="+" suffix="%" delay={0.9} />,
                                         label: 'IJzer beschikbaarheid in drain',
                                         sub: '+17% in jong plantsap',
                                         color: 'rgba(132,204,22,0.08)',
@@ -491,7 +514,7 @@ export default function CucumberClientPage({
                                         accent: '#84cc16',
                                     },
                                     {
-                                        num: '+46%',
+                                        num: <CountUp from={0} to={46} prefix="+" suffix="%" delay={1.1} />,
                                         label: 'Zink beschikbaarheid',
                                         sub: '+46% in drain · +46% in oud plantsap',
                                         color: 'rgba(132,204,22,0.08)',
@@ -499,7 +522,7 @@ export default function CucumberClientPage({
                                         accent: '#84cc16',
                                     },
                                     {
-                                        num: '−42% / −46%',
+                                        num: <><CountUp from={0} to={42} prefix="−" suffix="%" delay={1.3} />{ ' / '}<CountUp from={0} to={46} prefix="−" suffix="%" delay={1.3} /></>,
                                         label: 'Selectieve ionen-exclusie',
                                         sub: 'Na −42% · Cl −46% in jong blad',
                                         color: 'rgba(99,102,241,0.08)',
@@ -509,10 +532,10 @@ export default function CucumberClientPage({
                                 ].map((item, i) => (
                                     <motion.div
                                         key={i}
-                                        initial={{ opacity: 0, y: 16 }}
-                                        whileInView={{ opacity: 1, y: 0 }}
+                                        initial={{ opacity: 0, y: 24, scale: 0.95 }}
+                                        whileInView={{ opacity: 1, y: 0, scale: 1 }}
                                         viewport={{ once: true }}
-                                        transition={{ delay: 0.1 + i * 0.08, duration: 0.6 }}
+                                        transition={{ delay: 0.2 + i * 0.15, duration: 0.55, ease: [0.16, 1, 0.3, 1] }}
                                         className="rounded-2xl px-5 py-4 flex flex-col gap-1.5"
                                         style={{ background: item.color, border: `1px solid ${item.border}` }}
                                     >

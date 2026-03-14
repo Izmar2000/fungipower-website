@@ -68,12 +68,12 @@ const InteractiveCucumberHero: React.FC<InteractiveCucumberHeroProps> = ({ mode,
                     gradientTop: '0%',
                     gradientBottom: '0%',
                     hotspots: [
-                        { id: 'silicon',     x: 44, y: 24, label: sectionData?.nodes?.silicon?.label,     desc: sectionData?.nodes?.silicon?.desc,     align: 'left',  delay: 0.8, gap: 'wide' },
-                        { id: 'siliconLeaf', x: 62, y: 28, label: sectionData?.nodes?.siliconLeaf?.label, desc: sectionData?.nodes?.siliconLeaf?.desc, align: 'right', delay: 1.5 },
-                        { id: 'molybdenum',  x: 50, y: 45, label: sectionData?.nodes?.molybdenum?.label,  desc: sectionData?.nodes?.molybdenum?.desc,  align: 'left',  delay: 2.2 },
-                        { id: 'phosphorus',  x: 56, y: 62, label: sectionData?.nodes?.phosphorus?.label,  desc: sectionData?.nodes?.phosphorus?.desc,  align: 'right', delay: 2.9 },
-                        { id: 'zincOld',     x: 38, y: 68, label: sectionData?.nodes?.zincOld?.label,     desc: sectionData?.nodes?.zincOld?.desc,     align: 'left',  delay: 3.6 },
-                        { id: 'molyOld',     x: 62, y: 79, label: sectionData?.nodes?.molyOld?.label,     desc: sectionData?.nodes?.molyOld?.desc,     align: 'right', delay: 4.3 },
+                        { id: 'silicon',     x: 42, y: 22, label: sectionData?.nodes?.silicon?.label,     desc: sectionData?.nodes?.silicon?.desc,     align: 'left',  delay: 0.6 },
+                        { id: 'siliconLeaf', x: 58, y: 26, label: sectionData?.nodes?.siliconLeaf?.label, desc: sectionData?.nodes?.siliconLeaf?.desc, align: 'right', delay: 1.1 },
+                        { id: 'molybdenum',  x: 44, y: 43, label: sectionData?.nodes?.molybdenum?.label,  desc: sectionData?.nodes?.molybdenum?.desc,  align: 'left',  delay: 1.6 },
+                        { id: 'phosphorus',  x: 56, y: 55, label: sectionData?.nodes?.phosphorus?.label,  desc: sectionData?.nodes?.phosphorus?.desc,  align: 'right', delay: 2.1 },
+                        { id: 'zincOld',     x: 42, y: 68, label: sectionData?.nodes?.zincOld?.label,     desc: sectionData?.nodes?.zincOld?.desc,     align: 'left',  delay: 2.6 },
+                        { id: 'molyOld',     x: 58, y: 76, label: sectionData?.nodes?.molyOld?.label,     desc: sectionData?.nodes?.molyOld?.desc,     align: 'right', delay: 3.1 },
                     ]
                 };
             case 'roots':
