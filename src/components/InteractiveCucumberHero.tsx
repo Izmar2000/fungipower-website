@@ -62,8 +62,8 @@ const InteractiveCucumberHero: React.FC<InteractiveCucumberHeroProps> = ({ mode,
             case 'plant':
                 return {
                     image: "/images/komkommer_final.png",
-                    maxWidth: "max-w-[1600px]",
-                    imgHeight: 'calc(86dvh - 80px)',
+                    maxWidth: "max-w-[1800px]",
+                    imgHeight: 'calc(94dvh - 40px)',
                     mask: 'none',
                     gradientTop: '0%',
                     gradientBottom: '0%',
