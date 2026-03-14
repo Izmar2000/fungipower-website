@@ -127,7 +127,7 @@ export default function CucumberClientPage({
                 </section>
 
                 {/* SECTION 4: DRAIN */}
-                <section id="s4" className="relative h-[100dvh] snap-start snap-always overflow-hidden select-none" style={{ background: 'linear-gradient(160deg, #030d04 0%, #000a03 60%)' }}>
+                <section id="s4" className="relative h-[100dvh] snap-start snap-always overflow-hidden select-none" style={{ background: 'linear-gradient(160deg, #030d04 0%, #000000 100%)' }}>
                     {/* Water shimmer — groen */}
                     <div className="absolute inset-0 pointer-events-none z-0">
                         <motion.div
@@ -401,6 +401,8 @@ export default function CucumberClientPage({
                         )
                     })()}
 
+                    {/* Bottom fade — hides section edge on mobile */}
+                    <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-black to-transparent pointer-events-none z-20 md:hidden" />
                     <ScrollButton targetId="s5" />
                 </section>
 
