@@ -274,6 +274,7 @@ const InteractiveCucumberHero: React.FC<InteractiveCucumberHeroProps> = ({ mode,
                                 width: 'auto',
                                 maxWidth: '100%',
                                 objectFit: 'contain',
+                                mixBlendMode: 'screen',
                             }}
                         />
                         {/* Roots: zacht verloop bovenaan naar donker */}
@@ -405,11 +406,36 @@ const InteractiveCucumberHero: React.FC<InteractiveCucumberHeroProps> = ({ mode,
                         ? { position: 'absolute', inset: 0, display: 'flex', alignItems: 'flex-end', justifyContent: 'center', paddingBottom: '80px' }
                         : { position: 'relative' }
                     }>
-                        {(mode === 'plant' || mode === 'roots') && (
+                        {mode === 'plant' && (<>
+                            {/* Vloer-spotlight: warm groen van onderaf, plant staat erin */}
                             <div className="absolute inset-0 pointer-events-none" style={{
-                                background: 'radial-gradient(ellipse 55% 70% at 50% 45%, rgba(120,220,80,0.12) 0%, rgba(60,180,60,0.06) 40%, transparent 70%)',
+                                background: 'radial-gradient(ellipse 70% 55% at 50% 92%, rgba(120,230,60,0.28) 0%, rgba(60,180,40,0.14) 40%, transparent 70%)',
                             }} />
-                        )}
+                            {/* Zachte bovenlicht: koel groen-blauw vanuit top */}
+                            <div className="absolute inset-0 pointer-events-none" style={{
+                                background: 'radial-gradient(ellipse 60% 40% at 50% 0%, rgba(80,200,120,0.18) 0%, rgba(40,140,80,0.06) 55%, transparent 80%)',
+                            }} />
+                            {/* Middenglow: kern van de plant */}
+                            <div className="absolute inset-0 pointer-events-none" style={{
+                                background: 'radial-gradient(ellipse 35% 50% at 50% 50%, rgba(140,240,80,0.10) 0%, transparent 65%)',
+                                filter: 'blur(18px)',
+                            }} />
+                        </>)}
+                        {mode === 'roots' && (<>
+                            {/* Aardwarmte: amber van onderuit, zoals bodemgloed */}
+                            <div className="absolute inset-0 pointer-events-none" style={{
+                                background: 'radial-gradient(ellipse 75% 50% at 50% 100%, rgba(180,130,40,0.22) 0%, rgba(100,80,20,0.10) 45%, transparent 70%)',
+                            }} />
+                            {/* Bioglow: groene levensenergie in de wortels */}
+                            <div className="absolute inset-0 pointer-events-none" style={{
+                                background: 'radial-gradient(ellipse 55% 60% at 50% 62%, rgba(60,200,80,0.16) 0%, rgba(30,120,50,0.06) 50%, transparent 75%)',
+                                filter: 'blur(12px)',
+                            }} />
+                            {/* Bovenlicht: koele duisternis naar donker */}
+                            <div className="absolute inset-0 pointer-events-none" style={{
+                                background: 'radial-gradient(ellipse 80% 35% at 50% 0%, rgba(0,30,10,0.55) 0%, transparent 70%)',
+                            }} />
+                        </>)}
                         {mode === 'cucumber' && (
                             <>
                                 <div className="absolute inset-0 pointer-events-none" style={{
@@ -461,7 +487,7 @@ const InteractiveCucumberHero: React.FC<InteractiveCucumberHeroProps> = ({ mode,
                                     WebkitMaskImage: assets.mask,
                                     height: assets.imgHeight,
                                     maxWidth: '100%',
-                                    mixBlendMode: (mode === 'plant' || mode === 'roots') ? 'normal' : 'screen',
+                                    mixBlendMode: 'screen',
                                 }}
                             />
                         )}
