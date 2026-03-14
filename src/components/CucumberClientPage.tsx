@@ -163,7 +163,7 @@ export default function CucumberClientPage({
                         </div>
 
                         {/* MOBILE DRAIN: kaart boven — groot beeld — kaart onder */}
-                        <div className="md:hidden w-full flex flex-col items-center gap-2 px-3">
+                        <div className="md:hidden w-full h-full flex flex-col items-center gap-2 px-3 py-2">
                             {/* Iron card — boven */}
                             <div
                                 className="w-1/2 px-3 py-2.5 rounded-xl bg-black/92 border border-lime-500/40 cursor-pointer active:border-lime-400/70"
@@ -184,12 +184,12 @@ export default function CucumberClientPage({
                                 </div>
                             </div>
 
-                            {/* Drain image — 30% groter */}
-                            <div className="relative flex-shrink-0" style={{ width: '90vw' }}>
+                            {/* Drain image — vult beschikbare hoogte */}
+                            <div className="relative flex-1 min-h-0 flex items-center justify-center w-full">
                                 <img
                                     src="/images/drain1_nobg.png"
                                     alt="PlantiPower drainmeting"
-                                    style={{ width: '100%', height: 'auto', objectFit: 'contain',
+                                    style={{ maxHeight: '100%', width: 'auto', maxWidth: '95vw', objectFit: 'contain',
                                         filter: 'drop-shadow(0 15px 45px rgba(40,180,80,0.28))' }}
                                 />
                                 {/* Dot 1 */}
