@@ -47,10 +47,10 @@ export default function CucumberClientPage({
 
     return (
         <ClientLayout dict={dict} lang={lang}>
-            <main className="bg-black relative scroll-smooth snap-y snap-mandatory overflow-y-auto overflow-x-hidden h-[100dvh]">
+            <main className="bg-black relative scroll-smooth snap-y snap-mandatory overflow-y-auto overflow-x-hidden h-[calc(100dvh-7rem)]">
 
                 {/* SECTION 1: HEADER */}
-                <section id="s1" className="relative h-[100dvh] snap-start snap-always overflow-hidden bg-black" style={{ background: 'linear-gradient(to bottom, #080a0a 0%, #000000 100%)' }}>
+                <section id="s1" className="relative h-[calc(100dvh-7rem)] snap-start snap-always overflow-hidden bg-black" style={{ background: 'linear-gradient(to bottom, #080a0a 0%, #000000 100%)' }}>
                     {/* Plant vult altijd de volledige sectie */}
                     <div className="absolute inset-0 z-0 overflow-hidden">
                         <InteractiveCucumberHero dict={dict} mode="header" />
@@ -103,7 +103,7 @@ export default function CucumberClientPage({
                 </section>
 
                 {/* SECTION 2: PLANT (NODES) */}
-                <section id="s2" className="relative h-[100dvh] snap-start snap-always overflow-hidden" style={{ background: 'linear-gradient(160deg, #040d06 0%, #010e03 100%)' }}>
+                <section id="s2" className="relative h-[calc(100dvh-7rem)] snap-start snap-always overflow-hidden" style={{ background: 'linear-gradient(160deg, #040d06 0%, #010e03 100%)' }}>
                     <div className="w-full h-full relative z-10 flex flex-col items-center justify-center">
                         <InteractiveCucumberHero dict={dict} mode="plant" sectionData={t.sections?.s2} />
                     </div>
@@ -114,7 +114,7 @@ export default function CucumberClientPage({
                 </section>
 
                 {/* SECTION 3: ROOTS (NODES) */}
-                <section id="s3" className="relative h-[100dvh] snap-start snap-always overflow-hidden select-none" style={{ background: 'linear-gradient(160deg, #000000 0%, #03080a 60%)' }}>
+                <section id="s3" className="relative h-[calc(100dvh-7rem)] snap-start snap-always overflow-hidden select-none" style={{ background: 'linear-gradient(160deg, #000000 0%, #03080a 60%)' }}>
                     <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-black to-transparent z-20 pointer-events-none hidden md:block" />
                     <div className="w-full h-full relative z-10 flex flex-col items-center justify-center">
                         <InteractiveCucumberHero dict={dict} mode="roots" sectionData={t.sections?.s3} />
@@ -126,7 +126,7 @@ export default function CucumberClientPage({
                 </section>
 
                 {/* SECTION 4: DRAIN */}
-                <section id="s4" className="relative h-[100dvh] snap-start snap-always overflow-hidden select-none" style={{ background: 'linear-gradient(160deg, #030d04 0%, #000000 100%)' }}>
+                <section id="s4" className="relative h-[calc(100dvh-7rem)] snap-start snap-always overflow-hidden select-none" style={{ background: 'linear-gradient(160deg, #030d04 0%, #000000 100%)' }}>
                     {/* Water shimmer — groen */}
                     <div className="absolute inset-0 pointer-events-none z-0">
                         <motion.div
@@ -406,7 +406,7 @@ export default function CucumberClientPage({
                 </section>
 
                 {/* SECTION 5: CUCUMBER (NODES) */}
-                <section id="s5" className="relative h-[100dvh] snap-start snap-always overflow-hidden select-none" style={{ background: 'linear-gradient(160deg, #03080a 0%, #000000 60%)' }}>
+                <section id="s5" className="relative h-[calc(100dvh-7rem)] snap-start snap-always overflow-hidden select-none" style={{ background: 'linear-gradient(160deg, #03080a 0%, #000000 60%)' }}>
                     <div className="w-full h-full relative z-10 flex flex-col items-center justify-center">
                         <InteractiveCucumberHero dict={dict} mode="cucumber" sectionData={t.sections?.s5} />
                     </div>
@@ -417,7 +417,7 @@ export default function CucumberClientPage({
                 </section>
 
                 {/* SECTION RAPPORT: VELDONDERZOEK SAMENVATTING */}
-                <section id="s-rapport" className="relative h-[100dvh] snap-start snap-always flex flex-col items-center justify-center overflow-y-auto overflow-x-hidden" style={{ background: 'linear-gradient(160deg, #020608 0%, #000000 60%)' }}>
+                <section id="s-rapport" className="relative h-[calc(100dvh-7rem)] snap-start snap-always flex flex-col items-center justify-center overflow-y-auto overflow-x-hidden" style={{ background: 'linear-gradient(160deg, #020608 0%, #000000 60%)' }}>
                     {/* Subtle grid background */}
                     <div className="absolute inset-0 pointer-events-none opacity-[0.03]" style={{
                         backgroundImage: 'linear-gradient(rgba(132,204,22,0.8) 1px, transparent 1px), linear-gradient(90deg, rgba(132,204,22,0.8) 1px, transparent 1px)',
@@ -544,7 +544,7 @@ export default function CucumberClientPage({
                 </section>
 
                 {/* SECTION SAMENVATTING: CONCLUSIE */}
-                <section id="s-samenvatting" className="relative h-[100dvh] snap-start snap-always flex flex-col items-center justify-center overflow-hidden" style={{ background: 'linear-gradient(160deg, #020608 0%, #000000 60%)' }}>
+                <section id="s-samenvatting" className="relative h-[calc(100dvh-7rem)] snap-start snap-always flex flex-col items-center justify-center overflow-hidden" style={{ background: 'linear-gradient(160deg, #020608 0%, #000000 60%)' }}>
                     <div className="absolute inset-0 pointer-events-none" style={{
                         background: 'radial-gradient(ellipse 70% 50% at 50% 50%, rgba(132,204,22,0.04) 0%, transparent 70%)'
                     }} />
@@ -601,7 +601,7 @@ export default function CucumberClientPage({
                 </section>
 
                 {/* SECTION 6: ALL12® TECHNOLOGY */}
-                <section id="s6" className="relative h-[100dvh] snap-start snap-always flex flex-col items-center justify-center py-8 overflow-y-auto overflow-x-hidden" style={{ background: 'linear-gradient(160deg, #040d06 0%, #000000 70%)' }}>
+                <section id="s6" className="relative h-[calc(100dvh-7rem)] snap-start snap-always flex flex-col items-center justify-center py-8 overflow-y-auto overflow-x-hidden" style={{ background: 'linear-gradient(160deg, #040d06 0%, #000000 70%)' }}>
                     <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(52,255,122,0.05)_0%,transparent_70%)] opacity-50" />
 
                     <div className="max-w-5xl mx-auto px-6 relative z-10 text-center">
@@ -653,7 +653,7 @@ export default function CucumberClientPage({
                 </section>
 
                 {/* SECTION 7: PRODUCT CTA */}
-                <section id="s7" className="relative h-[100dvh] snap-start snap-always flex flex-col items-center justify-center bg-black overflow-hidden">
+                <section id="s7" className="relative h-[calc(100dvh-7rem)] snap-start snap-always flex flex-col items-center justify-center bg-black overflow-hidden">
 
                     <div className="absolute inset-0 pointer-events-none">
                         <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_70%_at_50%_50%,rgba(132,204,22,0.10)_0%,transparent_70%)]" />
