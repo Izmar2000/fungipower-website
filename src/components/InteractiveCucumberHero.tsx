@@ -264,13 +264,13 @@ const InteractiveCucumberHero: React.FC<InteractiveCucumberHeroProps> = ({ mode,
                             background: 'radial-gradient(ellipse 60% 70% at 50% 50%, rgba(100,220,80,0.09) 0%, transparent 70%)',
                         }} />
                     )}
-                    <div className="relative flex items-center">
+                    <div className="relative h-full flex items-center justify-center">
                         <img
                             src={assets.image}
                             alt="Technical Analysis"
                             style={{
                                 height: 'auto',
-                                maxHeight: 'calc(100dvh - 220px)',
+                                maxHeight: mode === 'roots' ? 'calc(100dvh - 240px)' : '100%',
                                 width: 'auto',
                                 maxWidth: '100%',
                                 objectFit: 'contain',
