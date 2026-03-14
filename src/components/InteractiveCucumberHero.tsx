@@ -136,13 +136,8 @@ const InteractiveCucumberHero: React.FC<InteractiveCucumberHeroProps> = ({ mode,
     if (isMobile && assets.hotspots.length > 0) {
         return (
             <div ref={containerRef} className="w-full flex flex-col items-center pb-8">
-                {/* Image with corner accents */}
-                <div className="relative w-full flex items-center justify-center px-6 py-4">
-                    {/* Corner brackets */}
-                    <span className="absolute top-0 left-6 w-5 h-5 border-t-2 border-l-2 border-lime-400/60" />
-                    <span className="absolute top-0 right-6 w-5 h-5 border-t-2 border-r-2 border-lime-400/60" />
-                    <span className="absolute bottom-0 left-6 w-5 h-5 border-b-2 border-l-2 border-lime-400/60" />
-                    <span className="absolute bottom-0 right-6 w-5 h-5 border-b-2 border-r-2 border-lime-400/60" />
+                {/* Image */}
+                <div className="w-full flex items-center justify-center">
                     <img
                         src={assets.image}
                         alt="Technical Analysis"
