@@ -383,6 +383,14 @@
           }
         }
       },
+      "s-samenvatting": {
+        "badge": "Samenvatting",
+        "title": "CONCLUSIE",
+        "p1": "De bovenstaande resultaten zijn gebaseerd op 65 onafhankelijke laboratoriummetingen uitgevoerd tussen september 2025 en februari 2026 bij Van Gog Kwekerijen (Kas 3, Helmond). Op 12 december 2025 werd overgeschakeld naar PlantiPower, waarna een before/after vergelijking is gemaakt op basis van gietwater-, drainwater- en plantsapanalyses.",
+        "p2": "De resultaten laten zien dat de nutriëntopname van komkommerplanten onder gebruik van PlantiPower meetbaar verbetert. In meerdere elementen wordt een duidelijke stijging in opname-efficiëntie zichtbaar, terwijl het gietwater stabiel bleef.",
+        "p3": "De dataset van Van Gog Kwekerijen biedt daarmee sterk praktijkbewijs voor de werking van PlantiPower's ALL12® Technology.",
+        "btnDownload": "Volledig rapport aanvragen"
+      },
       "s6": {
         "title": "ALL12®",
         "titleAccent": "TECHNOLOGY",

@@ -539,6 +539,63 @@ export default function CucumberClientPage({
                             </div>
                         </motion.div>
                     </div>
+                    <ScrollButton targetId="s-samenvatting" />
+                </section>
+
+                {/* SECTION SAMENVATTING: CONCLUSIE */}
+                <section id="s-samenvatting" className="relative h-[100dvh] snap-start snap-always flex flex-col items-center justify-center overflow-hidden" style={{ background: 'linear-gradient(160deg, #020608 0%, #000000 60%)' }}>
+                    <div className="absolute inset-0 pointer-events-none" style={{
+                        background: 'radial-gradient(ellipse 70% 50% at 50% 50%, rgba(132,204,22,0.04) 0%, transparent 70%)'
+                    }} />
+                    <div className="relative z-10 w-full max-w-3xl mx-auto px-6 md:px-10">
+                        <motion.div
+                            initial={{ opacity: 0, y: 24 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.8 }}
+                        >
+                            {/* Badge */}
+                            <div className="flex items-center gap-3 mb-6">
+                                <div className="h-px w-8 bg-lime-400/40" />
+                                <span className="text-lime-400/60 text-[10px] font-black uppercase tracking-[0.3em] font-outfit">
+                                    {t.sections?.['s-samenvatting']?.badge}
+                                </span>
+                                <div className="h-px flex-1 bg-lime-400/10" />
+                            </div>
+
+                            {/* Title */}
+                            <h2 className="font-outfit font-black uppercase text-[34px] md:text-[52px] tracking-tight leading-none text-white mb-8">
+                                {t.sections?.['s-samenvatting']?.title}
+                            </h2>
+
+                            {/* Paragraphs */}
+                            <div className="space-y-5 mb-10">
+                                <p className="text-emerald-100/60 text-sm md:text-base leading-relaxed">
+                                    {t.sections?.['s-samenvatting']?.p1}
+                                </p>
+                                <p className="text-emerald-100/60 text-sm md:text-base leading-relaxed">
+                                    {t.sections?.['s-samenvatting']?.p2}
+                                </p>
+                                <p className="text-white/85 text-sm md:text-base leading-relaxed font-semibold">
+                                    {t.sections?.['s-samenvatting']?.p3}
+                                </p>
+                            </div>
+
+                            {/* Download button */}
+                            <div className="flex flex-wrap items-center gap-4">
+                                <a
+                                    href={`/${lang}/contact`}
+                                    className="inline-flex items-center gap-2.5 px-7 py-3.5 border border-lime-400/40 text-lime-400 font-bold uppercase tracking-widest text-xs rounded-full hover:border-lime-400 hover:bg-lime-400/10 transition-all duration-300"
+                                >
+                                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none">
+                                        <path d="M12 16L7 11M12 16L17 11M12 16V4M4 20h16" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"/>
+                                    </svg>
+                                    {t.sections?.['s-samenvatting']?.btnDownload}
+                                </a>
+                                <span className="text-white/25 text-[11px] font-mono">Eurofins Agro · 65 metingen · Van Gog Kwekerijen</span>
+                            </div>
+                        </motion.div>
+                    </div>
                     <ScrollButton targetId="s6" />
                 </section>
 
