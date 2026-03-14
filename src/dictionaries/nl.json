@@ -281,7 +281,7 @@
         "badge": "Gevalideerd Onderzoek",
         "title": "ONDERZOEKSRESULTATEN",
         "titleAccent": "KOMKOMMERTEELT",
-        "desc": "Dit rapport presenteert de resultaten van een praktijkproef met PlantiPower bij Van Gog Kwekerijen CV. De dataset omvat 65 onafhankelijke laboratoriummetingen door Eurofins Agro Wageningen over de periode september 2025 tot februari 2026.",
+        "desc": "Dit rapport presenteert de resultaten van een praktijkproef met PlantiPower bij Van Gog Kwekerijen CV. De dataset omvat 65 onafhankelijke laboratoriummetingen, uitgevoerd door Eurofins Agro Wageningen in de periode september 2025 tot februari 2026.",
         "footer": "PlantiPower_Praktijkresultaten_2026"
       },
       "s2": {
@@ -323,13 +323,13 @@
         "title": "WORTELS",
         "nodes": {
           "mobilization": {
-            "label": "Nutriënten-mobilisatie",
-            "desc": "Gemodificeerde fulvinezuren mobiliseren gebonden nutriënten in het substraat en maken ze beschikbaar voor de wortel.",
+            "label": "Verbeterde wortelopname",
+            "desc": "Silicium versterkt de celwanden van de wortel, wat de selectieve opname van nutriënten bevordert.",
             "footer": "PlantiPower_Praktijkresultaten_2026"
           },
           "uptake": {
-            "label": "Verbeterde wortelopname",
-            "desc": "Silicium versterkt de celwanden van de wortel, wat de selectieve opname van nutriënten bevordert.",
+            "label": "Nutriënten-mobilisatie",
+            "desc": "Gemodificeerde fulvinezuren mobiliseren gebonden nutriënten in het substraat en maken ze beschikbaar voor de wortel.",
             "footer": "PlantiPower_Praktijkresultaten_2026"
           },
           "rhizosphere": {

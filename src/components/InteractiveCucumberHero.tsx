@@ -273,17 +273,24 @@ const InteractiveCucumberHero: React.FC<InteractiveCucumberHeroProps> = ({ mode,
                             background: 'radial-gradient(ellipse 60% 70% at 50% 50%, rgba(100,220,80,0.09) 0%, transparent 70%)',
                         }} />
                     )}
-                    <div className="relative h-full flex items-center">
+                    <div className="relative flex items-center">
                         <img
                             src={assets.image}
                             alt="Technical Analysis"
                             style={{
-                                height: '100%',
+                                height: 'auto',
+                                maxHeight: 'calc(100dvh - 220px)',
                                 width: 'auto',
-                                maxWidth: '100vw',
+                                maxWidth: '100%',
                                 objectFit: 'contain',
                             }}
                         />
+                        {/* Roots: zacht verloop bovenaan naar donker */}
+                        {mode === 'roots' && (
+                            <div className="absolute inset-x-0 top-0 pointer-events-none z-10"
+                                style={{ height: '35%', background: 'linear-gradient(to bottom, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.5) 45%, transparent 100%)' }}
+                            />
+                        )}
                         {/* Hotspot dots on plant */}
                         {assets.hotspots.map(spot => (
                             <div
