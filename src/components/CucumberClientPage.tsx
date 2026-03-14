@@ -61,10 +61,9 @@ export default function CucumberClientPage({
                         style={{ background: 'linear-gradient(to bottom, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.75) 25%, rgba(0,0,0,0.3) 50%, transparent 70%)' }}
                     />
 
-                    {/* Tekst zweeft bovenop — neemt nooit plantruimte af */}
-                    <div className="relative z-20 flex flex-col items-center text-center w-full max-w-5xl mx-auto px-6 pt-[8vh] md:pt-[10vh]">
-                        {/* Validatie strip */}
-                        <div className="inline-flex items-center gap-3 md:gap-5 px-4 md:px-7 py-1 bg-white/5 border border-white/15 rounded-sm mb-4 md:mb-6">
+                    {/* Validatie strip: altijd direct onder nav-rand */}
+                    <div className="absolute top-4 left-0 right-0 z-20 flex justify-center px-6 pointer-events-none">
+                        <div className="inline-flex items-center gap-3 md:gap-5 px-4 md:px-7 py-1 bg-white/5 border border-white/15 rounded-sm">
                             <img src="/images/eurofins_WHITE_nobg.png" alt="Eurofins Agro"
                                 className="h-6 md:h-8 w-auto object-contain brightness-0 invert opacity-80" />
                             <div className="w-px h-5 bg-white/20" />
@@ -73,7 +72,10 @@ export default function CucumberClientPage({
                             <img src="/images/vangog-logo.png" alt="Van Gog Kwekerijen"
                                 className="h-4 md:h-5 w-auto object-contain brightness-0 invert opacity-65" />
                         </div>
+                    </div>
 
+                    {/* Tekst zweeft bovenop — gecentreerd in sectie */}
+                    <div className="relative z-20 flex flex-col items-center text-center w-full max-w-5xl mx-auto px-6 h-full justify-center">
                         <h1 className="font-outfit font-black uppercase text-[28px] md:text-[48px] lg:text-[58px] tracking-tight leading-[0.95] text-white mb-3 md:mb-6">
                             {t.sections?.s1?.title}<br />
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-lime-400 to-emerald-400">
@@ -84,7 +86,6 @@ export default function CucumberClientPage({
                         <p className="text-sm md:text-lg text-emerald-100/70 leading-relaxed font-medium max-w-2xl mx-auto italic mb-16">
                             {t.sections?.s1?.desc}
                         </p>
-
                     </div>
 
                     <ScrollButton targetId="s2" bottom="bottom-[50px]" />
