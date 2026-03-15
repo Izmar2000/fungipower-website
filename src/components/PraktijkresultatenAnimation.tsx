@@ -32,11 +32,6 @@ const CARDS: CardData[] = [
         accent: '#34d399', border: 'rgba(52,211,153,0.25)', bg: 'rgba(52,211,153,0.08)',
     },
     {
-        type: 'single', prefix1: '+', from1: 0, to1: 17, suffix: '%',
-        label: 'IJzer in jong plantsap', sub: 'Fe · sterkere celactiviteit',
-        accent: '#84cc16', border: 'rgba(132,204,22,0.2)', bg: 'rgba(132,204,22,0.08)',
-    },
-    {
         type: 'single', prefix1: '+', from1: 0, to1: 46, suffix: '%',
         label: 'Zink in oud plantsap', sub: 'Zn · stabiele accumulatie',
         accent: '#84cc16', border: 'rgba(132,204,22,0.2)', bg: 'rgba(132,204,22,0.08)',
