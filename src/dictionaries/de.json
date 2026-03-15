@@ -361,6 +361,7 @@
       },
       "s5": {
         "title": "GURKE",
+        "captionText": "PlantiPower hilft der Pflanze nicht nur, Nährstoffe effizienter aufzunehmen, sondern auch widerstandsfähiger gegen Salzstress zu werden.",
         "nodes": {
           "brix": {
             "label": "+15,8 % Brix",

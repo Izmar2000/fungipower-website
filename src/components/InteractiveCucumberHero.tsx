@@ -98,7 +98,7 @@ const InteractiveCucumberHero: React.FC<InteractiveCucumberHeroProps> = ({ mode,
                     mask: 'radial-gradient(ellipse 90% 80% at center 38%, black 35%, rgba(0,0,0,0.6) 65%, transparent 90%)',
                     gradientTop: '0%',
                     gradientBottom: '22%',
-                    captionText: 'PlantiPower helpt de plant niet alleen voedingsstoffen efficiënter op te nemen, maar ook weerbaarder te worden tegen zoutstress.',
+                    captionText: sectionData?.captionText,
                     hotspots: [
                         { id: 'brix',      x: 44, y: 46, label: sectionData?.nodes?.brix?.label,      desc: sectionData?.nodes?.brix?.desc,      align: 'left',  delay: 0.8 },
                         { id: 'exclusion', x: 68, y: 38, label: sectionData?.nodes?.exclusion?.label, desc: sectionData?.nodes?.exclusion?.desc, align: 'right', delay: 1.5 },

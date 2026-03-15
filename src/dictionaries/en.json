@@ -361,6 +361,7 @@
       },
       "s5": {
         "title": "CUCUMBER",
+        "captionText": "PlantiPower not only helps the plant absorb nutrients more efficiently, but also become more resilient to salt stress.",
         "nodes": {
           "brix": {
             "label": "+15.8% Brix",
