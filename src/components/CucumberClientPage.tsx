@@ -6,7 +6,12 @@ import { useRef, useState, useEffect } from 'react'
 import InteractiveCucumberHero from '@/components/InteractiveCucumberHero'
 import ContactForm from '@/components/ContactForm'
 import ClientLayout from '@/components/ClientLayout'
-import SampleModal from '@/components/SampleModal'
+import { useModals } from '@/context/ModalContext'
+
+function SampleButton({ label, className }: { label: string, className: string }) {
+    const { openSampleModal } = useModals()
+    return <button onClick={openSampleModal} className={className}>{label}</button>
+}
 import PraktijkresultatenAnimation from '@/components/PraktijkresultatenAnimation'
 import { Locale } from '@/i18n-config'
 
@@ -83,7 +88,6 @@ export default function CucumberClientPage({
 }) {
     const nextLabel = lang === 'de' ? 'Weiter' : lang === 'en' ? 'Continue' : 'Verder'
     const [expandedDrainCard, setExpandedDrainCard] = useState<string | null>(null)
-    const [isSampleOpen, setIsSampleOpen] = useState(false)
     const drainContainerRef = useRef<HTMLDivElement>(null)
     const ironCardRef = useRef<HTMLDivElement>(null)
     const zincCardRef = useRef<HTMLDivElement>(null)
@@ -689,19 +693,16 @@ export default function CucumberClientPage({
                             >
                                 {t.sections?.s7?.btnProduct}
                             </a>
-                            <button
-                                onClick={() => setIsSampleOpen(true)}
+                            <SampleButton
+                                label={t.sections?.s7?.btnSample}
                                 className="px-9 py-4 bg-transparent border border-white/20 text-white font-black uppercase tracking-widest text-sm rounded-full hover:border-lime-400 hover:text-lime-400 transition-all duration-300 transform hover:scale-105"
-                            >
-                                {t.sections?.s7?.btnSample}
-                            </button>
+                            />
                         </div>
                     </motion.div>
                 </section>
 
                 <ContactForm dict={dict} lang={lang} />
             </main>
-            <SampleModal isOpen={isSampleOpen} onClose={() => setIsSampleOpen(false)} lang={lang} />
         </ClientLayout>
     );
 }
