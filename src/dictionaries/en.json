@@ -301,7 +301,7 @@
           },
           "phosphorus": {
             "label": "Phosphorus uptake 11% → 86%",
-            "desc": "The plant absorbed more phosphorus while phosphorus in the drain dropped significantly.",
+            "desc": "The plant absorbed more phosphorus while the irrigation supply increased by 45%.",
             "footer": "PlantiPower_PracticalResults_2026"
           },
           "molybdenum": {
@@ -344,17 +344,17 @@
       "s4": {
         "title": "INDEPENDENTLY",
         "titleAccent": "MEASURED",
-        "desc": "Irrigation water, drain water and plant sap are sampled simultaneously. Three data points per measurement — this is how we calculate exactly how much the plant absorbs.",
+        "desc": "Irrigation water and plant sap are sampled simultaneously by Eurofins Agro Wageningen — this is how we calculate exactly how much the plant absorbs.",
         "footer": "PlantiPower_PracticalResults_2026",
         "nodes": {
           "iron": {
             "label": "65 independent measurements",
-            "desc": "Irrigation water, drain water and plant sap sampled simultaneously — three data points per measurement, conducted by Eurofins Agro Wageningen.",
+            "desc": "Irrigation water and plant sap sampled simultaneously — conducted by Eurofins Agro Wageningen.",
             "footer": "PlantiPower_PracticalResults_2026"
           },
           "zinc": {
             "label": "Uptake efficiency calculated",
-            "desc": "How much does the plant absorb? (irrigation − drain) ÷ irrigation × 100%. This is how we measure the difference PlantiPower makes.",
+            "desc": "Uptake efficiency calculated from plant sap analysis. This is how we measure the difference PlantiPower makes.",
             "footer": "PlantiPower_PracticalResults_2026"
           }
         }
@@ -409,9 +409,9 @@
         "sourceBadge": "Van Gog Kwekerijen CV · Helmond",
         "title": "Field",
         "titleHighlight": "Results",
-        "desc": "65 independent laboratory measurements · irrigation water, drain water, and plant sap analyses",
+        "desc": "65 independent laboratory measurements · irrigation water and plant sap analyses",
         "quote": "\"The dataset from Van Gog Kwekerijen provides convincing evidence that PlantiPower's ALL12® Technology measurably improves nutrient uptake in cucumber plants. The six key findings are consistent with four years of WUR research.\"",
-        "methodBase": "Methodology: uptake efficiency = (irrigation − drain) / irrigation × 100%",
+        "methodBase": "Methodology: uptake efficiency calculated from plant sap analysis",
         "methodExclusion": "1 measurement excluded (equipment malfunction)",
         "methodStrong": "Strongest evidence: Si, Zn, Cu (irrigation water stable)",
         "sourceFooter": "Eurofins Agro · 65 measurements · Van Gog Kwekerijen",
@@ -427,7 +427,7 @@
       "s-samenvatting": {
         "badge": "Summary",
         "title": "CONCLUSION",
-        "p1": "The above results are based on 65 independent laboratory measurements conducted by Eurofins Agro Wageningen at Van Gog Kwekerijen in Helmond, the Netherlands. The dataset includes irrigation water, drain water, and plant sap analyses of cucumber plants grown on rockwool substrate.",
+        "p1": "The above results are based on 65 independent laboratory measurements conducted by Eurofins Agro Wageningen at Van Gog Kwekerijen in Helmond, the Netherlands. The dataset includes irrigation water and plant sap analyses of cucumber plants grown on rockwool substrate.",
         "p2": "The results demonstrate that nutrient uptake in cucumber plants measurably improves when using PlantiPower. Multiple elements show a significant increase in uptake efficiency, while irrigation water input for these elements remained stable.",
         "p3": "The dataset of Van Gog Kwekerijen provides strong practical evidence for the efficacy of PlantiPower's ALL12® Technology.",
         "btnDownload": "Request the complete report"

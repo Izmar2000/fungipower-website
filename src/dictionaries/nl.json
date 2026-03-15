@@ -301,7 +301,7 @@
           },
           "phosphorus": {
             "label": "Fosfor opname 11% → 86%",
-            "desc": "De plant nam meer fosfor op terwijl fosfor in de drain sterk daalde.",
+            "desc": "De plant nam meer fosfor op terwijl de gift via gietwater met 45% steeg.",
             "footer": "PlantiPower_Praktijkresultaten_2026"
           },
           "molybdenum": {
@@ -344,17 +344,17 @@
       "s4": {
         "title": "ONAFHANKELIJK",
         "titleAccent": "GEMETEN",
-        "desc": "Gietwater, drainwater en plantsap worden gelijktijdig bemonsterd. Drie datapunten per meetmoment — zo berekenen we precies hoeveel de plant opneemt.",
+        "desc": "Gietwater en plantsap worden gelijktijdig bemonsterd door Eurofins Agro Wageningen — zo berekenen we precies hoeveel de plant opneemt.",
         "footer": "PlantiPower_Praktijkresultaten_2026",
         "nodes": {
           "iron": {
             "label": "65 onafhankelijke metingen",
-            "desc": "Gietwater, drainwater en plantsap tegelijk bemonsterd — drie datapunten per meetmoment, uitgevoerd door Eurofins Agro Wageningen.",
+            "desc": "Gietwater en plantsap gelijktijdig bemonsterd — uitgevoerd door Eurofins Agro Wageningen.",
             "footer": "PlantiPower_Praktijkresultaten_2026"
           },
           "zinc": {
             "label": "Opname-efficiëntie berekend",
-            "desc": "Hoeveel neemt de plant op? (gietwater − drain) ÷ gietwater × 100%. Zo meten we het verschil dat PlantiPower maakt.",
+            "desc": "Opname-efficiëntie berekend op basis van plantsapanalyse. Zo meten we het verschil dat PlantiPower maakt.",
             "footer": "PlantiPower_Praktijkresultaten_2026"
           }
         }
@@ -389,7 +389,7 @@
         "sourceBadge": "Van Gog Kwekerijen CV · Helmond",
         "title": "Praktijk",
         "titleHighlight": "resultaten",
-        "desc": "65 onafhankelijke laboratoriummetingen · gietwater-, drainwater- en plantsapanalyses",
+        "desc": "65 onafhankelijke laboratoriummetingen · gietwater- en plantsapanalyses",
         "quote": "\"De dataset van Van Gog Kwekerijen biedt overtuigend bewijs dat PlantiPower's ALL12® Technology de nutriëntopname van komkommerplanten meetbaar verbetert. De zes kernbevindingen zijn consistent met vier jaar WUR-onderzoek.\"",
         "methodBase": "Methodologie: opname-efficiëntie = (gietwater − drain) / gietwater × 100%",
         "methodExclusion": "1 meting uitgesloten (apparaatstoring)",
@@ -407,7 +407,7 @@
       "s-samenvatting": {
         "badge": "Samenvatting",
         "title": "CONCLUSIE",
-        "p1": "De bovenstaande resultaten zijn gebaseerd op 65 onafhankelijke laboratoriummetingen, uitgevoerd door Eurofins Agro Wageningen bij Van Gog Kwekerijen in Helmond. De dataset omvat gietwater-, drainwater- en plantsapanalyses van komkommerplanten geteeld op steenwolsubstraat.",
+        "p1": "De bovenstaande resultaten zijn gebaseerd op 65 onafhankelijke laboratoriummetingen, uitgevoerd door Eurofins Agro Wageningen bij Van Gog Kwekerijen in Helmond. De dataset omvat gietwater- en plantsapanalyses van komkommerplanten geteeld op steenwolsubstraat.",
         "p2": "De resultaten laten zien dat de nutriëntopname van komkommerplanten meetbaar verbetert bij gebruik van PlantiPower. Bij meerdere elementen is een sterke stijging in opname-efficiëntie zichtbaar, terwijl het gietwater voor deze elementen stabiel bleef.",
         "p3": "De dataset van Van Gog Kwekerijen biedt daarmee sterk praktijkbewijs voor de werking van PlantiPower's ALL12® Technology.",
         "btnDownload": "Volledig rapport aanvragen"

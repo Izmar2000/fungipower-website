@@ -301,7 +301,7 @@
           },
           "phosphorus": {
             "label": "Phosphoraufnahme 11 % → 86 %",
-            "desc": "Die Pflanze nahm mehr Phosphor auf, während der Phosphorgehalt im Drain stark sank.",
+            "desc": "Die Pflanze nahm mehr Phosphor auf, während die Gabe über Gießwasser um 45% stieg.",
             "footer": "PlantiPower_Praxisresultate_2026"
           },
           "molybdenum": {
@@ -344,17 +344,17 @@
       "s4": {
         "title": "UNABHÄNGIG",
         "titleAccent": "GEMESSEN",
-        "desc": "Gießwasser, Drainwasser und Pflanzensaft werden gleichzeitig beprobt. Drei Datenpunkte pro Messung — so berechnen wir genau, wie viel die Pflanze aufnimmt.",
+        "desc": "Gießwasser und Pflanzensaft werden gleichzeitig beprobt von Eurofins Agro Wageningen — so berechnen wir genau, wie viel die Pflanze aufnimmt.",
         "footer": "PlantiPower_Praxisresultate_2026",
         "nodes": {
           "iron": {
             "label": "65 unabhängige Messungen",
-            "desc": "Gießwasser, Drainwasser und Pflanzensaft gleichzeitig beprobt — drei Datenpunkte pro Messung, durchgeführt von Eurofins Agro Wageningen.",
+            "desc": "Gießwasser und Pflanzensaft gleichzeitig beprobt — durchgeführt von Eurofins Agro Wageningen.",
             "footer": "PlantiPower_Praxisresultate_2026"
           },
           "zinc": {
             "label": "Aufnahmeeffizienz berechnet",
-            "desc": "Wie viel nimmt die Pflanze auf? (Gießwasser − Drain) ÷ Gießwasser × 100%. So messen wir den Unterschied, den PlantiPower macht.",
+            "desc": "Aufnahmeeffizienz berechnet aus Pflanzensaftanalyse. So messen wir den Unterschied, den PlantiPower macht.",
             "footer": "PlantiPower_Praxisresultate_2026"
           }
         }
@@ -409,9 +409,9 @@
         "sourceBadge": "Van Gog Kwekerijen CV · Helmond",
         "title": "Praxis",
         "titleHighlight": "ergebnisse",
-        "desc": "65 unabhängige Labormessungen · Gießwasser-, Drainwasser- und Pflanzensaftanalysen",
+        "desc": "65 unabhängige Labormessungen · Gießwasser- und Pflanzensaftanalysen",
         "quote": "\"Der Datensatz von Van Gog Kwekerijen liefert überzeugende Belege dafür, dass PlantiPower's ALL12® Technologie die Nährstoffaufnahme von Gurkenpflanzen messbar verbessert. Die sechs Kernbefunde stimmen mit vier Jahren WUR-Forschung überein.\"",
-        "methodBase": "Methodik: Aufnahmeeffizienz = (Gießwasser − Drain) / Gießwasser × 100%",
+        "methodBase": "Methodik: Aufnahmeeffizienz berechnet aus Pflanzensaftanalyse",
         "methodExclusion": "1 Messung ausgeschlossen (Gerätefehler)",
         "methodStrong": "Stärkste Belege: Si, Zn, Cu (Gießwasser stabil)",
         "sourceFooter": "Eurofins Agro · 65 Messungen · Van Gog Kwekerijen",
@@ -427,7 +427,7 @@
       "s-samenvatting": {
         "badge": "Zusammenfassung",
         "title": "FAZIT",
-        "p1": "Die oben genannten Ergebnisse basieren auf 65 unabhängigen Labormessungen, durchgeführt von Eurofins Agro Wageningen bei Van Gog Kwekerijen in Helmond, Niederlande. Der Datensatz umfasst Gießwasser-, Drainwasser- und Pflanzensaftanalysen von Gurkenpflanzen, die auf Steinwollsubstrat angebaut wurden.",
+        "p1": "Die oben genannten Ergebnisse basieren auf 65 unabhängigen Labormessungen, durchgeführt von Eurofins Agro Wageningen bei Van Gog Kwekerijen in Helmond, Niederlande. Der Datensatz umfasst Gießwasser- und Pflanzensaftanalysen von Gurkenpflanzen, die auf Steinwollsubstrat angebaut wurden.",
         "p2": "Die Ergebnisse zeigen, dass die Nährstoffaufnahme von Gurkenpflanzen bei Verwendung von PlantiPower messbar verbessert wird. Bei mehreren Elementen ist eine deutliche Steigerung der Aufnahmeeffizienz sichtbar, während die Gießwasserzufuhr für diese Elemente stabil blieb.",
         "p3": "Der Datensatz von Van Gog Kwekerijen liefert starke Praxisbelege für die Wirksamkeit der ALL12® Technologie von PlantiPower.",
         "btnDownload": "Vollständigen Bericht anfordern"
