@@ -24,12 +24,12 @@ const CARDS: CardData[] = [
     {
         type: 'range', from1: 0, to1: 11, from2: 0, to2: 86, suffix: '%',
         label: 'Fosfor opname', sub: 'bij 45% hogere P-gift via gietwater',
-        accent: '#34d399', border: 'rgba(52,211,153,0.25)', bg: 'rgba(52,211,153,0.08)',
+        accent: '#84cc16', border: 'rgba(132,204,22,0.25)', bg: 'rgba(132,204,22,0.08)',
     },
     {
         type: 'single', prefix1: '+', from1: 0, to1: 88, suffix: '%',
         label: 'Molybdeen in oud plantsap', sub: 'direct bewijs ALL12® · bij lagere Mo-gift',
-        accent: '#34d399', border: 'rgba(52,211,153,0.25)', bg: 'rgba(52,211,153,0.08)',
+        accent: '#84cc16', border: 'rgba(132,204,22,0.25)', bg: 'rgba(132,204,22,0.08)',
     },
     {
         type: 'single', prefix1: '+', from1: 0, to1: 46, suffix: '%',
@@ -39,7 +39,7 @@ const CARDS: CardData[] = [
     {
         type: 'double', prefix1: '−', from1: 0, to1: 42, prefix2: '−', from2: 0, to2: 46, suffix: '%',
         label: 'Selectieve ionen-exclusie', sub: 'Na −42% · Cl −46% in jong blad',
-        accent: '#818cf8', border: 'rgba(99,102,241,0.25)', bg: 'rgba(99,102,241,0.08)',
+        accent: '#ffffff', border: 'rgba(255,255,255,0.15)', bg: 'rgba(255,255,255,0.04)',
     },
 ]
 
