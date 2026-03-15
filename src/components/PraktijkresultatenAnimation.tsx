@@ -169,8 +169,9 @@ function PraktijkComp() {
     )
 }
 
-// Total duration: last card starts at 8 + 5*14 = 78, count-up 52 frames → ~130 frames
-const DURATION = 140
+// Cards finish at ~120 frames; extra frames keep end-state frozen without relying on onEnded
+const DURATION = 9999
+const FREEZE_FRAME = 139
 
 // ─── Exported Player component ────────────────────────────────────────────────
 
@@ -183,9 +184,13 @@ export default function PraktijkresultatenAnimation() {
         const player = playerRef.current
         if (!wrapper) return
 
-        // Freeze at last frame when animation ends
-        const onEnded = () => { playerRef.current?.seekTo(DURATION - 1) }
-        player?.addEventListener('ended', onEnded)
+        // Pause at freeze frame when cards are all visible
+        const onFrame = () => {
+            if ((playerRef.current?.getCurrentFrame() ?? 0) >= FREEZE_FRAME) {
+                playerRef.current?.pause()
+            }
+        }
+        player?.addEventListener('frameupdate', onFrame)
 
         // Use the snap container (main) as root so IntersectionObserver
         // correctly detects when this section scrolls into view
@@ -204,7 +209,7 @@ export default function PraktijkresultatenAnimation() {
         observer.observe(wrapper)
         return () => {
             observer.disconnect()
-            player?.removeEventListener('ended', onEnded)
+            player?.removeEventListener('frameupdate', onFrame)
         }
     }, [])
 
@@ -228,8 +233,8 @@ export default function PraktijkresultatenAnimation() {
                         controls={false}
                         loop={false}
                         clickToPlay={false}
-                        // Start at last frame so static end-state is visible before play
-                        initialFrame={DURATION - 1}
+                        // Start at freeze frame so static end-state is visible before play
+                        initialFrame={FREEZE_FRAME}
                         spaceKeyToPlayOrPause={false}
                     />
                 </div>
