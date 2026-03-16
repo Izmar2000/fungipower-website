@@ -8,6 +8,7 @@ const CARD_I18N: Record<string, { label: string; sub: string }[]> = {
         { label: 'Silicium opname verdubbeld', sub: 'gietwater stabiel' },
         { label: 'Fosfor opname', sub: 'bij 45% hogere P-gift via gietwater' },
         { label: 'Molybdeen in oud plantsap', sub: 'direct bewijs ALL12® · bij lagere Mo-gift' },
+        { label: 'IJzer in jong plantsap', sub: '+17% Fe · sterkere celactiviteit' },
         { label: 'Zink in oud plantsap', sub: 'Zn · stabiele accumulatie' },
         { label: 'Selectieve ionen-exclusie', sub: 'Na −42% · Cl −46% in jong blad' },
     ],
@@ -15,6 +16,7 @@ const CARD_I18N: Record<string, { label: string; sub: string }[]> = {
         { label: 'Silicon uptake doubled', sub: 'irrigation water stable' },
         { label: 'Phosphorus uptake', sub: 'at 45% higher P supply via irrigation' },
         { label: 'Molybdenum in old plant sap', sub: 'direct proof ALL12® · at lower Mo supply' },
+        { label: 'Iron in young plant sap', sub: '+17% Fe · stronger cell activity' },
         { label: 'Zinc in old plant sap', sub: 'Zn · stable accumulation' },
         { label: 'Selective ion exclusion', sub: 'Na −42% · Cl −46% in young leaf' },
     ],
@@ -22,6 +24,7 @@ const CARD_I18N: Record<string, { label: string; sub: string }[]> = {
         { label: 'Silizium-Aufnahme verdoppelt', sub: 'Gießwasser stabil' },
         { label: 'Phosphoraufnahme', sub: 'bei 45% höherem P-Angebot via Gießwasser' },
         { label: 'Molybdän im alten Pflanzensaft', sub: 'Direktnachweis ALL12® · bei niedrigerer Mo-Gabe' },
+        { label: 'Eisen im jungen Pflanzensaft', sub: '+17% Fe · stärkere Zellaktivität' },
         { label: 'Zink im alten Pflanzensaft', sub: 'Zn · stabile Akkumulation' },
         { label: 'Selektiver Ionenausschluss', sub: 'Na −42% · Cl −46% in jungem Blatt' },
     ],
@@ -36,7 +39,7 @@ type CardData = {
     label: string; sub: string
     accent: string
     featured?: boolean
-    visual: 'cucumber' | 'root' | 'leaf' | 'cell' | 'membrane'
+    visual: 'cucumber' | 'root' | 'leaf' | 'iron' | 'cell' | 'membrane'
 }
 
 const CARDS: CardData[] = [
@@ -54,6 +57,11 @@ const CARDS: CardData[] = [
         type: 'single', prefix1: '+', from1: 0, to1: 88, suffix: '%',
         label: 'Molybdeen in oud plantsap', sub: 'direct bewijs ALL12® · bij lagere Mo-gift',
         accent: '#84cc16', visual: 'leaf',
+    },
+    {
+        type: 'single', prefix1: '+', from1: 0, to1: 17, suffix: '%',
+        label: 'IJzer in jong plantsap', sub: '+17% Fe · sterkere celactiviteit',
+        accent: '#84cc16', visual: 'iron',
     },
     {
         type: 'single', prefix1: '+', from1: 0, to1: 46, suffix: '%',
@@ -209,7 +217,44 @@ function LeafVisual({ progress, accent }: { progress: number; accent: string }) 
     )
 }
 
-// ─── Visual 4: Cell fills up (Zink +46%) ────────────────────────────────────
+// ─── Visual 4: Iron vertical bar (IJzer +17%) ────────────────────────────────
+function IronVisual({ progress }: { progress: number; accent: string }) {
+    const W = 240, H = 36
+    const barW = 18, barH = 28
+    const cx = W / 2, baseY = H - 4
+    const opacity = Math.min(1, progress * 2)
+    // Three bars representing Fe accumulation in cell layers
+    const bars = [{ x: cx - 28 }, { x: cx }, { x: cx + 28 }]
+    return (
+        <svg width="100%" height={H} viewBox={`0 0 ${W} ${H}`} preserveAspectRatio="xMidYMid meet">
+            {bars.map((b, i) => {
+                const delay = i * 0.2
+                const pp = easeOutCubic(Math.min(1, Math.max(0, (progress - delay) / (1 - delay))))
+                const barFill = pp * barH
+                return (
+                    <g key={i}>
+                        {/* Bar outline */}
+                        <rect x={b.x - barW / 2} y={baseY - barH} width={barW} height={barH}
+                            fill="rgba(251,146,60,0.06)" stroke="rgba(251,146,60,0.25)" strokeWidth={0.8} rx={2} />
+                        {/* Bar fill */}
+                        <rect x={b.x - barW / 2 + 1} y={baseY - barFill} width={barW - 2} height={barFill}
+                            fill="rgba(251,146,60,0.45)" rx={1.5} />
+                        {/* Fe label above */}
+                        <text x={b.x} y={baseY - barH - 3} textAnchor="middle"
+                            fill={`rgba(251,191,36,${pp * 0.8})`} fontSize={6} fontWeight={800}
+                            fontFamily="Outfit,sans-serif">Fe</text>
+                    </g>
+                )
+            })}
+            {/* +17% label */}
+            <text x={cx + 58} y={baseY - barH / 2 + 4} textAnchor="middle"
+                fill={`rgba(251,146,60,${opacity * 0.7})`} fontSize={9} fontWeight={900}
+                fontFamily="Outfit,sans-serif">+17%</text>
+        </svg>
+    )
+}
+
+// ─── Visual 5: Cell fills up (Zink +46%) ────────────────────────────────────
 function CellVisual({ progress, accent }: { progress: number; accent: string }) {
     const W = 240, H = 36
     const cx = W / 2, cy = H / 2
@@ -337,6 +382,7 @@ function CardItem({ card, cardIndex }: { card: CardData; cardIndex: number }) {
         if (card.visual === 'cucumber') return <CucumberVisual progress={visualProgress} accent={card.accent} />
         if (card.visual === 'root')     return <RootVisual     progress={visualProgress} accent={card.accent} />
         if (card.visual === 'leaf')     return <LeafVisual     progress={visualProgress} accent={card.accent} />
+        if (card.visual === 'iron')     return <IronVisual     progress={visualProgress} accent={card.accent} />
         if (card.visual === 'cell')     return <CellVisual     progress={visualProgress} accent={card.accent} />
         return <MembraneVisual progress={visualProgress} accent={card.accent} />
     }
@@ -421,7 +467,7 @@ function PraktijkComp({ cards }: { cards?: { label: string; sub: string }[] }) {
 }
 
 const DURATION = 9999
-const FREEZE_FRAME = 295
+const FREEZE_FRAME = 347
 
 // ─── Exported Player component ────────────────────────────────────────────────
 
