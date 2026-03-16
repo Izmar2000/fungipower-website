@@ -413,8 +413,11 @@ function CardItem({ card, cardIndex }: { card: CardData; cardIndex: number }) {
                 {card.label}
             </div>
 
-            {/* Number */}
+            {/* Number — fixed height so sub text aligns across all cards */}
             <div style={{
+                height: 36,
+                display: 'flex',
+                alignItems: 'center',
                 fontFamily: "'Outfit', system-ui, sans-serif",
                 fontWeight: 900,
                 fontSize: numFontSize,
