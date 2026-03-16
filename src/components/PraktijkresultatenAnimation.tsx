@@ -224,10 +224,10 @@ function CardItem({ card, cardIndex }: { card: CardData; cardIndex: number }) {
         }}>
             {/* Label — uppercase, readable, appears first */}
             <div style={{
-                color: card.featured ? `${card.accent}99` : 'rgba(255,255,255,0.4)',
-                fontSize: 8,
-                fontWeight: 700,
-                letterSpacing: '0.18em',
+                color: 'rgba(255,255,255,0.92)',
+                fontSize: 10,
+                fontWeight: 800,
+                letterSpacing: '0.12em',
                 textTransform: 'uppercase',
                 fontFamily: "'Outfit', system-ui, sans-serif",
                 lineHeight: 1.2,
