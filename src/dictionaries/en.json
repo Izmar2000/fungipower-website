@@ -68,6 +68,28 @@
         "stats_1_title": "Harvest 1 day earlier",
         "stats_1_desc": "Faster cycle due to transport efficiency."
       }
+    ],
+    "animationCards": [
+      {
+        "label": "Silicon uptake doubled",
+        "sub": "irrigation water stable"
+      },
+      {
+        "label": "Phosphorus uptake",
+        "sub": "at 45% higher P supply via irrigation"
+      },
+      {
+        "label": "Molybdenum in old plant sap",
+        "sub": "direct proof ALL12® · at lower Mo supply"
+      },
+      {
+        "label": "Zinc in old plant sap",
+        "sub": "Zn · stable accumulation"
+      },
+      {
+        "label": "Selective ion exclusion",
+        "sub": "Na −42% · Cl −46% in young leaf"
+      }
     ]
   },
   "GlobalStandard": {
@@ -416,12 +438,30 @@
         "methodStrong": "Strongest evidence: Si, Zn, Cu (irrigation water stable)",
         "sourceFooter": "Eurofins Agro · 65 measurements · Van Gog Kwekerijen",
         "cards": [
-          { "label": "Silicon uptake doubled", "sub": "irrigation water stable" },
-          { "label": "Phosphorus uptake", "sub": "with 45% higher P input via irrigation" },
-          { "label": "Molybdenum in old plant sap", "sub": "direct proof ALL12® · with lower Mo input" },
-          { "label": "Iron in young plant sap", "sub": "+17% Fe · stronger cell activity" },
-          { "label": "Zinc in old plant sap", "sub": "+46% Zn · stable accumulation" },
-          { "label": "Selective ion exclusion", "sub": "Na −42% · Cl −46% in young leaves" }
+          {
+            "label": "Silicon uptake doubled",
+            "sub": "irrigation water stable"
+          },
+          {
+            "label": "Phosphorus uptake",
+            "sub": "with 45% higher P input via irrigation"
+          },
+          {
+            "label": "Molybdenum in old plant sap",
+            "sub": "direct proof ALL12® · with lower Mo input"
+          },
+          {
+            "label": "Iron in young plant sap",
+            "sub": "+17% Fe · stronger cell activity"
+          },
+          {
+            "label": "Zinc in old plant sap",
+            "sub": "+46% Zn · stable accumulation"
+          },
+          {
+            "label": "Selective ion exclusion",
+            "sub": "Na −42% · Cl −46% in young leaves"
+          }
         ]
       },
       "s-samenvatting": {

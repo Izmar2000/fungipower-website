@@ -3,6 +3,30 @@ import { Player, PlayerRef } from '@remotion/player'
 import { AbsoluteFill, interpolate, spring, useCurrentFrame, useVideoConfig } from 'remotion'
 import { useRef, useEffect } from 'react'
 
+const CARD_I18N: Record<string, { label: string; sub: string }[]> = {
+    nl: [
+        { label: 'Silicium opname verdubbeld', sub: 'gietwater stabiel' },
+        { label: 'Fosfor opname', sub: 'bij 45% hogere P-gift via gietwater' },
+        { label: 'Molybdeen in oud plantsap', sub: 'direct bewijs ALL12® · bij lagere Mo-gift' },
+        { label: 'Zink in oud plantsap', sub: 'Zn · stabiele accumulatie' },
+        { label: 'Selectieve ionen-exclusie', sub: 'Na −42% · Cl −46% in jong blad' },
+    ],
+    en: [
+        { label: 'Silicon uptake doubled', sub: 'irrigation water stable' },
+        { label: 'Phosphorus uptake', sub: 'at 45% higher P supply via irrigation' },
+        { label: 'Molybdenum in old plant sap', sub: 'direct proof ALL12® · at lower Mo supply' },
+        { label: 'Zinc in old plant sap', sub: 'Zn · stable accumulation' },
+        { label: 'Selective ion exclusion', sub: 'Na −42% · Cl −46% in young leaf' },
+    ],
+    de: [
+        { label: 'Silizium-Aufnahme verdoppelt', sub: 'Gießwasser stabil' },
+        { label: 'Phosphoraufnahme', sub: 'bei 45% höherem P-Angebot via Gießwasser' },
+        { label: 'Molybdän im alten Pflanzensaft', sub: 'Direktnachweis ALL12® · bei niedrigerer Mo-Gabe' },
+        { label: 'Zink im alten Pflanzensaft', sub: 'Zn · stabile Akkumulation' },
+        { label: 'Selektiver Ionenausschluss', sub: 'Na −42% · Cl −46% in jungem Blatt' },
+    ],
+}
+
 type CardData = {
     type: 'range' | 'single' | 'double'
     from1: number; to1: number
@@ -396,7 +420,11 @@ function CardItem({ card, cardIndex }: { card: CardData; cardIndex: number }) {
 
 // ─── Root composition ─────────────────────────────────────────────────────────
 
-function PraktijkComp() {
+function PraktijkComp({ cards }: { cards?: { label: string; sub: string }[] }) {
+    const mergedCards = CARDS.map((card, i) => ({
+        ...card,
+        ...(cards?.[i] ?? {}),
+    }))
     return (
         <AbsoluteFill style={{
             background: 'transparent',
@@ -406,7 +434,7 @@ function PraktijkComp() {
             padding: '1px 2px',
             alignContent: 'start',
         }}>
-            {CARDS.map((card, i) => (
+            {mergedCards.map((card, i) => (
                 <CardItem key={i} card={card} cardIndex={i} />
             ))}
         </AbsoluteFill>
@@ -418,7 +446,7 @@ const FREEZE_FRAME = 295
 
 // ─── Exported Player component ────────────────────────────────────────────────
 
-export default function PraktijkresultatenAnimation() {
+export default function PraktijkresultatenAnimation({ lang = 'nl' }: { lang?: string }) {
     const playerRef = useRef<PlayerRef>(null)
     const wrapperRef = useRef<HTMLDivElement>(null)
 
@@ -466,6 +494,7 @@ export default function PraktijkresultatenAnimation() {
                         fps={30}
                         compositionWidth={W}
                         compositionHeight={H}
+                        inputProps={{ cards: CARD_I18N[lang] ?? CARD_I18N.nl }}
                         style={{ width: '100%', height: '100%' }}
                         controls={false}
                         loop={false}

@@ -68,6 +68,28 @@
         "stats_1_title": "1 Tag früher ernten",
         "stats_1_desc": "Schnellerer Zyklus durch Transporteffizienz."
       }
+    ],
+    "animationCards": [
+      {
+        "label": "Silizium-Aufnahme verdoppelt",
+        "sub": "Gießwasser stabil"
+      },
+      {
+        "label": "Phosphoraufnahme",
+        "sub": "bei 45% höherem P-Angebot via Gießwasser"
+      },
+      {
+        "label": "Molybdän im alten Pflanzensaft",
+        "sub": "Direktnachweis ALL12® · bei niedrigerer Mo-Gabe"
+      },
+      {
+        "label": "Zink im alten Pflanzensaft",
+        "sub": "Zn · stabile Akkumulation"
+      },
+      {
+        "label": "Selektiver Ionenausschluss",
+        "sub": "Na −42% · Cl −46% in jungem Blatt"
+      }
     ]
   },
   "GlobalStandard": {
@@ -416,12 +438,30 @@
         "methodStrong": "Stärkste Belege: Si, Zn, Cu (Gießwasser stabil)",
         "sourceFooter": "Eurofins Agro · 65 Messungen · Van Gog Kwekerijen",
         "cards": [
-          { "label": "Siliziumaufnahme verdoppelt", "sub": "Gießwasser stabil" },
-          { "label": "Phosphoraufnahme", "sub": "bei 45% höherer P-Gabe über Gießwasser" },
-          { "label": "Molybdän im alten Pflanzensaft", "sub": "direkter Beweis ALL12® · bei niedrigerer Mo-Gabe" },
-          { "label": "Eisen im jungen Pflanzensaft", "sub": "+17% Fe · stärkere Zellaktivität" },
-          { "label": "Zink im alten Pflanzensaft", "sub": "+46% Zn · stabile Akkumulation" },
-          { "label": "Selektive Ionen-Exklusion", "sub": "Na −42% · Cl −46% in jungen Blättern" }
+          {
+            "label": "Siliziumaufnahme verdoppelt",
+            "sub": "Gießwasser stabil"
+          },
+          {
+            "label": "Phosphoraufnahme",
+            "sub": "bei 45% höherer P-Gabe über Gießwasser"
+          },
+          {
+            "label": "Molybdän im alten Pflanzensaft",
+            "sub": "direkter Beweis ALL12® · bei niedrigerer Mo-Gabe"
+          },
+          {
+            "label": "Eisen im jungen Pflanzensaft",
+            "sub": "+17% Fe · stärkere Zellaktivität"
+          },
+          {
+            "label": "Zink im alten Pflanzensaft",
+            "sub": "+46% Zn · stabile Akkumulation"
+          },
+          {
+            "label": "Selektive Ionen-Exklusion",
+            "sub": "Na −42% · Cl −46% in jungen Blättern"
+          }
         ]
       },
       "s-samenvatting": {

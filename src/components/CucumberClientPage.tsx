@@ -517,7 +517,7 @@ export default function CucumberClientPage({
 
                             {/* 6 Kernresultaten — desktop: Remotion animated player */}
                             <div className="hidden md:block mb-8">
-                                <PraktijkresultatenAnimation />
+                                <PraktijkresultatenAnimation lang={lang} />
                             </div>
 
                             {/* Conclusion quote */}

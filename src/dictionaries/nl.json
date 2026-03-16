@@ -68,6 +68,28 @@
         "stats_1_title": "1 dag eerder oogsten",
         "stats_1_desc": "Snellere cyclus door transportefficiëntie."
       }
+    ],
+    "animationCards": [
+      {
+        "label": "Silicium opname verdubbeld",
+        "sub": "gietwater stabiel"
+      },
+      {
+        "label": "Fosfor opname",
+        "sub": "bij 45% hogere P-gift via gietwater"
+      },
+      {
+        "label": "Molybdeen in oud plantsap",
+        "sub": "direct bewijs ALL12® · bij lagere Mo-gift"
+      },
+      {
+        "label": "Zink in oud plantsap",
+        "sub": "Zn · stabiele accumulatie"
+      },
+      {
+        "label": "Selectieve ionen-exclusie",
+        "sub": "Na −42% · Cl −46% in jong blad"
+      }
     ]
   },
   "GlobalStandard": {
@@ -396,12 +418,30 @@
         "methodStrong": "Sterkste bewijs: Si, Zn, Cu (gietwater stabiel)",
         "sourceFooter": "Eurofins Agro · 65 metingen · Van Gog Kwekerijen",
         "cards": [
-          { "label": "Silicium opname verdubbeld", "sub": "gietwater stabiel" },
-          { "label": "Fosfor opname", "sub": "bij 45% hogere P-gift via gietwater" },
-          { "label": "Molybdeen in oud plantsap", "sub": "direct bewijs ALL12® · bij lagere Mo-gift" },
-          { "label": "IJzer in jong plantsap", "sub": "+17% Fe · sterkere celactiviteit" },
-          { "label": "Zink in oud plantsap", "sub": "+46% Zn · stabiele accumulatie" },
-          { "label": "Selectieve ionen-exclusie", "sub": "Na −42% · Cl −46% in jong blad" }
+          {
+            "label": "Silicium opname verdubbeld",
+            "sub": "gietwater stabiel"
+          },
+          {
+            "label": "Fosfor opname",
+            "sub": "bij 45% hogere P-gift via gietwater"
+          },
+          {
+            "label": "Molybdeen in oud plantsap",
+            "sub": "direct bewijs ALL12® · bij lagere Mo-gift"
+          },
+          {
+            "label": "IJzer in jong plantsap",
+            "sub": "+17% Fe · sterkere celactiviteit"
+          },
+          {
+            "label": "Zink in oud plantsap",
+            "sub": "+46% Zn · stabiele accumulatie"
+          },
+          {
+            "label": "Selectieve ionen-exclusie",
+            "sub": "Na −42% · Cl −46% in jong blad"
+          }
         ]
       },
       "s-samenvatting": {
