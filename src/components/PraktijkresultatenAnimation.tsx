@@ -426,8 +426,10 @@ function CardItem({ card, cardIndex }: { card: CardData; cardIndex: number }) {
                 {numStr}
             </div>
 
-            {/* Visual — full width */}
-            <Visual />
+            {/* Visual — fixed height so sub text aligns across all cards */}
+            <div style={{ height: 52, display: 'flex', alignItems: 'center' }}>
+                <Visual />
+            </div>
 
             {/* Sub */}
             <div style={{
