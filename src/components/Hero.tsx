@@ -102,7 +102,17 @@ const Hero: React.FC<HeroProps> = ({ dict, lang }) => {
 
           {/* Right Column: Hero Visual */}
           <div className="relative z-0 flex justify-center items-center lg:justify-end pb-12 lg:pb-0 mt-4 lg:mt-0">
-            <div className="relative w-full max-w-[950px] transition-all duration-500 lg:-mr-20 min-h-[400px] lg:min-h-[500px]">
+            <div className="relative w-full max-w-[950px] transition-all duration-500 lg:-mr-20">
+              {/* Warm glow beneath the mushroom for floating 3D feel */}
+              <div className="absolute bottom-[12%] left-[20%] right-[20%] h-16 rounded-full blur-3xl bg-orange-900/40 pointer-events-none" />
+              <img
+                src="/images/fungipower-hero-plant.png"
+                alt="FungiPower"
+                className="w-full h-auto object-contain"
+                style={{
+                  filter: 'drop-shadow(4px 8px 14px rgba(0,0,0,0.3)) drop-shadow(-1px -2px 8px rgba(255,130,30,0.06))',
+                }}
+              />
               {/* Mycelium nutrient flow */}
               {myceliumPulses.map((p, i) => (
                 <motion.div
