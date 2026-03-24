@@ -44,37 +44,22 @@ const SampleModal: React.FC<SampleModalProps> = ({ isOpen, onClose, lang }) => {
   }, []);
 
   const categories = isDE ? [
-    { id: 'groente', label: 'Gemüse' },
-    { id: 'fruit', label: 'Obst' },
-    { id: 'sierteelt', label: 'Zierpflanzen' },
-    { id: 'boomteelt', label: 'Baumschule' },
-    { id: 'akkerbouw', label: 'Ackerbau' },
-    { id: 'opkweek', label: 'Aufzucht / Jungpflanzen' },
+    { id: 'champignon', label: 'Pilze' },
     { id: 'anders', label: 'Andere' }
   ] : isNL ? [
-    { id: 'groente', label: 'Groenten' },
-    { id: 'fruit', label: 'Fruit' },
-    { id: 'sierteelt', label: 'Sierteelt' },
-    { id: 'boomteelt', label: 'Boomteelt' },
-    { id: 'akkerbouw', label: 'Akkerbouw' },
-    { id: 'opkweek', label: 'Opkweek / Jonge planten' },
+    { id: 'champignon', label: 'Champignons' },
     { id: 'anders', label: 'Anders' }
   ] : [
-    { id: 'groente', label: 'Vegetables' },
-    { id: 'fruit', label: 'Fruit' },
-    { id: 'sierteelt', label: 'Ornamentals' },
-    { id: 'boomteelt', label: 'Arboriculture' },
-    { id: 'akkerbouw', label: 'Arable Farming' },
-    { id: 'opkweek', label: 'Young Plants / Propagation' },
+    { id: 'champignon', label: 'Mushrooms' },
     { id: 'anders', label: 'Other' }
   ];
 
   const cropsByCategory: Record<string, { v: string, l: string }[]> = {
-    groente: isDE
-      ? [{ v: 'tomaat', l: 'Tomate' }, { v: 'komkommer', l: 'Gurke' }, { v: 'paprika', l: 'Paprika' }, { v: 'aubergine', l: 'Aubergine' }, { v: 'sla', l: 'Salat' }, { v: 'spinazie', l: 'Spinat' }, { v: 'anders', l: 'Andere...' }]
+    champignon: isDE
+      ? [{ v: 'agaricus', l: 'Agaricus (Champignon)' }, { v: 'pleurotus', l: 'Pleurotus (Austernpilz)' }, { v: 'lentinula', l: 'Lentinula (Shiitake)' }, { v: 'anders', l: 'Andere...' }]
       : isNL
-        ? [{ v: 'tomaat', l: 'Tomaat' }, { v: 'komkommer', l: 'Komkommer' }, { v: 'paprika', l: 'Paprika' }, { v: 'aubergine', l: 'Aubergine' }, { v: 'sla', l: 'Sla' }, { v: 'spinazie', l: 'Spinazie' }, { v: 'anders', l: 'Anders...' }]
-        : [{ v: 'tomato', l: 'Tomato' }, { v: 'cucumber', l: 'Cucumber' }, { v: 'pepper', l: 'Pepper' }, { v: 'eggplant', l: 'Eggplant' }, { v: 'lettuce', l: 'Lettuce' }, { v: 'spinach', l: 'Spinach' }, { v: 'anders', l: 'Other...' }],
+        ? [{ v: 'agaricus', l: 'Agaricus (Champignon)' }, { v: 'pleurotus', l: 'Pleurotus (Oesterzwam)' }, { v: 'lentinula', l: 'Lentinula (Shiitake)' }, { v: 'anders', l: 'Anders...' }]
+        : [{ v: 'agaricus', l: 'Agaricus (Button Mushroom)' }, { v: 'pleurotus', l: 'Pleurotus (Oyster)' }, { v: 'lentinula', l: 'Lentinula (Shiitake)' }, { v: 'anders', l: 'Other...' }],
     fruit: isDE
       ? [{ v: 'aardbei', l: 'Erdbeere' }, { v: 'blauwebes', l: 'Blaubeere' }, { v: 'framboos', l: 'Himbeere' }, { v: 'bramen', l: 'Brombeere' }, { v: 'appels', l: 'Äpfel' }, { v: 'peren', l: 'Birnen' }, { v: 'anders', l: 'Andere...' }]
       : isNL
