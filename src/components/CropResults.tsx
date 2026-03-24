@@ -17,7 +17,7 @@ const CropResults: React.FC<CropResultsProps> = ({ dict }) => {
     const crops = [
         {
             name: t.crops[0].name,
-            image: "/images/tomatoes-user.jpg",
+            image: "/images/modern-mushroom.png",
             hasBadge: false,
             stats: [
                 {
@@ -36,7 +36,7 @@ const CropResults: React.FC<CropResultsProps> = ({ dict }) => {
         },
         {
             name: t.crops[1].name,
-            image: "/images/cucumbers-user.jpg",
+            image: "/images/champignon-kweker.png",
             hasBadge: true,
             stats: [
                 {
