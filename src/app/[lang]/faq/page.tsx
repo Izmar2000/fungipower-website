@@ -40,7 +40,7 @@ export default async function FAQPage({
             <div className="relative pt-32 md:pt-40 pb-20 bg-[#011410]">
                 <div className="max-w-7xl mx-auto px-6 text-center">
                     <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 font-outfit">
-                        {content.title} <span className="text-transparent bg-clip-text bg-gradient-to-r from-lime-400 to-emerald-400">{content.titleAccent}</span>
+                        {content.title} <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-400">{content.titleAccent}</span>
                     </h1>
                 </div>
                 <FAQ dict={dict} hideTitle />

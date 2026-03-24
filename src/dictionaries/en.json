@@ -6,42 +6,42 @@
     "faq": "FAQ",
     "contact": "Contact",
     "cta": "Request Sample",
-    "all12": "PlantiPower All12",
-    "all12Desc": "Optimize uptake",
-    "shield": "PlantiPower Shield",
-    "shieldDesc": "Maximum resilience",
+    "all12": "FungiPower Start",
+    "all12Desc": "Optimal starting base",
+    "shield": "FungiPower Boost",
+    "shieldDesc": "Maximum growth boost",
     "aboutLabel": "About"
   },
   "Hero": {
-    "titleLine1": "BETTER UPTAKE",
-    "titleLine2": "STRONGER ROOTS",
-    "titleLine3": "HIGHER YIELDS",
-    "uspsPart1": "ELIMINATE WASTE",
-    "uspsPart2": "BETTER UPTAKE",
-    "uspsPart3": "HEALTHIER CROPS",
-    "description": "Part of the nutrition you apply always remains in the soil or substrate. Result: the plant doesn't use its full potential.<br /><br />PlantiPower ALL12 transports all 12 essential nutrients to the root, making the plant more vital and growing more efficiently.",
-    "ctaMore": "More about",
-    "ctaProduct": "PlantiPower ALL12",
-    "ctaView": "View",
-    "ctaCases": "Case Studies"
+    "titleLine1": "Faster harvest,",
+    "titleLine2": "More yield,",
+    "titleLine3": "Uniform growth.",
+    "uspsPart1": "BIOLOGICAL ENHANCEMENT",
+    "uspsPart2": "MORE YIELD PER FLUSH",
+    "uspsPart3": "TESTED IN COMMERCIAL CULTIVATION",
+    "description": "FungiPower strengthens the natural cycle of the mycelium. Through the mycelium network, trace elements are efficiently transported to the fruiting bodies, resulting in uniform growth, faster harvest and higher yield per m². Developed and validated in commercial mushroom cultivation.",
+    "ctaMore": "VIEW",
+    "ctaProduct": "Our Methodology",
+    "ctaView": "VIEW",
+    "ctaCases": "Field Results"
   },
   "GrowerFocus": {
     "badge": "THE PHILOSOPHY",
     "title": "We change nothing",
     "titleAccent": "You optimise everything",
-    "description": "Your nutrition schedule is the foundation of your success. PlantiPower is developed to strengthen this foundation, not replace it. We provide the technological support for stable uptake and consistent results, in every phase of cultivation.",
+    "description": "Your cultivation process is the foundation of your success. FungiPower is developed to strengthen this foundation, not replace it. We provide biological support for stable mycelium development and consistent flushes, in every phase of the cultivation cycle.",
     "usps": [
       {
-        "title": "Your schedule remains leading",
-        "desc": "No adjustments needed in EC or pH. PlantiPower integrates seamlessly."
+        "title": "Your method remains leading",
+        "desc": "No adjustments to your existing process needed. FungiPower integrates seamlessly into any growing operation."
       },
       {
         "title": "Immediately visible result",
-        "desc": "Better uptake means an immediately more vital and resilient crop."
+        "desc": "A more vital mycelium means uniform fruiting bodies and a faster flush."
       },
       {
         "title": "Keep doing what you're good at",
-        "desc": "PlantiPower does the rest in the background."
+        "desc": "FungiPower strengthens the biological cycle in the background."
       }
     ],
     "cta": "Request Sample"
@@ -51,22 +51,23 @@
     "title": "Validated",
     "titleHighlight": "practical results",
     "validated": "Validated",
-    "description": "From tomato to cucumber cultivation: PlantiPower maximizes absorption capacity in every professional setting.",
+    "description": "From first flush to complete growing cycle: FungiPower maximises the mycelium uptake capacity in every professional growing operation.",
     "crops": [
       {
-        "name": "Tomato Cultivation",
-        "stats_0_title": "Fruit Quality",
-        "stats_0_desc": "Consistent weight and higher brix value.",
-        "stats_1_title": "Efficient Uptake",
-        "stats_1_desc": "Less waste of fertilizers."
+        "name": "First flush",
+        "image": "/images/champignon-kweker.png",
+        "stats_0_title": "Uniform fruiting bodies",
+        "stats_0_desc": "Consistent size and weight through optimised mycelium activity.",
+        "stats_1_title": "Shorter cycle time",
+        "stats_1_desc": "Faster primordium formation with active and vital mycelium."
       },
       {
-        "name": "Cucumber Cultivation",
-        "stats_0_badgeLabel": "+2",
-        "stats_0_title": "+2 cucumbers / m²",
-        "stats_0_desc": "Gain at Van Gog nurseries.",
-        "stats_1_title": "Harvest 1 day earlier",
-        "stats_1_desc": "Faster cycle due to transport efficiency."
+        "name": "Growing cycle",
+        "image": "/images/fungipower-hero-plant.png",
+        "stats_0_title": "Higher yield per m²",
+        "stats_0_desc": "More efficient use of the substrate per growing cycle.",
+        "stats_1_title": "Less waste",
+        "stats_1_desc": "More uniform colonisation reduces unsellable mushrooms."
       }
     ],
     "animationCards": [
@@ -109,74 +110,74 @@
       {
         "name": "Tomato Grower",
         "role": "The Netherlands",
-        "text": "Since adding PlantiPower to our schedule, we see a clear difference: stronger plants, fuller blooms, and a shorter growth cycle. All without extra additives."
+        "text": "Since adding FungiPower to our schedule, we see a clear difference: stronger plants, fuller blooms, and a shorter growth cycle. All without extra additives."
       },
       {
         "name": "Herb Grower",
         "role": "Organic Cultivation",
-        "text": "What appeals to me is that PlantiPower doesn't just give results, it truly strengthens the plant. Less loss, better absorption, and 100% natural. Exactly what the sector needs."
+        "text": "What appeals to me is that FungiPower doesn't just give results, it truly strengthens the plant. Less loss, better absorption, and 100% natural. Exactly what the sector needs."
       }
     ]
   },
   "ProblemSection": {
     "badge": "THE CHALLENGE",
-    "title": "The problem in",
-    "titleAccent": "practice",
-    "description": "In a perfect world, every gram of nutrition you provide is actually absorbed by the plant. The reality is different. Factors such as pH fluctuations, cold water, or imbalance in the root zone often cause blockages.",
-    "quote": "\"This causes unused nutrients to remain in the substrate - a waste of investment and a burden on the crop.\"",
-    "closing": "By removing these 'blockers' with PlantiPower, you get the most out of your existing schedule."
+    "title": "The challenge in",
+    "titleAccent": "mushroom cultivation",
+    "description": "In an ideal growing cycle, the mycelium colonises fully and all nutrients in the substrate are used efficiently. The reality is different. Uneven colonisation, slow flushes and inconsistent fruiting bodies lead to waste and lower yield per cycle.",
+    "quote": "\"It is not the substrate that is the problem, but the efficiency with which the mycelium absorbs and utilises the available nutrients.\"",
+    "closing": "By strengthening the biological cycle of the mycelium with FungiPower, you get more yield out of every substrate block."
   },
   "About": {
-    "metaTitle": "About Us | PlantiPower",
-    "metaDesc": "PlantiPower originated from practice. We develop natural solutions that support plants in their natural processes.",
+    "metaTitle": "About Us | FungiPower",
+    "metaDesc": "FungiPower was born from the practice of Jan Klerken — a deep understanding of how a cultivation truly develops, combined with scientific validation.",
     "heroBadge": "Born from experience",
-    "heroTitle": "GROWERS LEADING.",
-    "heroTitleAccent": "SCIENCE SUPPORTING.",
-    "heroDesc": "PlantiPower is developed with science, but always originates from the experience of growers. Only what works for plant and grower stands the test of time.",
-    "visionBadge": "Our Vision",
-    "visionTitle": "What we stand",
-    "visionTitleAccent": "for.",
-    "visionDesc": "Healthy growth starts with balance. We support the natural processes of the plant without forcing them.",
-    "coreTitle": "The Core",
-    "coreDesc": "We believe that healthy growth starts with balance. Not by forcing growth, but by supporting processes that already take place in the plant.",
-    "approachTitle": "The Approach",
-    "approachDesc": "We develop products that support plants in their natural processes. By dealing more smartly with what is already present, our solutions contribute to uniform growth and a better functioning cultivation system.",
+    "heroTitle": "FUNGIPOWER WAS BORN",
+    "heroTitleAccent": "FROM PRACTICE.",
+    "heroDesc": "Born from pure practical experience and a deep understanding of how a cultivation truly develops.",
+    "visionBadge": "The Founder",
+    "visionTitle": "Jan Klerken",
+    "visionTitleAccent": "— Founder FungiPower",
+    "visionDesc": "Jan Klerken grew up in the mushroom world. What for others is a product was his daily reality. Over the years he worked in various parts of the chain and saw how the sector became more professional and technical. What always remained central is the role of the grower — ultimately everything revolves around the person who bears daily responsibility for quality and continuity.",
+    "coreTitle": "The challenge in the sector",
+    "coreDesc": "Modern mushroom cultivation faces major challenges. Raw materials are becoming scarcer and more expensive, while demands on quality and yield only increase. Growers must work increasingly efficiently to remain profitable in a competitive market. In this development, improvement is often not about adding more, but about optimising what is already present.",
+    "approachTitle": "Ourcelia × PlantiPower",
+    "approachDesc": "FungiPower is the result of a strategic collaboration between PlantiPower and Ourcelia. This joint venture combines two worlds: Ourcelia's in-depth biological expertise as a producer of quality spawn, and PlantiPower's years of sector experience. By linking scientific validation to the daily reality of the growing facility, we have developed a biostimulant that truly makes an impact where it counts: in the growing cell.",
     "values": [
       {
-        "title": "Balance",
-        "desc": "Supporting natural processes.",
+        "title": "Ourcelia",
+        "desc": "Biological knowledge & spawn production.",
         "icon": "Leaf"
       },
       {
-        "title": "Uniform",
-        "desc": "Stable growth throughout the season.",
+        "title": "PlantiPower",
+        "desc": "Sector experience & practical knowledge.",
         "icon": "Zap"
       },
       {
-        "title": "Efficient",
-        "desc": "Smarter handling of available input.",
+        "title": "Data & Biology",
+        "desc": "Scientific validation of nutrient uptake and the biological cycle of mycelium.",
         "icon": "Target"
       },
       {
-        "title": "Resilience",
-        "desc": "Respect for plant, soil and environment.",
+        "title": "Stable Results",
+        "desc": "Proven biostimulants that increase yield without disrupting cultivation.",
         "icon": "ShieldCheck"
       }
     ],
-    "whoWeAreTitle": "Who we stand",
-    "whoWeAreAccent": "for.",
-    "whoWeAreDesc": "\"Our products are developed for professional growers focused on quality, stability and efficiency. Growers who build for the long term.\"",
-    "productionBadge": "Developed in the Netherlands",
-    "productionTitle": "Developed and produced in the Netherlands",
-    "productionDesc": "PlantiPower is developed and produced in close cooperation with growers and agricultural specialists. Products are tested under realistic conditions and refined based on practical experience.",
+    "whoWeAreTitle": "Our Goal",
+    "whoWeAreAccent": "Is Clear",
+    "whoWeAreDesc": "\"A more vital cultivation and a more stable flush, ultimately resulting in higher yield per growing cycle. Not by changing the system, but by making it function better.\"",
+    "productionBadge": "Modern Mushroom Cultivation",
+    "productionTitle": "Backed by science.",
+    "productionDesc": "We believe that progress should feel logical. When technology aligns well with the craft, it strengthens the grower's work rather than replacing it. That is what FungiPower stands for.",
     "productionPoints": [
-      "Practically applicable in daily cultivation",
-      "Can be combined with existing schedules",
-      "Suitable for different substrates",
-      "100% natural composition"
+      "Sector Reality: understanding of the work floor and daily cultivation management",
+      "Data & Biology: scientific validation of the biological cycle of mycelium",
+      "Stable Results: proven biostimulants that increase yield",
+      "100% developed from the practice of growers"
     ],
     "missionTitle": "Our Mission",
-    "missionDesc": "\"To develop natural, practical solutions that help growers make their cultivation more stable, efficient and future-proof.\""
+    "missionDesc": "\"Improvement is not about adding more, but about better utilising the natural power of the cultivation.\" — Jan Klerken"
   },
   "Contact": {
     "title": "Get in touch",
@@ -192,8 +193,8 @@
     "successMsg": "Thanks for your message. We will contact you as soon as possible.",
     "newMsg": "Send new message",
     "subject": "New Contact Message",
-    "metaTitle": "Contact | PlantiPower",
-    "metaDesc": "Contact PlantiPower for questions, advice, or partnerships.",
+    "metaTitle": "Contact | FungiPower",
+    "metaDesc": "Contact FungiPower for questions, advice, or partnerships.",
     "heroTitle": "Get in touch",
     "heroTitleAccent": "with us"
   },
@@ -201,25 +202,25 @@
     "title": "Get in",
     "titleAccent": "touch",
     "description": "Do you have questions about our products or want to become a partner? We are here for you.",
-    "metaTitle": "Contact | PlantiPower",
-    "metaDesc": "Contact PlantiPower. Questions about products, partnerships or distribution? We are happy to help."
+    "metaTitle": "Contact | FungiPower",
+    "metaDesc": "Contact FungiPower. Questions about products, partnerships or distribution? We are happy to help."
   },
   "FAQ": {
     "title": "FREQUENTLY ASKED",
     "titleAccent": " QUESTIONS",
-    "metaTitle": "Frequently Asked Questions | PlantiPower",
-    "metaDesc": "Frequently asked questions about PlantiPower biostimulants, usage, and partnership opportunities.",
+    "metaTitle": "Frequently Asked Questions | FungiPower",
+    "metaDesc": "Frequently asked questions about FungiPower biostimulants, usage, and partnership opportunities.",
     "items": [
       {
-        "q": "What is PlantiPower?",
-        "a": "PlantiPower is a natural nutrient transporter that delivers fertilizers directly to plant roots. It helps plants absorb nutrients more efficiently, resulting in stronger growth, higher yield, and better soil health."
+        "q": "What is FungiPower?",
+        "a": "FungiPower is a natural nutrient transporter that delivers fertilizers directly to plant roots. It helps plants absorb nutrients more efficiently, resulting in stronger growth, higher yield, and better soil health."
       },
       {
-        "q": "How often should I apply PlantiPower?",
+        "q": "How often should I apply FungiPower?",
         "a": "For optimal results, we recommend monthly application. Consult product information for specific dosages per crop."
       },
       {
-        "q": "Is PlantiPower a fertilizer?",
+        "q": "Is FungiPower a fertilizer?",
         "a": "No, it's a biostimulant that enhances existing fertilizers."
       },
       {
@@ -227,7 +228,7 @@
         "a": "Yes, it works synergistically with all standard programs."
       },
       {
-        "q": "How does PlantiPower work?",
+        "q": "How does FungiPower work?",
         "a": "It improves root absorption capacity and facilitates mineral transport."
       },
       {
@@ -235,11 +236,11 @@
         "a": "All12 is available in 1 liter, 10 liter, and 1000 liter. Shield is available in 1 liter and 5 liter. Custom quantities/packaging available upon request."
       },
       {
-        "q": "Which crops is PlantiPower suitable for?",
+        "q": "Which crops is FungiPower suitable for?",
         "a": "Suitable for vegetables, fruits, ornamentals, and trees."
       },
       {
-        "q": "Is PlantiPower safe for all plants?",
+        "q": "Is FungiPower safe for all plants?",
         "a": "Yes, when used as directed it is safe for all plants."
       },
       {
@@ -303,8 +304,8 @@
         "badge": "Validated Research",
         "title": "VALIDATED",
         "titleAccent": "CROP OPTIMIZATION",
-        "desc": "This report presents the results of a practical trial with PlantiPower at Van Gog Kwekerijen CV. The dataset includes 65 independent laboratory measurements by Eurofins Agro Wageningen.",
-        "footer": "PlantiPower_PracticalResults_2026",
+        "desc": "This report presents the results of a practical trial with FungiPower at Van Gog Kwekerijen CV. The dataset includes 65 independent laboratory measurements by Eurofins Agro Wageningen.",
+        "footer": "FungiPower_PracticalResults_2026",
         "labMeasurements": "65 laboratory measurements",
         "footerMeasurements": "65 independent laboratory measurements"
       },
@@ -314,32 +315,32 @@
           "silicon": {
             "label": "Silicon uptake doubled",
             "desc": "Silicon uptake efficiency increased from 48% to 94%.",
-            "footer": "PlantiPower_PracticalResults_2026"
+            "footer": "FungiPower_PracticalResults_2026"
           },
           "siliconLeaf": {
             "label": "+38% silicon in young leaves",
             "desc": "Silicon increased from 1.73 to 2.39 mmol/l in young plant sap.",
-            "footer": "PlantiPower_PracticalResults_2026"
+            "footer": "FungiPower_PracticalResults_2026"
           },
           "phosphorus": {
             "label": "Phosphorus uptake 11% → 86%",
             "desc": "The plant absorbed more phosphorus while the irrigation supply increased by 45%.",
-            "footer": "PlantiPower_PracticalResults_2026"
+            "footer": "FungiPower_PracticalResults_2026"
           },
           "molybdenum": {
             "label": "+61% molybdenum",
             "desc": "Molybdenum in young plant sap increased from 2.32 to 3.73 µmol/l.",
-            "footer": "PlantiPower_PracticalResults_2026"
+            "footer": "FungiPower_PracticalResults_2026"
           },
           "zincOld": {
             "label": "+46% Zinc in old leaves",
             "desc": "Zinc increased from 10.1 to 14.7 µmol/l.",
-            "footer": "PlantiPower_PracticalResults_2026"
+            "footer": "FungiPower_PracticalResults_2026"
           },
           "molyOld": {
             "label": "+88% Molybdenum in old leaves",
             "desc": "Old plant sap increased from 4.27 to 8.00 µmol/l.",
-            "footer": "PlantiPower_PracticalResults_2026"
+            "footer": "FungiPower_PracticalResults_2026"
           }
         }
       },
@@ -349,17 +350,17 @@
           "mobilization": {
             "label": "Nutrient mobilization",
             "desc": "Modified fulvic acids mobilize bound nutrients in the substrate, making them available to the root.",
-            "footer": "PlantiPower_PracticalResults_2026"
+            "footer": "FungiPower_PracticalResults_2026"
           },
           "uptake": {
             "label": "Enhanced root uptake",
             "desc": "Silicon strengthens root cell walls, promoting selective nutrient uptake.",
-            "footer": "PlantiPower_PracticalResults_2026"
+            "footer": "FungiPower_PracticalResults_2026"
           },
           "rhizosphere": {
             "label": "Rhizosphere activation",
-            "desc": "PlantiPower stimulates microbial activity around the root, increasing availability of phosphate and trace elements.",
-            "footer": "PlantiPower_PracticalResults_2026"
+            "desc": "FungiPower stimulates microbial activity around the root, increasing availability of phosphate and trace elements.",
+            "footer": "FungiPower_PracticalResults_2026"
           }
         }
       },
@@ -367,51 +368,51 @@
         "title": "INDEPENDENTLY",
         "titleAccent": "MEASURED",
         "desc": "Irrigation water and plant sap are sampled simultaneously by Eurofins Agro Wageningen — this is how we calculate exactly how much the plant absorbs.",
-        "footer": "PlantiPower_PracticalResults_2026",
+        "footer": "FungiPower_PracticalResults_2026",
         "nodes": {
           "iron": {
             "label": "65 independent measurements",
             "desc": "Irrigation water and plant sap sampled simultaneously — conducted by Eurofins Agro Wageningen.",
-            "footer": "PlantiPower_PracticalResults_2026"
+            "footer": "FungiPower_PracticalResults_2026"
           },
           "zinc": {
             "label": "Uptake efficiency calculated",
-            "desc": "Uptake efficiency calculated from plant sap analysis. This is how we measure the difference PlantiPower makes.",
-            "footer": "PlantiPower_PracticalResults_2026"
+            "desc": "Uptake efficiency calculated from plant sap analysis. This is how we measure the difference FungiPower makes.",
+            "footer": "FungiPower_PracticalResults_2026"
           }
         }
       },
       "s5": {
         "title": "CUCUMBER",
-        "captionText": "PlantiPower not only helps the plant absorb nutrients more efficiently, but also become more resilient to salt stress.",
+        "captionText": "FungiPower not only helps the plant absorb nutrients more efficiently, but also become more resilient to salt stress.",
         "nodes": {
           "brix": {
             "label": "+15.8% Brix",
             "desc": "Brix increased from 4.95 to 5.73 in young plant sap.",
-            "footer": "PlantiPower_PracticalResults_2026"
+            "footer": "FungiPower_PracticalResults_2026"
           },
           "exclusion": {
             "label": "Selective ion exclusion",
             "desc": "Na in young leaves −42%, Cl in young leaves −46%.",
-            "footer": "PlantiPower_PracticalResults_2026"
+            "footer": "FungiPower_PracticalResults_2026"
           },
           "zincOld": {
             "label": "+46% zinc in old leaves",
             "desc": "Zinc increased from 10.1 to 14.7 µmol/l.",
-            "footer": "PlantiPower_PracticalResults_2026"
+            "footer": "FungiPower_PracticalResults_2026"
           },
           "molyOld": {
             "label": "+88% molybdenum",
             "desc": "Old plant sap increased from 4.27 to 8.00 µmol/l.",
-            "footer": "PlantiPower_PracticalResults_2026"
+            "footer": "FungiPower_PracticalResults_2026"
           }
         }
       },
       "s6": {
         "title": "ALL12®",
         "titleAccent": "TECHNOLOGY",
-        "desc": "PlantiPower is a nutrient transporter based on modified fulvic acids. While standard fulvic acid products transport three to four elements, PlantiPower transports all twelve essential nutrients directly to the roots.",
-        "footer": "PlantiPower_PracticalResults_2026",
+        "desc": "FungiPower is a nutrient transporter based on modified fulvic acids. While standard fulvic acid products transport three to four elements, FungiPower transports all twelve essential nutrients directly to the roots.",
+        "footer": "FungiPower_PracticalResults_2026",
         "nutrients": [
           "N",
           "P",
@@ -432,7 +433,7 @@
         "title": "Field",
         "titleHighlight": "Results",
         "desc": "65 independent laboratory measurements · irrigation water and plant sap analyses",
-        "quote": "\"The dataset from Van Gog Kwekerijen provides convincing evidence that PlantiPower's ALL12® Technology measurably improves nutrient uptake in cucumber plants. The six key findings are consistent with four years of WUR research.\"",
+        "quote": "\"The dataset from Van Gog Kwekerijen provides convincing evidence that FungiPower's ALL12® Technology measurably improves nutrient uptake in cucumber plants. The six key findings are consistent with four years of WUR research.\"",
         "methodBase": "Methodology: uptake efficiency calculated from plant sap analysis",
         "methodExclusion": "1 measurement excluded (equipment malfunction)",
         "methodStrong": "Strongest evidence: Si, Zn, Cu (irrigation water stable)",
@@ -468,14 +469,14 @@
         "badge": "Summary",
         "title": "CONCLUSION",
         "p1": "The above results are based on 65 independent laboratory measurements conducted by Eurofins Agro Wageningen at Van Gog Kwekerijen in Helmond, the Netherlands. The dataset includes irrigation water and plant sap analyses of cucumber plants grown on rockwool substrate.",
-        "p2": "The results demonstrate that nutrient uptake in cucumber plants measurably improves when using PlantiPower. Multiple elements show a significant increase in uptake efficiency, while irrigation water input for these elements remained stable.",
-        "p3": "The dataset of Van Gog Kwekerijen provides strong practical evidence for the efficacy of PlantiPower's ALL12® Technology.",
+        "p2": "The results demonstrate that nutrient uptake in cucumber plants measurably improves when using FungiPower. Multiple elements show a significant increase in uptake efficiency, while irrigation water input for these elements remained stable.",
+        "p3": "The dataset of Van Gog Kwekerijen provides strong practical evidence for the efficacy of FungiPower's ALL12® Technology.",
         "btnDownload": "Request the complete report"
       },
       "s7": {
         "title": "RESULTS",
         "titleAccent": "IN HAND",
-        "desc": "Ready for the next step in crop optimization? Start today with PlantiPower ALL12 and experience the difference in uptake and yield.",
+        "desc": "Ready for the next step in crop optimization? Start today with FungiPower ALL12 and experience the difference in uptake and yield.",
         "btnProduct": "Product Page",
         "btnSample": "Request Sample Pack"
       }

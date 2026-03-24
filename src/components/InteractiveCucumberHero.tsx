@@ -203,13 +203,13 @@ const InteractiveCucumberHero: React.FC<InteractiveCucumberHeroProps> = ({ mode,
                 initial={{ opacity: 0, y: dir === 'down' ? -8 : 8 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.15 + i * 0.08, duration: 0.45 }}
-                className="flex-1 relative px-2.5 py-2 rounded-xl bg-black/95 border border-lime-500/40 active:border-lime-400/70 cursor-pointer"
+                className="flex-1 relative px-2.5 py-2 rounded-xl bg-black/95 border border-orange-500/40 active:border-orange-400/70 cursor-pointer"
                 style={{ minWidth: 0 }}
                 onClick={() => setExpandedCard(spot.id)}
             >
                 <div className="flex items-center gap-1 mb-0.5">
-                    <div className="w-1 h-1 rounded-full bg-lime-400 flex-none" />
-                    <span className="text-lime-400 text-[7px] font-black uppercase tracking-wider font-outfit">Node</span>
+                    <div className="w-1 h-1 rounded-full bg-orange-400 flex-none" />
+                    <span className="text-orange-400 text-[7px] font-black uppercase tracking-wider font-outfit">Node</span>
                 </div>
                 <div className="text-white text-[10px] font-black leading-snug uppercase tracking-tight font-outfit mb-0.5 line-clamp-2">
                     {spot.label}
@@ -218,14 +218,14 @@ const InteractiveCucumberHero: React.FC<InteractiveCucumberHeroProps> = ({ mode,
                     {spot.desc}
                 </div>
                 {/* Tap hint */}
-                <div className="absolute top-1.5 right-2 text-lime-400/40">
+                <div className="absolute top-1.5 right-2 text-orange-400/40">
                     <svg width="8" height="8" viewBox="0 0 8 8" fill="none">
                         <path d="M4 1v6M1 4h6" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round"/>
                     </svg>
                 </div>
                 {/* Chevron pointing toward plant */}
                 <div
-                    className="absolute left-1/2 -translate-x-1/2 text-lime-400/60"
+                    className="absolute left-1/2 -translate-x-1/2 text-orange-400/60"
                     style={{ [dir === 'down' ? 'bottom' : 'top']: '-14px' }}
                 >
                     <svg width="12" height="8" viewBox="0 0 12 8" fill="none"
@@ -352,14 +352,14 @@ const InteractiveCucumberHero: React.FC<InteractiveCucumberHeroProps> = ({ mode,
                                 initial={{ y: 40, opacity: 0 }}
                                 animate={{ y: 0, opacity: 1 }}
                                 transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] }}
-                                className="relative w-full bg-[#090e09] border-t border-lime-500/40 px-6 pt-5 rounded-t-2xl"
+                                className="relative w-full bg-[#090e09] border-t border-orange-500/40 px-6 pt-5 rounded-t-2xl"
                                 style={{ paddingBottom: 'max(2.5rem, env(safe-area-inset-bottom))' }}
                                 onClick={e => e.stopPropagation()}
                             >
                                 <div className="w-8 h-0.5 bg-white/20 rounded-full mx-auto mb-5" />
                                 <div className="flex items-center gap-2 mb-2">
-                                    <div className="w-1.5 h-1.5 rounded-full bg-lime-400" />
-                                    <span className="text-lime-400 text-[9px] font-black uppercase tracking-[0.2em] font-outfit">Validated Node</span>
+                                    <div className="w-1.5 h-1.5 rounded-full bg-orange-400" />
+                                    <span className="text-orange-400 text-[9px] font-black uppercase tracking-[0.2em] font-outfit">Validated Node</span>
                                 </div>
                                 <div className="text-white text-lg font-black uppercase tracking-tight font-outfit mb-3">
                                     {spot.label}
@@ -537,28 +537,28 @@ const InteractiveCucumberHero: React.FC<InteractiveCucumberHeroProps> = ({ mode,
                                     ${spot.align === 'left'
                                         ? spot.gap === 'wide' ? 'right-full mr-16' : 'right-full mr-6'
                                         : spot.gap === 'wide' ? 'left-full ml-16' : 'left-full ml-6'}
-                                    px-5 py-4 rounded-2xl bg-black/95 backdrop-blur-xl border border-lime-500/40
+                                    px-5 py-4 rounded-2xl bg-black/95 backdrop-blur-xl border border-orange-500/40
                                     shadow-[0_20px_50px_rgba(0,0,0,0.8)]
                                     w-[200px] xl:w-[240px] z-30
                                 `}
                             >
                                 <div className="flex items-center gap-2 mb-1.5">
-                                    <div className="w-1.5 h-1.5 rounded-full bg-lime-400" />
-                                    <div className="text-lime-400 text-[9px] font-black uppercase tracking-[0.2em] font-outfit">Validated Node</div>
+                                    <div className="w-1.5 h-1.5 rounded-full bg-orange-400" />
+                                    <div className="text-orange-400 text-[9px] font-black uppercase tracking-[0.2em] font-outfit">Validated Node</div>
                                 </div>
                                 <div className="text-white text-base lg:text-lg font-black leading-tight uppercase tracking-tight font-outfit">
                                     {spot.label}
                                 </div>
-                                <div className="text-emerald-100/60 text-xs mt-2 font-medium leading-relaxed">
+                                <div className="text-orange-100/60 text-xs mt-2 font-medium leading-relaxed">
                                     {spot.desc}
                                 </div>
                                 {/* Connector line to dot */}
-                                <div className={`absolute top-1/2 -translate-y-1/2 h-px bg-lime-400/50 ${
+                                <div className={`absolute top-1/2 -translate-y-1/2 h-px bg-orange-400/50 ${
                                     spot.gap === 'wide' ? 'w-20' : 'w-8'
                                 } ${
                                     spot.align === 'right' ? 'right-full' : 'left-full'
                                 }`} />
-                                <div className={`flex absolute top-1/2 -translate-y-1/2 ${spot.align === 'right' ? '-left-3' : '-right-3'} text-lime-400`}>
+                                <div className={`flex absolute top-1/2 -translate-y-1/2 ${spot.align === 'right' ? '-left-3' : '-right-3'} text-orange-400`}>
                                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" className={spot.align === 'right' ? '' : 'rotate-180'}>
                                         <path d="M15 18L9 12L15 6" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
                                     </svg>
@@ -570,7 +570,7 @@ const InteractiveCucumberHero: React.FC<InteractiveCucumberHeroProps> = ({ mode,
                     {/* Caption text — cucumber section */}
                     {assets.captionText && (
                         <div className="absolute bottom-4 left-1/2 -translate-x-1/2 w-full max-w-xl text-center px-6 z-30">
-                            <p className="text-sm text-emerald-100/45 leading-relaxed italic">
+                            <p className="text-sm text-orange-100/45 leading-relaxed italic">
                                 {assets.captionText}
                             </p>
                         </div>

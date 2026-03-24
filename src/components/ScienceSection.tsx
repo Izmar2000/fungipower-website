@@ -8,8 +8,8 @@ const ScienceSection: React.FC = () => {
     const content = {
         title: isNL ? "Gevalideerde Wetenschap." : "Validated Science.",
         description: isNL
-            ? "PlantiPower is ontwikkeld in samenwerking met toonaangevende agronomen om de grenzen van traditionele teelt te doorbreken."
-            : "PlantiPower was developed in collaboration with leading agronomists to break the boundaries of traditional cultivation.",
+            ? "FungiPower is ontwikkeld in samenwerking met toonaangevende agronomen om de grenzen van traditionele teelt te doorbreken."
+            : "FungiPower was developed in collaboration with leading agronomists to break the boundaries of traditional cultivation.",
         badge: isNL ? "BEWEZEN RESULTATEN 2024" : "PROVEN RESULTS 2024",
         cards: isNL ? [
             {
@@ -65,33 +65,33 @@ const ScienceSection: React.FC = () => {
     };
 
     return (
-        <section className="py-12 md:py-20 bg-emerald-950 relative">
+        <section className="py-12 md:py-20 bg-orange-950 relative">
             <div className="max-w-7xl mx-auto px-6">
                 <div className="text-center mb-12 max-w-3xl mx-auto">
                     <h2 className="text-3xl md:text-5xl font-black text-white mb-4 tracking-tight leading-none uppercase">
                         {content.title}
                     </h2>
-                    <p className="text-lg text-emerald-100/60 leading-relaxed font-medium mb-6">
+                    <p className="text-lg text-orange-100/60 leading-relaxed font-medium mb-6">
                         {content.description}
                     </p>
-                    <div className="inline-flex items-center gap-3 px-4 py-1.5 rounded-full bg-lime-500/5 border border-lime-500/10 backdrop-blur-sm">
-                        <div className="w-1.5 h-1.5 bg-lime-500 rounded-full animate-pulse"></div>
-                        <span className="text-[10px] font-mono text-lime-400 tracking-widest uppercase">{content.badge}</span>
+                    <div className="inline-flex items-center gap-3 px-4 py-1.5 rounded-full bg-orange-500/5 border border-orange-500/10 backdrop-blur-sm">
+                        <div className="w-1.5 h-1.5 bg-orange-500 rounded-full animate-pulse"></div>
+                        <span className="text-[10px] font-mono text-orange-400 tracking-widest uppercase">{content.badge}</span>
                     </div>
                 </div>
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
                     {content.cards.map((card, i) => (
-                        <div key={i} className="group relative bg-[#021814]/60 backdrop-blur-sm rounded-2xl p-6 border border-white/5 hover:bg-[#021814] hover:border-lime-500/20 transition-all duration-300">
+                        <div key={i} className="group relative bg-[#021814]/60 backdrop-blur-sm rounded-2xl p-6 border border-white/5 hover:bg-[#021814] hover:border-orange-500/20 transition-all duration-300">
                             <div className="absolute top-4 right-4 text-4xl font-black text-white/5 group-hover:text-white/10 transition-colors leading-none tracking-tighter">
                                 {card.id}
                             </div>
                             <div className="relative z-10">
-                                <div className="inline-block px-2 py-0.5 rounded bg-lime-500/10 text-[9px] font-black tracking-widest text-lime-500 mb-4 border border-lime-500/20">
+                                <div className="inline-block px-2 py-0.5 rounded bg-orange-500/10 text-[9px] font-black tracking-widest text-orange-500 mb-4 border border-orange-500/20">
                                     {card.badge}
                                 </div>
                                 <h3 className="text-lg font-black text-white mb-2 uppercase tracking-tight">{card.title}</h3>
-                                <p className="text-xs text-emerald-100/50 leading-relaxed">
+                                <p className="text-xs text-orange-100/50 leading-relaxed">
                                     {card.text}
                                 </p>
                             </div>

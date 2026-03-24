@@ -41,8 +41,8 @@ const MobileMenu: FC<MobileMenuProps> = ({ open, onClose, onOpenSample, dict, la
             <div className="flex justify-between items-center px-6 py-6 border-b border-white/5 bg-[#01140f]">
                 <Link href={`/${lang}`} onClick={onClose} className="h-8">
                     <img
-                        src="https://irp.cdn-website.com/480e14da/dms3rep/multi/Planti-Power-Logo-.png"
-                        alt="PlantiPower"
+                        src="/images/fungipower-logo.png"
+                        alt="FungiPower"
                         className="h-full object-contain"
                     />
                 </Link>
@@ -61,14 +61,14 @@ const MobileMenu: FC<MobileMenuProps> = ({ open, onClose, onOpenSample, dict, la
                     <Link
                         href={`/${lang}`}
                         onClick={onClose}
-                        className={`text-2xl sm:text-3xl font-black uppercase tracking-tighter py-2 transition-colors whitespace-nowrap ${isActive('/') ? 'text-lime-400' : 'text-white'}`}
+                        className={`text-2xl sm:text-3xl font-black uppercase tracking-tighter py-2 transition-colors whitespace-nowrap ${isActive('/') ? 'text-orange-400' : 'text-white'}`}
                     >
                         {t?.home || "Home"}
                     </Link>
                     <Link
                         href={getPath('about', lang)}
                         onClick={onClose}
-                        className={`text-2xl sm:text-3xl font-black uppercase tracking-tighter py-2 transition-colors whitespace-nowrap ${isActive('about') ? 'text-lime-400' : 'text-white'}`}
+                        className={`text-2xl sm:text-3xl font-black uppercase tracking-tighter py-2 transition-colors whitespace-nowrap ${isActive('about') ? 'text-orange-400' : 'text-white'}`}
                     >
                         {String(t?.about || t?.aboutLabel || (isDE ? "Über uns" : isNL ? "Over ons" : "About")).replace(/ /g, '\u00A0')}
                     </Link>
@@ -80,9 +80,9 @@ const MobileMenu: FC<MobileMenuProps> = ({ open, onClose, onOpenSample, dict, la
                     <Link
                         href={getPath('products/all12', lang)}
                         onClick={onClose}
-                        className={`flex items-center justify-between p-5 rounded-xl border ${isActive('products/all12') ? 'bg-lime-500/10 border-lime-500/30 text-lime-400' : 'bg-white/5 border-white/5 text-white active:bg-white/10'}`}
+                        className={`flex items-center justify-between p-5 rounded-xl border ${isActive('products/all12') ? 'bg-orange-500/10 border-orange-500/30 text-orange-400' : 'bg-white/5 border-white/5 text-white active:bg-white/10'}`}
                     >
-                        <span className="text-xl font-bold uppercase tracking-widest">{t?.all12 || "PlantiPower All12"}</span>
+                        <span className="text-xl font-bold uppercase tracking-widest">{t?.all12 || "FungiPower All12"}</span>
                         <ChevronRight className="w-5 h-5 opacity-30" />
                     </Link>
                     <Link
@@ -90,7 +90,7 @@ const MobileMenu: FC<MobileMenuProps> = ({ open, onClose, onOpenSample, dict, la
                         onClick={onClose}
                         className={`flex items-center justify-between p-5 rounded-xl border ${isActive('products/shield') ? 'bg-blue-900/20 border-blue-500/30 text-blue-400' : 'bg-white/5 border-white/5 text-white active:bg-white/10'}`}
                     >
-                        <span className="text-xl font-bold uppercase tracking-widest">{t?.shield || "PlantiPower Shield"}</span>
+                        <span className="text-xl font-bold uppercase tracking-widest">{t?.shield || "FungiPower Shield"}</span>
                         <ChevronRight className="w-5 h-5 opacity-30" />
                     </Link>
                 </div>
@@ -102,7 +102,7 @@ const MobileMenu: FC<MobileMenuProps> = ({ open, onClose, onOpenSample, dict, la
                         onClick={onClose}
                         className="flex flex-col gap-2 p-5 rounded-xl bg-white/5 border border-white/5 text-white active:bg-white/10"
                     >
-                        <HelpCircle className="w-5 h-5 text-lime-500" />
+                        <HelpCircle className="w-5 h-5 text-orange-500" />
                         <span className="text-[12px] font-black uppercase tracking-widest">{t?.faq || "FAQ"}</span>
                     </Link>
                     <Link
@@ -110,7 +110,7 @@ const MobileMenu: FC<MobileMenuProps> = ({ open, onClose, onOpenSample, dict, la
                         onClick={onClose}
                         className="flex flex-col gap-2 p-5 rounded-xl bg-white/5 border border-white/5 text-white active:bg-white/10"
                     >
-                        <MessageSquare className="w-5 h-5 text-lime-500" />
+                        <MessageSquare className="w-5 h-5 text-orange-500" />
                         <span className="text-[12px] font-black uppercase tracking-widest">{t?.contact || "Contact"}</span>
                     </Link>
                 </div>
@@ -119,17 +119,17 @@ const MobileMenu: FC<MobileMenuProps> = ({ open, onClose, onOpenSample, dict, la
                 <div className="mt-auto flex flex-col gap-6 pt-6 border-t border-white/5 pb-8">
                     <div className="flex items-center justify-between">
                         <span className="text-white/30 text-[10px] font-black uppercase tracking-widest">Language</span>
-                        <div className="flex items-center gap-3 text-xs font-bold tracking-[0.2em] text-emerald-100/40 uppercase bg-white/5 px-5 py-3.5 rounded-xl border border-white/10">
-                            <Link href={getLocalizedPath(pathname, 'en')} onClick={onClose} className={`transition-all hover:text-white ${lang === 'en' ? 'text-lime-400 scale-110 drop-shadow-[0_0_8px_rgba(132,204,22,0.8)]' : ''}`}>EN</Link>
+                        <div className="flex items-center gap-3 text-xs font-bold tracking-[0.2em] text-orange-100/40 uppercase bg-white/5 px-5 py-3.5 rounded-xl border border-white/10">
+                            <Link href={getLocalizedPath(pathname, 'en')} onClick={onClose} className={`transition-all hover:text-white ${lang === 'en' ? 'text-orange-400 scale-110 drop-shadow-[0_0_8px_rgba(132,204,22,0.8)]' : ''}`}>EN</Link>
                             <span className="opacity-30">|</span>
-                            <Link href={getLocalizedPath(pathname, 'nl')} onClick={onClose} className={`transition-all hover:text-white ${lang === 'nl' ? 'text-lime-400 scale-110 drop-shadow-[0_0_8px_rgba(132,204,22,0.8)]' : ''}`}>NL</Link>
+                            <Link href={getLocalizedPath(pathname, 'nl')} onClick={onClose} className={`transition-all hover:text-white ${lang === 'nl' ? 'text-orange-400 scale-110 drop-shadow-[0_0_8px_rgba(132,204,22,0.8)]' : ''}`}>NL</Link>
                             <span className="opacity-30">|</span>
-                            <Link href={getLocalizedPath(pathname, 'de')} onClick={onClose} className={`transition-all hover:text-white ${lang === 'de' ? 'text-lime-400 scale-110 drop-shadow-[0_0_8px_rgba(132,204,22,0.8)]' : ''}`}>DE</Link>
+                            <Link href={getLocalizedPath(pathname, 'de')} onClick={onClose} className={`transition-all hover:text-white ${lang === 'de' ? 'text-orange-400 scale-110 drop-shadow-[0_0_8px_rgba(132,204,22,0.8)]' : ''}`}>DE</Link>
                         </div>
                     </div>
                     <button
                         onClick={() => { onOpenSample(); onClose(); }}
-                        className="w-full bg-lime-500 text-emerald-950 font-black py-5 rounded-xl text-center uppercase tracking-widest text-sm shadow-xl active:scale-[0.98] transition-all"
+                        className="w-full bg-orange-500 text-orange-950 font-black py-5 rounded-xl text-center uppercase tracking-widest text-sm shadow-xl active:scale-[0.98] transition-all"
                     >
                         {t?.cta || "Sample Aanvragen"}
                     </button>

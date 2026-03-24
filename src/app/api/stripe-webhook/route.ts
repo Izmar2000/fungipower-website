@@ -55,18 +55,18 @@ export async function POST(request: Request) {
                 if (resend && email) {
                     // 1. Send Welcome Email to Customer
                     await resend.emails.send({
-                        from: 'PlantiPower <info@mail.plantipower.com>',
+                        from: 'FungiPower <info@mail.fungipower.com>',
                         to: email,
-                        replyTo: 'info@plantipower.com',
-                        subject: 'Welkom bij PlantiPower - Je aanvraag is ontvangen',
+                        replyTo: 'info@fungipower.com',
+                        subject: 'Welkom bij FungiPower - Je aanvraag is ontvangen',
                         html: emailHtml
                     });
                     console.log(`Email sent successfully to customer: ${email}`);
 
                     // 2. Send Notification to Internal Team
                     await resend.emails.send({
-                        from: 'PlantiPower Orders <info@mail.plantipower.com>',
-                        to: 'info@plantipower.com',
+                        from: 'FungiPower Orders <info@mail.fungipower.com>',
+                        to: 'info@fungipower.com',
                         replyTo: email,
                         subject: `🎉 Nieuwe Proefpakket Bestelling: ${company || name}`,
                         html: `
@@ -84,7 +84,7 @@ export async function POST(request: Request) {
                                 <p>${stripeAddress}</p>
                                 
                                 <h3 style="border-bottom: 2px solid #eee; padding-bottom: 5px;">Product & Teelt</h3>
-                                <p><strong>Order:</strong> PlantiPower Proefpakket (€29,95)</p>
+                                <p><strong>Order:</strong> FungiPower Proefpakket (€29,95)</p>
                                 <p><strong>Categorie:</strong> ${cropCategory}</p>
                                 <p><strong>Specifiek Gewas:</strong> ${crop} ${otherCrop ? `(${otherCrop})` : ''}</p>
                                 <p><strong>Opmerkingen:</strong> ${comments || 'Geen'}</p>
@@ -94,11 +94,11 @@ export async function POST(request: Request) {
                                 <p><strong>Stripe Session ID:</strong> ${session.id}</p>
                                 
                                 <hr style="border: none; border-top: 1px solid #eee; margin-top: 20px;" />
-                                <p style="font-size: 12px; color: #999;">Gezonden via PlantiPower Automation</p>
+                                <p style="font-size: 12px; color: #999;">Gezonden via FungiPower Automation</p>
                             </div>
                         `
                     });
-                    console.log(`Notification sent successfully to info@plantipower.com`);
+                    console.log(`Notification sent successfully to info@fungipower.com`);
                 } else {
                     console.log('Skipping email send: Resend not initialized or email missing.', { hasResend: !!resend, email });
                 }

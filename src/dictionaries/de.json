@@ -6,42 +6,42 @@
     "faq": "FAQ",
     "contact": "Kontakt",
     "cta": "Probe anfordern",
-    "all12": "PlantiPower All12",
-    "all12Desc": "Optimieren Sie die Aufnahme",
-    "shield": "PlantiPower Shield",
-    "shieldDesc": "Maximale Widerstandskraft",
+    "all12": "FungiPower Start",
+    "all12Desc": "Optimale Startbasis",
+    "shield": "FungiPower Boost",
+    "shieldDesc": "Maximaler Wachstumsboost",
     "aboutLabel": "Über uns"
   },
   "Hero": {
-    "titleLine1": "MEHR AUFNAHME",
-    "titleLine2": "STÄRKERE WURZELN",
-    "titleLine3": "HÖHERER ERTRAG",
-    "uspsPart1": "WENIGER VERSCHWENDUNG",
-    "uspsPart2": "BESSERE AUFNAHME",
-    "uspsPart3": "GESÜNDERE KULTUREN",
-    "description": "Ein Teil der Nährstoffe, die Sie zuführen, verbleibt immer im Boden oder Substrat. Die Folge: Die Pflanze nutzt ihr volles Potenzial nicht.<br /><br />PlantiPower ALL12 transportiert alle 12 essentiellen Nährstoffe zur Wurzel, wodurch die Pflanze vitaler ist und effizienter wächst.",
-    "ctaMore": "Mehr über",
-    "ctaProduct": "PlantiPower ALL12",
-    "ctaView": "Ansehen",
-    "ctaCases": "Praxisbeispiele"
+    "titleLine1": "Schnellere Ernte,",
+    "titleLine2": "Mehr Ertrag,",
+    "titleLine3": "Gleichmäßiges Wachstum.",
+    "uspsPart1": "BIOLOGISCHE VERSTÄRKUNG",
+    "uspsPart2": "MEHR ERTRAG PRO SCHUB",
+    "uspsPart3": "GETESTET IM KOMMERZIELLEN ANBAU",
+    "description": "FungiPower stärkt den natürlichen Kreislauf des Myzels. Über das Myzelnetzwerk werden Spurenelemente effizient zu den Fruchtkörpern transportiert, was zu gleichmäßigem Wachstum, schnellerer Ernte und höherem Ertrag pro m² führt. Entwickelt und validiert im kommerziellen Pilzanbau.",
+    "ctaMore": "ANSEHEN",
+    "ctaProduct": "Unsere Methodik",
+    "ctaView": "ANSEHEN",
+    "ctaCases": "Praxisergebnisse"
   },
   "GrowerFocus": {
     "badge": "DIE PHILOSOPHIE",
     "title": "Wir ändern nichts",
     "titleAccent": "Sie optimieren alles",
-    "description": "Ihr Düngeplan ist das Fundament Ihres Erfolgs. PlantiPower wurde entwickelt, um dieses Fundament zu stärken, nicht zu ersetzen. Wir bieten die technologische Unterstützung für eine stabile Aufnahme und konsistente Ergebnisse in jeder Phase der Kultur.",
+    "description": "Ihr Anbauprozess ist das Fundament Ihres Erfolgs. FungiPower wurde entwickelt, um dieses Fundament zu stärken, nicht zu ersetzen. Wir bieten biologische Unterstützung für eine stabile Myzelentwicklung und konsistente Schübe in jeder Phase des Anbauzyklus.",
     "usps": [
       {
-        "title": "Ihr Plan bleibt führend",
-        "desc": "Keine Anpassungen bei EC oder pH erforderlich. PlantiPower integriert sich nahtlos."
+        "title": "Ihre Methode bleibt führend",
+        "desc": "Keine Anpassungen an Ihrem bestehenden Prozess erforderlich. FungiPower integriert sich nahtlos in jeden Betrieb."
       },
       {
         "title": "Sofort sichtbares Ergebnis",
-        "desc": "Bessere Aufnahme bedeutet direkt eine vitalere und widerstandsfähigere Kultur."
+        "desc": "Ein vitaleres Myzel bedeutet gleichmäßige Fruchtkörper und einen schnelleren Schub."
       },
       {
         "title": "Machen Sie weiter wie bisher",
-        "desc": "PlantiPower erledigt den Rest im Hintergrund."
+        "desc": "FungiPower stärkt den biologischen Kreislauf im Hintergrund."
       }
     ],
     "cta": "Probe anfordern"
@@ -51,22 +51,23 @@
     "title": "Validierte",
     "titleHighlight": "Praxisresultate",
     "validated": "Validiert",
-    "description": "Vom Tomatenanbau bis zur Gurkenzucht: PlantiPower maximiert die Aufnahmekapazität in jedem professionellen Umfeld.",
+    "description": "Vom ersten Schub bis zum vollständigen Anbauzyklus: FungiPower maximiert die Aufnahmekapazität des Myzels in jedem professionellen Betrieb.",
     "crops": [
       {
-        "name": "Tomatenanbau",
-        "stats_0_title": "Fruchtqualität",
-        "stats_0_desc": "Konsistentes Gewicht und höherer Brix-Wert.",
-        "stats_1_title": "Effiziente Aufnahme",
-        "stats_1_desc": "Weniger Verschwendung von Düngemitteln."
+        "name": "Erster Schub",
+        "image": "/images/champignon-kweker.png",
+        "stats_0_title": "Gleichmäßige Fruchtkörper",
+        "stats_0_desc": "Konsistente Größe und Gewicht durch optimierte Myzelaktivität.",
+        "stats_1_title": "Kürzere Zykluszeit",
+        "stats_1_desc": "Schnellere Primordienbildung bei aktivem und vitalem Myzel."
       },
       {
-        "name": "Gurkenanbau",
-        "stats_0_badgeLabel": "+2",
-        "stats_0_title": "+2 Gurken / m²",
-        "stats_0_desc": "Gewinn bei Van Gog Gärtnereien.",
-        "stats_1_title": "1 Tag früher ernten",
-        "stats_1_desc": "Schnellerer Zyklus durch Transporteffizienz."
+        "name": "Anbauzyklus",
+        "image": "/images/fungipower-hero-plant.png",
+        "stats_0_title": "Höherer Ertrag pro m²",
+        "stats_0_desc": "Effizientere Nutzung des Substrats pro Anbauzyklus.",
+        "stats_1_title": "Weniger Ausschuss",
+        "stats_1_desc": "Gleichmäßigere Kolonisierung reduziert unverkäufliche Pilze."
       }
     ],
     "animationCards": [
@@ -109,74 +110,74 @@
       {
         "name": "Tomatenerzeuger",
         "role": "Noord-Brabant",
-        "text": "Seit wir PlantiPower zu unserem Plan hinzufügen, sehen wir einen deutlichen Unterschied: stärkere Pflanzen, vollere Blüte und einen kürzeren Wachstumszyklus. Und das ohne zusätzliche Zusätze."
+        "text": "Seit wir FungiPower zu unserem Plan hinzufügen, sehen wir einen deutlichen Unterschied: stärkere Pflanzen, vollere Blüte und einen kürzeren Wachstumszyklus. Und das ohne zusätzliche Zusätze."
       },
       {
         "name": "Kräutererzeuger",
         "role": "Biologischer Anbau",
-        "text": "Was mich anspricht, ist, dass PlantiPower nicht nur Ergebnisse liefert, sondern die Pflanze wirklich stärkt. Weniger Ausfall, bessere Aufnahme und 100% natürlich. Genau das, was der Sektor braucht."
+        "text": "Was mich anspricht, ist, dass FungiPower nicht nur Ergebnisse liefert, sondern die Pflanze wirklich stärkt. Weniger Ausfall, bessere Aufnahme und 100% natürlich. Genau das, was der Sektor braucht."
       }
     ]
   },
   "ProblemSection": {
     "badge": "DIE HERAUSFORDERUNG",
-    "title": "Das Problem in",
-    "titleAccent": "der Praxis",
-    "description": "In einer perfekten Welt wird jedes Gramm Dünger, das Sie geben, auch tatsächlich von der Pflanze aufgenommen. Die Realität sieht anders aus. Faktoren wie pH-Schwankungen, kaltes Wasser oder ein Ungleichgewicht in der Wurzelzone verursachen oft Blockaden.",
-    "quote": "\"Dies führt dazu, dass ungenutzte Nährstoffe im Substrat verbleiben – eine Verschwendung der Investition und belastend für die Kultur.\"",
-    "closing": "Indem Sie diese 'Blocker' mit PlantiPower beseitigen, holen Sie das Maximum aus Ihrem bestehenden Plan heraus."
+    "title": "Die Herausforderung im",
+    "titleAccent": "Pilzanbau",
+    "description": "Im idealen Anbauzyklus kolonisiert das Myzel vollständig und alle Nährstoffe im Substrat werden optimal genutzt. Die Realität sieht anders aus. Ungleichmäßige Kolonisierung, langsame Schübe und ungleichmäßige Fruchtkörper führen zu Verschwendung und niedrigerem Ertrag pro Zyklus.",
+    "quote": "\"Nicht das Substrat ist das Problem, sondern die Effizienz, mit der das Myzel die verfügbaren Nährstoffe aufnimmt und nutzt.\"",
+    "closing": "Indem FungiPower den biologischen Kreislauf des Myzels stärkt, erzielen Sie mehr Ertrag aus jedem Substratblock."
   },
   "About": {
-    "metaTitle": "Über Uns | PlantiPower",
-    "metaDesc": "PlantiPower ist aus der Praxis entstanden. Wir entwickeln natürliche Lösungen, die Pflanzen in ihren natürlichen Prozessen unterstützen.",
+    "metaTitle": "Über Uns | FungiPower",
+    "metaDesc": "FungiPower entstand aus der Praxis von Jan Klerken — ein tiefes Verständnis dafür, wie sich ein Anbau wirklich entwickelt, kombiniert mit wissenschaftlicher Validierung.",
     "heroBadge": "Aus der Praxis entstanden",
-    "heroTitle": "ERZEUGER FÜHREND.",
-    "heroTitleAccent": "WISSENSCHAFT UNTERSTÜTZEND.",
-    "heroDesc": "PlantiPower wird wissenschaftlich entwickelt, entsteht aber immer aus der Praxis der Erzeuger. Nur was für Pflanze und Erzeuger funktioniert, hat Bestand.",
-    "visionBadge": "Unsere Vision",
-    "visionTitle": "Wofür wir",
-    "visionTitleAccent": "stehen.",
-    "visionDesc": "Gesundes Wachstum beginnt mit Balance. Wir unterstützen die natürlichen Prozesse der Pflanze, ohne sie zu forcieren.",
-    "coreTitle": "Der Kern",
-    "coreDesc": "Wir glauben, dass gesundes Wachstum mit Balance beginnt. Nicht durch das Forcieren des Wachstums, sondern durch die Unterstützung von Prozessen, die bereits in der Pflanze stattfinden.",
-    "approachTitle": "Der Ansatz",
-    "approachDesc": "Wir entwickeln Produkte, die Pflanzen in ihren natürlichen Prozessen unterstützen. Durch einen intelligenteren Umgang mit dem, was bereits vorhanden ist, tragen unsere Lösungen zu einem gleichmäßigen Wachstum und einem besser funktionierenden Anbausystem bei.",
+    "heroTitle": "FUNGIPOWER ENTSTAND",
+    "heroTitleAccent": "AUS DER PRAXIS.",
+    "heroDesc": "Entstanden aus purer Praxiserfahrung und einem tiefen Verständnis dafür, wie sich ein Anbau wirklich entwickelt.",
+    "visionBadge": "Der Gründer",
+    "visionTitle": "Jan Klerken",
+    "visionTitleAccent": "— Gründer FungiPower",
+    "visionDesc": "Jan Klerken wuchs in der Pilzwelt auf. Was für andere ein Produkt ist, war für ihn tägliche Realität. Im Laufe der Jahre arbeitete er in verschiedenen Teilen der Kette und sah, wie die Branche professioneller und technischer wurde. Was dabei immer im Mittelpunkt stand, ist die Rolle des Erzeugers — letztendlich dreht sich alles um denjenigen, der täglich Verantwortung für Qualität und Kontinuität trägt.",
+    "coreTitle": "Die Herausforderung in der Branche",
+    "coreDesc": "Der moderne Pilzanbau steht vor großen Herausforderungen. Rohstoffe werden knapper und teurer, während die Anforderungen an Qualität und Ertrag weiter steigen. Erzeuger müssen immer effizienter arbeiten, um in einem wettbewerbsintensiven Markt rentabel zu bleiben. In dieser Entwicklung geht es bei Verbesserungen oft nicht darum, mehr hinzuzufügen, sondern das Vorhandene zu optimieren.",
+    "approachTitle": "Ourcelia × PlantiPower",
+    "approachDesc": "FungiPower ist das Ergebnis einer strategischen Zusammenarbeit zwischen PlantiPower und Ourcelia. Dieses Joint Venture kombiniert zwei Welten: das tiefgreifende biologische Fachwissen von Ourcelia als Produzent von hochwertigem Substrat und die langjährige Branchenerfahrung von PlantiPower. Durch die Verknüpfung wissenschaftlicher Validierung mit dem täglichen Betrieb des Anbaubetriebs haben wir einen Biostimulans entwickelt, der dort wirklich Wirkung zeigt, wo es darauf ankommt: in der Anbaukammer.",
     "values": [
       {
-        "title": "Balance",
-        "desc": "Unterstützung natürlicher Prozesse.",
+        "title": "Ourcelia",
+        "desc": "Biologisches Wissen & Substratproduktion.",
         "icon": "Leaf"
       },
       {
-        "title": "Gleichmäßigkeit",
-        "desc": "Stabiles Wachstum über die ganze Saison.",
+        "title": "PlantiPower",
+        "desc": "Branchenerfahrung & Praxiswissen.",
         "icon": "Zap"
       },
       {
-        "title": "Effizienz",
-        "desc": "Intelligenterer Umgang mit verfügbarem Input.",
+        "title": "Daten & Biologie",
+        "desc": "Wissenschaftliche Validierung der Nährstoffaufnahme und des biologischen Kreislaufs des Myzels.",
         "icon": "Target"
       },
       {
-        "title": "Widerstandsfähigkeit",
-        "desc": "Respekt vor Pflanze, Boden und Umwelt.",
+        "title": "Stabiles Ergebnis",
+        "desc": "Bewährte Biostimulanzien, die den Ertrag steigern, ohne den Anbau zu stören.",
         "icon": "ShieldCheck"
       }
     ],
-    "whoWeAreTitle": "Wofür wir",
-    "whoWeAreAccent": "stehen.",
-    "whoWeAreDesc": "\"Unsere Produkte wurden für professionelle Erzeuger entwickelt, die auf Qualität, Stabilität und Effizienz setzen. Erzeuger, die langfristig bauen.\"",
-    "productionBadge": "In den Niederlanden entwickelt",
-    "productionTitle": "Entwickelt und produziert in den Niederlanden",
-    "productionDesc": "PlantiPower wird in enger Zusammenarbeit mit Erzeugern und Agrarexperten entwickelt und produziert. Die Produkte werden unter realistischen Bedingungen getestet und auf Basis von Praxiserfahrungen optimiert.",
+    "whoWeAreTitle": "Unser Ziel",
+    "whoWeAreAccent": "Ist Klar",
+    "whoWeAreDesc": "\"Ein vitalerer Anbau und ein stabilerer Schub, was letztendlich zu einem höheren Ertrag pro Anbauzykus führt. Nicht durch Änderung des Systems, sondern durch besseres Funktionieren.\"",
+    "productionBadge": "Moderner Pilzanbau",
+    "productionTitle": "Wissenschaftlich fundiert.",
+    "productionDesc": "Wir glauben, dass Fortschritt logisch erscheinen sollte. Wenn Technologie gut zum Handwerk passt, stärkt sie die Arbeit des Erzeugers, anstatt sie zu ersetzen. Dafür steht FungiPower.",
     "productionPoints": [
-      "Praktisch anwendbar im täglichen Anbau",
-      "Kombinierbar mit bestehenden Plänen",
-      "Geeignet für verschiedene Substrate",
-      "100% natürliche Zusammensetzung"
+      "Branchenrealität: Verständnis des Arbeitsplatzes und des täglichen Anbaumanagements",
+      "Daten & Biologie: wissenschaftliche Validierung des biologischen Kreislaufs des Myzels",
+      "Stabiles Ergebnis: bewährte Biostimulanzien zur Ertragssteigerung",
+      "100% aus der Praxis der Erzeuger entwickelt"
     ],
     "missionTitle": "Unsere Mission",
-    "missionDesc": "\"Die Entwicklung natürlicher, praktischer Lösungen, die Erzeuger dabei unterstützen, ihren Anbau stabiler, effizienter und zukunftssicherer zu machen.\""
+    "missionDesc": "\"Verbesserung bedeutet nicht mehr hinzufügen, sondern die natürliche Kraft des Anbaus besser zu nutzen.\" — Jan Klerken"
   },
   "Contact": {
     "title": "Nehmen Sie Kontakt auf,",
@@ -192,8 +193,8 @@
     "successMsg": "Vielen Dank für Ihre Nachricht. Wir werden uns so schnell wie möglich mit Ihnen in Verbindung setzen.",
     "newMsg": "Neue Nachricht senden",
     "subject": "Neue Kontaktanfrage",
-    "metaTitle": "Kontakt | PlantiPower",
-    "metaDesc": "Kontaktieren Sie PlantiPower für Fragen, Beratung oder Kooperationen.",
+    "metaTitle": "Kontakt | FungiPower",
+    "metaDesc": "Kontaktieren Sie FungiPower für Fragen, Beratung oder Kooperationen.",
     "heroTitle": "Nehmen Sie Kontakt",
     "heroTitleAccent": "mit uns auf"
   },
@@ -201,33 +202,33 @@
     "title": "Nehmen Sie",
     "titleAccent": "Kontakt auf",
     "description": "Haben Sie Fragen zu unseren Produkten oder möchten Sie Partner werden? Wir sind für Sie da.",
-    "metaTitle": "Kontakt | PlantiPower",
-    "metaDesc": "Kontaktieren Sie PlantiPower. Fragen zu Produkten, Partnerschaften oder Vertrieb? Wir helfen Ihnen gerne weiter."
+    "metaTitle": "Kontakt | FungiPower",
+    "metaDesc": "Kontaktieren Sie FungiPower. Fragen zu Produkten, Partnerschaften oder Vertrieb? Wir helfen Ihnen gerne weiter."
   },
   "FAQ": {
     "title": "HÄUFIG GESTELLTE",
     "titleAccent": " FRAGEN",
-    "metaTitle": "Häufig gestellte Fragen | PlantiPower",
-    "metaDesc": "Häufig gestellte Fragen zu PlantiPower Biostimulanzien.",
+    "metaTitle": "Häufig gestellte Fragen | FungiPower",
+    "metaDesc": "Häufig gestellte Fragen zu FungiPower Biostimulanzien.",
     "items": [
       {
-        "q": "Was ist PlantiPower?",
-        "a": "PlantiPower ist ein natürlicher Nährstoff-Transporter, der Düngemittel direkt an die Pflanzenwurzeln liefert. Es hilft Pflanzen, Nährstoffe effizienter aufzunehmen, was zu stärkerem Wachstum, höherem Ertrag und besserer Bodengesundheit führt."
+        "q": "Was ist FungiPower?",
+        "a": "FungiPower ist ein natürlicher Nährstoff-Transporter, der Düngemittel direkt an die Pflanzenwurzeln liefert. Es hilft Pflanzen, Nährstoffe effizienter aufzunehmen, was zu stärkerem Wachstum, höherem Ertrag und besserer Bodengesundheit führt."
       },
       {
-        "q": "Wie oft sollte ich PlantiPower anwenden?",
+        "q": "Wie oft sollte ich FungiPower anwenden?",
         "a": "Für optimale Ergebnisse empfehlen wir eine monatliche Anwendung. Konsultieren Sie die Produktinformationen für spezifische Dosierungen pro Kultur."
       },
       {
-        "q": "Ist PlantiPower ein Dünger?",
-        "a": "Nein, PlantiPower ist kein Dünger, sondern ein Biostimulans und Transportmittel, das die Wirkung Ihrer bestehenden Düngemittel verstärkt."
+        "q": "Ist FungiPower ein Dünger?",
+        "a": "Nein, FungiPower ist kein Dünger, sondern ein Biostimulans und Transportmittel, das die Wirkung Ihrer bestehenden Düngemittel verstärkt."
       },
       {
         "q": "Kann ich es mit anderen Düngemitteln verwenden?",
-        "a": "Ja, PlantiPower ist so konzipiert, dass es synergetisch mit allen gängigen Düngeprogrammen arbeitet und deren Aufnahme verbessert."
+        "a": "Ja, FungiPower ist so konzipiert, dass es synergetisch mit allen gängigen Düngeprogrammen arbeitet und deren Aufnahme verbessert."
       },
       {
-        "q": "Wie funktioniert PlantiPower?",
+        "q": "Wie funktioniert FungiPower?",
         "a": "Es verbessert die Aufnahmekapazität der Wurzeln und erleichtert den Transport von Mineralien in der Pflanze, wodurch die Pflanze weniger Energie für die Aufnahme verliert."
       },
       {
@@ -235,31 +236,31 @@
         "a": "All12 ist in 1 Liter, 10 Liter und 1000 Liter erhältlich. Shield ist in 1 Liter und 5 Liter erhältlich. Abweichende Mengen/Verpackungen auf Anfrage."
       },
       {
-        "q": "Für welche Kulturen ist PlantiPower geeignet?",
+        "q": "Für welche Kulturen ist FungiPower geeignet?",
         "a": "Es ist effektiv für eine breite Palette von Kulturen, darunter Gemüse (Tomaten, Gurken), Obst, Zierpflanzen und Baumschulen."
       },
       {
-        "q": "Ist PlantiPower sicher für alle Pflanzen?",
+        "q": "Ist FungiPower sicher für alle Pflanzen?",
         "a": "Ja, bei korrekter Anwendung gemäß den Vorschriften ist es sicher für alle Pflanzen und unterstützt die natürlichen Wachstumsprozesse."
       },
       {
-        "q": "Was sind die Vorteile von PlantiPower?",
+        "q": "Was sind die Vorteile von FungiPower?",
         "a": "Höherer Ertrag, bessere Fruchtqualität (u.a. Brix-Wert), effizientere Düngemittelnutzung und eine vitalere Kultur."
       },
       {
         "q": "Kann ich es in der Hydrokultur verwenden?",
-        "a": "Absolut, PlantiPower eignet sich hervorragend für Hydrokultur und andere Substratsysteme."
+        "a": "Absolut, FungiPower eignet sich hervorragend für Hydrokultur und andere Substratsysteme."
       },
       {
-        "q": "Ist PlantiPower biologisch und nachhaltig?",
+        "q": "Ist FungiPower biologisch und nachhaltig?",
         "a": "Ja, es trägt zum nachhaltigen Anbau bei, indem es die Effizienz der Düngemittel erhöht und so die Auswaschung reduziert."
       },
       {
-        "q": "Was macht PlantiPower einzigartig?",
+        "q": "Was macht FungiPower einzigartig?",
         "a": "Die einzigartige ALL12-Technologie, die nicht nur nährt, sondern die Aufnahmekapazität der Pflanze selbst fundamental verbessert."
       },
       {
-        "q": "Wie verwende ich PlantiPower?",
+        "q": "Wie verwende ich FungiPower?",
         "a": "Mischen Sie die empfohlene Menge mit Wasser und führen Sie sie über Ihr reguläres Bewässerungssystem zu. Beachten Sie die Verpackung für genaue Anweisungen."
       }
     ]
@@ -303,8 +304,8 @@
         "badge": "Validierte Forschung",
         "title": "VALIDIERTE",
         "titleAccent": "ANBAUOPTIMIERUNG",
-        "desc": "Dieser Bericht präsentiert die Ergebnisse eines Praxisversuchs mit PlantiPower bei Van Gog Kwekerijen CV. Der Datensatz umfasst 65 unabhängige Labormessungen von Eurofins Agro Wageningen.",
-        "footer": "PlantiPower_Praxisresultate_2026",
+        "desc": "Dieser Bericht präsentiert die Ergebnisse eines Praxisversuchs mit FungiPower bei Van Gog Kwekerijen CV. Der Datensatz umfasst 65 unabhängige Labormessungen von Eurofins Agro Wageningen.",
+        "footer": "FungiPower_Praxisresultate_2026",
         "labMeasurements": "65 Labormessungen",
         "footerMeasurements": "65 unabhängige Labormessungen"
       },
@@ -314,32 +315,32 @@
           "silicon": {
             "label": "Siliziumaufnahme verdoppelt",
             "desc": "Die Siliziumaufnahme-Effizienz stieg von 48 % auf 94 %.",
-            "footer": "PlantiPower_Praxisresultate_2026"
+            "footer": "FungiPower_Praxisresultate_2026"
           },
           "siliconLeaf": {
             "label": "+38 % Silizium in jungen Blättern",
             "desc": "Silizium stieg von 1,73 auf 2,39 mmol/l im jungen Pflanzensaft.",
-            "footer": "PlantiPower_Praxisresultate_2026"
+            "footer": "FungiPower_Praxisresultate_2026"
           },
           "phosphorus": {
             "label": "Phosphoraufnahme 11 % → 86 %",
             "desc": "Die Pflanze nahm mehr Phosphor auf, während die Gabe über Gießwasser um 45% stieg.",
-            "footer": "PlantiPower_Praxisresultate_2026"
+            "footer": "FungiPower_Praxisresultate_2026"
           },
           "molybdenum": {
             "label": "+61 % Molybdän",
             "desc": "Molybdän im jungen Pflanzensaft stieg von 2,32 auf 3,73 µmol/l.",
-            "footer": "PlantiPower_Praxisresultate_2026"
+            "footer": "FungiPower_Praxisresultate_2026"
           },
           "zincOld": {
             "label": "+46 % Zink in alten Blättern",
             "desc": "Zink stieg von 10,1 auf 14,7 µmol/l.",
-            "footer": "PlantiPower_Praxisresultate_2026"
+            "footer": "FungiPower_Praxisresultate_2026"
           },
           "molyOld": {
             "label": "+88 % Molybdän in alten Blättern",
             "desc": "Alter Pflanzensaft stieg von 4,27 auf 8,00 µmol/l.",
-            "footer": "PlantiPower_Praxisresultate_2026"
+            "footer": "FungiPower_Praxisresultate_2026"
           }
         }
       },
@@ -349,17 +350,17 @@
           "mobilization": {
             "label": "Nährstoffmobilisierung",
             "desc": "Modifizierte Fulvinsäuren mobilisieren gebundene Nährstoffe im Substrat und machen sie der Wurzel verfügbar.",
-            "footer": "PlantiPower_Praxisresultate_2026"
+            "footer": "FungiPower_Praxisresultate_2026"
           },
           "uptake": {
             "label": "Verbesserte Wurzelaufnahme",
             "desc": "Silizium stärkt die Zellwände der Wurzel und fördert die selektive Nährstoffaufnahme.",
-            "footer": "PlantiPower_Praxisresultate_2026"
+            "footer": "FungiPower_Praxisresultate_2026"
           },
           "rhizosphere": {
             "label": "Rhizosphären-Aktivierung",
-            "desc": "PlantiPower stimuliert die mikrobielle Aktivität um die Wurzel und erhöht die Verfügbarkeit von Phosphat und Spurenelementen.",
-            "footer": "PlantiPower_Praxisresultate_2026"
+            "desc": "FungiPower stimuliert die mikrobielle Aktivität um die Wurzel und erhöht die Verfügbarkeit von Phosphat und Spurenelementen.",
+            "footer": "FungiPower_Praxisresultate_2026"
           }
         }
       },
@@ -367,51 +368,51 @@
         "title": "UNABHÄNGIG",
         "titleAccent": "GEMESSEN",
         "desc": "Gießwasser und Pflanzensaft werden gleichzeitig beprobt von Eurofins Agro Wageningen — so berechnen wir genau, wie viel die Pflanze aufnimmt.",
-        "footer": "PlantiPower_Praxisresultate_2026",
+        "footer": "FungiPower_Praxisresultate_2026",
         "nodes": {
           "iron": {
             "label": "65 unabhängige Messungen",
             "desc": "Gießwasser und Pflanzensaft gleichzeitig beprobt — durchgeführt von Eurofins Agro Wageningen.",
-            "footer": "PlantiPower_Praxisresultate_2026"
+            "footer": "FungiPower_Praxisresultate_2026"
           },
           "zinc": {
             "label": "Aufnahmeeffizienz berechnet",
-            "desc": "Aufnahmeeffizienz berechnet aus Pflanzensaftanalyse. So messen wir den Unterschied, den PlantiPower macht.",
-            "footer": "PlantiPower_Praxisresultate_2026"
+            "desc": "Aufnahmeeffizienz berechnet aus Pflanzensaftanalyse. So messen wir den Unterschied, den FungiPower macht.",
+            "footer": "FungiPower_Praxisresultate_2026"
           }
         }
       },
       "s5": {
         "title": "GURKE",
-        "captionText": "PlantiPower hilft der Pflanze nicht nur, Nährstoffe effizienter aufzunehmen, sondern auch widerstandsfähiger gegen Salzstress zu werden.",
+        "captionText": "FungiPower hilft der Pflanze nicht nur, Nährstoffe effizienter aufzunehmen, sondern auch widerstandsfähiger gegen Salzstress zu werden.",
         "nodes": {
           "brix": {
             "label": "+15,8 % Brix",
             "desc": "Brix stieg von 4,95 auf 5,73 im jungen Pflanzensaft.",
-            "footer": "PlantiPower_Praxisresultate_2026"
+            "footer": "FungiPower_Praxisresultate_2026"
           },
           "exclusion": {
             "label": "Selektive Ionen-Exklusion",
             "desc": "Na in jungen Blättern −42 %, Cl in jungen Blättern −46 %.",
-            "footer": "PlantiPower_Praxisresultate_2026"
+            "footer": "FungiPower_Praxisresultate_2026"
           },
           "zincOld": {
             "label": "+46 % Zink in alten Blättern",
             "desc": "Zink stieg von 10,1 auf 14,7 µmol/l.",
-            "footer": "PlantiPower_Praxisresultate_2026"
+            "footer": "FungiPower_Praxisresultate_2026"
           },
           "molyOld": {
             "label": "+88 % Molybdän",
             "desc": "Alter Pflanzensaft stieg von 4,27 auf 8,00 µmol/l.",
-            "footer": "PlantiPower_Praxisresultate_2026"
+            "footer": "FungiPower_Praxisresultate_2026"
           }
         }
       },
       "s6": {
         "title": "ALL12®",
         "titleAccent": "TECHNOLOGIE",
-        "desc": "PlantiPower ist ein Nährstofftransporter auf Basis modifizierter Fulvinsäuren. Während Standard-Fulvinsäureprodukte drei bis vier Elemente transportieren, transportiert PlantiPower alle zwölf essenziellen Nährstoffe direkt zu den Wurzeln.",
-        "footer": "PlantiPower_Praxisresultate_2026",
+        "desc": "FungiPower ist ein Nährstofftransporter auf Basis modifizierter Fulvinsäuren. Während Standard-Fulvinsäureprodukte drei bis vier Elemente transportieren, transportiert FungiPower alle zwölf essenziellen Nährstoffe direkt zu den Wurzeln.",
+        "footer": "FungiPower_Praxisresultate_2026",
         "nutrients": [
           "N",
           "P",
@@ -432,7 +433,7 @@
         "title": "Praxis",
         "titleHighlight": "ergebnisse",
         "desc": "65 unabhängige Labormessungen · Gießwasser- und Pflanzensaftanalysen",
-        "quote": "\"Der Datensatz von Van Gog Kwekerijen liefert überzeugende Belege dafür, dass PlantiPower's ALL12® Technologie die Nährstoffaufnahme von Gurkenpflanzen messbar verbessert. Die sechs Kernbefunde stimmen mit vier Jahren WUR-Forschung überein.\"",
+        "quote": "\"Der Datensatz von Van Gog Kwekerijen liefert überzeugende Belege dafür, dass FungiPower's ALL12® Technologie die Nährstoffaufnahme von Gurkenpflanzen messbar verbessert. Die sechs Kernbefunde stimmen mit vier Jahren WUR-Forschung überein.\"",
         "methodBase": "Methodik: Aufnahmeeffizienz berechnet aus Pflanzensaftanalyse",
         "methodExclusion": "1 Messung ausgeschlossen (Gerätefehler)",
         "methodStrong": "Stärkste Belege: Si, Zn, Cu (Gießwasser stabil)",
@@ -468,14 +469,14 @@
         "badge": "Zusammenfassung",
         "title": "FAZIT",
         "p1": "Die oben genannten Ergebnisse basieren auf 65 unabhängigen Labormessungen, durchgeführt von Eurofins Agro Wageningen bei Van Gog Kwekerijen in Helmond, Niederlande. Der Datensatz umfasst Gießwasser- und Pflanzensaftanalysen von Gurkenpflanzen, die auf Steinwollsubstrat angebaut wurden.",
-        "p2": "Die Ergebnisse zeigen, dass die Nährstoffaufnahme von Gurkenpflanzen bei Verwendung von PlantiPower messbar verbessert wird. Bei mehreren Elementen ist eine deutliche Steigerung der Aufnahmeeffizienz sichtbar, während die Gießwasserzufuhr für diese Elemente stabil blieb.",
-        "p3": "Der Datensatz von Van Gog Kwekerijen liefert starke Praxisbelege für die Wirksamkeit der ALL12® Technologie von PlantiPower.",
+        "p2": "Die Ergebnisse zeigen, dass die Nährstoffaufnahme von Gurkenpflanzen bei Verwendung von FungiPower messbar verbessert wird. Bei mehreren Elementen ist eine deutliche Steigerung der Aufnahmeeffizienz sichtbar, während die Gießwasserzufuhr für diese Elemente stabil blieb.",
+        "p3": "Der Datensatz von Van Gog Kwekerijen liefert starke Praxisbelege für die Wirksamkeit der ALL12® Technologie von FungiPower.",
         "btnDownload": "Vollständigen Bericht anfordern"
       },
       "s7": {
         "title": "ERGEBNIS",
         "titleAccent": "IN DER HAND",
-        "desc": "Bereit für den nächsten Schritt in der Anbauoptimierung? Starten Sie noch heute mit PlantiPower ALL12 und erleben Sie den Unterschied in Aufnahme und Ertrag.",
+        "desc": "Bereit für den nächsten Schritt in der Anbauoptimierung? Starten Sie noch heute mit FungiPower ALL12 und erleben Sie den Unterschied in Aufnahme und Ertrag.",
         "btnProduct": "Produktseite",
         "btnSample": "Probierpaket anfordern"
       }

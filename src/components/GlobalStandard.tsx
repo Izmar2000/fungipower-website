@@ -15,7 +15,7 @@ const GlobalStandard: React.FC<GlobalStandardProps> = ({ dict }) => {
         <section className="relative py-12 bg-[#021814] overflow-hidden">
             {/* Background elements */}
             <div className="absolute inset-0 bg-gradient-to-br from-[#021814] via-[#05201c] to-[#021814]"></div>
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-emerald-900/10 blur-[120px] rounded-full"></div>
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-orange-900/10 blur-[120px] rounded-full"></div>
 
             {/* Transition Gradients */}
             <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-black to-transparent opacity-40 z-20"></div>
@@ -31,7 +31,7 @@ const GlobalStandard: React.FC<GlobalStandardProps> = ({ dict }) => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.6 }}
-                            className="section-badge !bg-emerald-500/10 !border-emerald-500/20 !text-emerald-400"
+                            className="section-badge !bg-orange-500/10 !border-orange-500/20 !text-orange-400"
                         >
                             <Globe2 className="w-3.5 h-3.5" />
                             {t.badge}
@@ -45,7 +45,7 @@ const GlobalStandard: React.FC<GlobalStandardProps> = ({ dict }) => {
                             className="section-title"
                         >
                             {t.title} <br />
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-green-500">
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-400">
                                 {t.titleHighlight}
                             </span>
                         </motion.h2>
@@ -69,21 +69,21 @@ const GlobalStandard: React.FC<GlobalStandardProps> = ({ dict }) => {
                         >
                             <div className="flex items-center gap-4">
                                 <div className="p-3 bg-white/5 rounded-xl border border-white/10">
-                                    <Award className="w-6 h-6 text-lime-400" />
+                                    <Award className="w-6 h-6 text-orange-400" />
                                 </div>
                                 <div>
                                     <div className="text-white font-bold">{t.dutchMade}</div>
-                                    <div className="text-emerald-100/50 text-xs uppercase tracking-wider">{t.premiumQuality}</div>
+                                    <div className="text-orange-100/50 text-xs uppercase tracking-wider">{t.premiumQuality}</div>
                                 </div>
                             </div>
 
                             <div className="flex items-center gap-4">
                                 <div className="p-3 bg-white/5 rounded-xl border border-white/10">
-                                    <Globe2 className="w-6 h-6 text-emerald-400" />
+                                    <Globe2 className="w-6 h-6 text-orange-400" />
                                 </div>
                                 <div>
                                     <div className="text-white font-bold">{t.exportReady}</div>
-                                    <div className="text-emerald-100/50 text-xs uppercase tracking-wider">{t.logistics}</div>
+                                    <div className="text-orange-100/50 text-xs uppercase tracking-wider">{t.logistics}</div>
                                 </div>
                             </div>
                         </motion.div>
@@ -98,12 +98,12 @@ const GlobalStandard: React.FC<GlobalStandardProps> = ({ dict }) => {
                         className="relative group"
                     >
                         {/* Glow behind image */}
-                        <div className="absolute inset-0 bg-emerald-500/20 blur-[80px] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                        <div className="absolute inset-0 bg-orange-500/20 blur-[80px] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
 
                         <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
                             <img
-                                src="/images/plantipower-world-tech.png"
-                                alt="PlantiPower Global Standard"
+                                src="/images/fungipower-world-tech.png"
+                                alt="FungiPower Global Standard"
                                 className="w-full h-auto object-cover transform transition-transform duration-[1.5s] group-hover:scale-105"
                             />
                             {/* Inner vignette */}

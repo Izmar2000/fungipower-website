@@ -1,5 +1,5 @@
 {
-  "name": "plantipower-temp",
+  "name": "fungipower-next",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,7 +8,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "sync": "cd \"/Users/hadad/Documents/AntiGravity/The Road To /road-to-wimbledon\" && npm run build && rm -rf \"/Users/hadad/Documents/AntiGravity/plantipower-next/public/theroadto\" && cp -R \"/Users/hadad/Documents/AntiGravity/The Road To /road-to-wimbledon/out\" \"/Users/hadad/Documents/AntiGravity/plantipower-next/public/theroadto\""
+    "sync": "cd \"/Users/hadad/Documents/AntiGravity/The Road To /road-to-wimbledon\" && npm run build && rm -rf \"/Users/hadad/Documents/AntiGravity/fungipower-next/public/theroadto\" && cp -R \"/Users/hadad/Documents/AntiGravity/The Road To /road-to-wimbledon/out\" \"/Users/hadad/Documents/AntiGravity/fungipower-next/public/theroadto\""
   },
   "dependencies": {
     "@formatjs/intl-localematcher": "^0.8.1",

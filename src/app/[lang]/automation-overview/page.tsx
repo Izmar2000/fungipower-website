@@ -62,7 +62,7 @@ export default function AutomationOverviewPage() {
             <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-6 mb-12 border-b border-white/10 pb-12 print:border-black/20 print:mb-8 print:pb-8">
                 <div>
                     <div className="flex items-center gap-3 mb-2">
-                        <span className="bg-[#84cc16]/10 text-[#84cc16] px-3 py-0.5 rounded-full text-[10px] font-black uppercase tracking-widest border border-[#84cc16]/20 print:border-black/20 print:text-black">Project: PlantiPower Automation</span>
+                        <span className="bg-[#84cc16]/10 text-[#84cc16] px-3 py-0.5 rounded-full text-[10px] font-black uppercase tracking-widest border border-[#84cc16]/20 print:border-black/20 print:text-black">Project: FungiPower Automation</span>
                     </div>
                     <h1 className="text-4xl md:text-6xl font-black tracking-tight italic uppercase print:text-black">
                         Systeem <span className="text-[#84cc16] print:text-[#4d7c0f]">Architectuur</span>
@@ -202,7 +202,7 @@ export default function AutomationOverviewPage() {
                                 </div>
                                 <div className="bg-[#011410] rounded-2xl overflow-hidden border border-white/10 print:border-black/10">
                                     <div className="relative h-48 print:h-32">
-                                        <img src="https://plantipower-new.vercel.app/images/email/header.jpg" className="w-full h-full object-cover opacity-60 print:opacity-100" />
+                                        <img src="https://fungipower-new.vercel.app/images/email/header.jpg" className="w-full h-full object-cover opacity-60 print:opacity-100" />
                                         <div className="absolute inset-0 bg-gradient-to-t from-[#011410] to-transparent print:hidden" />
                                         <div className="absolute bottom-6 left-6 print:bottom-2 print:left-2">
                                             <div className="inline-block bg-[#84cc16] px-3 py-1 rounded text-[8px] font-black text-[#011410] uppercase mb-2 print:bg-black print:text-white">Welkom en bedankt!</div>
@@ -214,7 +214,7 @@ export default function AutomationOverviewPage() {
                                         <div className="h-2 w-full bg-white/5 rounded-full" />
                                         <div className="h-2 w-5/6 bg-white/5 rounded-full" />
                                         <div className="h-2 w-full bg-white/5 rounded-full" />
-                                        <div className="h-10 w-full bg-[#84cc16]/5 rounded-xl border border-[#84cc16]/20 flex items-center justify-center italic text-[#84cc16] text-[10px] font-bold">"Wat PlantiPower bij jou laat zien, is bepalend."</div>
+                                        <div className="h-10 w-full bg-[#84cc16]/5 rounded-xl border border-[#84cc16]/20 flex items-center justify-center italic text-[#84cc16] text-[10px] font-bold">"Wat FungiPower bij jou laat zien, is bepalend."</div>
                                     </div>
                                 </div>
                             </div>
@@ -225,7 +225,7 @@ export default function AutomationOverviewPage() {
 
             {/* FOOTER */}
             <div className="max-w-7xl mx-auto mt-24 text-center pb-20 print:mt-12 print:pb-10">
-                <div className="text-[10px] font-black text-white/20 uppercase tracking-[0.4em] mb-4 print:text-black/40">PlantiPower Internal Systems</div>
+                <div className="text-[10px] font-black text-white/20 uppercase tracking-[0.4em] mb-4 print:text-black/40">FungiPower Internal Systems</div>
                 <div className="w-12 h-1 bg-white/10 mx-auto rounded-full print:bg-black/10" />
             </div>
 

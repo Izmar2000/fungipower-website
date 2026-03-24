@@ -12,7 +12,7 @@ const ShieldShowcase = () => {
 
     const content = {
         badge: isDE ? "Fortschrittlicher Bio-Schutz" : isNL ? "Advanced Bio-Protection" : "Advanced Bio-Protection", // Badge was English in original too, keeping it premium
-        title: <>PlantiPower Shield <br /><span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">{isDE ? 'Unsichtbare Kraft.' : isNL ? 'Onzichtbare Kracht.' : 'Invisible Force.'}</span></>,
+        title: <>FungiPower Shield <br /><span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">{isDE ? 'Unsichtbare Kraft.' : isNL ? 'Onzichtbare Kracht.' : 'Invisible Force.'}</span></>,
         desc: isDE
             ? "Erhöhen Sie die natürliche Widerstandsfähigkeit Ihrer Ernte mit Shield. Eine fortschrittliche Barriere, die für vitalere Pflanzen und gesundes Wachstum sorgt, ohne Rückstände zu hinterlassen."
             : isNL
@@ -62,11 +62,11 @@ const ShieldShowcase = () => {
                                     className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000 opacity-60 mix-blend-screen"
                                 />
 
-                                {/* Foreground: The REAL Shield product jerseycan (the one from 'PlantiPower Shield.png') */}
+                                {/* Foreground: The REAL Shield product jerseycan (the one from 'FungiPower Shield.png') */}
                                 <div className="relative z-10 p-12">
                                     <img
-                                        src="/images/products/plantipower-shield-transparant.png"
-                                        alt="PlantiPower Shield"
+                                        src="/images/products/fungipower-shield-transparant.png"
+                                        alt="FungiPower Shield"
                                         className="w-full h-auto object-contain max-h-[480px] drop-shadow-[0_20px_60px_rgba(6,182,212,0.4)] transform transition-transform duration-700 group-hover:scale-105"
                                     />
                                 </div>
@@ -109,7 +109,7 @@ const ShieldShowcase = () => {
                                         </svg>
                                     ),
                                     (
-                                        <svg viewBox="0 0 100 100" className="w-5 h-5 text-emerald-400">
+                                        <svg viewBox="0 0 100 100" className="w-5 h-5 text-orange-400">
                                             <rect x="20" y="20" width="60" height="60" stroke="currentColor" strokeWidth="2" fill="none" />
                                             <path d="M20 50 H80 M50 20 V80" stroke="currentColor" strokeWidth="2" opacity="0.3" />
                                             <circle cx="50" cy="50" r="5" fill="currentColor" />
@@ -143,7 +143,7 @@ const ShieldShowcase = () => {
                                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                             </Link>
                             <a
-                                href="/PP Shield info/Etiket 1Liter - PlantiPower_Shield_Label_250x130mm DE.pdf"
+                                href="/PP Shield info/Etiket 1Liter - FungiPower_Shield_Label_250x130mm DE.pdf"
                                 target="_blank"
                                 className="inline-flex items-center gap-2 px-8 py-4 bg-white/5 hover:bg-blue-500/10 text-white border border-white/10 hover:border-blue-500/30 rounded-lg font-bold text-[10px] uppercase tracking-widest transition-all"
                             >

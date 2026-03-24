@@ -104,9 +104,9 @@ const SampleModal: React.FC<SampleModalProps> = ({ isOpen, onClose, lang }) => {
 
   const content = isDE ? {
     title: "PROBEPAKET BESTELLEN",
-    subtitle: "Sie erhalten 1x 1 Liter PlantiPower All12 und 1x 60ml PlantiPower Shield für €29,95 (zzgl. MwSt.) inklusive Versandkosten.",
-    product1: { name: "PlantiPower All12 (1L)", sub: "NÄHRSTOFFTRANSPORT" },
-    product2: { name: "PlantiPower Shield (60ml)", sub: "BESSERE WIDERSTANDSKRAFT" },
+    subtitle: "Sie erhalten 1x 1 Liter FungiPower All12 und 1x 60ml FungiPower Shield für €29,95 (zzgl. MwSt.) inklusive Versandkosten.",
+    product1: { name: "FungiPower All12 (1L)", sub: "NÄHRSTOFFTRANSPORT" },
+    product2: { name: "FungiPower Shield (60ml)", sub: "BESSERE WIDERSTANDSKRAFT" },
     bundleTitle: "AUSGEWÄHLTER TEST",
     bundleSub: "2X PRODUKTE (ALL12 + SHIELD)",
     price: "€29,95",
@@ -137,9 +137,9 @@ const SampleModal: React.FC<SampleModalProps> = ({ isOpen, onClose, lang }) => {
     successMsg: "Ihre Anfrage wurde erfolgreich versendet."
   } : isNL ? {
     title: "BESTEL HIER JE PROEFPAKKET",
-    subtitle: "Je ontvangt 1x 1 liter PlantiPower All12 en 1x 60ml PlantiPower Shield voor €29,95 (excl. BTW) inclusief verzendkosten.",
-    product1: { name: "PlantiPower All12 (1L)", sub: "VOEDING TRANSPORTEREN" },
-    product2: { name: "PlantiPower Shield (60ml)", sub: "BETERE WEERBAARHEID" },
+    subtitle: "Je ontvangt 1x 1 liter FungiPower All12 en 1x 60ml FungiPower Shield voor €29,95 (excl. BTW) inclusief verzendkosten.",
+    product1: { name: "FungiPower All12 (1L)", sub: "VOEDING TRANSPORTEREN" },
+    product2: { name: "FungiPower Shield (60ml)", sub: "BETERE WEERBAARHEID" },
     bundleTitle: "GESELECTEERDE TEST",
     bundleSub: "2X PRODUCTEN (ALL12 + SHIELD)",
     price: "€29,95",
@@ -170,9 +170,9 @@ const SampleModal: React.FC<SampleModalProps> = ({ isOpen, onClose, lang }) => {
     successMsg: "Je aanvraag is succesvol verzonden."
   } : {
     title: "ORDER YOUR SAMPLE PACK HERE",
-    subtitle: "You receive 1x 1 liter PlantiPower All12 and 1x 60ml PlantiPower Shield for €29.95 (excl. VAT) including shipping.",
-    product1: { name: "PlantiPower All12 (1L)", sub: "TRANSPORT NUTRIENTS" },
-    product2: { name: "PlantiPower Shield (60ml)", sub: "BETERE RESILIENCE" },
+    subtitle: "You receive 1x 1 liter FungiPower All12 and 1x 60ml FungiPower Shield for €29.95 (excl. VAT) including shipping.",
+    product1: { name: "FungiPower All12 (1L)", sub: "TRANSPORT NUTRIENTS" },
+    product2: { name: "FungiPower Shield (60ml)", sub: "BETERE RESILIENCE" },
     bundleTitle: "SELECTED TEST",
     bundleSub: "2X PRODUCTS (ALL12 + SHIELD)",
     price: "€29.95",
@@ -244,46 +244,46 @@ const SampleModal: React.FC<SampleModalProps> = ({ isOpen, onClose, lang }) => {
 
         {isSuccess ? (
           <div className="p-10 md:p-20 text-center flex flex-col items-center justify-center h-full min-h-[400px]">
-            <div className="w-20 h-20 bg-lime-500 rounded-full flex items-center justify-center mb-8 shadow-lg shadow-lime-500/20">
+            <div className="w-20 h-20 bg-orange-500 rounded-full flex items-center justify-center mb-8 shadow-lg shadow-orange-500/20">
               <Check className="w-10 h-10 text-[#011410]" />
             </div>
             <h2 className="text-4xl font-bold text-white mb-6 uppercase tracking-tighter">{content.thankYou}</h2>
-            <p className="text-xl text-emerald-100/70 max-w-md mx-auto leading-relaxed">{content.successMsg}</p>
+            <p className="text-xl text-orange-100/70 max-w-md mx-auto leading-relaxed">{content.successMsg}</p>
           </div>
         ) : (
           <div className="overflow-y-auto custom-scrollbar pt-20 pb-10 px-6 md:px-12">
             <div className="mb-8 flex flex-col md:flex-row md:items-end justify-between gap-6">
               <div className="flex-1">
-                <div className="inline-block px-3 py-1 rounded-md bg-[#0d2b24] border border-lime-500/30 text-lime-500 text-[10px] font-bold uppercase tracking-wider mb-4">
+                <div className="inline-block px-3 py-1 rounded-md bg-[#0d2b24] border border-orange-500/30 text-orange-500 text-[10px] font-bold uppercase tracking-wider mb-4">
                   {isDE ? "Probepaket" : isNL ? "Proefpakket" : "Sample Pack"}
                 </div>
                 <h2 className="text-2xl md:text-3xl font-bold text-white uppercase tracking-tight mb-3">
                   {content.title}
                 </h2>
-                <p className="text-base text-emerald-100/60 font-medium leading-relaxed max-w-sm">
+                <p className="text-base text-orange-100/60 font-medium leading-relaxed max-w-sm">
                   {content.subtitle}
                 </p>
               </div>
 
               <div className="flex items-center -space-x-4 pr-4">
                 <div className="relative z-10 filter drop-shadow(0 10px 20px rgba(0,0,0,0.4))">
-                  <img src="/images/products/plantipower-all12-transparant.png" alt="All12" className="h-24 md:h-32 object-contain" />
+                  <img src="/images/products/fungipower-all12-transparant.png" alt="All12" className="h-24 md:h-32 object-contain" />
                 </div>
                 <div className="relative filter drop-shadow(0 10px 20px rgba(0,0,0,0.4))">
-                  <img src="/images/products/plantipower-shield-transparant.png" alt="Shield" className="h-24 md:h-32 object-contain" />
+                  <img src="/images/products/fungipower-shield-transparant.png" alt="Shield" className="h-24 md:h-32 object-contain" />
                 </div>
               </div>
             </div>
 
             <div className="bg-[#021814] rounded-xl p-4 border border-white/5 flex items-center justify-between mb-8">
               <div className="flex items-center gap-3">
-                <div className="w-2 h-2 rounded-full bg-lime-500 animate-pulse" />
+                <div className="w-2 h-2 rounded-full bg-orange-500 animate-pulse" />
                 <span className="text-[10px] font-bold text-white uppercase tracking-[0.2em]">{isDE ? "PROBEPAKET BUNDEL: AUF LAGER" : isNL ? "PROEFPAKKET BUNDEL: OP VOORRAAD" : "SAMPLE PACK BUNDLE: IN STOCK"}</span>
               </div>
               <div className="flex items-center gap-4">
                 <div className="text-right">
                   <div className="text-xl font-bold text-white leading-none">{content.price}</div>
-                  <div className="text-[9px] text-emerald-100/30 font-bold uppercase tracking-wider mt-1">{content.shipping}</div>
+                  <div className="text-[9px] text-orange-100/30 font-bold uppercase tracking-wider mt-1">{content.shipping}</div>
                 </div>
               </div>
             </div>
@@ -291,32 +291,32 @@ const SampleModal: React.FC<SampleModalProps> = ({ isOpen, onClose, lang }) => {
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="space-y-2">
-                  <label className="text-[10px] font-bold text-emerald-100/50 uppercase tracking-widest ml-1">{content.labelCompany}</label>
-                  <input type="text" className="w-full bg-[#0d2b24] border border-white/5 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-lime-500/50 transition-all font-medium" placeholder={content.placeholderCompany} value={formData.company} onChange={(e) => setFormData({ ...formData, company: e.target.value })} required />
+                  <label className="text-[10px] font-bold text-orange-100/50 uppercase tracking-widest ml-1">{content.labelCompany}</label>
+                  <input type="text" className="w-full bg-[#0d2b24] border border-white/5 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-orange-500/50 transition-all font-medium" placeholder={content.placeholderCompany} value={formData.company} onChange={(e) => setFormData({ ...formData, company: e.target.value })} required />
                 </div>
                 <div className="space-y-2">
-                  <label className="text-[10px] font-bold text-emerald-100/50 uppercase tracking-widest ml-1">{content.labelName}</label>
-                  <input type="text" className="w-full bg-[#0d2b24] border border-white/5 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-lime-500/50 transition-all font-medium" placeholder={content.placeholderName} value={formData.name} onChange={(e) => setFormData({ ...formData, name: e.target.value })} required />
+                  <label className="text-[10px] font-bold text-orange-100/50 uppercase tracking-widest ml-1">{content.labelName}</label>
+                  <input type="text" className="w-full bg-[#0d2b24] border border-white/5 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-orange-500/50 transition-all font-medium" placeholder={content.placeholderName} value={formData.name} onChange={(e) => setFormData({ ...formData, name: e.target.value })} required />
                 </div>
                 <div className="space-y-2">
-                  <label className="text-[10px] font-bold text-emerald-100/50 uppercase tracking-widest ml-1">{content.labelEmail}</label>
-                  <input type="email" className="w-full bg-[#0d2b24] border border-white/5 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-lime-500/50 transition-all font-medium" placeholder={content.placeholderEmail} value={formData.email} onChange={(e) => setFormData({ ...formData, email: e.target.value })} required />
+                  <label className="text-[10px] font-bold text-orange-100/50 uppercase tracking-widest ml-1">{content.labelEmail}</label>
+                  <input type="email" className="w-full bg-[#0d2b24] border border-white/5 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-orange-500/50 transition-all font-medium" placeholder={content.placeholderEmail} value={formData.email} onChange={(e) => setFormData({ ...formData, email: e.target.value })} required />
                 </div>
                 <div className="space-y-2">
-                  <label className="text-[10px] font-bold text-emerald-100/50 uppercase tracking-widest ml-1">{content.labelPhone}</label>
-                  <input type="tel" className="w-full bg-[#0d2b24] border border-white/5 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-lime-500/50 transition-all font-medium" placeholder={content.placeholderPhone} value={formData.phone} onChange={(e) => setFormData({ ...formData, phone: e.target.value })} required />
+                  <label className="text-[10px] font-bold text-orange-100/50 uppercase tracking-widest ml-1">{content.labelPhone}</label>
+                  <input type="tel" className="w-full bg-[#0d2b24] border border-white/5 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-orange-500/50 transition-all font-medium" placeholder={content.placeholderPhone} value={formData.phone} onChange={(e) => setFormData({ ...formData, phone: e.target.value })} required />
                 </div>
               </div>
 
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="space-y-3">
                   <div className="ml-1">
-                    <label className="text-[10px] font-bold text-emerald-100/50 uppercase tracking-widest block">{content.labelCategory}</label>
-                    <span className="text-[10px] text-emerald-100/30 block mt-1">{content.subtextCategory}</span>
+                    <label className="text-[10px] font-bold text-orange-100/50 uppercase tracking-widest block">{content.labelCategory}</label>
+                    <span className="text-[10px] text-orange-100/30 block mt-1">{content.subtextCategory}</span>
                   </div>
                   <div className="relative">
                     <select
-                      className="w-full bg-[#0d2b24] border border-white/5 rounded-xl px-4 py-3 text-white appearance-none focus:outline-none focus:border-lime-500/50 transition-all cursor-pointer font-medium pr-10"
+                      className="w-full bg-[#0d2b24] border border-white/5 rounded-xl px-4 py-3 text-white appearance-none focus:outline-none focus:border-orange-500/50 transition-all cursor-pointer font-medium pr-10"
                       value={formData.cropCategory}
                       onChange={(e) => setFormData(prev => ({ ...prev, cropCategory: e.target.value, crop: '', otherCrop: '' }))}
                       required
@@ -326,18 +326,18 @@ const SampleModal: React.FC<SampleModalProps> = ({ isOpen, onClose, lang }) => {
                         <option key={cat.id} value={cat.id}>{cat.label}</option>
                       ))}
                     </select>
-                    <ChevronDown className="absolute right-4 top-1/2 -translate-y-1/2 w-4 h-4 text-emerald-100/30 pointer-events-none" />
+                    <ChevronDown className="absolute right-4 top-1/2 -translate-y-1/2 w-4 h-4 text-orange-100/30 pointer-events-none" />
                   </div>
                 </div>
 
                 <div className={`space-y-3 transition-all duration-300 ${!formData.cropCategory || !cropsByCategory[formData.cropCategory] ? 'opacity-30 pointer-events-none' : 'opacity-100'}`}>
                   <div className="ml-1">
-                    <label className="text-[10px] font-bold text-emerald-100/50 uppercase tracking-widest block">{content.labelSpecificCrop}</label>
-                    <span className="text-[10px] text-emerald-100/30 block mt-1">{content.subtextSpecificCrop}</span>
+                    <label className="text-[10px] font-bold text-orange-100/50 uppercase tracking-widest block">{content.labelSpecificCrop}</label>
+                    <span className="text-[10px] text-orange-100/30 block mt-1">{content.subtextSpecificCrop}</span>
                   </div>
                   <div className="relative">
                     <select
-                      className="w-full bg-[#0d2b24] border border-white/5 rounded-xl px-4 py-3 text-white appearance-none focus:outline-none focus:border-lime-500/50 transition-all cursor-pointer font-medium pr-10"
+                      className="w-full bg-[#0d2b24] border border-white/5 rounded-xl px-4 py-3 text-white appearance-none focus:outline-none focus:border-orange-500/50 transition-all cursor-pointer font-medium pr-10"
                       value={formData.crop}
                       onChange={(e) => setFormData({ ...formData, crop: e.target.value })}
                       required={!!(formData.cropCategory && cropsByCategory[formData.cropCategory])}
@@ -348,7 +348,7 @@ const SampleModal: React.FC<SampleModalProps> = ({ isOpen, onClose, lang }) => {
                         <option key={c.v} value={c.v}>{c.l}</option>
                       ))}
                     </select>
-                    <ChevronDown className="absolute right-4 top-1/2 -translate-y-1/2 w-4 h-4 text-emerald-100/30 pointer-events-none" />
+                    <ChevronDown className="absolute right-4 top-1/2 -translate-y-1/2 w-4 h-4 text-orange-100/30 pointer-events-none" />
                   </div>
                 </div>
               </div>
@@ -356,14 +356,14 @@ const SampleModal: React.FC<SampleModalProps> = ({ isOpen, onClose, lang }) => {
               {(formData.cropCategory === 'anders' || formData.crop === 'anders') && (
                 <div className="space-y-3 animate-in fade-in duration-300">
                   <div className="ml-1">
-                    <label className="text-[10px] font-bold text-emerald-100/50 uppercase tracking-widest block">{content.labelOtherCrop}</label>
-                    <span className="text-[10px] text-emerald-100/30 block mt-1">{content.subtextOtherCrop}</span>
+                    <label className="text-[10px] font-bold text-orange-100/50 uppercase tracking-widest block">{content.labelOtherCrop}</label>
+                    <span className="text-[10px] text-orange-100/30 block mt-1">{content.subtextOtherCrop}</span>
                   </div>
                   <input
                     type="text"
                     required
                     placeholder={isDE ? "Geben Sie Ihre Kultur ein..." : isNL ? "Vul je gewas in..." : "Enter your crop..."}
-                    className="w-full bg-[#0d2b24] border border-white/5 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-lime-500/50 transition-all font-medium"
+                    className="w-full bg-[#0d2b24] border border-white/5 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-orange-500/50 transition-all font-medium"
                     value={formData.otherCrop}
                     onChange={(e) => setFormData({ ...formData, otherCrop: e.target.value })}
                   />
@@ -371,8 +371,8 @@ const SampleModal: React.FC<SampleModalProps> = ({ isOpen, onClose, lang }) => {
               )}
 
               <div className="space-y-2">
-                <label className="text-[10px] font-bold text-emerald-100/50 uppercase tracking-widest ml-1">{content.labelComments}</label>
-                <textarea className="w-full bg-[#0d2b24] border border-white/5 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-lime-500/50 transition-all h-24 resize-none font-medium" placeholder={content.placeholderComments} value={formData.comments} onChange={(e) => setFormData({ ...formData, comments: e.target.value })} />
+                <label className="text-[10px] font-bold text-orange-100/50 uppercase tracking-widest ml-1">{content.labelComments}</label>
+                <textarea className="w-full bg-[#0d2b24] border border-white/5 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-orange-500/50 transition-all h-24 resize-none font-medium" placeholder={content.placeholderComments} value={formData.comments} onChange={(e) => setFormData({ ...formData, comments: e.target.value })} />
               </div>
 
               <div style={{ display: 'none' }} aria-hidden="true">
@@ -389,11 +389,11 @@ const SampleModal: React.FC<SampleModalProps> = ({ isOpen, onClose, lang }) => {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-lime-500 hover:bg-lime-400 text-emerald-950 font-black py-4 rounded-xl uppercase tracking-widest text-sm transition-all shadow-lg shadow-lime-500/20 active:scale-[0.98] disabled:opacity-50 disabled:grayscale"
+                  className="w-full bg-orange-500 hover:bg-orange-400 text-orange-950 font-black py-4 rounded-xl uppercase tracking-widest text-sm transition-all shadow-lg shadow-orange-500/20 active:scale-[0.98] disabled:opacity-50 disabled:grayscale"
                 >
                   {isSubmitting ? "..." : content.btnSubmit}
                 </button>
-                <p className="text-center mt-4 text-[10px] text-emerald-100/30 uppercase tracking-widest font-bold">{content.footerNote}</p>
+                <p className="text-center mt-4 text-[10px] text-orange-100/30 uppercase tracking-widest font-bold">{content.footerNote}</p>
               </div>
             </form>
           </div>

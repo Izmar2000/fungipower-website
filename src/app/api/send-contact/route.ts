@@ -14,8 +14,8 @@ export async function POST(request: Request) {
 
     if (resend) {
       await resend.emails.send({
-        from: 'PlantiPower HQ <info@mail.plantipower.com>',
-        to: 'info@plantipower.com',
+        from: 'FungiPower HQ <info@mail.fungipower.com>',
+        to: 'info@fungipower.com',
         replyTo: email,
         subject: `Nieuw Contactbericht: ${company || name}`,
         html: `<h3>Bericht van ${name}</h3><p>${message}</p>`

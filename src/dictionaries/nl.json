@@ -6,42 +6,42 @@
     "faq": "FAQ",
     "contact": "Contact",
     "cta": "Vraag Sample Aan",
-    "all12": "PlantiPower All12",
-    "all12Desc": "Optimaliseer de opname",
-    "shield": "PlantiPower Shield",
-    "shieldDesc": "Maximale weerbaarheid",
+    "all12": "FungiPower Start",
+    "all12Desc": "Optimale startbasis",
+    "shield": "FungiPower Boost",
+    "shieldDesc": "Maximale groeiboost",
     "aboutLabel": "Over ons"
   },
   "Hero": {
-    "titleLine1": "MEER OPNAME",
-    "titleLine2": "STERKERE WORTELS",
-    "titleLine3": "HOGERE OPBRENGST",
-    "uspsPart1": "MINDER VERSPILLING",
-    "uspsPart2": "BETERE OPNAME",
-    "uspsPart3": "GEZONDER GEWAS",
-    "description": "Een deel van de voeding die je toedient blijft altijd achter in de bodem of substraat. Gevolg: de plant benut zijn volledige potentie niet.<br /><br />PlantiPower ALL12 transporteert alle 12 essentiële nutriënten naar de wortel, waardoor de plant vitaler is en efficiënter groeit.",
-    "ctaMore": "Meer over",
-    "ctaProduct": "PlantiPower ALL12",
-    "ctaView": "Bekijk",
-    "ctaCases": "Praktijkcases"
+    "titleLine1": "Snellere oogst,",
+    "titleLine2": "Meer opbrengst,",
+    "titleLine3": "Uniforme groei.",
+    "uspsPart1": "BIOLOGISCHE VERSTERKING",
+    "uspsPart2": "MEER OPBRENGST",
+    "uspsPart3": "GETEST IN COMMERCIËLE TEELT",
+    "description": "FungiPower versterkt de natuurlijke cyclus van het mycelium. Via het myceliumnetwerk worden sporenelementen efficiënt getransporteerd naar de vruchtlichamen, wat resulteert in een uniformere groei, snellere oogst en hogere opbrengst per m². Ontwikkeld en gevalideerd in de commerciële champignonteelt.",
+    "ctaMore": "BEKIJK",
+    "ctaProduct": "Onze Methodiek",
+    "ctaView": "BEKIJK",
+    "ctaCases": "Praktijkresultaten"
   },
   "GrowerFocus": {
     "badge": "DE FILOSOFIE",
     "title": "Wij veranderen niets",
     "titleAccent": "Jij optimaliseert alles",
-    "description": "Jouw voedingsschema is het fundament van jouw succes. PlantiPower is ontwikkeld om dit fundament te versterken, niet te vervangen. Wij bieden de technologische ondersteuning voor stabiele opname en consistente resultaten, in elke fase van de teelt.",
+    "description": "Jouw teeltproces is het fundament van jouw succes. FungiPower is ontwikkeld om dit fundament te versterken, niet te vervangen. Wij bieden biologische ondersteuning voor stabiele myceliumontwikkeling en consistente vluchten, in elke fase van de teeltcyclus.",
     "usps": [
       {
-        "title": "Jouw schema blijft leidend",
-        "desc": "Geen aanpassingen nodig in EC of pH. PlantiPower integreert naadloos."
+        "title": "Jouw methode blijft leidend",
+        "desc": "Geen aanpassingen in je bestaande proces nodig. FungiPower integreert naadloos in elke kwekerij."
       },
       {
         "title": "Direct zichtbaar resultaat",
-        "desc": "Betere opname betekent direct een vitaler en meer weerbaar gewas."
+        "desc": "Een vitaler mycelium betekent uniformere vruchtlichamen en een snellere flush."
       },
       {
         "title": "Blijf doen waar je goed in bent",
-        "desc": "PlantiPower doet de rest op de achtergrond."
+        "desc": "FungiPower versterkt de biologische cyclus op de achtergrond."
       }
     ],
     "cta": "Vraag Sample Aan"
@@ -51,22 +51,23 @@
     "title": "Gevalideerde",
     "titleHighlight": "praktijkresultaten",
     "validated": "Gevalideerd",
-    "description": "Van tomatenteelt tot komkommerteelt: PlantiPower maximaliseert de opnamecapaciteit in elke professionele setting.",
+    "description": "Van eerste vlucht tot complete teeltcyclus: FungiPower maximaliseert de opnamecapaciteit van het mycelium in elke professionele kwekerij.",
     "crops": [
       {
-        "name": "Tomatenteelt",
-        "stats_0_title": "Vruchtkwaliteit",
-        "stats_0_desc": "Consistent gewicht en hogere brix-waarde.",
-        "stats_1_title": "Efficiënte opname",
-        "stats_1_desc": "Minder verspilling van meststoffen."
+        "name": "Eerste vlucht",
+        "image": "/images/champignon-kweker.png",
+        "stats_0_title": "Uniformere vruchtlichamen",
+        "stats_0_desc": "Consistent formaat en gewicht door geoptimaliseerde myceliumactiviteit.",
+        "stats_1_title": "Kortere cyclustijd",
+        "stats_1_desc": "Snellere primordiumvorming bij actief en vitaal mycelium."
       },
       {
-        "name": "Komkommerteelt",
-        "stats_0_badgeLabel": "+2",
-        "stats_0_title": "+2 komkommers / m²",
-        "stats_0_desc": "Winst bij van Gog kwekerijen.",
-        "stats_1_title": "1 dag eerder oogsten",
-        "stats_1_desc": "Snellere cyclus door transportefficiëntie."
+        "name": "Teeltcyclus",
+        "image": "/images/fungipower-hero-plant.png",
+        "stats_0_title": "Hogere opbrengst per m²",
+        "stats_0_desc": "Efficiëntere benutting van het substraat per teeltcyclus.",
+        "stats_1_title": "Minder uitval",
+        "stats_1_desc": "Uniformere kolonisatie vermindert onverkoopbare champignons."
       }
     ],
     "animationCards": [
@@ -109,74 +110,74 @@
       {
         "name": "Tomatenkweker",
         "role": "Noord-Brabant",
-        "text": "Sinds we PlantiPower toevoegen aan ons schema, zien we een duidelijk verschil: sterkere planten, vollere bloei en een kortere groeicyclus. En dat zonder extra toevoegingen."
+        "text": "Sinds we FungiPower toevoegen aan ons schema, zien we een duidelijk verschil: sterkere planten, vollere bloei en een kortere groeicyclus. En dat zonder extra toevoegingen."
       },
       {
         "name": "Kruidenkweker",
         "role": "Biologische Teelt",
-        "text": "Wat mij aanspreekt is dat PlantiPower niet alleen resultaat geeft, maar de plant echt versterkt. Minder uitval, betere opname en 100% natuurlijk. Precies wat de sector nodig heeft."
+        "text": "Wat mij aanspreekt is dat FungiPower niet alleen resultaat geeft, maar de plant echt versterkt. Minder uitval, betere opname en 100% natuurlijk. Precies wat de sector nodig heeft."
       }
     ]
   },
   "ProblemSection": {
     "badge": "DE UITDAGING",
     "title": "Het probleem in",
-    "titleAccent": "de praktijk",
-    "description": "In een perfecte wereld wordt elke gram voeding die je geeft, ook daadwerkelijk door de plant opgenomen. De realiteit is anders. Factoren zoals pH-schommelingen, koud water of een onbalans in de wortelzone zorgen vaak voor blokkades.",
-    "quote": "\"Dit zorgt voor ongebruikte voedingsstoffen die achterblijven in het substraat - zonde van de investering en belastend voor het gewas.\"",
-    "closing": "Door deze 'blockers' weg te nemen met PlantiPower, haal je het maximale uit je bestaande schema."
+    "titleAccent": "de champignonteelt",
+    "description": "In een ideale teelt koloniseert het mycelium zich volledig en worden alle voedingsstoffen in het substraat optimaal benut. De realiteit is anders. Ongelijkmatige kolonisatie, trage vluchten en variatie in vruchtlichamen zorgen voor verspilling en een lager rendement per teeltcyclus.",
+    "quote": "\"Niet het substraat is het probleem, maar de efficiëntie waarmee het mycelium de beschikbare voedingsstoffen opneemt en benut.\"",
+    "closing": "Door de biologische cyclus van het mycelium te versterken met FungiPower, haal je meer rendement uit elk substraatblok."
   },
   "About": {
-    "metaTitle": "Over Ons | PlantiPower",
-    "metaDesc": "PlantiPower is ontstaan vanuit de praktijk. Wij ontwikkelen natuurlijke oplossingen die planten ondersteunen in hun natuurlijke processen.",
+    "metaTitle": "Over Ons | FungiPower",
+    "metaDesc": "FungiPower is ontstaan vanuit de praktijk van Jan Klerken — een diep begrip van hoe een teelt zich écht ontwikkelt, gecombineerd met wetenschappelijke onderbouwing.",
     "heroBadge": "Ontstaan vanuit de praktijk",
-    "heroTitle": "TELERS LEIDEND.",
-    "heroTitleAccent": "WETENSCHAP ONDERSTEUNEND.",
-    "heroDesc": "PlantiPower wordt ontwikkeld met wetenschap, maar ontstaat altijd vanuit de praktijk van telers. Alleen wat werkt voor plant en teler, blijft overeind.",
-    "visionBadge": "Onze Visie",
-    "visionTitle": "Waar wij voor",
-    "visionTitleAccent": "staan.",
-    "visionDesc": "Gezonde groei begint bij balans. We ondersteunen de natuurlijke processen van de plant zonder deze te forceren.",
-    "coreTitle": "De Kern",
-    "coreDesc": "Wij geloven dat gezonde groei begint bij balans. Niet bij het forceren van groei, maar bij het ondersteunen van processen die al in de plant plaatsvinden.",
-    "approachTitle": "De Aanpak",
-    "approachDesc": "Wij ontwikkelen producten die planten ondersteunen in hun natuurlijke processen. Door slimmer om te gaan met wat al aanwezig is, dragen onze oplossingen bij aan een gelijkmatige groei en een beter functionerend teeltsysteem.",
+    "heroTitle": "FungiPower IS ONTSTAAN",
+    "heroTitleAccent": "VANUIT DE PRAKTIJK.",
+    "heroDesc": "Ontstaan vanuit pure praktijkervaring en een diep begrip van hoe een teelt zich écht ontwikkelt.",
+    "visionBadge": "De Oprichter",
+    "visionTitle": "Jan Klerken",
+    "visionTitleAccent": "— Oprichter FungiPower",
+    "visionDesc": "Jan Klerken groeide op in de champignonwereld. Wat voor anderen een product is, was voor hem dagelijkse realiteit. Door de jaren heen werkte hij in verschillende delen van de keten en zag hij hoe de sector professioneler en technischer werd. Wat daarbij altijd centraal bleef staan, is de rol van de teler. Uiteindelijk draait alles om degene die dagelijks verantwoordelijkheid draagt voor kwaliteit en continuïteit.",
+    "coreTitle": "De uitdaging in de sector",
+    "coreDesc": "De moderne champignonteelt staat voor grote uitdagingen. Grondstoffen worden schaarser en duurder, terwijl de eisen aan kwaliteit en opbrengst alleen maar toenemen. Kwekers moeten steeds efficiënter werken om rendabel te blijven in een competitieve markt. In die ontwikkeling draait verbetering vaak niet om méér toevoegen, maar om het optimaliseren van wat er al aanwezig is.",
+    "approachTitle": "Ourcelia × PlantiPower",
+    "approachDesc": "FungiPower is het resultaat van een strategische samenwerking tussen PlantiPower en Ourcelia. Deze joint venture combineert twee werelden: de diepgaande biologische expertise van Ourcelia als producent van kwalitatief broed, en de jarenlange sectorervaring van PlantiPower. Door wetenschappelijke validatie te koppelen aan de dagelijkse realiteit van de kwekerij, hebben we een biostimulant ontwikkeld die écht impact heeft waar het telt: in de teeltcel.",
     "values": [
       {
-        "title": "Balans",
-        "desc": "Ondersteunen van natuurlijke processen.",
+        "title": "Ourcelia",
+        "desc": "Biologische kennis & broedproductie.",
         "icon": "Leaf"
       },
       {
-        "title": "Gelijkmatig",
-        "desc": "Stabiele groei door het hele seizoen.",
+        "title": "PlantiPower",
+        "desc": "Sectorervaring & praktijkkennis.",
         "icon": "Zap"
       },
       {
-        "title": "Efficiënt",
-        "desc": "Slimmer omgaan met beschikbare input.",
+        "title": "Data & Biologie",
+        "desc": "Wetenschappelijke validatie van nutriëntenopname en de biologische cyclus van mycelium.",
         "icon": "Target"
       },
       {
-        "title": "Weerbaarheid",
-        "desc": "Respect voor plant, bodem en omgeving.",
+        "title": "Stabiel Resultaat",
+        "desc": "Bewezen biostimulanten die rendement verhogen zonder de teelt te verstoren.",
         "icon": "ShieldCheck"
       }
     ],
-    "whoWeAreTitle": "Voor wie wij",
-    "whoWeAreAccent": "staan.",
-    "whoWeAreDesc": "\"Onze producten zijn ontwikkeld voor professionele telers gericht op kwaliteit, stabiliteit en efficiëntie. Telers die bouwen aan de lange termijn.\"",
-    "productionBadge": "Ontwikkeld in Nederland",
-    "productionTitle": "Ontwikkeld en geproduceerd in Nederland",
-    "productionDesc": "PlantiPower wordt ontwikkeld en geproduceerd in nauwe samenwerking met telers en agrarische specialisten. Producten worden getest onder realistische omstandigheden en aangescherpt op basis van praktijkervaring.",
+    "whoWeAreTitle": "Ons Doel",
+    "whoWeAreAccent": "Is Helder",
+    "whoWeAreDesc": "\"Een vitalere teelt en een stabielere vlucht, met uiteindelijk een hogere opbrengst per teeltcyclus. Niet door het systeem te veranderen, maar door het beter te laten functioneren.\"",
+    "productionBadge": "Moderne Champignonteelt",
+    "productionTitle": "Onderbouwd door wetenschap.",
+    "productionDesc": "Wij geloven dat vooruitgang logisch moet voelen. Als technologie goed aansluit op het vak, versterkt ze het werk van de teler in plaats van het te vervangen. Dat is waar FungiPower voor staat.",
     "productionPoints": [
-      "Praktisch toepasbaar in de dagelijkse teelt",
-      "Combineerbaar met bestaande schema’s",
-      "Geschikt voor verschillende substraten",
-      "100% natuurlijk samengesteld"
+      "Sector Realiteit: begrip van de werkvloer en dagelijks teeltmanagement",
+      "Data & Biologie: wetenschappelijke validatie van de biologische cyclus van mycelium",
+      "Stabiel Resultaat: bewezen biostimulanten die rendement verhogen",
+      "100% ontwikkeld vanuit de praktijk van kwekers"
     ],
-    "missionTitle": "Onze missie",
-    "missionDesc": "\"Het ontwikkelen van natuurlijke, praktische oplossingen die telers helpen om hun teelt stabieler, efficiënter en toekomstbestendig te maken.\""
+    "missionTitle": "Onze Missie",
+    "missionDesc": "\"Verbetering draait niet om méér toevoegen, maar om beter benutten van de natuurlijke kracht van de teelt.\" — Jan Klerken"
   },
   "Contact": {
     "title": "Neem contact op",
@@ -192,8 +193,8 @@
     "successMsg": "Bedankt voor je bericht. We nemen zo snel mogelijk contact met je op.",
     "newMsg": "Nieuw bericht sturen",
     "subject": "Nieuw Contactbericht",
-    "metaTitle": "Contact | PlantiPower",
-    "metaDesc": "Neem contact op met PlantiPower voor vragen, advies of samenwerkingen.",
+    "metaTitle": "Contact | FungiPower",
+    "metaDesc": "Neem contact op met FungiPower voor vragen, advies of samenwerkingen.",
     "heroTitle": "Neem contact op",
     "heroTitleAccent": "met ons"
   },
@@ -201,33 +202,33 @@
     "title": "Neem",
     "titleAccent": "contact op",
     "description": "Heb je vragen over onze producten of wil je partner worden? Wij staan voor je klaar.",
-    "metaTitle": "Contact | PlantiPower",
-    "metaDesc": "Neem contact op met PlantiPower. Vragen over producten, partnerships of distributie? Wij helpen je graag."
+    "metaTitle": "Contact | FungiPower",
+    "metaDesc": "Neem contact op met FungiPower. Vragen over producten, partnerships of distributie? Wij helpen je graag."
   },
   "FAQ": {
     "title": "VEELGESTELDE",
     "titleAccent": " VRAGEN",
-    "metaTitle": "Veelgestelde Vragen | PlantiPower",
-    "metaDesc": "Veelgestelde vragen over PlantiPower biostimulanten.",
+    "metaTitle": "Veelgestelde Vragen | FungiPower",
+    "metaDesc": "Veelgestelde vragen over FungiPower biostimulanten.",
     "items": [
       {
-        "q": "Wat is PlantiPower?",
-        "a": "PlantiPower is een natuurlijke nutriënt-transporteur die meststoffen direct naar de plantwortels levert. Het helpt planten om voedingsstoffen efficiënter op te nemen, wat resulteert in sterkere groei, een hogere opbrengst en een betere bodemgezondheid."
+        "q": "Wat is FungiPower?",
+        "a": "FungiPower is een natuurlijke nutriënt-transporteur die meststoffen direct naar de plantwortels levert. Het helpt planten om voedingsstoffen efficiënter op te nemen, wat resulteert in sterkere groei, een hogere opbrengst en een betere bodemgezondheid."
       },
       {
-        "q": "Hoe vaak moet ik PlantiPower toepassen?",
+        "q": "Hoe vaak moet ik FungiPower toepassen?",
         "a": "Voor optimale resultaten adviseren wij een maandelijkse toepassing. Raadpleeg de productinformatie voor specifieke doseringen per gewas."
       },
       {
-        "q": "Is PlantiPower een meststof?",
-        "a": "Nee, PlantiPower is geen meststof maar een biostimulant en transportmiddel dat de werking van je bestaande meststoffen versterkt."
+        "q": "Is FungiPower een meststof?",
+        "a": "Nee, FungiPower is geen meststof maar een biostimulant en transportmiddel dat de werking van je bestaande meststoffen versterkt."
       },
       {
         "q": "Kan ik het gebruiken met andere meststoffen?",
-        "a": "Ja, PlantiPower is ontworpen om synergetisch te werken met alle reguliere mestprogramma's en verbetert de opname daarvan."
+        "a": "Ja, FungiPower is ontworpen om synergetisch te werken met alle reguliere mestprogramma's en verbetert de opname daarvan."
       },
       {
-        "q": "Hoe werkt PlantiPower?",
+        "q": "Hoe werkt FungiPower?",
         "a": "Het verbetert de opnamecapaciteit van de wortels en faciliteert het transport van mineralen in de plant, waardoor de plant minder energie verliest aan opname."
       },
       {
@@ -235,31 +236,31 @@
         "a": "All12 is verkrijgbaar in 1 liter, 10 liter en 1000 liter. Shield is verkrijgbaar in 1 liter en 5 liter. Afwijkende hoeveelheden/verpakkingen in overleg."
       },
       {
-        "q": "Voor welke gewassen is PlantiPower geschikt?",
+        "q": "Voor welke gewassen is FungiPower geschikt?",
         "a": "Het is effectief voor een breed scala aan gewassen, waaronder groenten (tomaat, komkommer), fruit, sierteelt en boomkwekerij."
       },
       {
-        "q": "Is PlantiPower veilig voor alle planten?",
+        "q": "Is FungiPower veilig voor alle planten?",
         "a": "Ja, bij correct gebruik volgens de voorschriften is het veilig voor alle planten en ondersteunt het de natuurlijke groeiprocessen."
       },
       {
-        "q": "Wat zijn de voordelen van PlantiPower?",
+        "q": "Wat zijn de voordelen van FungiPower?",
         "a": "Hogere opbrengst, betere vruchtkwaliteit (o.a. brix-waarde), efficiënter meststofgebruik en een vitaler gewas."
       },
       {
         "q": "Kan ik het gebruiken in hydrocultuur?",
-        "a": "Absoluut, PlantiPower is uitstekend geschikt voor hydrocultuur en andere substraatsystemen."
+        "a": "Absoluut, FungiPower is uitstekend geschikt voor hydrocultuur en andere substraatsystemen."
       },
       {
-        "q": "Is PlantiPower biologisch en duurzaam?",
+        "q": "Is FungiPower biologisch en duurzaam?",
         "a": "Ja, het draagt bij aan duurzame teelt door de efficiëntie van meststoffen te verhogen, waardoor er minder uitspoeling plaatsvindt."
       },
       {
-        "q": "Wat maakt PlantiPower uniek?",
+        "q": "Wat maakt FungiPower uniek?",
         "a": "De unieke ALL12 technologie die niet alleen voedt, maar de opnamecapaciteit van de plant zelf fundamenteel verbetert."
       },
       {
-        "q": "Hoe gebruik ik PlantiPower?",
+        "q": "Hoe gebruik ik FungiPower?",
         "a": "Meng de geadviseerde hoeveelheid met water en dien toe via je reguliere bewateringssysteem. Zie de verpakking voor exacte instructies."
       }
     ]
@@ -303,8 +304,8 @@
         "badge": "Gevalideerd Onderzoek",
         "title": "ONDERZOEKSRESULTATEN",
         "titleAccent": "KOMKOMMERTEELT",
-        "desc": "Dit rapport presenteert de resultaten van een praktijkproef met PlantiPower bij Van Gog Kwekerijen CV. De dataset omvat 65 onafhankelijke laboratoriummetingen, uitgevoerd door Eurofins Agro Wageningen.",
-        "footer": "PlantiPower_Praktijkresultaten_2026",
+        "desc": "Dit rapport presenteert de resultaten van een praktijkproef met FungiPower bij Van Gog Kwekerijen CV. De dataset omvat 65 onafhankelijke laboratoriummetingen, uitgevoerd door Eurofins Agro Wageningen.",
+        "footer": "FungiPower_Praktijkresultaten_2026",
         "labMeasurements": "65 laboratoriummetingen",
         "footerMeasurements": "65 onafhankelijke laboratoriummetingen"
       },
@@ -314,32 +315,32 @@
           "silicon": {
             "label": "Silicium opname verdubbeld",
             "desc": "Silicium opname-efficiëntie steeg van 48% naar 94%.",
-            "footer": "PlantiPower_Praktijkresultaten_2026"
+            "footer": "FungiPower_Praktijkresultaten_2026"
           },
           "siliconLeaf": {
             "label": "+38% silicium in jong blad",
             "desc": "Silicium steeg van 1,73 naar 2,39 mmol/l in jong plantsap.",
-            "footer": "PlantiPower_Praktijkresultaten_2026"
+            "footer": "FungiPower_Praktijkresultaten_2026"
           },
           "phosphorus": {
             "label": "Fosfor opname 11% → 86%",
             "desc": "De plant nam meer fosfor op terwijl de gift via gietwater met 45% steeg.",
-            "footer": "PlantiPower_Praktijkresultaten_2026"
+            "footer": "FungiPower_Praktijkresultaten_2026"
           },
           "molybdenum": {
             "label": "+61% molybdeen",
             "desc": "Molybdeen in jong plantsap steeg van 2,32 naar 3,73 µmol/l.",
-            "footer": "PlantiPower_Praktijkresultaten_2026"
+            "footer": "FungiPower_Praktijkresultaten_2026"
           },
           "zincOld": {
             "label": "+46% Zink in oud blad",
             "desc": "Zink steeg van 10,1 naar 14,7 µmol/l.",
-            "footer": "PlantiPower_Praktijkresultaten_2026"
+            "footer": "FungiPower_Praktijkresultaten_2026"
           },
           "molyOld": {
             "label": "+88% Molybdeen in oud blad",
             "desc": "Oud plantsap steeg van 4,27 naar 8,00 µmol/l.",
-            "footer": "PlantiPower_Praktijkresultaten_2026"
+            "footer": "FungiPower_Praktijkresultaten_2026"
           }
         }
       },
@@ -349,17 +350,17 @@
           "mobilization": {
             "label": "Nutriënten-mobilisatie",
             "desc": "Gemodificeerde fulvinezuren mobiliseren gebonden nutriënten in het substraat en maken ze beschikbaar voor de wortel.",
-            "footer": "PlantiPower_Praktijkresultaten_2026"
+            "footer": "FungiPower_Praktijkresultaten_2026"
           },
           "uptake": {
             "label": "Verbeterde wortelopname",
             "desc": "Silicium versterkt de celwanden van de wortel, wat de selectieve opname van nutriënten bevordert.",
-            "footer": "PlantiPower_Praktijkresultaten_2026"
+            "footer": "FungiPower_Praktijkresultaten_2026"
           },
           "rhizosphere": {
             "label": "Rhizosfeer activatie",
-            "desc": "PlantiPower stimuleert microbiële activiteit rond de wortel, wat de beschikbaarheid van fosfaat en sporenelementen vergroot.",
-            "footer": "PlantiPower_Praktijkresultaten_2026"
+            "desc": "FungiPower stimuleert microbiële activiteit rond de wortel, wat de beschikbaarheid van fosfaat en sporenelementen vergroot.",
+            "footer": "FungiPower_Praktijkresultaten_2026"
           }
         }
       },
@@ -367,43 +368,43 @@
         "title": "ONAFHANKELIJK",
         "titleAccent": "GEMETEN",
         "desc": "Gietwater en plantsap worden gelijktijdig bemonsterd door Eurofins Agro Wageningen — zo berekenen we precies hoeveel de plant opneemt.",
-        "footer": "PlantiPower_Praktijkresultaten_2026",
+        "footer": "FungiPower_Praktijkresultaten_2026",
         "nodes": {
           "iron": {
             "label": "65 onafhankelijke metingen",
             "desc": "Gietwater en plantsap gelijktijdig bemonsterd — uitgevoerd door Eurofins Agro Wageningen.",
-            "footer": "PlantiPower_Praktijkresultaten_2026"
+            "footer": "FungiPower_Praktijkresultaten_2026"
           },
           "zinc": {
             "label": "Opname-efficiëntie berekend",
-            "desc": "Opname-efficiëntie berekend op basis van plantsapanalyse. Zo meten we het verschil dat PlantiPower maakt.",
-            "footer": "PlantiPower_Praktijkresultaten_2026"
+            "desc": "Opname-efficiëntie berekend op basis van plantsapanalyse. Zo meten we het verschil dat FungiPower maakt.",
+            "footer": "FungiPower_Praktijkresultaten_2026"
           }
         }
       },
       "s5": {
         "title": "KOMKOMMER",
-        "captionText": "PlantiPower helpt de plant niet alleen voedingsstoffen efficiënter op te nemen, maar ook weerbaarder te worden tegen zoutstress.",
+        "captionText": "FungiPower helpt de plant niet alleen voedingsstoffen efficiënter op te nemen, maar ook weerbaarder te worden tegen zoutstress.",
         "nodes": {
           "brix": {
             "label": "+15,8% Brix",
             "desc": "Brix steeg van 4,95 naar 5,73 in jong plantsap.",
-            "footer": "PlantiPower_Praktijkresultaten_2026"
+            "footer": "FungiPower_Praktijkresultaten_2026"
           },
           "exclusion": {
             "label": "Selectieve ionen-exclusie",
             "desc": "Na in jong blad −42%, Cl in jong blad −46%.",
-            "footer": "PlantiPower_Praktijkresultaten_2026"
+            "footer": "FungiPower_Praktijkresultaten_2026"
           },
           "zincOld": {
             "label": "+46% zink in oud blad",
             "desc": "Zink steeg van 10,1 naar 14,7 µmol/l.",
-            "footer": "PlantiPower_Praktijkresultaten_2026"
+            "footer": "FungiPower_Praktijkresultaten_2026"
           },
           "molyOld": {
             "label": "+88% molybdeen",
             "desc": "Oud plantsap steeg van 4,27 naar 8,00 µmol/l.",
-            "footer": "PlantiPower_Praktijkresultaten_2026"
+            "footer": "FungiPower_Praktijkresultaten_2026"
           }
         }
       },
@@ -412,7 +413,7 @@
         "title": "Praktijk",
         "titleHighlight": "resultaten",
         "desc": "65 onafhankelijke laboratoriummetingen · gietwater- en plantsapanalyses",
-        "quote": "\"De dataset van Van Gog Kwekerijen biedt overtuigend bewijs dat PlantiPower's ALL12® Technology de nutriëntopname van komkommerplanten meetbaar verbetert. De zes kernbevindingen zijn consistent met vier jaar WUR-onderzoek.\"",
+        "quote": "\"De dataset van Van Gog Kwekerijen biedt overtuigend bewijs dat FungiPower's ALL12® Technology de nutriëntopname van komkommerplanten meetbaar verbetert. De zes kernbevindingen zijn consistent met vier jaar WUR-onderzoek.\"",
         "methodBase": "Methodologie: opname-efficiëntie = (gietwater − drain) / gietwater × 100%",
         "methodExclusion": "1 meting uitgesloten (apparaatstoring)",
         "methodStrong": "Sterkste bewijs: Si, Zn, Cu (gietwater stabiel)",
@@ -448,15 +449,15 @@
         "badge": "Samenvatting",
         "title": "CONCLUSIE",
         "p1": "De bovenstaande resultaten zijn gebaseerd op 65 onafhankelijke laboratoriummetingen, uitgevoerd door Eurofins Agro Wageningen bij Van Gog Kwekerijen in Helmond. De dataset omvat gietwater- en plantsapanalyses van komkommerplanten geteeld op steenwolsubstraat.",
-        "p2": "De resultaten laten zien dat de nutriëntopname van komkommerplanten meetbaar verbetert bij gebruik van PlantiPower. Bij meerdere elementen is een sterke stijging in opname-efficiëntie zichtbaar, terwijl het gietwater voor deze elementen stabiel bleef.",
-        "p3": "De dataset van Van Gog Kwekerijen biedt daarmee sterk praktijkbewijs voor de werking van PlantiPower's ALL12® Technology.",
+        "p2": "De resultaten laten zien dat de nutriëntopname van komkommerplanten meetbaar verbetert bij gebruik van FungiPower. Bij meerdere elementen is een sterke stijging in opname-efficiëntie zichtbaar, terwijl het gietwater voor deze elementen stabiel bleef.",
+        "p3": "De dataset van Van Gog Kwekerijen biedt daarmee sterk praktijkbewijs voor de werking van FungiPower's ALL12® Technology.",
         "btnDownload": "Volledig rapport aanvragen"
       },
       "s6": {
         "title": "ALL12®",
         "titleAccent": "TECHNOLOGY",
-        "desc": "PlantiPower is een nutriëntentransporter op basis van gemodificeerde fulvinezuren. Waar standaard fulvinezuurproducten drie tot vier elementen transporteren, transporteert PlantiPower alle twaalf essentiële nutriënten direct naar de wortels.",
-        "footer": "PlantiPower_Praktijkresultaten_2026",
+        "desc": "FungiPower is een nutriëntentransporter op basis van gemodificeerde fulvinezuren. Waar standaard fulvinezuurproducten drie tot vier elementen transporteren, transporteert FungiPower alle twaalf essentiële nutriënten direct naar de wortels.",
+        "footer": "FungiPower_Praktijkresultaten_2026",
         "nutrients": [
           "N",
           "P",
@@ -475,7 +476,7 @@
       "s7": {
         "title": "RESULTAAT",
         "titleAccent": "IN DE HAND",
-        "desc": "Klaar voor de volgende stap in teeltoptimalisatie? Start vandaag nog met PlantiPower ALL12 en ervaar het verschil in opname en rendement.",
+        "desc": "Klaar voor de volgende stap in teeltoptimalisatie? Start vandaag nog met FungiPower ALL12 en ervaar het verschil in opname en rendement.",
         "btnProduct": "Productpagina",
         "btnSample": "Proefpakket aanvragen"
       }

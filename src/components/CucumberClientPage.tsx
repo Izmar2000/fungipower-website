@@ -69,7 +69,7 @@ function ScrollButton({ targetId, bottom = 'bottom-[50px]', label = 'Verder' }: 
                 className="flex flex-col items-center gap-1"
             >
                 <span className="text-[10px] text-white/40 uppercase tracking-[0.2em] font-outfit font-bold">{label}</span>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" className="text-lime-400/70">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" className="text-orange-400/70">
                     <path d="M6 9L12 15L18 9" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
             </motion.div>
@@ -123,12 +123,12 @@ export default function CucumberClientPage({
 
                         <h1 className="font-outfit font-black uppercase text-[28px] md:text-[48px] lg:text-[58px] tracking-tight leading-[0.95] text-white mb-3 md:mb-6">
                             {t.sections?.s1?.title}<br />
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-lime-400 to-emerald-400">
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-400">
                                 {t.sections?.s1?.titleAccent}
                             </span>
                         </h1>
 
-                        <p className="text-sm md:text-lg text-emerald-100/70 leading-relaxed font-medium max-w-2xl mx-auto italic mb-16">
+                        <p className="text-sm md:text-lg text-orange-100/70 leading-relaxed font-medium max-w-2xl mx-auto italic mb-16">
                             {t.sections?.s1?.desc}
                         </p>
                     </div>
@@ -208,13 +208,13 @@ export default function CucumberClientPage({
                         <div className="md:hidden w-full h-full flex flex-col items-center gap-1 px-3">
                             {/* Iron card — boven */}
                             <div
-                                className="w-1/2 px-3 py-2.5 rounded-xl bg-black/92 border border-lime-500/40 cursor-pointer active:border-lime-400/70"
+                                className="w-1/2 px-3 py-2.5 rounded-xl bg-black/92 border border-orange-500/40 cursor-pointer active:border-orange-400/70"
                                 onClick={() => setExpandedDrainCard('iron')}
                             >
                                 <div className="flex items-center gap-1 mb-0.5">
-                                    <div className="w-1 h-1 rounded-full bg-lime-400 flex-shrink-0" />
-                                    <span className="text-lime-400 text-[7px] font-black uppercase tracking-wider font-outfit">Node</span>
-                                    <svg width="7" height="7" viewBox="0 0 8 8" fill="none" className="ml-auto text-lime-400/40 flex-shrink-0">
+                                    <div className="w-1 h-1 rounded-full bg-orange-400 flex-shrink-0" />
+                                    <span className="text-orange-400 text-[7px] font-black uppercase tracking-wider font-outfit">Node</span>
+                                    <svg width="7" height="7" viewBox="0 0 8 8" fill="none" className="ml-auto text-orange-400/40 flex-shrink-0">
                                         <path d="M4 1v6M1 4h6" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round"/>
                                     </svg>
                                 </div>
@@ -230,7 +230,7 @@ export default function CucumberClientPage({
                             <div className="relative flex-1 min-h-0 flex items-center justify-center w-full">
                                 <img
                                     src="/images/drain1_nobg.png"
-                                    alt="PlantiPower drainmeting"
+                                    alt="FungiPower drainmeting"
                                     style={{ maxHeight: '100%', width: 'auto', maxWidth: '95vw', objectFit: 'contain',
                                         filter: 'drop-shadow(0 15px 45px rgba(40,180,80,0.28))' }}
                                 />
@@ -248,13 +248,13 @@ export default function CucumberClientPage({
 
                             {/* Zinc card — onder */}
                             <div
-                                className="w-1/2 px-3 py-2.5 rounded-xl bg-black/92 border border-lime-500/40 cursor-pointer active:border-lime-400/70"
+                                className="w-1/2 px-3 py-2.5 rounded-xl bg-black/92 border border-orange-500/40 cursor-pointer active:border-orange-400/70"
                                 onClick={() => setExpandedDrainCard('zinc')}
                             >
                                 <div className="flex items-center gap-1 mb-0.5">
-                                    <div className="w-1 h-1 rounded-full bg-lime-400 flex-shrink-0" />
-                                    <span className="text-lime-400 text-[7px] font-black uppercase tracking-wider font-outfit">Node</span>
-                                    <svg width="7" height="7" viewBox="0 0 8 8" fill="none" className="ml-auto text-lime-400/40 flex-shrink-0">
+                                    <div className="w-1 h-1 rounded-full bg-orange-400 flex-shrink-0" />
+                                    <span className="text-orange-400 text-[7px] font-black uppercase tracking-wider font-outfit">Node</span>
+                                    <svg width="7" height="7" viewBox="0 0 8 8" fill="none" className="ml-auto text-orange-400/40 flex-shrink-0">
                                         <path d="M4 1v6M1 4h6" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round"/>
                                     </svg>
                                 </div>
@@ -284,7 +284,7 @@ export default function CucumberClientPage({
                             >
                                 <img
                                     src="/images/drain1_nobg.png"
-                                    alt="PlantiPower drainmeting"
+                                    alt="FungiPower drainmeting"
                                     style={{
                                         maxHeight: 'calc(60dvh)',
                                         maxWidth: '75vw',
@@ -369,19 +369,19 @@ export default function CucumberClientPage({
                                     whileInView={{ opacity: 1, x: 0 }}
                                     viewport={{ once: true }}
                                     transition={{ delay: 0.8, duration: 0.6 }}
-                                    className="absolute top-[22%] left-[-10px] md:left-[-105px] w-[170px] md:w-[200px] px-5 py-4 rounded-2xl bg-black/95 backdrop-blur-xl border border-lime-500/40 shadow-[0_20px_50px_rgba(0,0,0,0.8)] z-30"
+                                    className="absolute top-[22%] left-[-10px] md:left-[-105px] w-[170px] md:w-[200px] px-5 py-4 rounded-2xl bg-black/95 backdrop-blur-xl border border-orange-500/40 shadow-[0_20px_50px_rgba(0,0,0,0.8)] z-30"
                                 >
                                     <div className="flex items-center gap-2 mb-1.5">
-                                        <div className="w-1.5 h-1.5 rounded-full bg-lime-400" />
-                                        <div className="text-lime-400 text-[9px] font-black uppercase tracking-[0.2em] font-outfit">Validated Node</div>
+                                        <div className="w-1.5 h-1.5 rounded-full bg-orange-400" />
+                                        <div className="text-orange-400 text-[9px] font-black uppercase tracking-[0.2em] font-outfit">Validated Node</div>
                                     </div>
                                     <div className="text-white text-base font-black leading-tight uppercase tracking-tight font-outfit mb-1.5">
                                         {t.sections?.s4?.nodes?.iron?.label}
                                     </div>
-                                    <div className="text-emerald-100/60 text-xs font-medium leading-relaxed">
+                                    <div className="text-orange-100/60 text-xs font-medium leading-relaxed">
                                         {t.sections?.s4?.nodes?.iron?.desc}
                                     </div>
-                                    <div className="flex absolute top-1/2 -translate-y-1/2 -right-[14px] text-lime-400">
+                                    <div className="flex absolute top-1/2 -translate-y-1/2 -right-[14px] text-orange-400">
                                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" className="rotate-180">
                                             <path d="M15 18L9 12L15 6" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
                                         </svg>
@@ -395,19 +395,19 @@ export default function CucumberClientPage({
                                     whileInView={{ opacity: 1, x: 0 }}
                                     viewport={{ once: true }}
                                     transition={{ delay: 1.3, duration: 0.6 }}
-                                    className="absolute top-[54%] right-[-10px] md:right-[-105px] w-[170px] md:w-[200px] px-5 py-4 rounded-2xl bg-black/95 backdrop-blur-xl border border-lime-500/40 shadow-[0_20px_50px_rgba(0,0,0,0.8)] z-30"
+                                    className="absolute top-[54%] right-[-10px] md:right-[-105px] w-[170px] md:w-[200px] px-5 py-4 rounded-2xl bg-black/95 backdrop-blur-xl border border-orange-500/40 shadow-[0_20px_50px_rgba(0,0,0,0.8)] z-30"
                                 >
                                     <div className="flex items-center gap-2 mb-1.5">
-                                        <div className="w-1.5 h-1.5 rounded-full bg-lime-400" />
-                                        <div className="text-lime-400 text-[9px] font-black uppercase tracking-[0.2em] font-outfit">Validated Node</div>
+                                        <div className="w-1.5 h-1.5 rounded-full bg-orange-400" />
+                                        <div className="text-orange-400 text-[9px] font-black uppercase tracking-[0.2em] font-outfit">Validated Node</div>
                                     </div>
                                     <div className="text-white text-base font-black leading-tight uppercase tracking-tight font-outfit mb-1.5">
                                         {t.sections?.s4?.nodes?.zinc?.label}
                                     </div>
-                                    <div className="text-emerald-100/60 text-xs font-medium leading-relaxed">
+                                    <div className="text-orange-100/60 text-xs font-medium leading-relaxed">
                                         {t.sections?.s4?.nodes?.zinc?.desc}
                                     </div>
-                                    <div className="flex absolute top-1/2 -translate-y-1/2 -left-[14px] text-lime-400">
+                                    <div className="flex absolute top-1/2 -translate-y-1/2 -left-[14px] text-orange-400">
                                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
                                             <path d="M15 18L9 12L15 6" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
                                         </svg>
@@ -429,14 +429,14 @@ export default function CucumberClientPage({
                                     initial={{ y: 40, opacity: 0 }}
                                     animate={{ y: 0, opacity: 1 }}
                                     transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] }}
-                                    className="relative w-full bg-[#090e09] border-t border-lime-500/40 px-6 pt-5 rounded-t-2xl"
+                                    className="relative w-full bg-[#090e09] border-t border-orange-500/40 px-6 pt-5 rounded-t-2xl"
                                     style={{ paddingBottom: 'max(2.5rem, env(safe-area-inset-bottom))' }}
                                     onClick={e => e.stopPropagation()}
                                 >
                                     <div className="w-8 h-0.5 bg-white/20 rounded-full mx-auto mb-5" />
                                     <div className="flex items-center gap-2 mb-2">
-                                        <div className="w-1.5 h-1.5 rounded-full bg-lime-400" />
-                                        <span className="text-lime-400 text-[9px] font-black uppercase tracking-[0.2em] font-outfit">Validated Node</span>
+                                        <div className="w-1.5 h-1.5 rounded-full bg-orange-400" />
+                                        <span className="text-orange-400 text-[9px] font-black uppercase tracking-[0.2em] font-outfit">Validated Node</span>
                                     </div>
                                     <div className="text-white text-lg font-black uppercase tracking-tight font-outfit mb-3">{label}</div>
                                     <div className="text-white/65 text-sm leading-relaxed">{desc}</div>
@@ -484,16 +484,16 @@ export default function CucumberClientPage({
                         >
                             {/* Source label */}
                             <div className="flex items-center gap-3 mb-6">
-                                <div className="h-px w-8 bg-lime-400/40" />
-                                <span className="text-lime-400/60 text-[10px] font-black uppercase tracking-[0.3em] font-outfit">{t.sections?.['s-rapport']?.sourceBadge || 'Van Gog Kwekerijen CV · Helmond'}</span>
-                                <div className="h-px flex-1 bg-lime-400/10" />
+                                <div className="h-px w-8 bg-orange-400/40" />
+                                <span className="text-orange-400/60 text-[10px] font-black uppercase tracking-[0.3em] font-outfit">{t.sections?.['s-rapport']?.sourceBadge || 'Van Gog Kwekerijen CV · Helmond'}</span>
+                                <div className="h-px flex-1 bg-orange-400/10" />
                             </div>
 
                             {/* Title */}
                             <h2 className="font-outfit font-black uppercase text-[34px] md:text-[52px] tracking-tight leading-none text-white mb-3">
-                                {t.sections?.['s-rapport']?.title}<span className="text-lime-400">{t.sections?.['s-rapport']?.titleHighlight}</span>
+                                {t.sections?.['s-rapport']?.title}<span className="text-orange-400">{t.sections?.['s-rapport']?.titleHighlight}</span>
                             </h2>
-                            <p className="text-emerald-100/50 text-sm md:text-base font-light mb-8 max-w-2xl leading-relaxed">
+                            <p className="text-orange-100/50 text-sm md:text-base font-light mb-8 max-w-2xl leading-relaxed">
                                 {t.sections?.['s-rapport']?.desc}
                             </p>
 
@@ -526,9 +526,9 @@ export default function CucumberClientPage({
                                 whileInView={{ opacity: 1 }}
                                 viewport={{ once: true }}
                                 transition={{ delay: 0.7, duration: 0.8 }}
-                                className="border-l-2 border-lime-400/40 pl-5 mb-6"
+                                className="border-l-2 border-orange-400/40 pl-5 mb-6"
                             >
-                                <p className="text-emerald-100/65 text-sm md:text-base leading-relaxed italic">
+                                <p className="text-orange-100/65 text-sm md:text-base leading-relaxed italic">
                                     {t.sections?.['s-rapport']?.quote}
                                 </p>
                             </motion.div>
@@ -552,11 +552,11 @@ export default function CucumberClientPage({
                         >
                             {/* Badge */}
                             <div className="flex items-center gap-3 mb-6">
-                                <div className="h-px w-8 bg-lime-400/40" />
-                                <span className="text-lime-400/60 text-[10px] font-black uppercase tracking-[0.3em] font-outfit">
+                                <div className="h-px w-8 bg-orange-400/40" />
+                                <span className="text-orange-400/60 text-[10px] font-black uppercase tracking-[0.3em] font-outfit">
                                     {t.sections?.['s-samenvatting']?.badge}
                                 </span>
-                                <div className="h-px flex-1 bg-lime-400/10" />
+                                <div className="h-px flex-1 bg-orange-400/10" />
                             </div>
 
                             {/* Title */}
@@ -566,10 +566,10 @@ export default function CucumberClientPage({
 
                             {/* Paragraphs */}
                             <div className="space-y-5 mb-10">
-                                <p className="text-emerald-100/60 text-sm md:text-base leading-relaxed">
+                                <p className="text-orange-100/60 text-sm md:text-base leading-relaxed">
                                     {t.sections?.['s-samenvatting']?.p1}
                                 </p>
-                                <p className="text-emerald-100/60 text-sm md:text-base leading-relaxed">
+                                <p className="text-orange-100/60 text-sm md:text-base leading-relaxed">
                                     {t.sections?.['s-samenvatting']?.p2}
                                 </p>
                                 <p className="text-white/85 text-sm md:text-base leading-relaxed font-semibold">
@@ -581,7 +581,7 @@ export default function CucumberClientPage({
                             <div className="flex flex-wrap items-center gap-4">
                                 <a
                                     href={`/${lang}/contact`}
-                                    className="inline-flex items-center gap-2.5 px-7 py-3.5 border border-lime-400/40 text-lime-400 font-bold uppercase tracking-widest text-xs rounded-full hover:border-lime-400 hover:bg-lime-400/10 transition-all duration-300"
+                                    className="inline-flex items-center gap-2.5 px-7 py-3.5 border border-orange-400/40 text-orange-400 font-bold uppercase tracking-widest text-xs rounded-full hover:border-orange-400 hover:bg-orange-400/10 transition-all duration-300"
                                 >
                                     <svg width="13" height="13" viewBox="0 0 24 24" fill="none">
                                         <path d="M12 16L7 11M12 16L17 11M12 16V4M4 20h16" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -608,9 +608,9 @@ export default function CucumberClientPage({
                         >
                             <h2 className="font-outfit font-black uppercase text-[42px] md:text-[64px] tracking-tight leading-none text-white mb-8">
                                 {t.sections?.s6?.title}<br />
-                                <span className="text-lime-400 italic">{t.sections?.s6?.titleAccent}</span>
+                                <span className="text-orange-400 italic">{t.sections?.s6?.titleAccent}</span>
                             </h2>
-                            <p className="text-lg md:text-xl text-emerald-100/60 leading-relaxed font-light max-w-3xl mx-auto mb-12">
+                            <p className="text-lg md:text-xl text-orange-100/60 leading-relaxed font-light max-w-3xl mx-auto mb-12">
                                 {t.sections?.s6?.desc}
                             </p>
 
@@ -656,7 +656,7 @@ export default function CucumberClientPage({
 
                     <div className="relative z-20 flex items-center justify-center mb-8">
                         <div className="relative">
-                            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[60%] h-16 bg-lime-400/10 blur-2xl rounded-full" />
+                            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[60%] h-16 bg-orange-400/10 blur-2xl rounded-full" />
                             <motion.div
                                 animate={{ y: [0, -10, 0] }}
                                 transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
@@ -664,7 +664,7 @@ export default function CucumberClientPage({
                             >
                                 <img
                                     src="/images/all12-jerrycan-nl-nobg.png"
-                                    alt="PlantiPower ALL12"
+                                    alt="FungiPower ALL12"
                                     className="h-[220px] md:h-[300px] w-auto object-contain drop-shadow-[0_0_60px_rgba(132,204,22,0.3)]"
                                 />
                             </motion.div>
@@ -678,24 +678,24 @@ export default function CucumberClientPage({
                         transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
                         className="relative z-20 flex flex-col items-center text-center px-6 max-w-2xl"
                     >
-                        <div className="text-lime-400/60 text-[10px] uppercase tracking-[0.3em] font-bold mb-3">PlantiPower ALL12®</div>
+                        <div className="text-orange-400/60 text-[10px] uppercase tracking-[0.3em] font-bold mb-3">FungiPower ALL12®</div>
                         <h2 className="font-outfit font-black uppercase text-[36px] md:text-[52px] tracking-tight leading-none text-white mb-4">
                             {t.sections?.s7?.title}<br />
-                            <span className="text-lime-400 italic">{t.sections?.s7?.titleAccent}</span>
+                            <span className="text-orange-400 italic">{t.sections?.s7?.titleAccent}</span>
                         </h2>
-                        <p className="text-base text-emerald-100/55 leading-relaxed font-light mb-8">
+                        <p className="text-base text-orange-100/55 leading-relaxed font-light mb-8">
                             {t.sections?.s7?.desc}
                         </p>
                         <div className="flex flex-col sm:flex-row items-center gap-4">
                             <a
-                                href={`/${lang}/plantipower-all12`}
-                                className="px-9 py-4 bg-lime-400 text-black font-black uppercase tracking-widest text-sm rounded-full hover:bg-white transition-all duration-300 transform hover:scale-105"
+                                href={`/${lang}/fungipower-all12`}
+                                className="px-9 py-4 bg-orange-400 text-black font-black uppercase tracking-widest text-sm rounded-full hover:bg-white transition-all duration-300 transform hover:scale-105"
                             >
                                 {t.sections?.s7?.btnProduct}
                             </a>
                             <SampleButton
                                 label={t.sections?.s7?.btnSample}
-                                className="px-9 py-4 bg-transparent border border-white/20 text-white font-black uppercase tracking-widest text-sm rounded-full hover:border-lime-400 hover:text-lime-400 transition-all duration-300 transform hover:scale-105"
+                                className="px-9 py-4 bg-transparent border border-white/20 text-white font-black uppercase tracking-widest text-sm rounded-full hover:border-orange-400 hover:text-orange-400 transition-all duration-300 transform hover:scale-105"
                             />
                         </div>
                     </motion.div>

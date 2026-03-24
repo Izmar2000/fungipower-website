@@ -93,10 +93,10 @@ const All12CinematicAnimation = () => {
                     transition={{ duration: 1.5, ease: "easeOut" }}
                     className="absolute z-10"
                 >
-                    <div className="w-24 h-24 rounded-full border border-lime-500/30 flex items-center justify-center relative">
-                        <div className="absolute inset-0 rounded-full border border-lime-500/10 animate-[spin_10s_linear_infinite]"></div>
-                        <div className="absolute inset-2 rounded-full border border-lime-500/10 animate-[spin_8s_linear_infinite_reverse]"></div>
-                        <div className="w-3 h-3 bg-lime-500 rounded-full shadow-[0_0_20px_rgba(132,204,22,0.8)]"></div>
+                    <div className="w-24 h-24 rounded-full border border-orange-500/30 flex items-center justify-center relative">
+                        <div className="absolute inset-0 rounded-full border border-orange-500/10 animate-[spin_10s_linear_infinite]"></div>
+                        <div className="absolute inset-2 rounded-full border border-orange-500/10 animate-[spin_8s_linear_infinite_reverse]"></div>
+                        <div className="w-3 h-3 bg-orange-500 rounded-full shadow-[0_0_20px_rgba(132,204,22,0.8)]"></div>
 
                         {/* Connecting Lines to Plant (Scene 3+) */}
                         {scene >= 3 && (
@@ -192,7 +192,7 @@ const All12CinematicAnimation = () => {
                                 initial={{ opacity: 0, y: 10 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 exit={{ opacity: 0, y: -10 }}
-                                className="text-emerald-500/60 font-mono text-xs uppercase tracking-[0.2em]"
+                                className="text-orange-500/60 font-mono text-xs uppercase tracking-[0.2em]"
                             >
                                 Status: Standard
                             </motion.div>
@@ -215,7 +215,7 @@ const All12CinematicAnimation = () => {
                                 initial={{ opacity: 0, y: 10 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 exit={{ opacity: 0, y: -10 }}
-                                className="text-lime-400 font-bold text-xl tracking-wide uppercase"
+                                className="text-orange-400 font-bold text-xl tracking-wide uppercase"
                             >
                                 ACTIVATING ALL12
                             </motion.div>
@@ -229,7 +229,7 @@ const All12CinematicAnimation = () => {
                                 className="flex flex-col gap-1"
                             >
                                 <span className="text-white font-bold text-xl">All Essentials</span>
-                                <span className="text-lime-400 text-sm uppercase tracking-widest">Unlocked</span>
+                                <span className="text-orange-400 text-sm uppercase tracking-widest">Unlocked</span>
                             </motion.div>
                         )}
                         {scene === 4 && (
@@ -243,7 +243,7 @@ const All12CinematicAnimation = () => {
                                 <div className="inline-block px-3 py-1 rounded bg-white/10 text-[10px] border border-white/20 text-white uppercase tracking-widest">
                                     Laboratory Tested
                                 </div>
-                                <span className="text-emerald-100/60 text-xs font-mono">Produced in The Netherlands</span>
+                                <span className="text-orange-100/60 text-xs font-mono">Produced in The Netherlands</span>
                             </motion.div>
                         )}
                     </AnimatePresence>
@@ -251,7 +251,7 @@ const All12CinematicAnimation = () => {
 
                 {/* ABSORPTION METER */}
                 <div className="absolute bottom-8 w-64 bg-white/5 h-12 rounded-lg border border-white/10 backdrop-blur-sm flex items-center px-4 justify-between z-40">
-                    <span className="text-[10px] text-emerald-100/40 uppercase font-black tracking-widest">Efficiency</span>
+                    <span className="text-[10px] text-orange-100/40 uppercase font-black tracking-widest">Efficiency</span>
                     <div className="flex items-end gap-1">
                         <motion.span
                             className="text-2xl font-black text-white tabular-nums"
@@ -259,10 +259,10 @@ const All12CinematicAnimation = () => {
                         >
                             <CountingNumber value={meterValue} />
                         </motion.span>
-                        <span className="text-xs text-lime-500 font-bold mb-1">%</span>
+                        <span className="text-xs text-orange-500 font-bold mb-1">%</span>
                     </div>
                     {/* Progress Bar */}
-                    <div className="absolute bottom-0 left-0 h-1 bg-lime-500" style={{ width: `${meterValue}%`, transition: 'width 2s ease-out' }}></div>
+                    <div className="absolute bottom-0 left-0 h-1 bg-orange-500" style={{ width: `${meterValue}%`, transition: 'width 2s ease-out' }}></div>
                 </div>
 
             </div>

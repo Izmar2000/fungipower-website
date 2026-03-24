@@ -23,24 +23,24 @@ export async function generateMetadata(
   const { lang } = await params
 
   const title = lang === 'de'
-    ? 'PlantiPower – Effizientes Pflanzenwachstum & höhere Erträge'
+    ? 'FungiPower – Effizientes Pflanzenwachstum & höhere Erträge'
     : lang === 'nl'
-      ? 'PlantiPower – Efficiënte plantengroei & hogere opbrengst'
-      : 'PlantiPower – Efficient Plant Growth & Higher Yields'
+      ? 'FungiPower – Efficiënte plantengroei & hogere opbrengst'
+      : 'FungiPower – Efficient Plant Growth & Higher Yields'
 
   const description = lang === 'de'
-    ? 'Steigern Sie Ihren Anbau mit PlantiPower: ein 100 % natürlicher Nährstoff-Transporter für weniger Verschwendung, bessere Aufnahme und eine gesündere Ernte.'
+    ? 'Steigern Sie Ihren Anbau mit FungiPower: ein 100 % natürlicher Nährstoff-Transporter für weniger Verschwendung, bessere Aufnahme und eine gesündere Ernte.'
     : lang === 'nl'
-      ? 'Boost je teelt met PlantiPower: een 100% natuurlijke voedingstransporteur voor minder verspilling, betere opname en een gezonder gewas.'
-      : 'Boost your cultivation with PlantiPower: a 100% natural nutrient transporter to eliminate waste, ensure better uptake, and achieve healthier crops.'
+      ? 'Boost je teelt met FungiPower: een 100% natuurlijke voedingstransporteur voor minder verspilling, betere opname en een gezonder gewas.'
+      : 'Boost your cultivation with FungiPower: a 100% natural nutrient transporter to eliminate waste, ensure better uptake, and achieve healthier crops.'
 
   return {
     title: {
       default: title,
-      template: '%s | PlantiPower'
+      template: '%s | FungiPower'
     },
     description,
-    metadataBase: new URL('https://plantipower.com'),
+    metadataBase: new URL('https://fungipower.com'),
     alternates: {
       canonical: `/${lang}`,
       languages: {

@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
             allow: '/',
             disallow: '/private/',
         },
-        sitemap: 'https://plantipower.com/sitemap.xml',
+        sitemap: 'https://fungipower.com/sitemap.xml',
     }
 }

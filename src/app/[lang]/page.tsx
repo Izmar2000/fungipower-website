@@ -17,16 +17,16 @@ export async function generateMetadata(
   const lang = params.lang
 
   const title = lang === 'de'
-    ? 'PlantiPower – Effizientes Pflanzenwachstum & höhere Erträge'
+    ? 'FungiPower – Effizientes Pflanzenwachstum & höhere Erträge'
     : lang === 'nl'
-      ? 'PlantiPower – Efficiënte plantengroei & hogere opbrengst'
-      : 'PlantiPower – Efficient Plant Growth & Higher Yields'
+      ? 'FungiPower – Efficiënte plantengroei & hogere opbrengst'
+      : 'FungiPower – Efficient Plant Growth & Higher Yields'
 
   const description = lang === 'de'
-    ? 'Steigern Sie Ihren Anbau mit PlantiPower: ein 100 % natürlicher Nährstoff-Transporter für weniger Verschwendung, bessere Aufnahme und eine gesündere Ernte.'
+    ? 'Steigern Sie Ihren Anbau mit FungiPower: ein 100 % natürlicher Nährstoff-Transporter für weniger Verschwendung, bessere Aufnahme und eine gesündere Ernte.'
     : lang === 'nl'
-      ? 'Boost je teelt met PlantiPower: een 100% natuurlijke voedingstransporteur voor minder verspilling, betere opname en een gezonder gewas.'
-      : 'Boost your cultivation with PlantiPower: a 100% natural nutrient transporter to eliminate waste, ensure better uptake, and achieve healthier crops.'
+      ? 'Boost je teelt met FungiPower: een 100% natuurlijke voedingstransporteur voor minder verspilling, betere opname en een gezonder gewas.'
+      : 'Boost your cultivation with FungiPower: a 100% natural nutrient transporter to eliminate waste, ensure better uptake, and achieve healthier crops.'
 
   return {
     title,
@@ -34,13 +34,13 @@ export async function generateMetadata(
     openGraph: {
       title,
       description,
-      siteName: 'PlantiPower',
+      siteName: 'FungiPower',
       images: [
         {
           url: '/images/root-sketch.png',
           width: 1200,
           height: 630,
-          alt: 'PlantiPower Technology',
+          alt: 'FungiPower Technology',
         },
       ],
       locale: lang === 'nl' ? 'nl_NL' : 'en_US',

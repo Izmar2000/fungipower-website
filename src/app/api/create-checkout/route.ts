@@ -19,7 +19,7 @@ export async function POST(request: Request) {
 
         const stripe = new Stripe(stripeSecret);
 
-        const origin = request.headers.get('origin') || 'https://www.plantipower.com';
+        const origin = request.headers.get('origin') || 'https://www.fungipower.com';
 
         const session = await stripe.checkout.sessions.create({
             payment_method_types: ['card', 'ideal'],
@@ -29,7 +29,7 @@ export async function POST(request: Request) {
                     price_data: {
                         currency: 'eur',
                         product_data: {
-                            name: locale === 'de' ? 'PlantiPower Probepaket' : locale === 'nl' ? 'PlantiPower Proefpakket' : 'PlantiPower Sample Pack',
+                            name: locale === 'de' ? 'FungiPower Probepaket' : locale === 'nl' ? 'FungiPower Proefpakket' : 'FungiPower Sample Pack',
                             description: locale === 'de'
                                 ? '1x 1L All12 + 1x 60ml Shield (inkl. Versandkosten)'
                                 : locale === 'nl'

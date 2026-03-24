@@ -23,10 +23,10 @@ export async function POST(request: Request) {
 
     if (resend && email) {
       await resend.emails.send({
-        from: 'PlantiPower <info@mail.plantipower.com>',
+        from: 'FungiPower <info@mail.fungipower.com>',
         to: email,
-        replyTo: 'info@plantipower.com',
-        subject: 'Welkom bij PlantiPower - Je aanvraag is ontvangen',
+        replyTo: 'info@fungipower.com',
+        subject: 'Welkom bij FungiPower - Je aanvraag is ontvangen',
         html: emailHtml
       });
     }

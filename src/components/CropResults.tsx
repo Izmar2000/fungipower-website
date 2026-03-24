@@ -59,23 +59,23 @@ const CropResults: React.FC<CropResultsProps> = ({ dict }) => {
         <section className="py-20 relative overflow-hidden bg-[#011410]" id="crop-results">
             {/* Background Glow */}
             <div className="absolute top-0 center w-full h-full overflow-hidden pointer-events-none">
-                <div className="absolute top-[-10%] left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-lime-500/5 blur-[120px] rounded-full"></div>
+                <div className="absolute top-[-10%] left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-orange-500/5 blur-[120px] rounded-full"></div>
             </div>
 
             <div className="max-w-6xl mx-auto px-6 relative z-10">
                 {/* Header */}
                 <div className="text-center mb-16 max-w-3xl mx-auto">
-                    <div className="inline-block px-4 py-1.5 rounded-full bg-[#0d2b24] border border-lime-500/20 mb-6">
-                        <span className="text-xs font-bold tracking-[0.2em] uppercase text-lime-500">
+                    <div className="inline-block px-4 py-1.5 rounded-full bg-[#0d2b24] border border-orange-500/20 mb-6">
+                        <span className="text-xs font-bold tracking-[0.2em] uppercase text-orange-500">
                             {t.badge}
                         </span>
                     </div>
 
                     <h2 className="text-4xl md:text-6xl font-bold text-white mb-6 tracking-tight leading-none font-outfit">
-                        {t.title} <span className="text-lime-500">{t.titleHighlight}</span>
+                        {t.title} <span className="text-orange-500">{t.titleHighlight}</span>
                     </h2>
 
-                    <p className="text-lg text-emerald-100/60 leading-relaxed font-medium max-w-2xl mx-auto">
+                    <p className="text-lg text-orange-100/60 leading-relaxed font-medium max-w-2xl mx-auto">
                         {t.description}
                     </p>
                 </div>
@@ -117,13 +117,13 @@ const CropResults: React.FC<CropResultsProps> = ({ dict }) => {
                                 <div className="relative">
                                     <h3 className="text-3xl font-bold text-white uppercase tracking-tight mb-8 font-outfit">
                                         {crop.name}
-                                        <div className="h-1.5 w-16 bg-lime-500 rounded-full mt-3"></div>
+                                        <div className="h-1.5 w-16 bg-orange-500 rounded-full mt-3"></div>
                                     </h3>
 
                                     <div className="space-y-6">
                                         {crop.stats.map((stat, j) => (
                                             <div key={j} className="flex items-start gap-5 group/stat">
-                                                <div className={`w-12 h-12 rounded-2xl flex items-center justify-center shrink-0 border border-white/10 shadow-lg ${stat.badgeLabel ? 'bg-lime-500 text-[#011410]' : 'bg-white/5 text-lime-500'}`}>
+                                                <div className={`w-12 h-12 rounded-2xl flex items-center justify-center shrink-0 border border-white/10 shadow-lg ${stat.badgeLabel ? 'bg-orange-500 text-[#011410]' : 'bg-white/5 text-orange-500'}`}>
                                                     {stat.badgeLabel ? (
                                                         <span className="font-bold text-lg">{stat.badgeLabel}</span>
                                                     ) : (
@@ -132,7 +132,7 @@ const CropResults: React.FC<CropResultsProps> = ({ dict }) => {
                                                 </div>
                                                 <div>
                                                     <div className="text-xl font-bold text-white uppercase tracking-tight mb-1">{stat.title}</div>
-                                                    <div className="text-base text-emerald-100/60 font-medium leading-relaxed">{stat.desc}</div>
+                                                    <div className="text-base text-orange-100/60 font-medium leading-relaxed">{stat.desc}</div>
                                                 </div>
                                             </div>
                                         ))}

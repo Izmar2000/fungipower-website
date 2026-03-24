@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next'
 import { i18n } from '../i18n-config'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const baseUrl = 'https://www.plantipower.com'
+    const baseUrl = 'https://www.fungipower.com'
     const locales = i18n.locales
 
     const sitemapEntries: MetadataRoute.Sitemap = []
@@ -11,24 +11,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
         en: {
             home: '',
             about: 'about-us',
-            all12: 'plantipower-all12',
-            shield: 'plantipower-shield',
+            all12: 'fungipower-all12',
+            shield: 'fungipower-shield',
             faq: 'faq',
             contact: 'contact'
         },
         nl: {
             home: '',
             about: 'over-ons',
-            all12: 'plantipower-all12',
-            shield: 'plantipower-shield',
+            all12: 'fungipower-all12',
+            shield: 'fungipower-shield',
             faq: 'faq',
             contact: 'contact'
         },
         de: {
             home: '',
             about: 'ueber-uns',
-            all12: 'plantipower-all12',
-            shield: 'plantipower-shield',
+            all12: 'fungipower-all12',
+            shield: 'fungipower-shield',
             faq: 'faq',
             contact: 'kontakt'
         }

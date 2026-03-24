@@ -1,5 +1,5 @@
 
-// Product page for PlantiPower SHIELD
+// Product page for FungiPower SHIELD
 import React from 'react';
 import {
     CheckCircle2,
@@ -30,12 +30,12 @@ export async function generateMetadata(
     const isDE = lang === 'de';
 
     return {
-        title: isDE ? 'PlantiPower Shield | Unsichtbare Kraft & Widerstandsfähigkeit' : isNL ? 'PlantiPower Shield | Onzichtbare Kracht & Weerbaarheid' : 'PlantiPower Shield | Invisible Force & Resilience',
-        description: isDE ? 'Erhöhen Sie die natürliche Widerstandsfähigkeit Ihrer Ernte mit PlantiPower Shield. Biologischer Schutz ohne Rückstände.' : isNL ? 'Verhoog de natuurlijke weerbaarheid van je gewas met PlantiPower Shield. Biologische bescherming zonder residu.' : 'Increase the natural resilience of your crop with PlantiPower Shield. Organic protection without residue.',
+        title: isDE ? 'FungiPower Shield | Unsichtbare Kraft & Widerstandsfähigkeit' : isNL ? 'FungiPower Shield | Onzichtbare Kracht & Weerbaarheid' : 'FungiPower Shield | Invisible Force & Resilience',
+        description: isDE ? 'Erhöhen Sie die natürliche Widerstandsfähigkeit Ihrer Ernte mit FungiPower Shield. Biologischer Schutz ohne Rückstände.' : isNL ? 'Verhoog de natuurlijke weerbaarheid van je gewas met FungiPower Shield. Biologische bescherming zonder residu.' : 'Increase the natural resilience of your crop with FungiPower Shield. Organic protection without residue.',
         openGraph: {
-            title: isDE ? 'PlantiPower Shield | Unsichtbare Kraft & Widerstandsfähigkeit' : isNL ? 'PlantiPower Shield | Onzichtbare Kracht & Weerbaarheid' : 'PlantiPower Shield | Invisible Force & Resilience',
+            title: isDE ? 'FungiPower Shield | Unsichtbare Kraft & Widerstandsfähigkeit' : isNL ? 'FungiPower Shield | Onzichtbare Kracht & Weerbaarheid' : 'FungiPower Shield | Invisible Force & Resilience',
             description: isDE ? 'Natürliche Blattdüngung für maximalen Pflanzenschutz.' : isNL ? 'Natuurlijke bladvoeding voor maximale gewasbescherming.' : 'Natural foliar nutrition for maximum crop protection.',
-            images: ['/images/products/plantipower-shield-transparant.png'],
+            images: ['/images/products/fungipower-shield-transparant.png'],
         }
     }
 }
@@ -51,14 +51,14 @@ export default async function ProductShield({
     const isDE = lang === 'de';
 
     const content = {
-        title: isDE ? 'PlantiPower Shield | Unsichtbare Kraft & Natürliche Widerstandsfähigkeit' : isNL ? 'PlantiPower Shield | Onzichtbare Kracht & Natuurlijke Weerbaarheid' : 'PlantiPower Shield | Invisible Force & Natural Resilience',
+        title: isDE ? 'FungiPower Shield | Unsichtbare Kraft & Natürliche Widerstandsfähigkeit' : isNL ? 'FungiPower Shield | Onzichtbare Kracht & Natuurlijke Weerbaarheid' : 'FungiPower Shield | Invisible Force & Natural Resilience',
         meta: isDE
-            ? 'Erhöhen Sie die natürliche Widerstandsfähigkeit Ihrer Ernte mit PlantiPower Shield. Eine fortschrittliche Barriere für vitalere Pflanzen ohne Rückstände.'
+            ? 'Erhöhen Sie die natürliche Widerstandsfähigkeit Ihrer Ernte mit FungiPower Shield. Eine fortschrittliche Barriere für vitalere Pflanzen ohne Rückstände.'
             : isNL
-                ? 'Verhoog de natuurlijke weerbaarheid van je gewas met PlantiPower Shield. Een geavanceerde barrière voor vitalere planten zonder residu.'
-                : 'Increase the natural resilience of your crop with PlantiPower Shield. An advanced barrier for more vital plants without residue.',
+                ? 'Verhoog de natuurlijke weerbaarheid van je gewas met FungiPower Shield. Een geavanceerde barrière voor vitalere planten zonder residu.'
+                : 'Increase the natural resilience of your crop with FungiPower Shield. An advanced barrier for more vital plants without residue.',
         heroBadge: isDE ? 'Premium Schutzsystem' : isNL ? 'Premium Beschermingssysteem' : 'Premium Protection System',
-        heroTitle: <><span className="text-white">SHIELD</span><br /><span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-600 whitespace-nowrap">{isDE ? 'UNSICHTBARE KRAFT' : 'INVISIBLE FORCE'}</span></>,
+        heroTitle: <><span className="text-white">FUNGIPOWER</span><br /><span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-500">BOOST</span></>,
         heroDesc: isDE
             ? 'Diese hochwertige Blattdüngung wird direkt auf Blätter, Stängel, Blüten und Früchte aufgetragen, wodurch Nährstoffe schnell und effizient genau dort aufgenommen werden, wo die Pflanze sie am meisten braucht.'
             : isNL
@@ -97,10 +97,10 @@ export default async function ProductShield({
         advantageBadge: dict.Products.advantageBadgeShield,
         advantageTitle: isDE ? <>Kraft von <br /><span className="text-cyan-400">innen</span></> : isNL ? <>Kracht van <br /><span className="text-cyan-400">binnenuit</span></> : <>Strength from <br /><span className="text-cyan-400">within</span></>,
         advantageDesc: isDE
-            ? 'PlantiPower Shield erzwingt nicht die Natur, sondern unterstützt ihre eigenen Systeme. Das Ergebnis ist eine Ernte, die sich selbst verteidigen und optimal von den verfügbaren Nährstoffen profitieren kann.'
+            ? 'FungiPower Shield erzwingt nicht die Natur, sondern unterstützt ihre eigenen Systeme. Das Ergebnis ist eine Ernte, die sich selbst verteidigen und optimal von den verfügbaren Nährstoffen profitieren kann.'
             : isNL
-                ? 'PlantiPower Shield werkt niet door de natuur te forceren, maar door haar eigen systemen te ondersteunen. Het resultaat is een gewas dat zichzelf kan verdedigen en optimaal kan profiteren van de aanwezige nutriënten.'
-                : 'PlantiPower Shield does not work by forcing nature, but by supporting its own systems. The result is a crop that can defend itself and optimally benefit from available nutrients.',
+                ? 'FungiPower Shield werkt niet door de natuur te forceren, maar door haar eigen systemen te ondersteunen. Het resultaat is een gewas dat zichzelf kan verdedigen en optimaal kan profiteren van de aanwezige nutriënten.'
+                : 'FungiPower Shield does not work by forcing nature, but by supporting its own systems. The result is a crop that can defend itself and optimally benefit from available nutrients.',
         usps: isDE
             ? ["Optimale Verteilung auf der Blattoberfläche", "Nahtlose Integration in Ihre Düngepläne", "3 Tage Wartezeit vor der Ernte", "Speziell für den professionellen Anbau entwickelt"]
             : isNL
@@ -116,7 +116,7 @@ export default async function ProductShield({
         guideTitle: isDE ? <>Einfache <br /><span className="text-cyan-400">Anwendung</span></> : isNL ? <>Eenvoudige <br /><span className="text-cyan-400">toepassing</span></> : <>Simple <br /><span className="text-cyan-400">application</span></>,
         steps: [
             { step: "01", title: isDE ? "Gut schütteln" : isNL ? "Goed schudden" : "Shake well", desc: isDE ? "Die Flasche vor Gebrauch 30 Sekunden schütteln, um die Mineralien optimal zu mischen." : isNL ? "Schud de fles gedurende 30 seconden voor gebruik om de mineralen optimaal te mengen." : "Shake the bottle for 30 seconds before use to mix the minerals optimally." },
-            { step: "02", title: isDE ? "Richtige Dosierung" : isNL ? "Juiste dosering" : "Correct dosage", desc: isDE ? "Dosieren Sie 15 ml PlantiPower Shield pro 1 Liter Wasser für ein standardmäßiges Mischungsverhältnis." : isNL ? "Doseer 15 ml PlantiPower Shield per 1 liter water voor een standaard mengverhouding." : "Dose 15 ml PlantiPower Shield per 1 liter of water for a standard mixing ratio." },
+            { step: "02", title: isDE ? "Richtige Dosierung" : isNL ? "Juiste dosering" : "Correct dosage", desc: isDE ? "Dosieren Sie 15 ml FungiPower Shield pro 1 Liter Wasser für ein standardmäßiges Mischungsverhältnis." : isNL ? "Doseer 15 ml FungiPower Shield per 1 liter water voor een standaard mengverhouding." : "Dose 15 ml FungiPower Shield per 1 liter of water for a standard mixing ratio." },
             { step: "03", title: isDE ? "Vollständige Abdeckung" : isNL ? "Volledige bedekking" : "Full coverage", desc: isDE ? "Sprühen Sie die gesamte Pflanze ein, einschließlich der Blattunterseite, für maximalen Schutz." : isNL ? "Bespuit de volledige plant, inclusief de onderzijde van het blad voor maximale bescherming." : "Spray the entire plant, including the underside of the leaves, for maximum protection." }
         ],
         expertTitle: dict.Products.importantInstructions,
@@ -131,16 +131,16 @@ export default async function ProductShield({
                 : "Shield is safe for humans and the environment. Store the product in a dark place at room temperature to preserve active components.",
         technicalTitle: dict.Products.technicalData,
         technicalDesc: isDE
-            ? 'Zugang zur offiziellen Dokumentation und den Spezifikationen von PlantiPower Shield.'
+            ? 'Zugang zur offiziellen Dokumentation und den Spezifikationen von FungiPower Shield.'
             : isNL
-                ? 'Toegang tot de officiële documentatie en specificaties van PlantiPower Shield.'
-                : 'Access to the official documentation and specifications of PlantiPower Shield.',
+                ? 'Toegang tot de officiële documentatie en specificaties van FungiPower Shield.'
+                : 'Access to the official documentation and specifications of FungiPower Shield.',
         sdsLabel: isDE ? 'Sicherheitsdatenblatt' : isNL ? 'Veiligheidsblad' : 'Safety Data Sheet',
         sdsMeta: isDE ? 'SDS DE • pdf' : isNL ? 'SDS NL • pdf' : 'SDS EN • pdf',
-        sdsLink: isDE ? '/images/products/sds-shield.pdf' : isNL ? '/docs/PlantiPower%20Shield%20SDS%20NL.pdf' : '/images/products/sds-shield.pdf',
+        sdsLink: isDE ? '/images/products/sds-shield.pdf' : isNL ? '/docs/FungiPower%20Shield%20SDS%20NL.pdf' : '/images/products/sds-shield.pdf',
         labelTitle: isDE ? 'Das offizielle Etikett' : isNL ? 'Het Officiële Etiket' : 'Official Label',
         labelImage: '/images/products/label-shield-nl.png',
-        heroImage: '/images/products/plantipower-shield-transparant.png'
+        heroImage: '/images/products/fungipower-boost.png'
     };
 
     return (
@@ -210,7 +210,7 @@ export default async function ProductShield({
                                 <div className="relative z-10 floating">
                                     <img
                                         src={content.heroImage}
-                                        alt="PlantiPower Shield Label"
+                                        alt="FungiPower Shield Label"
                                         className="w-full h-auto object-contain max-h-[600px] drop-shadow-[0_40px_100px_rgba(6,182,212,0.4)] filter brightness-110 group-hover:brightness-125 transition-all duration-700 transform hover:scale-105"
                                     />
                                 </div>

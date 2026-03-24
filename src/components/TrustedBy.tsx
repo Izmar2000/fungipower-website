@@ -10,7 +10,7 @@ const TrustedBy = () => {
         <section className="py-16 overflow-hidden relative">
             <div className="max-w-7xl mx-auto px-6">
                 <div className="flex flex-col items-center gap-10">
-                    <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-emerald-100/30 whitespace-nowrap px-8">TRUSTED BY PROFESSIONAL GROWERS</span>
+                    <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-orange-100/30 whitespace-nowrap px-8">TRUSTED BY PROFESSIONAL GROWERS</span>
 
                     <div className="w-full flex flex-wrap justify-center items-center gap-12 md:gap-14 opacity-50 grayscale hover:opacity-70 transition-opacity">
                         {displayLogos.map((logo, i) => (
