@@ -110,10 +110,10 @@ const SampleModal: React.FC<SampleModalProps> = ({ isOpen, onClose, lang }) => {
     placeholderCity: "12345 Stadt",
     labelCategory: "KULTUR / TYP DER GÄRTNEREI",
     subtextCategory: "Wählen Sie die Hauptkategorie Ihrer Kultur.",
-    labelSpecificCrop: "Spezifische Kultur",
-    subtextSpecificCrop: "Wählen Sie Ihre Kultur aus der Liste.",
-    labelOtherCrop: "Geben Sie Ihre Kultur an",
-    subtextOtherCrop: "Nennen Sie die Kultur, auf die Sie den Test anwenden möchten.",
+    labelSpecificCrop: "Pilzart",
+    subtextSpecificCrop: "Wählen Sie Ihre Pilzart aus der Liste.",
+    labelOtherCrop: "Pilzart angeben",
+    subtextOtherCrop: "Nennen Sie die Pilzart, auf die Sie den Test anwenden möchten.",
     labelComments: "ANMERKUNGEN ODER SPEZIFISCHE FRAGEN",
     placeholderComments: "Haben Sie spezifische Herausforderungen?",
     btnSubmit: "Bestellen & Bezahlen",
@@ -143,10 +143,10 @@ const SampleModal: React.FC<SampleModalProps> = ({ isOpen, onClose, lang }) => {
     placeholderCity: "1234 AB Plaatsnaam",
     labelCategory: "TEELT / TYPE KWEKERIJ",
     subtextCategory: "Kies de hoofdcategorie van je teelt.",
-    labelSpecificCrop: "Specifiek gewas",
-    subtextSpecificCrop: "Kies je gewas uit de lijst.",
-    labelOtherCrop: "Geef je gewas op",
-    subtextOtherCrop: "Vermeld het gewas waarop je de proef wilt toepassen.",
+    labelSpecificCrop: "Champignonsoort",
+    subtextSpecificCrop: "Kies je champignonsoort uit de lijst.",
+    labelOtherCrop: "Geef je champignonsoort op",
+    subtextOtherCrop: "Vermeld de champignonsoort waarop je de proef wilt toepassen.",
     labelComments: "OPMERKINGEN ODER SPECIFIEKE VRAGEN",
     placeholderComments: "Heb je specifieke uitdagingen?",
     btnSubmit: "Bestellen & Betalen",
@@ -176,10 +176,10 @@ const SampleModal: React.FC<SampleModalProps> = ({ isOpen, onClose, lang }) => {
     placeholderCity: "1234 AB City",
     labelCategory: "CROP / NURSERY TYPE",
     subtextCategory: "Choose the main category of your crop.",
-    labelSpecificCrop: "Specific crop",
-    subtextSpecificCrop: "Choose your crop from the list.",
-    labelOtherCrop: "Specify your crop",
-    subtextOtherCrop: "Mention the crop you want to apply the test to.",
+    labelSpecificCrop: "Mushroom species",
+    subtextSpecificCrop: "Choose your mushroom species from the list.",
+    labelOtherCrop: "Specify your mushroom species",
+    subtextOtherCrop: "Mention the species you want to apply the test to.",
     labelComments: "COMMENTS OR SPECIFIC QUESTIONS",
     placeholderComments: "Do you have specific challenges?",
     btnSubmit: "Order & Pay",
@@ -347,7 +347,7 @@ const SampleModal: React.FC<SampleModalProps> = ({ isOpen, onClose, lang }) => {
                   <input
                     type="text"
                     required
-                    placeholder={isDE ? "Geben Sie Ihre Kultur ein..." : isNL ? "Vul je gewas in..." : "Enter your crop..."}
+                    placeholder={isDE ? "Geben Sie Ihre Pilzart ein..." : isNL ? "Vul je champignonsoort in..." : "Enter your mushroom species..."}
                     className="w-full bg-[#0d2b24] border border-white/5 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-orange-500/50 transition-all font-medium"
                     value={formData.otherCrop}
                     onChange={(e) => setFormData({ ...formData, otherCrop: e.target.value })}

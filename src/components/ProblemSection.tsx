@@ -11,9 +11,9 @@ const ProblemSection: React.FC<ProblemSectionProps> = ({ dict }) => {
         badge: "DE UITDAGING",
         title: "Het probleem in",
         titleAccent: "de praktijk.",
-        description: "In een perfecte wereld wordt elke gram voeding die je geeft, ook daadwerkelijk door de plant opgenomen. De realiteit is anders. Factoren zoals pH-schommelingen, koud water of een onbalans in de wortelzone zorgen vaak voor blokkades.",
-        quote: "\"Dit zorgt voor ongebruikte voedingsstoffen die achterblijven in het substraat - zonde van de investering en belastend voor het gewas.\"",
-        closing: "Door deze 'blockers' weg te nemen met FungiPower, haal je het maximale uit je bestaande schema."
+        description: "In een ideale teelt koloniseert het mycelium zich volledig en worden alle voedingsstoffen in het substraat optimaal benut. De realiteit is anders. Ongelijkmatige kolonisatie, trage vluchten en variatie in vruchtlichamen zorgen voor verspilling en een lager rendement per teeltcyclus.",
+        quote: "\"Niet het substraat is het probleem, maar de efficiëntie waarmee het mycelium de beschikbare voedingsstoffen opneemt en benut.\"",
+        closing: "Door de biologische cyclus van het mycelium te versterken met FungiPower, haal je meer rendement uit elk substraatblok."
     };
 
     return (

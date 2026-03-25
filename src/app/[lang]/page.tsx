@@ -23,10 +23,10 @@ export async function generateMetadata(
       : 'FungiPower – Efficient Plant Growth & Higher Yields'
 
   const description = lang === 'de'
-    ? 'Steigern Sie Ihren Anbau mit FungiPower: ein 100 % natürlicher Nährstoff-Transporter für weniger Verschwendung, bessere Aufnahme und eine gesündere Ernte.'
+    ? 'Steigern Sie Ihren Pilzanbau mit FungiPower: ein 100 % natürlicher Biostimulans für gleichmäßigere Fruchtkörper, schnellere Flushes und höheren Ertrag pro m².'
     : lang === 'nl'
-      ? 'Boost je teelt met FungiPower: een 100% natuurlijke voedingstransporteur voor minder verspilling, betere opname en een gezonder gewas.'
-      : 'Boost your cultivation with FungiPower: a 100% natural nutrient transporter to eliminate waste, ensure better uptake, and achieve healthier crops.'
+      ? 'Boost je champignonteelt met FungiPower: een 100% natuurlijke biostimulant voor uniformere vruchtlichamen, snellere vluchten en hogere opbrengst per m².'
+      : 'Boost your mushroom cultivation with FungiPower: a 100% natural biostimulant for more uniform fruiting bodies, faster flushes and higher yield per m².'
 
   return {
     title,
