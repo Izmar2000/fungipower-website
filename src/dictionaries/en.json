@@ -72,24 +72,24 @@
     ],
     "animationCards": [
       {
-        "label": "Silicon uptake doubled",
-        "sub": "irrigation water stable"
+        "label": "More uniform fruiting bodies",
+        "sub": "consistent size per flush"
       },
       {
-        "label": "Phosphorus uptake",
-        "sub": "at 45% higher P supply via irrigation"
+        "label": "Faster primordia formation",
+        "sub": "more vital mycelium · shorter cycle time"
       },
       {
-        "label": "Molybdenum in old plant sap",
-        "sub": "direct proof ALL12® · at lower Mo supply"
+        "label": "Higher yield per m²",
+        "sub": "more efficient substrate use"
       },
       {
-        "label": "Zinc in old plant sap",
-        "sub": "Zn · stable accumulation"
+        "label": "Less waste",
+        "sub": "more uniform colonisation per block"
       },
       {
-        "label": "Selective ion exclusion",
-        "sub": "Na −42% · Cl −46% in young leaf"
+        "label": "More stable flushes",
+        "sub": "consistent results throughout growing cycle"
       }
     ]
   },
@@ -113,9 +113,9 @@
         "text": "Since adding FungiPower to our cultivation schedule, we see a clear difference: more uniform fruiting bodies, faster flushes and higher yield per m². Without changing anything in our substrate."
       },
       {
-        "name": "Herb Grower",
+        "name": "Mushroom Grower",
         "role": "Organic Cultivation",
-        "text": "What appeals to me is that FungiPower doesn't just give results, it truly strengthens the plant. Less loss, better absorption, and 100% natural. Exactly what the sector needs."
+        "text": "What appeals to me is that FungiPower doesn't just give results, it truly strengthens the mycelium. Less loss, better absorption, and 100% natural. Exactly what the sector needs."
       }
     ]
   },
@@ -213,7 +213,7 @@
     "items": [
       {
         "q": "What is FungiPower?",
-        "a": "FungiPower is a natural nutrient transporter that delivers fertilizers directly to plant roots. It helps plants absorb nutrients more efficiently, resulting in stronger growth, higher yield, and better soil health."
+        "a": "FungiPower is a natural biostimulant that strengthens the biological cycle of the mycelium. It promotes the absorption of trace elements through the mycelium network, resulting in uniform fruiting bodies, faster flushes and higher yield per m²."
       },
       {
         "q": "How often should I apply FungiPower?",
@@ -229,27 +229,27 @@
       },
       {
         "q": "How does FungiPower work?",
-        "a": "It improves root absorption capacity and facilitates mineral transport."
+        "a": "FungiPower strengthens mycelium network activity and promotes the absorption of essential nutrients in the substrate, resulting in more vital mycelium, more uniform colonisation and more stable flushes."
       },
       {
         "q": "What packaging sizes are available?",
-        "a": "All12 is available in 1 liter, 10 liter, and 1000 liter. Shield is available in 1 liter and 5 liter. Custom quantities/packaging available upon request."
+        "a": "FungiPower Start is available in 1 liter, 10 liter, and 1000 liter. FungiPower Boost is available in 1 liter and 5 liter. Custom quantities/packaging available upon request."
       },
       {
         "q": "Which crops is FungiPower suitable for?",
-        "a": "Suitable for vegetables, fruits, ornamentals, and trees."
+        "a": "FungiPower is developed for professional mushroom cultivation, including Agaricus, Pleurotus and Shiitake. It works effectively on all common substrate types."
       },
       {
-        "q": "Is FungiPower safe for all plants?",
-        "a": "Yes, when used as directed it is safe for all plants."
+        "q": "Is FungiPower safe to use in cultivation?",
+        "a": "Yes, when used correctly FungiPower is completely safe for mushroom cultivation and supports the natural biological processes of the mycelium."
       },
       {
         "q": "What are the benefits?",
         "a": "Higher yield, better quality, efficient fertilizer use."
       },
       {
-        "q": "Can I use it in hydroponics?",
-        "a": "Yes, excellent for hydroponics and substrates."
+        "q": "Does FungiPower work on all substrate types?",
+        "a": "Yes, FungiPower works effectively on all common substrate types in mushroom cultivation."
       },
       {
         "q": "Is it organic and sustainable?",
@@ -257,7 +257,7 @@
       },
       {
         "q": "What makes it unique?",
-        "a": "The ALL12 technology improving fundamental absorption capacity."
+        "a": "The unique formulation that actively supports the biological cycle of the mycelium, improving the uptake of all essential nutrients for a more stable and productive cultivation."
       },
       {
         "q": "How do I use it?",

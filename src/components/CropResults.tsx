@@ -37,7 +37,7 @@ const CropResults: React.FC<CropResultsProps> = ({ dict }) => {
         {
             name: t.crops[1].name,
             image: "/images/champignon-kweker.png",
-            hasBadge: true,
+            hasBadge: false,
             stats: [
                 {
                     icon: Sprout,
@@ -84,20 +84,6 @@ const CropResults: React.FC<CropResultsProps> = ({ dict }) => {
                 <div className="flex flex-col md:flex-row gap-10 items-stretch justify-center">
                     {crops.map((crop, i) => (
                         <div key={i} className="flex-1 w-full group relative rounded-[2.5rem] overflow-hidden aspect-[4/3] md:min-h-[500px] bg-[#021814] border border-white/5 shadow-2xl">
-                            {/* Top Right Validator Badge (For Cucumber) */}
-                            {crop.hasBadge && (
-                                <div className="absolute top-0 right-0 z-20 bg-white rounded-bl-[2.5rem] px-8 py-6 shadow-xl flex flex-col items-center">
-                                    <span className="text-[10px] uppercase font-bold tracking-[0.2em] text-[#011410]/40 mb-2">{t.validated}</span>
-                                    <div className="w-24 h-12 flex items-center justify-center">
-                                        <img
-                                            src="/images/vangog-logo.png"
-                                            alt="Van Gog Kwekerijen"
-                                            className="max-h-full max-w-full object-contain"
-                                            onError={(e) => { (e.target as HTMLImageElement).style.visibility = 'hidden' }}
-                                        />
-                                    </div>
-                                </div>
-                            )}
 
                             {/* Background Image */}
                             <div className="absolute inset-0">

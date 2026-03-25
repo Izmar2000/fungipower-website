@@ -72,24 +72,24 @@
     ],
     "animationCards": [
       {
-        "label": "Silizium-Aufnahme verdoppelt",
-        "sub": "Gießwasser stabil"
+        "label": "Gleichmäßigere Fruchtkörper",
+        "sub": "konsistente Größe pro Flush"
       },
       {
-        "label": "Phosphoraufnahme",
-        "sub": "bei 45% höherem P-Angebot via Gießwasser"
+        "label": "Schnellere Primordienbildung",
+        "sub": "vitaleres Myzel · kürzere Zykluszeit"
       },
       {
-        "label": "Molybdän im alten Pflanzensaft",
-        "sub": "Direktnachweis ALL12® · bei niedrigerer Mo-Gabe"
+        "label": "Höherer Ertrag pro m²",
+        "sub": "effizientere Substratnutzung"
       },
       {
-        "label": "Zink im alten Pflanzensaft",
-        "sub": "Zn · stabile Akkumulation"
+        "label": "Weniger Ausschuss",
+        "sub": "gleichmäßigere Kolonisierung pro Block"
       },
       {
-        "label": "Selektiver Ionenausschluss",
-        "sub": "Na −42% · Cl −46% in jungem Blatt"
+        "label": "Stabilere Flushes",
+        "sub": "konsistente Ergebnisse im Anbau"
       }
     ]
   },
@@ -113,9 +113,9 @@
         "text": "Seit wir FungiPower in unseren Anbauplan integrieren, sehen wir einen klaren Unterschied: gleichmäßigere Fruchtkörper, schnellere Flüsse und höhere Erträge pro m². Ohne etwas am Substrat zu ändern."
       },
       {
-        "name": "Kräutererzeuger",
+        "name": "Pilzerzeuger",
         "role": "Biologischer Anbau",
-        "text": "Was mich anspricht, ist, dass FungiPower nicht nur Ergebnisse liefert, sondern die Pflanze wirklich stärkt. Weniger Ausfall, bessere Aufnahme und 100% natürlich. Genau das, was der Sektor braucht."
+        "text": "Was mich anspricht, ist, dass FungiPower nicht nur Ergebnisse liefert, sondern das Myzel wirklich stärkt. Weniger Ausfall, bessere Aufnahme und 100% natürlich. Genau das, was der Sektor braucht."
       }
     ]
   },
@@ -213,7 +213,7 @@
     "items": [
       {
         "q": "Was ist FungiPower?",
-        "a": "FungiPower ist ein natürlicher Nährstoff-Transporter, der Düngemittel direkt an die Pflanzenwurzeln liefert. Es hilft Pflanzen, Nährstoffe effizienter aufzunehmen, was zu stärkerem Wachstum, höherem Ertrag und besserer Bodengesundheit führt."
+        "a": "FungiPower ist ein natürlicher Biostimulans, der den biologischen Kreislauf des Myzels stärkt. Er fördert die Aufnahme von Spurenelementen über das Myzelnetzwerk, was zu gleichmäßigen Fruchtkörpern, schnelleren Schüben und höherem Ertrag pro m² führt."
       },
       {
         "q": "Wie oft sollte ich FungiPower anwenden?",
@@ -229,7 +229,7 @@
       },
       {
         "q": "Wie funktioniert FungiPower?",
-        "a": "Es verbessert die Aufnahmekapazität der Wurzeln und erleichtert den Transport von Mineralien in der Pflanze, wodurch die Pflanze weniger Energie für die Aufnahme verliert."
+        "a": "FungiPower stärkt die Aktivität des Myzelnetzwerks und fördert die Aufnahme wesentlicher Nährstoffe im Substrat. Das Ergebnis ist vitaleres Myzel, gleichmäßigere Kolonisierung und stabilere Schübe."
       },
       {
         "q": "Welche Verpackungsgrößen gibt es?",
@@ -240,16 +240,16 @@
         "a": "Es ist effektiv für eine breite Palette von Kulturen, darunter Pilzanbau und andere substratgezogene Kulturen."
       },
       {
-        "q": "Ist FungiPower sicher für alle Pflanzen?",
-        "a": "Ja, bei korrekter Anwendung gemäß den Vorschriften ist es sicher für alle Pflanzen und unterstützt die natürlichen Wachstumsprozesse."
+        "q": "Ist FungiPower im Anbau sicher zu verwenden?",
+        "a": "Ja, bei korrekter Anwendung ist FungiPower für den Pilzanbau vollständig sicher und unterstützt die natürlichen biologischen Prozesse des Myzels."
       },
       {
         "q": "Was sind die Vorteile von FungiPower?",
-        "a": "Höherer Ertrag, bessere Fruchtqualität (u.a. Brix-Wert), effizientere Düngemittelnutzung und eine vitalere Kultur."
+        "a": "Höherer Ertrag pro m², gleichmäßigere Fruchtkörper, schnellere Schübe, weniger Ausschuss und effizientere Nutzung des Substrats."
       },
       {
-        "q": "Kann ich es in der Hydrokultur verwenden?",
-        "a": "Absolut, FungiPower eignet sich hervorragend für Hydrokultur und andere Substratsysteme."
+        "q": "Funktioniert FungiPower auf allen Substrattypen?",
+        "a": "Ja, FungiPower funktioniert effektiv auf allen gängigen Substrattypen im Pilzanbau."
       },
       {
         "q": "Ist FungiPower biologisch und nachhaltig?",
@@ -257,7 +257,7 @@
       },
       {
         "q": "Was macht FungiPower einzigartig?",
-        "a": "Die einzigartige ALL12-Technologie, die nicht nur nährt, sondern die Aufnahmekapazität der Pflanze selbst fundamental verbessert."
+        "a": "Die einzigartige Formulierung, die den biologischen Kreislauf des Myzels aktiv unterstützt und die Aufnahme aller wesentlichen Nährstoffe für einen stabileren und produktiveren Anbau verbessert."
       },
       {
         "q": "Wie verwende ich FungiPower?",
