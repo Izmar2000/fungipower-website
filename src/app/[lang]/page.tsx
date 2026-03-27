@@ -71,7 +71,7 @@ export default async function Page({
         <ProblemSection dict={dict} />
         <CropResults dict={dict} />
         <GlobalStandard dict={dict} />
-        <Testimonials dict={dict} />
+        {/* <Testimonials dict={dict} /> */}{/* Tijdelijk verborgen — terugzetten zodra echte reviews beschikbaar zijn */}
       </div>
     </ClientLayout>
   )
