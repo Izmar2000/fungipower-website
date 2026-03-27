@@ -32,8 +32,8 @@
     "description": "Jouw teeltproces is het fundament van jouw succes. FungiPower is ontwikkeld om dit fundament te versterken, niet te vervangen. Wij bieden biologische ondersteuning voor stabiele myceliumontwikkeling en consistente vluchten, in elke fase van de teeltcyclus.",
     "usps": [
       {
-        "title": "Jouw methode blijft leidend",
-        "desc": "Geen aanpassingen in je bestaande proces nodig. FungiPower integreert naadloos in elke kwekerij."
+        "title": "Jouw methode van telen blijft leidend",
+        "desc": "Er zijn geen aanpassingen in je bestaande proces nodig. FungiPower integreert naadloos in elke kwekerij."
       },
       {
         "title": "Direct zichtbaar resultaat",
@@ -65,7 +65,7 @@
         "name": "Teeltcyclus",
         "image": "/images/fungipower-hero-plant.png",
         "stats_0_title": "Hogere opbrengst per m²",
-        "stats_0_desc": "Efficiëntere benutting van het substraat per teeltcyclus.",
+        "stats_0_desc": "Efficiëntere benutting van de voedingsstoffen uit het substraat per teeltcyclus.",
         "stats_1_title": "Minder uitval",
         "stats_1_desc": "Uniformere kolonisatie vermindert onverkoopbare champignons."
       }
@@ -110,22 +110,22 @@
       {
         "name": "Champignonkweker",
         "role": "Noord-Brabant",
-        "text": "Sinds we FungiPower toevoegen aan ons teeltschema, zien we duidelijk verschil: uniformere vruchtlichamen, snellere vluchten en hogere opbrengst per m². En dat zonder iets te veranderen in ons substraat."
+        "text": "Sinds we FungiPower toevoegen aan ons teeltschema, zien we duidelijk verschil: uniformere vruchtlichamen (paddenstoelen), snellere vluchten en hogere opbrengst per m². En dat zonder iets te veranderen in ons substraat of aan onze teeltwijze."
       },
       {
         "name": "Champignonkweker",
-        "role": "Biologische Teelt",
+        "role": "Limburg",
         "text": "Wat mij aanspreekt is dat FungiPower niet alleen resultaat geeft, maar het mycelium echt versterkt. Minder uitval, betere opname en 100% natuurlijk. Precies wat de sector nodig heeft."
       }
     ]
   },
   "ProblemSection": {
     "badge": "DE UITDAGING",
-    "title": "Het probleem in",
+    "title": "De uitdaging in",
     "titleAccent": "de champignonteelt",
     "description": "In een ideale teelt koloniseert het mycelium zich volledig en worden alle voedingsstoffen in het substraat optimaal benut. De realiteit is anders. Ongelijkmatige kolonisatie, trage vluchten en variatie in vruchtlichamen zorgen voor verspilling en een lager rendement per teeltcyclus.",
-    "quote": "\"Niet het substraat is het probleem, maar de efficiëntie waarmee het mycelium de beschikbare voedingsstoffen opneemt en benut.\"",
-    "closing": "Door de biologische cyclus van het mycelium te versterken met FungiPower, haal je meer rendement uit elk substraatblok."
+    "quote": "\"Niet het substraat is het probleem, maar de efficiëntie waarmee het mycelium de beschikbare voedingsstoffen opneemt en benut.\" — Jan Klerken",
+    "closing": "Door de biologische cyclus van het mycelium te versterken met FungiPower, haal je meer rendement uit het gevulde substraat."
   },
   "About": {
     "metaTitle": "Over Ons | FungiPower",
@@ -136,21 +136,21 @@
     "heroDesc": "Ontstaan vanuit pure praktijkervaring en een diep begrip van hoe een teelt zich écht ontwikkelt.",
     "visionBadge": "De Oprichter",
     "visionTitle": "Jan Klerken",
-    "visionTitleAccent": "— Oprichter FungiPower",
-    "visionDesc": "Jan Klerken groeide op in de champignonwereld. Wat voor anderen een product is, was voor hem dagelijkse realiteit. Door de jaren heen werkte hij in verschillende delen van de keten en zag hij hoe de sector professioneler en technischer werd. Wat daarbij altijd centraal bleef staan, is de rol van de teler. Uiteindelijk draait alles om degene die dagelijks verantwoordelijkheid draagt voor kwaliteit en continuïteit.",
+    "visionTitleAccent": "— Co-Founder FungiPower",
+    "visionDesc": "Jan Klerken groeide op in de champignonwereld. Wat voor anderen een product is, was voor hem dagelijkse realiteit. Door de jaren heen werkte hij in verschillende delen van de keten en zag hij hoe de sector professioneler en technischer werd. Samen met PlantiPower en OurCelia heeft hij FungiPower opgericht als joint venture om deze sectorkennis te vertalen naar een oplossing die écht impact maakt. Uiteindelijk draait alles om degene die dagelijks verantwoordelijkheid draagt voor kwaliteit en continuïteit: de teler.",
     "coreTitle": "De uitdaging in de sector",
     "coreDesc": "De moderne champignonteelt staat voor grote uitdagingen. Grondstoffen worden schaarser en duurder, terwijl de eisen aan kwaliteit en opbrengst alleen maar toenemen. Kwekers moeten steeds efficiënter werken om rendabel te blijven in een competitieve markt. In die ontwikkeling draait verbetering vaak niet om méér toevoegen, maar om het optimaliseren van wat er al aanwezig is.",
     "approachTitle": "Ourcelia × FungiPower",
-    "approachDesc": "FungiPower is het resultaat van een strategische samenwerking tussen FungiPower en Ourcelia. Deze joint venture combineert twee werelden: de diepgaande biologische expertise van Ourcelia als producent van kwalitatief broed, en de jarenlange sectorervaring van FungiPower. Door wetenschappelijke validatie te koppelen aan de dagelijkse realiteit van de kwekerij, hebben we een biostimulant ontwikkeld die écht impact heeft waar het telt: in de teeltcel.",
+    "approachDesc": "FungiPower is het resultaat van een strategische samenwerking tussen OurCelia en PlantiPower. Deze joint venture combineert twee werelden: OurCelia brengt jarenlange ervaring in de paddenstoelsector en expertise als producent van kwalitatief broed. PlantiPower beschikt over een uitgebreid kennis- en handelsnetwerk in de tuinbouwsector en jarenlange ervaring in de ontwikkeling van biostimulanten. Door deze complementaire expertises samen te brengen, hebben we een biostimulant ontwikkeld die écht impact heeft waar het telt: in de teeltcel.",
     "values": [
       {
-        "title": "Ourcelia",
-        "desc": "Biologische kennis & broedproductie.",
+        "title": "OurCelia",
+        "desc": "Paddenstoelsector expertise & broedproductie.",
         "icon": "Leaf"
       },
       {
-        "title": "FungiPower",
-        "desc": "Sectorervaring & praktijkkennis.",
+        "title": "PlantiPower",
+        "desc": "Tuinbouwnetwerk & biostimulant-ontwikkeling.",
         "icon": "Zap"
       },
       {
@@ -217,7 +217,7 @@
       },
       {
         "q": "Hoe vaak moet ik FungiPower toepassen?",
-        "a": "Voor optimale resultaten adviseren wij toepassing per teeltcyclus. Raadpleeg de productinformatie voor specifieke doseringen per teeltfase."
+        "a": "Voor optimale resultaten adviseren wij een toepassing na iedere vlucht. Raadpleeg de productinformatie voor specifieke doseringen per teelt/product/vlucht."
       },
       {
         "q": "Is FungiPower een meststof?",
@@ -225,7 +225,7 @@
       },
       {
         "q": "Kan ik het gebruiken met andere meststoffen?",
-        "a": "Ja, FungiPower is ontworpen om synergetisch te werken met alle reguliere mestprogramma's en verbetert de opname daarvan."
+        "a": "Ja, FungiPower is ontworpen om synergetisch te werken met alle reguliere bemestingsprogramma's en verbetert de opname daarvan."
       },
       {
         "q": "Hoe werkt FungiPower?",
@@ -237,11 +237,11 @@
       },
       {
         "q": "Voor welke teelten is FungiPower geschikt?",
-        "a": "FungiPower is specifiek ontwikkeld voor de champignonteelt, waaronder Agaricus, Pleurotus en Shiitake op substraat."
+        "a": "FungiPower is specifiek ontwikkeld voor de professionele champignonteelt en gevalideerd in commerciële kwekerijen."
       },
       {
         "q": "Is FungiPower veilig te gebruiken in de teelt?",
-        "a": "Ja, FungiPower is bij correct gebruik volledig veilig voor de champignonteelt en ondersteunt de natuurlijke biologische processen van het mycelium."
+        "a": "Ja, FungiPower is bij correct gebruik volledig veilig voor de champignonteelt, ondersteunt de natuurlijke biologische processen van het mycelium en laat geen MRL's achter."
       },
       {
         "q": "Wat zijn de voordelen van FungiPower?",
@@ -253,7 +253,7 @@
       },
       {
         "q": "Is FungiPower biologisch en duurzaam?",
-        "a": "Ja, het draagt bij aan duurzame teelt door de efficiëntie van meststoffen te verhogen, waardoor er minder uitspoeling plaatsvindt."
+        "a": "Ja, FungiPower is 100% natuurlijk van samenstelling. Het versterkt de biologische cyclus van het mycelium zonder chemische toevoegingen, draagt bij aan efficiënter meststofgebruik en vermindert daarmee ook de uitspoeling."
       },
       {
         "q": "Wat maakt FungiPower uniek?",

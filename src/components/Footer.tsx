@@ -75,13 +75,13 @@ const Footer: React.FC<FooterProps> = ({ dict, lang }) => {
                 </div>
                 <span className="font-medium tracking-wide">+31 (0)77 208 6033</span>
               </a>
-              <a href="mailto:info@fungipower.com" className="flex items-center gap-4 text-orange-50 hover:text-orange-400 transition-colors group">
+              <a href="mailto:info@fungipower.bio" className="flex items-center gap-4 text-orange-50 hover:text-orange-400 transition-colors group">
                 <div className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-orange-500 group-hover:text-orange-950 transition-all duration-300">
                   <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
                 </div>
-                <span className="font-medium tracking-wide">info@fungipower.com</span>
+                <span className="font-medium tracking-wide">info@fungipower.bio</span>
               </a>
               <div className="flex items-start gap-4 text-orange-50 group">
                 <div className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center mt-1 group-hover:border-orange-500/20 transition-colors shrink-0 font-medium">

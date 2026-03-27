@@ -77,7 +77,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ dict, lang }) => {
                 </div>
                 <div className="flex items-center gap-6 group">
                   <div className="w-14 h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-2xl group-hover:bg-orange-500/10 transition-all shadow-inner">✉️</div>
-                  <a href="mailto:info@fungipower.com" className="font-black text-xl tracking-tight hover:text-orange-400 transition-colors">info@fungipower.com</a>
+                  <a href="mailto:info@fungipower.bio" className="font-black text-xl tracking-tight hover:text-orange-400 transition-colors">info@fungipower.bio</a>
                 </div>
                 <div className="flex items-start gap-6 group">
                   <div className="w-14 h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-2xl group-hover:bg-orange-500/10 transition-all shadow-inner shrink-0">📍</div>
