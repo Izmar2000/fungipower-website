@@ -56,11 +56,11 @@ export default function ChampignonBeurs() {
       {/* Products */}
       <div className="flex gap-8 mb-16 justify-center">
         <div className="text-center">
-          <img src="/images/products/fungipower-start.png" alt="FungiPower Start" className="h-40 object-contain drop-shadow-xl" />
+          <img src="/images/products/fungipower-start.svg" alt="FungiPower Start" className="h-40 object-contain drop-shadow-xl" />
           <p className="text-orange-400 font-bold text-sm mt-2 uppercase tracking-widest">Start</p>
         </div>
         <div className="text-center">
-          <img src="/images/products/fungipower-boost.png" alt="FungiPower Boost" className="h-40 object-contain drop-shadow-xl" />
+          <img src="/images/products/fungipower-boost.svg" alt="FungiPower Boost" className="h-40 object-contain drop-shadow-xl" />
           <p className="text-blue-400 font-bold text-sm mt-2 uppercase tracking-widest">Boost</p>
         </div>
       </div>

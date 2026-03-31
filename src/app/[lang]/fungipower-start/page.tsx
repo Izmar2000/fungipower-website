@@ -149,7 +149,7 @@ export default async function ProductStart({
         sdsLabel: isDE ? 'Sicherheitsdatenblatt' : isNL ? 'Veiligheidsblad' : 'Safety Data Sheet',
         sdsMeta: isDE ? 'SDS DE • pdf' : isNL ? 'SDS NL • pdf' : 'SDS EN • pdf',
         sdsLink: '#',
-        heroImage: '/images/products/fungipower-start.png',
+        heroImage: '/images/products/fungipower-start.svg',
     };
 
     return (
