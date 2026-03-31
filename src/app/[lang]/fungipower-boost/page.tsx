@@ -48,10 +48,10 @@ export default async function ProductBoost({
     const content = {
         heroBadge: isDE ? 'Fruchtungsphase' : isNL ? 'Vluchtfase' : 'Flush Phase',
         heroTitle: isDE
-            ? <><span className="text-white">FUNGIPOWER</span><br /><span className="text-white">BOOST</span><br /><span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">MAXIMUM ERTRAG</span></>
+            ? <><span className="text-white">FUNGIPOWER</span><br /><span className="text-white">BOOST</span><br /><span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">MAXIMUM</span> <span className="text-white">ERTRAG</span></>
             : isNL
-                ? <><span className="text-white">FUNGIPOWER</span><br /><span className="text-white">BOOST</span><br /><span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">MAXIMALE OPBRENGST</span></>
-                : <><span className="text-white">FUNGIPOWER</span><br /><span className="text-white">BOOST</span><br /><span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">MAXIMUM YIELD</span></>,
+                ? <><span className="text-white">FUNGIPOWER</span><br /><span className="text-white">BOOST</span><br /><span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">MAXIMALE</span> <span className="text-white">OPBRENGST</span></>
+                : <><span className="text-white">FUNGIPOWER</span><br /><span className="text-white">BOOST</span><br /><span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">MAXIMUM</span> <span className="text-white">YIELD</span></>,
         heroDesc: isDE
             ? 'FungiPower Boost aktiviert das Myzel in der entscheidenden Fruchtungsphase. Das Ergebnis: gleichmäßigere Vluchten, höhere Erträge und eine bessere Qualität pro Ernte.'
             : isNL
