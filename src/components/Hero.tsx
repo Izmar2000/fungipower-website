@@ -5,29 +5,26 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { getPath } from '../utils/navigation';
 
-// cx/cy = start within mycelium block (55–80%), mx/my = stem base, tx/ty = mushroom area
+// cx/cy = start deep in mycelium, tx/ty = soil surface (fade out before mushroom)
 const myceliumPulses = [
-  // Left side → center → stems
-  { cx: '34%', cy: '68%', mx: '40%', my: '62%', tx: '43%', ty: '28%', delay:  5.5, color: 'rgba(255,255,255,0.9)',  size: 7 },
-  { cx: '22%', cy: '74%', mx: '38%', my: '64%', tx: '42%', ty: '26%', delay: 15.0, color: 'rgba(255,200,110,0.85)', size: 8 },
-  { cx: '36%', cy: '70%', mx: '42%', my: '63%', tx: '45%', ty: '27%', delay:  9.0, color: 'rgba(255,160,55,0.8)',   size: 6 },
-  { cx: '25%', cy: '76%', mx: '40%', my: '63%', tx: '43%', ty: '27%', delay: 20.5, color: 'rgba(255,235,200,0.85)', size: 9 },
-  { cx: '23%', cy: '72%', mx: '38%', my: '65%', tx: '41%', ty: '29%', delay: 12.0, color: 'rgba(255,255,255,0.75)', size: 6 },
-  // Original dots → all funnel into stem cluster (38–58%)
-  { cx: '26%', cy: '76%', mx: '44%', my: '58%', tx: '40%', ty: '28%', delay:  4.0, color: 'rgba(255,255,255,0.9)',  size: 7 },
-  { cx: '22%', cy: '80%', mx: '45%', my: '59%', tx: '41%', ty: '26%', delay: 10.0, color: 'rgba(255,210,140,0.85)', size: 9 },
-  { cx: '32%', cy: '74%', mx: '46%', my: '58%', tx: '43%', ty: '25%', delay: 16.5, color: 'rgba(255,140,40,0.8)',   size: 6 },
-  { cx: '44%', cy: '78%', mx: '47%', my: '59%', tx: '46%', ty: '24%', delay:  7.5, color: 'rgba(255,255,255,0.75)', size: 8 },
-  { cx: '55%', cy: '75%', mx: '49%', my: '58%', tx: '50%', ty: '25%', delay: 13.0, color: 'rgba(255,180,80,0.85)',  size: 7 },
-  { cx: '66%', cy: '72%', mx: '51%', my: '57%', tx: '53%', ty: '27%', delay: 19.5, color: 'rgba(255,100,20,0.75)',  size: 6 },
-  { cx: '75%', cy: '68%', mx: '52%', my: '57%', tx: '55%', ty: '28%', delay:  4.8, color: 'rgba(255,235,200,0.9)',  size: 9 },
-  { cx: '82%', cy: '65%', mx: '53%', my: '56%', tx: '57%', ty: '30%', delay: 11.5, color: 'rgba(255,255,255,0.8)',  size: 6 },
-  { cx: '18%', cy: '70%', mx: '44%', my: '57%', tx: '42%', ty: '27%', delay: 17.0, color: 'rgba(255,160,55,0.85)',  size: 8 },
-  { cx: '28%', cy: '77%', mx: '46%', my: '58%', tx: '44%', ty: '26%', delay:  8.5, color: 'rgba(255,220,160,0.8)',  size: 7 },
-  { cx: '48%', cy: '80%', mx: '48%', my: '59%', tx: '48%', ty: '24%', delay: 14.5, color: 'rgba(255,255,255,0.7)',  size: 5 },
-  { cx: '62%', cy: '76%', mx: '50%', my: '58%', tx: '52%', ty: '26%', delay: 21.0, color: 'rgba(255,120,30,0.8)',   size: 8 },
-  { cx: '74%', cy: '71%', mx: '52%', my: '57%', tx: '54%', ty: '28%', delay:  6.0, color: 'rgba(255,200,110,0.85)', size: 6 },
-  { cx: '84%', cy: '66%', mx: '53%', my: '56%', tx: '56%', ty: '30%', delay: 12.5, color: 'rgba(255,255,255,0.85)', size: 7 },
+  { cx:  '5%', cy: '92%', tx: '10%', ty: '72%', delay:  4.0, color: 'rgba(255,255,255,0.9)',  size: 6 },
+  { cx: '12%', cy: '96%', tx: '16%', ty: '74%', delay: 14.0, color: 'rgba(255,200,110,0.85)', size: 8 },
+  { cx: '20%', cy: '93%', tx: '23%', ty: '73%', delay:  7.5, color: 'rgba(255,160,55,0.8)',   size: 6 },
+  { cx: '28%', cy: '97%', tx: '30%', ty: '75%', delay: 20.0, color: 'rgba(255,235,200,0.85)', size: 7 },
+  { cx: '35%', cy: '91%', tx: '37%', ty: '71%', delay: 11.0, color: 'rgba(255,255,255,0.75)', size: 9 },
+  { cx: '42%', cy: '95%', tx: '43%', ty: '74%', delay:  3.0, color: 'rgba(255,255,255,0.9)',  size: 7 },
+  { cx: '50%', cy: '93%', tx: '50%', ty: '72%', delay: 17.5, color: 'rgba(255,210,140,0.85)', size: 8 },
+  { cx: '58%', cy: '96%', tx: '56%', ty: '75%', delay:  9.0, color: 'rgba(255,140,40,0.8)',   size: 6 },
+  { cx: '65%', cy: '92%', tx: '63%', ty: '72%', delay: 23.0, color: 'rgba(255,255,255,0.75)', size: 7 },
+  { cx: '72%', cy: '95%', tx: '69%', ty: '74%', delay:  6.0, color: 'rgba(255,180,80,0.85)',  size: 9 },
+  { cx: '79%', cy: '91%', tx: '76%', ty: '71%', delay: 13.5, color: 'rgba(255,100,20,0.75)',  size: 6 },
+  { cx: '86%', cy: '94%', tx: '83%', ty: '73%', delay: 19.0, color: 'rgba(255,235,200,0.9)',  size: 8 },
+  { cx: '93%', cy: '92%', tx: '90%', ty: '72%', delay:  5.5, color: 'rgba(255,255,255,0.8)',  size: 6 },
+  { cx: '16%', cy: '98%', tx: '18%', ty: '76%', delay: 16.0, color: 'rgba(255,160,55,0.85)',  size: 7 },
+  { cx: '38%', cy: '97%', tx: '40%', ty: '75%', delay:  8.0, color: 'rgba(255,220,160,0.8)',  size: 8 },
+  { cx: '55%', cy: '98%', tx: '53%', ty: '76%', delay: 22.0, color: 'rgba(255,255,255,0.7)',  size: 6 },
+  { cx: '70%', cy: '96%', tx: '68%', ty: '74%', delay: 10.5, color: 'rgba(255,120,30,0.8)',   size: 7 },
+  { cx: '84%', cy: '93%', tx: '82%', ty: '72%', delay: 18.0, color: 'rgba(255,200,110,0.85)', size: 8 },
 ];
 
 interface HeroProps {
@@ -127,18 +124,18 @@ const Hero: React.FC<HeroProps> = ({ dict, lang }) => {
                     boxShadow: `0 0 ${p.size + 4}px ${Math.round(p.size / 2)}px ${p.color}`,
                   }}
                   animate={{
-                    left: [p.cx, p.mx, p.tx],
-                    top:  [p.cy, p.my, p.ty],
-                    opacity: [0, 0.9, 0.9, 0],
-                    scale: [0.6, 1.1, 0.8, 0.2],
+                    left: [p.cx, p.tx],
+                    top:  [p.cy, p.ty],
+                    opacity: [0, 0.9, 0],
+                    scale: [0.7, 1.1, 0],
                   }}
                   transition={{
-                    duration: 9.0,
+                    duration: 13.0,
                     delay: p.delay,
                     repeat: Infinity,
-                    repeatDelay: 3.0,
+                    repeatDelay: 4.0,
                     ease: 'easeInOut',
-                    times: [0, 0.45, 0.85, 1],
+                    times: [0, 0.55, 1],
                   }}
                 />
               ))}
