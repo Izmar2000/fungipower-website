@@ -1,20 +1,6 @@
 import type { Metadata } from 'next'
-import { Inter, Outfit } from 'next/font/google'
-import '../globals.css'
 import { i18n } from '../../i18n-config'
 import { ResolvingMetadata } from 'next'
-
-const inter = Inter({
-  variable: '--font-inter',
-  subsets: ['latin'],
-  display: 'swap',
-})
-
-const outfit = Outfit({
-  variable: '--font-outfit',
-  subsets: ['latin'],
-  display: 'swap',
-})
 
 export async function generateMetadata(
   { params }: { params: Promise<{ lang: string }> },
@@ -76,12 +62,5 @@ export default async function RootLayout({
   children: React.ReactNode
   params: Promise<{ lang: string }>
 }>) {
-  const { lang } = await params
-  return (
-    <html lang={lang} className={`${inter.variable} ${outfit.variable}`}>
-      <body className="antialiased font-inter bg-[#02211b] text-white">
-        {children}
-      </body>
-    </html>
-  )
+  return <>{children}</>
 }
