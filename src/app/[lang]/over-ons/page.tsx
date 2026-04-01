@@ -126,6 +126,14 @@ export default async function AboutPage({
                                 <p className="text-lg text-orange-100/70 leading-relaxed">
                                     {t.approachDesc}
                                 </p>
+                                <a
+                                    href="https://www.ourcelia.com/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="inline-flex items-center gap-2 mt-6 text-orange-400 font-bold text-sm uppercase tracking-widest hover:text-orange-300 transition-colors"
+                                >
+                                    Bezoek OurCelia.com →
+                                </a>
                             </div>
                         </div>
 
