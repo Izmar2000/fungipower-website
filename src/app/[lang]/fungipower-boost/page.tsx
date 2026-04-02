@@ -48,10 +48,10 @@ export default async function ProductBoost({
     const content = {
         heroBadge: isDE ? 'Fruchtungsphase' : isNL ? 'Vluchtfase' : 'Flush Phase',
         heroTitle: isDE
-            ? <><span className="text-white">FUNGIPOWER</span><br /><span className="text-white">BOOST</span><br /><span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">MAXIMUM</span> <span className="text-white">ERTRAG</span></>
+            ? <><span className="text-white">FUNGIPOWER</span><br /><span className="text-white">BOOST</span><br /><span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-blue-500">MAXIMUM</span> <span className="text-white">ERTRAG</span></>
             : isNL
-                ? <><span className="text-white">FUNGIPOWER</span><br /><span className="text-white">BOOST</span><br /><span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">MAXIMALE</span> <span className="text-white">OPBRENGST</span></>
-                : <><span className="text-white">FUNGIPOWER</span><br /><span className="text-white">BOOST</span><br /><span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">MAXIMUM</span> <span className="text-white">YIELD</span></>,
+                ? <><span className="text-white">FUNGIPOWER</span><br /><span className="text-white">BOOST</span><br /><span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-blue-500">MAXIMALE</span> <span className="text-white">OPBRENGST</span></>
+                : <><span className="text-white">FUNGIPOWER</span><br /><span className="text-white">BOOST</span><br /><span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-blue-500">MAXIMUM</span> <span className="text-white">YIELD</span></>,
         heroDesc: isDE
             ? 'FungiPower Boost aktiviert das Myzel in der entscheidenden Fruchtungsphase. Das Ergebnis: gleichmäßigere Vluchten, höhere Erträge und eine bessere Qualität pro Ernte.'
             : isNL
@@ -88,7 +88,7 @@ export default async function ProductBoost({
             }
         ],
         advantageBadge: isDE ? 'VORTEILE' : isNL ? 'VOORDELEN' : 'ADVANTAGES',
-        advantageTitle: isDE ? <>Mehr aus jeder <br /><span className="text-blue-500">Vlucht</span></> : isNL ? <>Meer uit elke <br /><span className="text-blue-500">vlucht</span></> : <>More from every <br /><span className="text-blue-500">flush</span></>,
+        advantageTitle: isDE ? <>Mehr aus jeder <br /><span className="text-blue-400/80">Vlucht</span></> : isNL ? <>Meer uit elke <br /><span className="text-blue-400/80">vlucht</span></> : <>More from every <br /><span className="text-blue-400/80">flush</span></>,
         advantageDesc: isDE
             ? 'FungiPower Boost is speziell für die Fruchtungsphase entwickelt und liefert dem Myzel genau die Nährstoffe, die es in diesem entscheidenden Moment braucht. Das Resultat sind mehr Pilze pro Vlucht, eine höhere Uniformität und eine verbesserte Gesamtqualität.'
             : isNL
@@ -106,7 +106,7 @@ export default async function ProductBoost({
         fulvicDesc: isDE ? '3% Konzentriert' : isNL ? '3% Geconcentreerd' : '3% Concentrated',
         tags: isDE ? 'Fruchtungsphase • Ertragssteigerung • Biologisch' : isNL ? 'Vluchtfase • Opbrengstverhoging • Biologisch' : 'Flush phase • Yield booster • Biological',
         guideBadge: isDE ? 'Anwendungsguide' : isNL ? 'Toepassingsgids' : 'Application Guide',
-        guideTitle: isDE ? <>Einfache <br /><span className="text-blue-500">Anwendung</span></> : isNL ? <>Eenvoudige <br /><span className="text-blue-500">toepassing</span></> : <>Simple <br /><span className="text-blue-500">application</span></>,
+        guideTitle: isDE ? <>Einfache <br /><span className="text-blue-400/80">Anwendung</span></> : isNL ? <>Eenvoudige <br /><span className="text-blue-400/80">toepassing</span></> : <>Simple <br /><span className="text-blue-400/80">application</span></>,
         steps: [
             {
                 step: '01',
@@ -164,7 +164,7 @@ export default async function ProductBoost({
                                 <div className="mb-8">
                                     <div className="inline-flex items-center px-4 py-2 bg-[#0d1f12] border border-blue-900/50 rounded-sm">
                                         <div className="w-2 h-2 rounded-full bg-blue-500 mr-3 animate-pulse"></div>
-                                        <span className="text-[11px] font-black uppercase tracking-[0.25em] text-blue-500 font-outfit">{content.heroBadge}</span>
+                                        <span className="text-[11px] font-black uppercase tracking-[0.25em] text-blue-400/80 font-outfit">{content.heroBadge}</span>
                                     </div>
                                 </div>
                                 <h1 className="font-outfit font-bold uppercase text-[42px] md:text-[56px] lg:text-[68px] tracking-tight leading-[0.9] text-white text-left mb-6">
@@ -279,7 +279,7 @@ export default async function ProductBoost({
                                     <div className="space-y-10">
                                         {content.steps.map((item, i) => (
                                             <div key={i} className="flex gap-6">
-                                                <div className="text-4xl font-black text-blue-500 font-outfit">0{i + 1}</div>
+                                                <div className="text-4xl font-black text-blue-400/80 font-outfit">0{i + 1}</div>
                                                 <div>
                                                     <h4 className="text-xl font-bold text-white mb-2">{item.title}</h4>
                                                     <p className="text-blue-100/60 text-base leading-relaxed font-medium">{item.desc}</p>
@@ -331,7 +331,7 @@ export default async function ProductBoost({
                                     </div>
                                     <div>
                                         <h4 className="text-xl font-bold text-white group-hover:text-blue-400 transition-colors font-outfit uppercase tracking-tight">{content.sdsLabel}</h4>
-                                        <p className="text-xs text-blue-500/50 font-black tracking-widest uppercase mt-1">{content.sdsMeta}</p>
+                                        <p className="text-xs text-blue-400/80/50 font-black tracking-widest uppercase mt-1">{content.sdsMeta}</p>
                                     </div>
                                 </div>
                                 <Download className="w-6 h-6 text-blue-100/20 group-hover:text-blue-400 transition-all transform group-hover:-translate-y-2" />

@@ -181,7 +181,7 @@ export default async function AboutPage({
                             </p>
                         </div>
 
-                        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-6">
                             {t.productionPoints.map((text: string, idx: number) => (
                                 <div key={idx} className="flex items-start gap-4 p-6 rounded-2xl bg-white/5 border border-white/10">
                                     <CheckCircle2 className="w-6 h-6 text-orange-400 shrink-0 mt-1" />
