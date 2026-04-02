@@ -83,10 +83,10 @@ export default async function ProductsOverview({
         compositionValue: '5% Humuszuren + 3% Fulvozuren',
         together: isDE ? 'ZUSAMMEN STÄRKER' : isNL ? 'SAMEN STERKER' : 'STRONGER TOGETHER',
         togetherDesc: isDE
-            ? 'Start und Boost sind als komplementäres System entwickelt worden. Eingesetzt in Kombination maximieren sie das Potenzial jeder Produktionsrunde.'
+            ? 'Unsere Produkte sind einzeln einsetzbar, aber zusammen stärker.'
             : isNL
-                ? 'Start en Boost zijn ontwikkeld als complementair systeem. Samen ingezet maximaliseren ze het potentieel van elke productieronde.'
-                : 'Start and Boost are developed as a complementary system. Used together, they maximise the potential of every production round.',
+                ? 'Onze producten zijn individueel te gebruiken, maar samen sterker.'
+                : 'Our products can be used individually, but are stronger together.',
     };
 
     return (
