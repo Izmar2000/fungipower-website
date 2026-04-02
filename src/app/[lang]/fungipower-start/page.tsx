@@ -111,12 +111,12 @@ export default async function ProductStart({
             {
                 step: '01',
                 title: isDE ? 'Gut schütteln' : isNL ? 'Goed schudden' : 'Shake well',
-                desc: isDE ? 'Kräftig schütteln vor Gebrauch für eine homogene Mischung.' : isNL ? 'Schud de jerrycan goed voor gebruik voor een homogeen mengsel.' : 'Shake the jerrycan well before use for a homogeneous mixture.'
+                desc: isDE ? 'Vor Gebrauch gut schütteln.' : isNL ? 'Schud goed voor gebruik.' : 'Shake well before use.'
             },
             {
                 step: '02',
-                title: isDE ? 'Dosierung beim Befüllen' : isNL ? 'Dosering bij het vullen' : 'Dosage when filling',
-                desc: isDE ? 'Mischen Sie 5 ml FungiPower Start pro 1 Liter Wasser und fügen Sie dies dem Substrat beim Befüllen des Anbaubetriebs hinzu.' : isNL ? 'Meng 5 ml FungiPower Start per 1 liter water en voeg dit toe aan het substraat tijdens het vullen van de kwekerij.' : 'Mix 5 ml FungiPower Start per 1 litre of water and add to the substrate when filling the growing room.'
+                title: isDE ? 'Dosierung' : isNL ? 'Dosering' : 'Dosage',
+                desc: isDE ? 'Verwenden Sie 5 ml FungiPower Start pro 1 Liter Wasser pro 1 m².' : isNL ? 'Gebruik 5 ml FungiPower Start per 1 liter water per 1 m².' : 'Use 5 ml of FungiPower Start per 1 liter of water per 1 m².'
             },
             {
                 step: '03',
