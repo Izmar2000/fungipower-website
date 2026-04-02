@@ -42,17 +42,17 @@ export default async function ProductsOverview({
     const isDE = lang === 'de';
 
     const content = {
-        badge: isDE ? 'PRODUKTLINIE' : isNL ? 'PRODUCTLIJN' : 'PRODUCT LINE',
+        badge: isDE ? 'Unsere Produkte' : isNL ? 'Onze producten' : 'Our products',
         title: isDE
-            ? <><span className="text-white">ONZE</span><br /><span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-600">PRODUCTEN</span></>
+            ? <><span className="text-white">ZUSAMMEN</span><br /><span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-600">STARK</span></>
             : isNL
-                ? <><span className="text-white">ONZE</span><br /><span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-600">PRODUCTEN</span></>
-                : <><span className="text-white">OUR</span><br /><span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-600">PRODUCTS</span></>,
+                ? <><span className="text-white">SAMEN</span><br /><span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-600">STERK</span></>
+                : <><span className="text-white">STRONGER</span><br /><span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-600">TOGETHER</span></>,
         subtitle: isDE
-            ? 'Zwei komplementäre Produkte — abgestimmt auf jede Phase des Myzelzyklus.'
+            ? 'Unsere Produkte sind einzeln einsetzbar, aber zusammen stärker.'
             : isNL
-                ? 'Twee complementaire producten — afgestemd op elke fase van de groeicyclus van het mycelium.'
-                : 'Two complementary products — tailored to every phase of the mycelium growth cycle.',
+                ? 'Onze producten zijn individueel te gebruiken maar samen sterker.'
+                : 'Our products can be used individually but are stronger together.',
         startPhase: isDE ? 'Kolonisierungsphase' : isNL ? 'Kolonisatiefase' : 'Colonisation Phase',
         startTitle: 'FUNGIPOWER START',
         startDesc: isDE
