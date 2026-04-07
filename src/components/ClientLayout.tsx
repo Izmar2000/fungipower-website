@@ -3,7 +3,6 @@
 import { useState, useEffect } from 'react'
 import { usePathname } from 'next/navigation'
 import Header from './Header'
-import TopBar from './TopBar'
 import MobileMenu from './MobileMenu'
 import SampleModal from './SampleModal'
 import Footer from './Footer'
@@ -43,7 +42,6 @@ function LayoutContent({
     return (
         <>
             <div className="site-header-wrapper">
-                <TopBar lang={lang} />
                 <Header
                     dict={dict}
                     lang={lang}

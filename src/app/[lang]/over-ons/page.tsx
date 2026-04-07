@@ -82,7 +82,7 @@ export default async function AboutPage({
                             <div className="relative">
                                 <div className="relative rounded-[2rem] overflow-hidden aspect-[3/4]">
                                     <img
-                                        src="/images/over-ons-foto.jpg"
+                                        src="/images/jan-klerken.jpg"
                                         alt="Jan Klerken – Co-Founder FungiPower"
                                         className="w-full h-full object-cover object-top"
                                     />

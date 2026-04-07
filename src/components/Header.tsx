@@ -14,9 +14,9 @@ interface HeaderProps {
   lang: string;
 }
 
-const Header: React.FC<HeaderProps> = ({ onOpenMenu, dict, lang }) => {
+const Header: React.FC<HeaderProps> = ({ onOpenSample, onOpenMenu, dict, lang }) => {
   const pathname = usePathname();
-
+  const isNL = lang === 'nl'; // Gebruik lang prop ipv pathname
 
   const isActive = (path: string) => {
     // Simple active check.
@@ -64,10 +64,10 @@ const Header: React.FC<HeaderProps> = ({ onOpenMenu, dict, lang }) => {
             </Link>
 
             <div className="relative group/dropdown py-4 shrink-0">
-              <a href="https://ourcelia.maxom.nl/products" target="_blank" rel="noopener noreferrer" className={`flex items-center gap-2 hover:text-orange-400 transition-all tracking-[0.3em] xl:tracking-[0.4em] uppercase whitespace-nowrap ${pathname.includes('producten') || pathname.includes('fungipower-') ? 'text-orange-400' : ''}`}>
+              <Link href={getPath('products', lang)} className={`flex items-center gap-2 hover:text-orange-400 transition-all tracking-[0.3em] xl:tracking-[0.4em] uppercase whitespace-nowrap ${pathname.includes('producten') || pathname.includes('fungipower-') ? 'text-orange-400' : ''}`}>
                 {t.products.replace(/ /g, '\u00A0')}
                 <ChevronDown className="w-3 h-3 opacity-50 transition-transform duration-300 group-hover/dropdown:rotate-180" />
-              </a>
+              </Link>
 
               <div className="absolute top-[calc(100%-10px)] left-1/2 -translate-x-1/2 pt-4 w-72 opacity-0 invisible group-hover/dropdown:opacity-100 group-hover/dropdown:visible transition-all duration-300 transform scale-95 group-hover/dropdown:scale-100 pointer-events-none group-hover/dropdown:pointer-events-auto">
                 <div className="bg-orange-950/95 backdrop-blur-2xl border border-white/10 rounded-2xl overflow-hidden shadow-2xl p-2">
@@ -97,12 +97,12 @@ const Header: React.FC<HeaderProps> = ({ onOpenMenu, dict, lang }) => {
 
           {/* RIGHT: CTA & LANG SWITCHER */}
           <div className="flex-1 lg:flex-none flex justify-end items-center gap-3 relative z-10 min-w-0 lg:pl-4">
-            <Link
-              href={getPath('contact', lang)}
+            <button
+              onClick={onOpenSample}
               className="bg-orange-500 text-orange-950 hover:bg-white font-bold h-11 rounded-xl transition-all text-[11px] xl:text-xs uppercase tracking-[0.1em] lg:tracking-[0.15em] hidden sm:flex items-center justify-center flex-none w-[190px] xl:w-[220px] shadow-[0_0_20px_rgba(132,204,22,0.2)] hover:shadow-[0_0_30px_rgba(132,204,22,0.4)]"
             >
               <span className="truncate px-1 block">{t.cta}</span>
-            </Link>
+            </button>
 
             {/* Premium Dropdown Language Switcher */}
             <div className="hidden md:block relative group/lang py-4">
