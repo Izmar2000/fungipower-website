@@ -58,11 +58,11 @@ const Hero: React.FC<HeroProps> = ({ dict, lang }) => {
 
             {/* USPs Line */}
             <div className="flex flex-nowrap items-center justify-start gap-x-2 md:gap-x-3 mb-6">
-              <span className="text-[8px] md:text-[10px] font-bold uppercase tracking-[0.08em] md:tracking-[0.15em] text-orange-400 whitespace-nowrap">
+              <span className="text-[8px] md:text-[10px] font-bold uppercase tracking-[0.08em] md:tracking-[0.15em] text-white/90 whitespace-nowrap">
                 {t.uspsPart1}
               </span>
               <span className="text-white/20">|</span>
-              <span className="text-[8px] md:text-[10px] font-bold uppercase tracking-[0.08em] md:tracking-[0.15em] text-white/90 whitespace-nowrap">
+              <span className="text-[8px] md:text-[10px] font-bold uppercase tracking-[0.08em] md:tracking-[0.15em] text-orange-400 whitespace-nowrap">
                 {t.uspsPart2}
               </span>
               <span className="text-white/20">|</span>
