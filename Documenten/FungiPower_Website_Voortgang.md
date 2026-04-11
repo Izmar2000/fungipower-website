@@ -102,13 +102,13 @@ Datum: 11 april 2026 | Werksessie Ramzi + Claude
 
 | # | Punt (origineel) | Status | Wat gedaan |
 |---|---|---|---|
-| 44 | "Wat is FungiPower? biostimulant / sporenelementen / snellere vluchten" → volledige nieuwe tekst | ⏳ | |
-| 45 | "Hoe werkt FungiPower? versterkt de activiteit..." → nieuwe tekst | ⏳ | |
-| 46 | "Is FungiPower een meststof? biostimulant en transportmiddel" → "nutriënten transporteur" | ⏳ | |
-| 47 | "Verpakkingen: Start 1L, 10L, 1000L. Boost 1L, 5L" → alleen 10L en 1000L | ⏳ | |
-| 48 | "Via bewateringssysteem" → correcte dosering per product | ⏳ | |
-| 49 | "Voordelen: snellere vluchten" → verwijderen, toevoegen 14% / 3e vlucht score | ⏳ | |
-| 50 | "Wat maakt FungiPower uniek? biologische cyclus" → "nutriënten transporteur" + proeven | ⏳ | |
+| 44 | "Wat is FungiPower? biostimulant / sporenelementen / snellere vluchten" → volledige nieuwe tekst | ✅ | Al gedaan in eerdere pass. |
+| 45 | "Hoe werkt FungiPower? versterkt de activiteit..." → nieuwe tekst | ✅ | nl.json FAQ herschreven: nutriënten transporteur + opname + resultaat. |
+| 46 | "Is FungiPower een meststof? biostimulant en transportmiddel" → "nutriënten transporteur" | ✅ | nl.json FAQ aangepast. |
+| 47 | "Verpakkingen: Start 1L, 10L, 1000L. Boost 1L, 5L" → alleen 10L en 1000L (IBC) | ✅ | nl.json FAQ aangepast. |
+| 48 | "Via bewateringssysteem" → correcte dosering per product | ✅ | nl.json FAQ: Start 5ml/dag1, Boost 3ml/na vlucht. |
+| 49 | "Voordelen: snellere vluchten" → verwijderen, toevoegen 14% / 3e vlucht score | ✅ | Al gedaan in eerdere pass. |
+| 50 | "Wat maakt FungiPower uniek? biologische cyclus" → "nutriënten transporteur" + proeven | ✅ | nl.json FAQ herschreven: 20 proeven + 14%. |
 
 ---
 
