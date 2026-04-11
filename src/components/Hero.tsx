@@ -50,7 +50,7 @@ const Hero: React.FC<HeroProps> = ({ dict, lang }) => {
           <div className="relative z-50 flex flex-col justify-center text-left pt-0 lg:-mt-22">
             <h1 className="font-outfit font-bold uppercase text-4xl sm:text-5xl lg:text-5xl xl:text-6xl 2xl:text-7xl tracking-[0.02em] leading-[1.1] text-left mb-8 md:mb-10 whitespace-normal">
               <span className="text-white block whitespace-nowrap overflow-visible">{t.titleLine1}</span>
-              <span className="text-white inline-block whitespace-nowrap overflow-visible pr-12 -mr-12">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-300 to-orange-600 inline-block whitespace-nowrap overflow-visible pr-12 -mr-12">
                 {t.titleLine2}
               </span>
               <span className="text-white block whitespace-nowrap overflow-visible">{t.titleLine3}</span>

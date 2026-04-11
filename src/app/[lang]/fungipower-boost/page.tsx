@@ -65,10 +65,10 @@ export default async function ProductBoost({
             {
                 title: isDE ? 'Gleichmäßige Vluchten' : isNL ? 'Gelijkmatige vluchten' : 'Uniform Flushes',
                 desc: isDE
-                    ? 'FungiPower Boost stimuliert eine synchrone Fruchtbildung über das gesamte Substrat. Weniger Ausreißer, mehr Gleichmäßigkeit — das bedeutet effizienter Oogsten und bessere Ergebnisse.'
+                    ? 'FungiPower Boost stimuliert eine synchrone Fruchtbildung über das gesamte Substrat. Weniger Ausreißer, mehr Gleichmäßigkeit. Das bedeutet effizienter Oogsten und bessere Ergebnisse.'
                     : isNL
-                        ? 'FungiPower Boost stimuleert een synchrone vruchtvorming over het gehele substraat. Minder uitschieters, meer uniformiteit — dat betekent efficiënter oogsten en betere resultaten.'
-                        : 'FungiPower Boost stimulates synchronous fruiting across the entire substrate. Less variation, more uniformity — meaning more efficient harvesting and better results.'
+                        ? 'FungiPower Boost stimuleert een synchrone vruchtvorming over het gehele substraat. Minder uitschieters, meer uniformiteit. Dat betekent efficiënter oogsten en betere resultaten.'
+                        : 'FungiPower Boost stimulates synchronous fruiting across the entire substrate. Less variation, more uniformity. That means more efficient harvesting and better results.'
             },
             {
                 title: isDE ? 'Höhere Erträge' : isNL ? 'Hogere opbrengsten' : 'Higher Yields',

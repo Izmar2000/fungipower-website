@@ -16,7 +16,7 @@
     "titleLine1": "Snellere oogst,",
     "titleLine2": "Meer opbrengst,",
     "titleLine3": "Uniformere groei.",
-    "uspsPart1": "BIOLOGISCHE VERSTERKING",
+    "uspsPart1": "NUTRIËNTEN TRANSPORTEUR",
     "uspsPart2": "MEER OPBRENGST",
     "uspsPart3": "GETEST IN COMMERCIËLE TEELT",
     "description": "FungiPower versterkt de natuurlijke groeicyclus van het mycelium. Via het myceliumnetwerk worden sporenelementen efficiënt getransporteerd naar de vruchtlichamen, wat resulteert in een uniformere groei, snellere oogst en hogere opbrengst per m². Ontwikkeld en gevalideerd in de commerciële champignonteelt.",
@@ -118,7 +118,7 @@
   },
   "About": {
     "metaTitle": "Over Ons | FungiPower",
-    "metaDesc": "FungiPower is ontstaan vanuit de praktijk van Jan Klerken — een diep begrip van hoe een teelt zich écht ontwikkelt, gecombineerd met wetenschappelijke onderbouwing.",
+    "metaDesc": "FungiPower is ontstaan vanuit de praktijk van Jan Klerken. Een diep begrip van hoe een teelt zich écht ontwikkelt, gecombineerd met jarenlange praktijkervaring.",
     "heroBadge": "Ontstaan vanuit de praktijk",
     "heroTitle": "FungiPower IS ONTSTAAN",
     "heroTitleAccent": "VANUIT DE PRAKTIJK.",
@@ -130,7 +130,7 @@
     "coreTitle": "De uitdaging in de sector",
     "coreDesc": "De moderne champignonteelt staat voor grote uitdagingen. Grondstoffen worden schaarser en duurder, terwijl de eisen aan kwaliteit en opbrengst alleen maar toenemen. Kwekers moeten steeds efficiënter werken om rendabel te blijven in een competitieve markt. In die ontwikkeling draait verbetering vaak niet om méér toevoegen, maar om het optimaliseren van wat er al aanwezig is.",
     "approachTitle": "OurCelia × PlantiPower",
-    "approachDesc": "FungiPower is het resultaat van een strategische samenwerking tussen OurCelia en PlantiPower. Deze joint venture combineert twee werelden: OurCelia brengt jarenlange ervaring in de paddenstoelsector en expertise als producent van kwalitatief broed. PlantiPower beschikt over een uitgebreid kennis- en handelsnetwerk in de tuinbouwsector en jarenlange ervaring in de ontwikkeling van biostimulanten. Door deze complementaire expertises samen te brengen, hebben we een biostimulant ontwikkeld die écht impact heeft waar het telt: in de teeltcel.",
+    "approachDesc": "FungiPower is het resultaat van een strategische samenwerking tussen OurCelia en PlantiPower. Deze joint venture combineert twee werelden: OurCelia brengt jarenlange ervaring in de paddenstoelsector en expertise als producent van kwalitatief broed. PlantiPower beschikt over een uitgebreid kennis- en handelsnetwerk in de tuinbouwsector en jarenlange ervaring in productontwikkeling. Door deze complementaire expertises samen te brengen, hebben we een nutriënten transporteur ontwikkeld die écht impact heeft waar het telt: in de teeltcel.",
     "values": [
       {
         "title": "OurCelia",
@@ -139,7 +139,7 @@
       },
       {
         "title": "PlantiPower",
-        "desc": "Tuinbouwnetwerk & biostimulant-ontwikkeling.",
+        "desc": "Tuinbouwnetwerk & productontwikkeling.",
         "icon": "Zap"
       },
       {
@@ -149,7 +149,7 @@
       },
       {
         "title": "Stabiel Resultaat",
-        "desc": "Bewezen biostimulanten die rendement verhogen zonder de teelt te verstoren.",
+        "desc": "Bewezen nutriënten transporteur die rendement verhoogt zonder de teelt te verstoren.",
         "icon": "ShieldCheck"
       }
     ],
@@ -162,7 +162,7 @@
     "productionPoints": [
       "Sector Realiteit: begrip van de werkvloer en dagelijks teeltmanagement",
       "Data & Biologie: wetenschappelijke validatie van de biologische cyclus van mycelium",
-      "Stabiel Resultaat: bewezen biostimulanten die rendement verhogen",
+      "Stabiel Resultaat: bewezen resultaten van de nutriënten transporteur die rendement verhoogt",
       "100% ontwikkeld vanuit de praktijk van kwekers"
     ],
     "missionTitle": "Onze Missie",
@@ -198,7 +198,7 @@
     "title": "VEELGESTELDE",
     "titleAccent": " VRAGEN",
     "metaTitle": "Veelgestelde Vragen | FungiPower",
-    "metaDesc": "Veelgestelde vragen over FungiPower biostimulanten.",
+    "metaDesc": "Veelgestelde vragen over FungiPower nutriënten transporteur voor de champignonteelt.",
     "items": [
       {
         "q": "Wat is FungiPower?",
