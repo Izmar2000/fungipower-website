@@ -13,13 +13,13 @@
     "aboutLabel": "About"
   },
   "Hero": {
-    "titleLine1": "Faster harvest,",
-    "titleLine2": "More yield,",
-    "titleLine3": "Uniform growth.",
-    "uspsPart1": "BIOLOGICAL ENHANCEMENT",
+    "titleLine1": "More uniform growth.",
+    "titleLine2": "Higher yield.",
+    "titleLine3": "More sustainable substrate.",
+    "uspsPart1": "NUTRIENT TRANSPORTER",
     "uspsPart2": "MORE YIELD PER FLUSH",
-    "uspsPart3": "TESTED IN COMMERCIAL CULTIVATION",
-    "description": "FungiPower strengthens the natural cycle of the mycelium. Through the mycelium network, trace elements are efficiently transported to the fruiting bodies, resulting in uniform growth, faster harvest and higher yield per m². Developed and validated in commercial mushroom cultivation.",
+    "uspsPart3": "VALIDATED IN 20 FIELD TRIALS",
+    "description": "FungiPower is a nutrient transporter that improves the availability of nutrients in the substrate. The mycelium absorbs existing nutrients more efficiently, resulting in more uniform fruiting bodies, higher yield and more sustainable substrate use. Validated in 20 field trials in commercial mushroom cultivation.",
     "ctaMore": "VIEW",
     "ctaProduct": "View Products",
     "ctaView": "VIEW",
@@ -29,7 +29,7 @@
     "badge": "THE PHILOSOPHY",
     "title": "We change nothing",
     "titleAccent": "You optimise everything",
-    "description": "Your cultivation process is the foundation of your success. FungiPower is developed to strengthen this foundation, not replace it. We provide biological support for stable mycelium development and consistent flushes, in every phase of the cultivation cycle.",
+    "description": "Your cultivation process is the foundation of your success. FungiPower is developed to strengthen this foundation, not replace it. FungiPower makes existing nutrients in the substrate more available, so the mycelium can work more efficiently.",
     "usps": [
       {
         "title": "Your method remains leading",
@@ -37,11 +37,11 @@
       },
       {
         "title": "Immediately visible result",
-        "desc": "A more vital mycelium means uniform fruiting bodies and a faster flush."
+        "desc": "A more vital mycelium means uniform fruiting bodies and higher yield per flush."
       },
       {
         "title": "Keep doing what you're good at",
-        "desc": "FungiPower strengthens the biological cycle in the background."
+        "desc": "FungiPower optimises nutrient availability in the background."
       }
     ],
     "cta": "Request Sample"
@@ -51,23 +51,23 @@
     "title": "Validated",
     "titleHighlight": "practical results",
     "validated": "Validated",
-    "description": "From first flush to complete growing cycle: FungiPower maximises the mycelium uptake capacity in every professional growing operation.",
+    "description": "From first flush to complete growing cycle: FungiPower improves nutrient uptake of the mycelium and delivers an average of 14% more yield in 20 field trials.",
     "crops": [
       {
         "name": "First flush",
         "image": "/images/champignon-kweker.png",
         "stats_0_title": "Uniform fruiting bodies",
-        "stats_0_desc": "Consistent size and weight through optimised mycelium activity.",
-        "stats_1_title": "Shorter cycle time",
-        "stats_1_desc": "Faster primordium formation with active and vital mycelium."
+        "stats_0_desc": "Consistent size and weight through improved nutrient uptake.",
+        "stats_1_title": "More sustainable substrate",
+        "stats_1_desc": "100% positive result on the 3rd flush. The substrate is used more efficiently until the end of the cycle."
       },
       {
         "name": "Growing cycle",
         "image": "/images/fungipower-hero-plant.png",
         "stats_0_title": "Higher yield per m²",
-        "stats_0_desc": "More efficient use of the substrate per growing cycle.",
-        "stats_1_title": "Less waste",
-        "stats_1_desc": "More uniform colonisation reduces unsellable mushrooms."
+        "stats_0_desc": "Average 14% more yield, validated in 20 field trials.",
+        "stats_1_title": "Less variation",
+        "stats_1_desc": "Because the mycelium absorbs all nutrients more efficiently, fruiting bodies grow more uniform in size and weight."
       }
     ],
     "animationCards": [
@@ -76,8 +76,8 @@
         "sub": "consistent size per flush"
       },
       {
-        "label": "Faster primordia formation",
-        "sub": "more vital mycelium · shorter cycle time"
+        "label": "14% more yield",
+        "sub": "validated in 20 field trials"
       },
       {
         "label": "Higher yield per m²",
@@ -100,8 +100,8 @@
     "desc": "Started in the agricultural heart of Venlo, the Netherlands, now a leading solution for professional growers worldwide.",
     "dutchMade": "100% Dutch Made",
     "premiumQuality": "Premium Quality",
-    "exportReady": "Export Ready",
-    "logistics": "Worldwide Logistics"
+    "exportReady": "Ready for scaling",
+    "logistics": "Available for the European market"
   },
   "Testimonials": {
     "title": "Grower Experiences",
@@ -125,7 +125,7 @@
     "titleAccent": "mushroom cultivation",
     "description": "In an ideal growing cycle, the mycelium colonises fully and all nutrients in the substrate are used efficiently. The reality is different. Uneven colonisation, slow flushes and inconsistent fruiting bodies lead to waste and lower yield per cycle.",
     "quote": "\"It is not the substrate that is the problem, but the efficiency with which the mycelium absorbs and utilises the available nutrients.\"",
-    "closing": "By strengthening the biological cycle of the mycelium with FungiPower, you get more yield out of every substrate block."
+    "closing": "By improving the nutrient uptake of the mycelium with FungiPower, you get more yield out of every substrate block."
   },
   "About": {
     "metaTitle": "About Us | FungiPower",
@@ -201,7 +201,7 @@
   "ContactPage": {
     "title": "Get in",
     "titleAccent": "touch",
-    "description": "Do you have questions about our products or want to become a partner? We are here for you.",
+    "description": "Do you have questions about our products or would you like to run a trial at your operation? We are here for you.",
     "metaTitle": "Contact | FungiPower",
     "metaDesc": "Contact FungiPower. Questions about products, partnerships or distribution? We are happy to help."
   },
@@ -209,11 +209,11 @@
     "title": "FREQUENTLY ASKED",
     "titleAccent": " QUESTIONS",
     "metaTitle": "Frequently Asked Questions | FungiPower",
-    "metaDesc": "Frequently asked questions about FungiPower biostimulants, usage, and partnership opportunities.",
+    "metaDesc": "Frequently asked questions about FungiPower, the nutrient transporter for mushroom cultivation.",
     "items": [
       {
         "q": "What is FungiPower?",
-        "a": "FungiPower is a natural biostimulant that strengthens the biological cycle of the mycelium. It promotes the absorption of trace elements through the mycelium network, resulting in uniform fruiting bodies, faster flushes and higher yield per m²."
+        "a": "FungiPower is a nutrient transporter that improves the availability of nutrients in the substrate. The mycelium absorbs existing nutrients more efficiently, resulting in more uniform fruiting bodies, higher yield per m² and more sustainable substrate use. Validated in 20 field trials in commercial mushroom cultivation."
       },
       {
         "q": "How often should I apply FungiPower?",
@@ -221,7 +221,7 @@
       },
       {
         "q": "Is FungiPower a fertilizer?",
-        "a": "No, it's a biostimulant that enhances existing fertilizers."
+        "a": "No, FungiPower is not a fertilizer but a nutrient transporter. It improves the availability of nutrients already present in the substrate, so the mycelium can absorb them more efficiently."
       },
       {
         "q": "Can I use it with other fertilizers?",
@@ -229,11 +229,11 @@
       },
       {
         "q": "How does FungiPower work?",
-        "a": "FungiPower strengthens mycelium network activity and promotes the absorption of essential nutrients in the substrate, resulting in more vital mycelium, more uniform colonisation and more stable flushes."
+        "a": "FungiPower improves the availability of nutrients in the substrate, so the mycelium can absorb them more efficiently. This results in more uniform fruiting bodies, higher yield per flush and more sustainable substrate use."
       },
       {
         "q": "What packaging sizes are available?",
-        "a": "FungiPower Start is available in 1 liter, 10 liter, and 1000 liter. FungiPower Boost is available in 1 liter and 5 liter. Custom quantities/packaging available upon request."
+        "a": "FungiPower Start and FungiPower Boost are both available in 10 litre and 1000 litre (IBC). Custom quantities available upon request."
       },
       {
         "q": "Which crops is FungiPower suitable for?",
@@ -245,7 +245,7 @@
       },
       {
         "q": "What are the benefits?",
-        "a": "Higher yield, better quality, efficient fertilizer use."
+        "a": "Average 14% more yield, more uniform fruiting bodies, 100% positive result on the 3rd flush, and more efficient substrate use per growing cycle."
       },
       {
         "q": "Does FungiPower work on all substrate types?",
@@ -257,7 +257,7 @@
       },
       {
         "q": "What makes it unique?",
-        "a": "The unique formulation that actively supports the biological cycle of the mycelium, improving the uptake of all essential nutrients for a more stable and productive cultivation."
+        "a": "FungiPower is a nutrient transporter specifically developed for mushroom cultivation, validated in 20 field trials. With an average of 14% more yield and 100% positive result on the 3rd flush, FungiPower is the only product of its kind extensively tested in commercial mushroom cultivation."
       },
       {
         "q": "How do I use it?",
