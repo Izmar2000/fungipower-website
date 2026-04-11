@@ -17,7 +17,7 @@ Legenda: GEDAAN / OPEN / TODO
 
 ### Hero
 4. GEDAAN – Titels: "Snellere oogst, Meer opbrengst, Uniformere groei" → "Uniformere groei. / Hogere opbrengst. / Langer productief substraat."
-5. OPEN – Jerrycan foto toont PlantiPower → vervangen door FungiPower Start & Boost. Afbeelding aanleveren door gebruiker.
+5. GEDAAN – FungiPower Start foto staat op de pagina. Akkoord bevonden.
 6. GEDAAN – Hero beschrijvingstekst volledig herschreven naar nutriënten transporteur.
 7. GEDAAN – Labels: "BIOLOGISCHE VERSTERKING" → "NUTRIËNTEN TRANSPORTEUR" | "GEVALIDEERD IN 20 PRAKTIJKPROEVEN".
 
@@ -115,4 +115,4 @@ Legenda: GEDAAN / OPEN / TODO
 
 ---
 
-*Nog open: item 5 (jerrycan foto), item 52 (Stripe).*
+*Nog open: item 52 (Stripe — externe accountinstelling).*
