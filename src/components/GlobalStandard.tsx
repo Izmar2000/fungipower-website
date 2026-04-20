@@ -18,7 +18,7 @@ const GlobalStandard: React.FC<GlobalStandardProps> = ({ dict }) => {
             <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-orange-600/10 blur-[140px] rounded-full pointer-events-none"></div>
 
             <div className="relative z-10 max-w-6xl mx-auto px-6">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-end">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-stretch">
 
                     {/* Left Column: Content */}
                     <div>
@@ -91,13 +91,12 @@ const GlobalStandard: React.FC<GlobalStandardProps> = ({ dict }) => {
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.8 }}
-                        className="relative group mb-0"
+                        className="relative group flex items-end h-full"
                     >
                         <img
                             src="/images/fungipower-start1.png"
                             alt="FungiPower Global Standard"
                             className="w-full h-auto object-contain block"
-                            style={{ marginBottom: '-4px' }}
                         />
                     </motion.div>
 
