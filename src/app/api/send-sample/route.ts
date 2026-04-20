@@ -7,7 +7,7 @@ export const dynamic = 'force-dynamic';
 export async function POST(request: Request) {
   try {
     const data = await request.json();
-    const { email, website_url, captchaToken, name, cropCategory, crop, otherCrop } = data;
+    const { email, website_url, name, cropCategory, crop, otherCrop } = data;
 
     if (website_url) return NextResponse.json({ error: 'Bot detected' }, { status: 400 });
 
@@ -23,9 +23,9 @@ export async function POST(request: Request) {
 
     if (resend && email) {
       await resend.emails.send({
-        from: 'FungiPower <info@mail.fungipower.com>',
+        from: 'FungiPower <info@mail.fungipower.bio>',
         to: email,
-        replyTo: 'info@fungipower.com',
+        replyTo: 'info@fungipower.bio',
         subject: 'Welkom bij FungiPower - Je aanvraag is ontvangen',
         html: emailHtml
       });

@@ -35,7 +35,7 @@ export async function POST(request: Request) {
 
         // 2. Send Welcome Email to Customer
         await resend.emails.send({
-            from: 'FungiPower <info@mail.fungipower.com>',
+            from: 'FungiPower <info@mail.fungipower.bio>',
             to: email,
             replyTo: 'info@fungipower.bio',
             subject: locale === 'de' 
@@ -48,7 +48,7 @@ export async function POST(request: Request) {
 
         // 3. Send Notification to Internal Team (Owner)
         await resend.emails.send({
-            from: 'FungiPower Orders <info@mail.fungipower.com>',
+            from: 'FungiPower Orders <info@mail.fungipower.bio>',
             to: 'info@fungipower.bio',
             replyTo: email,
             subject: `🎉 Nieuwe Proefpakket Bestelling (FACTUUR): ${company || name}`,
