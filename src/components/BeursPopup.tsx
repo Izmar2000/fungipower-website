@@ -6,16 +6,20 @@ import { useSearchParams } from 'next/navigation'
 export default function BeursPopup() {
   const searchParams = useSearchParams()
   const [open, setOpen] = useState(false)
-  const [form, setForm] = useState({ name: '', company: '', email: '', phone: '', sample: false, website_url: '' })
+  const [form, setForm] = useState({ name: '', company: '', email: '', phone: '', language: '', sample: false, website_url: '' })
   const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle')
 
   useEffect(() => {
     setTimeout(() => setOpen(true), 800)
   }, [])
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const { name, value, type, checked } = e.target
-    setForm(prev => ({ ...prev, [name]: type === 'checkbox' ? checked : value }))
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
+    const { name, value } = e.target
+    if (e.target instanceof HTMLInputElement && e.target.type === 'checkbox') {
+      setForm(prev => ({ ...prev, [name]: e.target instanceof HTMLInputElement ? e.target.checked : false }))
+    } else {
+      setForm(prev => ({ ...prev, [name]: value }))
+    }
   }
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -27,7 +31,7 @@ export default function BeursPopup() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           ...form,
-          message: form.sample ? 'Wants a free sample ✓' : ''
+          message: [form.sample ? 'Wants a free sample ✓' : '', form.language ? `Preferred language: ${form.language}` : ''].filter(Boolean).join(' | ')
         }),
       })
       if (res.ok) setStatus('success')
@@ -78,7 +82,7 @@ export default function BeursPopup() {
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-600">to meet you!</span>
               </h1>
               <p className="text-white/50 text-lg leading-relaxed text-left">
-                Leave your details and we'll keep you posted on what FungiPower can do for your cultivation. We'll also send you field trial reports when we think they're relevant for you.
+                Leave your details and we'll send you a complete information package about FungiPower — what it is, how it works, and what it can do for your cultivation. We'll also keep you updated with field trial results and relevant news.
               </p>
             </div>
 
@@ -92,6 +96,16 @@ export default function BeursPopup() {
               </div>
               <input required type="email" name="email" value={form.email} onChange={handleChange} placeholder="Email *" className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-white/20 focus:outline-none focus:border-orange-500/50" />
               <input name="phone" value={form.phone} onChange={handleChange} placeholder="Phone" className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-white/20 focus:outline-none focus:border-orange-500/50" />
+
+              <select name="language" value={form.language} onChange={handleChange} className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white text-sm focus:outline-none focus:border-orange-500/50 appearance-none" style={{color: form.language ? 'white' : 'rgba(255,255,255,0.2)'}}>
+                <option value="" disabled>Preferred language for information package</option>
+                <option value="English">English</option>
+                <option value="Dutch">Dutch</option>
+                <option value="German">German</option>
+                <option value="French">French</option>
+                <option value="Spanish">Spanish</option>
+                <option value="Polish">Polish</option>
+              </select>
 
               <label className="flex items-center gap-3 cursor-pointer py-1">
                 <input type="checkbox" name="sample" checked={form.sample} onChange={handleChange} className="w-4 h-4 accent-orange-500" />
