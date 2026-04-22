@@ -42,50 +42,77 @@ export default function BeursPopup() {
   if (!open) return null
 
   return (
-    <div className="fixed inset-0 z-[999] flex items-center justify-center px-4" style={{ background: 'rgba(0,0,0,0.75)', backdropFilter: 'blur(4px)' }}>
-      <div className="relative w-full max-w-md bg-[#0f0701] border border-orange-500/20 rounded-2xl p-8 shadow-2xl">
+    <div className="fixed inset-0 z-[999] overflow-y-auto" style={{ background: 'radial-gradient(ellipse at 60% 20%, #7a2d0a 0%, #3d1505 35%, #0d0601 100%)' }}>
 
-        {/* Close */}
-        <button onClick={() => setOpen(false)} className="absolute top-4 right-4 text-white/30 hover:text-white/70 text-xl font-bold">×</button>
+      {/* Close button */}
+      <button
+        onClick={() => setOpen(false)}
+        className="fixed top-6 right-6 z-10 text-white/30 hover:text-white/80 transition-colors text-3xl font-thin leading-none"
+      >
+        ×
+      </button>
+
+      <div className="min-h-screen flex flex-col items-center justify-center px-6 py-20">
+
+        {/* Logo */}
+        <div className="mb-10">
+          <img src="/images/fungipower-logo.png" alt="FungiPower" className="h-10 object-contain" />
+        </div>
 
         {/* Badge */}
-        <div className="inline-flex items-center gap-2 px-3 py-1 bg-orange-500/10 border border-orange-500/20 rounded-full mb-5">
-          <div className="w-1.5 h-1.5 rounded-full bg-orange-500 animate-pulse"></div>
-          <span className="text-orange-400 text-[10px] font-black uppercase tracking-widest">Champignon Vakbeurs · Den Bosch</span>
+        <div className="inline-flex items-center gap-2 px-4 py-2 bg-orange-500/10 border border-orange-500/20 rounded-full mb-8">
+          <div className="w-2 h-2 rounded-full bg-orange-500 animate-pulse"></div>
+          <span className="text-orange-400 text-xs font-black uppercase tracking-widest">Mushroom Cultivation Days · Den Bosch</span>
         </div>
 
         {status === 'success' ? (
-          <div className="text-center py-6">
-            <h2 className="text-2xl font-black text-orange-400 mb-3">You're all set!</h2>
-            <p className="text-white/50 text-sm">We'll keep you in touch on FungiPower updates and field trial results.</p>
+          <div className="text-center max-w-md">
+            <h2 className="text-5xl font-black text-orange-400 mb-4">You're all set!</h2>
+            <p className="text-white/50 text-lg">We'll keep you posted on FungiPower updates and field trial results.</p>
+            <button onClick={() => setOpen(false)} className="mt-8 text-white/30 hover:text-white/60 text-sm underline">Continue to website</button>
           </div>
         ) : (
           <>
-            <h2 className="text-2xl font-black text-white leading-tight mb-2">
-              It was nice to meet you!
-            </h2>
-            <p className="text-white/40 text-sm mb-6">Leave your details and we'll keep you posted on what FungiPower can do for your cultivation. We'll also send you field trial reports when we think they're relevant for you.</p>
+            {/* Big headline */}
+            <div className="text-center max-w-2xl mb-12">
+              <h1 className="text-5xl md:text-6xl font-black leading-tight mb-4">
+                It was nice<br />
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-600">to meet you!</span>
+              </h1>
+              <p className="text-white/50 text-lg leading-relaxed">
+                Leave your details and we'll keep you posted on what FungiPower can do for your cultivation. We'll also send you field trial reports when we think they're relevant for you.
+              </p>
+            </div>
 
-            <form onSubmit={handleSubmit} className="space-y-3">
+            {/* Form */}
+            <form onSubmit={handleSubmit} className="w-full max-w-lg space-y-4">
               <input type="text" name="website_url" value={form.website_url} onChange={handleChange} className="hidden" tabIndex={-1} autoComplete="off" />
 
-              <input required name="name" value={form.name} onChange={handleChange} placeholder="Name *" className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white text-sm placeholder-white/20 focus:outline-none focus:border-orange-500/50" />
-              <input name="company" value={form.company} onChange={handleChange} placeholder="Company" className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white text-sm placeholder-white/20 focus:outline-none focus:border-orange-500/50" />
-              <input required type="email" name="email" value={form.email} onChange={handleChange} placeholder="Email *" className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white text-sm placeholder-white/20 focus:outline-none focus:border-orange-500/50" />
-              <input name="phone" value={form.phone} onChange={handleChange} placeholder="Phone" className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white text-sm placeholder-white/20 focus:outline-none focus:border-orange-500/50" />
+              <div className="grid grid-cols-2 gap-4">
+                <input required name="name" value={form.name} onChange={handleChange} placeholder="Name *" className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-white/20 focus:outline-none focus:border-orange-500/50" />
+                <input name="company" value={form.company} onChange={handleChange} placeholder="Company" className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-white/20 focus:outline-none focus:border-orange-500/50" />
+              </div>
+              <input required type="email" name="email" value={form.email} onChange={handleChange} placeholder="Email *" className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-white/20 focus:outline-none focus:border-orange-500/50" />
+              <input name="phone" value={form.phone} onChange={handleChange} placeholder="Phone" className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-white/20 focus:outline-none focus:border-orange-500/50" />
 
               <label className="flex items-center gap-3 cursor-pointer py-1">
                 <input type="checkbox" name="sample" checked={form.sample} onChange={handleChange} className="w-4 h-4 accent-orange-500" />
                 <span className="text-white/60 text-sm">Yes, I'd like a free sample — it's on us</span>
               </label>
 
-              {status === 'error' && <p className="text-red-400 text-xs">Something went wrong. Please try again.</p>}
+              {status === 'error' && <p className="text-red-400 text-sm">Something went wrong. Please try again.</p>}
 
-              <button type="submit" disabled={status === 'sending'} className="w-full h-12 bg-orange-500 hover:bg-orange-400 disabled:opacity-50 text-orange-950 font-black uppercase tracking-widest text-xs rounded-lg transition-all">
+              <button type="submit" disabled={status === 'sending'} className="w-full h-14 bg-orange-500 hover:bg-orange-400 disabled:opacity-50 text-orange-950 font-black uppercase tracking-widest text-sm rounded-lg transition-all">
                 {status === 'sending' ? 'Sending...' : 'Stay in touch'}
               </button>
 
               <p className="text-center text-white/20 text-xs">We won't spam you. Ever.</p>
+
+              <p className="text-center">
+                <button type="button" onClick={() => setOpen(false)} className="text-white/20 hover:text-white/40 text-xs underline">
+                  Skip, take me to the website
+                </button>
+              </p>
             </form>
           </>
         )}
