@@ -97,7 +97,7 @@ export default function BeursPopup() {
 
               <label className="flex items-center gap-3 cursor-pointer py-1">
                 <input type="checkbox" name="sample" checked={form.sample} onChange={handleChange} className="w-4 h-4 accent-orange-500" />
-                <span className="text-white/60 text-sm">Yes, I'd like a free sample — it's on us</span>
+                <span className="text-white/60 text-sm">Yes, I'd like a free sample. They're on us.</span>
               </label>
 
               {status === 'error' && <p className="text-red-400 text-sm">Something went wrong. Please try again.</p>}
