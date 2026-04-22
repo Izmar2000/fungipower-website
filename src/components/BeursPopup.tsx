@@ -62,7 +62,7 @@ export default function BeursPopup() {
         ) : (
           <>
             <h2 className="text-2xl font-black text-white leading-tight mb-2">
-              Stay in touch with FungiPower.
+              It was nice to meet you!
             </h2>
             <p className="text-white/40 text-sm mb-6">Leave your details and we'll keep you posted on what FungiPower can do for your cultivation. We'll also send you field trial reports when we think they're relevant for you.</p>
 
