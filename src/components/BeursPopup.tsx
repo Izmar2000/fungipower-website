@@ -62,9 +62,9 @@ export default function BeursPopup() {
         ) : (
           <>
             <h2 className="text-2xl font-black text-white leading-tight mb-2">
-              Be the first to receive our new field trial results.
+              Stay in touch with FungiPower.
             </h2>
-            <p className="text-white/40 text-sm mb-6">Leave your details and we'll keep you in touch.</p>
+            <p className="text-white/40 text-sm mb-6">Leave your details and we'll keep you posted on what FungiPower can do for your cultivation. We'll also send you field trial reports when we think they're relevant for you.</p>
 
             <form onSubmit={handleSubmit} className="space-y-3">
               <input type="text" name="website_url" value={form.website_url} onChange={handleChange} className="hidden" tabIndex={-1} autoComplete="off" />
@@ -76,7 +76,7 @@ export default function BeursPopup() {
 
               <label className="flex items-center gap-3 cursor-pointer py-1">
                 <input type="checkbox" name="sample" checked={form.sample} onChange={handleChange} className="w-4 h-4 accent-orange-500" />
-                <span className="text-white/60 text-sm">Yes, I'd like to receive a free sample</span>
+                <span className="text-white/60 text-sm">Yes, I'd like a free sample — it's on us</span>
               </label>
 
               {status === 'error' && <p className="text-red-400 text-xs">Something went wrong. Please try again.</p>}
