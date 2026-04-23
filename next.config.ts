@@ -10,6 +10,7 @@ const nextConfig = {
       { source: "/polish", destination: "/polish.html", permanent: false },
       { source: "/french", destination: "/french.html", permanent: false },
       { source: "/german", destination: "/german.html", permanent: false },
+      { source: "/bulgarian", destination: "/bulgarian.html", permanent: false },
     ];
   },
 };
