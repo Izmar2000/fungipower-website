@@ -30,6 +30,16 @@ const slugMap: Record<string, Record<string, string>> = {
         'contact': 'kontakt',
         'privacy': 'datenschutzerklaerung',
         'terms': 'agb'
+    },
+    ar: {
+        'about': 'about-us',
+        'products': 'producten',
+        'products/start': 'fungipower-start',
+        'products/boost': 'fungipower-boost',
+        'faq': 'faq',
+        'contact': 'contact',
+        'privacy': 'privacy-policy',
+        'terms': 'terms'
     }
 };
 
@@ -41,7 +51,7 @@ export function getLocalizedPath(path: string, targetLocale: Locale): string {
     let currentLocale: Locale = 'en';
     let rest = '';
 
-    if (segments.length > 0 && (segments[0] === 'nl' || segments[0] === 'en' || segments[0] === 'de')) {
+    if (segments.length > 0 && (segments[0] === 'nl' || segments[0] === 'en' || segments[0] === 'de' || segments[0] === 'ar')) {
         currentLocale = segments[0] as Locale;
         rest = segments.slice(1).join('/');
     } else {
