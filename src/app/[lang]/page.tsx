@@ -67,9 +67,11 @@ export default async function Page({
 
   return (
     <ClientLayout dict={dict} lang={lang}>
-      <Suspense fallback={null}>
-        <BeursPopup />
-      </Suspense>
+      {lang === 'en' && (
+        <Suspense fallback={null}>
+          <BeursPopup />
+        </Suspense>
+      )}
       <div className="bg-[#011410]">
         <Hero dict={dict} lang={lang} />
         <GrowerFocus dict={dict} />
